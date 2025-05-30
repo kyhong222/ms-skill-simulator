@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/3100000",
       "description": {
         "id": 3100000,
-        "desc": "[Master Level : 20]\\nIncreases the bow mastery and accuracy. It only applies when a bow is in hand.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the bow mastery and accuracy. It only applies when a bow is in hand.",
         "name": "Bow Mastery",
         "bookName": ""
       },
@@ -192,7 +192,7 @@
       "soundPath": "Skill.img/3100001",
       "description": {
         "id": 3100001,
-        "desc": "[Master Level : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a bow.\\nRequired Skill : #cAt least Level 3 on Bow Mastery#",
+        "desc": "[마스터 레벨 : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a bow.\\nRequired Skill : #cAt least Level 3 on Bow Mastery#",
         "name": "Final Attack : Bow",
         "bookName": ""
       },
@@ -533,7 +533,7 @@
       "soundPath": "Skill.img/3101002",
       "description": {
         "id": 3101002,
-        "desc": "[Master Level : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the bow. It only works with a bow in hand.\\nRequired Skill : #cAt least Level 5 on Bow Mastery#",
+        "desc": "[마스터 레벨 : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the bow. It only works with a bow in hand.\\nRequired Skill : #cAt least Level 5 on Bow Mastery#",
         "name": "Bow Booster",
         "bookName": ""
       },
@@ -781,7 +781,7 @@
       "soundPath": "Skill.img/3101003",
       "description": {
         "id": 3101003,
-        "desc": "[Master Level : 20]\\nIncreases the success rate for pushing off the monsters when swinging a bow.  As the level rises, the number of monsters that one can push off with one swing increases.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the success rate for pushing off the monsters when swinging a bow.  As the level rises, the number of monsters that one can push off with one swing increases.",
         "name": "Power Knock-Back",
         "bookName": ""
       },
@@ -1261,7 +1261,7 @@
       "soundPath": "Skill.img/3101004",
       "description": {
         "id": 3101004,
-        "desc": "[Master Level : 20]\\nTemporarily allows the character to fire bow arrows without using up the arrows. Only works with a bow in hand.\\nRequired Skill : #cAt least Level 5 on Bow Booster#",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily allows the character to fire bow arrows without using up the arrows. Only works with a bow in hand.\\nRequired Skill : #cAt least Level 5 on Bow Booster#",
         "name": "Soul Arrow : Bow",
         "bookName": ""
       },
@@ -1670,7 +1670,7 @@
       "soundPath": "Skill.img/3101005",
       "description": {
         "id": 3101005,
-        "desc": "[Master Level : 30]\\nFires arrows with bombs attached to it. If struck cleanly, the bomb explodes on the enemy, knocking out some of the enemies around with a certain success rate. Can't attack more than 6 at once, and it only works with a bow in hand.",
+        "desc": "[마스터 레벨 : 30]\\nFires arrows with bombs attached to it. If struck cleanly, the bomb explodes on the enemy, knocking out some of the enemies around with a certain success rate. Can't attack more than 6 at once, and it only works with a bow in hand.",
         "name": "Arrow Bomb : Bow",
         "bookName": ""
       },

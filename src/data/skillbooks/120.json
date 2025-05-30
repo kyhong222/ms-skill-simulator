@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/1200000",
       "description": {
         "id": 1200000,
-        "desc": "[Master Level : 20]\\nIncreases the sword mastery and accuracy. It only applies when either a one-handed or a two-handed sword is in hand.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the sword mastery and accuracy. It only applies when either a one-handed or a two-handed sword is in hand.",
         "name": "Sword Mastery",
         "bookName": ""
       },
@@ -132,7 +132,7 @@
       "soundPath": "Skill.img/1200001",
       "description": {
         "id": 1200001,
-        "desc": "[Master Level : 20]\\nIncreases the mastery of blunt weapons and accuracy. It only applies when either a one-handed or a two-handed blunt weapon is in hand.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the mastery of blunt weapons and accuracy. It only applies when either a one-handed or a two-handed blunt weapon is in hand.",
         "name": "BW Mastery",
         "bookName": ""
       },
@@ -309,7 +309,7 @@
       "soundPath": "Skill.img/1200002",
       "description": {
         "id": 1200002,
-        "desc": "[Master Level : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand sword.\\nRequired Skill : #cAt least Level 3 on Sword Mastery#",
+        "desc": "[마스터 레벨 : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand sword.\\nRequired Skill : #cAt least Level 3 on Sword Mastery#",
         "name": "Final Attack : Sword",
         "bookName": ""
       },
@@ -539,7 +539,7 @@
       "soundPath": "Skill.img/1200003",
       "description": {
         "id": 1200003,
-        "desc": "[Master Level : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand blunt weapon.\\nRequired Skill : #cAt least Level 3 on BW Mastery#",
+        "desc": "[마스터 레벨 : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand blunt weapon.\\nRequired Skill : #cAt least Level 3 on BW Mastery#",
         "name": "Final Attack : BW",
         "bookName": ""
       },
@@ -880,7 +880,7 @@
       "soundPath": "Skill.img/1201004",
       "description": {
         "id": 1201004,
-        "desc": "[Master Level : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the equipped sword. It only applies when either a one-handed or a two-handed sword is in hand.\\nRequired Skill : #cAt least Level 5 on Sword Mastery#",
+        "desc": "[마스터 레벨 : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the equipped sword. It only applies when either a one-handed or a two-handed sword is in hand.\\nRequired Skill : #cAt least Level 5 on Sword Mastery#",
         "name": "Sword Booster",
         "bookName": ""
       },
@@ -1211,7 +1211,7 @@
       "soundPath": "Skill.img/1201005",
       "description": {
         "id": 1201005,
-        "desc": "[Master Level: 20]\\nUses HP and MP  to temporarily boost up the attacking speed of the equipped blunt weapon. It only applies when either a one-handed or a two-handed blunt weapon is in hand.\\nRequired Skill : #cAt least Level 5 on Mace Mastery#",
+        "desc": "[마스터 레벨: 20]\\nUses HP and MP  to temporarily boost up the attacking speed of the equipped blunt weapon. It only applies when either a one-handed or a two-handed blunt weapon is in hand.\\nRequired Skill : #cAt least Level 5 on Mace Mastery#",
         "name": "BW Booster",
         "bookName": ""
       },
@@ -1506,7 +1506,7 @@
       "soundPath": "Skill.img/1201006",
       "description": {
         "id": 1201006,
-        "desc": "[Master Level : 20]\\nUse MP to temporarily threaten a monster. Decreases the level of weapon attack and weapon defense of every monster around the area.",
+        "desc": "[마스터 레벨 : 20]\\nUse MP to temporarily threaten a monster. Decreases the level of weapon attack and weapon defense of every monster around the area.",
         "name": "Threaten",
         "bookName": ""
       },
@@ -1948,7 +1948,7 @@
       "soundPath": "Skill.img/1201007",
       "description": {
         "id": 1201007,
-        "desc": "[Master Level : 30]\\nReturns a portion of the damage received from the enemy. Can't return more than 10% of the enemy's Max HP at once, however.\\nRequired Skill : #cAt least Level 3 on Threaten#",
+        "desc": "[마스터 레벨 : 30]\\nReturns a portion of the damage received from the enemy. Can't return more than 10% of the enemy's Max HP at once, however.\\nRequired Skill : #cAt least Level 3 on Threaten#",
         "name": "Power Guard",
         "bookName": ""
       },
@@ -2145,6 +2145,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Page's Path"
+    "bookName": "페이지의 길"
   }
 }

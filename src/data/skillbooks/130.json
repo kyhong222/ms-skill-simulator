@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/1300000",
       "description": {
         "id": 1300000,
-        "desc": "[Master Level : 20]\\nIncreases the spear mastery and accuracy. It only applies when a spear is in hand.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the spear mastery and accuracy. It only applies when a spear is in hand.",
         "name": "Spear Mastery",
         "bookName": ""
       },
@@ -132,7 +132,7 @@
       "soundPath": "Skill.img/1300001",
       "description": {
         "id": 1300001,
-        "desc": "[Master Level : 20]\\nIncreases the mastery of pole arms and accuracy. It only applies when a pole arm is in hand.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the mastery of pole arms and accuracy. It only applies when a pole arm is in hand.",
         "name": "Pole Arm Mastery",
         "bookName": ""
       },
@@ -309,7 +309,7 @@
       "soundPath": "Skill.img/1300002",
       "description": {
         "id": 1300002,
-        "desc": "[Master Level : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand spear.\\nRequired Skill : #cAt least Level 3 on Spear Mastery#",
+        "desc": "[마스터 레벨 : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand spear.\\nRequired Skill : #cAt least Level 3 on Spear Mastery#",
         "name": "Final Attack : Spear",
         "bookName": ""
       },
@@ -539,7 +539,7 @@
       "soundPath": "Skill.img/1300003",
       "description": {
         "id": 1300003,
-        "desc": "[Master Level : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand pole arm.\\nRequired Skill : #cAt least Level 3 on Pole Arm Mastery#",
+        "desc": "[마스터 레벨 : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand pole arm.\\nRequired Skill : #cAt least Level 3 on Pole Arm Mastery#",
         "name": "Final Attack : Pole Arm",
         "bookName": ""
       },
@@ -880,7 +880,7 @@
       "soundPath": "Skill.img/1301004",
       "description": {
         "id": 1301004,
-        "desc": "[Master Level : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the equipped spear. It only applies when a spear is in hand.\\nRequired Skill : #cAt least Level 5 on Spear Mastery#",
+        "desc": "[마스터 레벨 : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the equipped spear. It only applies when a spear is in hand.\\nRequired Skill : #cAt least Level 5 on Spear Mastery#",
         "name": "Spear Booster",
         "bookName": ""
       },
@@ -1211,7 +1211,7 @@
       "soundPath": "Skill.img/1301005",
       "description": {
         "id": 1301005,
-        "desc": "[Master Level : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the equipped pole arm. It only applies when a pole arm is in hand.\\nRequired Skill : #cAt least Level 5 on Pole Arm Mastery#",
+        "desc": "[마스터 레벨 : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the equipped pole arm. It only applies when a pole arm is in hand.\\nRequired Skill : #cAt least Level 5 on Pole Arm Mastery#",
         "name": "Pole Arm Booster",
         "bookName": ""
       },
@@ -1836,7 +1836,7 @@
       "soundPath": "Skill.img/1301006",
       "description": {
         "id": 1301006,
-        "desc": "[Master Level : 20]\\nTemporarily increases the level of weapon and magic defense on every member of the party around the area.",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily increases the level of weapon and magic defense on every member of the party around the area.",
         "name": "Iron Will",
         "bookName": ""
       },
@@ -2372,7 +2372,7 @@
       "soundPath": "Skill.img/1301007",
       "description": {
         "id": 1301007,
-        "desc": "[Master Level : 30]\\nTemporarily increases the Max HP and Max MP of all members of the party around the area.\\nRequired Skill : #cAt least Level 3 on Iron Will#",
+        "desc": "[마스터 레벨 : 30]\\nTemporarily increases the Max HP and Max MP of all members of the party around the area.\\nRequired Skill : #cAt least Level 3 on Iron Will#",
         "name": "Hyper Body",
         "bookName": ""
       },
@@ -2659,6 +2659,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Spearman Techniques"
+    "bookName": "스피어맨의 길"
   }
 }

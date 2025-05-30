@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/4100000",
       "description": {
         "id": 4100000,
-        "desc": "[Master Level : 20]\\nIncreases the mastery of throwing stars and accuracy, along with the maximum number of throwing stars to recharge. It only applies when the character is throwing stars.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the mastery of throwing stars and accuracy, along with the maximum number of throwing stars to recharge. It only applies when the character is throwing stars.",
         "name": "Claw Mastery",
         "bookName": ""
       },
@@ -152,7 +152,7 @@
       "soundPath": "Skill.img/4100001",
       "description": {
         "id": 4100001,
-        "desc": "[Master Level : 30]\\nEnables the character to make a critical attack with throwing stars on a certain success rate.\\nRequired Skill : #cAt least Level 3 on Claw Mastery#",
+        "desc": "[마스터 레벨 : 30]\\nEnables the character to make a critical attack with throwing stars on a certain success rate.\\nRequired Skill : #cAt least Level 3 on Claw Mastery#",
         "name": "Critical Throw",
         "bookName": ""
       },
@@ -322,7 +322,7 @@
       "soundPath": "Skill.img/4100002",
       "description": {
         "id": 4100002,
-        "desc": "[Master Level : 20]\\nRecovers additional amount of HP and MP.",
+        "desc": "[마스터 레벨 : 20]\\nRecovers additional amount of HP and MP.",
         "name": "Endure",
         "bookName": ""
       },
@@ -630,7 +630,7 @@
       "soundPath": "Skill.img/4101003",
       "description": {
         "id": 4101003,
-        "desc": "[Master Level : 20]\\nUse HP and MP to temporarily boost up the attacking speed of the claw. It only applies when the character is equipped with a claw throwing stars.\\nRequired Skill : #cAt least Level 5 on Claw Mastery#",
+        "desc": "[마스터 레벨 : 20]\\nUse HP and MP to temporarily boost up the attacking speed of the claw. It only applies when the character is equipped with a claw throwing stars.\\nRequired Skill : #cAt least Level 5 on Claw Mastery#",
         "name": "Claw Booster",
         "bookName": ""
       },
@@ -1075,7 +1075,7 @@
       "soundPath": "Skill.img/4101004",
       "description": {
         "id": 4101004,
-        "desc": "[Master Level : 20]\\nTemporarily improves the speed and jumping ability of every member of the party.",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily improves the speed and jumping ability of every member of the party.",
         "name": "Haste",
         "bookName": ""
       },
@@ -1388,7 +1388,7 @@
       "soundPath": "Skill.img/4101005",
       "description": {
         "id": 4101005,
-        "desc": "[Master Level : 30]\\nAbsorb some of the damage dished out to the enemy as HP. The most one can absorb at once is the character's MaxHP / 2, and can't absorb more than the MaxHP of the enemy.\\nRequired Skill : #cAt least Level 3 on Endure#",
+        "desc": "[마스터 레벨 : 30]\\nAbsorb some of the damage dished out to the enemy as HP. The most one can absorb at once is the character's MaxHP / 2, and can't absorb more than the MaxHP of the enemy.\\nRequired Skill : #cAt least Level 3 on Endure#",
         "name": "Drain",
         "bookName": ""
       },

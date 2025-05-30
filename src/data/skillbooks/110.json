@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/1100000",
       "description": {
         "id": 1100000,
-        "desc": "[Master Level : 20]\\nIncreases the sword mastery and accuracy. It only applies when either a one-handed or a two-handed sword is in hand.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the sword mastery and accuracy. It only applies when either a one-handed or a two-handed sword is in hand.",
         "name": "Sword Mastery",
         "bookName": ""
       },
@@ -132,7 +132,7 @@
       "soundPath": "Skill.img/1100001",
       "description": {
         "id": 1100001,
-        "desc": "[Master Level : 20]\\nIncreases the axe mastery and accuracy. It only applies when either a one-handed or a two-handed axe is in hand.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the axe mastery and accuracy. It only applies when either a one-handed or a two-handed axe is in hand.",
         "name": "Axe Mastery",
         "bookName": ""
       },
@@ -309,7 +309,7 @@
       "soundPath": "Skill.img/1100002",
       "description": {
         "id": 1100002,
-        "desc": "[Master Level : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand sword.\\nRequired Skill : #cAt least Level 3 on Sword Mastery#",
+        "desc": "[마스터 레벨 : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand sword.\\nRequired Skill : #cAt least Level 3 on Sword Mastery#",
         "name": "Final Attack : Sword",
         "bookName": ""
       },
@@ -539,7 +539,7 @@
       "soundPath": "Skill.img/1100003",
       "description": {
         "id": 1100003,
-        "desc": "[Master Level : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand axe.\\nRequired Skill : #cAt least Level 3 on Axe Mastery#",
+        "desc": "[마스터 레벨 : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand axe.\\nRequired Skill : #cAt least Level 3 on Axe Mastery#",
         "name": "Final Attack : Axe",
         "bookName": ""
       },
@@ -880,7 +880,7 @@
       "soundPath": "Skill.img/1101004",
       "description": {
         "id": 1101004,
-        "desc": "[Master Level : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the equipped sword. It only applies when either a one-handed or a two-handed sword is in hand.\\nRequired Skill : #cAt least Level 5 on Sword Mastery#",
+        "desc": "[마스터 레벨 : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the equipped sword. It only applies when either a one-handed or a two-handed sword is in hand.\\nRequired Skill : #cAt least Level 5 on Sword Mastery#",
         "name": "Sword Booster",
         "bookName": ""
       },
@@ -1211,7 +1211,7 @@
       "soundPath": "Skill.img/1101005",
       "description": {
         "id": 1101005,
-        "desc": "[Master Level : 20]\\nUses HP and MP  to temporarily boost up the attacking speed of the equipped axe. It only applies when either a one-handed or a two-handed axe is in hand.\\nRequired Skill : #cAt least Level 5 on Axe Mastery#",
+        "desc": "[마스터 레벨 : 20]\\nUses HP and MP  to temporarily boost up the attacking speed of the equipped axe. It only applies when either a one-handed or a two-handed axe is in hand.\\nRequired Skill : #cAt least Level 5 on Axe Mastery#",
         "name": "Axe Booster",
         "bookName": ""
       },
@@ -1746,7 +1746,7 @@
       "soundPath": "Skill.img/1101006",
       "description": {
         "id": 1101006,
-        "desc": "[Master Level : 20]\\nTemporarily boosts the weapon attack level of everyone in the party around the area, but also decreases the level of weapon attack defense.",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily boosts the weapon attack level of everyone in the party around the area, but also decreases the level of weapon attack defense.",
         "name": "Rage",
         "bookName": ""
       },
@@ -2168,7 +2168,7 @@
       "soundPath": "Skill.img/1101007",
       "description": {
         "id": 1101007,
-        "desc": "[Master Level : 30]\\nReturns a portion of the damage received from the enemy. Can't return more than 10% of the enemy's Max HP at once, however.\\nRequired Skill : #cAt least Level 3 on Rage#",
+        "desc": "[마스터 레벨 : 30]\\nReturns a portion of the damage received from the enemy. Can't return more than 10% of the enemy's Max HP at once, however.\\nRequired Skill : #cAt least Level 3 on Rage#",
         "name": "Power Guard",
         "bookName": ""
       },
@@ -2365,6 +2365,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Fighter Techniques"
+    "bookName": "파이터의 길"
   }
 }

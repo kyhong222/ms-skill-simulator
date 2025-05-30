@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/5000000",
       "description": {
         "id": 5000000,
-        "desc": "[Master Level : 20]\\nIncreases accuracy and avoidability.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases accuracy and avoidability.",
         "name": "Bullet Time",
         "bookName": ""
       },
@@ -291,7 +291,7 @@
       "soundPath": "Skill.img/5001001",
       "description": {
         "id": 5001001,
-        "desc": "[Master Level : 20]\\nUses MP to speed up the punch to rapidly attack enemies.",
+        "desc": "[마스터 레벨 : 20]\\nUses MP to speed up the punch to rapidly attack enemies.",
         "name": "Flash Fist",
         "bookName": ""
       },
@@ -699,7 +699,7 @@
       "soundPath": "Skill.img/5001002",
       "description": {
         "id": 5001002,
-        "desc": "[Master Level : 20]\\nA devastating kick that accompanies a backward sommersault. Attacks all enemies in the vicinity.",
+        "desc": "[마스터 레벨 : 20]\\nA devastating kick that accompanies a backward sommersault. Attacks all enemies in the vicinity.",
         "name": "Sommersault Kick",
         "bookName": ""
       },
@@ -1097,7 +1097,7 @@
       "soundPath": "Skill.img/5001003",
       "description": {
         "id": 5001003,
-        "desc": "[Master Level : 20]\\nFires two bullets at once to apply double damage to monsters.",
+        "desc": "[마스터 레벨 : 20]\\nFires two bullets at once to apply double damage to monsters.",
         "name": "Double Shot",
         "bookName": ""
       },
@@ -1386,7 +1386,7 @@
       "soundPath": "Skill.img/5001005",
       "description": {
         "id": 5001005,
-        "desc": "[Master Level : 10]\\nPress left or right arrow twice to temporarily boost your speed and jump.",
+        "desc": "[마스터 레벨 : 10]\\nPress left or right arrow twice to temporarily boost your speed and jump.",
         "name": "Dash",
         "bookName": ""
       },

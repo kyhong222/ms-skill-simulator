@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/1110000",
       "description": {
         "id": 1110000,
-        "desc": "[Master Level : 20]\\nRecovers MP at a faster rate than the norm every 10 seconds by standing still.",
+        "desc": "[마스터 레벨 : 20]\\nRecovers MP at a faster rate than the norm every 10 seconds by standing still.",
         "name": "Improving MP Recovery",
         "bookName": ""
       },
@@ -112,7 +112,7 @@
       "soundPath": "Skill.img/1110001",
       "description": {
         "id": 1110001,
-        "desc": "[Master Level : 20]\\nIncreases shield defense. However, it does not affect if the character does not equip the shield.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases shield defense. However, it does not affect if the character does not equip the shield.",
         "name": "Shield Mastery",
         "bookName": ""
       },
@@ -344,7 +344,7 @@
       "soundPath": "Skill.img/1111002",
       "description": {
         "id": 1111002,
-        "desc": "[Master Level : 30]\\nPrepares for combo attack.  Combo counter can be used to strike a deadly blow to the monster.  Max. for combo counter is 5 and midpoint is 3.",
+        "desc": "[마스터 레벨 : 30]\\nPrepares for combo attack.  Combo counter can be used to strike a deadly blow to the monster.  Max. for combo counter is 5 and midpoint is 3.",
         "name": "Combo Attack",
         "bookName": ""
       },
@@ -761,7 +761,7 @@
       "soundPath": "Skill.img/1111003",
       "description": {
         "id": 1111003,
-        "desc": "[Master Level : 30]\\n Attack a single monster using dark powers. This skill can only be used when equipped with a sword and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
+        "desc": "[마스터 레벨 : 30]\\n Attack a single monster using dark powers. This skill can only be used when equipped with a sword and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
         "name": "Panic : Sword",
         "bookName": ""
       },
@@ -1181,7 +1181,7 @@
       "soundPath": "Skill.img/1111004",
       "description": {
         "id": 1111004,
-        "desc": "[Master Level : 30]\\n Attack a single monster using dark powers. This skill can only be used when equipped with an axe and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
+        "desc": "[마스터 레벨 : 30]\\n Attack a single monster using dark powers. This skill can only be used when equipped with an axe and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
         "name": "Panic : Axe",
         "bookName": ""
       },
@@ -1529,7 +1529,7 @@
       "soundPath": "Skill.img/1111005",
       "description": {
         "id": 1111005,
-        "desc": "[Master Level : 30]\\n If struck cleanly, the monster becomes panicked. This skill can only be used when equipped with a sword and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
+        "desc": "[마스터 레벨 : 30]\\n If struck cleanly, the monster becomes panicked. This skill can only be used when equipped with a sword and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
         "name": "Coma: Sword",
         "bookName": ""
       },
@@ -1967,7 +1967,7 @@
       "soundPath": "Skill.img/1111006",
       "description": {
         "id": 1111006,
-        "desc": "[Master Level : 30]\\n If struck cleanly, the monster becomes panicked. This skill can only be used when equipped with an axe and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
+        "desc": "[마스터 레벨 : 30]\\n If struck cleanly, the monster becomes panicked. This skill can only be used when equipped with an axe and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
         "name": "Coma: Axe",
         "bookName": ""
       },
@@ -2638,7 +2638,7 @@
       "soundPath": "Skill.img/1111007",
       "description": {
         "id": 1111007,
-        "desc": "[Master Level : 20]\\n Nullifies the defense buff used by the monster with a given success rate.\\nRequired Skill : #cAt least Level 3 on Shout#",
+        "desc": "[마스터 레벨 : 20]\\n Nullifies the defense buff used by the monster with a given success rate.\\nRequired Skill : #cAt least Level 3 on Shout#",
         "name": "Armor Crash",
         "bookName": ""
       },
@@ -3192,7 +3192,7 @@
       "soundPath": "Skill.img/1111008",
       "description": {
         "id": 1111008,
-        "desc": "[Master Level : 30]\\nTemporarily stuns up to 6 monsters nearby with damage.",
+        "desc": "[마스터 레벨 : 30]\\nTemporarily stuns up to 6 monsters nearby with damage.",
         "name": "Shout",
         "bookName": ""
       },
@@ -3506,6 +3506,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Crusader's Guide"
+    "bookName": "크루세이더의 모든 것"
   }
 }

@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/2000000",
       "description": {
         "id": 2000000,
-        "desc": "[Master Level : 16]\\nRecovering even more MP every 10 sec. The higher the level of the character and the skill level, the more recovery it enables the character to have.",
+        "desc": "[마스터 레벨 : 16]\\nRecovering even more MP every 10 sec. The higher the level of the character and the skill level, the more recovery it enables the character to have.",
         "name": "Improved MP Recovery",
         "bookName": ""
       },
@@ -80,7 +80,7 @@
       "soundPath": "Skill.img/2000001",
       "description": {
         "id": 2000001,
-        "desc": "Master Level : 10] This skill boosts up the amount of increase on MaxMP after each Level UP, or AP used on MaxMP.\\nRequired Skill : #cAt least Level 5 on Improving MP Recovery#",
+        "desc": "마스터 레벨 : 10] This skill boosts up the amount of increase on MaxMP after each Level UP, or AP used on MaxMP.\\nRequired Skill : #cAt least Level 5 on Improving MP Recovery#",
         "name": "Improved MaxMP Increase",
         "bookName": ""
       },
@@ -387,7 +387,7 @@
       "soundPath": "Skill.img/2001002",
       "description": {
         "id": 2001002,
-        "desc": "[Master Level : 20]\\nTemporarily replaces damage with MP instead of HP. If MP reaches 0, the HP takes a full hit.",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily replaces damage with MP instead of HP. If MP reaches 0, the HP takes a full hit.",
         "name": "Magic Guard",
         "bookName": ""
       },
@@ -527,7 +527,7 @@
       "soundPath": "Skill.img/2001003",
       "description": {
         "id": 2001003,
-        "desc": "[Master Level : 20]\\nTemporarily boosts the weapon def. of the armor by blowing magic into it.\\nRequired Skill : #cAt least Level 3 on Magic Guard#",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily boosts the weapon def. of the armor by blowing magic into it.\\nRequired Skill : #cAt least Level 3 on Magic Guard#",
         "name": "Magic Armor",
         "bookName": ""
       },
@@ -870,7 +870,7 @@
       "soundPath": "Skill.img/2001004",
       "description": {
         "id": 2001004,
-        "desc": "[Master Level : 20]\\nUse MP to attack one enemy.",
+        "desc": "[마스터 레벨 : 20]\\nUse MP to attack one enemy.",
         "name": "Energy Bolt",
         "bookName": ""
       },
@@ -1190,7 +1190,7 @@
       "soundPath": "Skill.img/2001005",
       "description": {
         "id": 2001005,
-        "desc": "[Master Level : 20]\\nUse MP to attack an enemy twice.\\nRequired Skill : #cAt least Level 1 on Energy Bolt#",
+        "desc": "[마스터 레벨 : 20]\\nUse MP to attack an enemy twice.\\nRequired Skill : #cAt least Level 1 on Energy Bolt#",
         "name": "Magic Claw",
         "bookName": ""
       },

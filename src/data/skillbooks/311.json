@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/3110000",
       "description": {
         "id": 3110000,
-        "desc": "[Master Level : 20]\\nBoosts up the moving speed.",
+        "desc": "[마스터 레벨 : 20]\\nBoosts up the moving speed.",
         "name": "Thrust",
         "bookName": ""
       },
@@ -244,7 +244,7 @@
       "soundPath": "Skill.img/3110001",
       "description": {
         "id": 3110001,
-        "desc": "[Master Level : 20]\\nEnables to shoot monsters within a very close range with a given success rate. Even kills a monster with a single shot every once in a while.",
+        "desc": "[마스터 레벨 : 20]\\nEnables to shoot monsters within a very close range with a given success rate. Even kills a monster with a single shot every once in a while.",
         "name": "Mortal Blow",
         "bookName": ""
       },
@@ -404,7 +404,7 @@
       "soundPath": "Skill.img/3111002",
       "description": {
         "id": 3111002,
-        "desc": "[Master Level : 20]\\nTemporarily summons a puppet, which takes all the attacks from the monsters instead. ",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily summons a puppet, which takes all the attacks from the monsters instead. ",
         "name": "Puppet",
         "bookName": ""
       },
@@ -868,7 +868,7 @@
       "soundPath": "Skill.img/3111003",
       "description": {
         "id": 3111003,
-        "desc": "[Master Level : 30]\\nUses fire-based arrows to attack up to 6 monsters at once. Only works when equipped with a bow.",
+        "desc": "[마스터 레벨 : 30]\\nUses fire-based arrows to attack up to 6 monsters at once. Only works when equipped with a bow.",
         "name": "Inferno",
         "bookName": ""
       },
@@ -1469,7 +1469,7 @@
       "soundPath": "Skill.img/3111004",
       "description": {
         "id": 3111004,
-        "desc": "[Master Level : 30]\\nFires a number of arrows into the sky, attacking upto 6 monsters at once on its way down. Only available when equipped with a bow.\\nRequired Skill : #cAt least Level 5 on Mortal Blow#",
+        "desc": "[마스터 레벨 : 30]\\nFires a number of arrows into the sky, attacking upto 6 monsters at once on its way down. Only available when equipped with a bow.\\nRequired Skill : #cAt least Level 5 on Mortal Blow#",
         "name": "Arrow Rain",
         "bookName": ""
       },
@@ -1846,7 +1846,7 @@
       "soundPath": "Skill.img/3111005",
       "description": {
         "id": 3111005,
-        "desc": "[Master Level : 30]\\nSummons a silver hawk. The hawk will be hovering around you, attacking monsters nearby.\\nRequired Skill : #cAt least Level 5 on Puppet#",
+        "desc": "[마스터 레벨 : 30]\\nSummons a silver hawk. The hawk will be hovering around you, attacking monsters nearby.\\nRequired Skill : #cAt least Level 5 on Puppet#",
         "name": "Silver Hawk",
         "bookName": ""
       },
@@ -2365,7 +2365,7 @@
       "soundPath": "Skill.img/3111006",
       "description": {
         "id": 3111006,
-        "desc": "[Master Level : 30]\\nFires 4 arrows at an enemy.",
+        "desc": "[마스터 레벨 : 30]\\nFires 4 arrows at an enemy.",
         "name": "Strafe",
         "bookName": ""
       },

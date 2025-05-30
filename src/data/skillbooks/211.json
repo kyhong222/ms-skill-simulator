@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/2110000",
       "description": {
         "id": 2110000,
-        "desc": "[Master Level : 20]\\n Gains resistance against Magic attacks of Fire and Poison.",
+        "desc": "[마스터 레벨 : 20]\\n Gains resistance against Magic attacks of Fire and Poison.",
         "name": "Partial Resistance",
         "bookName": ""
       },
@@ -112,7 +112,7 @@
       "soundPath": "Skill.img/2110001",
       "description": {
         "id": 2110001,
-        "desc": "[Master Level : 30]\\n Boosts the capacity for all Magic attacks by using additional MP.",
+        "desc": "[마스터 레벨 : 30]\\n Boosts the capacity for all Magic attacks by using additional MP.",
         "name": "Element Amplification",
         "bookName": ""
       },
@@ -505,7 +505,7 @@
       "soundPath": "Skill.img/2111002",
       "description": {
         "id": 2111002,
-        "desc": "[Master Level : 30]\\nAttacks up to 6 surrounding monsters by creating an explosion around the character, using fire-based attacks.",
+        "desc": "[마스터 레벨 : 30]\\nAttacks up to 6 surrounding monsters by creating an explosion around the character, using fire-based attacks.",
         "name": "Explosion",
         "bookName": ""
       },
@@ -1054,7 +1054,7 @@
       "soundPath": "Skill.img/2111003",
       "description": {
         "id": 2111003,
-        "desc": "[Master Level : 30]\\n Makes a poison fog around the character. Deceases HP of all monsters in the range.",
+        "desc": "[마스터 레벨 : 30]\\n Makes a poison fog around the character. Deceases HP of all monsters in the range.",
         "name": "Poison Mist",
         "bookName": ""
       },
@@ -1578,7 +1578,7 @@
       "soundPath": "Skill.img/2111004",
       "description": {
         "id": 2111004,
-        "desc": "[Master Level : 20]\\nTemporarily seals up all surrounding monsters.  Once sealed, monsters can't use skills. Does not work against boss-level monsters.\\nRequired Skill : #cAt least Level 3 on Element Amplification#",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily seals up all surrounding monsters.  Once sealed, monsters can't use skills. Does not work against boss-level monsters.\\nRequired Skill : #cAt least Level 3 on Element Amplification#",
         "name": "Seal",
         "bookName": ""
       },
@@ -2129,7 +2129,7 @@
       "soundPath": "Skill.img/2111005",
       "description": {
         "id": 2111005,
-        "desc": "[Master Level : 20]\\nUses up a significant amount of HP and MP to increase the attacking speed for spells.\\nRequired Skill : #cAt least Level 3 on Element Amplification#",
+        "desc": "[마스터 레벨 : 20]\\nUses up a significant amount of HP and MP to increase the attacking speed for spells.\\nRequired Skill : #cAt least Level 3 on Element Amplification#",
         "name": "Spell Booster",
         "bookName": ""
       },
@@ -2652,7 +2652,7 @@
       "soundPath": "Skill.img/2111006",
       "description": {
         "id": 2111006,
-        "desc": "[Master Level : 30]\\nAttacks a single monster by splashing a Poison drop. With a given success rate, the monster gets temporarily poisoned.",
+        "desc": "[마스터 레벨 : 30]\\nAttacks a single monster by splashing a Poison drop. With a given success rate, the monster gets temporarily poisoned.",
         "name": "Element Composition",
         "bookName": ""
       },

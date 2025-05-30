@@ -272,7 +272,7 @@
       "soundPath": "Skill.img/5210000",
       "description": {
         "id": 5210000,
-        "desc": "[Master Level : 20]\\nIncreases the potency and the number of bullets fired when using Double Shot.\\nRequired Skill : #cLevel 20 of Double Shot# ",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the potency and the number of bullets fired when using Double Shot.\\nRequired Skill : #cLevel 20 of Double Shot# ",
         "name": "Burst Fire",
         "bookName": ""
       },
@@ -531,7 +531,7 @@
       "soundPath": "Skill.img/5211001",
       "description": {
         "id": 5211001,
-        "desc": "[Master Level : 30]\\nSummons a loyal octopus that'll aid your attacks. The summoned octopus will not move, however.\\n#cWaiting time until the next summon : 10 sec#",
+        "desc": "[마스터 레벨 : 30]\\nSummons a loyal octopus that'll aid your attacks. The summoned octopus will not move, however.\\n#cWaiting time until the next summon : 10 sec#",
         "name": "Octopus",
         "bookName": ""
       },
@@ -1074,7 +1074,7 @@
       "soundPath": "Skill.img/5211002",
       "description": {
         "id": 5211002,
-        "desc": "[Master Level : 30]\\nSummons Gaviota, who's trained to throw a grenade at monsters. The summoned Gaviota will seek a monster, and when it finds one, it'll toss the grenade and disappear. \\n#cWaiting time : 5 sec.#",
+        "desc": "[마스터 레벨 : 30]\\nSummons Gaviota, who's trained to throw a grenade at monsters. The summoned Gaviota will seek a monster, and when it finds one, it'll toss the grenade and disappear. \\n#cWaiting time : 5 sec.#",
         "name": "Gaviota",
         "bookName": ""
       },
@@ -1679,7 +1679,7 @@
       "soundPath": "Skill.img/5211004",
       "description": {
         "id": 5211004,
-        "desc": "[Master Level : 30]\\nAttacks a monster nearby with a fire-based attack. The affected monster will keep receiving damage for a short period of time.",
+        "desc": "[마스터 레벨 : 30]\\nAttacks a monster nearby with a fire-based attack. The affected monster will keep receiving damage for a short period of time.",
         "name": "Flamethrower",
         "bookName": ""
       },
@@ -2338,7 +2338,7 @@
       "soundPath": "Skill.img/5211005",
       "description": {
         "id": 5211005,
-        "desc": "[Master Level : 30]\\nAttacks the closest monster with an ice-based attack. The affected monster will be frozen for a short period of time.",
+        "desc": "[마스터 레벨 : 30]\\nAttacks the closest monster with an ice-based attack. The affected monster will be frozen for a short period of time.",
         "name": "Ice Splitter",
         "bookName": ""
       },
@@ -2946,7 +2946,7 @@
       "soundPath": "Skill.img/5211006",
       "description": {
         "id": 5211006,
-        "desc": "[Master Level : 30]\\nSends a parrot that'll mark a target on a monster. From then on out, all attacks will be focused on that monster.",
+        "desc": "[마스터 레벨 : 30]\\nSends a parrot that'll mark a target on a monster. From then on out, all attacks will be focused on that monster.",
         "name": "Homing Beacon",
         "bookName": ""
       },

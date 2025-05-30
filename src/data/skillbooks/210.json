@@ -129,7 +129,7 @@
       "soundPath": "Skill.img/2100000",
       "description": {
         "id": 2100000,
-        "desc": "[Master Level : 20]\\nAbsorbs the enemy's MP when attacking with Magic skills, until it reaches 0.",
+        "desc": "[마스터 레벨 : 20]\\nAbsorbs the enemy's MP when attacking with Magic skills, until it reaches 0.",
         "name": "MP Eater",
         "bookName": ""
       },
@@ -567,7 +567,7 @@
       "soundPath": "Skill.img/2101001",
       "description": {
         "id": 2101001,
-        "desc": "[Master Level : 20]\\nMeditate for a bit to temporarily boost up the magic attack of party members around the area.\\nRequired Skill : #cAt least Level 3 on MP Eater#",
+        "desc": "[마스터 레벨 : 20]\\nMeditate for a bit to temporarily boost up the magic attack of party members around the area.\\nRequired Skill : #cAt least Level 3 on MP Eater#",
         "name": "Meditation",
         "bookName": ""
       },
@@ -747,7 +747,7 @@
       "soundPath": "Skill.img/2101002",
       "description": {
         "id": 2101002,
-        "desc": "[Master Level : 20]\\nUse the arrow keys to teleport to other places in the same map on a set distance.",
+        "desc": "[마스터 레벨 : 20]\\nUse the arrow keys to teleport to other places in the same map on a set distance.",
         "name": "Teleport",
         "bookName": ""
       },
@@ -1017,7 +1017,7 @@
       "soundPath": "Skill.img/2101003",
       "description": {
         "id": 2101003,
-        "desc": "[Master Level : 20]\\nTemporarily slows down the movement of up to 6 monsters. Cannot be used on the same monsters more than twice in a row.\\nRequired Skill : #cAt least Level 5 on Teleport#",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily slows down the movement of up to 6 monsters. Cannot be used on the same monsters more than twice in a row.\\nRequired Skill : #cAt least Level 5 on Teleport#",
         "name": "Slow",
         "bookName": ""
       },
@@ -1560,7 +1560,7 @@
       "soundPath": "Skill.img/2101004",
       "description": {
         "id": 2101004,
-        "desc": "[Master Level : 30]\\nAttacks a single monster with a fire arrow using the magic power. Applies 1.5 times the damage to the ice-based enemies, whereas fire-based enemies receive half the damage, if that.",
+        "desc": "[마스터 레벨 : 30]\\nAttacks a single monster with a fire arrow using the magic power. Applies 1.5 times the damage to the ice-based enemies, whereas fire-based enemies receive half the damage, if that.",
         "name": "Fire Arrow",
         "bookName": ""
       },
@@ -2011,7 +2011,7 @@
       "soundPath": "Skill.img/2101005",
       "description": {
         "id": 2101005,
-        "desc": "[Master Level : 30]\\nAttacks a single monster by splashing a Poison drop.  With a given success rate, the monster gets temporarily poisoned.",
+        "desc": "[마스터 레벨 : 30]\\nAttacks a single monster by splashing a Poison drop.  With a given success rate, the monster gets temporarily poisoned.",
         "name": "Poison Breath",
         "bookName": ""
       },

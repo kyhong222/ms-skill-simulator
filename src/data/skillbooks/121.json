@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/1210000",
       "description": {
         "id": 1210000,
-        "desc": "[Master Level : 20]\\nRecovering even more MP every 10 sec. ",
+        "desc": "[마스터 레벨 : 20]\\nRecovering even more MP every 10 sec. ",
         "name": "Improving MP Recovery",
         "bookName": ""
       },
@@ -112,7 +112,7 @@
       "soundPath": "Skill.img/1210001",
       "description": {
         "id": 1210001,
-        "desc": "[Master Level : 20]\\nShield Defense increases. However, it does not affect if the character does not equip the shield.",
+        "desc": "[마스터 레벨 : 20]\\nShield Defense increases. However, it does not affect if the character does not equip the shield.",
         "name": "Shield Mastery",
         "bookName": ""
       },
@@ -855,7 +855,7 @@
       "soundPath": "Skill.img/1211002",
       "description": {
         "id": 1211002,
-        "desc": "[Master Level : 30]\\n Make the enemy stun. You can use this skill only when your combo is charged up.",
+        "desc": "[마스터 레벨 : 30]\\n Make the enemy stun. You can use this skill only when your combo is charged up.",
         "name": "Charged Blow",
         "bookName": ""
       },
@@ -1451,7 +1451,7 @@
       "soundPath": "Skill.img/1211003",
       "description": {
         "id": 1211003,
-        "desc": "[Master Level: 30]\\n Temporarily adds an element of fire into the sword.  It gets cancelled when the charge blow is used or it simply expires.",
+        "desc": "[마스터 레벨: 30]\\n Temporarily adds an element of fire into the sword.  It gets cancelled when the charge blow is used or it simply expires.",
         "name": "Fire Charge: Sword",
         "bookName": ""
       },
@@ -2107,7 +2107,7 @@
       "soundPath": "Skill.img/1211004",
       "description": {
         "id": 1211004,
-        "desc": "[Master Level: 30]\\n Temporarily adds an element of fire into the blunt weapon.  It gets cancelled when the charge blow is used or it simply expires.",
+        "desc": "[마스터 레벨: 30]\\n Temporarily adds an element of fire into the blunt weapon.  It gets cancelled when the charge blow is used or it simply expires.",
         "name": "Flame Charge: BW",
         "bookName": ""
       },
@@ -2763,7 +2763,7 @@
       "soundPath": "Skill.img/1211005",
       "description": {
         "id": 1211005,
-        "desc": "[Master Level: 30]\\n You can attack with ice power. The skill get canceled if you use Charge Blow or if the time runs out.",
+        "desc": "[마스터 레벨: 30]\\n You can attack with ice power. The skill get canceled if you use Charge Blow or if the time runs out.",
         "name": "Ice Charge: Sword",
         "bookName": ""
       },
@@ -3449,7 +3449,7 @@
       "soundPath": "Skill.img/1211006",
       "description": {
         "id": 1211006,
-        "desc": "[Master Level: 30]\\n Temporarily adds an element of blizzard into the blunt weapon.  It gets cancelled when the charge blow is used or it simply expires.",
+        "desc": "[마스터 레벨: 30]\\n Temporarily adds an element of blizzard into the blunt weapon.  It gets cancelled when the charge blow is used or it simply expires.",
         "name": "Blizzard Charge: BW",
         "bookName": ""
       },
@@ -4135,7 +4135,7 @@
       "soundPath": "Skill.img/1211007",
       "description": {
         "id": 1211007,
-        "desc": "[Master Level: 30]\\n Temporarily adds an element of thunder into the sword.  It gets cancelled when the charge blow is used or it simply expires.",
+        "desc": "[마스터 레벨: 30]\\n Temporarily adds an element of thunder into the sword.  It gets cancelled when the charge blow is used or it simply expires.",
         "name": "Thunder Charge: Sword",
         "bookName": ""
       },
@@ -4791,7 +4791,7 @@
       "soundPath": "Skill.img/1211008",
       "description": {
         "id": 1211008,
-        "desc": "[Master Level: 30]\\n Temporarily adds an element of lightning into the blunt weapon.  It gets cancelled when the charge blow is used or it simply expires.",
+        "desc": "[마스터 레벨: 30]\\n Temporarily adds an element of lightning into the blunt weapon.  It gets cancelled when the charge blow is used or it simply expires.",
         "name": "Lightning Charge: BW",
         "bookName": ""
       },
@@ -5519,7 +5519,7 @@
       "soundPath": "Skill.img/1211009",
       "description": {
         "id": 1211009,
-        "desc": "[Master Level : 20]\\n Nullifies the magic defense buff used by the monster with a given success rate.\\nRequired Skill : #cAt least Level 3 on Charged Blow#",
+        "desc": "[마스터 레벨 : 20]\\n Nullifies the magic defense buff used by the monster with a given success rate.\\nRequired Skill : #cAt least Level 3 on Charged Blow#",
         "name": "Magic Crash",
         "bookName": ""
       },
@@ -5716,6 +5716,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "White Knight's Code"
+    "bookName": "나이트의 모든 것"
   }
 }

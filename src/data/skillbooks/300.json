@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/3000000",
       "description": {
         "id": 3000000,
-        "desc": "[Master Level : 16]\\nIncreases accuracy.",
+        "desc": "[마스터 레벨 : 16]\\nIncreases accuracy.",
         "name": "The Blessing of Amazon",
         "bookName": ""
       },
@@ -96,7 +96,7 @@
       "soundPath": "Skill.img/3000001",
       "description": {
         "id": 3000001,
-        "desc": "[Master Level : 20]\\nLaunches a critical attack with a given success rate.",
+        "desc": "[마스터 레벨 : 20]\\nLaunches a critical attack with a given success rate.",
         "name": "Critical Shot",
         "bookName": ""
       },
@@ -213,7 +213,7 @@
       "soundPath": "Skill.img/3000002",
       "description": {
         "id": 3000002,
-        "desc": "[Master Level : 8]\\nIncreases the range of attack for bows and crossbows.\\nRequired Skill : #cAt least Level 3 on The Blessing of Amazon#",
+        "desc": "[마스터 레벨 : 8]\\nIncreases the range of attack for bows and crossbows.\\nRequired Skill : #cAt least Level 3 on The Blessing of Amazon#",
         "name": "The Eye of Amazon",
         "bookName": ""
       },
@@ -382,7 +382,7 @@
       "soundPath": "Skill.img/3001003",
       "description": {
         "id": 3001003,
-        "desc": "[Master Level : 20]\\nFocusing to temporarily increase accuracy and avoidability.\\nRequired Skill : #cAt least Level 3 on The Blessing of Amazon#",
+        "desc": "[마스터 레벨 : 20]\\nFocusing to temporarily increase accuracy and avoidability.\\nRequired Skill : #cAt least Level 3 on The Blessing of Amazon#",
         "name": "Focus",
         "bookName": ""
       },
@@ -647,7 +647,7 @@
       "soundPath": "Skill.img/3001004",
       "description": {
         "id": 3001004,
-        "desc": "[Master Level : 20]\\nFires an arrow with authority. Applies more damage than usual.",
+        "desc": "[마스터 레벨 : 20]\\nFires an arrow with authority. Applies more damage than usual.",
         "name": "Arrow Blow",
         "bookName": ""
       },
@@ -827,7 +827,7 @@
       "soundPath": "Skill.img/3001005",
       "description": {
         "id": 3001005,
-        "desc": "[Master Level : 20]\\nFires two arrows at once to attack an enemy twice.\\nRequired Skill : #cAt least Level 1 on Arrow Blow#",
+        "desc": "[마스터 레벨 : 20]\\nFires two arrows at once to attack an enemy twice.\\nRequired Skill : #cAt least Level 1 on Arrow Blow#",
         "name": "Double Shot",
         "bookName": ""
       },

@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/1000000",
       "description": {
         "id": 1000000,
-        "desc": "[Master Level : 16]\\nRecover additional HP every 10 sec. while standing still.",
-        "name": "Improved HP Recovery",
+        "desc": "[마스터 레벨 : 16]\\nRecover additional HP every 10 sec. while standing still.",
+        "name": "HP 회복력 향상",
         "bookName": ""
       },
       "levelProperties": [
@@ -96,7 +96,7 @@
       "soundPath": "Skill.img/1000001",
       "description": {
         "id": 1000001,
-        "desc": "Master Level : 10] This skill boosts up the amount of increase on MaxHP after each Level UP, or AP used on MaxHP.\\nRequired Skill : #cAt least Level 5 on Improving HP Recovery.#",
+        "desc": "마스터 레벨 : 10] This skill boosts up the amount of increase on MaxHP after each Level UP, or AP used on MaxHP.\\nRequired Skill : #cAt least Level 5 on Improving HP Recovery.#",
         "name": "Improved MaxHP Increase",
         "bookName": ""
       },
@@ -166,7 +166,7 @@
       "soundPath": "Skill.img/1000002",
       "description": {
         "id": 1000002,
-        "desc": "[Master Level : 8]\\nEven when hanging on the rope or on a ladder, you'll be able to recover some HP after a certain amount of time.\\nRequired Skill : #cAt least Level 3 on Improving MaxHP Increase.#",
+        "desc": "[마스터 레벨 : 8]\\nEven when hanging on the rope or on a ladder, you'll be able to recover some HP after a certain amount of time.\\nRequired Skill : #cAt least Level 3 on Improving MaxHP Increase.#",
         "name": "Endure",
         "bookName": ""
       },
@@ -221,7 +221,7 @@
       "soundPath": "Skill.img/1001003",
       "description": {
         "id": 1001003,
-        "desc": "[Master Level : 20]\\nTemporarily increases your weapon defense.\\nRequired Skill : #cAt least Level 3 on Endure#",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily increases your weapon defense.\\nRequired Skill : #cAt least Level 3 on Endure#",
         "name": "Iron Body",
         "bookName": ""
       },
@@ -525,7 +525,7 @@
       "soundPath": "Skill.img/1001004",
       "description": {
         "id": 1001004,
-        "desc": "[Master Level : 20]\\nUse MP to deliver a killer blow to the monsters with a sword.",
+        "desc": "[마스터 레벨 : 20]\\nUse MP to deliver a killer blow to the monsters with a sword.",
         "name": "Power Strike",
         "bookName": ""
       },
@@ -829,7 +829,7 @@
       "soundPath": "Skill.img/1001005",
       "description": {
         "id": 1001005,
-        "desc": "[Master Level : 20]\\nUse HP and MP to attack every enemy around you with a sword.\\nRequired Skill : #cAt least Level 1 on Power Strike#",
+        "desc": "[마스터 레벨 : 20]\\nUse HP and MP to attack every enemy around you with a sword.\\nRequired Skill : #cAt least Level 1 on Power Strike#",
         "name": "Slash Blast",
         "bookName": ""
       },
@@ -1006,6 +1006,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Warrior Basics"
+    "bookName": "전사의 기본"
   }
 }

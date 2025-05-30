@@ -129,7 +129,7 @@
       "soundPath": "Skill.img/2300000",
       "description": {
         "id": 2300000,
-        "desc": "[Master Level : 20]\\nAbsorbs the enemy's MP when attacking with Magic skills, until it reaches 0.",
+        "desc": "[마스터 레벨 : 20]\\nAbsorbs the enemy's MP when attacking with Magic skills, until it reaches 0.",
         "name": "MP Eater",
         "bookName": ""
       },
@@ -246,7 +246,7 @@
       "soundPath": "Skill.img/2301001",
       "description": {
         "id": 2301001,
-        "desc": "[Master Level : 20]\\nUse the arrow keys to teleport to other places in the same map on a set distance.",
+        "desc": "[마스터 레벨 : 20]\\nUse the arrow keys to teleport to other places in the same map on a set distance.",
         "name": "Teleport",
         "bookName": ""
       },
@@ -816,7 +816,7 @@
       "soundPath": "Skill.img/2301002",
       "description": {
         "id": 2301002,
-        "desc": "[Master Level : 30]\\nRecovers the HP of all party members around the area. The amount of healing depends on the number of people being healed, and the undead monster in the vicinity of this will receive damage.",
+        "desc": "[마스터 레벨 : 30]\\nRecovers the HP of all party members around the area. The amount of healing depends on the number of people being healed, and the undead monster in the vicinity of this will receive damage.",
         "name": "Heal",
         "bookName": ""
       },
@@ -1280,7 +1280,7 @@
       "soundPath": "Skill.img/2301003",
       "description": {
         "id": 2301003,
-        "desc": "[Master Level : 20]\\nTemporarily decreases the weapon damage received. It has no effect, however, on the magic attack.\\nRequired Skill : #cAt least Level 5 on Heal#",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily decreases the weapon damage received. It has no effect, however, on the magic attack.\\nRequired Skill : #cAt least Level 5 on Heal#",
         "name": "Invincible",
         "bookName": ""
       },
@@ -1831,7 +1831,7 @@
       "soundPath": "Skill.img/2301004",
       "description": {
         "id": 2301004,
-        "desc": "[Master Level : 20]\\nTemporarily increases the weapon def., magic def., accuracy, and avoidability of all party members around the area. This cannot be combined with a skill or a potion.\\nRequired Skill : #cAt least Level 5 on Invincible#",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily increases the weapon def., magic def., accuracy, and avoidability of all party members around the area. This cannot be combined with a skill or a potion.\\nRequired Skill : #cAt least Level 5 on Invincible#",
         "name": "Bless",
         "bookName": ""
       },
@@ -2324,7 +2324,7 @@
       "soundPath": "Skill.img/2301005",
       "description": {
         "id": 2301005,
-        "desc": "[Master Level : 30]\\nAttacks a single monster by firing Holy Arrows.  Very effective against the undead's or devil-based monsters.",
+        "desc": "[마스터 레벨 : 30]\\nAttacks a single monster by firing Holy Arrows.  Very effective against the undead's or devil-based monsters.",
         "name": "Holy Arrow",
         "bookName": ""
       },

@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/3200000",
       "description": {
         "id": 3200000,
-        "desc": "[Master Level : 20]\\nIncreases the crossbow mastery and accuracy. It only applies when a crossbow is in hand.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the crossbow mastery and accuracy. It only applies when a crossbow is in hand.",
         "name": "Crossbow Mastery",
         "bookName": ""
       },
@@ -192,7 +192,7 @@
       "soundPath": "Skill.img/3200001",
       "description": {
         "id": 3200001,
-        "desc": "[Master Level : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a crossbow.\\nRequired Skill : #cAt least Level 3 on Crossbow Mastery#",
+        "desc": "[마스터 레벨 : 30]\\nStrikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a crossbow.\\nRequired Skill : #cAt least Level 3 on Crossbow Mastery#",
         "name": "Final Attack : Crossbow",
         "bookName": ""
       },
@@ -533,7 +533,7 @@
       "soundPath": "Skill.img/3201002",
       "description": {
         "id": 3201002,
-        "desc": "[Master Level : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the crossbow. It only works with a crossbow in hand.\\nRequired Skill : #cAt least Level 5 on Crossbow Mastery#",
+        "desc": "[마스터 레벨 : 20]\\nUses HP and MP to temporarily boost up the attacking speed of the crossbow. It only works with a crossbow in hand.\\nRequired Skill : #cAt least Level 5 on Crossbow Mastery#",
         "name": "Crossbow Booster",
         "bookName": ""
       },
@@ -781,7 +781,7 @@
       "soundPath": "Skill.img/3201003",
       "description": {
         "id": 3201003,
-        "desc": "[Master Level : 20]\\nIncreases the success rate for pushing off the monsters when swinging a crossbow.  As the level rises, the number of monsters that one can push off with one swing increases.",
+        "desc": "[마스터 레벨 : 20]\\nIncreases the success rate for pushing off the monsters when swinging a crossbow.  As the level rises, the number of monsters that one can push off with one swing increases.",
         "name": "Power Knock-Back",
         "bookName": ""
       },
@@ -1261,7 +1261,7 @@
       "soundPath": "Skill.img/3201004",
       "description": {
         "id": 3201004,
-        "desc": "[Master Level : 20]\\nTemporarily allows the character to fire crossbow arrows without using up the arrows. Only works with a crossbow in hand.\\nRequired Skill : #cAt least Level 5 on Bow Booster#",
+        "desc": "[마스터 레벨 : 20]\\nTemporarily allows the character to fire crossbow arrows without using up the arrows. Only works with a crossbow in hand.\\nRequired Skill : #cAt least Level 5 on Bow Booster#",
         "name": "Soul Arrow : Crossbow",
         "bookName": ""
       },
@@ -1632,7 +1632,7 @@
       "soundPath": "Skill.img/3201005",
       "description": {
         "id": 3201005,
-        "desc": "[Master Level : 30]\\nAttacks up to 6 monsters at once with a powerful arrow, which penetrates through them. Damage decreases as the arrow flies through.",
+        "desc": "[마스터 레벨 : 30]\\nAttacks up to 6 monsters at once with a powerful arrow, which penetrates through them. Damage decreases as the arrow flies through.",
         "name": "Iron Arrow : Crossbow",
         "bookName": ""
       },
