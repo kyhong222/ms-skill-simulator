@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".", // 루트 기준
+    "paths": {
+      "@/*": ["src/*"] // src 폴더가 루트라면 이렇게
+    }
+  }
+}

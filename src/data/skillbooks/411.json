@@ -1,0 +1,6 @@
+{
+  "error": "Unable to cast object of type 'PKG1.WZProperty' to type 'PKG1.IWZPropertyVal'.",
+  "pending": false,
+  "complete": false,
+  "message": "An unexpected error occurred while processing your request"
+}
