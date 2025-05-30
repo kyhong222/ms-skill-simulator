@@ -21,7 +21,7 @@ const SkillTooltip: React.FC<SkillTooltipProps> = ({ skill, allSkills }) => {
       <div className="flex items-start gap-2 mb-1">
         {skill.icon && (
           <img
-            src={`data:image/png;base64,${skill.icon}`}
+            src={`data:image/png;base64,${skill.iconMouseover || skill.icon}`}
             alt={`${skill.description?.name} icon`}
             className="w-16 h-16 flex-shrink-0"
           />

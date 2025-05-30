@@ -14,8 +14,7 @@ interface SkillTreeProps {
   onResetRef?: (resetFn: () => void) => void;
 }
 
-function calculateSkillPoints(currentLevel: number, isMagician: boolean): number {
-  const jobLevel = isMagician ? 8 : 10;
+function calculateSkillPoints(currentLevel: number, jobLevel: number): number {
   let sp = (currentLevel - jobLevel) * 3;
 
   if (currentLevel >= jobLevel) sp += 1;
@@ -26,9 +25,9 @@ function calculateSkillPoints(currentLevel: number, isMagician: boolean): number
   return Math.max(sp, 0);
 }
 
-function isMagicianJob(jobId: number): boolean {
+function calcJobLevel(jobId: number): number {
   const magicianJobIds = [200, 210, 211, 212, 220, 221, 222, 230, 231, 232];
-  return magicianJobIds.includes(jobId);
+  return magicianJobIds.includes(jobId) ? 8 : 10;
 }
 
 const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
@@ -80,8 +79,8 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
     setSkillLevels((prev) => prev.map((skill) => ({ ...skill, level: 0 })));
   };
 
-  const isMagician = isMagicianJob(selectedJobId);
-  const totalSkillPoints = calculateSkillPoints(currentLevel, isMagician);
+  const jobLevel = calcJobLevel(selectedJobId);
+  const totalSkillPoints = calculateSkillPoints(currentLevel, jobLevel);
   const usedSkillPoints = skillLevels.reduce((sum, skill) => sum + skill.level, 0);
   const remainingSkillPoints = totalSkillPoints - usedSkillPoints;
 
@@ -102,7 +101,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
             현재 레벨:
             <input
               type="number"
-              min={isMagician ? 8 : 10}
+              min={jobLevel}
               max={300}
               value={currentLevel}
               onChange={(e) => setCurrentLevel(Number(e.target.value))}
@@ -116,7 +115,11 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
             사용한 포인트: <strong>{usedSkillPoints}</strong>
           </div>
           <div>
-            남은 포인트: <strong>{remainingSkillPoints}</strong>
+            {/* 남은 포인트가 음수면 빨간색으로 표기 */}
+            남은 포인트:{" "}
+            <strong className={remainingSkillPoints < 0 ? "text-red-500" : ""}>
+              {remainingSkillPoints}
+            </strong>
           </div>
         </div>
 
@@ -128,7 +131,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
       </div>
 
       <div className="flex overflow-x-auto gap-6 pb-4">
-        {Object.entries(skillbooks).map(([jobId, skillbook]) =>
+        {Object.entries(skillbooks).map(([jobId, skillbook], index) =>
           skillbook ? (
             <SkillBranch
               key={jobId}
@@ -136,6 +139,10 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
               skillbook={skillbook}
               skillLevels={skillLevels}
               onLevelChange={onLevelChange}
+              branchIndex={index + 1}
+              jobLevel={jobLevel}
+              usedSkillPoints={usedSkillPoints}
+              remainingSkillPoints={remainingSkillPoints}
             />
           ) : (
             <div key={jobId} className="text-red-500">
