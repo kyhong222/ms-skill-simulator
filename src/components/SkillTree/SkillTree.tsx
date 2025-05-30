@@ -34,8 +34,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
   const [skillbooks, setSkillbooks] = useState<Record<number, IJobSkillBook | null>>({});
   const [loading, setLoading] = useState(true);
   const [skillLevels, setSkillLevels] = useState<SkillLevel[]>([]);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [allSkills, setAllSkills] = useState<{ id: number; name: string }[]>([]);
+  const [, setAllSkills] = useState<{ id: number; name: string }[]>([]);
   const [currentLevel, setCurrentLevel] = useState(10); // 기본값 10
 
   useEffect(() => {

@@ -16,8 +16,7 @@ interface SkillBranchProps {
 
 
 const SkillBranch: React.FC<SkillBranchProps> = ({
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  jobId,
+   
   skillbook,
   skillLevels,
   onLevelChange,
