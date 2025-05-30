@@ -124,7 +124,11 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
         </div>
 
         <div className="flex gap-2">
-          <button onClick={resetLevels} className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">
+          <button 
+            onClick={resetLevels} 
+            className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+            style={{ width: "120px" }}
+          >
             스킬 초기화
           </button>
         </div>
