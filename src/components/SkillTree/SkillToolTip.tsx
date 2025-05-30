@@ -13,7 +13,7 @@ const SkillTooltip: React.FC<SkillTooltipProps> = ({ skill, allSkills }) => {
   };
 
   return (
-    <div className="p-3 w-64 bg-white border border-gray-300 rounded shadow-lg text-sm text-gray-800">
+    <div className="p-3 w-128 bg-white border border-gray-300 rounded shadow-lg text-sm text-gray-800">
       {/* 스킬명 */}
       <h3 className="font-bold mb-2">{skill.description?.name || "알 수 없는 스킬"}</h3>
 
@@ -37,12 +37,12 @@ const SkillTooltip: React.FC<SkillTooltipProps> = ({ skill, allSkills }) => {
           {/* 필요 스킬 (설명 바로 아래에 위치) */}
           {skill.requiredSkillLevels && Object.keys(skill.requiredSkillLevels).length > 0 && (
             <div className="mt-1">
-              <strong>필요 스킬: </strong>
+              <strong>필요 스킬:</strong>
               <ul className="list-disc list-inside ml-4">
                 {Object.entries(skill.requiredSkillLevels).map(([reqSkillId, reqLevel]) => (
-                  <li key={reqSkillId}>
+                  <p key={reqSkillId}>
                     {getSkillNameById(Number(reqSkillId))} {reqLevel}레벨 이상
-                  </li>
+                  </p>
                 ))}
               </ul>
             </div>
