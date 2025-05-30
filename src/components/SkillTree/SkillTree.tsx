@@ -116,15 +116,13 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
           <div>
             {/* 남은 포인트가 음수면 빨간색으로 표기 */}
             남은 포인트:{" "}
-            <strong className={remainingSkillPoints < 0 ? "text-red-500" : ""}>
-              {remainingSkillPoints}
-            </strong>
+            <strong className={remainingSkillPoints < 0 ? "text-red-500" : ""}>{remainingSkillPoints}</strong>
           </div>
         </div>
 
         <div className="flex gap-2">
-          <button 
-            onClick={resetLevels} 
+          <button
+            onClick={resetLevels}
             className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
             style={{ width: "120px" }}
           >
