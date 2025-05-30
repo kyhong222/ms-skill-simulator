@@ -8,7 +8,7 @@ function App() {
   const [job, setJob] = useState<IJob | null>(null);
 
   return (
-    <div className="p-6">
+    <div className="p-0">
       {!job && <JobSelector onSelect={setJob} />}
       {job && (
         <div>

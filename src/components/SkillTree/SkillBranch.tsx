@@ -46,6 +46,10 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
     return (branchLevel - jobLevel) * 3 + (branchIndex - 1);
   }
 
+  // 차수에 따른 남은 필요 포인트 계산
+  const remainingPointsForBranch = Math.max(calcPointsForBranch(branchIndex, jobLevel) - usedSkillPoints, 0);
+  
+
   // 해당 차수에 필요한 포인트를 사용했는지 확인
   // 예: 1차는 0, 2차는 30, 3차는 70, 4차는 120
   const hasBranchSatisfiedSP = () => {
@@ -149,7 +153,9 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
 
   return (
     // 차수에 맞는 포인트를 사용하지 않았으면 branch 전체를 비활성화
-    <div className={`p-4 border rounded-xl shadow bg-white relative ${!hasBranchSatisfiedSP() ? "opacity-50 cursor-not-allowed" : ""}`}>
+    <div 
+      className={`p-2 border rounded-xl shadow bg-white relative ${!hasBranchSatisfiedSP() ? "opacity-50 cursor-not-allowed" : ""}`}
+    >
       {/* 직업 아이콘 + 스킬북 이름 */}
       <div className="flex items-start gap-3 mb-4">
         {skillbook.icon && (
@@ -164,6 +170,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
         <div className="flex flex-col text-left">
           <h2 className="text-2xl font-bold">{skillbook.description.bookName}</h2>
           <span className="text-sm text-gray-600">총 투자 포인트: {totalInvestedPoints}</span>
+          <span className="text-sm text-gray-600">필요 투자 포인트: {remainingPointsForBranch}</span>
         </div>
       </div>
 
