@@ -153,7 +153,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
   return (
     // 차수에 맞는 포인트를 사용하지 않았으면 branch 전체를 비활성화
     <div 
-      className={`p-2 border rounded-xl w-full shadow bg-white relative ${!hasBranchSatisfiedSP() ? "opacity-50 cursor-not-allowed" : ""}`}
+      className={`p-2 border rounded-xl w-full shadow bg-white relative ${!hasBranchSatisfiedSP() ? "filter cursor-not-allowed" : ""}`}
     >
       {/* 직업 아이콘 + 스킬북 이름 */}
       <div className="flex items-start gap-3 mb-4">
@@ -179,7 +179,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
           // 스킬이 필요 스킬을 만족하지 않으면 비활성화(툴팁은 표시)
           <div
             key={skill.id}
-            className={`flex items-start gap-4 p-3 border rounded-lg relative ${!isSatisfiedRequiredSkills(skill.id) ? "opacity-50 cursor-not-allowed" : ""}`}
+            className={`flex items-start gap-4 p-3 border rounded-lg relative`}
             onMouseEnter={() => setHoveredSkillId(skill.id)}
             onMouseLeave={() => setHoveredSkillId(null)}
             onMouseMove={handleMouseMove}
