@@ -94,8 +94,8 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
   return (
     <div>
       {/* 상단 바: 현재 레벨 + 스킬 포인트 정보 */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-4">
+      <div className="flex items-center justify-between mb-4 min-w-[1500px]">
+        <div className="flex items-center justify-between gap-4">
           <label className="font-semibold">
             현재 레벨:
             <input
@@ -133,7 +133,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
         </div>
       </div>
 
-      <div className="flex overflow-x-auto gap-6 pb-4">
+      <div className="flex overflow-x-visible gap-6 pb-4 w-full justify-between">
         {Object.entries(skillbooks).map(([jobId, skillbook], index) =>
           skillbook ? (
             <SkillBranch

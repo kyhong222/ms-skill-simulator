@@ -153,7 +153,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
   return (
     // 차수에 맞는 포인트를 사용하지 않았으면 branch 전체를 비활성화
     <div 
-      className={`p-2 border rounded-xl shadow bg-white relative ${!hasBranchSatisfiedSP() ? "opacity-50 cursor-not-allowed" : ""}`}
+      className={`p-2 border rounded-xl w-full shadow bg-white relative ${!hasBranchSatisfiedSP() ? "opacity-50 cursor-not-allowed" : ""}`}
     >
       {/* 직업 아이콘 + 스킬북 이름 */}
       <div className="flex items-start gap-3 mb-4">
@@ -174,7 +174,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
       </div>
 
       {/* 스킬 목록 */}
-      <div className="grid gap-2">
+      <div className="grid gap-2 w-full">
         {skillbook.skills.map((skill) => (
           // 스킬이 필요 스킬을 만족하지 않으면 비활성화(툴팁은 표시)
           <div
@@ -200,7 +200,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
 
             {/* 현재 레벨 및 버튼들 */}
             <div className="flex items-center gap-1 ml-0 min-w-[120px] justify-end">
-              <span className="text-left">레벨: {getLevel(skill.id)}</span>
+              <span className="text-left">{`${getLevel(skill.id)}/${skill.masterLevel}`}</span>
               <div className="ml-auto flex items-center gap-0">
                 <button
                   onClick={() => increaseLevel(skill.id)}

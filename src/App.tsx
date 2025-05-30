@@ -8,7 +8,7 @@ function App() {
   const [job, setJob] = useState<IJob | null>(null);
 
   return (
-    <div className="p-0">
+    <div className="p-0 min-w-[1500px] flex flex-col mx-auto max-w-full">
       {!job && <JobSelector onSelect={setJob} />}
       {job && (
         <div>
