@@ -27,6 +27,9 @@ const SkillTooltip: React.FC<SkillTooltipProps> = ({ skill, allSkills }) => {
           />
         )}
         <div className="flex flex-col text-left">
+          <p className="text-gray-600 mb-1">
+            {`[마스터 레벨 : ${skill.masterLevel || 0}]`}
+            </p>
           <p className="whitespace-pre-line">
             {(skill.description?.desc || "설명 없음").replace(/\\n/g, "\n")}
           </p>
