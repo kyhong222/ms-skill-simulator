@@ -235,7 +235,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
                 <button
                   onClick={() => decreaseLevel(skill.id)}
                   className={`px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
-                    !isSatisfiedRequiredSkills(skill.id) || !hasBranchSatisfiedSP()|| remainingPointsForBranch !== 0 || getLevel(skill.id) <= 0 ? "bg-gray-400 cursor-not-allowed" : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
+                    !isSatisfiedRequiredSkills(skill.id) || !hasBranchSatisfiedSP() || remainingPointsForBranch !== 0 || getLevel(skill.id) <= 0 ? "bg-gray-400 cursor-not-allowed" : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
                   }`}
                   style={{ transform: "scale(0.75)" }}
                   aria-label="Decrease level"
