@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/1000000",
       "description": {
         "id": 1000000,
-        "desc": "[마스터 레벨 : 16]\\nRecover additional HP every 10 sec. while standing still.",
+        "desc": "움직이지 않을 경우 5초마다 더욱 많은 양의 HP를 회복할 수 있다.",
         "name": "HP 회복력 향상",
         "bookName": ""
       },
@@ -96,8 +96,8 @@
       "soundPath": "Skill.img/1000001",
       "description": {
         "id": 1000001,
-        "desc": "[마스터 레벨 : 10] This skill boosts up the amount of increase on MaxHP after each Level UP, or AP used on MaxHP.\\nRequired Skill : #cAt least Level 5 on Improving HP Recovery.#",
-        "name": "Improved MaxHP Increase",
+        "desc": "Level UP 할 때, Max HP에 AP를 사용할 때 Max HP의 증가량을 향상시킨다.",
+        "name": "HP 증가량 향상",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -166,8 +166,8 @@
       "soundPath": "Skill.img/1000002",
       "description": {
         "id": 1000002,
-        "desc": "[마스터 레벨 : 8]\\nEven when hanging on the rope or on a ladder, you'll be able to recover some HP after a certain amount of time.\\nRequired Skill : #cAt least Level 3 on Improving MaxHP Increase.#",
-        "name": "Endure",
+        "desc": "사다리나 로프에 가만히 매달려 있는 상태에서도 일정 시간마다 HP를 회복할 수 있다.",
+        "name": "인듀어",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -221,8 +221,8 @@
       "soundPath": "Skill.img/1001003",
       "description": {
         "id": 1001003,
-        "desc": "[마스터 레벨 : 20]\\nTemporarily increases your weapon defense.\\nRequired Skill : #cAt least Level 3 on Endure#",
-        "name": "Iron Body",
+        "desc": "일정 시간동안 물리 방어력을 증가시켜 준다.",
+        "name": "아이언 바디",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -525,8 +525,8 @@
       "soundPath": "Skill.img/1001004",
       "description": {
         "id": 1001004,
-        "desc": "[마스터 레벨 : 20]\\nUse MP to deliver a killer blow to the monsters with a sword.",
-        "name": "Power Strike",
+        "desc": "MP를 소비하여 장착한 무기로 적에게 일격을 가한다.",
+        "name": "파워 스트라이크",
         "bookName": ""
       },
       "levelProperties": [
@@ -829,8 +829,8 @@
       "soundPath": "Skill.img/1001005",
       "description": {
         "id": 1001005,
-        "desc": "[마스터 레벨 : 20]\\nUse HP and MP to attack every enemy around you with a sword.\\nRequired Skill : #cAt least Level 1 on Power Strike#",
-        "name": "Slash Blast",
+        "desc": "HP, MP를 소비하여 장착한 무기로 주위의 적에게 전체 공격을 가한다.",
+        "name": "슬래시 블러스트",
         "bookName": ""
       },
       "requiredSkillLevels": {
