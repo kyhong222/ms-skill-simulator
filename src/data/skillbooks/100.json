@@ -96,7 +96,7 @@
       "soundPath": "Skill.img/1000001",
       "description": {
         "id": 1000001,
-        "desc": "마스터 레벨 : 10] This skill boosts up the amount of increase on MaxHP after each Level UP, or AP used on MaxHP.\\nRequired Skill : #cAt least Level 5 on Improving HP Recovery.#",
+        "desc": "[마스터 레벨 : 10] This skill boosts up the amount of increase on MaxHP after each Level UP, or AP used on MaxHP.\\nRequired Skill : #cAt least Level 5 on Improving HP Recovery.#",
         "name": "Improved MaxHP Increase",
         "bookName": ""
       },
