@@ -53,7 +53,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
   // 예: 1차는 0, 2차는 30, 3차는 70, 4차는 120
   const hasBranchSatisfiedSP = () => {
     const pointsRequiredForBranch = calcPointsForBranch(branchIndex, jobLevel);
-    return usedSkillPoints >= pointsRequiredForBranch;
+    return usedSkillPoints - totalInvestedPoints >= pointsRequiredForBranch;
   }
 
   // 남은 포인트가 양수인지 확인
@@ -119,6 +119,25 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
 
     // 조건 만족하면 레벨업
     onLevelChange(skillId, currentLevel + 1);
+  };
+
+  // 스킬 레벨 감소 핸들러
+  const decreaseLevel = (skillId: number) => {
+    const currentLevel = getLevel(skillId);
+    if (currentLevel <= 0) return; // 이미 최소 레벨
+    // 해당 스킬 객체 찾기
+    const skill = skillbook.skills.find((s) => s.id === skillId);
+    if (!skill) return;
+    // 필요 스킬 조건 확인
+    if (!isSatisfiedRequiredSkills(skillId)) {
+      return;
+    }
+    // 사용한 포인트가 차수에 맞는지 확인
+    if (!hasBranchSatisfiedSP()) {
+      return;
+    }
+    // 조건 만족하면 레벨 다운
+    onLevelChange(skillId, currentLevel - 1);
   };
 
   const increaseMaxLevel = (skillId: number) => {
@@ -205,7 +224,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
                 <button
                   onClick={() => increaseLevel(skill.id)}
                   className={`px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
-                    isMaxLevel(skill.id) || !isSatisfiedRequiredSkills(skill.id) || remainingPointsForBranch !== 0 ? "bg-gray-400 cursor-not-allowed" : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
+                    isMaxLevel(skill.id) || !isSatisfiedRequiredSkills(skill.id) || !hasBranchSatisfiedSP() || remainingPointsForBranch !== 0 || remainingSkillPoints <= 0 ? "bg-gray-400 cursor-not-allowed" : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
                   }`}
                   style={{ transform: "scale(0.75)" }}
                   aria-label="Increase level"
@@ -214,9 +233,19 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
                   ▲
                 </button>
                 <button
+                  onClick={() => decreaseLevel(skill.id)}
+                  className={`px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
+                    !isSatisfiedRequiredSkills(skill.id) || !hasBranchSatisfiedSP()|| remainingPointsForBranch !== 0 || getLevel(skill.id) <= 0 ? "bg-gray-400 cursor-not-allowed" : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
+                  }`}
+                  style={{ transform: "scale(0.75)" }}
+                  aria-label="Decrease level"
+                >
+                  ▼
+                </button>
+                <button
                   onClick={() => increaseMaxLevel(skill.id)}
                   className={`px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
-                    isMaxLevel(skill.id) || !isSatisfiedRequiredSkills(skill.id) || remainingPointsForBranch !== 0 ? "bg-gray-400 cursor-not-allowed" : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
+                    isMaxLevel(skill.id) || !isSatisfiedRequiredSkills(skill.id) || !hasBranchSatisfiedSP() || remainingPointsForBranch !== 0 || remainingSkillPoints <= 0? "bg-gray-400 cursor-not-allowed" : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
                   }`}
                   style={{ transform: "scale(0.75)" }}
                   aria-label="Master skill"
