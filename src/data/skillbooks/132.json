@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/1320005",
       "description": {
         "id": 1320005,
-        "desc": "Permanently increases the weapon defense of one's armor",
-        "name": "Achilles",
+        "desc": "영구적으로 갑옷을 강화하여 적에게 입는 데미지를 줄여 준다.",
+        "name": "아킬레스",
         "bookName": ""
       },
       "levelProperties": [
@@ -394,8 +394,8 @@
       "soundPath": "Skill.img/1320006",
       "description": {
         "id": 1320006,
-        "desc": "Increases overall attack once the knight's HP drops below a certain level. However, the additional attack boost is nullified once HP recovers back past that level.",
-        "name": "Berserk",
+        "desc": "HP가 일정 수준 이하로 내려가면 다크나이트 내면에 잠재되어 있던 영혼이 폭발하여 공격 데미지가 증가합니다. 체력이 회복되면 스킬 효과는 해제됩니다.",
+        "name": "버서크",
         "bookName": ""
       },
       "levelProperties": [
@@ -562,8 +562,8 @@
       "soundPath": "Skill.img/1320008",
       "description": {
         "id": 1320008,
-        "desc": "The black spirit periodically restores the Dark Knight's HP. The amount of healing increases as the skill level rises.",
-        "name": "Aura of the Beholder",
+        "desc": "비홀더가 일정 시간마다 다크나이트의 체력을 채워준다. 스킬레벨이 상승할수록 힐의 양이 상승한다.",
+        "name": "비홀더스 힐링",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -708,8 +708,8 @@
       "soundPath": "Skill.img/1320009",
       "description": {
         "id": 1320009,
-        "desc": "The black spirit periodically buffs the Dark Knight. Buff type depends on skill level.",
-        "name": "Hex of the Beholder",
+        "desc": "비홀더가 일정 시간마다 버프를 사용한다. 스킬 레벨에 따라 물리방어력, 마법 방어력, 회피율, 명중률, 물리 공격력이 상승하는 버프를 사용한다.",
+        "name": "비홀더스 버프",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -924,9 +924,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEFUlEQVR4nL1XbZWrMBAN56wBKoFKAAkgASSABJBQJIAEkAASioQiYSuBN3eSCYECr792ztkNTTNz73yG/qitLOpvxJMHl8DyfL7+BD2K7ouQEAIMHobBx+Fpmnh9jzWvSdVfGh8eKa9+XPIahuHHmaYbVJElTOLnf+B7YAE4E3uuMTZU+UEiT2OlDIl9DWzBp/oDOEivCQxCpFiJHJEQOSRgwcnIHngex0sCcs4lckXig8AGvElVnHdqnvsV2CeQMLbnx6pV8SO3n+UciARBqgY/uySxIXAFHsSxmicy/jaeBpKKlp8tSUOQn4knbAzqnMTPNfhowA0YgeN5Him/sU/e1wQWqDZLaD+w3zE5+l7OHZE4TYErbAAeBTGTsXvOakOy2TM6fm9InGNYAqv3uQrJk7EtGBz28RxKFHz0dqp68j5tHmqq9doXFeU90Of7YuXla2JhnJNtnzBa3aJ+fh4BGEdIATSxsl5hLE5Ng6vanp9a/YzvBFx0xIbYPI0Ae9/lbKQdE2I901+tchoYEo0V3Djna4NhXqqZIiAk3u9RTT2BUyf0xUoUnweyk2QtTcODCHDE33r0BoGvwrLkAoMgzCLYY2JVZongs+zDkjggaZrnN+/7ZxFYKawi+cWKHGvjWgAePzpDwrdkIDgreviDIxKhPcZpF0AJyiJ51zkeUhhrqona3Kq1tyqiJSl6Nj3l2nJHsiVgyKFYXC9cAYmiH9WybF8dpnlW0f1uCeoIUVFWBYffFuAuBwcRWE/ACzHCxMgzeL4HZ0+DQD1fL+V5nhrKlNODdoB+m2Uftk8IrAekqACqPSq0UTfcJ7LWhmLv06ahrpBIflkD6Gco9kWxCeu3oqteO8Kz4UQsgaFLVZRU6vlEL5ekVDNX5E5akYl8EQG5G2BHvWceTHie6MICBrDmPYGNmCiN1McxDZlR6RWGG3qbQZ7dOkABQlCEkn+cbcdCj2fH5mkE/KAkZnhhrNTriRvsQROw4khgqMCYHj4JgWgSKDoRgAspnEHb6mhkNoWwDe+BpUyKLm5DTUIb6KzhpF7fiAQUZCCyLsuvrRe0MqIRl8evcpYAXhJwTw+dr+5RQVEgQGo5GBBjAD9qQdmTVHjejUlo0hnbuN0ivmv8INdY5nrfRECTyDkVIPH7+6RBVNE00wYAJAPH9VxIYB9p0fPgxvrQhY0z+UgBSHhRy88AhREXXEQK0V1dAYnb7b7Zwy24LNsb9bAGGAyvaHPL4CLw0BWX0P6MFKgb9iM5v4ygEDY0F3Kq3sgSOyKA1e0IV67AhYCH32pnv46g/KTptA+xK/vIiEDvCLyly6zQw82TCDCJxrnv9+J+B+UBI3MnCUXKPTdRr0u1uyLg+OemwDM/GL+SJIoO943x/4kN5z8PfZ2FZZKbHwAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC70lEQVR4nL2X0XHCMBBE7RkagBKgBCgBSoASoAQoAUqAEqAEKAFKgBKgBJKnyWrWQrKTn+xMIiFLd3ur08nuVU28q/9BrY4TeN/v93/xPhqN3iIhAsH5cDj8mPx4PEJ7uVxCu1qtWo3v9/vQTqfT0OZsns/najabBRK9LuepYzkoIZ0HkdQ2YyLRqwrA+e12yxpsg+b5uhwJIUtAzheLxYdjxtugeU7keDyGfo7EBwF3zsL5fB7HhPF4HPun0ynMETRPUff7/WgrR6JBoM05Tp2EG6LvJH0uNrBVIhEJdDn36GWc6DG22+1Cq2dy0EaiuAUOGVCEPpbLhVQhfnflTCTg0RMJ0Qn0UxUYWy6X4ZjSHg6HGLmvlW3WuArkRlEBSStJ0z1NoVrBMzlP18pmUQHfe/YUyflbr9fRaOpcUZDxKKA5njuuhqtAIfpQAIOv1yv0YYthyABkFhhzYqzjt8b5rQC0TfQZF+kPBXLQ/tISIcYFnX+R8EiZq3X8uUIpigRYpL0FHiFAxhJUgGSnDVkCGPAoHJDYbDbV+918dUDi72s2EnSFePanu0AgCpcZI0SeOtczbtW6rmMyAyV1CUUCklxSSpHfAKfac5I6p2SWgGeoCo0nXymRctBp8tOS+mgQQLbJZFJdr9dGAqrWy1jXGxHQ3YAdEaFPLuDD74POYygyqgnb7Tbss+eB7gmSkPcAlGOul+cSIgFVKamg5FMR0VbQ4gQS/hKLc5HybfOjq+jxJdKtCiiDPQd8C+QUMkAtY8oXqVGqB5GApHIV/KYDOM8dQY0pKt8inZ7BYBCj9+u9oUBK4vl8xoKCAYyq4HjkIsE426J6wHqvI60KOAkMAZxixJ0LitJbByRY58gVsWwOyBlXqhsRMcEJpXOUoC57DsUkZIHKq4zm6r/a0mddm3MRqPlWK30deY0vIVVGKNkkub+/iujWUiCQ0FtKDv6MxbmIIeLz9FKSQs7551tQ/3ww/gqlqH+MdyHK+QWwzZZhRvaAQwAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEBUlEQVR4nL1X6ZHqMAyWZ7aBpIRQQlIClBBKeJRASkhKYEuAEqCEpARSApTgp8OylYvdX6sZsAmSvk+Hj3zBVDz8jTidWAL+3j//BP1Q7bySUAIMvi+LhfIwDDyWQ8WjO3127i/BruzFriwXOu21h+ZYMYmvn8DLcQqsAFsS9a5iN0C/IHGu8XcgMe+BBbg7zoD/nfErw8/bjBDnHjohonZIZI2EyioBC56AWxlvHXyUoOehiUQ+kVgQmIBf8UFNpeoSMFWqPEf9sWqg6NvkQPWYyBl85j6SmBAQ8EMwwJTWrwReI+iA40gEgJ2LNGEe9JQg20gA/pqjz/cqia8l+HsdnMMFmQfnHH2Z4eigOGfpPyJQgyHxMiQOSOK+UYJsVg+NiCP8nqZ4rRcmz9Cm0AAy2JJIoHxj9AdiWIRIcgGnqEec16HOnOIWoz5h7bFJTjKO1RGKSyb6Qy6j6t8atvfXDrMw4ro/wCNkYbkKyAc5p5QiEIxizE4Y/BUUzY50CnP+L4CrTfDBPtvlXhMJcPR3VNjTduxg7HB9dxSdT9mI4Cp7GS64VqtjIlHe0AZJ1RfOTFLHLNwbxBpxN5wRiOHDTTK3x3l74Qbj3/01anHTEbFTHvpmz7/jc9LhAI5i15xgfNgNayUDK/+xYXRANe7NYdkg+OUlIxnyqAQTMH9ak6EZxspOGDTIqEl1LvrXJELHEYZTtYunKzxJh7Kn5Wnt4bFcDSslAG7ASRRGiMQOD0jvp1eHx/iGwy5PWaKMtNhPzY7Tz029QuJzCSgKdiLpLfYU+RKcNYsM7s8XOOfA07bRks5b7KtUnh9KkKUsaFOFTEpEfpLuTSG9RvTGB/nCu8HtMPG/QcDIkLPhWFUmrb8AD0LAGghvTBsSCfg+A7e7gaelXt+Fcan9oEvxdxlIZwPtdkPYmHD+7gQDsbpxRiBlxqRpQBJ1j3tQxSM5fiIprrPpA2pAEmpCrT+T7irZnud+TRXSafi+g3/ieZB/hyxQ3ehaVYVNZScZwDL4vZCgplNhcJ9KRctWspFWBvt+Zoy1ILCUIkS9i87IsTMHnoISGQYIo/evtHL4oEJC93+rKOk0xEvCMJgseGL/HfYCcba1BPWZlsK5XEgw6Zx9OLzlaPSE9RiHZQYmJByRIPAj3aPFAQLphmMjVxL0nMoi+0Eu9m3wsSGLEhAJ5zSSIzux4CraiHa0oiSsuB2euP7DndBGw1e07MDgKhShFUtorqMNatO+JptNKAYv6PsBqqqKxNYI0GhXhJVP4ErA0bva1tsRGfe4I85TbGWeGRWyWwPvbgO9FdHUaQaYBL2zbYn9j4zXXmTRx0TvMULsdisKTl+2BC68MP5KCGxNgvOfJKbzPxINRoXgVmmeAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert3"
-      ],
+      "actions": ["alert3"],
       "weapons": [],
       "affected": [
         {
@@ -1646,8 +1644,8 @@
       "soundPath": "Skill.img/1321000",
       "description": {
         "id": 1321000,
-        "desc": "Increase all players' stats within a party by certain percentage ",
-        "name": "Maple Warrior",
+        "desc": "일정 시간 동안 파티원의 모든 스탯을 일정 퍼센트 올려 준다.",
+        "name": "메이플 용사",
         "bookName": ""
       },
       "levelProperties": [
@@ -2153,8 +2151,8 @@
       "soundPath": "Skill.img/1321001",
       "description": {
         "id": 1321001,
-        "desc": "Pulls a monster from afar up close.",
-        "name": "Monster Magnet",
+        "desc": "원거리에 있는 적을 6마리까지 자신의 앞으로 끌어 당긴다.",
+        "name": "몬스터 마그넷",
         "bookName": ""
       },
       "levelProperties": [
@@ -2376,9 +2374,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADlklEQVR4nL1XgbHiIBDdzPwGaAFLwBJyJeSXgCVoCVqClCAl/JQgJUgLlODtA0GIiXp/nHtzf5IT2H372F3IF7W40v9Bl19qAtfz+fJfvK/Xq2smkQlE51J6EqKnEMb4BPz4TUJp8nZHQkoK5EmqfRkHMN87Hice9zw+7Ck4Q7I/FVv183j6oc33n0jiKztXihcH/9FI3biOZKfQA5O/kfiiBWCx6s+/dg6l0r/dUzuzBCAnFoMEZP0N4nZIP6vASwJYlJkjB34LrMeeAwhqTomWQAigXhZ/BGzTuXVRdKrIYg58Eggm51TwtgT5QMD7Ayk5NEqgrIR6NJqlXQLW1ZByOzuvEADDItNt8pKTmKQfQiHwINOD11tpgdiI/4YyJLnBCOVK6TXLsqqvCERDCzJlZMcbO21Yhk5ax10TwtG/4HkShhSl20ERRT442oyertf2zHK83+vVKpKgoHi+ecibJSXeqALFvV2Qsxz56B6cxxl8Rpwvl0JCSkG5q78q5/kqmKPBJFjp13QHOA+UUyTn1RKR+VbcEOHk8oreRXYuJh186Wx5qxHJYeDj2NI7CM6R2nMrt+8lY0Ng6eBJSUj0Myjquq7JA3drONh/jEOBuSRcsj2rQC1VcCkJYdjz+0knEki6jJx82HbZ39dNbQHTPGsV4JtPvVfuMFbOib7NPQvhNGc+kMdKP2D/42ZD/fFIz9BWQXUPqJkLxWU4Grr87KlqgDzR0uXE+33rF4I9WyYyDMud7ymB+h4AgL0zG7KjJb3dsu/A74a03pIxh0SG/4ZBk7XsuNfx3eCdZc7RP7tdtVvAPT1fQnChBNYbk6J0IUYIhczuUEjoYUsHkKG7OPp4jltzRQDVIQfb02Rst6ByDGAPozLsZNV1zcJhP9CBb8r7ExP5TqejGROR80WX9f3x/L4CBeHuXHPY7rCb7f/5WVdEXM55oIVoSCxhvhOOImYxnz0xoQzvO+ucogyhmZurIJPNSIno47dEUw3t8umdsB3MJajBBmXN9gV3OiTadD6SsJd190nOX2FWAbBNW8CJxycbf7WkAQTIsqAs4TyE+6GDMdmr9FtFDqei7CeRTQh0+FbD11F1V3wkkY3e/uAINY8qqIkIkVTLxzHseNte7Y0d8VVE8BkVwLcak4hPLvSKxVAcC2dKRHcSLS/nfPqd+0GuNhPt6cquLs6zAvihuz3f+jw3427h3Wavr0xA9fjyF273G53zykkQAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkUlEQVR4nL2XYZHCMBSE2xkMYAEkgAQsgASQABJAAkgACSABJIAFJPT4MrfMNpe0hWPYPylN+t5msy8JvaKOqvgOSj04gep8Pn8l+3g8rkRCBELyfr9fDAaD4na7hRbsdrtiMpmEVn3z+fzZD3gX959Op9Aqlrf7/b6YzWaBRE/JR6NR6PwkVqtVIBFjOp0+SfSKDPh4vV6/nVyTQZmmOEkCfCQSLvUr8OVoQpIAH4m5yLwDvm9Tokbgfr/XPv4EiImSIOWJrAc+CSYjT10ulzyBw+EQqsGVyFVGW8XE/Tg/hScBl0mDc0n+44ssgSaZBCfkKmkPSRGWqq0EQE4mB4lTCkCcnfTVzazRhJol2yp1jTIkr6r6mUXS4XAYSDCOWcfIKdFaBQTUzFLJNeZ6vT5JMF7k28o5WQU5Il3AOPeHfJUjklTAifjJ2AWe3JE7WzptRBzH+KALtP93LdUagdxMlXy5XBZlWdZ8INez/vSjQMqEudhJBVwqmZDAtPRBAtMJMp8nYmwcC8Q+qxFAal8ryk7J/VBRUjkfqE9VAFiGl45jvwc4cwLC/Hg81kwGQW42esc4YnTZ0JIE/B7gv0mu9eU3z5vN5s93tHqGhGbfdLv6Y0JdQvTxYrEIs8RskpbkIuGOlxLb7TYsDX1+yGmnzBKI10yBmQ3Gc5CE6mBZHpfL8E7VIoNKzc4KxGQAjmUJUvu/Wq8IEZHT37qUOiSx1jw+qlUFIuvfqXSbqqGRgEqQ8vR3KZejko9T8jY03ooVJA4kI8X7fnwQdQEESv6rxf8LYxIxvCQ9qR/FHseBWhiXnEEByuxBIrS+j3vi3E1Hu6SP8VIjnjYyxVRyKcCL8rft9PfcT8bccwtQPTz8AL86CzLMXr4NAAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADo0lEQVR4nL1Xi5XqIBCdnLMNsCVgCbEELAFLSErQErQEU0IoQUowJUgJSwl5M3wksInx7Xp29kTY8LmX4c5APiC3Ef7GqliZEhivt/ufoO+2mzGSiAQcuKgHrEp8VCjRhg1AfcJXewDO8TEArE/tzrC/xXaD7QbbJbYPRxx3n8yVylN/g+N+60h8JHBOaO9dqq0C2dwOsgYIJD5gydzgX0iCPKWxFPun88wTIHe6wbRN/GcEaDuEmfXAOgEa9GC+gR+bG6983c57oiBgisHvMOO3M3q08MiyBkqzv+hHixFRU+cnBCyGDjtA5gkKq3oOST0nUo5jp9luiUDmpth5AYT2802WCDxxkzMTfjBVGJV7mjEBXGjfbopxD6+uEXAzneCZReCtLls03EAAA0qWGv7HVkTol2P2Hf4KBNcOfBzzCNHGwnbzCTcpcOsFwP4MXBZTLXhiNQqsRfc26PkOZsHJBGdwvX89SHD832JfRiRWwnkhCr5bjSTWhB/7WXJcPFZiSl8gspCKExHGNE4o4FVz4JSByyELZ8tLiYg1Ddiue43BoIFdMNup18SYE6ADZCbpeBEC3HFVVVVlOiABku1w/6ndDpQmZkS4MPfCYZQAjPIiJNcaLVBkngSJLtouiI+oRGA3bk6Ehc5yAnTzmeyV2esJOEbBxK0ESiSoJIttMR+QBsx+B7y/wjMromByD5gwp8kGrWG8NV5k0fDa9dXjO+u3gaGX1VmBlK+LtsiEfXaDIfa224HqNDQXBMI/NShoUJQdiTIoXjYS+yCwkAgusQ3rXKTVk1frl8JQenB3EfU35M9Wu1UaZd0KyUOd7qA5NK6UEsujF2k8H+r+Cza4NWMEn3q1EGNOYAJMRnvoHCMv8FlVWVd+OkGrkEh/wculJ3Bsfaa63i+P8bwfv23pEw8Eswmc9Grbdjb/x3IaEY7wsYWo8weJBZslYDruhEf5vEFBdXgQ2MqvsjyoYxREstFoHKOkUNd5NBQ3piIK8sYYgoeB+X1jdNu2IJoY7KmvVig8F4BxLg++ZrMeILZuC4QPLfxqCQ1ACsTLB3NkLbeJBCOt1GDjIsJ7WgBvyltKTqCibzX3dbREIr4MYefAEUkdMSRlyAMBmLGQjk2aB3R+tT+rgb6KgDCdB+hbDUm4EgM99ZThhoSTi6H1VQopGUgYj+se/BkGT0SLSwo1N18/mbd/gEcP0IsqlC99DBy36WSMIehsCCDddm0K8rqr/AMsacFKm1FNtQAAAABJRU5ErkJggg==",
-      "actions": [
-        "alert4"
-      ],
+      "actions": ["alert4"],
       "weapons": [],
       "effect": [
         {
@@ -2750,8 +2746,8 @@
       "soundPath": "Skill.img/1321002",
       "description": {
         "id": 1321002,
-        "desc": "Enables one to stay at the same spot after being struck, resisting knock-back effects.",
-        "name": "Power Stance",
+        "desc": "강인한 정신력으로 적의 공격에도 뒤로 물러서지 않는다.",
+        "name": "스탠스",
         "bookName": ""
       },
       "levelProperties": [
@@ -2973,9 +2969,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+klEQVR4nL2XgXXiMAyGlfdYwCuYEcwIYQQYoTcCjMCNACNwIzQj4BHwCh6Bs2TLdYwct9creg+SmJD/s2RJzgrm9oDX2MAnJcDjdru/RH2zWT8YggFI3Bg9u9FaC346ig9R44mOWmtomVJKHD9f3+HXfksQq5749jiJD3k/HUGFvzgH4EktjhsTwLwLv+2aYG+7ESBBrKQbSvHHY74sLCoG26zXAWIkCNTW+g3oAjQdvfdND5T2BLAkTjMMLkeI2/2eIZDA2ku+B3WVGiNQ+EQQOVQzgJ54C+J2HsOMIYeBzv0Enq518M4uOgfgCUQMwVcNBXGSJYQer3TsheG/AEhm7T6fG3MIIGl9/CQAzjV7gVLDJ5jfFcg3ATgTRILZuUrCUjjcM4AxBiycKMeHYWimIFtORQVxEdAzwoJTJkG0ixSb6AGscgyBK12ynILAq97HdJxSOvJizEA+pmYPgLwQ0pEhUAiNQfgaDdOVIUiw8DAK0/CCeNMDNCuhHnDul1YWI5rAeEgkc/e3KmO3EqKoSQ2HCxCfo80qIg2Z/Kx/KsW1UaULIjUEL1K8LiHstA9euC7OuglQd0AUaRmKSpmCqY8QSmtqUN5H8BZIBpD6AM60XHSl4bjYL3w6WBf+n/YSCrvlSAsxp2gNUFqz0BRQNSRnQ64J1AU1CSoKX8cDZRGSZl3uA1riqBErcIh9eJrHT+iK2BaNOS8D1BBorXDUm5JsdUvOgw6maZs0TrMwNLNAEkcxHJc8pNTH1kzxQPgoiOGgHVPPA0sLsZypVBWzOMdemwQmt+GuB2pxLM28QxaLUHa5S+tg3hq7afgZK5uUVIRQ2TNESMMcDoib1uiVb+wHpHYtQVARMqcP8IVq2ARo1YIa4qldk5YDZ49UfKDRBUUAqRZw/PG33n3zFMRKeAlDF8oG3hVJAAO+q/HbUV0LanEJgu9DW3pVY7v8mfCtCE8H9gBB4DtbNn2IRxfqmZNfz+r70KyzXQAWx68yBEN6YXyF5Tb7F1cg2/GqdWSrAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACP0lEQVR4nL2Xj3GyQBTEYcYG+EogJWgJfCVoK7agrWgJoQQtIZYQSiDZmyyzPN+7QydxZxQFhv1x9/7craq5xuo1qvlDAcbL5fIS981mMxKCAMl8vV7Pbrxer9X5fHYfst1u07Ft29CoaRr3/Ol0qna7XYJYlcyPx2No0HVduo8CDE0jc8ITYuXdoObjOA+L/jak4/+3f+kIcJipOTQMQxaCugPImUNd2ySI94/PBLHf75O5GhIG56AcyAygZB5BHA6H6ZpnnANxp+BReYYMztI0/AqAgsBQR0H1ZyOgADQmjAelIE8BMBOsGHz6URVHQGtBXddhClLMAqahNXoqDSFWOUAg0j2pOaRzfrvd0nkcS0B3ABgFpCMhWHAIwv8Q0hUQfLg3/KXRCGPAqwfMfZUdCYVRRZWxWAlhisIDsQDxN6QVEb1B4+jpGLBvCBMLwSDFf0JQhFjSD8JSDMEkEky9TIEpnrO0H0wAXh/Am+qbqXDe6xc0ZCZoWfZA3CmICo1CWUh2RZrwU+oJE4AGj/fWug4omS9pw3cAFgKKpkNhdD1gpSB6fVEv8MxhhvPeCGnB8YZ+USHKBSIrHmSrona8pU2oOALWHKWZK2SvCJX0cCn2pE3KFiEPwi5SPZCHALx27UHAZGlJDgGiWmAhbHOiWd/305I9pzANGWCcf70W3acrIihKPQtQY6/G3ZGtBdbcg+B9UG6rRiGYv3dF+FlzBBIEtkvWADWdKxtPep8ec6I5vnQK6p8N4ys0tdkvDZ+zvW5gpTkAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCklEQVR4nL1Xi3HjIBCFGTeAS8Al4BLkEpwSfCUkJehKuBacEqwSpBKiEkIJOnZh0Qot0iWX8ZvRD8u8x37RQS0xqedA0w0XMD36j6ewX86niUSQACRvnF28OAyDct1ZnGRoerxaa1UNxhhxvL336u3ljCIOe+T6TZ58aoOwa7jxwMRZH/DvcLxWhb1enVJJxEF6gZNP0zIsutHjVZ+OMWAaE1WYNhxOeR8mVw7HahbgWAnYIkc+a1DE4+Mzimh95LPRVJnSgHka+CGNun0Be+RVEfcwOKrCFe/h1IVrEGBu7Melq0UXfBkjmzct2KvPqGPHDT8jgCOGSCA+zs/mnpSt3fCzAnw67CwEYV+SqvtKxLcEUCasAOa2ZAKV3e59csciSIa1AOdcGO4xx7XW1RQkXDALVFxxLkgh/01DM2ZdNch1oJlFQKRLyOSpDKhhTKtOlYssABlgqGJd9wWgFUI6ZhGnGEwk5JKeAZiubXooYwxTT22SiwKyEKEeUO5zaLIEkVsINJMqomLBKFfG3UoIpFB4AFSA6B6QixE83CDgmjzXt0pxCTA5kJQiKEjhmYswt2MuQt77rxWisgMCSQ1IKmQKZBcWIeuwQZErakKyAKkPwEp50HFgFkj9gnqCByUXbAUREJTUoAQBHNVCw0SVInNKYi9I3c84dpU3LlnAoggJqyZRm+Rk5eB7ZaETdkkMkPfbAkoRgJo7FmKIHInZZOQKA5sVcAfFE+yYZjdUs0AiBzIYF+OCt3skTibBIIDjz74FtgIxVzwlV8WZ3MYMULwfyLuhlYASnBxKM+2QV0WIxPl0GoP97Zjn8d7up+G/gDepVRECEbgzws4U7occmMb8CjfwAljlP/YDUrsWRVxtsEOKer9dkqsCarWgFLFq15juY1j4GTui97fNRdU3JCnAsv+d230vW3dMp7BVN7g/AFXyZx8I0PCtRl9HZS0oySUR9B4aoPxUy5vUeej3+wBfRXCryQIoAr7ZCJ3t82q6cVA18PfidVR7IHI4cRfo9MH4DOQ2+xeG9rOcLXwdjwAAAABJRU5ErkJggg==",
-      "actions": [
-        "rush"
-      ],
+      "actions": ["rush"],
       "weapons": [],
       "effect": [
         {
@@ -3113,8 +3107,8 @@
       "soundPath": "Skill.img/1321003",
       "description": {
         "id": 1321003,
-        "desc": "Makes a mad dash forward, pushing off up to 10 monsters.",
-        "name": "Rush",
+        "desc": "전방으로 거칠게 돌격하며 자신 앞에 있는 적을 10마리까지 밀고 지나간다.",
+        "name": "돌진",
         "bookName": ""
       },
       "levelProperties": [
@@ -3365,9 +3359,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADA0lEQVR4nL1X65WyMBAdz9kGYglYApaAJUAJWAKWICVACVKClKAlaAmbEvbLTTJhYHnud47zgzxIcu88Mkm+qC8/9BnZcUUS+Hk8Xh9BPx4PP0yCCVjwOI42L6a1/fqWIqWW51S3G52zzJL4WguuPQYD2Lb56N7PdSTyNCXyJL5oSTTW1w5DDfpNcTjsbfPF7rOk1lkCskjAgTtNlQVVlsfeA1vw17fkFSyiVrCYJcCaH44Hr6FbEOBpmlPT1AFcUWcR22fJ6kUSkwS0Jg++d+AzCylRApxJKO+mOQ7LMTAA0gIEEsCo2wtbZJIAk3bmdEvLQJQk5L/ggsE6mwkElVgtg+Bi4dv/E/pyXYs9CrurZQbTBHRXQdVkL3KZ0gUm2hyIwTDmgzGh3eWn7QRYeQt2OnSdY84O/S7qMP5xf5GKFOmwcTcSGBNeGCW01/rd67dWhxX8GCYBmdoJ00HImpoF7rcHnbJjAJPgkhzGQXgs8ogKJhtnMG+BEXMDfEoYeIusc4EnURRXer/fv7QfSpIk5sC52gPOJ+U/EuDd5SsAHwNr27bXl6eF6Y8C9NxOnEnFDvbZPCm7nHraDwFZosiBZucT3a53StKYlmQ2DwxDgMHzvLBt5QHLy/nXdJCuqCMxZYVRAn47U1u3dC6zoD2DAxigqMdxbMu2bcJ8WMK6K2TLzbugH/oy8AAeiU3NN6m6LoMLtsiqXSCjHuDD6xu3QVSSWHM6ThBw3mcLyoUBppSP8MjVp4KyY7BxG3IWTIvEFBWVtQsykMiyjFLj8+JaWWsAvCwvPc2RrNDnzoG/XkjMLMXXIupboTH+ljlBgsdxYsELk4iKIiX665UM8wBdXHObE+q27P2fCjgcz3lS2HmkFvHngxAXSpjxWhWkjRcaQUKeCSADrW2/Acd4B/6ft2JJosKiPt+ACDSVAmBItQGcCezwVpt7HUkSNiKGic90Qmu+FS2B102DVxGqO7aAJYE327j07zRpnvwa8Xw+JR+aywIMjo90wc4/GD8h4Xn+D9ZqmzB1l9wiAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACP0lEQVR4nL2XjbEBQRCEV5UECIEQCIEQCIEQCIEQCIEQCIEQSEEI9953pa/m1u3PoXTVe2t/u2d2Zve26+oo3G/Q0Q8roLhcLj9hH4/HhURIQEk+Go1aL/Z4PGr1Xq+XnHM4HNx8Pi9FdHPJRSQC1X0BOSJms1klousyAIlPpPpwOCzL2+1W68vxBEgKELkWVSniJnIhR0RUgIghsyT9ft8tFgu33++rdomzY3M8ERQQIk+BsZpjPdZaQBO0oEhATOBHHtDE0P5aEbbPCmKNtwU0oe125CA7Df9PL6eTUnUFonU1Y76Shjb9IGsDif16EGphWX+/318I+dMYtYGQiGQQgtPp5KbTaUVmya04xgGN/SgLQoA8BBG3QXYQgs1mU1ruW+9jMpmUQrngmi6r1gKEJmLIzudzrQ1y2kHqLEhmwfV65dqsWe8TCoPBoCwZz3UrETFEPaA0EkS+Wq2qfrBer1/mImK329U8kS1A1kO2XC4r60XOYpDym32mPB6P1Xw8kYqTqAAfNvAgl6tFBrbbba09F8nvAQmwhD6R6oyzfakMSAoQ7MJWgLwRCsocNApQwPDxiBW4V+QEF2lGXIiceLCW00+bTsK37wKbBdYL3ID+tghEPeSIULbEEL0LIMdSkVqEAo5x8pDWeUuAL4LSppq9ExCjs4BtyyVPCrAiOFQEhPgegRhoXJsPkg5vtdjryIoIpRZWp+5+awDB7J5PMycRnN8psHjTlUxQ5uQ9EDn/7BZ0ng/GX6B6nv8B4Geo6eWsN3sAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADDUlEQVR4nL1XjbWyMAwN57hAHaGOUEbAEWAEHAFHwBFkBBhBRoARZAQ7gl8TGiggv+c7L8+nUELvzW1SwgmG9oW/MY8PXALfV/X+E/Srf/kyCSZA4IGS+2bS5qOdc2E+Yv22NK/gHvlE4rQJnIEEfXioH2cSeFGuk0hCBWBJnGDNEKTpCbgMcOjit8v5fn0H4wIc3wVbJmAjbP+1ma+f8ex3eQTvqs9d9BXoL7aRmCfAwCb6y9XrIuSowyCBonzAh8FFexGJISGxUYlZAtpG04GLDmPREBwJEjFXib0ExsaRYGQ4OS/BOOK9NkuAWbvSQ9NfwHFUhy8yOCtG8ov1PFxWwNV8tBz/y1argH7Mrx95UOVWjaY950SkzLclij54LjeSXExCF3yVqKMWk5VyvRI2bER9atHEzw/4tzNFr6Fux2/tuDBhoxLkY32lEouVsJiEeCNO8Eo/cL2fLdgQvCNnxtEPjX017wWdDHsUsJKOSwvB54yB99i2fcCySOIcmqaeRD+2QIWQBE9QoXCSYC8BC0pC2GMEn4AFAZRlORiLlQMOB3dCfsyWmYYoOw+iHwOySdE+0tE/hw8E8Xot/iagfx8zeBindC4sYPaIJlMQCW1IJGJxFX4S4GajuDdwKy9d9AyOwAiKx0oq+q2LrLsflWjMbqXpTxyoglH2u4mH4NJpeZTtpAoDyEswjGTZNlWBm/UIrkbtG583v0gcImAfuxxBU5uJLQiCSbvRkxrmuChmylIfbEh4FwyfEnRkmsfGBxQBo7tFV5PdKcRJTmogePa4DSIPwxQeWURtHIgjZeg2nqyCI2+Z3emczQVXZhNC8ERUEOdq2MhuJuCokFQK9OUFGVwH1+fWGh/PMbzoPjeW3QS6HtAokL4D043kkOm+3t1ngjSliFGjxWYLIn/oe4RjBCYkQiKBlkFEkbqGwGjktxGcCXj4rjb7duSSqMK2MPx84paYa4y3Bv4wiWveivDQYwWIBL6zzRnNZxNSPadEy7ruHNf2HwbHL3cJPPvCuGJLum5uzLse7x/C4oba5HFXZwAAAABJRU5ErkJggg==",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "affected": [
         {
@@ -3541,8 +3533,8 @@
       "soundPath": "Skill.img/1321007",
       "description": {
         "id": 1321007,
-        "desc": "Temporarily summons Beholder. With the Beholder's incredible powers, the knight's weapon mastery permanently increases.",
-        "name": "Beholder",
+        "desc": "비홀더를 소환한다. 비홀더의 힘으로 영구히 무기 숙련도가 상승한다.",
+        "name": "비홀더",
         "bookName": ""
       },
       "levelProperties": [
@@ -3823,8 +3815,8 @@
       "soundPath": "Skill.img/1321010",
       "description": {
         "id": 1321010,
-        "desc": "Enables one to shrug off abnormal conditions. The higher the skill level, the more types of abnormal conditions one can nullify.",
-        "name": "Hero's Will",
+        "desc": "특정 상태 이상에서 벗어날 수 있다. 레벨이 올라감에 따라 해제할 수 있는 상태 이상이 늘어난다.",
+        "name": "용사의 의지",
         "bookName": ""
       },
       "levelProperties": [
