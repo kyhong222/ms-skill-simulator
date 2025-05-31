@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/2000000",
       "description": {
         "id": 2000000,
-        "desc": "Recovering even more MP every 10 sec. The higher the level of the character and the skill level, the more recovery it enables the character to have.",
-        "name": "Improved MP Recovery",
+        "desc": "10초마다 더욱 많은 양의 MP를 회복할 수 있다. 캐릭터의 레벨이 높고 스킬 레벨이 높을수록 한 번에 회복되는 양이 많다.",
+        "name": "MP 회복력 향상",
         "bookName": ""
       },
       "levelProperties": [
@@ -80,8 +80,8 @@
       "soundPath": "Skill.img/2000001",
       "description": {
         "id": 2000001,
-        "desc": "마스터 레벨 : 10] This skill boosts up the amount of increase on MaxMP after each Level UP, or AP used on MaxMP.\\nRequired Skill : #cAt least Level 5 on Improving MP Recovery#",
-        "name": "Improved MaxMP Increase",
+        "desc": "Level UP 할 때, Max MP에 AP를 사용할 때 Max MP의 증가량을 향상시킨다.",
+        "name": "MP 증가량 향상",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -145,9 +145,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACB0lEQVR4nL2XjZGCMBSEw4wNaAlaAikBS8AS7krQErQErwQtQUogJUAJWgLnRtZ7QPASRHZGBSZmv7yfaGaqqUpNo4gXEqC65MUk7mu9qghBAGuexMtJAPanXO022kLMQsyNMSqO47cBtul9jhpipgL1DoTru8EAO3NTexUOAXOXggGGQMDcfieejwMQIpr3aRDAKU3U5pzZKEB9kaA5x48GsFg89hFd3+d53oGQ5vNu5IcDZN9rVVV/G6YpS6VXqwaEr3kQACbVWjfMoXi5VHlRPCEgX/MgAF/RXGr9k9kOcNXKqADS3Gf1vQAhux1qgGqvHOLqOS8Vz29uAOa6Xdm4xrMoimzOpZB/iN3R1u546Tzb1j89DQCap8f0JQQNIRRluzDtXHVkMFZGxu4f94hkpQPgaaC1ckl2AiLhase2rtfHGNSELMasNF0ACWHpRRSkOVcn8w+xHWkqVw25OsFZhBgEWkaDnzRnz9vPVj3gHrWQiLyzCL3aEMYQ9+8+c1kPLgi5Mb3qqAYAzGmM1+XrUTysfl5zQgkh60Km5r92bgDAEBA0lpP4rGaIOimQ5hJmbONeAGmOdLgiMglAXzomAyDEp9UBONz3yG3if0CRvxGQq1u8AWg+FKL9zEcAiHBWw+loiHmoIXQ4G5yKcBkxAhYCZzYO+KRojjeZgqg+ME6h5x+HX+4AammoiMgmAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+UlEQVR4nL2XjW2DMBSEjZQFyAgwAoxAR6CrwAiwShmhjIBHgBHoCDRn5egDTGqThJMSAyK+z+/HkS9qqUmdo4AXEmD67vpT3D/SeCIEAYx5lkSnAFRfnSo/UwNx8THXWqskSZ4GKPLbHHeIi/LUMxC233oDNE1jRl8ImNvkDXAEAub4TZ7nrwHwEc33dAigKApV1/V8vxcJmq/ffxrger2akZN2XbeBkOZhGO7O5Q0A02n62zCHYVBxHC8gXM29ADBpmqYLcyiKItX3/QwBuZp7AbiK5lJlWZoOsNXKSwGkucvqdwF8djvUALVeOcTVc14qCX/sAMz1urJxjWdBEJicSyH/ELvDRVmWbQFojpU8gqAhhKJcFybEyOBdGRl0ESLS3gO3AKABzG2SnYBI2NpxrXEczYiakMXYDnoLICEgGQVpztXJ/ENsR5rKVUO2TrAWIV4CLaPBkebseYzresA9akGGnUXo1IYwhrh/75nLerBByI3pUUctAGBOY3yqqjLPWf285oQSQtaFTM1/7bwAgCEgaCwncVnNEW1SIM0lzKuNdwGkOdJhi8gpAHvpOA2AEO/WBqBt23mfdpH8j4Bs3eIMQPOjEOtnLgJAgLOaOR0dMPc1hOpG41SEy4ARMBA4s93+NpRutHqnaI4vmYLgfmA8Q/Px/BeAeGbRH8nvcAAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEElEQVR4nL2XjZGCMBSEkxkb4EqAEpISpARt4Uq4K+EswRa0BCkBSoASzhJybMzDRwgcQWRnVGCQ/fJ+ErITfRmxjSQdcABzK+tN3HOdGYIgAGu+V+kmAD+XUnwftYXYxZhXVSWUUi8DfB3aZziInYjUKxCh/0YD6EaJUsRDwDykaIAlEDC3/0mHEIsAYkTmY1oEUB+EyK6PKEBjkSDzx/0rAmTyMY9od16W5QCCm0/1VzzAUQpjnhNm0dyFzj56EHPNowDsQ7XumUP7NBG3+reDgOaaRwHMFZlzyTb/6IBQrawKwM3nTupBgJjZDjVA8kcO0ejpuSSV3MMAlGu/snGMa7LtAOScK2/zD1F3+NKX4Sp/S4ohAJmrUk1CaGcIoSj9woQoMoDjkclcRIomGQJ0BlqLkHgnIBJ+O+YMjFS7e1ATvBiLphoCcAiIR4Gb0+h4/iGkxo7YiwjNgqFOCBYhbrK0Lhr0S+a563mkwq8HnNtaYHmnIpzVhtLRdvP9iDmvhxBEnskuklMd1QOAOS0c+BhbPM/qt6NhhckheF3w1PzXzj0AGMrO+CleF2u8ko0CEASJw6xtPArAzeuRiGwCYDYwnwQgiHdrAPDZtuw5It18jYBC3TIbgMyXQvjX5ggAEns17I7O7e4o1jzWEDpdK+yKcCgpAhYCezYsGqdGvFVkji+eAuk2jFuoe3H4A7ZkUfDWA5kUAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -387,8 +385,8 @@
       "soundPath": "Skill.img/2001002",
       "description": {
         "id": 2001002,
-        "desc": "Temporarily replaces damage with MP instead of HP. If MP reaches 0, the HP takes a full hit.",
-        "name": "Magic Guard",
+        "desc": "일정 시간동안 받는 데미지의 일정 수치를 MP로 대신한다. 다만 MP가 0일 경우에는 그대로 HP를 소비하게 된다.",
+        "name": "매직 가드",
         "bookName": ""
       },
       "levelProperties": [
@@ -519,16 +517,14 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACBklEQVR4nM2X3ZWCMBCFk3NogBakhKQELUFL2BaWErAELQFL0BJICaSFlMBmsgw7hCSAP5y9DxJBc79MZkaTsbE6to04DihAd2/aTdwPsugQAgGc+V7sNgGo6oaVJ+kgsjlzpVR0IiHEUwDfR/u9HiJLfRDM8zwMYNSNKVY9DYGKAoC5lDL4rG0vLBdHC1G+DBEEQPOuGxeF0tpdi6J4G8QEIGYOErvfPGna9m0QI4CUuS8K8YoytpFgcaEIbQKAkW2aZgLxcQA0v9etvRYTiI8CUPPbVbGvfT1EIggAZPCQcx5NRCxFOZOAvjno+jgNEXhoNQXwISDT3T1bfmjsm0NHZLtxCVLzhzXP7b0zMadKbgEYgTAa+H6NOfPM/WpY3IggChiRWBMasp2svPTMkzngm9NcgDEq1Qlhcsj2yiYcqCKJF/ptWVQFCEKv8xCSXXqIC0JAKZ6KZQC4YrpyKsiHWDumEPX+7u7BVV/1ZJ4oQOr3AHMhJQrR2pWrgPkEgJZgDMp/FusFmE9grvuEnAXwyUNRgNX7TcgvR/pnpvD2fBZgrUK9ABexRIsBaCdMmVOIlKKtOGaOXXBJAq7Rqi14t/lqgE/oXwBwOKtteTQ73xScimDIMQIOAs5sIJGb2UmMMUxrY09Oxk24RmgOL3QLeH9g/LvhdT2sBDeWZT86sCc0TPwDoLWMOVv4qp8AAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVR4nM2XjXGDMAyF8R0LdAUYAUaAEcoqdISyShkBRoARYAVGoHkkSoWxjPm9vrsEEojfZ1kSse/NNXr3SNEJBxirprvFPY3DkSAIYDJPouAWgO+fxvvK4gnCXzNv21YcKIqiXQD55+N3LwjfdiPMh2Gwgu2FIIkAMIjj2HitqqrJuK7rwxBGADIfx3lR9H0/HcMwPA1iASCZQ0HwzJOu606DmAHYzHVxiCPyvZuEyZkidAsARbZpmgXE5QBkjqUyQVwKwM2RqHmevyGMACDDRaWUmIh6KbqaQ0VRvCNQ9+0SQIdApkMoPzLWzWGUJMksrGvmXNYlgBFE0aDPR8z1anBuRIgCRURqQi7m1hzQzXku4Jxk64QYHGMg4SCeeKZni1MVEAg/7oHAvWmaugHQjPnMuWAutWMJgiCdAGzPA8oFmzgEjmVZGu8T+4AEpV+TegFPOMl8AaCTm6JgCrtejvzPjPSnRgTYKlMvoEm4yBmAd0KbOYewSWzFkjl1QZcE3KJNS3C2+WaAK/QvABT2anduzYqyxa4Ip4oiMEFgzwZFH4O3JuyY6IUBt4jM8caXQL02jH9faF2PKgHKsuw5m8fjdofeA/8CfxWFx+r598wAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACFElEQVR4nM2X3ZWCMBCFk3NoAEqQEpIS1hLcFrYELQFKWEvQErAEKAFKMCVkM8hgSDIR/OHsfdigYXO/DDODSdhUmq0jjhc2gK7qdhX3rcw1QiBAb/4lNqsAFKeaHb5lD5E8Mm+ahlxICPEUwH5n/m+ASGI3grkQZ2KyNPP10xAoEgDMpZTBOa33Zvt7Jhr5MkQQAM21nhbFpVP9yHn2NggPgDIHfW3Sfqza69sgJgAxc1cTiBeUsJV0S2g/QqsAYGTr2n9MHwdA81NxNWPmQXwUAM0rY34sFdulrfmc9xBBACCDSc45mYhYits8noCuOeis8jECl67xAVwIyHQQlB8ae+bQEdk0rLb5xZhDky8tc1vRRwBGIIzG/fN8c+aYu9UwuxFBFDAiVBMas73Qhg12nrIflU3MsRqCAK65nQtwjYp1QlhcSs5+0xssjJj9oXfLrCpAEHt8DJGxaoCoBojWRCY/8MnaJADu2N65LcgHqh3bEPUAAaMqlbcOCRB7H2AuxGRDXM3OQ+YegF2CFJQ7R/WCMZ8K2HnHUgKU7APUWxF27zUhpxztHzP8kLGYXm/FgV6Am5ij2QB2J4yZ2xDx9YhWTJljF5yTgEu06BG823wxwCf0LwA4nNXWPJqV5wZORXDJMQI9BJzZQCJV7JGUMvd0ZjT3woJLhObwx34EfDgw3r9wuh5WAijLjvgte0Ljwn+oB4sXdrXBEwAAAABJRU5ErkJggg==",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "id": 2001003,
       "soundPath": "Skill.img/2001003",
       "description": {
         "id": 2001003,
-        "desc": "Temporarily boosts the weapon def. of the armor by blowing magic into it.\\nRequired Skill : #cAt least Level 3 on Magic Guard#",
-        "name": "Magic Armor",
+        "desc": "일정 시간 갑옷에 마력을 응집시켜 물리 방어력을 상승시킨다.",
+        "name": "매직 아머",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -870,8 +866,8 @@
       "soundPath": "Skill.img/2001004",
       "description": {
         "id": 2001004,
-        "desc": "Use MP to attack one enemy.",
-        "name": "Energy Bolt",
+        "desc": "MP를 소비하여 적 하나를 공격한다.",
+        "name": "에너지 볼트",
         "bookName": ""
       },
       "levelProperties": [
@@ -1190,8 +1186,8 @@
       "soundPath": "Skill.img/2001005",
       "description": {
         "id": 2001005,
-        "desc": "Use MP to attack an enemy twice.\\nRequired Skill : #cAt least Level 1 on Energy Bolt#",
-        "name": "Magic Claw",
+        "desc": "MP를 소비하여 적 하나를 두 번 공격한다.",
+        "name": "매직 클로",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1347,6 +1343,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Intro. to Magic"
+    "bookName": "마법사 입문서"
   }
 }
