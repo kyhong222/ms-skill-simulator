@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/5200000",
       "description": {
         "id": 5200000,
-        "desc": "[마스터 레벨 : 20]\\nBoosts the accuracy and the mastery of your Guns. This skill only applies when you equip a Gun.",
+        "desc": "Boosts the accuracy and the mastery of your Guns. This skill only applies when you equip a Gun.",
         "name": "Gun Mastery",
         "bookName": ""
       },
@@ -416,7 +416,7 @@
       "soundPath": "Skill.img/5201001",
       "description": {
         "id": 5201001,
-        "desc": "[마스터 레벨 : 20]\\nAttacks multiple monsters by quickly firing a few bullets, so fast that the naked eye can't see the shooting.",
+        "desc": "Attacks multiple monsters by quickly firing a few bullets, so fast that the naked eye can't see the shooting.",
         "name": "Invisible Shot",
         "bookName": ""
       },
@@ -895,7 +895,7 @@
       "soundPath": "Skill.img/5201002",
       "description": {
         "id": 5201002,
-        "desc": "[마스터 레벨 : 20]\\nAttacks a monster by throwing a grenade. The distance the grenade travels depends on how long you press the skill key.",
+        "desc": "Attacks a monster by throwing a grenade. The distance the grenade travels depends on how long you press the skill key.",
         "name": "Grenade",
         "bookName": ""
       },
@@ -1243,7 +1243,7 @@
       "soundPath": "Skill.img/5201003",
       "description": {
         "id": 5201003,
-        "desc": "[마스터 레벨 : 20]\\nUses parts of HP and MP to temporarily boost the firing speed of the Gun.This skill can only be triggered when the Gun is equipped. \\nRequired Skill : #cLevel 5 or above on Gun Mastery",
+        "desc": "Uses parts of HP and MP to temporarily boost the firing speed of the Gun.This skill can only be triggered when the Gun is equipped. \\nRequired Skill : #cLevel 5 or above on Gun Mastery",
         "name": "Gun Booster",
         "bookName": ""
       },
@@ -1815,7 +1815,7 @@
       "soundPath": "Skill.img/5201004",
       "description": {
         "id": 5201004,
-        "desc": "[마스터 레벨 : 20]\\nThis skill allows you to pretend shooting a gun, faking out the monsters, and instead of firing bullets, it'll fire a flag. This will temporarily stun up to 2 monsters.",
+        "desc": "This skill allows you to pretend shooting a gun, faking out the monsters, and instead of firing bullets, it'll fire a flag. This will temporarily stun up to 2 monsters.",
         "name": "Blank Shot",
         "bookName": ""
       },
@@ -2032,7 +2032,7 @@
       "soundPath": "Skill.img/5201005",
       "description": {
         "id": 5201005,
-        "desc": "[마스터 레벨 : 10]\\nAllows for a longer, more sustained jump than a regular jump.",
+        "desc": "Allows for a longer, more sustained jump than a regular jump.",
         "name": "Wings",
         "bookName": ""
       },
@@ -2228,7 +2228,7 @@
       "soundPath": "Skill.img/5201006",
       "description": {
         "id": 5201006,
-        "desc": "[마스터 레벨 : 20]\\nUses the recoil of the gun to run back after a gunshot. \\nRequired Skill : #cLevel 5 or above on Wings#",
+        "desc": "Uses the recoil of the gun to run back after a gunshot. \\nRequired Skill : #cLevel 5 or above on Wings#",
         "name": "Recoil Shot",
         "bookName": ""
       },

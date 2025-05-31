@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/2310000",
       "description": {
         "id": 2310000,
-        "desc": "[마스터 레벨 : 20]\\nGains a higher tolerance for all element-based spell attacks from the enemy.",
+        "desc": "Gains a higher tolerance for all element-based spell attacks from the enemy.",
         "name": "Elemental Resistance",
         "bookName": ""
       },
@@ -451,7 +451,7 @@
       "soundPath": "Skill.img/2311001",
       "description": {
         "id": 2311001,
-        "desc": "[마스터 레벨 : 20]\\nNullifies all monsters' Magic effects within the targeted area while healing all abnormal conditions suffered by all surrounding party members.",
+        "desc": "Nullifies all monsters' Magic effects within the targeted area while healing all abnormal conditions suffered by all surrounding party members.",
         "name": "Dispel",
         "bookName": ""
       },
@@ -675,7 +675,7 @@
       "soundPath": "Skill.img/2311002",
       "description": {
         "id": 2311002,
-        "desc": "[마스터 레벨 : 20]\\nCreates a portal that heads to the nearest town. All members of the party can use it multiple times until the portal disappears. Press↑ to move.\\nRequired Skill : #cAt least Level 3 on Dispell#",
+        "desc": "Creates a portal that heads to the nearest town. All members of the party can use it multiple times until the portal disappears. Press↑ to move.\\nRequired Skill : #cAt least Level 3 on Dispell#",
         "name": "Mystic Door",
         "bookName": ""
       },
@@ -1462,7 +1462,7 @@
       "soundPath": "Skill.img/2311003",
       "description": {
         "id": 2311003,
-        "desc": "[마스터 레벨 : 30]\\nTemporarily allows all members of the party nearby to gain additional EXP while hunting.  It becomes fully effective only when there are more than 2 members of the party around.\\nRequired Skill : #cAt least Level 3 on Dispell#",
+        "desc": "Temporarily allows all members of the party nearby to gain additional EXP while hunting.  It becomes fully effective only when there are more than 2 members of the party around.\\nRequired Skill : #cAt least Level 3 on Dispell#",
         "name": "Holy Symbol",
         "bookName": ""
       },
@@ -1983,7 +1983,7 @@
       "soundPath": "Skill.img/2311004",
       "description": {
         "id": 2311004,
-        "desc": "[마스터 레벨 : 30]\\nAttacks multiple enemies at once with the ray of holy light. Applies massive damage to the undead + devil-based monsters.",
+        "desc": "Attacks multiple enemies at once with the ray of holy light. Applies massive damage to the undead + devil-based monsters.",
         "name": "Shining Ray",
         "bookName": ""
       },
@@ -2585,7 +2585,7 @@
       "soundPath": "Skill.img/2311005",
       "description": {
         "id": 2311005,
-        "desc": "[마스터 레벨 : 30]\\nTurns up to 6 monsters into snails.  Changes the look, the attacking capacity, and the speed of movement. Cannot be used against boss-level monsters.",
+        "desc": "Turns up to 6 monsters into snails.  Changes the look, the attacking capacity, and the speed of movement. Cannot be used against boss-level monsters.",
         "name": "Doom",
         "bookName": ""
       },
@@ -2959,7 +2959,7 @@
       "soundPath": "Skill.img/2311006",
       "description": {
         "id": 2311006,
-        "desc": "[마스터 레벨 : 30]\\nSummons a holy dragon for a certain amount of time. The dragon will stay beside you and attack the enemies in the process. The higher the skill level, the stronger the summoned dragon is.",
+        "desc": "Summons a holy dragon for a certain amount of time. The dragon will stay beside you and attack the enemies in the process. The higher the skill level, the stronger the summoned dragon is.",
         "name": "Summon Dragon",
         "bookName": ""
       },

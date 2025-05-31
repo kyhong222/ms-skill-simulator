@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/4210000",
       "description": {
         "id": 4210000,
-        "desc": "[마스터 레벨 : 20]\\nIncreases the def. of the equipped shield. Only works when the shield is equipped.",
+        "desc": "Increases the def. of the equipped shield. Only works when the shield is equipped.",
         "name": "Shield Mastery",
         "bookName": ""
       },
@@ -235,7 +235,7 @@
       "soundPath": "Skill.img/4211001",
       "description": {
         "id": 4211001,
-        "desc": "[마스터 레벨 : 30]\\nUses MP to recover HP. Only works when the HP is less than 50%, and it'll stop if either attacked or moved.",
+        "desc": "Uses MP to recover HP. Only works when the HP is less than 50%, and it'll stop if either attacked or moved.",
         "name": "Chakra",
         "bookName": ""
       },
@@ -545,7 +545,7 @@
       "soundPath": "Skill.img/4211002",
       "description": {
         "id": 4211002,
-        "desc": "[마스터 레벨 : 30]\\nAttacks a single monster with incredible power and speed. The attacked may even be stunned on a low succcess rate.",
+        "desc": "Attacks a single monster with incredible power and speed. The attacked may even be stunned on a low succcess rate.",
         "name": "Assaulter",
         "bookName": ""
       },
@@ -1015,7 +1015,7 @@
       "soundPath": "Skill.img/4211003",
       "description": {
         "id": 4211003,
-        "desc": "[마스터 레벨 : 20]\\nTemporarily increases the amount of mesos dropped off from the attacked monsters.  The amount of mesos increases in proportion to the skill level and damage done to the monsters.\\nRequired Skill : #cAt least Level 3 on Meso Explosion#",
+        "desc": "Temporarily increases the amount of mesos dropped off from the attacked monsters.  The amount of mesos increases in proportion to the skill level and damage done to the monsters.\\nRequired Skill : #cAt least Level 3 on Meso Explosion#",
         "name": "Pickpocket",
         "bookName": ""
       },
@@ -1984,7 +1984,7 @@
       "soundPath": "Skill.img/4211004",
       "description": {
         "id": 4211004,
-        "desc": "[마스터 레벨 : 30]\\nSummons fellow bandits to attack up to 6 monsters around the area.",
+        "desc": "Summons fellow bandits to attack up to 6 monsters around the area.",
         "name": "Band of Thieves",
         "bookName": ""
       },
@@ -2586,7 +2586,7 @@
       "soundPath": "Skill.img/4211005",
       "description": {
         "id": 4211005,
-        "desc": "[마스터 레벨 : 20]\\nUses mesos to guard 50% of the damage received. Once the skill is used, it saves up a certain amount of mesos, and once damaged from then on out, the mesos will be used based on the damage received. The skill will be turned off when the saved mesos are used up.\\nRequired Skill : #cAt least Level 3 on Chakra#",
+        "desc": "Uses mesos to guard 50% of the damage received. Once the skill is used, it saves up a certain amount of mesos, and once damaged from then on out, the mesos will be used based on the damage received. The skill will be turned off when the saved mesos are used up.\\nRequired Skill : #cAt least Level 3 on Chakra#",
         "name": "Meso Guard",
         "bookName": ""
       },
@@ -3655,7 +3655,7 @@
       "soundPath": "Skill.img/4211006",
       "description": {
         "id": 4211006,
-        "desc": "[마스터 레벨 : 30]\\nExplodes the mesos dropped on the ground around you to attack monsters. The mesos from the monsters killed by someone else will not be able to be used for this.",
+        "desc": "Explodes the mesos dropped on the ground around you to attack monsters. The mesos from the monsters killed by someone else will not be able to be used for this.",
         "name": "Meso Explosion",
         "bookName": ""
       },

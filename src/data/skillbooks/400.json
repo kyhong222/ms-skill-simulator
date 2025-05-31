@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/4000000",
       "description": {
         "id": 4000000,
-        "desc": "[마스터 레벨 : 20]\\nIncreases accuracy and avoidability.",
+        "desc": "Increases accuracy and avoidability.",
         "name": "Nimble Body",
         "bookName": ""
       },
@@ -132,7 +132,7 @@
       "soundPath": "Skill.img/4000001",
       "description": {
         "id": 4000001,
-        "desc": "[마스터 레벨 : 8]\\nIncreases the range of attack using throwing weapons such as throwing stars & knives.\\nRequired Skill : #cAt least Level 3 on Nimble Body#",
+        "desc": "Increases the range of attack using throwing weapons such as throwing stars & knives.\\nRequired Skill : #cAt least Level 3 on Nimble Body#",
         "name": "Keen Eyes",
         "bookName": ""
       },
@@ -184,7 +184,7 @@
       "soundPath": "Skill.img/4001002",
       "description": {
         "id": 4001002,
-        "desc": "[마스터 레벨 : 20]\\nTemporarily decreases the weapon def. and attacking abilities of the affected, even stunting the ongoing attacks. Can't use this skill on a monster that's already in \"disorder.\"",
+        "desc": "Temporarily decreases the weapon def. and attacking abilities of the affected, even stunting the ongoing attacks. Can't use this skill on a monster that's already in \"disorder.\"",
         "name": "Disorder",
         "bookName": ""
       },
@@ -422,7 +422,7 @@
       "soundPath": "Skill.img/4001003",
       "description": {
         "id": 4001003,
-        "desc": "[마스터 레벨 : 20]\\nUse MP to hide behind the shadows. Can't be attacked, and can't attack either.\\nRequired Skill : #cAt least Level 3 on Disorder#",
+        "desc": "Use MP to hide behind the shadows. Can't be attacked, and can't attack either.\\nRequired Skill : #cAt least Level 3 on Disorder#",
         "name": "Dark Sight",
         "bookName": ""
       },
@@ -706,7 +706,7 @@
       "soundPath": "Skill.img/4001334",
       "description": {
         "id": 4001334,
-        "desc": "[마스터 레벨 : 20]\\nUse MP to quickly stab a monster twice in one turn using a dagger.",
+        "desc": "Use MP to quickly stab a monster twice in one turn using a dagger.",
         "name": "Double Stab",
         "bookName": ""
       },
@@ -1038,7 +1038,7 @@
       "soundPath": "Skill.img/4001344",
       "description": {
         "id": 4001344,
-        "desc": "[마스터 레벨 : 20]\\nUse MP to throw 2 throwing stars and apply damage based on LUK, regardless of the rate of Claw Mastery.",
+        "desc": "Use MP to throw 2 throwing stars and apply damage based on LUK, regardless of the rate of Claw Mastery.",
         "name": "Lucky Seven",
         "bookName": ""
       },

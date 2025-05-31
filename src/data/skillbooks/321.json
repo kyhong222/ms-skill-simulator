@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/3210000",
       "description": {
         "id": 3210000,
-        "desc": "[마스터 레벨 : 20]\\nBoosts up the moving speed.",
+        "desc": "Boosts up the moving speed.",
         "name": "Thrust",
         "bookName": ""
       },
@@ -244,7 +244,7 @@
       "soundPath": "Skill.img/3210001",
       "description": {
         "id": 3210001,
-        "desc": "[마스터 레벨 : 20]\\nFor a certain rate, allows you to fire crossbow arrows even at a very close range. Even kills a monster with one shot every once in a while.",
+        "desc": "For a certain rate, allows you to fire crossbow arrows even at a very close range. Even kills a monster with one shot every once in a while.",
         "name": "Mortal Blow",
         "bookName": ""
       },
@@ -404,7 +404,7 @@
       "soundPath": "Skill.img/3211002",
       "description": {
         "id": 3211002,
-        "desc": "[마스터 레벨 : 20]\\nSummons a puppet (your other self) for a certain amount of time. While the puppet is around, the monsters will attack the puppet, not you.",
+        "desc": "Summons a puppet (your other self) for a certain amount of time. While the puppet is around, the monsters will attack the puppet, not you.",
         "name": "Puppet",
         "bookName": ""
       },
@@ -826,7 +826,7 @@
       "soundPath": "Skill.img/3211003",
       "description": {
         "id": 3211003,
-        "desc": "[마스터 레벨 : 30]\\nUses ice-based arrows to attack up to 6 monsters at once. Only works when equipped with a bow.",
+        "desc": "Uses ice-based arrows to attack up to 6 monsters at once. Only works when equipped with a bow.",
         "name": "Blizzard",
         "bookName": ""
       },
@@ -1427,7 +1427,7 @@
       "soundPath": "Skill.img/3211004",
       "description": {
         "id": 3211004,
-        "desc": "[마스터 레벨 : 30]\\nAttacks up to 6 monsters simultaneously by shooting multiple arrows.  Only works with a crossbow equipped.",
+        "desc": "Attacks up to 6 monsters simultaneously by shooting multiple arrows.  Only works with a crossbow equipped.",
         "name": "Arrow Eruption",
         "bookName": ""
       },
@@ -1804,7 +1804,7 @@
       "soundPath": "Skill.img/3211005",
       "description": {
         "id": 3211005,
-        "desc": "[마스터 레벨 : 30]\\nSummons a golden eagle. The eagle will be hovering around you, attacking monsters nearby.\\nRequired Skill : #cAt least Level 5 on Puppet#",
+        "desc": "Summons a golden eagle. The eagle will be hovering around you, attacking monsters nearby.\\nRequired Skill : #cAt least Level 5 on Puppet#",
         "name": "Golden Eagle",
         "bookName": ""
       },
@@ -2323,7 +2323,7 @@
       "soundPath": "Skill.img/3211006",
       "description": {
         "id": 3211006,
-        "desc": "[마스터 레벨 : 30]\\nFires 4 arrows at an enemy.",
+        "desc": "Fires 4 arrows at an enemy.",
         "name": "Strafe",
         "bookName": ""
       },

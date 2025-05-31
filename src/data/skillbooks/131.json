@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/1310000",
       "description": {
         "id": 1310000,
-        "desc": "[마스터 레벨 : 20]\\n Gains resistance against all Magic attacks (Fire, Cold, Lightning & Poison.)",
+        "desc": " Gains resistance against all Magic attacks (Fire, Cold, Lightning & Poison.)",
         "name": "Elemental Resistance",
         "bookName": ""
       },
@@ -234,7 +234,7 @@
       "soundPath": "Skill.img/1311001",
       "description": {
         "id": 1311001,
-        "desc": "[마스터 레벨 : 30]\\nAttacks multiple monsters serveral times by thrusting the spear.",
+        "desc": "Attacks multiple monsters serveral times by thrusting the spear.",
         "name": "Spear Crusher",
         "bookName": ""
       },
@@ -673,7 +673,7 @@
       "soundPath": "Skill.img/1311002",
       "description": {
         "id": 1311002,
-        "desc": "[마스터 레벨 : 30]\\nAttacks multiple monsters serveral times by thrusting the pole arm.",
+        "desc": "Attacks multiple monsters serveral times by thrusting the pole arm.",
         "name": "Pole Arm Crusher",
         "bookName": ""
       },
@@ -1170,7 +1170,7 @@
       "soundPath": "Skill.img/1311003",
       "description": {
         "id": 1311003,
-        "desc": "[마스터 레벨 : 30]\\n Attacks up to 6 monsters nearby in relatively distant range by swinging the Spear.",
+        "desc": " Attacks up to 6 monsters nearby in relatively distant range by swinging the Spear.",
         "name": "Dragon Fury: Spear",
         "bookName": ""
       },
@@ -1577,7 +1577,7 @@
       "soundPath": "Skill.img/1311004",
       "description": {
         "id": 1311004,
-        "desc": "[마스터 레벨 : 30]\\n Attacks up to 6 monsters nearby in relatively distant range by swinging the pole arm.",
+        "desc": " Attacks up to 6 monsters nearby in relatively distant range by swinging the pole arm.",
         "name": "Dragon Fury: Pole Arm",
         "bookName": ""
       },
@@ -2438,7 +2438,7 @@
       "soundPath": "Skill.img/1311006",
       "description": {
         "id": 1311006,
-        "desc": "[마스터 레벨 : 30]\\n Attacks up to 15 monsters at once by temporarily stunning them.  It works only when more than 50% of HP is left.\\nRequired Skill : #cAt least Level 3 on Sacrifice#",
+        "desc": " Attacks up to 15 monsters at once by temporarily stunning them.  It works only when more than 50% of HP is left.\\nRequired Skill : #cAt least Level 3 on Sacrifice#",
         "name": "Dragon Roar",
         "bookName": ""
       },
@@ -3109,7 +3109,7 @@
       "soundPath": "Skill.img/1311007",
       "description": {
         "id": 1311007,
-        "desc": "[마스터 레벨 : 20]\\n Nullifies \"power-up\" skills of multiple monsters with a given success rate.\\nRequired Skill : #cAt least Level 3 on Dragon Blood#",
+        "desc": " Nullifies \"power-up\" skills of multiple monsters with a given success rate.\\nRequired Skill : #cAt least Level 3 on Dragon Blood#",
         "name": "Power Crash",
         "bookName": ""
       },
@@ -3625,7 +3625,7 @@
       "soundPath": "Skill.img/1311008",
       "description": {
         "id": 1311008,
-        "desc": "[마스터 레벨 : 20]\\nIncreases the attacking capacity, but decreases HP steadily until 4 seconds before the remaining HP exhausts.",
+        "desc": "Increases the attacking capacity, but decreases HP steadily until 4 seconds before the remaining HP exhausts.",
         "name": "Dragon Blood",
         "bookName": ""
       },

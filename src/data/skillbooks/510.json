@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/5100000",
       "description": {
         "id": 5100000,
-        "desc": "[마스터 레벨 : 10]\\nApply AP to MaxHP to improve the rate of increase for MaxHP.",
+        "desc": "Apply AP to MaxHP to improve the rate of increase for MaxHP.",
         "name": "Improve MaxHP",
         "bookName": ""
       },
@@ -82,7 +82,7 @@
       "soundPath": "Skill.img/5100001",
       "description": {
         "id": 5100001,
-        "desc": "[마스터 레벨 : 20]\\nBoosts the accuracy and the mastery of Knucklers. This skill only applies when you equip a Knuckler.",
+        "desc": "Boosts the accuracy and the mastery of Knucklers. This skill only applies when you equip a Knuckler.",
         "name": "Knuckler Mastery",
         "bookName": ""
       },
@@ -466,7 +466,7 @@
       "soundPath": "Skill.img/5101002",
       "description": {
         "id": 5101002,
-        "desc": "[마스터 레벨 : 20]\\nThis skill allows you to quickly slide back and elbow multiple monsters at once to apply damage and temporarily stun them.",
+        "desc": "This skill allows you to quickly slide back and elbow multiple monsters at once to apply damage and temporarily stun them.",
         "name": "Backspin Blow",
         "bookName": ""
       },
@@ -988,7 +988,7 @@
       "soundPath": "Skill.img/5101003",
       "description": {
         "id": 5101003,
-        "desc": "[마스터 레벨 : 20]\\nA quick round of two punches to apply damage and temporarily stun a monster.",
+        "desc": "A quick round of two punches to apply damage and temporarily stun a monster.",
         "name": "Double Uppercut",
         "bookName": ""
       },
@@ -1720,7 +1720,7 @@
       "soundPath": "Skill.img/5101004",
       "description": {
         "id": 5101004,
-        "desc": "[마스터 레벨 : 20]\\nThis skill allows you to run forward and punch multiple monsters in front at once.",
+        "desc": "This skill allows you to run forward and punch multiple monsters in front at once.",
         "name": "Corkscrew Blow",
         "bookName": ""
       },
@@ -2212,7 +2212,7 @@
       "soundPath": "Skill.img/5101005",
       "description": {
         "id": 5101005,
-        "desc": "[마스터 레벨 : 10]\\nRecovers MP by using up a bit of HP.",
+        "desc": "Recovers MP by using up a bit of HP.",
         "name": "MP Recovery",
         "bookName": ""
       },
@@ -2460,7 +2460,7 @@
       "soundPath": "Skill.img/5101006",
       "description": {
         "id": 5101006,
-        "desc": "[마스터 레벨 : 20]\\nUses parts of HP and MP to temporarily boost the speed of a Knuckler. This skill can only be triggered when a Knuckler is equipped. \\nRequired Skill : #cLevel 5 or above on Knuckler Mastery",
+        "desc": "Uses parts of HP and MP to temporarily boost the speed of a Knuckler. This skill can only be triggered when a Knuckler is equipped. \\nRequired Skill : #cLevel 5 or above on Knuckler Mastery",
         "name": "Knuckler Booster",
         "bookName": ""
       },
@@ -2902,7 +2902,7 @@
       "soundPath": "Skill.img/5101007",
       "description": {
         "id": 5101007,
-        "desc": "[마스터 레벨 : 10]\\nThis skill will allow you to safely navigate your way through monsters without being recognized by them...by donning an Oak Barrel. Some clever monsters may be able to tell, though, so be careful. If you are lying down, it's literally impossible to tell the difference!",
+        "desc": "This skill will allow you to safely navigate your way through monsters without being recognized by them...by donning an Oak Barrel. Some clever monsters may be able to tell, though, so be careful. If you are lying down, it's literally impossible to tell the difference!",
         "name": "Oak Barrel",
         "bookName": ""
       },

@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/5110000",
       "description": {
         "id": 5110000,
-        "desc": "[마스터 레벨 : 20]\\nWhen attacking a monster that's stunned, the critical attack will be triggered at a set rate.",
+        "desc": "When attacking a monster that's stunned, the critical attack will be triggered at a set rate.",
         "name": "Stun Mastery",
         "bookName": ""
       },
@@ -766,7 +766,7 @@
       "soundPath": "Skill.img/5110001",
       "description": {
         "id": 5110001,
-        "desc": "[마스터 레벨 : 40]\\nA set amount of energy is charged after every attack. When the energy is fully charged, this will automatically trigger the effects of the Body Attack and Stance, and will allow you to use energy-related skills.",
+        "desc": "A set amount of energy is charged after every attack. When the energy is fully charged, this will automatically trigger the effects of the Body Attack and Stance, and will allow you to use energy-related skills.",
         "name": "Energy Charge",
         "bookName": ""
       },
@@ -1486,7 +1486,7 @@
       "soundPath": "Skill.img/5111002",
       "description": {
         "id": 5111002,
-        "desc": "[마스터 레벨 : 30]\\nBlasts a ball of energy to attack multiple monsters at once. This skill can only be used when #cthe energy is fully charged#.\\nRequired Skill : #cLevel 1 of Energy Charge#",
+        "desc": "Blasts a ball of energy to attack multiple monsters at once. This skill can only be used when #cthe energy is fully charged#.\\nRequired Skill : #cLevel 1 of Energy Charge#",
         "name": "Energy Blast",
         "bookName": ""
       },
@@ -2269,7 +2269,7 @@
       "soundPath": "Skill.img/5111004",
       "description": {
         "id": 5111004,
-        "desc": "[마스터 레벨 : 20]\\nUses energy to convert the lost HP of a monster into your own HP. This skill can only be used when #cthe energy is full charged#.\\nRequired Skill : #cLevel 1 of Energy Charge#",
+        "desc": "Uses energy to convert the lost HP of a monster into your own HP. This skill can only be used when #cthe energy is full charged#.\\nRequired Skill : #cLevel 1 of Energy Charge#",
         "name": "Energy Drain",
         "bookName": ""
       },
@@ -2447,7 +2447,7 @@
       "soundPath": "Skill.img/5111005",
       "description": {
         "id": 5111005,
-        "desc": "[마스터 레벨 : 20]\\nTransforms you into a more powerful state for 120 seconds. \\nSkills available : Shockwave, Knuckle Booster, Energy Blast, Energy Drain, Maple Warrior, Will of the Warrior, Speed Infusion, Time Leap",
+        "desc": "Transforms you into a more powerful state for 120 seconds. \\nSkills available : Shockwave, Knuckle Booster, Energy Blast, Energy Drain, Maple Warrior, Will of the Warrior, Speed Infusion, Time Leap",
         "name": "Transformation",
         "bookName": ""
       },
@@ -2953,7 +2953,7 @@
       "soundPath": "Skill.img/5111006",
       "description": {
         "id": 5111006,
-        "desc": "[마스터 레벨 : 30]\\nStrikes the ground with tremendous force, affecting multiple monsters. This skill can only be used during #cTransformation or Super Transformation#.\\nRequired Skill : #cLevel 1 of Transformation#",
+        "desc": "Strikes the ground with tremendous force, affecting multiple monsters. This skill can only be used during #cTransformation or Super Transformation#.\\nRequired Skill : #cLevel 1 of Transformation#",
         "name": "Shockwave",
         "bookName": ""
       },

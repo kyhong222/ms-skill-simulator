@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/1210000",
       "description": {
         "id": 1210000,
-        "desc": "[마스터 레벨 : 20]\\nRecovering even more MP every 10 sec. ",
+        "desc": "Recovering even more MP every 10 sec. ",
         "name": "Improving MP Recovery",
         "bookName": ""
       },
@@ -112,7 +112,7 @@
       "soundPath": "Skill.img/1210001",
       "description": {
         "id": 1210001,
-        "desc": "[마스터 레벨 : 20]\\nShield Defense increases. However, it does not affect if the character does not equip the shield.",
+        "desc": "Shield Defense increases. However, it does not affect if the character does not equip the shield.",
         "name": "Shield Mastery",
         "bookName": ""
       },
@@ -855,7 +855,7 @@
       "soundPath": "Skill.img/1211002",
       "description": {
         "id": 1211002,
-        "desc": "[마스터 레벨 : 30]\\n Make the enemy stun. You can use this skill only when your combo is charged up.",
+        "desc": " Make the enemy stun. You can use this skill only when your combo is charged up.",
         "name": "Charged Blow",
         "bookName": ""
       },
@@ -5519,7 +5519,7 @@
       "soundPath": "Skill.img/1211009",
       "description": {
         "id": 1211009,
-        "desc": "[마스터 레벨 : 20]\\n Nullifies the magic defense buff used by the monster with a given success rate.\\nRequired Skill : #cAt least Level 3 on Charged Blow#",
+        "desc": " Nullifies the magic defense buff used by the monster with a given success rate.\\nRequired Skill : #cAt least Level 3 on Charged Blow#",
         "name": "Magic Crash",
         "bookName": ""
       },

@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/2000000",
       "description": {
         "id": 2000000,
-        "desc": "[마스터 레벨 : 16]\\nRecovering even more MP every 10 sec. The higher the level of the character and the skill level, the more recovery it enables the character to have.",
+        "desc": "Recovering even more MP every 10 sec. The higher the level of the character and the skill level, the more recovery it enables the character to have.",
         "name": "Improved MP Recovery",
         "bookName": ""
       },
@@ -387,7 +387,7 @@
       "soundPath": "Skill.img/2001002",
       "description": {
         "id": 2001002,
-        "desc": "[마스터 레벨 : 20]\\nTemporarily replaces damage with MP instead of HP. If MP reaches 0, the HP takes a full hit.",
+        "desc": "Temporarily replaces damage with MP instead of HP. If MP reaches 0, the HP takes a full hit.",
         "name": "Magic Guard",
         "bookName": ""
       },
@@ -527,7 +527,7 @@
       "soundPath": "Skill.img/2001003",
       "description": {
         "id": 2001003,
-        "desc": "[마스터 레벨 : 20]\\nTemporarily boosts the weapon def. of the armor by blowing magic into it.\\nRequired Skill : #cAt least Level 3 on Magic Guard#",
+        "desc": "Temporarily boosts the weapon def. of the armor by blowing magic into it.\\nRequired Skill : #cAt least Level 3 on Magic Guard#",
         "name": "Magic Armor",
         "bookName": ""
       },
@@ -870,7 +870,7 @@
       "soundPath": "Skill.img/2001004",
       "description": {
         "id": 2001004,
-        "desc": "[마스터 레벨 : 20]\\nUse MP to attack one enemy.",
+        "desc": "Use MP to attack one enemy.",
         "name": "Energy Bolt",
         "bookName": ""
       },
@@ -1190,7 +1190,7 @@
       "soundPath": "Skill.img/2001005",
       "description": {
         "id": 2001005,
-        "desc": "[마스터 레벨 : 20]\\nUse MP to attack an enemy twice.\\nRequired Skill : #cAt least Level 1 on Energy Bolt#",
+        "desc": "Use MP to attack an enemy twice.\\nRequired Skill : #cAt least Level 1 on Energy Bolt#",
         "name": "Magic Claw",
         "bookName": ""
       },

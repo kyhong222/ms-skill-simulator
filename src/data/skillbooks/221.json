@@ -15,7 +15,7 @@
       "soundPath": "Skill.img/2210000",
       "description": {
         "id": 2210000,
-        "desc": "[마스터 레벨 : 20]\\n Gains resistance against Magic attacks of Ice and Lightning.",
+        "desc": " Gains resistance against Magic attacks of Ice and Lightning.",
         "name": "Partial Resistance",
         "bookName": ""
       },
@@ -112,7 +112,7 @@
       "soundPath": "Skill.img/2210001",
       "description": {
         "id": 2210001,
-        "desc": "[마스터 레벨 : 30]\\n Boosts the capacity for all Magic attacks by using additional MP.",
+        "desc": " Boosts the capacity for all Magic attacks by using additional MP.",
         "name": "Element Amplification",
         "bookName": ""
       },
@@ -601,7 +601,7 @@
       "soundPath": "Skill.img/2211002",
       "description": {
         "id": 2211002,
-        "desc": "[마스터 레벨 : 30]\\nFires ice blocks at multiple enemies. If struck, all monsters other than ice-based ones will freeze. Cannot attack more than 6 at once.",
+        "desc": "Fires ice blocks at multiple enemies. If struck, all monsters other than ice-based ones will freeze. Cannot attack more than 6 at once.",
         "name": "Ice Strike",
         "bookName": ""
       },
@@ -1295,7 +1295,7 @@
       "soundPath": "Skill.img/2211003",
       "description": {
         "id": 2211003,
-        "desc": "[마스터 레벨 : 30]\\nGathers up the power of lightening and turns it into a spear, attacking a single enemy. Monsters will be damaged with a lightening-based attack.",
+        "desc": "Gathers up the power of lightening and turns it into a spear, attacking a single enemy. Monsters will be damaged with a lightening-based attack.",
         "name": "Thunder Spear",
         "bookName": ""
       },
@@ -1699,7 +1699,7 @@
       "soundPath": "Skill.img/2211004",
       "description": {
         "id": 2211004,
-        "desc": "[마스터 레벨 : 20]\\nSeals up the enemies around you for a certain amount of time. Once sealed up, the monsters can't use attacking skills, but the skill does not work on boss monsters.\\nRequired Skill : #cAt least Level 3 on Element Amplification#",
+        "desc": "Seals up the enemies around you for a certain amount of time. Once sealed up, the monsters can't use attacking skills, but the skill does not work on boss monsters.\\nRequired Skill : #cAt least Level 3 on Element Amplification#",
         "name": "Seal",
         "bookName": ""
       },
@@ -2250,7 +2250,7 @@
       "soundPath": "Skill.img/2211005",
       "description": {
         "id": 2211005,
-        "desc": "[마스터 레벨 : 20]\\nUses up a significant amount of HP and MP to increase the attacking speed for spells.",
+        "desc": "Uses up a significant amount of HP and MP to increase the attacking speed for spells.",
         "name": "Spell Booster",
         "bookName": ""
       },
@@ -2773,7 +2773,7 @@
       "soundPath": "Skill.img/2211006",
       "description": {
         "id": 2211006,
-        "desc": "[마스터 레벨 : 30]\\nAttacks a single monster with Magic attack of Ice and Lightning features combined.  Very effective to the monsters vulnerable to ice and lightning, and if struck, the monster will freeze.",
+        "desc": "Attacks a single monster with Magic attack of Ice and Lightning features combined.  Very effective to the monsters vulnerable to ice and lightning, and if struck, the monster will freeze.",
         "name": "Element Composition",
         "bookName": ""
       },

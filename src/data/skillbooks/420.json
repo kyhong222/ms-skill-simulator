@@ -132,7 +132,7 @@
       "soundPath": "Skill.img/4200001",
       "description": {
         "id": 4200001,
-        "desc": "[마스터 레벨 : 20]\\nRecovers additional amount of HP and MP.",
+        "desc": "Recovers additional amount of HP and MP.",
         "name": "Endure",
         "bookName": ""
       },
@@ -440,7 +440,7 @@
       "soundPath": "Skill.img/4201002",
       "description": {
         "id": 4201002,
-        "desc": "[마스터 레벨 : 20]\\nUse HP and MP to temporarily boost up the attacking speed of the dagger. Only applies when the character has a dagger in hand. \\nRequired Skill : #cAt least Level 5 on Dagger Mastery#",
+        "desc": "Use HP and MP to temporarily boost up the attacking speed of the dagger. Only applies when the character has a dagger in hand. \\nRequired Skill : #cAt least Level 5 on Dagger Mastery#",
         "name": "Dagger Booster",
         "bookName": ""
       },
@@ -885,7 +885,7 @@
       "soundPath": "Skill.img/4201003",
       "description": {
         "id": 4201003,
-        "desc": "[마스터 레벨 : 20]\\nTemporarily boosts the speed and jumping ability of everyone in the party.",
+        "desc": "Temporarily boosts the speed and jumping ability of everyone in the party.",
         "name": "Haste",
         "bookName": ""
       },
@@ -1161,7 +1161,7 @@
       "soundPath": "Skill.img/4201004",
       "description": {
         "id": 4201004,
-        "desc": "[마스터 레벨 : 30]\\nSteals one of the monster's items with a given success rate.  It works only once against the same monster.  The effort can be continued till its success.\\nRequired Skill : #cAt least Level 5 on Haste#",
+        "desc": "Steals one of the monster's items with a given success rate.  It works only once against the same monster.  The effort can be continued till its success.\\nRequired Skill : #cAt least Level 5 on Haste#",
         "name": "Steal",
         "bookName": ""
       },
@@ -1584,7 +1584,7 @@
       "soundPath": "Skill.img/4201005",
       "description": {
         "id": 4201005,
-        "desc": "[마스터 레벨 : 30]\\nUse MP to attack an enemy up to 6 times in a row with a dagger.",
+        "desc": "Use MP to attack an enemy up to 6 times in a row with a dagger.",
         "name": "Savage Blow",
         "bookName": ""
       },

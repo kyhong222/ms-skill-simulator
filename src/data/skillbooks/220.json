@@ -129,7 +129,7 @@
       "soundPath": "Skill.img/2200000",
       "description": {
         "id": 2200000,
-        "desc": "[마스터 레벨 : 20]\\nAbsorbs the enemy's MP when attacking with Magic skills, until it reaches 0.",
+        "desc": "Absorbs the enemy's MP when attacking with Magic skills, until it reaches 0.",
         "name": "MP Eater",
         "bookName": ""
       },
@@ -567,7 +567,7 @@
       "soundPath": "Skill.img/2201001",
       "description": {
         "id": 2201001,
-        "desc": "[마스터 레벨 : 20]\\nMeditate for a bit to temporarily boost up the magic attack of party members around the area.\\nRequired Skill : #cAt least Level 3 on MP Eater#",
+        "desc": "Meditate for a bit to temporarily boost up the magic attack of party members around the area.\\nRequired Skill : #cAt least Level 3 on MP Eater#",
         "name": "Meditation",
         "bookName": ""
       },
@@ -747,7 +747,7 @@
       "soundPath": "Skill.img/2201002",
       "description": {
         "id": 2201002,
-        "desc": "[마스터 레벨 : 20]\\nUse the arrow keys to teleport to other places in the same map on a set distance.",
+        "desc": "Use the arrow keys to teleport to other places in the same map on a set distance.",
         "name": "Teleport",
         "bookName": ""
       },
@@ -1017,7 +1017,7 @@
       "soundPath": "Skill.img/2201003",
       "description": {
         "id": 2201003,
-        "desc": "[마스터 레벨 : 20]\\nTemporarily slows down the movement of up to 6 monsters. Cannot be used on the same monsters more than twice in a row.\\nRequired Skill : #cAt least Level 5 on Teleport#",
+        "desc": "Temporarily slows down the movement of up to 6 monsters. Cannot be used on the same monsters more than twice in a row.\\nRequired Skill : #cAt least Level 5 on Teleport#",
         "name": "Slow",
         "bookName": ""
       },
@@ -1410,7 +1410,7 @@
       "soundPath": "Skill.img/2201004",
       "description": {
         "id": 2201004,
-        "desc": "[마스터 레벨 : 30]\\nAttacks a single monster with a sharp piece of Ice. The monster will freeze if hit.  Damages the fire-based enemies 1.5 times more, where as the ice-based enemies get only half the damage.",
+        "desc": "Attacks a single monster with a sharp piece of Ice. The monster will freeze if hit.  Damages the fire-based enemies 1.5 times more, where as the ice-based enemies get only half the damage.",
         "name": "Cold Beam",
         "bookName": ""
       },
@@ -1968,7 +1968,7 @@
       "soundPath": "Skill.img/2201005",
       "description": {
         "id": 2201005,
-        "desc": "[마스터 레벨 : 30]\\nAttacks surrounding monsters with a thunder bolt.  All monsters in the range receive damage.",
+        "desc": "Attacks surrounding monsters with a thunder bolt.  All monsters in the range receive damage.",
         "name": "Thunder Bolt",
         "bookName": ""
       },
