@@ -18,7 +18,7 @@ function App() {
             </h2>
             <button
               onClick={() => setJob(null)}
-              className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
+              className="text-gray-900 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
               style={{width: '120px'}}
             >
               직업 변경
