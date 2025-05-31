@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/1210000",
       "description": {
         "id": 1210000,
-        "desc": "Recovering even more MP every 10 sec. ",
-        "name": "Improving MP Recovery",
+        "desc": "10초마다 더욱 많은 양의 MP를 회복할 수 있다.",
+        "name": "MP 회복력 향상",
         "bookName": ""
       },
       "levelProperties": [
@@ -112,8 +112,8 @@
       "soundPath": "Skill.img/1210001",
       "description": {
         "id": 1210001,
-        "desc": "Shield Defense increases. However, it does not affect if the character does not equip the shield.",
-        "name": "Shield Mastery",
+        "desc": "장비하고 있는 방패의 방어력이 상승한다. 방패를 착용하지 않으면 효과를 볼 수 없다.",
+        "name": "쉴드 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -855,8 +855,8 @@
       "soundPath": "Skill.img/1211002",
       "description": {
         "id": 1211002,
-        "desc": " Make the enemy stun. You can use this skill only when your combo is charged up.",
-        "name": "Charged Blow",
+        "desc": "무기에 부여된 속성으로 6마리 이하 다수의 적을 공격한다. 차지된 상태에서만 가능하며 일정 확률로 몬스터는 스턴 상태가 된다.",
+        "name": "차지 블로우",
         "bookName": ""
       },
       "levelProperties": [
@@ -1451,8 +1451,8 @@
       "soundPath": "Skill.img/1211003",
       "description": {
         "id": 1211003,
-        "desc": "[마스터 레벨: 30]\\n Temporarily adds an element of fire into the sword.  It gets cancelled when the charge blow is used or it simply expires.",
-        "name": "Fire Charge: Sword",
+        "desc": "일정 시간동안 검에 화염 속성을 부여한다. 시간이 다 되거나 차지 블로우를 사용하면 취소된다.",
+        "name": "플레임 차지 : 검",
         "bookName": ""
       },
       "levelProperties": [
@@ -2107,8 +2107,8 @@
       "soundPath": "Skill.img/1211004",
       "description": {
         "id": 1211004,
-        "desc": "[마스터 레벨: 30]\\n Temporarily adds an element of fire into the blunt weapon.  It gets cancelled when the charge blow is used or it simply expires.",
-        "name": "Flame Charge: BW",
+        "desc": "일정 시간동안 둔기에 화염 속성을 부여한다. 시간이 다 되거나 차지 블로우를 사용하면 취소된다.",
+        "name": "파이어 차지 : 둔기",
         "bookName": ""
       },
       "levelProperties": [
@@ -2763,8 +2763,8 @@
       "soundPath": "Skill.img/1211005",
       "description": {
         "id": 1211005,
-        "desc": "[마스터 레벨: 30]\\n You can attack with ice power. The skill get canceled if you use Charge Blow or if the time runs out.",
-        "name": "Ice Charge: Sword",
+        "desc": "일정 시간동안 검에 얼음 속성을 부여한다. 시간이 다 되거나 차지 블로우를 사용하면 취소된다.",
+        "name": "블리자드 차지 : 검",
         "bookName": ""
       },
       "levelProperties": [
@@ -3449,8 +3449,8 @@
       "soundPath": "Skill.img/1211006",
       "description": {
         "id": 1211006,
-        "desc": "[마스터 레벨: 30]\\n Temporarily adds an element of blizzard into the blunt weapon.  It gets cancelled when the charge blow is used or it simply expires.",
-        "name": "Blizzard Charge: BW",
+        "desc": "일정 시간동안 둔기에 얼음 속성을 부여한다. 시간이 다 되거나 차지 블로우를 사용하면 취소된다.",
+        "name": "아이스 차지 : 둔기",
         "bookName": ""
       },
       "levelProperties": [
@@ -4135,8 +4135,8 @@
       "soundPath": "Skill.img/1211007",
       "description": {
         "id": 1211007,
-        "desc": "[마스터 레벨: 30]\\n Temporarily adds an element of thunder into the sword.  It gets cancelled when the charge blow is used or it simply expires.",
-        "name": "Thunder Charge: Sword",
+        "desc": "일정 시간동안 검에 번개 속성을 부여한다. 다른 속성의 차지 스킬과 중복하여 사용할 수 있다. 시간이 다 되거나 차지 블로우를 사용하면 취소된다.",
+        "name": "선더 차지 : 검",
         "bookName": ""
       },
       "levelProperties": [
@@ -4791,8 +4791,8 @@
       "soundPath": "Skill.img/1211008",
       "description": {
         "id": 1211008,
-        "desc": "[마스터 레벨: 30]\\n Temporarily adds an element of lightning into the blunt weapon.  It gets cancelled when the charge blow is used or it simply expires.",
-        "name": "Lightning Charge: BW",
+        "desc": "일정 시간동안 둔기에 번개 속성을 부여한다. 다른 속성의 차지 스킬과 중복하여 사용할 수 있다. 시간이 다 되거나 차지 블로우를 사용하면 취소된다.",
+        "name": "라이트닝 차지 : 둔기",
         "bookName": ""
       },
       "levelProperties": [
@@ -5519,8 +5519,8 @@
       "soundPath": "Skill.img/1211009",
       "description": {
         "id": 1211009,
-        "desc": " Nullifies the magic defense buff used by the monster with a given success rate.\\nRequired Skill : #cAt least Level 3 on Charged Blow#",
-        "name": "Magic Crash",
+        "desc": "일정 확률로 적 다수의 매직가드 업 스킬을 무효화 한다. 매직가드 업 상태인 적에게 사용하자.",
+        "name": "매직 크래쉬",
         "bookName": ""
       },
       "requiredSkillLevels": {
