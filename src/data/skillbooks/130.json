@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/1300000",
       "description": {
         "id": 1300000,
-        "desc": "Increases the spear mastery and accuracy. It only applies when a spear is in hand.",
-        "name": "Spear Mastery",
+        "desc": "창 계열 무기의 숙련도와 명중률을 상승시킨다. 반드시 이 기술은 창을 들었을 경우에만 적용된다.",
+        "name": "스피어 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -132,8 +132,8 @@
       "soundPath": "Skill.img/1300001",
       "description": {
         "id": 1300001,
-        "desc": "Increases the mastery of pole arms and accuracy. It only applies when a pole arm is in hand.",
-        "name": "Pole Arm Mastery",
+        "desc": "폴암 계열 무기의 숙련도와 명중률을 상승시킨다. 반드시 이 기술은 폴암을 들었을 경우에만 적용된다.",
+        "name": "폴암 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -309,8 +309,8 @@
       "soundPath": "Skill.img/1300002",
       "description": {
         "id": 1300002,
-        "desc": "Strikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand spear.\\nRequired Skill : #cAt least Level 3 on Spear Mastery#",
-        "name": "Final Attack : Spear",
+        "desc": "일정 확률로 공격 스킬이 사용된 후 연속 공격이 발동된다. 반드시 창을 들었을 경우에만 발동된다.",
+        "name": "파이널 어택 : 창",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -539,8 +539,8 @@
       "soundPath": "Skill.img/1300003",
       "description": {
         "id": 1300003,
-        "desc": "Strikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand pole arm.\\nRequired Skill : #cAt least Level 3 on Pole Arm Mastery#",
-        "name": "Final Attack : Pole Arm",
+        "desc": "일정 확률로 공격 스킬이 사용된 후 연속 공격이 발동된다. 반드시 폴암을 들었을 경우에만 발동된다.",
+        "name": "파이널 어택 : 폴암",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -704,9 +704,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACj0lEQVR4nL2XjZGCMBCF1xkbiCVgCVACliAlnCVoCVLCUcJZApQAJZgSTAlcXmS5DeDJ393OKCGQfG93k5Bsybea/sc2XJAC6ry8r9K7IuOuURS5a1mWtka1zw/RvmYRLMDB4zCYDa2qqi0z+Hq90uVycWXZ9/WrpEsSORHbteAMhdV1TWmaOji8D8PQE3g+hkSNiC2taAwDXGvtCSyKp4A4Dr02iwWw9114lmWujsGhBVdF1Wu/WgSGPAf8fP6gwooEHN5zOkJllgngnMJ7zjnD4T2M4cYYr93zVs0X0B10Muywx+NBSqkWrivtvGcdQRC0Yhel4F5eSQVH2u327p5zLuFsKEKE1qaBz0wBex/aaVtZz47N9GV4N+zwHsZwQ8brb5IACUcY06yg5PRcVXm0y7DDPqwgZJvhxl5tgKjQE8dAF44wIgLseXyMKVBBOw445xI+ZKMEvIMj5/BaNYspw7thh/eTBYyB44eQp00aeOzJsMNU8z3CWlDo6r2AsXB4jx97jvfdTGgESfDoCMyFI+ku9w0U1yHwrwKWwO0T0kaTLmiU9QQshbsBJyLAfbJ1o+EJWBMul2o29PMyAn/hefnI23K0O7xOAZqvDWe76Zt3z+nwPsd/FXa8Jz9I8nme534K1vI8v39JCc2iZLz6wz7xUwCg3EJPhctNJ97JiqyXilT361oB2LPzCJ0D9+Puh/2dtSmQXsyGW0sOP+H9zD8pvaWurDNNQ+atA9yh3EJPgct57lKKtmb4OUeptxLKjqfAZZ1c+brp4PfS28/XcIOzmjwdeekYAX9lp+Q0WA+4PRWhuOEIOBE4s3lqFU8j54vbRvF3/DdDO57n0hANCcefTMGmOTD+h7XH82/6Mb7n/LF5QwAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLElEQVR4nL2X8dXBMBTF03MswAiMwAiMwAodoUZgBSMwAiMwAiPUCP3cHDfnJuLTtOH+oWna5nffe5GmA+OrMb9RwYYaaM7nc1bKbDazx3DcR39DEzRg4dPptDPscrm8gDebjVmv17atY+/3e7NarayJQS44oVDTNGa73Vo4x1aDy+XSmRiYjCIM8Nvt5hk8nU62PZ/PvWd6G2D0IXy329k+BbOd1QAVixzAqqpcBmCC5RgOh/0MsKaInjUnHNFDhN/vd+85Pe9kIJx0mnaormsbIWE4InqCx+OxM9urBJjJGHg0Gtlz1lzhFNq4F2AtU7IBRo9aYiDWkvAw7SwV4aGSDCgcaTwcDm6h4QzXtEMwBBFO08klCOEYAH2MHIsLBuY80JrHIk/KwCc4wIDhmsLDtHcqQRs4Jx3LEEbOI+cL589HA23hADJiHHE/+mlIwa0z0BXOPkJx/O9FFzXQBw6hHVv3WxnoC6cBPddXcZgNz0BOuC7VVGzH5Qx8I/Lr9erak8nExOQM5IazT9PPQCHvdfzNtOsLSa8fj0c/A7ki58D6nPZDi8XCLwGAuoVOhYebTrykQsX6vAxwhnaBqzTqNnIGNIqucOix1XZtbFj4dny3MHnrAAfUnWwKXP/nLKlmQ6+z/2Ul1IFT4NrHTMZKwfs4J2CgwLeafh2Fk+oT/J3Ksoz2A/4sVcEMWBOomYpzgQo3lO+E5/RvR2EsheNHS1A8Pxh/Ifd5/gcwLckZCSNBQwAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACnElEQVR4nL2X4ZWqMBCFwzk2kC2BV0IoQUvAEp4lSAlSwlqCliAlkBI2JZAS2LmRwQniCsru/JCYQL47M2FIViq2Vv2NJdyQAtpL/bXI7Fr5cM2yLFzruqYe3Y9vsn8ti2ABAb426ctQa23fZvDhcFBFUYS2nPtwqlWxzYKI1VJwhsLatlVlWQY4vDfGRAL3uVGqE7FSCxrDAHfORQLP1VVAvjbRM28LYO+H8OPxGPoYvCZwVdm75xeLwJjngB/2/1VFIgGH95wOo/17Ajin8J5zznB4D2O49/FzLvzXrwsYLjoZdljTNEpr3cNxP7x3nRCTpsp2Yt9KQdvk5MheJcntfUfYJZwN8CCCGoBzrZgtgL039NrayiuTmwg+DDuniuFe+Wi+WQIkPKUw7kqn7PZaVXm1y7DD9iQI2WY4ril1VG7mGhjCkXNrXe95nq9p4lSV3TrgnEv4mE0S8AyuCezJbd0VU4YPw+7cvYinAqbAac1Rn6d3/eo9c2TYYWn3PUItqJx9LmAqHDn33vWeh/tpgNeFBE+OwKtwHToV15kAHwP/KOAdeFh0NGArp6bYnYB34XAeCzLV8Zxsw2hEApaEy1LNhnkeRuA3PL+0p769SbaPU4C6vDSc7azK6D+nI/oc/1bYQxVwqn8j5PjlcolTsJTnp+ZTKgjjuMr+7ccuTgGAcgs9Fx5tOmmgdMVdKkp739cLwJ6dV+gr8CjseGZaCbgJgEkvXoXDdtktvJ81nQuqq+d+PABxHeAJ5RZ6Dly+50jp1Ynxce8f7IjkxHPgsk9WvuE2gO8rz7evYYKzmjwdRemYAH9kxWY87oDTqQjNhCMQRODMFqmlYsHfdhQrbKP4O/6T4Tl+z6XBCQnHj0xB0h0Y/8L64/k3KcC2tN7zCFMAAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -880,8 +878,8 @@
       "soundPath": "Skill.img/1301004",
       "description": {
         "id": 1301004,
-        "desc": "Uses HP and MP to temporarily boost up the attacking speed of the equipped spear. It only applies when a spear is in hand.\\nRequired Skill : #cAt least Level 5 on Spear Mastery#",
-        "name": "Spear Booster",
+        "desc": "HP, MP를 소비하여 일정 시간동안 창의 공격 속도를 한 단계 상승시킨다. 반드시 창을 들었을 경우에만 발동이 가능하다.",
+        "name": "스피어 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1035,9 +1033,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGElEQVR4nL1XjZGyMBBdZmyAK0FLgBKwBC1BSjhLkBKgBCgBSoASTAmmBL+8hcUN4h9+c2/mjoTEfW83mw1ZkY8r/Q0CaWgB17o9/zeGkOzYtq6nsY03VxEhApg8idYvDXdd5/WjKJodj+OYn23b3tk9lS0d9zGLWH1CLhDjQiBCQC5jp9OJjsejJ0rE/u7ccxAxzYG3cb1eKcsyz1O08Wyahsm53Rkef+TgYgFAGIbsKQByEYX3AMgT53UzRGAaiUUC8GN4FgQBP2HUWuuRp2lKl8uFjLFMDu8hsK5bCv18/C4CgiRJmBTi8ISYDqEfyHTOTLFIgERB1rwoClqv1xwNLAmiowFBeAfvJScWC9DbrCzLkdwYw09A8gIIVcw1eRTazwXobcYGXbaDFBmvSTWxTrjfw46yopIZnwsQnNsThesd/fxs+v75TJvNhvI8vxMBAZyw51uVtbci+b4A8T6K1pxgu2Ffn/KSOmO9ueK9LAm31VIkiduaTfe+AE0Oo1nR0D7tE+3gwloMYdXrjXniPSKEMYR/t0s82y8FTMmRbIhAXtYUub7e1uKxrLsmF4STQvBUwDNy2OlcH4XmmO55qwlkGwq5eH9w3oO+D/+LXfCKHImECghyTQqgCmpvhfyuDD4S8C456jxn99BHRLDVBLLlhFy854JkHmzDT8jZoiLXpEw8iBG/hRw50piZXbCUHGP6uMW87TZ2y+M7h7I9/YAZBXxDLkb7k1ERXuqxHf9saQ6rPkR2ntwVmZDeJ2dbkzyrTOX1x28CfRY8JHfWQISpz8hHLyfHrgifG6/r+ibgKbn7i5KB6An5aPhcagnDkljv/XazH9ss4BV5yItkWcAzcvG6aIq795kpaA4soKoa7nxLPjjthf0VWED/Jdt9T+6w397Cm9c5ZVXGbVOY2fmrXnToHZFLyeWOAHDCWSKy8+MSpbEOCAHeLyHXc/TtabocMi+rbpUwwF2tvx1F42c28C75I6T7dPY9yN2tCM1AIsAicGdjlUORwIEhNfsT4PeyzzXgmCbHP30WBMOF8S8wnt3/ABwZYcTjmuRUAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChklEQVR4nL2Xi23CMBRFE4kFYAQYAUaAEWAEWIERYAQYAUaAEWAEGAFGSHusXuti0vxacaU2sWP73Pf8SehlryqyzyjXjRsoLpfLR+iTyaSQCRkI8PF4XNv5er2+lNM+ev4NCdeycQ+HQ7ZYLIKJXhu4RRDvlTX6A9ezzWaTrdfrF1NizOfzaCJdA41VFEW23W5fIuWe6/l8DnDuU3iqzgZQv98PkSLgMkU9Aq7MqJyaaW2AzkSW53mM8Pl8vsBXq1X2eDyy+/0eTWDwdDpFc50NlGk6nQYoIK6YASyYr5lUnQwoC5rz/X6fDYfDAGVKyI4LQ9RhKN1FrQ34NmMlC066uSKtC+Qpd7jqWxnwbYZY7UBZ8Q51gC+45XIZDLs6TQGRM++DwSCUb7dbNhqNst1u92YCA6SfNhKLtrUBRc+ApFsRAqWcgpGmxOsQ5sleYwMOZ9Dj8RhPOU41yimEdh49z0g/7V21BlK49jbTQDmFIs27w8syUWugCs5AKmvvS9qGgqfRK/2VBurgLCT+gDsUcQp6tIKn0f9qoCmc50SpMu3YapK2nMOJXtkrNdAG7mUN6PvczThcO+nNQFe4BpWom81mcXqksu+OaOA/4HozSn74cFCVKRoog+tkawpHvtBok7580na9KrhgqC7tGieVZ8Sf820QDVTB+ePo9EyUwdOBvb/XI9aHFAw0gctAFVzS0VxXFw3o4X/APeomCgb0JftXOPr+1I73+mBBfvy+GUD+iuwK919WWnCeDX+u+mhAAO/QBu5ttNXKpkLtNO0YyPmtplPKD5Om8N+UnoQS8J+pypWBYII5ExixM9KvnSaiv287icAczj9/F+Q/Pxg/ofju/gJzo3ehb/m2KwAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADF0lEQVR4nL1X0ZGrMAwUM9cAVwJXApRASiAlXEoIJYQSSAlQApQAJYQScAk8r0AgCEkIeXP7EdvBeFeyJOMvmqOjv4EjHS2gK6rbf2NwyYx9Y0cah+CnExEigMlD33u5cF3Xs7Hv+6vPgyDgtqqqu3UvWUXxMWARX++QC2RxIRAhIJdnl8uF4jieiRKx58i2g4hlDGxG13WUJMnMUvTRlmXJ5OjndcPPowcG7hYAuK7LlgIgF1H4HwB5aK0uBw8sPbFLAF6GZY7jcItFjTEz8tPpRG3bUd00TA7rITArKvLm8fiZBwRhGDIpxKGFmNJaPzhiFjNL7BIgXpA9v16v5HkeewNbAu9oQBD+g/USE7sF6DTLsmwkb6y70QISF4DEA6DJfde8L0CnGYBoBykiXpNqYh1wl9+I4mvOfSlOu7agayPLcLZuHVLw1lLw801pmt6JgAAO2NtUZZupSG4XINb7NqLr0pAfDUUlzdj9S2JAtoT77tSPQp/yst4uQJNj0VPSUH3sA+1s3ZoMbtX7jXmT9S1nBNz/G4WztV8KWJLD2toGU5oVPNZpLRbLvgu5p4RpkS8FPCOHSRjHdk5yOnKqCSQNhVxbD3q4X07LhwJekdvyZ4PJMLkmBVAFe2v78Ui+sP6hgK3kqPORjW7b5XKM0otUE0jKCblYj4JUNg/S8B3yYTiSa1LgPIgRu4UcMVI2K1mwlxyLeuq4RZ4fD4HdnrlxKNvLD5hRwCfksijW0EWm6LKxf3COtIav3kVmlfySFv2sjeTA8rjNKZmNx28CfRY8Ih/J6Dm5YHns4j3T0BgE+nlRFJOAp+R2BZz3Lj0nF2StOg+G+Wj1/8fvKThYwCZyek0upEkT3/2d1DGtgQXkecmDj8lpeLehzWAB/PWK8vghOXAKJvemlf00L3vLzboDegH4ONBH5F5yuSMACLjemPXnxizOAiFAHu8h13NmtyezPi/Jp0ro4K7W3458vM05D2wlf4T4sO53kNtbEbqOeIBF4M7GKocigQNDavY7wPuS5xrwqCbHjz4LnOHC+BcYz+5/hnll5yzSCskAAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -1211,8 +1207,8 @@
       "soundPath": "Skill.img/1301005",
       "description": {
         "id": 1301005,
-        "desc": "Uses HP and MP to temporarily boost up the attacking speed of the equipped pole arm. It only applies when a pole arm is in hand.\\nRequired Skill : #cAt least Level 5 on Pole Arm Mastery#",
-        "name": "Pole Arm Booster",
+        "desc": "HP, MP를 소비하여 일정 시간동안 폴암의 공격 속도를 한 단계 상승시킨다. 반드시 폴암을 들었을 경우에만 발동이 가능하다.",
+        "name": "폴암 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1366,9 +1362,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByElEQVR4nL2XgZGCMBBFkxkbsAUsAUqQEu5auStBW7CEowSuBFKCtEAJyI8ssyYbiBj4MwgayX9kNxtyUK/q1T7SdMEB+rq5R/dwVJ34eze0LKksTj1BEIA1P+dZlLkxRhVFIbY1TaPyPJ+9//LXqN/vwkIc1pr3vRwtrfUixM/X0DZCHNRKmbaVO79cLGDMSEBBADwpl9RZ18p58A6ECCDFOPaJoHN+HgIdB+EB8BhjmLvu+ZTU2TuKGYkXgJA5VA+dbAExAcyZuxCxaoccybLjLMTqWRAjmJNCEJsCuOIQHgCo0IBCEgpDOd78ThiWIF5GYA6iXJGAklqndgRDYEvq/T6ZpxLPCw/AnQmkenzyItEoiACueZ5lXr2vP4x/EABrOzcvTidvtUMYAIAjZUi8HIB5SASRUh4AEi8Ekdp8AsBrFJ9+gOCzgKvcIgcgtwZISlGIggASBBKSx33XQrSVZgtRatFyzL+72mU5JuPqdrVncTXcQiFj5Nq1MtsB3KoqaOzqIwDptS3WmANo7NVod8SnIql0XqVsLZgp2UvGGP5hV4RLTSNgIbBnczsh/bc4TLDd/e/zbMR2MscHD4EeN4x7aBreB/SNYEgMkUEsAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABnElEQVR4nL2XgdFEMBCFZUYllEALSqAmNSiBErRACbSgBP//MrdmxSaC8GbuzmH2fclml8TRXmv0jRQdcIB1GIZP3PM8XwmCALR5lmVeAcZxRBDxmk+ctm2jqqo0RHzXfF3lbCmlTiHKstwg4uim5nkWz9d1rQF9B2UFwEi5pGAhIEQAKcdX0oT7fCEOADzHGCGNkoJdkQ/EDsBmDvV9/wrEBuAyNyF8hRhJkjghbleBj2BOskG8CmCKQxwAQIULaCTUZMw0FEWh77mShjOI3Qy4IMj8qcxBWVMAiGmaNvNQ4uviAGBWAgmrH7pThmeyliFIzem6WoaXALh5mqaHpx3SAAB8QqbksAZgbhNBhNQBAAvPBhHafAfAyw8QvAq4Qk7/DkDqAZL500ZkBZAgsCB53j9tRG/J2YhCi/oJ/2/qk8cxGTdNo3/Fp+EbshljrXVd9x4ABZeMTT0CWJZFPO9jzAEU9mr0qsRLkUT1T4Fw7GrZZ8aYof9dEQ4VzYCGwHbJDEIyX1RdPYHus21cyBxfPAXqt2H8Qtv0/gFrY1qbj0ppbgAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB1klEQVR4nL2XgZGCMBBFkxkb8EqAEkgJWMJRwrXglaAlnCVoCVoCKcGUcJTAsZFllmQDkQv8GQSJ5j+ymw3ZibFasY0kXlCA9l4/o3vYi4a933QtczqovEUIBLDmZZFFmWuthVKKbavrWhRFMfn/07UW35WyELul5m3LR0tKOQtx/OzaeoidWChtDHv/6/RjAWNGAhQEgCel4jozDZ8H70CwAFyMY58IVJbd7yIhPAAa44dpRNM/pVK57ewdxYzECCBkDrp2iboGxAAwZe5CxMp0iZpl2STE4lkQIzBHhSBWBXBFITwAoIIGKCSvMAgvDFWfA6EquARiNAJTENWCBORknAIWDAFA3J+/g3kq0bzwANyZgLr2q6RKNAosgGteZvsRBIKohKMxAMDaTs0P+Ye32kEYAACOlCHxcgDMQ0KIlPIAIPFCEKnNBwB4jaLTDyDoLKCq1sgBkFsDOKUoREEADgISksZ900K0liYLUWrhcky/u9pkOUbjx+Vsz+xquIZCxpBr55teD+ByuQWNXf0LoDH8a3mMMQWQsFfD3RGdiiic/9iRrQV5uCDNGcPwd7siuJQ4AhYC9mxuJ8NTGTh0sN397eus2XY0hw8aAtlvGLfQMLx/zaNeN6qSh+YAAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "affected": [
         {
@@ -1836,8 +1830,8 @@
       "soundPath": "Skill.img/1301006",
       "description": {
         "id": 1301006,
-        "desc": "Temporarily increases the level of weapon and magic defense on every member of the party around the area.",
-        "name": "Iron Will",
+        "desc": "일정 시간동안 주위에 있는 파티원 전원의 물리 방어력, 마법 방어력을 상승시킨다.",
+        "name": "아이언 월",
         "bookName": ""
       },
       "levelProperties": [
@@ -2028,9 +2022,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADVElEQVR4nK1Xi5WqMBCN52wDWgJbAlsClAAlSAlagpagJUAJUoIpQUpYSuDlThgygQRxz7vv7DMkgXvnk0nypXwM6gPUaapKrdUfsOOGFDA8nq/g7L3qzb/99Mt9XVWp5/M5zeOxd8h/vgcWwQKIPEuT4AvaWMmEye1GfWjv0/3UJ8dS4xl+j9sSl/qpzuUPifjaQi4/Lsnze0vPtXmWY0qIRHsu4lSY51HEPAfeQpIPw6867A6UB49jZgk/xKoAtp5dPVlt8u71gpU25vUlVfnZeoOFSI/9WcAE47HyrokYVnddo3ptCJOjyjInAmAh9UZvRAVI6/MK7h4M8d2RE/ppfpIkZqwjIbrrSfAUlkAevBXAsLEelG7Kt9awiDTZq9MxoXfrCPFmAQAst7+d1596c/yxrQgKYPcjuxFz3VREUJ39qledD/Tbtn7/zYSBvYBQ1CtheOsBxJzJj+aD+DDQtCbej5dqrjm1i8zVkeL0oP4tWAjQs9ruEg5ievqbA+QQ4QSozfAEhKqeRGKsLzLrxqtJMHiHcTIZb0XGcyFUmj+qhHPr2Ts2BHYVUDvigdCS9ATQwLixYP2r2U6bjPFnK693Fx5N4vxcWJAHEPUA1jAnnPchQw4r2eWyj1GI+fgC7xW9XuZPMAfs8hvUz/dB5aWLMychyOWyfNQFhYBFYIOSWCtKKznQm/Vsia73jojZvfNlWZn6j7nF6BTUhWSsAzqwajYK8AErpTeYHIl3OipvDIUIojGGvFgTERUglxgDOx8s49ywBPb3drFzZC5sQVSALEBzgLCibdeRIQSj9P8jAKjO7aKNXGjbVj1fv5Ap9gk3F+6X7/CZ4SMBeJlJOBzsFbv+ey9MiAaSFPuAFWrPDZzEHwugDF45A/gHEwd4xM2xxPCAvocTMVgJsX2WZpnVlyh/mHyshv6zDQlqQBLYkhcemIuIRa/IfLe2LciWVqInRh4UsBCh9XTOAwkn1PxwgrrAQjAHS5W8uEIeFTCHXNtcA5gwhNi5ISZgh7va2u2Iaz9nM1e4EFplS7bdmpvgnGujcStCc8ceIBG4szHSvbNAbrsMroJL8M7oBPZ9T6QMJsd/MgS78cK4QNM6MSXFfv1KroVz6PqeL86H0/X8Hx/yLWdwqPSaAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACjklEQVR4nK2XjY3qMBCEjXQNQAlQApRAC1ACLUAJ0AIlQAlQApQAJUAJufdFN9Gyt3bi0xsJME68M94/J1/pE02qwHa7TYfDIf0BIw2sgOZ2u1VZOZ/PqXYNWCwWjURIQEs+n8/DBff7vSNcrVbd2M7Za7LDusjm6XRK6/W6FfE1hNwat+SR+3XNjr1tbEmEz4FeWPLX65Umk0k7Jh8s+VAUBWj3nhhcLpc0Ho/b8Waz6eYlxHrszwIsRMCuEcZnuVx27kWEvW8osgLs7jHaNE26Xq8dOXi/39390+k0PZ/PVgjzPiy5HOv1gMiH7EwiCA0hkIgSBoWAnQOM51C6Vi1A7lemH4/HloBfC/1XSATCYL0gRGHo9QDGRY5BZT7zVMJut/vVcPb7fTs/BL8E+N3Y/zk3Q+7XDcWHgKjrWZBk2in3WVKtKeVC1JqrOiHGrQEJ0C8CS56ISvJDgN1dBAgkxN9H7XuBEblH1gNkrwgtIGGXNkyai+6XrVw/CHNAzWc2m31ks3YOuS1Lsl7rAQeURakpZT2AS6lniGhE1r2+LBnrLJAQvMFZYdt1rwdK8LUtchHZa4hBtFpzSUTxMPLAAxhVM1LM+ZUHavtBlQABQt+W/7sAYEls3+fzeDxa10bnhA4vzeVKsyiAxSLxDYdKsfOAsEBkK0LniARVCSCxSs8A9sHECxdUtgjLteiwEwLIbWlFAjzUDe1/gMfoAVRO71ngReTgDeU8AnLkoYBIhJ7z7Gnmq0CtWfeoQZXIswI8fLJZwgg1j2cIGPGuVno7Uu9XNqvD5aCGlQsJOfHvrYjhSB5oRfC6JGinWuCRO/mAzwfCZ22InC8bgtHPC2NoUPCx7wM5FCRz93r+DW85FCmIY6SLAAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADPElEQVR4nKVXi5WqMBAdztkGsAQpAUvQEqQELWEpgS1BSnBL0BKkBClBSuDlTjIhCSHi2+tRIb97M7/AF/kY6QO81HdD/4VMLlwB4+3xjI7OaVCf3P5LG+129Hg87Djpe4fDrhhFhAhg8n25jU7ouo4Jt4qwN4S4zvdk29y+siztPLl20VwfVFc7FvG1htxd3CXP7vr+pe7dvs4RietQxPdR3RsRYQy8hUs+jk/aZAXHwWis8SmSAmT3Ymq7ayb/hhwe97yq9krPGR23/FmAxUlFuyVGoLZEvfpuGzrtyYoARMhrpTUWBbi7x6LjiJipJ3JGb8dvy5z6bmAhnWre1JM1YnHwVoBA+1qR9+8zXkQgnq+NmlvrWpHCyiCs+ReLe4RO4oR9axEVIObn6IbP+x0T7KpwZMG/7d1vfSg3iBXgilfCDSss0FryS6MX5lYVBs3tSf1vwden0zRje9TtazATgN17sAGn+tROg14GyNtpGDVHWg1PQKzquShVVB+Put7XZ/h8Ym0uuj0VC7HS/FElhAWO7u6MdbQLBs4Cds2CBWIp6QlAR2cOFuQ/BcFVmqIju9RWMOK4JAxeLITkMSxaAPm/j5xPIOddXvJZGxmB7jSMkrNiCDY0E+Cn30iHIqNN4ezSBCHI3bR8PXN2gQTiufYzIFWUEjHQ0+2mic61NrGYN0zLw2HgsRABoC6gHf1dT0msDkLs0rWGkCPwLs3g9aEQQTT6EBcpEQkB7awFJx8CUYqRJtD/j6vZ/XxaEssC+uWVQAizY3cCuEDjszMh6QJN4l93LXapfP7E8dzbc8Ide679OUupmRTAgSUk4g5jFZ3/Tjtpt4AI54CGfm6QIP5YAIIs/QzQxt3UTwVHChaE3RdERCshjs9NhceshD8j5FIN/XuiytSAPnIkzywQilh61TgFh05rnhlDYNQSeVTATASRfc5zz/3w4YRdRtMYxERRpckXBYRwc1tqgBDGsPTcsCQgw7ta6u1Iar9Es1S4JXA2qDE/RXzMz2+HtyJcZmIBFoF3NkGZT5PdY1cgVXAOOZSmOcMwMKldz5Djx3VBZl4Y54qd4Coqf/EY7k7t50Q+HMIh9vX8H78YvULn7MQYAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "affected": [
         {
@@ -2372,8 +2364,8 @@
       "soundPath": "Skill.img/1301007",
       "description": {
         "id": 1301007,
-        "desc": "Temporarily increases the Max HP and Max MP of all members of the party around the area.\\nRequired Skill : #cAt least Level 3 on Iron Will#",
-        "name": "Hyper Body",
+        "desc": "일정 시간동안 주위에 있는 파티 전원의 Max HP, Max MP의 양이 증가한다.",
+        "name": "하이퍼 바디",
         "bookName": ""
       },
       "requiredSkillLevels": {
