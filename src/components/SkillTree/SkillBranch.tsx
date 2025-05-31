@@ -182,7 +182,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
         )}
 
         <div className="flex flex-col text-left">
-          <h2 className="text-2xl font-bold">{skillbook.description.bookName}</h2>
+          <h2 className="text-black text-2xl font-bold">{skillbook.description.bookName}</h2>
           <span className="text-sm text-gray-600">총 투자 포인트: {totalInvestedPoints}</span>
           <span className="text-sm text-gray-600">필요 투자 포인트: {remainingPointsForBranch}</span>
         </div>
@@ -211,11 +211,11 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
             <div className="flex-1">
               {/* 스킬명 */}
               <div>
-                <div className="text-left font-semibold">{skill.description?.name || "알 수 없는 스킬"}</div>
+                <div className="text-black text-left font-semibold">{skill.description?.name || "알 수 없는 스킬"}</div>
 
                 {/* 현재 레벨 및 버튼들 */}
                 <div className="flex items-center gap-1 ml-0 min-w-[120px] justify-end">
-                  <span className="text-left">{`${getLevel(skill.id)}/${skill.masterLevel}`}</span>
+                  <span className="text-black text-left">{`${getLevel(skill.id)}/${skill.masterLevel}`}</span>
                   <div className="ml-auto flex items-center gap-0">
                     <button
                       onClick={() => increaseLevel(skill.id)}
