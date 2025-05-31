@@ -880,8 +880,8 @@
       "soundPath": "Skill.img/1201004",
       "description": {
         "id": 1201004,
-        "desc": "Uses HP and MP to temporarily boost up the attacking speed of the equipped sword. It only applies when either a one-handed or a two-handed sword is in hand.\\nRequired Skill : #cAt least Level 5 on Sword Mastery#",
-        "name": "Sword Booster",
+        "desc": "HP, MP를 소비하여 일정 시간동안 검의 공격 속도를 한 단계 상승시킨다. 한 손 검, 두 손 검을 들었을 경우에만 발동이 가능하다.",
+        "name": "소드 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {

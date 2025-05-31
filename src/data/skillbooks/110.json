@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/1100000",
       "description": {
         "id": 1100000,
-        "desc": "Increases the sword mastery and accuracy. It only applies when either a one-handed or a two-handed sword is in hand.",
-        "name": "Sword Mastery",
+        "desc": "검 계열 무기의 숙련도와 명중률을 상승시킨다. 반드시 이 기술은 한 손 검, 두 손 검을 들었을 경우에만 적용된다.",
+        "name": "소드 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -132,8 +132,8 @@
       "soundPath": "Skill.img/1100001",
       "description": {
         "id": 1100001,
-        "desc": "Increases the axe mastery and accuracy. It only applies when either a one-handed or a two-handed axe is in hand.",
-        "name": "Axe Mastery",
+        "desc": "도끼 계열 무기의 숙련도와 명중률을 상승시킨다. 반드시 이 기술은 한 손 도끼, 두 손 도끼를 들었을 경우에만 적용된다.",
+        "name": "엑스 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -309,8 +309,8 @@
       "soundPath": "Skill.img/1100002",
       "description": {
         "id": 1100002,
-        "desc": "Strikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand sword.\\nRequired Skill : #cAt least Level 3 on Sword Mastery#",
-        "name": "Final Attack : Sword",
+        "desc": "일정 확률로 공격 스킬이 사용된 후 연속 공격이 발동된다. 다만 반드시 한 손 검, 혹은 두 손 검을 들었을 경우에만 발동된다.",
+        "name": "파이널 어택 : 검",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -539,8 +539,8 @@
       "soundPath": "Skill.img/1100003",
       "description": {
         "id": 1100003,
-        "desc": "Strikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a one-hand or two-hand axe.\\nRequired Skill : #cAt least Level 3 on Axe Mastery#",
-        "name": "Final Attack : Axe",
+        "desc": "일정 확률로 공격 스킬이 사용된 후 연속 공격이 발동된다. 다만 반드시 한 손 도끼, 두 손 도끼를 들었을 경우에만 발동된다.",
+        "name": "파이널 어택 : 도끼",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -880,8 +880,8 @@
       "soundPath": "Skill.img/1101004",
       "description": {
         "id": 1101004,
-        "desc": "Uses HP and MP to temporarily boost up the attacking speed of the equipped sword. It only applies when either a one-handed or a two-handed sword is in hand.\\nRequired Skill : #cAt least Level 5 on Sword Mastery#",
-        "name": "Sword Booster",
+        "desc": "HP, MP를 소비하여 일정 시간동안 검의 공격 속도를 한 단계 상승시킨다. 한 손 검, 두 손 검을 들었을 경우에만 발동이 가능하다.",
+        "name": "소드 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1211,8 +1211,8 @@
       "soundPath": "Skill.img/1101005",
       "description": {
         "id": 1101005,
-        "desc": "Uses HP and MP  to temporarily boost up the attacking speed of the equipped axe. It only applies when either a one-handed or a two-handed axe is in hand.\\nRequired Skill : #cAt least Level 5 on Axe Mastery#",
-        "name": "Axe Booster",
+        "desc": "HP, MP를 소비하여 일정 시간동안 도끼의 공격 속도를 한 단계 상승시킨다. 한 손 도끼, 두 손 도끼를 들었을 경우에만 발동이 가능하다.",
+        "name": "엑스 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1746,8 +1746,8 @@
       "soundPath": "Skill.img/1101006",
       "description": {
         "id": 1101006,
-        "desc": "Temporarily boosts the weapon attack level of everyone in the party around the area, but also decreases the level of weapon attack defense.",
-        "name": "Rage",
+        "desc": "일정 시간동안 주위에 있는 파티 전원의 물리 공격력은 상승하나 물리 방어력은 낮아진다.",
+        "name": "분노",
         "bookName": ""
       },
       "levelProperties": [
@@ -2168,8 +2168,8 @@
       "soundPath": "Skill.img/1101007",
       "description": {
         "id": 1101007,
-        "desc": "Returns a portion of the damage received from the enemy. Can't return more than 10% of the enemy's Max HP at once, however.\\nRequired Skill : #cAt least Level 3 on Rage#",
-        "name": "Power Guard",
+        "desc": "적으로부터 받은 데미지의 일정 수치를 적에게 되돌려 준다. 다만 한 번에 적의 최대 HP의 10% 이상은 되돌려 줄 수 없다.",
+        "name": "파워 가드",
         "bookName": ""
       },
       "requiredSkillLevels": {

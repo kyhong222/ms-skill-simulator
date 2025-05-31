@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/1110000",
       "description": {
         "id": 1110000,
-        "desc": "Recovers MP at a faster rate than the norm every 10 seconds by standing still.",
-        "name": "Improving MP Recovery",
+        "desc": "10초마다 더욱 많은 양의 MP를 회복할 수 있다.",
+        "name": "MP 회복력 향상",
         "bookName": ""
       },
       "levelProperties": [
@@ -112,8 +112,8 @@
       "soundPath": "Skill.img/1110001",
       "description": {
         "id": 1110001,
-        "desc": "Increases shield defense. However, it does not affect if the character does not equip the shield.",
-        "name": "Shield Mastery",
+        "desc": "장비하고 있는 방패의 방어력이 상승한다. 방패를 착용하지 않으면 효과를 볼 수 없다.",
+        "name": "쉴드 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -344,8 +344,8 @@
       "soundPath": "Skill.img/1111002",
       "description": {
         "id": 1111002,
-        "desc": "Prepares for combo attack.  Combo counter can be used to strike a deadly blow to the monster.  Max. for combo counter is 5 and midpoint is 3.",
-        "name": "Combo Attack",
+        "desc": "콤보를 쌓을 수 있는 상태가 되며 공격할 때마다 콤보카운터가 올라가 피니쉬어택을 사용할 수 있다. 콤보카운터의 최대는 5이며 데미지는 콤보 카운터가 3일때가 기준이다.",
+        "name": "콤보 어택",
         "bookName": ""
       },
       "levelProperties": [
@@ -761,8 +761,8 @@
       "soundPath": "Skill.img/1111003",
       "description": {
         "id": 1111003,
-        "desc": " Attack a single monster using dark powers. This skill can only be used when equipped with a sword and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
-        "name": "Panic : Sword",
+        "desc": "적 하나에게 공격을 가한다. 다만 검을 장비하고 있고 콤보카운터가 올라간 상태에서만 사용이 가능하다.",
+        "name": "패닉 : 검",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1181,8 +1181,8 @@
       "soundPath": "Skill.img/1111004",
       "description": {
         "id": 1111004,
-        "desc": " Attack a single monster using dark powers. This skill can only be used when equipped with an axe and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
-        "name": "Panic : Axe",
+        "desc": "적 하나에게 공격을 가한다. 다만 도끼를 장비하고 있고 콤보카운터가 올라간 상태에서만 사용이 가능하다.",
+        "name": "패닉 : 도끼",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1529,8 +1529,8 @@
       "soundPath": "Skill.img/1111005",
       "description": {
         "id": 1111005,
-        "desc": " If struck cleanly, the monster becomes panicked. This skill can only be used when equipped with a sword and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
-        "name": "Coma: Sword",
+        "desc": "주변의 적에게 기절상태 공격을 가한다. 다만 검을 장비하고 있고 콤보카운터가 올라간 상태에서만 사용이 가능하다.",
+        "name": "코마 : 검",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1967,8 +1967,8 @@
       "soundPath": "Skill.img/1111006",
       "description": {
         "id": 1111006,
-        "desc": " If struck cleanly, the monster becomes panicked. This skill can only be used when equipped with an axe and the combo all charged up.\\nRequired Skill : #cAt least Level 1 on Combo Attack#",
-        "name": "Coma: Axe",
+        "desc": "주변의 적에게 기절상태 공격을 가한다. 다만 검을 장비하고 있고 콤보카운터가 올라간 상태에서만 사용이 가능하다.",
+        "name": "코마 : 도끼",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2638,8 +2638,8 @@
       "soundPath": "Skill.img/1111007",
       "description": {
         "id": 1111007,
-        "desc": " Nullifies the defense buff used by the monster with a given success rate.\\nRequired Skill : #cAt least Level 3 on Shout#",
-        "name": "Armor Crash",
+        "desc": "일정 확률로 적 다수의 물리가드 업 스킬을 무효화 한다. 물리가드 업 상태인 적에게 사용하자.",
+        "name": "아머 크래쉬",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -3192,8 +3192,8 @@
       "soundPath": "Skill.img/1111008",
       "description": {
         "id": 1111008,
-        "desc": "Temporarily stuns up to 6 monsters nearby with damage.",
-        "name": "Shout",
+        "desc": "주위에 있는 적에게 큰 소리를 질러 데미지를 줌과 동시에 일정 확률로 기절시킨다. 한 번에 6마리 이상 공격할 수 없다.",
+        "name": "샤우트",
         "bookName": ""
       },
       "levelProperties": [

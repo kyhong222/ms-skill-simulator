@@ -16,8 +16,8 @@
       "soundPath": "Skill.img/1120003",
       "description": {
         "id": 1120003,
-        "desc": "By maximizing the potential of the combo attack, it enables one to charge up the combo counter up to 10, and with a given success rate, the combo counter gets charged twice as fast. The Skill can only be obtained by fully mastered Combo Attack. \\nRequired skill : #cCombo attack level 30#",
-        "name": "Advanced Combo Attack",
+        "desc": "최대 콤보 카운터 수가 10으로 증가하고 일정 확률로 콤보 카운트가 2개씩 충전된다. 콤보 어택을 마스터해야만 스킬을 올릴 수 있다.",
+        "name": "어드밴스드 콤보",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -216,8 +216,8 @@
       "soundPath": "Skill.img/1120004",
       "description": {
         "id": 1120004,
-        "desc": "Permanently increases the weapon defense of one's armor",
-        "name": "Achilles",
+        "desc": "영구적으로 갑옷을 강화하여 적에게 입는 데미지를 줄여 준다.",
+        "name": "아킬레스",
         "bookName": ""
       },
       "levelProperties": [
@@ -354,8 +354,8 @@
       "soundPath": "Skill.img/1120005",
       "description": {
         "id": 1120005,
-        "desc": "Blocks the monster's attack by using the shield with a given success rate. Additionally, if the close-range attack is blocked, the attacking monster will be stunned for 2 seconds. The skill only works when equipped with a shield",
-        "name": "Guardian",
+        "desc": "일정 확률로 방패를 사용하여 적의 공격을 막는다. 추가로 근접 공격을 블록하게 되면 자신을 공격한 적은 2초간 기절 상태가 된다. 방패를 착용하였을 때 스킬 효과가 발동된다.",
+        "name": "블로킹",
         "bookName": ""
       },
       "levelProperties": [
@@ -1239,8 +1239,8 @@
       "soundPath": "Skill.img/1121000",
       "description": {
         "id": 1121000,
-        "desc": "Increase all players' stats within a party by certain percentage ",
-        "name": "Maple Warrior",
+        "desc": "일정 시간 동안 파티원의 모든 스탯을 일정 퍼센트 올려 준다.",
+        "name": "메이플 용사",
         "bookName": ""
       },
       "levelProperties": [
@@ -1746,8 +1746,8 @@
       "soundPath": "Skill.img/1121001",
       "description": {
         "id": 1121001,
-        "desc": "Pulls a monster from afar up close.",
-        "name": "Monster Magnet",
+        "desc": "원거리에 있는 적을 6마리까지 자신의 앞으로 끌어 당긴다.",
+        "name": "몬스터 마그넷",
         "bookName": ""
       },
       "levelProperties": [
@@ -2343,8 +2343,8 @@
       "soundPath": "Skill.img/1121002",
       "description": {
         "id": 1121002,
-        "desc": "Enables one to stay at the same spot after being struck, resisting knock-back effects.",
-        "name": "Power Stance",
+        "desc": "강인한 정신력으로 적의 공격에도 뒤로 물러서지 않는다.",
+        "name": "스탠스",
         "bookName": ""
       },
       "levelProperties": [
@@ -2706,8 +2706,8 @@
       "soundPath": "Skill.img/1121006",
       "description": {
         "id": 1121006,
-        "desc": "Makes a mad dash forward, pushing off up to 10 monsters.",
-        "name": "Rush",
+        "desc": "전방으로 거칠게 돌격하며 자신 앞에 있는 적을 10마리까지 밀고 지나간다.",
+        "name": "돌진",
         "bookName": ""
       },
       "levelProperties": [
@@ -3343,8 +3343,8 @@
       "soundPath": "Skill.img/1121008",
       "description": {
         "id": 1121008,
-        "desc": "Enables one to attack multiple monsters forward twice",
-        "name": "Brandish",
+        "desc": "눈 앞에 있는 적 여러명을 두번 공격한다.",
+        "name": "브랜디쉬",
         "bookName": ""
       },
       "levelProperties": [
@@ -3907,8 +3907,8 @@
       "soundPath": "Skill.img/1121010",
       "description": {
         "id": 1121010,
-        "desc": "Temporarily increases the attacking ability by using up the 10 combo counters.",
-        "name": "Enrage",
+        "desc": "10개의 콤보 카운터를 사용하여 일정 시간동안 공격력을 상승시킨다.",
+        "name": "인레이지",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -4342,8 +4342,8 @@
       "soundPath": "Skill.img/1121011",
       "description": {
         "id": 1121011,
-        "desc": "Enables one to shrug off abnormal conditions. The higher the skill level, the more types of abnormal conditions one can nullify.",
-        "name": "Hero's Will",
+        "desc": "특정 상태 이상에서 벗어날 수 있다. 레벨이 올라감에 따라 해제할 수 있는 상태 이상이 늘어난다.",
+        "name": "용사의 의지",
         "bookName": ""
       },
       "levelProperties": [
