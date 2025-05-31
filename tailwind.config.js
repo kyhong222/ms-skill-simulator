@@ -6,4 +6,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  darkMode: false,  // 다크모드 비활성화
 }
