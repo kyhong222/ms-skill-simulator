@@ -167,7 +167,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
     // 차수에 맞는 포인트를 사용하지 않았으면 branch 전체를 비활성화
     <div
       className={`p-2 border rounded-xl w-full shadow bg-white relative ${
-        !hasBranchSatisfiedSP() ? "filter cursor-not-allowed" : ""
+        !hasBranchSatisfiedSP() ? "filter cursor-not-allowed grayscale" : ""
       }`}
     >
       {/* 직업 아이콘 + 스킬북 이름 */}
