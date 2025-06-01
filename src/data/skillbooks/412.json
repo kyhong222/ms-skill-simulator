@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/4120002",
       "description": {
         "id": 4120002,
-        "desc": "With great reflexes, enables one to avoid the monster's attack.",
-        "name": "Shadow Shifter",
+        "desc": "나무 인형으로 적을 속여 공격을 피한다.",
+        "name": "페이크",
         "bookName": ""
       },
       "levelProperties": [
@@ -152,8 +152,8 @@
       "soundPath": "Skill.img/4120005",
       "description": {
         "id": 4120005,
-        "desc": "Throws a star that's been smeared with poison; the monster struck has a chance of being poisoned. Usable up to 3 times against each monster.",
-        "name": "Venomous Star",
+        "desc": "표창에 독을 발라 공격한다. 일정 확률로 적이 중독상태에 빠져 지속적으로 데미지를 입는다. 최대 3회까지 중복이 가능하고 적의 HP가 1 이하로 떨어지지 않는다.",
+        "name": "베놈",
         "bookName": ""
       },
       "levelProperties": [
@@ -1065,7 +1065,7 @@
       "soundPath": "Skill.img/4121000",
       "description": {
         "id": 4121000,
-        "desc": "Increase all players' stats within a party by certain percentage ",
+        "desc": "일정 시간 동안 파티원의 모든 스탯을 일정 퍼센트 올려 준다.",
         "name": "메이플 용사",
         "bookName": ""
       },
@@ -1623,8 +1623,8 @@
       "soundPath": "Skill.img/4121003",
       "description": {
         "id": 4121003,
-        "desc": "Provokes a monster, causing its general defense to increase. As a result, EXP earned and drop rate for items will increase for this monster.",
-        "name": "Taunt",
+        "desc": "적을 도발한다. 적의 방어력이 상승하면서 획득하는 경험치와 아이템을 떨어뜨릴 확률도 상승시킨다.",
+        "name": "쇼다운",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2203,8 +2203,8 @@
       "soundPath": "Skill.img/4121004",
       "description": {
         "id": 4121004,
-        "desc": "For a set period of time, a group of ninjas hiding around the bushes will periodically ambush up to 6 monsters at once. : #cShadow Shifter level 5 and above#",
-        "name": "Ninja Ambush",
+        "desc": "숨어 있던 동료들이 뛰쳐나와 일정 시간동안 지속적으로 적을 공격한다. 한 번에 6마리 이상은 공격할 수 없고 HP가 1 이하로 떨어지지 않는다.",
+        "name": "닌자 앰부쉬",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2769,8 +2769,8 @@
       "soundPath": "Skill.img/4121006",
       "description": {
         "id": 4121006,
-        "desc": "Attacks a monster using 200 stars out of the currently equipped star. Allows an infinite number of stars to be thrown for a short period of time.",
-        "name": "Shadow Stars",
+        "desc": "표창 200개를 한 번에 소비한 후 일정 시간 동안 지속적으로 표창을 소모하지 않고 공격을 한다.",
+        "name": "스피릿 자벨린",
         "bookName": ""
       },
       "levelProperties": [
@@ -3171,8 +3171,8 @@
       "soundPath": "Skill.img/4121007",
       "description": {
         "id": 4121007,
-        "desc": "Attacks one monster by simultaneously throwing 3 stars.",
-        "name": "Triple Throw",
+        "desc": "한 번에 표창 3개를 던져 공격을 한다.",
+        "name": "트리플 스로우",
         "bookName": ""
       },
       "levelProperties": [
@@ -3724,8 +3724,8 @@
       "soundPath": "Skill.img/4121008",
       "description": {
         "id": 4121008,
-        "desc": "Summons ninjas to push back surrounding monsters.",
-        "name": "Ninja Storm",
+        "desc": "숨어 있던 닌자들이 회오리처럼 빠르게 움직이며 주위의 적을 좌우로 밀쳐낸다.",
+        "name": "닌자 스톰",
         "bookName": ""
       },
       "levelProperties": [
@@ -4296,6 +4296,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Secret Skills of Nights Lord"
+    "bookName": "나이트로드의 비기"
   }
 }
