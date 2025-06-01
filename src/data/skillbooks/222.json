@@ -11,9 +11,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEFUlEQVR4nL1XbZWrMBAN56wBKoFKAAkgASSABJBQJIAEkAASioQiYSuBN3eSCYECr792ztkNTTNz73yG/qitLOpvxJMHl8DyfL7+BD2K7ouQEAIMHobBx+Fpmnh9jzWvSdVfGh8eKa9+XPIahuHHmaYbVJElTOLnf+B7YAE4E3uuMTZU+UEiT2OlDIl9DWzBp/oDOEivCQxCpFiJHJEQOSRgwcnIHngex0sCcs4lckXig8AGvElVnHdqnvsV2CeQMLbnx6pV8SO3n+UciARBqgY/uySxIXAFHsSxmicy/jaeBpKKlp8tSUOQn4knbAzqnMTPNfhowA0YgeN5Him/sU/e1wQWqDZLaD+w3zE5+l7OHZE4TYErbAAeBTGTsXvOakOy2TM6fm9InGNYAqv3uQrJk7EtGBz28RxKFHz0dqp68j5tHmqq9doXFeU90Of7YuXla2JhnJNtnzBa3aJ+fh4BGEdIATSxsl5hLE5Ng6vanp9a/YzvBFx0xIbYPI0Ae9/lbKQdE2I901+tchoYEo0V3Djna4NhXqqZIiAk3u9RTT2BUyf0xUoUnweyk2QtTcODCHDE33r0BoGvwrLkAoMgzCLYY2JVZongs+zDkjggaZrnN+/7ZxFYKawi+cWKHGvjWgAePzpDwrdkIDgreviDIxKhPcZpF0AJyiJ51zkeUhhrqona3Kq1tyqiJSl6Nj3l2nJHsiVgyKFYXC9cAYmiH9WybF8dpnlW0f1uCeoIUVFWBYffFuAuBwcRWE/ACzHCxMgzeL4HZ0+DQD1fL+V5nhrKlNODdoB+m2Uftk8IrAekqACqPSq0UTfcJ7LWhmLv06ahrpBIflkD6Gco9kWxCeu3oqteO8Kz4UQsgaFLVZRU6vlEL5ekVDNX5E5akYl8EQG5G2BHvWceTHie6MICBrDmPYGNmCiN1McxDZlR6RWGG3qbQZ7dOkABQlCEkn+cbcdCj2fH5mkE/KAkZnhhrNTriRvsQROw4khgqMCYHj4JgWgSKDoRgAspnEHb6mhkNoWwDe+BpUyKLm5DTUIb6KzhpF7fiAQUZCCyLsuvrRe0MqIRl8evcpYAXhJwTw+dr+5RQVEgQGo5GBBjAD9qQdmTVHjejUlo0hnbuN0ivmv8INdY5nrfRECTyDkVIPH7+6RBVNE00wYAJAPH9VxIYB9p0fPgxvrQhY0z+UgBSHhRy88AhREXXEQK0V1dAYnb7b7Zwy24LNsb9bAGGAyvaHPL4CLw0BWX0P6MFKgb9iM5v4ygEDY0F3Kq3sgSOyKA1e0IV67AhYCH32pnv46g/KTptA+xK/vIiEDvCLyly6zQw82TCDCJxrnv9+J+B+UBI3MnCUXKPTdRr0u1uyLg+OemwDM/GL+SJIoO943x/4kN5z8PfZ2FZZKbHwAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC70lEQVR4nL2X0XHCMBBE7RkagBKgBCgBSoASoAQoAUqAEqAEKAFKgBKgBJKnyWrWQrKTn+xMIiFLd3ur08nuVU28q/9BrY4TeN/v93/xPhqN3iIhAsH5cDj8mPx4PEJ7uVxCu1qtWo3v9/vQTqfT0OZsns/najabBRK9LuepYzkoIZ0HkdQ2YyLRqwrA+e12yxpsg+b5uhwJIUtAzheLxYdjxtugeU7keDyGfo7EBwF3zsL5fB7HhPF4HPun0ynMETRPUff7/WgrR6JBoM05Tp2EG6LvJH0uNrBVIhEJdDn36GWc6DG22+1Cq2dy0EaiuAUOGVCEPpbLhVQhfnflTCTg0RMJ0Qn0UxUYWy6X4ZjSHg6HGLmvlW3WuArkRlEBSStJ0z1NoVrBMzlP18pmUQHfe/YUyflbr9fRaOpcUZDxKKA5njuuhqtAIfpQAIOv1yv0YYthyABkFhhzYqzjt8b5rQC0TfQZF+kPBXLQ/tISIcYFnX+R8EiZq3X8uUIpigRYpL0FHiFAxhJUgGSnDVkCGPAoHJDYbDbV+918dUDi72s2EnSFePanu0AgCpcZI0SeOtczbtW6rmMyAyV1CUUCklxSSpHfAKfac5I6p2SWgGeoCo0nXymRctBp8tOS+mgQQLbJZFJdr9dGAqrWy1jXGxHQ3YAdEaFPLuDD74POYygyqgnb7Tbss+eB7gmSkPcAlGOul+cSIgFVKamg5FMR0VbQ4gQS/hKLc5HybfOjq+jxJdKtCiiDPQd8C+QUMkAtY8oXqVGqB5GApHIV/KYDOM8dQY0pKt8inZ7BYBCj9+u9oUBK4vl8xoKCAYyq4HjkIsE426J6wHqvI60KOAkMAZxixJ0LitJbByRY58gVsWwOyBlXqhsRMcEJpXOUoC57DsUkZIHKq4zm6r/a0mddm3MRqPlWK30deY0vIVVGKNkkub+/iujWUiCQ0FtKDv6MxbmIIeLz9FKSQs7551tQ/3ww/gqlqH+MdyHK+QWwzZZhRvaAQwAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEBUlEQVR4nL1X6ZHqMAyWZ7aBpIRQQlIClBBKeJRASkhKYEuAEqCEpARSApTgp8OylYvdX6sZsAmSvk+Hj3zBVDz8jTidWAL+3j//BP1Q7bySUAIMvi+LhfIwDDyWQ8WjO3127i/BruzFriwXOu21h+ZYMYmvn8DLcQqsAFsS9a5iN0C/IHGu8XcgMe+BBbg7zoD/nfErw8/bjBDnHjohonZIZI2EyioBC56AWxlvHXyUoOehiUQ+kVgQmIBf8UFNpeoSMFWqPEf9sWqg6NvkQPWYyBl85j6SmBAQ8EMwwJTWrwReI+iA40gEgJ2LNGEe9JQg20gA/pqjz/cqia8l+HsdnMMFmQfnHH2Z4eigOGfpPyJQgyHxMiQOSOK+UYJsVg+NiCP8nqZ4rRcmz9Cm0AAy2JJIoHxj9AdiWIRIcgGnqEec16HOnOIWoz5h7bFJTjKO1RGKSyb6Qy6j6t8atvfXDrMw4ro/wCNkYbkKyAc5p5QiEIxizE4Y/BUUzY50CnP+L4CrTfDBPtvlXhMJcPR3VNjTduxg7HB9dxSdT9mI4Cp7GS64VqtjIlHe0AZJ1RfOTFLHLNwbxBpxN5wRiOHDTTK3x3l74Qbj3/01anHTEbFTHvpmz7/jc9LhAI5i15xgfNgNayUDK/+xYXRANe7NYdkg+OUlIxnyqAQTMH9ak6EZxspOGDTIqEl1LvrXJELHEYZTtYunKzxJh7Kn5Wnt4bFcDSslAG7ASRRGiMQOD0jvp1eHx/iGwy5PWaKMtNhPzY7Tz029QuJzCSgKdiLpLfYU+RKcNYsM7s8XOOfA07bRks5b7KtUnh9KkKUsaFOFTEpEfpLuTSG9RvTGB/nCu8HtMPG/QcDIkLPhWFUmrb8AD0LAGghvTBsSCfg+A7e7gaelXt+Fcan9oEvxdxlIZwPtdkPYmHD+7gQDsbpxRiBlxqRpQBJ1j3tQxSM5fiIprrPpA2pAEmpCrT+T7irZnud+TRXSafi+g3/ieZB/hyxQ3ehaVYVNZScZwDL4vZCgplNhcJ9KRctWspFWBvt+Zoy1ILCUIkS9i87IsTMHnoISGQYIo/evtHL4oEJC93+rKOk0xEvCMJgseGL/HfYCcba1BPWZlsK5XEgw6Zx9OLzlaPSE9RiHZQYmJByRIPAj3aPFAQLphmMjVxL0nMoi+0Eu9m3wsSGLEhAJ5zSSIzux4CraiHa0oiSsuB2euP7DndBGw1e07MDgKhShFUtorqMNatO+JptNKAYv6PsBqqqKxNYI0GhXhJVP4ErA0bva1tsRGfe4I85TbGWeGRWyWwPvbgO9FdHUaQaYBL2zbYn9j4zXXmTRx0TvMULsdisKTl+2BC68MP5KCGxNgvOfJKbzPxINRoXgVmmeAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert3"
-      ],
+      "actions": ["alert3"],
       "weapons": [],
       "affected": [
         {
@@ -733,8 +731,8 @@
       "soundPath": "Skill.img/2221000",
       "description": {
         "id": 2221000,
-        "desc": "Increase all players' stats within a party by certain percentage ",
-        "name": "Maple Warrior",
+        "desc": "일정 시간 동안 파티원의 모든 스탯을 일정 퍼센트 올려 준다.",
+        "name": "메이플 용사",
         "bookName": ""
       },
       "levelProperties": [
@@ -1096,8 +1094,8 @@
       "soundPath": "Skill.img/2221001",
       "description": {
         "id": 2221001,
-        "desc": "Gathers up numerous particles from the surrounding area to form an energy vortex, culminating in a powerful explosion.",
-        "name": "Big Bang",
+        "desc": "일정 시간 동안 주위의 작은 입자의 힘을 모아 한번에 강력한 폭발을 일으킨다.",
+        "name": "빅뱅",
         "bookName": ""
       },
       "levelProperties": [
@@ -1318,9 +1316,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADAElEQVR4nL1XjbGyMBA8ZmyAFrAEKEFLwBKgBCxBSsAStAQtAUqAFijBL3vkIH888M18b2eYxFzudnO5RDiQjQ/9DSLpmAI+bduvesQ00LMbKE8TGin52m4iy44fESECmDxNbcdOBeTg45OO5yu1VU7H8kn960ZjnC/kP9jdmEDzeFF5ObOIwzfkAJOo3/2LmGTLjjhu7CI/EWkRbg2EyW96NdWDuvrCv4Vky74mQuAJ+Jm89Ehc8m9FBDOwkBc6eMPkLHAWUQbssWc3RezKgAuTXPoTSWO1a/YtbApgxCp40Swk93IeD9prx75XgOy/SfwrrPiF6uBgGtl3vKt9q6ltCttZrRqrnFfvBl+xI85UB6Oqg8ITYWUgHhT5ZSGXgNJK8Ky8E+EBdAsfsbt+k4haF2NhZfrgk1c6yE05X3WQpc3Kmj4f+y+jGwbKjkf2XfODjUU8lIik8AUw+UOT5yrI88p7iZaDPsPkPD9JqO37SURM83zXH/HBAxFEJ38LhHyAs9HHgz5RTVsQ8ajDRPt32r/TcU3YNeAEIiPINxBy1z90OPbdA/8RqwKg2l19r/YwiiKrDlCAAPa/1zW05r8tQOVoeGtH1eLBWHK6zeM4ShCBohMw+auy5oX8ZQ/GkID5mLwwudZOaKv5N4hNUql8AL4oUmQn5A92/oPDMccx1JlbMpAWyjjqW8sl91MvwJhsAyDzbHL93oALLrVvWHsL0kpNIk+EBJULB30zG/MdoFo8pgibXN8z6iru3AzwIK5IR4RJ7q7SbE2ICPiHyFczMIsQGAdX9lpgCnLnzAXqHPzdb0QhhO5/ac0T8S02BfTtzUuxCTczpt/vBUgdZFcOhCdRY0NX89irbT2Xc5ZZ8wDMNfd/lwCvGLUIBE040JVOacpz3Tr4iXz3a/m6iEYFv89zzCMpQia7unCyche5CIjwreZ+HfkiShaxhT3k9+cbX0XoRpIBFoFvtiDUO33zyOk9TN91CAC4fbF3nI7llLgQcsmAINIfjH+B+Vj9A4O1qqqLNW4JAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACYUlEQVR4nL1XAbHqMBBMZzBQCyChlQASQAJYQAIWQAJIoBKKBGrhSej/m8f2b65pE/4M7EznQpO7XS6XgyxciN59BwUHKqBv2+dX2Ot61VMEBXjyqloGCx+Ph7dd17ndbudOp5M7Ho/uer265fLf2rn5qqpGAs7XuzvsNl7EIpf8fD7/Ov+1+EwSJS/LcjSPOFbEfrt27iXC1sAs+X6/d5fLJSBJzU+JIEYCUuSWJDWfEhHNwBQ5YElS8yoiKwMWGpxjJUnNp5AUoEKsoHfmswRw/z+FWB0sdBKw+0+k0jo1nyrGIAOpymfww+HgH45JZGth7kSMBJAci4DtdjsEud1ug8Wavg9/MuC7Wq08kSWnZc+wJ2IQYMlBhs4Gy88xcgABn8+nFwEfiqU/P6sI58rxFii5jikiB3P+fK+YPIYknHLMEZLjn90HPoVJAbG0Ye+KogjqAAUIYP9ZQ1P+WQLU0e4lLEWg6AiS67qY/6wArVANohbESsrKB+ALIDsxf64ZekH3EwrAS20YMfLYEcQ7bgPAdTFyxLe/isEWoEXGRDAoGw7Gmg1mAhaPilBytmDYR9eEAvzLV59WEUpuv6VaBUXoPyYln82A9ml0MoJ7Taggu4YFqv4x8pGAOcT6P62eiHeRFHC/30cpVtjMqN9/C2AdbDYbHwjPer12TdP4d23bjnzqug7WAVir+58lwBYjRSAognMNYOtgjjz7b3lKBKFHkkLeJaeAAnc1ezuaEpFCDvnl1uBWhGHBDHgRuLNFUS79fQ7dExYBADvmPMBWy4ajIDkzQBSvC+M3MByrP4Shpzqz8FI8AAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADAElEQVR4nL1XgY2rMAw1UhegI9AR6AhlhHYEGKE3Qm+EMgIdgY4AI5QRjhH4tolTJ4SGk77uSVVCHPu9Ok4gO3Axwd8gkY4WMHXda9UjhQEe/QDnPIMRsl/bNY7HwyQiRACT57nr2GNAQg7fkBxrmMoMkmrAySX0cLXzPtn9mIR700J1KVjELk7+hcEfHJyVEgmRdSOS3KJ2iuPHLs8nACPCr4Ew+dUEuOESfR34mcc7iNrXRAgWAmLkC5KYPSIimIFVcoJHErNrEZsy4CBNAa7o/X10+/QjEmpj9gh2sBUUXNpQ4Jh9iwBZf9zI/xcUL4VgHVgBtvhGXP8C1+2ev2ehM9T4r8publM1HrFTHI7XIke6LEYnAwtyCShtPac2qXqAypympmUfY/f9QiIWAt7kJxMEZ9eFCfJuk+oJ0+S+Mp7DCMlhP/uu+JFNi1gIYGNjyM8461HMqaS2nJ9D5IRTlkL7+plFpO/5vj/Fn0WM9qhe7gIh1336Uf/9ElvHJ38ZV0W+vg2Z0Av4G2z0dwX41Q0rzzGs+QfieBlQM58XXNxmbs341J4hSRKnDqgACQWtP9o/+YcULJdAO7IzvJ+xndoLi6CiE1hyNS/oH4AVYLdJh4F6E4TavLHPRKxJSQS1BPKlIuXshPxT8+pGnj67AwyDK6DP72i8mLfX2XXOm0XqrXAck2VgIYkSIf6gyJFndQl6dAiJkKBExOnGvs6GZIJaPg+0CEueW3I6ins/AzyIR6QronTI/X+pWw0rgvzp84zJG8uzmgERYaGKVtZaoAX5c2yBekW/+Yso9DoOnf/S6h2xNd5nAZr4VS5SrOFnRvttQfirmPb7DevgUHMgDsZbp+KxNnCBKY4HZx6B/W85x9sswBajJ4KDUnCo4WTWclEHH8g3f5avivhBEWNl5+gtaYWQnQ6c/TZyEZDQXc2/HS1E7I2ICLaQ148n3Yp4umSARdCdLYQ+u+F9Dh2fdK87cwACzXf6YqcBc9DIgaMh5JIBK95cGP8Cdlv9A2d6Z3+Ip2/8AAAAAElFTkSuQmCC",
-      "actions": [
-        "alert4"
-      ],
+      "actions": ["alert4"],
       "weapons": [],
       "effect": [
         {
@@ -1710,8 +1706,8 @@
       "soundPath": "Skill.img/2221002",
       "description": {
         "id": 2221002,
-        "desc": "By drawing on incredible inner strength, enables one to reverse the flow of Mana back to the monster, returning the damage received from the monster. The returned damage cannot exceed 20% of maxHP of the monster.",
-        "name": "Mana Reflection",
+        "desc": "내면의 힘으로 마나의 흐름을 바꿔 적에게 그 힘을 돌려준다. 한 번에 적의 최대 체력의 20%이상 돌려주지 못한다.",
+        "name": "마나 리플렉션",
         "bookName": ""
       },
       "levelProperties": [
@@ -2371,8 +2367,8 @@
       "soundPath": "Skill.img/2221003",
       "description": {
         "id": 2221003,
-        "desc": "Provides consistent damage to a monster using ice pieces from Ice Demon. Monsters stricken by Ice Demon become vulnerable to fire-based attacks.",
-        "name": "Ice Demon",
+        "desc": "아이스 데몬의 얼음 조각으로 적을 공격하여 지속적으로 데미지를 준다. 아이스 데몬에 걸린 적은 불속성 공격에 약점을 보인다.",
+        "name": "아이스 데몬",
         "bookName": ""
       },
       "levelProperties": [
@@ -2714,9 +2710,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADtElEQVR4nL1Xi5HiMAwVM9tAKMEpwZRgSjAlhBJCCaQEKIGUQErAJZASSAk5PScKjvNh7+YGzewmxJb0/CTZ8g+NpaXvyEZeQgDt4/H8ivfdLm0FhADwzrVW5IKJVd1QdazIXDQZpYbvesZoqOdYryxYLzNkdDLRu9zudDzsPYif0Png2LFjVxOVNd3vlvaHklzWkGVjKlG0JHVTU8m6TdXQ/dLpVUYxCDUCkllD1IP4mTPUTVZUMYArr0a+rTmHYNxoBnGt6XBlThqaOI9lBEBo9AycKr/6Q+kosQzmxM9z5wTz9IweGMC8+832S9W035dE5y4Usd4IwJzzPa/CMoVMKuXW0tHHdQxi5Lyo6cbUC2sNP7ydFRAjBmLn96ybWrDBKzu45IZOjplQNSVBOBoec5wzF3aCeUQJZaqjvWCbMYjFEPiVuIL/28Fxrpbj52hdij6Zc617u2aiNwDA6k+7LbVtO1r91YNQfmUl/53ZWMEsaMVMJJpX7wgFczbGj0Oweq/Hq4Vz2Hu+HrTZbOj8eI1YmK0C6mO4JEmC8ST6vSIr9v4JwDHdT75l7cou/hsAA/28eVAQd9BZ1LUPAygGjW3krOZ0x/fb60kZJyfoz8Lc4XfYhZ6EQUbnNyKrfQLlUcYetunEeWc/4Ri/KN1uJ+OwA3sVl/AqA6Egc7GDfaqCTwLnYm9JFnMgz5Ku/j/kw5KIHlisyrENALLJGoAvyl8BQJLFSYgEhCD+GP8/AJD5iF8iVfCmUEAg6UTmnGe9DW8HeRTYQH7x1rgCAJN5I4wTEFUQOpXMD8dCdhB/D+A3+wBqU+hFzUoJylY8V//iUMIAkXmyF/gkLBp/RIdbsRTGYghCEaNwJLWObyLCBJ74w9jl+Vq0N8vAEoBjul1cZfgMRQAN2/NvAIAW0JNud/7kwglmzPvMl1iLhIDiOZKgchzjZIXd+CScZUDpvAekfBKe+u9z+788w4oIJe97y9AuJOykRgA8Ou5a0L2gi0H5IZYxxXOrjgV6cp7AnpnphkYABFUMAoJYHo4l2bP25fZ4TjecXZr6vaDkphR9oUjsfLEpXQJhL9zpcJ9o+XIibbnuLylxHvi2nDtnlLFl/RKXmhXnEwAiw8WEuh2t7L8l+n2qhSX5zod6Rg+/l+8GALDBXS28HWGy4V4OtxpPYXQ1WxIwkLOOU81q3K9lhVsRXjfCgAeBO1soULV8LGPbcv3KMAcG5t5d+W46vF7tKGwFJPPFuTAgsukvjN+Qoaz+ACkgXyBvo1osAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACvklEQVR4nL2Xga2jMBBEjZQGkhJICVBCroRcCbkSUkNKuJRwlHCUACWEEpIS+HrcH7QstvlfOmUkZGK8s+P1emPvwhJjeA8KvVgBY9c93uK9ro+jREjA5LyqyvB6veaBwzCEtm3D6XQKZVnO/fv9fkX6Hbvff/6GXz9/TCJ21rkl6Pt+Ir1er+F2u01EVVVFnVsR3o7x2Fkhl/MphE8RuxiRBjMLCNWXc64ZMg67+/0+9XnnHgsBCqNCyCwgghghtDyMs2JkpwhgJxAFLYW3WwhIOWcGmgm/IbMirHPsLpfLHDWgpUiJWETAO4cMQMjD76ZpVrmgmVvnEq6IWBHJJQA4UAgxFlEMNvNjkHA44EWAt5sFMPu6rsM4jqvZQ0DLmPP5PEXJClM/rWYvOy1d13WhKIqptVGI7oIt+ETa2h05RAVshZZIeRC5FHJ8swCFX8VDsOEkxITRO8MB/Y/HYzFegA9e7LQMKwEWMRJwPB6jM8XB8/kMh8Nh9V085E02AjGjrV2wBW1JWxe+JABIQM74K87Fs/q2L/MC3oVvCSDJfBIqw1l/vv83AakQSgRJJ8Sc55Zw+ja88gI00IJdYJ0q8+03G53Y+nvMAlQqVQvsnwnvsf0vh7bQaJwtxfqDs6W4H/p0BHxpFSmOtNfpExQJWh5fbHKlejMJVSFjs7StRaooZQUQFlTjkNYeRoDWWojVd41RgtpzhHg3zwP8rQKtnxCr/2rtjrCw9uIFyRMR6jg0kIQkDeqVnCn4yAjYKRFTp6GFAJ3vvAigQwr9bLdYwVG/zoWCd548lKZE0OqSIWOR+TzQHcDbpZyvBAi6mADtY/r8QVSZbvPBHsv8vSIGBBTc1eztiME8kOXWzwOBjN2yuzcttyJeC0VgEsGdbUVa/qvbqlyMgSD23rR90s5CzhUBofi8ML4D87b6AD3ya5eRDNQ2AAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD2klEQVR4nL1XjY2zMAw10i1AR6AjpCPACHSEdoTeCHcjlBFghDICjAAjlBHy+TkxhN/TSZ/uSQiaxvbLi5M4HzSHpb9BpB8hAds03Z9Ev1zOVkkoAQluTEJV0LHq+bnUlL9TyoP28HvsG34P/Fxbyp+G8mRt9yxfdL9mQuIjDD4LXPPHvSZrU4rOLdVlQjczkKHA4wItDVS0RMP3QPZlKLq0VOVMgiOHRG55SuRJfGw5ks6pG9V18G2GDoMDhmLpV7Q9RZChHSgv58GXmBFQGUWBsx89HD15arKe4lcsJNAv37CDAuhnO+MaYB+xlF0qJJZ2MwJj8NbNuwQveAR5TDwwKlND53tL8bNlCmZ0pnY9h6/uRG+WXlVjPs4PSDSpqLMkMVdgFpyNb7G0X/m5s7eOkyrrex4NEyEz2g0cvO5j/j/hfg4lTPm59msSu1Pg8E2SAOSMy4P5q+gYsK/Q6TH3G9pNUyCjj5itpYj72od3MrjRYGSfLPQrSdhxS2lS8wBTHn0to0f7JzTnVvQXu8QFF3/2xSrw0m/sTIXNVYDsFf12EMfD4e/f+NshwNqRoT0Up2zV9rQHu/iBv2kKVH7edCjYlEROvHkEkBgy2kWwunftD/umJ03TNoL9wa/499OQLgmEyL/izQT8js6r4ECacA50b8qiE30t/ocf+KvWou0TQOZi+/xpFfwE2Ku/PewmYflwKlyP83E/uM9LDCBq50mKcyZNjgj8IX5F4GG7VRIiAYHsfJIk/D8ETDzOn64CxZdthASSToHgaA+F1s1I/LA/3q1H4DSm/ogA5owPoa1VEAaVzOc38BldPMFJHdgLgXZ/oxoJ5I0d5cWaLRO3ceia3lr/ANp0GgDtp3YuCd0Rjf9yvxUPhwqY+dDVKQJhxOOG4qFK4I1HAr3trr9NBeYEpnVXnaLdUYbvEEKI7UgVM/vreJoCKC7TkLmTq/DJ4qFzrQgJLftogupxjJMVfvPFSTgjMMGdw1I3JlMBv7X/6ztcESEkCcfy5zG2o6nYIuBUcNULqhjZx99ribdGvQTsdCuHv3yjGpoR0PpOOnUTCQGP/pS1dOOiFEvxtXGByS5n2YgKLkpRFwpiH9wXpRpnk8CMRDKRwKWk4vr+1iVSdgOpz+plHkhZjvsAL+O84cL1dBx8RUAxXkzI7wHkSrbY9GOfcEkqESnL/aYz2vkyeO9uAAIR7mrh7Qid8xsbp6zCKbyaHR+LUODJS65q1tKHKHh0fCvCZ6QKCAnc2UIgA1KUOGygYqNP4eVZfg/+W+xKSMJ2wRmgma/BVQFF5C+Mf4FxWf0DbjsLRisY+DwAAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -3142,8 +3136,8 @@
       "soundPath": "Skill.img/2221004",
       "description": {
         "id": 2221004,
-        "desc": "Enables one to temporarily draw magic powers from sources surrounding the mage and use it in place of one's own MP.",
-        "name": "Infinity",
+        "desc": "일정 시간 동안 주위의 마력을 응집하여 마나를 소모하지 않는다.",
+        "name": "인피니티",
         "bookName": ""
       },
       "levelProperties": [
@@ -3335,9 +3329,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEV0lEQVR4nL1X7ZGjMAzVzaQBWmBLICWQErwlkBJCCVBCKCGUEJcQl7AuYV3CnZ6MHGNIZud+rG5yy4el9/Qsy+ZAmVVV9Zd+wUIIf/Q6EQD4/f74DXw6nY5/lcQhB2+amtlNNE2O2rbNHM709TXwuO5HAIjx8dHT/X5d7gM556jrGokxXG/Unz+FxCEHXwcJICZ/YeezJXDquvckpmkia+0qRmmdQXKRxIFeWNM0wrquIrEB7JsIUNe1KOS9l3e4ByjujSFq64aOfJ/HcPxvzzYEIL9hNQBkWkPH0yc9OOrxc6RhGJICANRpyq/h1/ej+Hx8nOhxv5F1VuRH7MvlDQFrZx5wpXE8RwkprAYjuz0FcJ0r0PdPHx+8TEUEvwpGy4ltCAQeiBdKIhaj3UiW1wCIqKkC8MttHEe63S5SfAoOrA2BqqoTCQQJLrDzLFImkvyMmunlalC/pBhP5ex88mvbTjAqqSu/VSCSiEEw51+3G4V5piP/sKRmlrnjwnpnALzdBvbvE3nEerAKSn5XgWkapVBK8NGvq/eVCmX2ak2DqbErEqiHqjZrAphDzDlkV3DNCE0I7zDmnQoYq0sPPmhGUMEt0wESl4uROM4XCigJEFArs3+lwqvs1S5DLVM+n/2qw24IoOWCMbJsu0DzKWYPi+v4qYKhWkgooTx7jIUlFXi05Y448AoCBmqEy35LILex99tnrI4qNO56zYlsaS33ArvTlhMB7d+lIQPN5Pv7W575nanRphR9zslnz6BStfSQRABFgqxC21BrnfRzWVLXqwR8Au3XhTYlJQJw+H6eoy+ydy4mCYVmWyhQNVGeipcMcW0F35JhMA2AYACv66e8uEenuywNHuD4KTB+0gu4nlz/w80oUCsV65Z1ot1s5jbaBIA/pwpSovDK6cNYGIoObxS8aSuO9YYAGgU62P0aKx9NBMUzu21B/o/1o4vNaI+ArGleVkpCCA2shttWrpq1S2Zv2nPdBOqnmABiY6pj/7BrAiUJGDqXON5bPhfYBKTSl4bnsJkrDFPXT9MKOGHsKZBvoxiM5pKInMYEoFnnf/Ua1raRGKYtB97iFMtQN6E9i9MS390Hrura0zg9SQD0gsQ8L2XrNz578TYKyG71uMuygoRfj4E871pTWBPjhsv/Ict5FdR7k6pf4xnTLu+eZ0d9h5PxioAOTgGxZfIyqqdZ3s3zeqkZOT25dF0aTtl6oPXL4QP3OKLlJ/BNH0AwgFXL0ct0hjzPJ5zH5aCqBuk706WjO0wKkAkruFp+fMvt8BzQCFCphj5D1eM5uhs6XS63APM9wMvviyY4WXAloV0FnLTSKCtqIc9WAZVEnrHazTR8hghxzhmPT5dUd7wK+qgQ5M83LSGAzyN8q+HraJrWu1eZZccbCopypVAWEOCXukokZpbdL9u6dU+iphvwVSQfqaKAktDKfGXQpmw/5T3gzJv3MAXHddaIwh98q9EvWP55/g9xCPF+nVb+9wAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADHklEQVR4nL2X643iQBCE5yQnQApOwSlACCYEEwKEACFACJACIeAUSIEQ9u6bvULl9gzsjxUtIex5dFVX9zzcJLOu677SB2wcxz96fhIA/Hg8fwI/bTbrL5FoHLzr2nS/39PlcknL5dImbNL5fE5t2/4IAB/r9Todj8f8/ng8iDr1fZ99DNt9Oh12mUTj4G5MWiwW+R87HA6ZFE5eGeSv1+vER7ShJ7hvEk2q2D9imbUciD0A/NNPpBjvjOWddubwHn2UbEYAACaeTqccMfJvt9u02+3yvxQQgD/zYz5qMXa1WuU0SH76aK8SQDoG4KCmSkkBRSoF3EgDP4GD4fXV+EA6RELFGM1rwItSCoiUjGBQgbECV11NCKjgGIATEXDJPOcl0zwnJWUwgXtNTBSgQ07IOUsPB4qCCN4tRcbv9/tnzWA80ybyRQUoOuSN4FpS71SI0bsKkQTKLtpuSgB56OAncEXEuzanVyr40mMOm5FUoB0SBImf8f6YEnASshh9TYVa9O5XBH0FzAhozQOszYRIMK1jqRAJefRaKa4CeR+GIWMoFTMCbqXolSI9l/pFNppv60UFanITgSK53W7PiKO5c59Tsrw9xyLULqc1mgvl/5JyR7Vca56IMEfLUe0qbBS6jvcpARWUHOBQlYvhDHBfAbyzfMmt5tImYN8LBB5tVgOKJO7zpEjPLmVsw5ROiHnkOjWrBMRcVepH628YKfYVMCEgaT1v8eiM5irVzAPANzgZK9ZAJIE5Ec6DeP5HE5DSRX04sGPMFPDqZpCKyYn4yeb/ca7GOnAJZ0ZAQNE8LV5YviWrXlSAPqfkb0ZAJyCy4YTjV1tsdFS64zm4/Gnfj2cHfdyMJwTiIaHrld+U3GhTjuNcgflhpba4l8z2AYGpyHRDYpIuqg7CrubbsK5dMfe1I3yyDP3q5Eqon3btE1ER3l/dFd4SEJgAY7QCFInYjlGgvDtpr5fSvaHh84hvNb6OLpfTLCo3bbslhTReKYzL1X0t+4GvovyRmhUQCVVmzch0200Lri1sggC86hc4z88U0MC3WvqA+ef5Xy8d4oYHjfpnAAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEXklEQVR4nL1X0ZWjMAwU720DuRKcEtgSnBKSEqCEUAKUEEqAEuISQglxCUcJnEZGxBiSu/tZvc2GYFszGkvCfNHaJvoZy/QiJjA9Hs8fQf/+Pk5KQgkIeJ4bvrxQVY1UnO2y4Phd0TSd+ar7R4gLZVlPz0ctv7wfyQ0D1fVBfNy6O5WXk5D4WoO/DIuMOcg37HQaeU7FTuqP0FVV0TCMKx+pSXAziS96Y7m1NDhHZiZ2v/I/6wXA8hg+A0clc/OcHM/Fp649kePQXOJjnpvahgDkr5lg1TRUFGc6HkuaDoayk6Pr9booADCQiK/xAcGG18qaXyd6Pm/keifyi+/6AwHnGp5w54mncGMcV5MR3Z4CuI4VYPzF/ODJsx9eJr6BYe11S8D7QQaUREhGt5EszgFIr6aksC62pm3ofg8JrODA2hAwJl9IiBM3ciROpHxJxIrYC72vhrBOreAEbPF7XmdtJxjA4uTYKiADsxPs+XS7IRkoG72UVIW9tPTRINq9u1J24TwgJs9/4utuhYQx3b4CbVuFOk3AywOzj1PhrQrr6NWwTQUNKxJty+WZX9cEUJvYc5F9BhdiXMtoQhiTOR9UQPQWJcnJiTVoRhPfKw9hO0IlWfHjfKKAkgABtU30b1XYj17t9uSxlv9KWnXYDQFpuZx0reup+O2p5W4dWjDNdRypQEoiEIqjDy2XXir8Yp/W0O0cMJAjuwRiK49wso4K6qhCca0v4+RmsufNWMGag0RqryTstzUPkwg0kik8rf2wnYuG81pTLmv2DCqZ3K4JILEQlUeSSJRcw6xAx40ny6oIaJ+oPjOUCMCx9lKFtYheOye2qO0TBciGfTMHzpbf7KgpqOBZ6gDOAK7MlUxVoXNeF3Dv/QKMjzQyzqfhuJ+kmxzwY4HNZJlCJNLNuBR77vMjng3RVkFKSbxk+zAXduOE5XAW8HMxUlutpq4JoFFkp5aedSG/pYkgeeh9if2PnaqA8YZAJ2WlJISQdMbtgUJNI7XRQym1/Oyp7EMAoROGUxFR8ixIScDQuVCKSP6MTxgKpNKn5uYkAzFsXYmt6WPgGWNfgegxasMzYSGSuQVAo46/9Rp2ng8p0sJXwClOkRCYH0J7FrYljE0dOz07upzsAgzQ7o5oLV3a7Zo9fxsFMPn5uEtZwfH0ZIYllyHlK0e9R8OAgyTzm3qlBNaoGihNmDFmGbt1ydNQJy/G4L7uyLStjMXOdX6sQGo5g+mJeMZfTtm5ebXkTR9QxwCHFQU/zd0gixtuTDEYrq88rhGKEi5Enh7Hjdk+B1YEwApAaUR6L+fT0tmO0t3Q6VJFNBnzBKgYet4ss/t+sFEAkQxzNMiFmEgst7bn+D7syZV5GXXPDdUjQz/48qj+x5VaSiDDuxrejpqq3EQVW8dHKyRlTCx2CPDu4PnbyP3KWPLHMO7c6xxY1De8FeEyUwWEBN7ZPhkq7C9nUqmN4i9zFBz/4i3I5hfGn7Dl9fwP+IOsm+B91mIAAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "elementalAttribute": "f",
       "weapons": [],
       "hit": [
@@ -3494,8 +3486,8 @@
       "soundPath": "Skill.img/2221005",
       "description": {
         "id": 2221005,
-        "desc": "Calls upon the Ifrit familiar, who is fire-based. Attacks up to 3 monsters.",
-        "name": "Ifrit",
+        "desc": "일정 시간 동안 불 속성을 지닌 이프리트를 소환한다. 최대 3마리의 적을 공격한다.",
+        "name": "이프리트",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -3719,9 +3711,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADq0lEQVR4nL1X65WzIBTEc7YBWiAlkBLcEtwS3BJiCbGEtYS1hKWEUEJogRLy3QGuomKSzTnfzo9IfDDD3Af6Jpa4ib9BxYNcwO3ncv0T9vfj4cYiWEAgr7WabnJeCOOdqGU8141WnBstLJ0DNJ3HeDReNLUM/5WMzwE8xnGN8/dFdB/HIOKtRM4T1EJNhCCBiDDWdDGfGKTpv3UujVUYq9W8wIkWIpKIN7EDXglgaJUQKInpq9Xic4CQKAxcxtLN0pNoKUabHqxdGjuhlSo6ARQFgByrZWuFdkTiJnIcuyG6MQnynp6TwZ1A7KNTTcGBhwJ4ZRzX3kYHMLFMXp+JmMXGc3Ky/5uujTTG8zg2al/EQgDbznHvyYVoPU0eyEEcJ4PtNtmNc92AZ3xIB9gPUpAjSX0dk7kUhkkAyJmYEa2mlZCVjsiaZl6JptlUmrGne1q6NoxEhAQN4RCbCrnrAJcU35eTI5YOhNkkMisECBvHeK9KyemdFSdEicR0hpyEEHJF7wkAORBKhJCTA3sr4GsQAdLOZCLT8VSLQH7XAVgFIO5f7axzr5msweSmO24vni/iJCwtSG8uzQJS0uTQK9v3YO1MfrvF7cRmcx0Ph10RcwjoATQcDgFn+yvkUbyaRFyu1yBCkoh2JWIuQ2oitY4hgIhXV56jJEIkEVsHqNOha0HEQCLaJ0X8Fusp5xwg8thGYztBTaO2H4n4vUY8MW80mYA4FXo+oPV/WH4Bxb0A3cyEkOhiGSL2z8CuquqhAFRCNEdSL4ibD/p9HgqQ92Y5SUOJVVVVSDRuOGtyJODpfKV+4xfnJwEftKU2k+0+5AJvwV3q9Wg2IB9LzSaRAKgICOmHQXSfn5v7UIbG2aUA9Gpux8gTY+IKeP/nlY87JVdCXdfBFRZXyqpZAF48aNvk9wDdsI0yiMi681OxXYP7wNcZggp9gN8BeTwQSZ01EgCbChoJW/0M6SMskpDfZIfUloMjMlZtb2OpniiJ0FJzyOy37w7F/WB5744AFtGmcDCalB/8whmc2CDlD1mMiuBEzEVwGH4QBuXLAgB+NQtvw0SO/PApP8Iqdr4JkKh8D4t4hKKA3IU21TXnB19XEKXju5/zq+epzK6XZZjigszkAj5OdgUw+KuISTfX1Zy0WL0x9PFSyAFO2lJSQkCFb7W9r6N7mLqj5/45IydHzN+7uXLSpxmGFTsQRLAtL4MSC3P041zn+G9FPG9SEjM5fvIQVOmD8S8wfZ7/A700KIHVQutUAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACtklEQVR4nL2XgZHaMBBF7RkacAtQAlcClAAlQAmhhKQEKAGXACUcJUAJUIKTL3jKei3ZHHfDnzEWsqx92l1J1qhoqyneo5KCBWgOn+e3WJ9/TBogAAjGZ9NxbHS73YrL5VKMx/e6uq6LxWIR6iTVq3w6nYrpdBr+V1UV3pMo6+71e/9ZbJYfAWKUMk4HGJFkRBCUc/KAqba/Fv/qHhCjIiNGIjFKQckLgNjngFG29XgnpSSAjMsIrmVkGLcQq9UqlvWehVC5z1tZAAQ5rtSdkQgCoxLtgBKE3sd7TwHQGR0dj8f4MnWz2Sz+py4VFjwxFIYIQNYj4g2ETyh1qEvvqY3AGLXqdPkZ0usBppQ1bvOAXPBSWxkXBG2YgnjL9uNBIgDGia1PwiHJmAbhQwFgrp8IgHvVgZII5RYTL4xvNpvOs+12m4VoAcgLGNOd6yvGm6aJdWgymWQhWiHQRQiI3yvGJbuKns/nALHf7+OzDoAkL5DRr47cqg+iA2CnzFcgvqtWDthl9FmI70J2ZgGJOLSG/5SSewFruBIyNQ1thvcp1S67EEl2K+XjgyWYF/Vf4bHSFCvLMiSa3T2tlICHwyE/DXe7XcvtgmELZj9g3V+v18kRy4ikGSFD6jPVNkA8BttZiLw37KcYxlNTLiUlsbxi4bwigHUNmw9uZF9Az+aAFeuAwpAE4BuQMlurjPGdoBEp3rnRpIwOqZWEbKP2QwKRB4Lwq5nVcrlM7gfWRhaABn4N8F83ffuEXKwZQSJaiHYYqjSAhMvt8uwhU2cCawyIISUBrBe4Wwj/3H7C8/x6vXb6VRjxgg4nWQDkjeaeM3pd8/m8kwMkbSopBVDqrJY7HfWJ594D3rhiLjD0OJqpWOKBAIFbXlcVOv9T/59B+n+63e/16Q6Kcf3YEJSPA+M7FI/nfwEX4SRprH7P/QAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADqElEQVR4nL2XjXGjMBCFxUwaUEogJZAS5BLkEnAJuARTQijBlGBKQCXYJRwl+PZptUIG4fjmJtmMg0BC79vV6oc39Wh39TtWSCEFuF/G66+o7z4/7gIhAF7cVGVs5OjXT0pZzff7XqmzVWqY+N5oLnf0vLZ8X4X3YFKuMgCn86iO+08P8ZYTlw6UngVrQxDdXEadCnX+GkClvbxb6TVAY6n3APGmNswlZe+lYY2xVuoTICbqqG7ge/iAtt4oKm3PV4lOzrIAEIe3EDUld94Psziuu5bbjg09a+f38I4H8p7SLxOBbwHEIA7yA3liqbPuRh6HEF+aIDrF6KuB6nFzJcB2Ys9xfQbxACBhR0d450De2hB61z8Kd9R4GOZnEhHPV7NoG5J0spzMuWGIAE48SExCDQiInerH6Jhwv6c2X3UAtkzh9HqGPI0AxGXsJNlEvK5YsExCmZYB1rYsXk0uenSGKvW7d5Wvy0UhAoj4OXi1Cx3W5VpwaahraBimm1OfQxWdELsYR9MxH4MIUIfQHUKWe6P72/RcXCyKHwt5Ndr+dFdnCklVrSEigCRNasuwb5lzs/j9ztvJcJs7230UmxARwGfsMA+BZPsr4ruFOMPrCHG5/vEQB4L4WkDM03DiRQRDgIzeytqc+LQQfwrRMMQKAN4DAFl/bDmzqxfC/6+27HJOQhJuaMzbGyfQMUSi/AGILEATphsiAU1jf0hxkejZvQDzv+95buemIcZeLN2Vl5bOhLT9JkA6DbHLYTiG/nEoYtYnnZWU3UVR+EQzoeFSfPfxrmx9V03tHp5HgPeOt88Ic+MojGGjAQQWG8l6lfEcIjDMCIAcaTNoD/tVFDANh5t7BKjDAUIH17CRaM17PSC+m3I5M8YoQ1GJcJmxigD+7GdDAmre6WR3BMSXmcc7N7bfmawDpSb4OrMOyBlQykccSEuGmMLzM20qWFLR0auiS3uahHKSPYaDhI+InIppS8VaAQgsqWk4Y6f0bOjy+8FLAAJRheEQQ34ACGtERy0AsWWt4hkhiZhCyDCc8f1jFkmYmnQvJxrkx2QTetrbceRG0jbpNwHWh6AnEDnTSWCyAGkUTqKq1/VTOPUu41HSNLuO46rfgc51EoWTHbcBxOxCdKtevO/aitaOdQ7I+pBLSgAU+Fbb/Dp6YlKP0xxYdAKcil8szZx+njnh0wzFQiLgIVDxP6YpsU5mpNyYBwV9OvpDyJ3jhUXE8S8dgiJ8MP6GxXD8BTHXxx/SN7LpAAAAAElFTkSuQmCC",
-      "actions": [
-        "chainlightning"
-      ],
+      "actions": ["chainlightning"],
       "elementalAttribute": "l",
       "weapons": [],
       "ball": [
@@ -4402,8 +4392,8 @@
       "soundPath": "Skill.img/2221006",
       "description": {
         "id": 2221006,
-        "desc": "Attacks a single monster using a high-voltage lightning attack. If struck, monsters around the affected monster will receive damage as well.",
-        "name": "Chain Lightning",
+        "desc": "고압의 전류를 사용하여 하나의 적에게 전기 속성의 공격을 한다. 체인 라이트닝에 맞은 적의 주위에 다른 적이 있으면 추가로 데미지를 입는다.",
+        "name": "체인 라이트닝",
         "bookName": ""
       },
       "levelProperties": [
@@ -4625,9 +4615,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC5UlEQVR4nL2X65WqQBCEx3NMgA0BQ8AQMAQIQUNgQ4AQNAQNQUKQEDSEJQTv1EhhgcNjr3usH7syA91fP6aVpenqbj6jBT8owP1yuX7E+3q9uhOCAM55FIWDDxVl5fbjIOisl3XtXauqm8niyGtrfzybXbpxEMs5zv9aURS1EEvzhhBputqY4/X8koUhVbe6c/0WwG91smWBQoF9ASBhFI5HpNHPyUJxOj2ch5GzXVUeAB/hlOakfrXZuf/bbWySXq+1AEpYz/f/K0Vx/LLWAhwOZUuII4cMDR0jTb+DzrLRMlzP+4dNm+G4Z7NTgixJ2s9FujPRRF3ndj6AYS877l/2WgBQUpwJc5oLxqecw47a9QL49PNzMV9f6zbV/+ucJ8WnUQAYIISmDxnR43crCm+msI/n18Vp0McoABrHDDTiXG1O5ei+F0AjLPZ5Nwu9/oACO9v1Gt2OpmP0mqFZo5gDiRAb84TgOkH7fcBa435Er85njWIdSFRtqbUfqsYQISiu03kt0c4axf2RqdF920GVbx+TDOn1iet4Tp3v0u+OXZW3BBiZ/KHBMmDaAUKPpP4YwT4AtSxMPwFodxBgf8ydM9bRd/5xMjiiAXTJntOTznFPXT67f8xuB0Aj1qaDEB0cIrUKQcFhae9xziX9dIoMaUMefAAKwQmoTaYQ2hMU1qhwm1jIvAUaGlaTc4D0eRNdYDv4dnh0dCzpZxYCW2fcgwwBCI6hoe+UDgAbBDcSgmlMrSGAMDpC9AXniLhfbzofbEJu6ESjFAQQcBB4flxgTdPtC65vvwXQDaXXz3okabSfVnXus9NXpwQ6RktbT73WE0HplxVr33GM42dnAE8VBDu4zu13zAsAb4JiaxAG+BD3yuZ8F00pkQH0BHRObFmSpw13kqyNuCkXniWUZmCBdzW8HakjQvjA3H8Bd4490ucIDueI3r4V4XLBDDgIvC4dJr6/35U6xx8twaJ5YfyE2tfzf2GlJTKGnwQUAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACm0lEQVR4nL2X75GiQBTEscoETEFDcEPQEDQEDeEMwRQwBA1BQlhCkBQMwfM3dT3VwMDOrrf2B0GGea9fvz/AtGjjUbwHE504gcfn5+0t3j8+Fg+REIHgfLmcD266XC7P9WUxn7fvqes6XHc0TROubzabpK3yfC3223UgMc1x/r+xevoSiWnxAohyu90W5/O5p8IQUMfxEoHvoqqqcPQ09giIYTfXXXj0OSqcTqdoN9iumz6BFMOvkCP9er0OR4pytVq11iIBZ3i/34vfQIpsJECbiSHnpGKojVx+wJ6xNFyv12izu95KwW63i+eHwyGoMSZxbuVDGHvH47G3FgnAUlAN5BQXxr9yjh23mySQwu12KxaLRZT6p87VKSmMEsCASLh8KOLtR/eklGKd/fv9ftDHKAEK51WQ+zEkCXiEwFVQi3oXkFv/T7XjWNG7QlmjWAMpRULXRbRbB34/JNx51ij2gSQQtdeDR+F513U594GWNYq7I9Ojw4DmxFBedZ197lzXR0exQ9J6LbAREt6S/jLCOgQ9LZJfBFIpaxGgyHCmPKb6XyNbqpRl2SOusZtjt0XAI/aiA0SHQ6R1EoJew1hz+eUUhbwg66bqE3ASmoBeZE7Ca0JQockOkYvQ0LDKmgPKL8Zms1nMY+pllArnHhSCkLf06OMYuGGRkIwYUgWniknAORF38y3ng0WoBZ9oghOBBA5STza9zEjuVHBd+5GALzh7P/eWlNGurO48ZaeLVgp8jGIoNYYd/rBS7t0OLcqzQF0FsMP/P8eyT0A3AaJUj7NJayoqHVUvgKr3xzb7sCHF2CNSrsCEbzW+jtyRSKSI+VGOU/B9Ioxzon9+FfF3IgUCCT6XTpeq+E24c348BZN/H4zvQPw8/wtRjSsDsD5W2wAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBElEQVR4nL2XgZGjMAxFxUwa2C2BK4GUACWQEnAJpIRsCbiEUAIpIZRwKeFSAifJliODSdjJ3Wom2awB6enLlvEOYpvgZyyTHxpgul5//0j0/f7XJBACwMGLIl996HC7Q51/QD0bt/hpZmM9ffD+M96fsu48gDlUDLHbEvxfW16WAWIHbxhlbz4rgD/DQoU1u9zj/98C+K7Z0UXPVWkWAEJYpsv3cAYu+w6z36LCsb/44AX7timAFOEro6DmxT3Z4Yv/tnUBTRH7DgCa8LY9/rcsr8vFWAD46sdASEuOcNaWkZaf7dQ9LcN0bp1P/DT5igLsRxH2+wPYF3XdOvOt91dfz4trAYAoxUqkpGayZXJZeG5hqXq/qwApmzB45iHeCR5WSsKeAlgFoeVjRbxTngdHw3/nStF1ft7eVmM8BTAjfhXwlmXj8+tJAJ2hGYZHKVCFu69jtAqKMswXMprtNOlC9kqhTa1YGpLULlMQvR8X0Pk8kFrz/ZS9Cr6pFeuGFGy8gcXdUiAoQ62WdEIZD8HHR+03teJ5y9TZGZKycVs2yZsyGbcQBzdbWrE2apnhRUOWEHU7hOjUkoxeRvB6h4BRWbz8AiB+VwE6bEY88T6dXKn1Tyuj89UhoKZ5vMhIcF49fb/qVycRAeiMw8wXJxiIy4DSGsgDRDAMaJvWBdfyiw9UKJqQKQANkfllFjUXDTE6qEgd3XBOLUIqoJVm9boPeHpWgBsTBj26mjZNGz9Istc130MKGd8DyFLBFwAiS6MgODMCOToQyU4gFkaApFD1CBySAlifhHLBJDafToEwBElaz1/QwY0puVPJRR1UA+gLMnH0Lka/O7UkxelCVhU85WduUQl0G71cLlDptppwEG1Wvvbaz4DLr8IeIKuKLOPliMl27RJgUtKUeHgY/A6cKQcEBnCD6sO9PXErPjlnE8EoH/QcQZAveVagtAIZndXodKQDCYQDK5djGnxly9a+HDhwcMoeT0XMKAowBB2XrN80/pfp4PSlS5D5A+NPWDie/wUxLcVhaO0qvQAAAABJRU5ErkJggg==",
-      "actions": [
-        "blizzard"
-      ],
+      "actions": ["blizzard"],
       "elementalAttribute": "i",
       "weapons": [],
       "effect": [
@@ -5499,8 +5487,8 @@
       "soundPath": "Skill.img/2221007",
       "description": {
         "id": 2221007,
-        "desc": "Summons spears of ice from the sky, showering up to 15 monsters at one time with a nasty blizzard. Incurs tremedous ice-based damages to the attacked.",
-        "name": "Blizzard",
+        "desc": "하늘에서 얼음창이 떨어져 15마리 이하의 다수의 적에게 강력한 얼음 속성의 데미지를 준다.",
+        "name": "블리자드",
         "bookName": ""
       },
       "levelProperties": [
@@ -6021,8 +6009,8 @@
       "soundPath": "Skill.img/2221008",
       "description": {
         "id": 2221008,
-        "desc": "Enables one to shrug off abnormal conditions. The higher the skill level, the more types of abnormal conditions one can nullify.",
-        "name": "Hero's Will",
+        "desc": "특정 상태 이상에서 벗어날 수 있다. 레벨이 올라감에 따라 해제할 수 있는 상태 이상이 늘어난다.",
+        "name": "용사의 의지",
         "bookName": ""
       },
       "levelProperties": [
