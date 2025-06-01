@@ -129,8 +129,8 @@
       "soundPath": "Skill.img/2200000",
       "description": {
         "id": 2200000,
-        "desc": "Absorbs the enemy's MP when attacking with Magic skills, until it reaches 0.",
-        "name": "MP Eater",
+        "desc": "적에게 마법 공격을 가할 때마다 조금씩 적의 MP를 흡수한다. 다만 적의 MP 가 0 이라면 더 이상 흡수할 수 없다.",
+        "name": "MP 이터",
         "bookName": ""
       },
       "levelProperties": [
@@ -241,9 +241,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC00lEQVR4nL1XgXGrMAw1d1mAFcgIZoQwQrtCRygjkBHaEcIIYQQYIazACPl+ArmykYH0//vvLsUUrPckWbY4mRBP83+Q8UAKeN77x+rN3Ezuz2DMZN0of4kFc8uy9Pd935ONqjw/WQQLIPKLLVZGhmEw49iaIrfq8y1gLhl/Pk3bVSQGIppbb+r3kkScNHJMtNYmjaaexcB7IMyyjETc7msRpyNGzNDQlaIx1f7+X2AlgD2UngZXQc4hVkX/VgAZHr9hJmmcieUCk0CINRHvVeefdeOQFsCLbiUsIv666yI5zzzmRahhdw1IciZuHDEKshsm9/8JhepxsTkJkyLarnTeD2pkDglg8ubOuQcxRpMzmBMpA6LwYxE3d02RHxIgyX+I5fM5CkAsBiIms42VgLjsAvLRYHsz2DIsEc1kcn+sv0cSgV+3CJMp+VUKgLYe/Rijdhm/NYUnY++ZGPcQtCUiKUB6X7scYiUHz8fZcHk+u1VZUITitSDvU1AFyFrXyOmdYt66+8eDRBRvufeaI8DXlwXIktPIY7CIzs5ec2nKVHz8TRkexaCEfS8N6lkA7z9d7q+VvtcfAWi5LD/29gE0DnKbBfl4IH8a7XVZ9UfIvQB5qDB5YV/rfhggxg+zY3KtlyABeIk9B0AOEfaz8M2EBlmKjTiY6iV1W54HAtCnsQgGxKDQLhdLIrDSyUNXfkzM5JKUiedohH1D3Gd4AfyQJ5Lh6KxnIo4G30tCaUuD1mcEVSAnxud58J6LAkeEhez1kLK5TQqIIcnlWsDYC102oa18b3VYgYAjHS8Lkdc9Eex5kTfpnXCr42WPpecSRH4gEpsNSdzxSmydB7wWUtiyGwiIFcqPCg0c/kDMgbrXBGT4VtM+zViEVglEKMIeOxDbkbi2A76KMMw4AiQCn0uryfn+mTBN7iyZct/r74HJ8UemIFs+GFWkUgFUVWVehDf2B0Hj9WRhE67XAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACUElEQVR4nL1Xi63CMBBLJBZgBRgBRoARYBVYoavACowAI8AKjNCHI1w5xyUNRXqWoIW0Z98nyWUWcvThfxB5owL66/XqPv18PsN8Pp/EtF6vh3vaf/3XUwQFJPLVavVh4Ha7hcvlEna7nTteA95Nxvs+HI/HJAY8p9Mp7Pf7JGLmkePFElltzALPwXaMMYkArIjZiI2BDFeQn8/n7P9f8SGAHqqnpStDXBI9SQCAnJeKjuIALTBFqZ66rhvGHo9HXQCKzsISHw4HVwDzzHsWoYfRGlBySwwv6AmxWCzSuIoAuXr/tQCSe8QgxIfgGEXgWiJvEqDknsc1MaUUVQXYaafkXBHxUSIF6odCKExTMikFAOe/BYqVZBSlEYGgmoiiAPUeOeRKRpBkuVwmESqA46UoKVwBOtc9cnoH3O/3JIJeaehtvTQL0CnnkVtQhM29puKnadgKL+xjaXD3As39L2BEmtYBXWY57aaAVd9CPgjQTYXkLRXsQRcjS+71EkkAHtKlloW02WyyZsJCp6KuekxdzfNMgIogaBAGIAKVruIIkCspbfFdes7fNgqDALZPhN3rScRo8LcSqi0PXp+RzQJ90e7nCkSBEaGQsR5Sm9uiAAsl11rAPcFFqJbvWoeVCWjpeClEr2Mi6LnX2mfrQKnjpcfquQLkLZGoLkS241XU9gPWQgk1u5kA+5AeKjww/IqWee8JiDireS9ThDcTAA27dcDaUSDVr1MRbiMjkETguGTRcihFq4ZP6/5BcnxpCuL7wOiilApgu92GLzEY+wNoguIQCIAIngAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC2ElEQVR4nL1Xi3GrMBA8ZtyAXYJTApQAJUAJSQlxCXEJTgmmBFMClBBKCCUQrcTBIQ5BnDdvZzDCIO3qPtLpQHP09H8QcUMK6B/11+LLI3V0jktqm9y0jr9iQd8kScbnuq7tGFny0rMIFmDJ0/i8GKRpGmrpalq5+j4E9LWD9z01hi+JEivi417TpUisiINGjo5xHK8OuvbOB74DYRRFVkTdL0Uc9gzSNPVwNzOKk/H5X2AhgGcoZyrvkpxNrIl+WgDQ0YXg87XBmVgGmARMrIlIould1TbrAjjofPjE9yFp/dxgP/O3HIQaNmNAkvvEZWku9kLnbnlK9OjnIlwG6JbZJYDJbwpxbsbL88kKn6W7RhE9rZLvEiDJKzNw5cUdhEgxr8Jzjx3r6kKAn3Yg/2DyluxUU7NkpDmp62L25twAIbAEUAuXPOUCoCxEe7iA/O5cALfgDlVl5d5BBASFRKwKkLO/RG45lahaF3XZy8lEpXNDLswPEa96Js+gCpC5rpED6dk54PH17US8u/8RBzYmuskFRGOS7BMgU04j98EiyiEjOChnrvhLGu7FzA0wUOcCMgR1L8Ds37+Jrqe/CeJsyLbWARQOcpkFeVs9R1pcBvLBHSHyUYDcVJj8vGE6DbB6Gk9uKDxyrZawAvARzxwAuRVxo7GY0CBT8SY+KYZ9JzTzmQDUaVbEaW4JWyPlTgQiHUD6MTGTA29is+NNyK8b/DpjFMAvuSMgxUgitgY/S0I5lgatzphlgezo7+cSsAJbhIVs1ZCyuF0V4EOSy1hAmwEhiRER8neowpoJ2FPxshB53xIxzrwJrIShipdnLGcuATfssUSwIPErXonQfsCxsIbQuDMBvkJ5qNDA5pfYk/eagAhnNe1oxiK0TAB4F/Tz3of//9XsWuZUhGbEFrAicFxadD6u7eQTus7sJd1xrPW3wOT4kS6IhgOjijVXAFmW0S8xDvYDB8bI7fge/SAAAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "affected": [
         {
@@ -567,8 +565,8 @@
       "soundPath": "Skill.img/2201001",
       "description": {
         "id": 2201001,
-        "desc": "Meditate for a bit to temporarily boost up the magic attack of party members around the area.\\nRequired Skill : #cAt least Level 3 on MP Eater#",
-        "name": "Meditation",
+        "desc": "잠깐동안 명상하여 주위에 있는 파티 전원의 마력을 일시적으로 향상시킨다.",
+        "name": "메디테이션",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -747,8 +745,8 @@
       "soundPath": "Skill.img/2201002",
       "description": {
         "id": 2201002,
-        "desc": "Use the arrow keys to teleport to other places in the same map on a set distance.",
-        "name": "Teleport",
+        "desc": "상, 하, 좌, 우 방향키를 이용하여 같은 맵 상의 다른 위치로 일정 간격으로 이동할 수 있다.",
+        "name": "텔레포트",
         "bookName": ""
       },
       "levelProperties": [
@@ -859,9 +857,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/0lEQVR4nL1XjZWyMBCE92wAS5ASoISzBCzhLEFKgBK0BC1BS4ASsAQpgS8TmLiJCf597+a9O9nNJjPZbBJYRDaG6G8Q80EKGM5N99FoSdRbdq88c23rPB0oggI0+U+20kbbtqZDlmWz5IjN89zyNU2j+4XaqmMTlZtci1j4yMt2azpU0T4oggRNt7f8eZprork2ili4A4K8yu6dtC1EIEbODgTl5WDPUvk00VybEgEYAZJczhjkFCEFEcn0t/v51b8gxG+xz4JtElYGXHIANkXIGFknQK0GrxSRDyT3wQiYKzaKILgMSGOq0tl1R+1P042eeWTmmUz+7RijzHS50f0uV08GJIEURVtWNNeQIviMmOp25z9t24cYjHu5tn4BcuuQhHZ3O5q4dHmPYZxEVewsmzFuph92AchAhFSRnMTlqTax9EGIFAq/G8cY3zJbu2Ac4KwGKKNftZa0a2UDXNl+EpNogrMlglHyLJyDtwbYRZL72gG0UwREp8u1FXvY2rZXAM5rzPY2zT6kvSoq8+zGgfygCm4Y7PusvY7lnqepdxmcDNwpq0Lt/dP2RTvxkgPZaqVFNF3nFfG4BEngebKrHxyvW6t9qdLvI58TERbwBCC3RHwJW0CSmEnXICqOqsg2uuppl8rGM+N2yneI0v8kIBq3WDL9uoAYiHB932AxkiZ6XZZxqtay07NMBGEpSD4h5E4ICrBxr7zxwIGIs7bLk72nma1huEVxHAe3ICF3wcNdwNstjpd6QJBRCokpxAXad8dMi0Cl+/DSOeAT4RI9A4gACqEdwsMS2CLGlNanPHoV7jLIjLx2EFki4odBXTG7YjxUWAPsI/uBGM9vHUQUwcFDM5QiWQMknKuJpwIoApCKpRgpyucHWAMhMS8dxXLN3Lcfvi0xM3LryWyFzoK37wJ3G8laMT4101BGfOdAjG81+XX0riD5SsY0u+mWO6A+tfgqgjtmBrQIfC59iiwZbw9cvRIy9X3fW+T4J5cgnj4Yv0Io9cB6bQ4yE/QPnGMUXchgEkQAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACd0lEQVR4nL2Xa5HqQBSEkyoMgASQABaQABKwABLAAhJAAhZAAkgACbnbqfulOoeZJLBV2z/IvHK65zxmyKhooyr+BiUNF1Bdr9c/YV8sFhUiEFCTz+fzunO73ZrFjOWgtT8GW2PYys2dTqdivV7XIkYp8uPx2Lyw2WyyIiC4XC5xhzVR1xwiRtGgyEUK6LtA350Izudzi0RjfXOEuxHg5L5j9V1UFAhWq1X9hNDXxDlHywMpd6uPCF/jeYJxiFJIkbcEdCUbIgBhIM64U22tG4/HdZ/ncrlsrVH78Xi8e8AJXBR9z2gMIsLbMYfiGtnNCvDScdXej2Op8yPmCWuip9+qwEsIIl728owu9XZcx3gqzK0qcAPaQcogYCzmwacYdU3myKMQj308+frebwToxfv9XhwOh2aSLAbb7bZpx3WUalW17zOSbTabJcOQ9YDInKSvnyIXptNpLUKbS4noDMEQYYIMp8i7RHwtQOQpEd+iJcBjLoL9fl/sdru3vpNrrC/RBgtAxOv1aolhTOQidCDw1wIUl8lkUjyfz2aH7FpPBEXXx0pJgUroFJADMU+RA4kuyzJbgsCr4O0u4HaTF2TIXQuxvKFQCOxcfURKhDI9hUHnACLYTYzvkHiLSEAI/RzeQhBFDCUGMQzukcEHkYuIRqMYqgLBvOPvcVB9dBAhAuO5HbpIcgDCrpzoFYAIwRW7GBeVGhfIgZyYQUexxyze+1y/eMZLz72VOws+vgtiGXmuAO0055HUOVDqWy33l2mIIP9Lhpuju70C9Bf956tIwyUeqEXoc+lbcDDp6nW463VoObl+PATl/w/GXyHnekHfByyj8Q+uPRmuIfZE1AAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCElEQVR4nL1X/5WyMBBM3rMBLEFKgBKkhLOEo4SzBCzBK4Er4SwBSpASpAS+TGDiJgbk0/du/tDsZsnMbn7BRvkY1N9AsyEFDL/N9aXREtV7dm88S31Fng4UQQGWfJ/trNG2rXsgy7JFcsTmee75mqaxz831VXWjjofcitjEyEt1f+jcNrMiSHAbvjz/VueWaKmPIjbhgCA/q8b5rC1EIEZmB4KiPXkk8IFoqQ8iACdAksuMQU4RUpAEZrzOxkwPE+G+me+T8CoQkgOwKULGyHXCwUkUQ4zcE7C02CiC4DSgjGOpK+vf6uOUOXdBMvlPXgyeu3SBAAlmJ+cdkCuac0gRbNsYcZpc8scYjHvp2rgAuXVIQptZjJncYxgnUWeVZzMmrPTDLhhX9tkQlI4cNlC2pYulT65oxoZxjIlNs7cL5AAfTXxAgj5J8AoiayBxa+g21KrsDkqcrI9CutLGQcTHVbnKET+qVEvYjJT9lG2tjoZQ8sl2tatdG3ESn4b8OzXrb/Dvs0s33gV5uo1OQ3QXkEySPNq/xi6czBg5sN8lVsTv9RYV4QlIvFvMrzvtsyEuDbHs3eoiSr4kIipgJIq3aSPr85T9wtJYjUDAfUgQVDtzY3W56oR9MPa99Mr6Tsq/ct8QYF4YsAn68d/JQrtXVky987cbfO/ACsBbCuZFm600DFd1VOlY7j43GRq7T11x4POwYh64E2YFhOCYKP3JkFfJ+KqGtgT68RoD0Vrr2S1IFGIXPNwFvN20Ts1AN0O2Vbupj8RfyS2aBWIr0wURWOkxFGvOgbuIrRMREj0DiAAKoT2HhykIRawlJsJpkBV5ehDFRISDfvfai/1Mxj6uAfyHYlAFtFcdRKEIDj6XIftIDhISLq2JpwIoApCKpRgpKuYHuAbmxCwKCIWEYgC+LbEycuvJas2dBasEzImhoDB7ZDpXkdg5oPGtJr+O/leQfCVjmcNyy3Pg9NPiqwhuzQpYEfhcehVZMpYYV6+ELH3f9x45fuQU6OmD8S3MlR4oCneLuqB/cAsPXpLPFW0AAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -1017,8 +1013,8 @@
       "soundPath": "Skill.img/2201003",
       "description": {
         "id": 2201003,
-        "desc": "Temporarily slows down the movement of up to 6 monsters. Cannot be used on the same monsters more than twice in a row.\\nRequired Skill : #cAt least Level 5 on Teleport#",
-        "name": "Slow",
+        "desc": "일정 시간동안 주위 적의 이동 속도를 낮춘다. 중복하여 사용할 수 없으며 한 번에 6마리 이상에게 사용할 수 없다.",
+        "name": "슬로우",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1410,8 +1406,8 @@
       "soundPath": "Skill.img/2201004",
       "description": {
         "id": 2201004,
-        "desc": "Attacks a single monster with a sharp piece of Ice. The monster will freeze if hit.  Damages the fire-based enemies 1.5 times more, where as the ice-based enemies get only half the damage.",
-        "name": "Cold Beam",
+        "desc": "날카로운 얼음 덩어리를 만들어 적 하나를 향해 쏜다. 명중한 적은 잠시 행동을 멈추게 된다. 불 속성의 적에게 큰 피해를 줄 수 있다.",
+        "name": "콜드 빔",
         "bookName": ""
       },
       "levelProperties": [
@@ -1968,8 +1964,8 @@
       "soundPath": "Skill.img/2201005",
       "description": {
         "id": 2201005,
-        "desc": "Attacks surrounding monsters with a thunder bolt.  All monsters in the range receive damage.",
-        "name": "Thunder Bolt",
+        "desc": "술자 주변에 강력한 자기장을 만들어 주변의 적에게 번개 공격을 가한다. 일정 범위 내의 적을 모두 공격한다.",
+        "name": "선더 볼트",
         "bookName": ""
       },
       "levelProperties": [
@@ -2252,6 +2248,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Ice & Lightning Basics"
+    "bookName": "냉기, 번개 마법 가이드"
   }
 }
