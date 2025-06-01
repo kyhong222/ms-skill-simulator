@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/1220005",
       "description": {
         "id": 1220005,
-        "desc": "Permanently increases the weapon defense of one's armor",
-        "name": "Achilles",
+        "desc": "영구적으로 갑옷을 강화하여 적에게 입는 데미지를 줄여 준다.",
+        "name": "아킬레스",
         "bookName": ""
       },
       "levelProperties": [
@@ -153,8 +153,8 @@
       "soundPath": "Skill.img/1220006",
       "description": {
         "id": 1220006,
-        "desc": "Blocks the monster's attack by using the shield with a given success rate. Additionally, if the close-range attack is blocked, the attacking monster will be stunned for 2 seconds. The skill only works when equipped with a shield",
-        "name": "Guardian",
+        "desc": "일정 확률로 방패를 사용하여 적의 공격을 막는다. 추가로 근접 공격을 블록하게 되면 자신을 공격한 적은 2초간 기절 상태가 된다. 방패를 착용하였을 때 스킬 효과가 발동된다.",
+        "name": "블로킹",
         "bookName": ""
       },
       "levelProperties": [
@@ -321,8 +321,8 @@
       "soundPath": "Skill.img/1220010",
       "description": {
         "id": 1220010,
-        "desc": "Increases the damage incurred when using Charge Blow.  With a given success rate, the charge does not expire even after the initial Charge Blow.",
-        "name": "Advanced Charge",
+        "desc": "차지 블로우를 사용했을 때 데미지가 상승하고 일정 확률로 차지 상태가 해제되지 않는다.",
+        "name": "어드밴스드 차지",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1107,7 +1107,7 @@
       "soundPath": "Skill.img/1221000",
       "description": {
         "id": 1221000,
-        "desc": "Increase all players' stats within a party by certain percentage ",
+        "desc": "일정 시간 동안 파티원의 모든 스탯을 일정 퍼센트 올려 준다.",
         "name": "메이플 용사",
         "bookName": ""
       },
@@ -1614,8 +1614,8 @@
       "soundPath": "Skill.img/1221001",
       "description": {
         "id": 1221001,
-        "desc": "Pulls a monster from afar up close.",
-        "name": "Monster Magnet",
+        "desc": "원거리에 있는 적을 6마리까지 자신의 앞으로 끌어 당긴다.",
+        "name": "몬스터 마그넷",
         "bookName": ""
       },
       "levelProperties": [
@@ -2209,8 +2209,8 @@
       "soundPath": "Skill.img/1221002",
       "description": {
         "id": 1221002,
-        "desc": "Enables one to stay at the same spot after being struck, resisting knock-back effects.",
-        "name": "Power Stance",
+        "desc": "강인한 정신력으로 적의 공격에도 뒤로 물러서지 않는다.",
+        "name": "스탠스",
         "bookName": ""
       },
       "levelProperties": [
@@ -2750,8 +2750,8 @@
       "soundPath": "Skill.img/1221003",
       "description": {
         "id": 1221003,
-        "desc": "Temporarily adds a holy element to the sword. The skill gets cancelled when the charge blow is used or expires.",
-        "name": "Holy Charge : Sword",
+        "desc": "일정 시간동안 검에 성속성을 부여한다. 시간이 다 되거나 차지 블로우를 사용하면 취소된다.",
+        "name": "홀리 차지 : 검",
         "bookName": ""
       },
       "levelProperties": [
@@ -3321,8 +3321,8 @@
       "soundPath": "Skill.img/1221004",
       "description": {
         "id": 1221004,
-        "desc": "Temporarily adds a divine element to the blunt weapon. The skill gets cancelled when the charge blow is used or expires.",
-        "name": "Divine Charge : BW",
+        "desc": "일정 시간동안 둔기에 성속성을 부여한다. 시간이 다 되거나 차지 블로우를 사용하면 취소된다.",
+        "name": "디바인 차지 : 둔기",
         "bookName": ""
       },
       "levelProperties": [
@@ -3712,8 +3712,8 @@
       "soundPath": "Skill.img/1221007",
       "description": {
         "id": 1221007,
-        "desc": "Makes a mad dash forward, pushing off up to 10 monsters.",
-        "name": "Rush",
+        "desc": "전방으로 거칠게 돌격하며 자신 앞에 있는 적을 10마리까지 밀고 지나간다.",
+        "name": "돌진",
         "bookName": ""
       },
       "levelProperties": [
@@ -5338,8 +5338,8 @@
       "soundPath": "Skill.img/1221009",
       "description": {
         "id": 1221009,
-        "desc": "Strikes a single, tremendous blow to a single monster.",
-        "name": "Blast",
+        "desc": "적 하나에게 강력한 한방 공격을 가한다.",
+        "name": "블래스트",
         "bookName": ""
       },
       "levelProperties": [
@@ -6186,8 +6186,8 @@
       "soundPath": "Skill.img/1221011",
       "description": {
         "id": 1221011,
-        "desc": "Strikes the ground with a huge hammer to attack up to 15 monsters. The skill works when charged up in a Holy Charge.",
-        "name": "Heaven's Hammer",
+        "desc": "커다란 망치로 땅을 쳐 15마리 이하의 다수의 적을 공격한다. 공격을 받는 적은 체력이 1 남는다.",
+        "name": "생츄어리",
         "bookName": ""
       },
       "levelProperties": [
