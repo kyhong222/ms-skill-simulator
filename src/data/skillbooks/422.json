@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/4220002",
       "description": {
         "id": 4220002,
-        "desc": "With great reflexes, enables one to avoid the monster's attack.",
-        "name": "Shadow Shifter",
+        "desc": "나무 인형으로 적을 속여 공격을 피한다.",
+        "name": "페이크",
         "bookName": ""
       },
       "levelProperties": [
@@ -152,8 +152,8 @@
       "soundPath": "Skill.img/4220005",
       "description": {
         "id": 4220005,
-        "desc": "Stab a monster with a dagger that's been smeared with poison; the monster struck has a chance of being poisoned.  Usable up to 3 times against each monster.",
-        "name": "Venomous Stab",
+        "desc": "단검에 독을 발라 공격한다. 일정 확률로 적이 중독상태에 빠져 지속적으로 데미지를 입는다. 최대 3회까지 중복이 가능하고 적의 HP가 1 이하로 떨어지지 않는다.",
+        "name": "베놈",
         "bookName": ""
       },
       "levelProperties": [
@@ -1065,7 +1065,7 @@
       "soundPath": "Skill.img/4221000",
       "description": {
         "id": 4221000,
-        "desc": "Increase all players' stats within a party by certain percentage ",
+        "desc": "일정 시간 동안 파티원의 모든 스탯을 일정 퍼센트 올려 준다.",
         "name": "메이플 용사",
         "bookName": ""
       },
@@ -1700,8 +1700,8 @@
       "soundPath": "Skill.img/4221001",
       "description": {
         "id": 4221001,
-        "desc": "Strikes an unsuspecting monster at its vital spots 4 times. The last strike can be lethal with a given success rate.  Only works with Dark Sight enabled.",
-        "name": "Assassinate",
+        "desc": "다크사이트로 조용히 숨어 적에게 다가간 뒤 순식간에 적의 급소를 4번 공격한다. 마지막 일격은 일정 확률로 적에게 치명타를 입힌다.",
+        "name": "암살",
         "bookName": ""
       },
       "levelProperties": [
@@ -2458,8 +2458,8 @@
       "soundPath": "Skill.img/4221003",
       "description": {
         "id": 4221003,
-        "desc": "Provokes a monster, causing its general defense to increase. As a result, EXP earned and drop rate for items will increase for this monster.",
-        "name": "Taunt",
+        "desc": "나무 인형으로 적을 속여 공격을 피한다.",
+        "name": "페이크",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -3038,8 +3038,8 @@
       "soundPath": "Skill.img/4221004",
       "description": {
         "id": 4221004,
-        "desc": "For a set period of time, a group of ninjas hiding around the bushes will periodically ambush up to 6 monsters at once. : #cShadow Shifter level 5 and above#",
-        "name": "Ninja Ambush",
+        "desc": "숨어 있던 동료들이 뛰쳐나와 일정 시간동안 지속적으로 적을 공격한다. 한 번에 6마리 이상은 공격할 수 없고 HP가 1 이하로 떨어지지 않는다.",
+        "name": "닌자 앰부쉬",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -3534,8 +3534,8 @@
       "soundPath": "Skill.img/4221006",
       "description": {
         "id": 4221006,
-        "desc": "Sets off a smoke grenade to escape from a tight situation. All members of the party in the vicinity of smoke will not receive damage while the smokescreen is up.",
-        "name": "Smokescreen",
+        "desc": "위험으로부터 신속히 피하기 위해 자신 주위에 연막탄을 뿌린다. 연막탄 범위 내의 자신을 포함한 파티원은 연막탄이 지속되는 동안 적에게 데미지를 입지 않는다.",
+        "name": "연막탄",
         "bookName": ""
       },
       "levelProperties": [
@@ -4258,8 +4258,8 @@
       "soundPath": "Skill.img/4221007",
       "description": {
         "id": 4221007,
-        "desc": "With great quickness, stabs multiple monsters TWICE. Under the set success rate, the monsters attacked will be stunned.",
-        "name": "Boomerang Step",
+        "desc": "빠른 속도로 다수의 적을 두 번 벤다. 일정 확률로 적은 기절한다.",
+        "name": "부메랑 스탭",
         "bookName": ""
       },
       "levelProperties": [
@@ -4830,6 +4830,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Secret Skills of Shadower"
+    "bookName": "섀도어의 비기"
   }
 }
