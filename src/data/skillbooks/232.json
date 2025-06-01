@@ -731,7 +731,7 @@
       "soundPath": "Skill.img/2321000",
       "description": {
         "id": 2321000,
-        "desc": "Increase all players' stats within a party by certain percentage ",
+        "desc": "일정 시간 동안 파티원의 모든 스탯을 일정 퍼센트 올려 준다.",
         "name": "메이플 용사",
         "bookName": ""
       },
@@ -1094,8 +1094,8 @@
       "soundPath": "Skill.img/2321001",
       "description": {
         "id": 2321001,
-        "desc": "Gathers up numerous particles from the surrounding area to form an energy vortex, culminating in a powerful explosion.",
-        "name": "Big Bang",
+        "desc": "일정 시간 동안 주위의 작은 입자의 힘을 모아 한번에 강력한 폭발을 일으킨다.",
+        "name": "빅뱅",
         "bookName": ""
       },
       "levelProperties": [
@@ -1706,8 +1706,8 @@
       "soundPath": "Skill.img/2321002",
       "description": {
         "id": 2321002,
-        "desc": "By drawing on incredible inner strength, enables one to reverse the flow of Mana back to the monster, returning the damage received from the monster. The returned damage cannot exceed 20% of maxHP of the monster.",
-        "name": "Mana Reflection",
+        "desc": "내면의 힘으로 마나의 흐름을 바꿔 적에게 그 힘을 돌려준다. 한 번에 적의 최대 체력의 20%이상 돌려주지 못한다.",
+        "name": "마나 리플렉션",
         "bookName": ""
       },
       "levelProperties": [
@@ -2068,8 +2068,8 @@
       "soundPath": "Skill.img/2321003",
       "description": {
         "id": 2321003,
-        "desc": "Temporarily summons Bahamut, a holy dragon. Attacks up to 3 monsters..\\nRequired skill : #cSummon Dragon level 15 and above#",
-        "name": "Bahamut",
+        "desc": "와이번의 협곡에 있는 기사라울npc에게서 퀘스트를 받아서 수행. 이후 마스터레벨 올리는 것도 동일.",
+        "name": "바하뮤트",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2750,8 +2750,8 @@
       "soundPath": "Skill.img/2321004",
       "description": {
         "id": 2321004,
-        "desc": "Enables one to temporarily draw magic powers from sources surrounding the mage and use it in place of one's own MP.",
-        "name": "Infinity",
+        "desc": "일정 시간 동안 주위의 마력을 응집하여 마나를 소모하지 않는다.",
+        "name": "인피니티",
         "bookName": ""
       },
       "levelProperties": [
@@ -3482,8 +3482,8 @@
       "soundPath": "Skill.img/2321005",
       "description": {
         "id": 2321005,
-        "desc": "Temporarily protects all party members from abnormal conditions.",
-        "name": "Holy Shield",
+        "desc": "일정 시간 동안 파티원의 상태 이상을 막아주는 버프를 시전한다.",
+        "name": "홀리 실드",
         "bookName": ""
       },
       "levelProperties": [
@@ -4431,8 +4431,8 @@
       "soundPath": "Skill.img/2321006",
       "description": {
         "id": 2321006,
-        "desc": "Resurrects a member instantly.",
-        "name": "Resurrection",
+        "desc": "성스러운 빛으로 파티원의 혼을 불러 부활시킨다.",
+        "name": "리저렉션",
         "bookName": ""
       },
       "levelProperties": [
@@ -4953,8 +4953,8 @@
       "soundPath": "Skill.img/2321007",
       "description": {
         "id": 2321007,
-        "desc": "Attacks a single monster with a holy arrow, incurring tremendous holy damage.",
-        "name": "Angel Ray",
+        "desc": "성스러운 빛으로 적 다수를 공격한다. 언데드, 마족 몬스터에게 큰 데미지를 줄 수 있다.",
+        "name": "엔젤레이",
         "bookName": ""
       },
       "levelProperties": [
@@ -5975,8 +5975,8 @@
       "soundPath": "Skill.img/2321008",
       "description": {
         "id": 2321008,
-        "desc": "A holy ray of light shines down from the sky, burning up to 15 monsters at one time. Incurs tremendous holy damage to the targets.",
-        "name": "Genesis",
+        "desc": "하늘에서 신성한 빛이 떨어져 15마리 이하의 다수의 적에게 강력한 성속성의 데미지를 준다.",
+        "name": "제네시스",
         "bookName": ""
       },
       "levelProperties": [
