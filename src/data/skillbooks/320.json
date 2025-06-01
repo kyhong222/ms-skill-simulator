@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/3200000",
       "description": {
         "id": 3200000,
-        "desc": "Increases the crossbow mastery and accuracy. It only applies when a crossbow is in hand.",
-        "name": "Crossbow Mastery",
+        "desc": "석궁 계열 무기의 숙련도와 명중률을 상승시킨다. 반드시 이 기술은 석궁을 들었을 경우에만 적용된다.",
+        "name": "크로스보우 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -192,8 +192,8 @@
       "soundPath": "Skill.img/3200001",
       "description": {
         "id": 3200001,
-        "desc": "Strikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a crossbow.\\nRequired Skill : #cAt least Level 3 on Crossbow Mastery#",
-        "name": "Final Attack : Crossbow",
+        "desc": "일정 확률로 공격 스킬이 사용된 후 연속 공격이 발동된다. 다만 석궁을 들었을 경우에만 발동된다.",
+        "name": "파이널 어택 : 석궁",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -357,9 +357,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADYUlEQVR4nL1XjZGyMBQMMzYAJWgJUAKUICV4JWgJWoKUICVACaQEUwIp4b5sYCFAwv18M7cz3kUI2X2b917kIJb4FH+DiANXwGfTvb2zY6F3V9Nmhm+ue91FkZ0+KYICLDkfTtPU/pdSTg9lWRYU0HWddx6ucy0X91cnbmVmRRxccj7MBReLNc+gAHde3/eibdvpuk/E9Wy+jyKsAyTv+4E4SbJxsU6o0YWs+NgQX6/nSVxtSB+PWtxuN5Hn+STiKxx8FxktyElMV1pnW24fS1GIPkmSxTXO923FJADJAgJGvhBjrmMRLnQ20RHn91ucTicbOa1/vV6iLEt7//0ekroe3fCJmBzATZANWzFUY1VXlvhyvgit1WIxOnC5XOwYkYNcytpuDUQBSu1X0GHvJqMFOYnzMYpBaL/Ya0Sep0dxv1+tAJdc66Gq1i54BSDyNUCMRfApii050cpBLPIoM/Puz6d1EICAtQivAJDB+utob9tKS5znqYiiyNrukmNcVZVoms6Kk63crKkDzWx3CwgqBjkiV0pZQpYbxkw4ikjzOUq900l3BbROJGvb4QKIXXIfkEd1XYv0mIo4Ft/LAQIPhPbcR46kk2pp/39VAeCSI8tRarQd16VJuuMxnsiRcOsG9WsBbqmtyRG5NvakpuwgguQhwPpvVwGAKPbIiTV5kkRTI0IJEj+qgq8iR50juWg7ylVpNHT/+b8HrwD3UGHNh8iHNi3E0WQsypQn5I8FYG94rrOv81DZIyfgAMFzwE1GjNEjvALm3wP9gpy1HiJnQmF/lVSbxbu+mcZZUoQdmI/jwXY3cgBHro3CeXCv1HAgtaOgWtWb+1Z4rGcBgHscM3Jkse1kJnp0slDk8Zh7eJb228Ds4TVvDXoK0TTNUgABUkT3U/Jp4ffL+abFwK8X14tTOY0XAtggWL/8DcD2ymN63W5dgLBqt8f5Q1XCh40DFIHjmJHjPzvZ0eyvL/JZwdL2rxDshL8iNyiL2d6n+VHyqB92rCrlne8VQEKQA3xBYamFAty8oGCe9t+nS2EHRhG2y30j8hDW28EtftRyEhDhXQ1vR6hfnwiSh37br0HHPkp/rwC5eSvCMKIDVgTe2XxA02hVbD7h7F/PZ527gBsuOf64WxCNL4x/gen1/B/rcK5h8ele8wAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuUlEQVR4nL2Xj7HxQBTFk5k0QAmUQAmUQAmUQCuUQAmUQAmUQAm+77fjZE7WboQ348y8l9js3nPun72bVEUTj+I3KHXjAh6n0+kn7OPx+CEREtAgH41G4Xo+n31R1qCv9XmMy5Zjt9sV8/k8iKicXIvj31rU4lF9f7vdiuPxWI+nRMxms1pE5UYul0u4Hw6H4cpvReH/5BfixWJRi4N0u90W6/W6mEwmtYh3qFKD8hZyESsqnpblctlYh/f9fr8xpvmpVDQEQCDPHYxjRIbwTiBCrMFzhf4Z2vo5UDRSImoBPISMVGAM7Pf7QEzO7vd7w5gioDTguVLBGKLA9Xot2lC1PZS3kMdeSKgLwnOer1arIMDJsYEzcRSSAvA8Bgsxwt90On0hFyBRKpi32WxCBPUsFpEUwAQmKrwYhJiIlGUZxp1cO+BwOARSL9R3qIoOkGLI8ZzQQqjtxr0KTiJyVf+RAPcyDrsKzclTQCQpHQwGRa/X61YDAgtyOU+RE5m46v+0C4CTU+Xe9Rgn33gncgoublBfC/CtFpPjOdFRwYo8B83rtAsAXrSRCzE5DUn1wRb8KgLvPOee4lLYIVSn/BRJAX6oaM/nyNWmKVj1iK8EEEqd6+rrOlTayAWPgM4BL0bu6RFZAQq7kyuXOXIvqFT381pJnbQNAZyECrt7nlvcttVU8TqAYjBGyhoC/Dj2Kla71V5PeS5jrJVowVNDTxGUjpcihBTvPiWPDauLSoDn34U0BMiw9q9ar9qpjul37TV1nKfGXgS4CG+xXJVXXWPPBfe6C7Kd8Bty4G/P7CbVRO4tufWFBHKgStY152HqA8Xn+nONZyPgW6mL5ymkhCrFqgkElHyrpb5g/ARLvUzkoEjlegXkz1SVikAQkfv8gjz1spED81Ntl4g4Of88BeXzg/EXqD/P/wF0XaLoCfd33gAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADb0lEQVR4nL1XgZGqMBQMM9eAlAAlQAlYApSgJUgJWoKWACVACVCClEBK8GcTFiIknPdv5vbGEyFk923ee4Ev8Y6X+BsEPLAFvJru6Rx9EHJ3NqlGuMba520c0/hFERSgyXlzkiT6u+/7+aY0Tb0Cuq5zjsN5zmXjWnWiLFIt4ssm582c0J7s2Vy9AmJr3DiOom3b+X6XiEuufk8itAMkf70aPSAIzIT4PbTGhfhYbojvl2wWB9LzrRVlWYosy2YR3+HLdZLRgpzEdKXth3nc+VwYIVb0YRi+zcXxrqWYBSBZQMDIbeA8JuFEeZbN1/LnKOI41JHT+qqqRFEYYZ26rkVMbrhEzA7gIsiwFONoqvFR15r4lOdCSpOgtWVtqRw4nU76GJGDXPYPvTQQBQzD4pjXAR8YLchJnCWR/jZCx7e1RuR5chDX60UIJcAmH6BfVdXaBacARL4GiDEJPsVxS07UvRSZOo88itW4673SDgItynolwikAZLD+cjI31ioZQZxnicqTQNtuk+P48XiIqum0uLbtN3NKTzPbXYJFkFEMckQOa0HIcsMxE44irFz1kn8roLYiWdsOF0Bsk7uAPKrrVkRRJKKD+CwHCNzgW3MXOZxZZ/0gf1EFgE2OLEep0XZ9XuUKoiM5Eq48i4+xK8AutTU5Ioc7TFiS+4A8+rgKADSZPXJiTR6GwdyIUILEj6rgu8hxjAqg7SjXQaKhu/f/PTgF2JsKa95Hbto0Evagy5Q75I8F4OGD+z/7OjeVPXJikIvF3AfKabc0x6ZHOAXweYCRk5y17iNHUiG5sL59vy235rXkwDEohAtv2zFttyMH0jjc3LhXatiQsCcAtbhtrsPt5CAXAYC9HTNyZDHbLWvdFXk05R7upf0mMPUHY6br6CmzO03zLoAAKdbup+RENd6XH9Js5fi2zxfhYt+bADYI1i9bL9srt+mHvc+vI1Bkt2H7/Hjrt+ecDlCE3WLxzU6WqM7ninzmR8D77X9fAPE/5MA5Xey9d1dRtiZy6TbALUC7gL4dmcevdnpBYakNnu19/YKi3ZDu63zG9DpAESD7JHIvVmK5xLe6nwUEeFfD2xEfONciSO57tl+Dr3Tl0e07yNVbEQ4DOqBF4J3NBTSNdjioTy8+Acazzm3Adpsc/+wlCKYXxr/A/Hr+D+QNo11TH7u6AAAAAElFTkSuQmCC",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -533,8 +531,8 @@
       "soundPath": "Skill.img/3201002",
       "description": {
         "id": 3201002,
-        "desc": "Uses HP and MP to temporarily boost up the attacking speed of the crossbow. It only works with a crossbow in hand.\\nRequired Skill : #cAt least Level 5 on Crossbow Mastery#",
-        "name": "Crossbow Booster",
+        "desc": "HP, MP를 소비하여 일정 시간동안 석궁의 공격 속도를 한 단계 상승시킨다. 석궁을 들었을 경우에만 발동이 가능하다.",
+        "name": "크로스보우 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -688,9 +686,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACRUlEQVR4nL2X4ZGDIBCFcSYNpIWkBCwhV0KuBC1BSzAlmBJiCZcSpITYipenLi5kQb258f2ITED222VZ5KBc9WofJdTgAP1P+9rF+ld67gmCAAbjF33aBaB6tKr8TgeIw97GoeKqlZogDuoPMsYE+7TWm+baBECGb8/c+f9of5TKVL0JYhFA8ra41KvfWYIJAtAkZZN/9HGPQ/+hedW1nScEEgSgFyoV9tZfCijT8vgQyKoc8KMgRYB0N/nCOBfwA0Ba8+o6v5SmqdPXtq1tb0m+Z2c+AWC8vE8eHGfjmBh9MN73Y7U2XTcCnc8DxNbtR7IAMJC/jZu7G4FS5UMecOOQPp0GiPb1shAhxeDEHIChJEnsExBLiq99OJEXk5A8hAATBMiNymrZ06bLZ7BJ+litA0Coeegl8XzwIa4n2fvn+MoMgHWqs/od7Nx6GvOYC1GiJyAKBkHeA4TngrgLCMKueaTaNaWxhn0YKSlXV0IMrLJ4rYeKdgy5vy1DEKHzQcwB2vdSqYXgPYl2C21LZ1wnVNBBs4PRs6BgAwkGxkNJySFi9QFziznA5ZdkOoIbNZZi31sfJAbB5xYBePht2ITDh+qDJFoWgqgebhJG64AffhKvdiS75Y7unue5IUXiow5IECRERDJOhkl8z8NYCGJVDvgw2RSRu3KPY6nSEbwPIWn1R6k/KbVjJx36/PHQYhIugdBEa74BQuM3LYE06X+NB0CCu9qet6NbY3ArQjOhCAwQuLPtITKOH74EyXRh3EP2nP8FBclNvLhXLuoAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB90lEQVR4nL2X4bGCMBCEyQwN2IKWoCXYgpZAC7agLViCtqIlSAuUwHOZt5njvEuC7032hzBy5L5cNge0zVxjU0eBJxJgfDweVbLvdruREASYkm+32yoAt9utOR6PE0RbOzl0OBwiRNt8oefz6V5bOpFFAEx8uVzif6vVahbTdd0iiCyANdvT6VR8Tw7GBbBm60lXgUI1OI4H4gLwhtRsLTgkteSBFHmgpArU9Xo1//eq9AGQW/N3E5ldk81rifn6vv8EQHI9WyTHwLiG5OM4zgbYbDbNX/pIBGDy+/3+EQQImRxar9cTxOv1ihCeUnCzCgzDMB2RKIQQjyVauvYmgCXOEErBAMDbAVZV9/t9GQBKLUtvSfpBQ6Dvp+6JAFin8/k8+YAzLS0/qsSjhuDsASK9YO4CBOTarByYiTWMZcriTlgKgRgk0tvSg/CeD6YHuO91T6CjpeO5W7gtpRD39S7QlWBSHD1TSohUf8DYpgekdEumsQiiZ6tBUhBybBMAAV5jkWJ/sMRlIYT2VbIPoERWU7GgZJw8l96wKpFdAunU0orIPY9kHkSRBzSM9gBlVYrwGsJS8UupHpTnqScdrul4KGvCHAgHKnkH8OIXLYE16H/FAyDgW63m1xHM+v4qwmlgBSYIfC7VEJPjRy5B+P1grKH4nP8BbFlS/b8+sSwAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeUlEQVR4nL2X65GqQBCFhyoTYENwQ4AQJAQNQUPQEDAEN4Q1BA2BCWENYQmB5QzTQ9P28Lh1i/NDUIbur1+DbMxQjVlHCZ1wgOZR/azivcg/G4IgAOd8l21XASi/K3M55A5is7Zz6LzPjPEQG/MPstZGr2VZtsjWIgByfHkVJqUf07o7+I+jrRZBTAJo0Zbbx+x7pmCiAGTk9CwMhdtHzQ4iA3zd3lTBTgwkCkA33Ew82mtbCqlj61RTDGRWD5xs70iLNKhNxlea65miEzsEfAPQan7L+izkeT64VlW9wVnN55c8X/YdAM5dzRkxnMMwrsF50zTeQFf7/PPDQSwdP1IAgIND6/x1qQcLTrfC9QF3Du22qYN4/PwGiJjG4NQegKMkScIREFP6Ml1p1B6xcbjJJkSERRshBJgoQOv/GPHz3PZ9Q1BZ/ZgHgFTz1KsOfD8A9CwgdnXlpuPtHv9bAECdvttaH8oiRDoWMReyREcHwZ7qz3YsEfbuNWxUdQoI4lT6mrNBl7W9H+rgWMIUsinrBTshFo7tfiSkGt0vx5Ig5GTEng9qD9Dc9089b9xn4M6GgqaFxpKL0s/lvrKpGH0WlCwT1zoPzmNNySHUUjDbag9wyS35nHaG7n7eZbQShCC0TYrbVgGwgCKGUqOL9gdNVBaCuIl+Hd0HkKKzsnvRbsfFR25f9/fw3nDl+Bhm4m0f0CBIyIjmnAtZck1nus0HziQEf3BN9oCEOfqMSBAetYSXEJpm/ymVRul87EmHa3I9NNmEUyBkaM5/gNj6RSXQjP6v9QBI8K625tvR9W7xVoTThDLgIPDOtobIOT54CRL/wriGwnP+D6YTV8uy0QAiAAAAAElFTkSuQmCC",
-      "weapons": [
-        46
-      ],
+      "weapons": [46],
       "hit": [
         {
           "frames": [
@@ -781,8 +777,8 @@
       "soundPath": "Skill.img/3201003",
       "description": {
         "id": 3201003,
-        "desc": "Increases the success rate for pushing off the monsters when swinging a crossbow.  As the level rises, the number of monsters that one can push off with one swing increases.",
-        "name": "Power Knock-Back",
+        "desc": "석궁을 휘둘렀을 경우 적을 크게 뒤로 밀 수 있는 확률을 증가시킨다. 더불어 레벨이 올라갈수록 한 번에 밀 수 있는 적의 수가 증가한다.",
+        "name": "파워 넉백",
         "bookName": ""
       },
       "levelProperties": [
@@ -953,12 +949,8 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgElEQVR4nL2XgZWkIAyG43s2gCU4JWAJNyVoCTsleCWcJeyWoCU4JWgJWsJSgkfQsFFBcfZu//fmiQyQj2ACxLDWBD+jiAocYGq74bSnAAVZlkHXvkPzfEJVNdB1na4Vwdbv2W0iCAIwxn/J9LRz3/fGIEKUZW7rQ/qS/tQd/C4yAxFfNY6GUeiB7P6wMPiUUgYBlLlut0DEECgy/vnZwYjlxbir3VZHYEEAPuM0MPcCeYjryDunAGfGubDdNH0FUj+Oc/3t5u1zCHDFuEsyTQ1ENwxeCC9AqHFqhzOPomg3zhlE0DeA8R4iguDLcCYnwHb2lGxCXX9FOwATRuOHfQ+dPemqFyyAjV9m/H8JbUmhvgAwv8NYmQqZ19A3j537V5Ab4f981r4PErXNE7MH+grkW736Y3xqTwgBQ1sCqGauFHzDEcD3n2GoQY2NqUuS4nAJMCqUUnpTyiDu3vOdcSFLSHX4YCP8YTlEox44Fak1EqI4e2gXQ7GCUNojxtt6xsIMTGR+D+ALvirV6+WrtRduh4bbZVnnJdAz7ptiLuYLiJB2v78S11yYfHxCz1oAPEyItDQV+AFuFeJOzHIEyj9IV19sS7JhSEmmh7ddKPIOr4qPYU5Q+BHe7+5MmBUf5sDBO5waWMLrKAnRODjZqplDOvhAcpSGffkhZJxggBBd3YicAEhoTzjLMlw9830L4Dt6JVz/KQCJQk8GZFAnwJVl4Ed1Lp4XLgP8pLwA3At4A8Lf1gs0e99xPBQgwrua63YUAvGKMAnpWxEWI/KAgcA7m0tt25q0ySGoDp+0sbieVKZ3bpw8QIqWC6OfvGpsGY3zJypJklX77Ttra49LfwH0KsGSAu2vmQAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACIklEQVR4nL2XAc3CMBCFu2QGQAJIAAkgASQwC0hAAxJAAkgACWABCfvzGt7+R2nX6yC8hGxs7d3Xa+/a1e5VrfuNKt4oQHu5XEy95/O5OxwO7nw+u/1+76z9pH9LCAJ457PZLNv5er16h4DYbDbdc0tfCvDr9dpD1KXO4ViMdDBWG9BqteogamcUnd9uN39P57F2ofrATAAp5zSsUWCEVH3RyQLknKvQrm3/E+l+v/vrdDpN9ukFKHEe02Qy8RDon4JIAlidsx1GXlXVm50chGkNIN8tIoROQ05RgHD0LDYluT4YAA41layjp0qj0AHQaSyPvy34GI1GcQCUV4Q8DH8fHN7rqFMLEgrrRE3DWtchhh4lk/lMkT6EIGBYD0LB3uPx8O3q3W735nyxWPj0QSP8cG8RDLNtCJ1Svd1u/YgUQhce3oWhj0WAz7hbIuf7xGn1U4D0wlxDBIFB7vclea3COkoJke0ACAERRGUJJ0ZMUF2Qsb4anTcAKAx5LpwWqQ2EHxFYLpfxStg0jV/92iEnpldfEaIdDPZ4PPp784GkrwyXFC/zbjhEpRtRFACEPNlwGkrPfB8BfKIh6fpVAIqpZ6mgUYCSadCjukrrQjHAL5UE0CigPOMXRoGjTx3HrQAVvtVi4bVADBGKEA657vlp5gih1U91Op182VQIPsOVG0vsynv+V+eMAFU9PxiT0o0KzvUKjcfjl/bhf2nbHZf+AJ59vk+YNx5EAAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChUlEQVR4nL2XgZGrIBCGlxkbICVoCVqClpC0kBLOEpIS0oJXgpYgJcQSjhJ4LLqIRhS8N/fPZEQE92PNLksCSyn4GzFquACq7d+HMzlIKIoC3u0Duq6D+7ODvu91Lw+2XhWZIggCMMbLPD2cLIQwBjMN8foqbX/IXNKj6aG+FQYiiTWOq0ehB7KqNjDYh9c8z4MAvq563ASRQKDIuFItDJ2wxrfGrbUHFgTgM04vdr1AHnK1551DgCPjrsZxcyB1gxz7s4t3zi5AjPEtlSk3EO37xwvhBQg1Po9TwBj7eM8RRNB/AOM9RAThfoYjbQKsV0/JJtT1MfoAQOO5vNv70NWTYr1gASh+c3kDiEirZ2QWyeUMgPl9NKxV6v2g+3S/C7kWPndX7ftDotZ5wgDkgzZ+XW1EooaUc1A95vtaU5JXuOOgqYHj1EM3nuaWsXr3E2BUSCnhVmSQqIZ/GB/SBtI0NYPwh+0QDcMwja1tEjpSwm4SVJMtIFL0iMT18XGNApYesJfZA2bexKnUS3vhsmu4mbZ+8wmEXnHeZeOTcnwwyKvd72PietbdJB+f0LMWAIsJwRvTMYIsoyDEnZXOcgTq/iG35uJYkg1DSjJCNIs8sJ5wVu47TAWlPVBV1XYmZJXQBcd1MeFIFF57SYjeg4t9fo8hHVyQ7KVhX34IeU8wQIhiN6JNACSkohPrvhdAdM33K4Df6Ey4/lcAEoUeFiOnAGI+g1uqu3LzQjTAX8oL4HoBT0D4W3uBVu8rx0MBGJ7Vtk5HBFHsQJwRJiF9KsImIw8YCDyzbaltW5M2XQjqwyttLFtXatO9a5w8QGLTgdEr3BlJaNy9oi6X5Z6xvnfG2nLpH1q+vrK6o/FkAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert2"
-      ],
-      "weapons": [
-        46
-      ],
+      "actions": ["alert2"],
+      "weapons": [46],
       "ball": [
         {
           "frames": [
@@ -1261,8 +1253,8 @@
       "soundPath": "Skill.img/3201004",
       "description": {
         "id": 3201004,
-        "desc": "Temporarily allows the character to fire crossbow arrows without using up the arrows. Only works with a crossbow in hand.\\nRequired Skill : #cAt least Level 5 on Bow Booster#",
-        "name": "Soul Arrow : Crossbow",
+        "desc": "일정 시간동안 석궁 전용 화살을 소비하지 않고도 석궁을 쏠 수 있다. 석궁을 들고 있을 때만 사용할 수 있는 기술이다.",
+        "name": "소울 에로우 : 석궁",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1396,9 +1388,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEAElEQVR4nL1X65mjMAxUvm8boAWuBKcEKIGUQEogJcQlkBKghLiEuISjBZeQ0whkzCPs3v047YMAtmc0GgvyRct40/+Jk35ICbyfr9/fzswo8E/2z8iYfz6f30pCCQh4YfLDyd57Oeo4nBtjfgSsc699INM8ydtSSHz9DTgzp9frtTh/v9+LMZ8CwDLGlkLg+XxSWZbvL/pBKNinc712fQzjyaJCWQRGALytMnLT0K9xSDhkD7BnXVD5cJvzKC3AWUSTz0p658k/LvIZSp1Op83aQgCmmsyxSwBgxL/0mMFTcqbuBLypCjJT9j6AQB9LBHDNHr5xg58JiDR8EfVdA0jwaW5wzc1kXDqAjZUbqvJZe3z0/K/3A1UH/lp4YENi4jGCsxLdeLz11Ti+qqTEpph3wrVn2YeBTBiovTd0s5bsgwnWrRBdGYQ2JlyQoJFEnjfx/uUGxHGRtN6IIQQB9zeu+72j680KiX4I5FgJ74djBRDqcFVAs0/B17V208IXmJLB247BLyMJIcpjLROjsMFfEliAI7jOw1RsqBAmu2LBPBsZoNYV1x/ZX259BDcMvlZoLyKBdG/rdtuYkWbZIauqADKu70UZ2zsB73iukvQ7mS8IZJM22uUQIHMdCtl6Y1gqEkKQPW4E76hi8IGT6LjmlrsM/uCHGPyxrfNN6459IG3FUCMv7pQV+SLrSIUXb/ie1rzijHvOHIaLayj4dNgDjwTSADhqmfHWSs0m93YMZ4qCej7W3Ut8ANmRjBDgMrW1Waz9LYE0UrMh1oYDuHdjzdfzJAJtuivKvNsJY/bXfmwuk+xoLAhIrmRguJrB4VVzr8VwUvMwkkxDjQxjK/j3Cuy41urjC4bj8gwscWq4ZvKLNKPV/E/gCwKafddWcnSWlaBKFgYAzgdvqWpa6vkptzbc5bHqcsyiuweC0uio+i5xqADA03hczvMu5JheIsRwGtFwEG4yKKrw6hpWyUonxYb9RGLxNFQlRErOFoB6D9cBnpsxc3W8Gi6wSm3tYut2fTmC2/mxCT+kb1UbBbQMe+DOjQsVzagSytJW+++DA/skbePaWTWk3U/rbzwAcJlUllF2gBfsesuPVvXEp1BwgD5p7pxp1qJYCDMBtGLZfkRRYg0QUbaa+ZHjFXzv5Satve1XfUDdr8d1aP11dyCi+VCO3C3A0/eKo4gEFBwTu5YWJFLzSZK2X7zYDI7LNr2kpi7/CYmFAmq4tRIAT7eoXA/ztj2f7cdmoyQOCayfhksl9snp4rptP3U6HXdE4FSef8VvR2k/SMuyJpfGEfhewIC3i5TlpCUQEvekw5mMH6X3Qr7B6JNLIz3HOB+yzZijUHD8SxvRiW/896/nfwCreatasejUzQAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9klEQVR4nL2XYbHqMBSE0xkMYAELIOEiASSABJAAEkACSAAJYAELSOjj67Cd7WkaeH/Ymd6S3iS755xNmo5SF3X6DSr9cAH17Xb7CftsNqslQgIa8ul0Whx4v9+bu/rR/jQmjj2fz2mz2aT9ft+IGP0P+Ut5UpbUruu602cIEIMXcSPgcrmk+Xxej9IXENlQW89EkgPEAPLFYpEej0fTbgWU1EP2TluvrXHH4zGNx+M0mUw6ongOyFRVVb25OxmIUQmQRTHeXq1WDTmRcQfP5zNdr9e2RJAresrdywAPqW8kEP7+/tr65UDk0Ue0EcHYIXQyMCRCE+gZ0QEi1ziBlCu63W7XiOaZ+hYFDInwCDCa0uz1BhBzKVPb7bYRgRe4JKwoQA4vkcdauxEhP51OablctnPQN0feExDJATWUEMiYLLpdpiJiJ48ZKgrwte1rNkKT0t9LgVAyo52OmquvPPMxA/4uQIzSRmq5vBy+b9APcp5Rc8RwedoRgai4UjrL0CdnQkUQU6mlpZpDSuTcXZRHnyPvZUDkTAqpm02TRcMhhNofDoeGVPsBvxV1LmuDAhzRbMANBznZiF5x0XF31YuvtxN69EDE2ssh07Oc4XiWM5vEMW/urfvV21CkAOWI4e6Gk0GVescQeUcA0WvnYoCvf5EoYn5HwylTAiLIkkqks0QxA5pUG856ve50fh8iGsMJXk9fdmxIykxJRG8Z+tEJQv2P55ATlcjwhAyntkrhJhVcRDYDKgODIrmXBNAeesOpr+4ytoAIzd/zgAYRLaCjUql171ENkcezQzxxy6itAMg9QgEhUiuCkuNFnjtXeO11fmwFYECtAomJQuRqwc2nPcKXnESU0MkA5AyMIiD313EsgZ31Oy7/RkQnAzJczATkvu7j6xoBQ5uNRHwU4ANjJnLiNEbLtvRxU/roQUDFt5om8P3AyaM4xzdfVg4yxqkpvT/NkkSwewnUmhTroOnwNv3wxtCZLweR88c3our1j59/nv8DBZu2m6rDhIEAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD9klEQVR4nL1X0ZWjMAwU720DXAmkBFIClAAlkBKSEkIJUAKUACVACesS4hI4SbawDYTs3cdqXzYYjGc0GgvyBWEs8DsRyYFPYBmm7493xqDxL/5vZLr/er0uQkIIMHiWJqc3z/PM3zKPxmma/ghY7r32OP+O+HXEJL7+BRyZwzRNwXhZlmDOu2BgijpiAsMwQJ7nyxf8IATs3Xg9126S8CtV27Ij+FTMMCpz8cvM0+fsKdMM9Rr341XaFhfEJJPEoapWAfQXPialoijarc0EyFTWHIcECAwa/FwcuE8OCjRvFkODn9TizxrgEY/wsiVi8PuLsyffjGp2BCjoJNV3C8BB4EmF/1pH5hZOocwrrwJEROG4RhHuJ/YKPCAkIiHRyOqVUcLu0ugxmfoWNIrxskO4YFmU0lDoHrp7BY+6hT8KjEqfCOxI3ISEZYI4UY5kimTN2g+SncDh9gf65gUlghOJRBklVK8/E1i3lyhgs+fMLfi21rQ4xbU34M9ugEdpSHBSsSX2SYEAnIIVaDlzw0avCwoB+qYKEJG87+HO4DlOf+0UOiXg723ZbjszgpOddphPYu5beBYpPPqZwaciVOmUQGwzky5HQWQi3QGUdhXcUsndMRLZmcDcQpWloDCJ4VlBiRzoE8iOLKZK71r32gf8VszNJUXwKguylqDFu9TVPG4maMeZDSexgo+ad8wR+ErADy7FTTG4bzabxM5waVbAfLuCHha+TvNp39MSBD7ddbD2RwJ++GaTsW+4hMDHnmu+vc/EvrtSmQ874Zp9qVgykf1iDUmSr6ZCw92zBOoRS9Q0bDgqiyjghxiZjC3gnxU4cG1p1SPDFeQXpQLDdXZdIrF1/TvwgIDJfoYJVyIV1K2Hsil4YXY0jkGVAM8BJ6ud4a5qs3Kv8EUDewiep44a2XeJUwUmSYMliEHlEfgVtC8ReOBeQlbDMagz2TJY7amTYjN7RyJ4GooSJq2SAeUanWfwpDPz9MakCL40uWvdyh7nrSOVORKHCkgZUO8d+DgaNyYNPwK5LN9+p/TrrlrXxsF1VgnaGbL+zgMETsHZgpGdwLMsg7quV0+8DQtOoIv3zuBnzXy1dgT4bUhWTZpgIhERtpL5sePtwc25Ptq83Pi1r/tNHzDun9fvbUj9ZXdwstJu2xGWuAzA/feKs1gJCDjf2EFAwoDL4zg2W9JIZ6VA8Gy/3/3XvI8EBDzsB64sbouC6ZZ0T2MeYLT+u2YjJE4JbJ+GoRLNITlZXLbtu04n884IRPn1sv468vuBX5YtOT/OwI+CDPgouSyRlIBJPDsnVRprGFDiEdWWJ5eEP6Z5s453c85CwOmf34givPDrP8//AplLaVz/0HxGAAAAAElFTkSuQmCC",
-      "weapons": [
-        46
-      ],
+      "weapons": [46],
       "ball": [
         {
           "frames": [
@@ -1632,8 +1622,8 @@
       "soundPath": "Skill.img/3201005",
       "description": {
         "id": 3201005,
-        "desc": "Attacks up to 6 monsters at once with a powerful arrow, which penetrates through them. Damage decreases as the arrow flies through.",
-        "name": "Iron Arrow : Crossbow",
+        "desc": "발사한 화살은 적을 통과하여 뒤에 있는 적까지 공격할 수 있다. 적 하나를 꿰뚫을 때마다 데미지가 줄어든다. 최대 6명까지 공격할 수 있다.",
+        "name": "아이언 에로우:석궁",
         "bookName": ""
       },
       "levelProperties": [
@@ -1826,6 +1816,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Crossbowman Guide"
+    "bookName": "석궁의 모든 것"
   }
 }
