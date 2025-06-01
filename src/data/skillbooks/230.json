@@ -129,8 +129,8 @@
       "soundPath": "Skill.img/2300000",
       "description": {
         "id": 2300000,
-        "desc": "Absorbs the enemy's MP when attacking with Magic skills, until it reaches 0.",
-        "name": "MP Eater",
+        "desc": "적에게 마법 공격을 가할 때마다 조금씩 적의 MP를 흡수한다. 다만 적의 MP 가 0 이라면 더 이상 흡수할 수 없다.",
+        "name": "MP 이터",
         "bookName": ""
       },
       "levelProperties": [
@@ -246,8 +246,8 @@
       "soundPath": "Skill.img/2301001",
       "description": {
         "id": 2301001,
-        "desc": "Use the arrow keys to teleport to other places in the same map on a set distance.",
-        "name": "Teleport",
+        "desc": "상, 하, 좌, 우 방향키를 이용하여 같은 맵 상의 다른 위치로 일정 간격으로 이동할 수 있다.",
+        "name": "텔레포트",
         "bookName": ""
       },
       "levelProperties": [
@@ -358,9 +358,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACm0lEQVR4nO1X7bGqMBBdZmgglKAlxBK0BCzhWQKWgCVoCdcSpAQpQUqAEng5CQtLDIjOvXfej3eckRCyOWc32XzENEZLv4OIC1JAe7s/XloqasxP2eepOlC2Otv3d7DbrFsWwQIs+VavZg3LsqSLIf1jSJ0YB9jhm9Z6kYD8607H/caKiKfI/Q6ZnIFyqpQTROf+yTZzgrLU1Hci4lCD3tOuQ0nOpIDWGV2L45MYFigFTSGmF/A9Z1KJfJvbp6xfOiteCpCeX5umJzx2ZEzu28iIcBRD0XgSwB47krHnbJ4kO0dEu/57Xd9GNjJS/pC+FQHpLZO37Xi5KKvK1K+tCB8ya0IYCfDH20eIHNCrFd0fj16EFOxHclYAoALl0DiPhJsIhPqQzy3mkHVuPAy9AHiPBmhY2MmmKNu60MGDvCuDDB5PkcMuT+/UNKW1V8qRaZ1TEYjEUwTQECYwPFw3dDadnbsOp0mfAdGwA9iREGKnuTEpdrANk2QzanAZ9g2LzXptnzwXIIbrAGnv29b1nU6liUI5CLICLLl25KFJNgeegH6djyFTnIi0y4wuAsP/q/DC25BI1LOQ+T7Ga6QVsFVmMyn31NYPipI1fQo5FCGg/5PhSQ1fUQkB2M8hAh/b1nlxKvZmTnz1xu79RlGUTBMYW2kX6gM8SMOiKgcBgM1NMznQSBp8gqk+mFxilIYsIoSimV7NfIAohEWbUagRFqllGCbY0tNRTAvh7+9TM/290+EbAnwg16Mosim5ZGX8dgHfhTcEKHod4CVtPhbwM/gv4J8QEOGutuRqxpBp90kKnq4lbkUoRhwBKwJ3tiloldGlcIdS5D9DHlDwfUWZ3el4swmByfEnhyDqLoyzOHinnN64F1XQAvSd/AWOYnEES28KUAAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACGElEQVR4nO1X0bHCIBCEmTSgJcQStARbMCWkBS1BW7AEbUVLSEpIC3ku85a5XADBUed9vP0wCNztHtxBUpkpRvMdWDakgPF2uxV5OZ/Ppm3bYvbNZjNSBAU48vV6nTS83+9BUthh7Jk9cblcTNM0TkQVI9cOSU6gvVgsvCA+aZMStNvtvIgqNEFGyuhITlI6QluLoUApKIbKPAHIr9erI5CkBPrRB2BeKaICSBhyisjYT3IJCuacVI7MBDBiOJbkkuiRxe55Op18H/JI2sg2fVJMUoCGFgLycZweF33fm9VqZUJlzGBimAiQSrkF8gkSTQ7UdW26rnPjeDIpAVZIloAYnh02WIEchLbBC5DRa2JZXiBDxCny4/Ho+mHDubGVmK0AiWB4OBycMzpMkWqADHbSZwheAKLHROyjhMx0gOPMBSagHg/ZMj9mAiR5KMlSYALqPg0KpQhWRhWamEJMJJ3n+JBwAni8DsNglsuleRV6+zTgH9sCPor0K4BODGISgPZ+v/fG/J8SSALahXyAB2U4E8DalImjkygXMR8kl5jkQOrqLLnpYkdv1mUUmoRDqhS5b0dZR3EIJZn+EQGodWutK0mK4QX0FQHvQpGAVyJ8q4BP4F/AnxBg8a2W82lGlL6caOBUfXwVoWm5Ak4EPpdi2G637g0JdY/6J+QLCsYxD6JSwkiOH7kF9veDMYnYBUVRmReYj+AHSb9nBwMm5akAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACoklEQVR4nN2XjXHiMBCFpRk3oJQAJZgSTAlxCaGEpAQowZRgSrBLsEuAEs4l+PZJWiHL8h+TZObuMYAQu/s+SZZ/EjFUL35Hkhs+QF8198VMJTp6Kf19UQfx2TX69xYdD/ueIRhAm2fpbjaxbVtn6gt5+C9N01UA57IRX/lBQyRT5mFBNmehXVJK/iCgtjFg9M05c0Cf79RvIZJYgBupLeibs6lRQe/TCIYBfaApJWJB2nx38HqMqRMtf6kK26b+zjTnF3MNAI4rKnYlczQL+jjZ4uWuEHlnIJy5TYGQg/i8G85ibDZGAAhEARQ+BSMvrIOUxlx6M9H3+N/PKQjoNKj5EVmSxSUoVEkjz934pMzJbHi6qB8d9b9RfznK18aPRkxpAMCkRuO9HTOHsp0S1f2Pg/CB9QAGMzkDwLZdgIAic8IMhDXC32f6+AJIsAwOAKO/UYAOtPXO1hgjYgiYYcRT5iYPs3SzOe+2F+18FBs5BioNQRNLxpKK9PpNVrOmw/EydG+BqsnoxKR0dvQVreNxEHB9Xje0jvs3/c3HAmC4D/Lzw9y+r9wyDABqzzx2kM2JD8CwL9Rzp1T6xJaJ5glgZk25wDlhtDFI9DPImiViaYAMF5P0QIUbTfmq/KWICfUvgkZP54X64QHgeg6Iq4WArhT4IZ5rZX7fCXA/a+DnxWpkdhvWj/YJAOm9aSH8hG1Sozy/nS6dihkipjZdD5NO1Fh1MYoF4SS1VWvvjhKxUuHGih/pauPd4QaAUNjrUkq9JZe27o8AfJc2AqhviHgRQK0qv9X+31uC/xRA4lltzaMZy992r2zBy63FUxGakmdAQ+CZbUppV4k6M/se+5/l36DUuAGpKa4T7mITE5vjw18CaR8YFyTjvQ7qKFbIFfkLvJJSEaKeR0QAAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "affected": [
         {
@@ -816,8 +814,8 @@
       "soundPath": "Skill.img/2301002",
       "description": {
         "id": 2301002,
-        "desc": "Recovers the HP of all party members around the area. The amount of healing depends on the number of people being healed, and the undead monster in the vicinity of this will receive damage.",
-        "name": "Heal",
+        "desc": "주위에 있는 파티 전원의 HP를 회복시킨다. 범위내의 언데드 몬스터는 데미지를 입게 된다.",
+        "name": "힐",
         "bookName": ""
       },
       "levelProperties": [
@@ -1068,9 +1066,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACu0lEQVR4nL2XYZWrMBCFwzk1kJXQSgAJrQQqASSABJAAEkBCKwEkFAmLBF5u2oEhJFB45+z9sTRhMvfLkGThJOYaxA6dw0R0dS4OyKMfHGB4NK+vM8R5KR5FJm7qd5FEu9xvwWUgCALQ5lf/PAu83HPxqpJFAvTDXErxhojtcS5lVSPSe6AhTi5zm1xAe+OT0BfiA3ESByTZtWftI5oBBKqUTTERo8TUF6jZwAjXSrWlnGKqz32i0vFqnJTu3FYACrT1VcV66fl9nsOWzwpAgVXmNuIz4o+BP4O+d+cgD14JDZCWTz1oLKvYJx4vHYOxVggsiEsRXv0JIIuuel9D2NO9y8hSAUqur66BH5FHU0Qir9sJAHpk78PklparScZDR067gIzJwCXy4Dp9E8QFQF2l/l0Rbr411qbd5wBM7mktsiQc+9K8PmR+COB/Bfgqm+B3A9zz+ewhtNFfsX6zPcrYJTMA5yBuHoXi8uMt7r1+h83xkHl/tQI8ITcfhvlrQ9t1up9DfFUNE8A8RKgdl25zyD+fRfN6jRCIL6JwkWcTYHkGSkf/lux5YnXiFurQcwKYN/9Cq2tgBDpYgLhWMw6vq3mcAKkanIXvgUiCNp6v583XARYgFFwu+n75fJva/GzzWKmAfThBYNGRyHw5bhvBDcBi02crIvXvk+9/mAICV4juAQTxmYrPQn+W0mxbAXI1OFGDJWtHvu/cguijx0AggKA8Zt5NABMmZOYwwozxG4+BRJXAlZ8HLtOvAUxzEq0BGwwBTRCdgjg7QZYA/HWXiZ71miiGL9AtLQASxweK7fyn66rhxhkCAA/faubXEUDKthu3nUuuymDcU8HZJoT3QfVVhJ8eVUBD4JvNVN23aoa/zPBHPJpl3C0IZnF12+oXxrxrF7Fkjj/8EXifD8ZNwcwmwH2psaT/AJ46hDKDVZ3xAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTUlEQVR4nMWXb5XCMBDE0/cwABJAAkjAAkgACSABJIAEsIAEkAASQELvJo/hNtvdNoF7d/OB/slm55dNGtpeSFWHAs1ms3A8HsMbqngiAerz+ZydYbvdht1uF89Xq1WR+2QyqQlBgGg+Ho+TwPl8Hg6HQyMB7sO83+/H43K5NOM8IfY7R4ToeeaWPKDSeEwdIXrhn5UAoJScVwgl5j2MBpLlZ4xshzA69GOMldsEYKB1z+osJdtlDiufCcDAzWbjBssRefcfj4ebgx4SNgLs9/vYyTMoUVsOggFkOp3+ACwWi7Ber5Og0uQQRt8meqAC3MBeU8CydM0ZAXXZpYGnrEXYtdhggp0PpoCgudwZS1S8D6AChKBg3jZ1vwrwqQAvYYsB9OghXOvE+tpTAtDVieaDwaDRdr/fs0x1ewKgHzPMLUfLc5jXdfracLvd4n1AME4ayTxaWVOABNgrLHNoOByG6/XagMjRny5CCywB0I3yH69EOr4tT2sFUPZPhP8Y5GjL4wKwM0FwjfmtqipZB1iA0Gg0iu3Y40vAi9cAIbDoKJq/IxdAzhdGhfc4+fzDFBA4QmxjFRCvK2FVpgHAzvIa/93eI4h7nAaCSAgvrwugYaQ5jDBinGMaKFYCR7kfeKbZANqc4hqwYAikITyQ7EXIuc6JkQu0Sw0AkupNw9r/eWwz7NrEAFDhW01/HaH8p9Pp9dh58iqDfpfL5fXyKYVpeX5HVKxAhLA+owChn3nrI/a7fxKHfjTTojl+5BRUzw/GTsHMUs46oRdPvgCu84R0KPLB3AAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACxklEQVR4nL2Xi9GqMBCFw4wNYAlYApQgJUgJWoKWoCVoCVgCloAlSAlYAncPZHUTNwj+M/fMKCRk93zkBSyMq87M0aY05lqYHxTxiQToqvoxOUN+upu63JisKE21T2e559mqYwgG6M3XaeJiFlfTkYkv1MMcrQcIvV1Ix7I2hyLrIRYhc03RTKNQ+/2GesxCLMwfFCtnc+UALHc3057XwiE2EdV1VIcjl7n7oWEY7HUr2Z7FeUYBuKFWVyvBUvK6zKHlUwGWtuGYkZwlsTjK+mYkB3vIXu4BiktjKqrkRHNHVLYPLcgn/SprDJD9On4DlNvE5IeBrjrO6wFODjVfQNkDPXC63t8AfaU1Xh7uo0mqY/qCia05G+dfYtvjhEnYHsd3tRWZlNQGpqkwL6j+W6ym2fvAg0xWtA2XYvstqPz4wfwngL8K8A8BPxvAv3sIZT+xXw7JAcgu9ITbhoNwHWZZFH1cq7vOiY8Da9mH8nrAjcpof6i3yev8vB3Mu859bbg1z75+gBhi5I3IPL4mDcFgnqjm0DqJTfVoPyCmyAHwu43L8cytMZQnv9KOu3HBHAD/4v/Q6BC8gX57OuTXJ+WIR/MEAfIbBdsHBpKgjPGNvHmACdi3Xy3764fbYKr6KfcRBAjFMgQm3QvWmvtxE/ynrYKC7gqPT7n+YQoIHCG+BhC0L6l9uXYt/bIKUNwpOI1fuCizubYEUcfDwCA9BOfx834DkO86BT1d9+nbHEa4484OA4t7Ake5HyC+TDmbPpE/AOSrFjYzac7iOaDBMBBD7AjinA6/SQAOgRCP9Zi4jZyg31bwB8A5sBdp+z8fHcOZAkCEbzX/6wggu+a97EIK9Qzi6JGg3hDeB+mrCKcR90APgW82KcRenompWrHmlzTZlI9YinfaXWjWJ01jTsprIpvjTw5BZD8YP3RRzDQBbqJeXfoPAZ533ZDutBEAAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -1280,8 +1276,8 @@
       "soundPath": "Skill.img/2301003",
       "description": {
         "id": 2301003,
-        "desc": "Temporarily decreases the weapon damage received. It has no effect, however, on the magic attack.\\nRequired Skill : #cAt least Level 5 on Heal#",
-        "name": "Invincible",
+        "desc": "일정 시간동안 자기 자신이 받는 물리 데미지의 양을 감소시킨다. 마법 데미지의 양은 감소시키지 않는다.",
+        "name": "인빈서블",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1415,9 +1411,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACt0lEQVR4nL1X4ZmqMBBcvu814JUAJUAJWIKW4JVwlKAlnCVoCVICKUFKMCXwMpHhlgga7t67+aFIlp3J7CaSPzJGJ7+DhBdaQHdprr/Cvi6yjiIowJOXeRqdxBgjeZ4/XMdgf2qk2hZeBAR0TdO4BMvInwl6hY9NLqXjLIqi8w6s6laQMiYBiBBvy7HgyljZi4nO8X68T2LogRgRJJ9DjAjkQBzxJWC3ETmeZ0WQHHHWxU3htClle65nRZAccWtzDASs3MeMCDzo6tVPU+S6P00KeHu7ry5E3vtqnIPknit0YE4EybvuvkWYtpUsyzyBRv2+HsUUfQxzTJEPAtBQ7eEs6cfmQYQmB/I0leZ6HQgkIiYkXx9dmTap+w4cGLnRi/gpSD6HQUDogrW9iGr8AOx9BR1D8tHs85XLb78EcGll1faBEEiSxFtK6PoCuJ6KAdiYGtXnRaxplQDM1I/IqJZTQkioOxzXuEdS5Ajz0BXEwJU6b2XLHsC6hvW3WzeQEJgVmkr/Dh3QK0U/z9WgAQ6U4+BKMTjA+jOA1tHSsO5zq4BxOp6xzIuNChitAitOEvd25wZ6QdeT1tFmjDExLddrnzFaBCZUutqjAQHu6MMqGOzkb2c7G0tbrmtNhL3BGJaEYkBOnroN/oxioLfksMlAhLFwh3yFRQLCHU+D9/2MF4iIFvCMPBQSrqR/IuB/4UEAm4izGDq7r31dr58mLMuL/57KMfWOMOkARYSwtpZX0AJ1jrm3pNkShC8TPvmxknK3dztZOSnGmIPb4+1kjjlE9cCwtl0ZTv2/FYSAENCk28rM2v1tAaEI4LYbj4MYWEK+SIAWcYcdjfH+EvLFAjQB+wL2p+XnYmItIMFZbenR7Cc4nA2OZrhM6IAXgTNbLIKDkU8aC5LjQ5cg6Q+M30Cx9IFhr/4LcIbjx3oxrF8AAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACY0lEQVR4nL1X0XXCMAx03mMBGAFGgBFYAUZgBRgBVmAEWIERYAQYAUZIObfnd1bsYNOW+yhuoujOkqwoAxejdZ9Bw4UKaM/n80fYZ7NZSxEU4Mmn02mxk8vlEux1XYLD4eCWy6UXMXiXvE/QKywWCwdORMJH4Ha7+RslDkAE+/F4HF0/Ho9VPvb7vV+HGigRQfIcSkTAB+0iAfP53J1Op6wDkqudxXq9drvdrtcHyGG32WxiAcPhMCsCDz7zFf5HEaUwGo38L0TYulJycHUikBNB8rb9bhGIwmQycfbIgjRlQx8p8iAABQUDVKcVoeS0vV6vkYhXNpYc4QcXCtF2woC+XNeA5DkEATYKj8fDi7DoOwUpG5Lb3cN/EMAHnt0p6bBpGh9SQvMLYJ2yAViYFpEA3anmMiWEhFrhWOMaSeHD+uEmYYOosBl5Acg1wnK/3wMJgV1p19Pi0ncBC1Gf52lQgAPpYDOKTgENAISOIbV5z50C2qk9bemXjapzCrhLRAO1oPlk6Bhm3KNjhlzPPm1UBDaE0INYRQYBtnVCEAtLQ665Jmxt0IYpoRiQk6cjoATakm2RgQj3aoeaKgG24yl4HUJqRBQL6CO3QuxJ+hMB/4WOABYRd8ECZO75Hs9hu93635SP1IyQjABFWKRmQQsVqD5yU1I2BXaYANA4VqtVeMdboJmxx/eRFgmwYjQNAISweyopRNZM2cVFaEVAgIJTbu2IX3UKcrVBYtrUoPoY6hsQQPhZF+8AAhp8odSG7jdA7fwMPw0j4EXkxu0Ucl9GJSA5/mgKmp8PxmqwACsQevUXc53kccxi648AAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACtklEQVR4nL1X4bmiMBDcfN814JUQSiAlaAlSgpZwV8K9Ep4lSAlaApQgJRwlcExgcIlEw/O7Nz/8Iiw7k9lNID9kjk6+B4YDLaC7VLdvYd+5rKMICvDk29wmJ6nrWvI8fxin4M+5kt+F8yIgoKuqqk+wjvyZoFf4tc9l23M65zrvQH6qpT5IUgJP5OPnsa7JpZI6OYcrh/HUAykiSB5DighP3uB+PRfQfB4kP56iIkiOONvHLeG2F8nKuAiS+7hxHpMA+0SEf9C54c/pKN3hc1FAZobVhcihr4IcI7nuttk+sCSC5F03bBHXphWT/ZTqUM3ZCzOLcYgZRcTIJwFoKJAK7A1EaHJgazdyuf2dCPyMX8SE5KZvwMu2ld1H4IAGRbwLkscwCXhwYRSBmmvA3lfQMSTXs69sLW2rBHBpGZAFhP5631ywlNip+gIYL8UAbEwNd+7QlXcBfqYAOryLv4/MmCzscIx9rUdS5Ajz0BUIgytXa+XIHrCj9bf+IRMoxqzQVPq/CxzQK0U/D1I6QYAD5TiWzd0B1t+OAbSOloZ1j60Cxul4xPpZM++4Bc9WQSubaW+HEPSCrieto824RxG0nLPVMVqE74W+9mjAQeTm7oAnpp1oh9OwltlYuul0rYmwNxjDklAMyMlzbYJ3QQr0lhw2GYhwj2VJxSoB4Y6nwesQskZEsoBn5KEQs7D23xbwv/AggE3EWUydzddx+2J2m8GlpRxL3wiLDlDEI0p5CSVQ54h9JUVLEH5MAE1ZiN2f+9F+WUxbSHNdzhFDUg/Qkawvw+1c+GteSDuMNWlWSNTuLwsIRQDhgsgGLavIVwnQIgY0s3u8voZ8tQBNgLbAWQb2t7ZaTawFGJzV1h7N3sFHWeNohqGhA14Ezmyp2AZakTQVJMePLoEZD4xfgFv7wLRZ/AO7OdXVc0LJUAAAAABJRU5ErkJggg==",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "affected": [
         {
@@ -1831,8 +1825,8 @@
       "soundPath": "Skill.img/2301004",
       "description": {
         "id": 2301004,
-        "desc": "Temporarily increases the weapon def., magic def., accuracy, and avoidability of all party members around the area. This cannot be combined with a skill or a potion.\\nRequired Skill : #cAt least Level 5 on Invincible#",
-        "name": "Bless",
+        "desc": "일정 시간동안 주위에 있는 파티원의 명중률,회피율,물리 방어력,마법 방어력을 높여준다. 궁수의 스킬인 포커스나 각종 물약과 중복하여 사용할 수 없다.",
+        "name": "블레스",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2066,9 +2060,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACi0lEQVR4nL1XgZGqMBQMMzSgJWAJUMKlBCnhrgQoAUuwBS3hfglQgrZACXw2sOcjJDF4zu3MeRhDdvPysslL1RKD+hskfJAChu/25uy9U70qT9dF26U6jq27l9h1cRgoggIM+UeerTp3XWfIb5fGfO/7sW38KOuTEZHn+WYBzaVVdVkYEWksOYiLr9q0n5vK/E0i1GYR1XHsP4tIVSRAzigcytoI8AHCbfhERguQSxACyIuiWLW3besUERSAFxBizFguA2b/NecAlkguA8iH4bGZuvt9aj8cnCKeRkCKMDM5N0YEExC/UYRNbt7PMiOivd2cIqKXAEAUIERmvxRhk4dERAvgTsDMbXKJ+/U0/v7IlVg4BYAUJJJ895rnbBfg2kIgD82e4BJticJCAGcMIjn7LYgVke/6pQAS2rBD74oQgMRKksQkIkUgL1yQPmEE8LDhixQinQ9wCZTIjtVPX5D7dgXwb5yIHoWkHJhkNikB8/nI1pkonbETX/QogCYUghFwrj4NIU3GBTjfFiAa2PM+fM9e8JMDSDyS02IlLs3nU1IQIuxMwu7uf6fvrSSUjuYbfCvggIA8D2wstiFFuCDt0wdk97MtyHEQAa312ojogC6ETMj3jm+c03Xqn/o6yGP4YS7hmw8S7y1ngQRyhWbEM+Kd8ApgFLAzntkxXXRyvjdHgHhcRNRboxB1JQtFQR5ghfB+bj1uxZcEuERsiQKN6VcCFgPOF1LWAwBn/yqir2R2TcDK6LeAgAS1mqs6cpVlvJJLESHzcgEmNFZFeEwYASMCNZsEby2ArxqCpWJA9uUhI//34pjGc11qw8kIEMlcMK6QJFN2a5HlfNbWrWe/3we/w/+VKM//AwK3wuVQ64WNAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACSElEQVR4nL1XAZHCMBBsZ2oAJIAEkAASwAIWkIAFLIAEkAASwAIS+uxNN79NkzQt/O8MQ2GS7uYut5dURRt18T8o+aAC6tvtFp2x3+9bvw+Hw2j25XJZUwQFGPlisegMvt/vRn65XOz36/Wyz263MxGhOX04nU7Fdrs1EVUuOUjfk+z/4/Fon7EiNpuNE1EVmQA5o7Ber01ADBDuIyYyW4CmIAWQv3Pc+T8W5aQATECIsWJNg4YfKdI0gLyuf4vp+Xza93w+D4rojYCKAJrcOVIV4ZMDs9nMRDwej6CI7BQAiAKE6IpVhE+eEpEtgJWAlfvkiuv16lI1BEEBIAWJkk8mk+Iv0BEQKiGQp1ZPMEVDotASwBWDSFc/BLkiGFEngISxgTouBGyssixtI1IE9kUI6hNOAC0XEylEnY9jUlitVm4syGNVwYVASKXkIVIC5oNy8qHOqM8oN5pQCiaARkOTCQHONwSIBkTEQC9wKYAIktNYFKnmQ4AQYecmTEWA0XIC1NFiLx8Kpkz7gY9WGVJECKnTEoFN1VeCfA8igLEdI6IDhpAyodic2HvO57M9V7EB2oZzzQUb7yu9QIFQ0YzYI76JqABGAZXRZ8d00ZjzjRLgwz+IfAtZR7JUFLSBqcez9ELumS0gJGJIFGhMHwlQ+AdSgKsfi+wjmX8nUBGfAAJK3NVCR+bQtYzk/s1oiBHBhJq+UzICJsLfaHoYid2GIAov5Fg2Gf32WzbJGQGibC6MHeCkA2gz4bNf+9PpNPm7OWe46/kPJrvI87W6R1EAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkElEQVR4nL1Xi5GCMBQMMzagJWgJUAKUICV4JWgJWsJZgpagJUAJWsJRApd9svCAhI/n3M44Qkiym5eXTbIwbZTmfxDwQQsob9nDWXtpChOd8lZZtg9t6fIt9iTalBRBAUIeh+te5TzPhby87OT9Wdgy+4sOZxERhuFsAcdLZg5pJCIWU8lBvPk6S/nluJPfS4SZLWK/tfUrEQszESBnFIL0LAJ8gPAufCInC9BTMASJWhT1yrMsc4oYFIAGCDFGrKcBo0+rHMAU6WkAeVk2i+leKY42K6eI0QhoEcDjeycimID4RhFdciBeL0XE7fHjFDF5CgBEAUJ09msRXfIhEZMFcCVg5F3yFq5f9nuTK1PhFABSkGjy9XueM1+AawmBfHD0FThFc6LQEsARg0iPfg6migiXRVsACbvoht4VIQCJFQSBJCJFIC9c0D4hArjZsCGFaOeThic3eY3td10X5L5VIZ/zp0mjzUuA3my6pATMZ9vfLlrOmKvn1Aq4j9mmqSJw28dCSJNxAc43CzYaiV3zPlyqrb/OASQeyWmxGrfjdpQThAg7k/D+9Lcpik4SakfzdT4XcZXBnApXH61lSBEuaPv0Adk9tgTZDyKQJEnfiOiALgyZkK+Nr5/T9VV/4augt+HGXEZOPjbxPrIXaGD6aEbcIz4JrwBGAStjzI5rFxXn+3AEiOYgYj4ahUlHsqEo6A0sujblXHrxyD4++UhGEXOiQGP6kwANHkh5HwA4+ncx+UjWvRPwZvRXQECAu5rrduS6lvFIrkUMmZcLMCF7K5LxMAIiAnc2DZ5apILnNgRLRYesy01G//OZ74c0kS4ZgZqjujD2EASvk02qTjh8Tq7tuqvVavAd/m/U9fwXfmm89EXov+8AAAAASUVORK5CYII=",
-      "actions": [
-        "shoot1"
-      ],
+      "actions": ["shoot1"],
       "elementalAttribute": "h",
       "weapons": [],
       "ball": [
@@ -2324,8 +2316,8 @@
       "soundPath": "Skill.img/2301005",
       "description": {
         "id": 2301005,
-        "desc": "Attacks a single monster by firing Holy Arrows.  Very effective against the undead's or devil-based monsters.",
-        "name": "Holy Arrow",
+        "desc": "성스러운 화살을 소환하여 적 하나를 공격한다. 언데드 계열이나 악마 계열의 몬스터에게 더욱 큰 피해를 줄 수 있다.",
+        "name": "홀리 에로우",
         "bookName": ""
       },
       "levelProperties": [
@@ -2518,6 +2510,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Holy Magic Basics"
+    "bookName": "신성 마법 가이드"
   }
 }
