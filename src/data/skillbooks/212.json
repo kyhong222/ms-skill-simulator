@@ -5881,8 +5881,8 @@
       "soundPath": "Skill.img/2121008",
       "description": {
         "id": 2121008,
-        "desc": "Enables one to shrug off abnormal conditions. The higher the skill level, the more types of abnormal conditions one can nullify.",
-        "name": "Hero's Will",
+        "desc": "용사의 의지특정 상태 이상에서 벗어날 수 있다. 레벨이 올라감에 따라 해제할 수 있는 상태 이상이 늘어난다.",
+        "name": "용사의 의지",
         "bookName": ""
       },
       "levelProperties": [
