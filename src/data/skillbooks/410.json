@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/4100000",
       "description": {
         "id": 4100000,
-        "desc": "Increases the mastery of throwing stars and accuracy, along with the maximum number of throwing stars to recharge. It only applies when the character is throwing stars.",
-        "name": "Claw Mastery",
+        "desc": "표창을 더욱 잘 다룰수 있으며 소지하고 있는 표창의 최고 충전수도 증가하게 된다. 표창을 사용할 경우에만 적용된다.",
+        "name": "자벨린 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -152,8 +152,8 @@
       "soundPath": "Skill.img/4100001",
       "description": {
         "id": 4100001,
-        "desc": "Enables the character to make a critical attack with throwing stars on a certain success rate.\\nRequired Skill : #cAt least Level 3 on Claw Mastery#",
-        "name": "Critical Throw",
+        "desc": "일정 확률로 표창에 대한 크리티컬 공격이 가능해진다.",
+        "name": "크리티컬 스로우",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -322,8 +322,8 @@
       "soundPath": "Skill.img/4100002",
       "description": {
         "id": 4100002,
-        "desc": "Recovers additional amount of HP and MP.",
-        "name": "Endure",
+        "desc": "HP와 MP를 추가 회복할 수 있다.",
+        "name": "인듀어",
         "bookName": ""
       },
       "levelProperties": [
@@ -454,9 +454,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACw0lEQVR4nL1XgZWrIBAk76UBfgmkBC1BSzAleCXkSoglaAmxBC1BS4glfEvIZ5Dl1gSVeP9u3ruDGGSG2V0IRzHHQ/wODtThAh5Nd199S4rRtKPufQdpfHqQCBJgyJNILb7U972I41h0Xbc6LgTXWyc+z7ERcXyH/H/hkkVCWBHHrcFu5fe7iE+nzbFRFL0lZlUAJ6+repN8DxYFcPK+XZ8cY1v9l7y5eicA2b20Ah85t5rI98IIWEqwy+Vq2mEY3Gcai2oAQJ5nmajq9RCtCsBkS7EGQV0VIssvxuKyvIkoiUxCXsvSkPdW4G4B2FiMCD0pjzlWDnIArdIOKKXM91QVSZIsTh5SFS4JMfBZBMiwcnKARJm2GpyIxoaDk4ZWxawKuAgAMVdSTq0WA/Ki+HTjqZ/q8EEET8ZR79oyYMd+KUMSASAviJwI+WpBMgxwKtJk0oQDgpGQkQorSe8+4LMQiQdIu6xRs4McQCvlJGLQz6kqQvaFza2YyCnrlSUBGVZODpAooGciaEG7BWR5NiWmtZ5PCjOmVhpy7hr1KS+WRGwK4OQA2drabKeQgDDTqzYw4RlnSbhUkpsCQM63XevyDIoz2QFKSSMCoK99IlYFcHKAkpOLoKzPdAUgDCNWrsl9Rzd3MkiAzzJeIZEuT0MO6y05QG33t3HvxX9SL0dQFSwB5HmeT9mvnZBKOAcI9TA/W5x4Oa4LCPllg4Skc0N5bIeukcWLn7pN06wLCCHn4aCEa+43LsHmyzh7np7Orr9bADn0vGuCsGqrl/HF8Ppst4DV8DzZvoVvJaEP5/TL3rIpRVFPvydwfP+4gKbp3KZjEg5GMDO62Um6UQV7QGfDPCfm4aDwFXXvBBxwV9u6HYWSc3ycP7xjQa5vRegeyAEjAne2PcCm0o9StMPXJkN1zgE3ODn+8RAc7IXxN+Cu5/8AzxW8rekG4TQAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACT0lEQVR4nL2XDZHCMBSEywwGsAASQAJIAAkgAQtgAQkgASSABLCABO62c19m6SVNKAw7c5f2kWY3769pv3rGo/oOely4gMf5fP4K+2QyeSACATX5eDxOPnS5XPRglZtXgv1+Xy0Wi1pE/xXyT2E+nwcR/dxkyK/XazUajbJzX/VOqwAn3+12WfIuSApw8tzi+v10OlXT6bS7gBRJzO6uhrwragGpBFuv108idM9cSlbky+UyG6JWAVosFWsRyCYSuVjZq90rITebTW2/3W5VV4QQSIQW9ZhrRJDGwWBQk8tOVaikUiipiiBAE5siZMO9GlmUERHeQXmutCqeqsBFCIq5dq2RRbfbbZjPNR3Sk/F+v9fPviTARbAw5BD6bkXCjkWmcGiUx0obUrQPxFzIguwKckGj7PqTnbCV9IVsK4acrIfEExJxsjN6abZ5IytAC3misah2JxGMIo01JGwpEVkBzSzHrbReQkJDEiRGvcGTMFWSWQH+qtYiuNnhRPw+HA5Dg+L3mIhWAc1zAjF3EWS9KoCdizz26o6duFoFxFzmFSIimhTkAqMaFUidJYqqIAWRq09QFbhdo+ClCrgnLEkBJY1ESUiWp9zu4fK37vF4bBdQQu7hwO0sTGkiALswm83CdWcBeCjWNQ+Hw7/5MVtnAW3h8V2X4K0kjOH3qB2udXihc6aObR8VoDiT3SSce6P5Jv24AH9BNckB4SMnJKCnb7V3P7kgd6xWq+hckf+FqocHahGKWVdy74S697IDmuPk+uch6P19MH4D4fP8BxIZvyTOLqAlAAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACx0lEQVR4nL1Xi5WCMBAM79kAlhBLgBKwBCyBKwFLkBK0BCkBSoASLiWYErzMwuIqX9F349NECJnZr2ajnnFX/wOPJ1LAvah+J5/ylaXRutkn2Ie7O4tgAUQeBXr0obquVRiGqqqqyXVLcLpW6ngIScTmHfJvIY0DpVoRm7nFD8tvbtzOrg2C4C0xkwIk+SXPZ8nXYFSAJC9nNsfavDYqXpEbJADZPWbBELl0NZOvBQkYS7AkPdNojOm+81pUAwDyNI5VNhOiSQHYbCzWZV2q8pKpKEldpUTqdC7cGFBCpucrkdfmQw+gsTQitk8xh+UgJyFu1KlWWmu6z1URR7fRzZdURZeEWPgqAmSwnD3AooCLG0nEbqtkB2XSpVXxVAVSBICYa183oxMD8kv2063nuWutJCIXpMZ1bb2gY/fKkEUAyAsmZ0JprbWW4h+4+77vu3BEjtSnhAz0spIc7ANDLozaWIJIkgMYcR1v465zVegFfWG2FTM5Z71uSUAGK9kDLIoECRFs0GoBiduoScwmLLwpREEEjyCXTYvn3KTGRMwKkOQAt1skHJMzYRJHNIcjkLAyCcdKclYAyGXbNba/RvsPpjYKXdU098dFTAqQ5ADNX0Rw1qMCEAbjbmrHGO52g/u9YlLAkMtYBCKM5AM5XN+4vVHGY3G/ds/tvcMgx6IqGAPI0yQmyxEFWM4eYOQqe3qGyzvw7bSAJf9skJBl2WyImL+63eKFNGj1yF/doiimBSwh53AAnHDX21kqaHqDfb5+2D7a+WoB7KFe13RkmTn21md1/9pqAVPhIYPf+HvwURIO4Sd8uPdcndSxbCy3ww74roBrUXVNBwlH3hA9Q/YB/t34qgCQD+WEBIcvy+tOgIez2tzpaCm5xHE/7HeQu1MRph57gETgzLYGaCq19VVpHk2G61wCbpfk+JAh8NoD43+gO57/AQzluK2/v9zQAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -630,8 +628,8 @@
       "soundPath": "Skill.img/4101003",
       "description": {
         "id": 4101003,
-        "desc": "Use HP and MP to temporarily boost up the attacking speed of the claw. It only applies when the character is equipped with a claw throwing stars.\\nRequired Skill : #cAt least Level 5 on Claw Mastery#",
-        "name": "Claw Booster",
+        "desc": "HP, MP를 소비하여 일정 시간동안 아대의 공격 속도를 한 단계 상승시킨다. 아대를 장비하고 표창을 던질 경우에만 발동이 가능하다.",
+        "name": "자벨린 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -785,9 +783,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADWUlEQVR4nL1Xi43qMBBcpGsgV0IoIZQAJUAJUAKUACUkJZASkhJwCaQEXALPY3uTtWPzkU5vhFAA45n9eDb5oRBP+mPcbrfxerVa8eWCL6SAZ3e7/yl5QXokhRDef7NaPlkEC7Dk66p8u6lS6uXvVVWN60B+fzxIaRP98teKwO/n641Ou5UV8fMteTNoE1kxRVlwtAXZr71AkD+fTxq0nu1z3BqRXsQPfQAZ9b4sgt9kiuV3ILf/Nfz9i6wFAnLpvSgXReHfOAOX3Yq6a01au1pDhCRH9CBvdptAYFIAyA/9MBH5lBaUhiTve0X77XZGfuk9+f1BU4XU2CeBAHxZ02s0PhOSfBic6KZtk+RowuWva0BNFJAHAojCDgZOSgcZwDU2/YYc1xLZDMgFJ1uKef6bw0QOlGU5isiRxyWQASYF2HNKc6C+j8edehOtxOnSjNGTz1BAjubTRqS2r5GjH1RaAC+QKplc9b059y4OnTjfgCSX9ed9YwSnIIis1zZnvUk7k292B3qHVP2lVySbEJ7NR9B9nt6tOEMOoP4QsV1Pm7RRk60NwVFkgddiHXvFrAnR6/U6Y8XeXECeEyFRFTQjZ7BXSFMKfEDCngZ/DLd1Z0g3AXlVlMZmB4ohyXNrJLKzwJ2GKb1Hnwm222pbWoLWr5FHkMldRl6LSPoAIzaivckEpmGMHLndz5C33qphWPFMmA0jNKOcBTFAEiN2uxw5TobbuaA1JXwgNw94GsIJubFOZsOz2RifWZRsulTk2rsmduNDlxzH0orhAwxspn09QQYSm+61CMLXHOTn4946ZWzFyQzMx7Ejv9bOmNnzh8HVV4vGStU8II+sOJsB6QU82/u2sbaLweMwGBGmOQ2pjro7Ju8MOciwljOAMsxmQeyE6rSzkYM8hdLclg3+NMgjFkTOQ4jhM5C04tgJ+e49Hjhy9JKPjLMgya/mJlf7wCReDqP4ZiQmC4VMG/MskOQMbQSOJ7mY34wEAmJgs0+Ak8Hra09ecuQyg/pNBmIgouO5HpsQiLOCTDT+BqXupshhZRCRInwrAH9iv/8kC5O1vq93TsACz2ry6Qh/7rruow0+JZK4tApPRbhccAasCDyzTcg9EYRQraJvweR4kyVY+AfG/4Hx8fwfnpefp0lqJYEAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmUlEQVR4nL1XbbHCMBBMZzCABZAAErAAEkACFkACSAAJIAEkgASQ0Pe2w3a2l7tA5zFvf9DQJrd7H7m0g9RFnb6My+XSjqfTKYcVByqg1snfAklhm/Z/79UUQQEN+WQyeWvwer0Wn9MG5oH8drul5/PZjMlxOBzSYrFoRAz6kquA4XCYjfkchHVdp/v9ntmZz+etiEH6AEpqhWqI9R7IAXhfilpHQDTxfD43V/UYWK1WjScaYiWH97CJeVF9tQIw8Xg8ZhMsqUeOtcvlMiOHcMxDHSiPRrEV0KcAlZw53u/3Ifl4PG4jYHk6KdAKBhARW2h9yZm+txHQCV4qrOfAaDTqVLlHblMAJ7TWMgFRKpDfx+ORidtut633FKnkCD0FAxiDg8LdbYgJqpLkMMqUqFGF9byU/44AuwXpKTwk+W/jSO/g5V97RViEUd5pFHh1rzSbzbJnBAg0CpyL/9qOMwFojx5wHwtBHolQIEWWnGCv0KYU9gHuBhjcbDYNqZLbHaARIXk0RxGeBVYQ2yyv8AYEhG5BkgPvRLh9gLCNCJHwzouIXJ9BMBqWPROyw6hUjOyEFrYQI3LsJgu3FUcEWlgwCMP4T1FadJ7ntmtmAvQMINAHCBjjQpBhjHArMXMO8vV63ay3rdiNgBd+LN7tdh3FzK964+VcyW0rDiOgvYBnO0RhkRLzv61uS86CU6/Ds8CGHZ5HBQmD1hPAI7dnRtiK1Xvm3S62HmsUPHKL4mFkX0ZKzUOFcYeQ/HQ6deZq+O3LSEeAhVZ/CdgZnG/JrdhiBCzgETofixCwUcF97HHAI//kPdN9I2K//yQKffIdCajwrabnNK6eR38hUiCqr5ebihFoRPDM72usL0iOH01B9fpg/A+0n+c/fVeUY4RcNSMAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADV0lEQVR4nL1X4ZWyMBAM79kAlsBXApRwlqAlaAlagpagJUgJUgIpwZRgSuDLJFnYhET0vXs3Pw6E3M7sbjIJKxFiEL+Mvu/H+6Zp6LagGy5gePTPXyUvhR5JIYTib5p/A4kgAZb8p64Wg0op376v63ocB/J+GITUJvt1YUXg/fnei9OusSJW35KfdOWzE9O1dNcSf71AkA8gT8Q5bo1IL2IlPgDP+lyq4B0vMX8Gcvu/JvtW6WzsQECuvDtVTRn7G1zazVr097PQ2vUaIgJy4ci7Zh0ITAqwPZNTG3hpU+DkXSdNWX9m5CfpyB+vQWgfEzw0TwIBeNiL9xPsoJzAjpEr5VpyabskOSZhUxRjBTh5IIC/pFZseOn99Vty3HNkK8AHoBXUAgLCqN1EDlRVNYrIkcct4AkmBeRaYfv7fJp+34Lnh0s7Zm8rFJHb0qswHjg6/yy5DDGAqyRyKVuzClweVIUYAflC/wMB8RLcYEUYLm3KTuTN7iSWkOo/94rkJLSeLUMn5MsP5DaA6T9E7Jlr3mRoTNuqFGdWBRqLceQVs0moDV1fh4FGeHMBeU4ER12KGTmBvIKbUuADHGgJLcPq/jKk64C8NitAqrloTp4bw5HdCyDowVcDVcJfr5UjEL4FfAkSuY2zICLpA4TYiGpTiVNi8ufI7TtDjv6j/DCseE+YbUY0GWMjIsAJY8RulyV/DWPsH5HwgZwJ7fweIHfTxDqYgFcTGL9vjRPFJ10yc28+kNupTAUAbsXwAQKCad9PkIEE5d7zJHzPQX49bq1Tciumos4qEG/HVqkhf1yP9p48Xwk3RrOJleo5kd+fgyiZFVOzkhXgXjAeqdqLtd1qJFFGjHEO81tHsztFbkkrt8Rt9krO94KZEx5c5iBPoTJup/wxiy8xTm57rmWYtsicB2InpNN7vOGoKGNeBU5+fbrDaK3nu2CMmRPSRFRvzEOxQybtBUR+7qetWZW+9H7mxYeRQEAMBPsEWBk0nsjjzKkFbysQAxntz/dxEgJxVVAJrHErpH9NB0+TOUSkCBcFWDPyfn+4FGIJk7UycVp8RE4CCnyr8a8juxE9Hh8F+JSI49JKfBXhtqAKWBH4ZpuQ+yIIIVspvgWR4w9vQeE/GP8CY2//A0pLgkJM8/RkAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "affected": [
         {
@@ -1075,8 +1071,8 @@
       "soundPath": "Skill.img/4101004",
       "description": {
         "id": 4101004,
-        "desc": "Temporarily improves the speed and jumping ability of every member of the party.",
-        "name": "Haste",
+        "desc": "일정 시간동안 파티 전원의 이동 속도와 점프력을 증가시켜 준다.",
+        "name": "헤이스트",
         "bookName": ""
       },
       "levelProperties": [
@@ -1267,9 +1263,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADiUlEQVR4nL2XjZGyMBCG48w1kCshlAAlYAlSgpbgleCVoCVwJUAJUAIpAUrwy7vLQgjBn/lmXEdBSLJP9he+1FLu6jOykxMf4F413Ue077PkLhACQMrz1KwGt237dME0Td8CuJSN+ikygvjaUi6Ksyx7umDTNG+BnA9u3AjxFRsA5aK4vC7dovV6fJYlC5B3YFYAopwUD6xQm7VWrQdlW1wfVFXyWAHxYZ6BLABEeeWUt60lxfwJIAZCUGnOR9sOdAnQw0A3JwsC5BHEBBAqN6lTrI3aF9+rSVXZO4hh8gcOxhAlXW8d0PXcKGstrfkIYuWCYTwWp3kHvmDBEApAzIMfmF2rwVHBahddPYSYAHATg+DHy7lS10ujTj/ZdE+sBOkuZ2WOR2Vvf8rW7QQEENjEWgbJc6Mw43LchlhYYIbIaBJ8CqDQCqGUee7iIVeJBwLzW9u6NY065AiWOMTKBT6Eb3Zfkp9fpfD1AER4LoNgA7WzkHEBYhwILCsQmwB+DUAghWnIvtZ0XSJ+X7j0q+sFBIMn5Eo7ZpTR60obTcPy2rASwyk4alN8qpXSAsMpSHVgBAmtZdx4i+RwcXG6zS6obbsE8AsQdjYM1kUT75R3rMdUG5W7BXEtzalKjCC9MzXuKUpljKndEXHgK9+0AATmUrRJtkBxSsIhHO1aUaBNVnHCMO662wDNT5fp/GIacgbolJW/UgdmMOkbWuVHQ5uBOxGECMy30hCuwIKxRhPWARRiTsPZWqioiJo8T9XfraX/ktIvpmGy2NUr9cAHlfnIJONcScUpItF2HFuIz9mffh2o8sNDoNNvxukc6ahRAL8OEEjVEz12EUljlSQcD91YjGTuHA+cFRJPD2Ng6ohlRx0NrYna8piKcGoyVrmu6WlXfX+ntAVI390pHnC+L5bZ8zQLpjrgKheUo6Pti/jjGIJQQOZrF/Wd7AgCXwj+P1K+sgAEqY18xg5iQScmvvfdIgtERClBdT0VqFj0rwAWdcB1Lvjez91Xno5ltwIK3+N7PpTvt+OraRYQYRd7JPM67CY0pOMQh3jajiflIwzE4mHQWb11Fc7mY1c0c4qEmUTlfUOidUAgYrt5RaSS8kMJR8itLl5rRj5EDEgUxEQU+JU0vBcKAHZ4V9t6NYsBbcWCjAmBw/m/fy3einC6EwsQBN7Z/kfkIePZPVGOH98Fu/GF8RMyFYt/bP5g6RfRa0kAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACpUlEQVR4nL2X4bEBMRSF14wGKIESKIESaIUSKEELlEAJlEAJlLDvnYxv58gmsfxwZtjIJrlfbu69u/rVq+rqN+rRcID6fD7/xPp0Oq2BACAYn0wmrcGXy+Xtgql5Je33+2q5XAaIfs44hv9p3y6I57qCLBaLBqKfGiDjGD4ej28XZKwfYVeYFgDGZfjxeFSDwSB8UtJ9fYB0b3X1yguAG1d7NBoVIei73W7hCrTD5GKrBeDGtaAmyUAqBrQoYA4DsObvdrvQ1vwSRDIGpPl83hhzacEYCiAkEAGpb7PZFCEaAN3UIA0W/TNKm3t4SdK92WxWnU6nsFt3twyrT1fmab0cxIsHYggdBxNLWq1WYa6DCEIfeUNph/diiNYROASKXY5nHAD5XIJZRyEQ90QWwGuAJhBcEudM8PGbeHEIwHVcZFQqk7JpKGGYgPJ0pE9uZrxAYm+xAY1br9fNEZC6yTRkZ+pzgwBJBBo7028tTiriel1l0I1nPcDCSIvF7sXFMkpWAOZHhbc8nT9KQ4x3qQOIoyAFOR4K2kdpqImkITtAcR3QjjXXvQWM+g+Hw0tKf5SG/qDp8sLiGQAscZFSthTHC3nb64BKbUkay5F2AvA6AEjpiTgej8NVO3XI+D2CeCrGAMY1kAgnK9gBBq/XawCq6zqMUf/9fg+waqeKUzELME7l8toeS2MA8b7hcBgg9JH0u2S85QGJup0LOqBkxLMAYZQxPC0/rgNysXbJxC5vx+wWUOBK7wTZOiCX0vZrF8WprLX0xPyqDtDGIxIPopziTPLyHitZB4Dwdhx0Jfm7Jcew3W67PYwcIgWEgZQwEL/Q+L1YAujpv9q712e/l4sFxsTA8Xw9G57VtIcHAgTV7FuVztrvYVxffgS95x/GX6j5e/4H2WVrJhtECrIAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADpElEQVR4nL2XjXGzMAyGxV0XcEYwI8AIdAQyAhkhGSEZIRkhjBBGCCPEI+AR/EkyApuY/Nx3V12b0mCsx9Ir2fxAbA7+xjK5CAHc7f74E++/Ze4EQgDYeVXop8F937+dsCiKrwCO1zsctiVD/Kw5F8dlWb6d8H6/fwWyr3HcCPGTGkDOxfF5H8tCqefxZZlFIN/APAGIc3ZsAbROO1WFAdNqGgLXox8rICHMO5AIQJxf0XnfG3SuwFrlISRDBIPOrNVQ1PIcfhgfLWssAqsoKq8gJoDYuQVdKJ5oe8ieHpIVE5S1PkIKfVQMp6DrUGj1AAZhyjJ/CfGsgTHcu9NmWkFoBLmEIiDb+3SRFRVyGFwA/u7h8RJiAqCbNIhCt68GODcOdpdsuidRInM1xv66R8oLQNtBNgLdzo6jYXq/jroB6EDDXg047yYJEUVghtggxINzSkDLKCztge50U0O2m0Eojf0B01Ir1AriHNIQTymYIXLCn8IeWta29BEBiEkUyWgBXYuiRDGTpvYwQ6wChD2AhMQC04r/kuBEfGT8P1pOKbhcIggPnsGxQTF2Bp/RXFVLWynDARWFP8o7htE5+Q3L0WLp9d1YFWgkzmW0aA7D1WLg0M5i7EwfA4RlaMgb5pAWKAAcBQ1TH2ChKcqx/850Pve68GAUep4GV19UGranD0ToQQzXP8+KTrendB+gkpN9aiq/sTF5OAK2WM6opR6+KcOcy7AovPNP+kAIJlbvafUKvxumzvhVGZ614wlTG82yD1DKuAwDsKt1nMKqUdAeLIN8WYZZtKpP+kEIKs8fzcDqN71Njk9ux6mJ/LVXeNgHnHo+xIR2aDdjOavk/Zd9gIyUbYwXmk7sJ9kIKNmXZ0M9UFVQW3+rAXF+O/pWymXUWy43vzWjg99REzdfCcPg2AGBDA/HY3K8Xgr1bRXMB5EB1Wu5f//ugklO8yWJMPuNHbimgSzP4HF3DEK2yd+fCZ5SQDVcVN55SnQSYufuURWI5YFmCIYa1FoJRgDRToibxv3qogc/OR3LagWUFkP6aYr1M8FqH9B6YAEKBE34SRnG84ylWDuo7TzHh31gPhHxg9e5KXWYb42nnb6qcKPBgymmgCcdd8RlJRkKw4ol+4BApFbzibGYG8eO6VxIgK0pP9uMQogUkDhImThIAb8SYUbvamuvZimgNS3ImCXw8vlT29NbEV1mEgGGoHe2/zE5ZLy7J87pI0xBNr4w/oVN+fkHHmtS5SgpvQ0AAAAASUVORK5CYII=",
-      "weapons": [
-        47
-      ],
+      "weapons": [47],
       "effect": [
         {
           "frames": [
@@ -1388,8 +1382,8 @@
       "soundPath": "Skill.img/4101005",
       "description": {
         "id": 4101005,
-        "desc": "Absorb some of the damage dished out to the enemy as HP. The most one can absorb at once is the character's MaxHP / 2, and can't absorb more than the MaxHP of the enemy.\\nRequired Skill : #cAt least Level 3 on Endure#",
-        "name": "Drain",
+        "desc": "적에게 준 데미지의 일부를 흡수하여 HP를 회복한다. 한 번에 캐릭터의 최대 HP 1/ 2 이상, 몬스터의 최대 HP 이상은 흡수할 수 없다.",
+        "name": "드레인",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1585,6 +1579,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Assassin Skills"
+    "bookName": "어쌔신 가이드"
   }
 }
