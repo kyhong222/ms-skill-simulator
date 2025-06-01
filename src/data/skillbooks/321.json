@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/3210000",
       "description": {
         "id": 3210000,
-        "desc": "Boosts up the moving speed.",
-        "name": "Thrust",
+        "desc": "이동속도를 증가시켜 준다.",
+        "name": "쓰러스트",
         "bookName": ""
       },
       "levelProperties": [
@@ -244,8 +244,8 @@
       "soundPath": "Skill.img/3210001",
       "description": {
         "id": 3210001,
-        "desc": "For a certain rate, allows you to fire crossbow arrows even at a very close range. Even kills a monster with one shot every once in a while.",
-        "name": "Mortal Blow",
+        "desc": "일정 확률로 적이 매우 가까이 근접했을 때에도 활을 쏠 수 있게 된다. 때로는 적을 일격에 즉사시키기도 한다.",
+        "name": "모탈 블로우",
         "bookName": ""
       },
       "levelProperties": [
@@ -396,16 +396,14 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADaElEQVR4nL1X7XGrMBAUM2kAl4BLMCVACXEJcQmkhFCCU4IpwZQAJVglhBL8bmVWHEJg+8/bZGJHSNq9032IDzPH3fwfJPyiBdyv3e2tXVIzyE/6NnuZ7+8UQQGOvDhkflLf9+ZwOKxugud5npuu6zbncS7AeT+XznwfcyfiI0b+qogYiQbWaqFE9Sl7jiI+zAb0Qi2Em14/Cz8HnyE4vuWlTQEUwc1CIXrO9fxjsiwz1lo3ZgcbFfW2AFgZCqH1Rn6v8qdsWkdOOCG9daIoZM0LqwIwWZOFQoBUOAe1BtaDMMNPOo+pNRFOANIpFkQzFKNH+KWApV9m1xzN7XqZrFfEEENseuDZWcHFIE6/xOKRXxsIy53bYb082JdH5/41wNgiUwJm57oGWiyb/90uZrc/ymD7EHj6nk09C3k4RmIazKB2AlDNwuCihSAlQIrN+bkF/Rwe0l7WNcEH4SzoRMGgRDysnTblJ1PuFVTVw5AhEDPLglBE3sDF7cJaTVzXv5vEX5Fj5div7L9IwzD9yqZdkGric/UZJbb2kaD1uD4Uko5143khOhc+oOhGkJM4S1PZbOqI+bGera9GYgiBCBBrrz0VgDiACKA8TQtPdeM+u0slgfrI711+NPf7dKXocd77vRfxO3qDQQgvLwToRoNsGNQRc6w8tZ4oSRLz111me2BMCyF002rtKx5ojY8BL2D611kYQ4xci0CctbbfFlBG3KXHYaV7LkcwDFJJ0nQh6iDn3d1u7hj8WKwXeIsilwdeKkiuBcH1IB9czc+cGE1Gb1DES91w6/Kgn+H7DmKFtJfWi+FBUg/ZcZDbFcYQqP2TYhU9gthVjJbrrqmDSteDpul9/tMjmKvXzpoRN16r11vdEoFp5RiYlkQ13jHr3m7uMfMALcLZ7tSCMM0AK1HMooNidC4mj0EQyVED4A1dLwjUDX8h8VcumUhSTGCUayDoQA7r08Mj+rPgPkMRmVRJxsmqB3Q7plW363kWYBprm2nQ+mfrou0YAUUrgbDhsNHEYIflM2ZEFemM0SD0dT4oQhr69jT064I0alVVtYAE72p4O9KRD+ic16Agnj8Ay7N0+Z4Ib2Vjt4xkVkIPOBF4Z9NgvdYolm9wbwFNSF7JHCf+6DRMxhfGl+B6QrM9J3S5Okr/ev4PnpYuybHxjXUAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8UlEQVR4nL2XbbHyMBSE2xkMYAEkgASQABJAAkgACSABJIAEkAAWkNB3tnOfzPaQtO/9c/dPIU3O7vlK0lHVRVP9DWp+uIDm8Xj8Cft8Pm8QgYCWfDabpUnv97uaTCZFI8/nU4aquC4H2fp8Pmne5XKp1ut1K2KUIxe0QCQl4+Px+EtQhNaKfDqdVq/XK42vVqskYlT1AA9F5tHA6OFwSHP0jGBcz1I0ewUgAmN4pejEOfJIJBKHyJyoXwuQl1GIfmt8sVi0z/1+3/EQIRKFkFKtFAVospNFIRA5REbxxnclEUlALKJYZPLWI6L/miPvvX1jrYDeCAzlSiQi3mw2yUgkIux6UhMleIu3AtQiVHUJIpbHy+Wyapqmquu0mamdOnNPp9PXmNYSZdKRBKiqY3Gh0FMhUhnn2Qd/T9sCT1mqAXnokdB/wo23GOXpOR7CbrdLazzlnS6Q1x4JhTt6E4mPx2MvsXa90tj1ev1uw9h+KsBI6sSlumH++XzOCukUYR98myWMIldUVDsy5HVC1IA6ByESofketUEBpEXw3G232/Z5u92SN6ofdQig+BChkAuqNYmXvS8BHLMUIiEU6BC9h0gF6icdYy4EEE2Rk6LeCEgMNYCA+/3e8TCHHLmL4JjuFQCxh8vHaU2lQO+pAxel1NDaoHgWsFhEkGIEo77v+zzmSoyTEQ1EDJ6G7IjxJIPADxT9llGRcnPSPGqH9A1tVtkU5K5i3Iz81PTw+n6gaqd4ea/1rPUbVhIQt0jfr/tOSxFrrRer4Ltdn40kQOHDo1g4sc0QzKYjb+h1bEGucUXD9wsgjiQAhZoIKTmOd0D9F7m8p/rj/cCLWDZKtZAEsEnglf57gTlyV/AIvB9a1zmO/RDCSyEeOH2VnXtHR0RBHQFswQIFlTsDgIuKKSrBt3UXUOtbTWS0Gga95wXeIchPwdKnnI9nOqsmAq2IeJHMhXPoO3AIsvlzX+x8nLYDPx+M/4XY9znEkFsq0432H80fXo2RvNIrAAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADZElEQVR4nL1X4ZWyMBBM3rsGvBKwBCgBSpASvBK0BCnhLEFLkBJICVLCUQLfTpIlGwiof7655wEhycxudjfhS8UY1f+B5hspYHx0z49m2amB/nYfs1fFfmQRLMCSl3k2dTLGqDzPVyfB+6IoVNd1m/24L8D9LrdOnevCivhKkb8rIkUigbFSKON0oDm9iC+1ATlQCuFJR2rSvg+e5+D2LS9tCmARPNlciOzzvB3VbpepYeidyH5IivpYwOj5tBDC1qsTvW/oHXkf5Ax3b6woFrLmhVUB6IxB2pPNhVgc6NeER1gPwpL65lmcHWsirACkUyqIIpzcZWzk84Osr9Tf4xKEC2KIYWx64NVawcWWuBONh3ALy+F2EELAd3W27l8DjC0zISBa1zWwxXWlxpGuuqLnyr7a19eo6+33Qm3nJDEgs8sKQDWT623JJgsfwRNEisn5ugX5vu/7yMuyJkxBGAUdr/MhEMtJ+YqJ38XldEyKibJgLkLXaF1aK4nPTez+OY6HcrXtem+XaThPP22WpJK4O6UDp/UZcCaSlJAsc1H4uhDd4AkXUOxGkDPxjqI+24XU0/U9Gn85ZJMQiACx9NpLAYgDiHCTh4FFY7xA6pA563TxQxkSjhTwQrX/nkRcvTc4CBELCwFyo7HZIEoEtyE2mEhrrcYudq9tG5dnG7lptf07HmhCDEwCROltRaWTSJFLEYiztjfbAphYuku2w0pLhiVQMCdbiCopPh7PP7sMjORewEgdHvhQweRS0Nj9OnJkSObEaEFmBZI3WMRbu+HW4UG+m1KVSI3pFVr7YbDZkdPpCm0I1LVlWhXAnpiLYMvlrski7P0p9G3uhtLORRm7H33l2Ggz4onX6vXWbonANENIS8bNE9T99hyRB6ZdkdZWHjzcWs/Qt1PRyakOdeJMyzUT5KgB8IasFwzUjelAwgpdVCsv4kdEuSTvLblNS+/LvBV9hjACmRDipE17gLdjiHBW0eS0qDLAJND2Cmz9q3GL7dimIeq8txKQAQZsRbZJvOKMmAuKBMggdAFlFkVIIjo9te+dCzgz5gI0vtXwdSQjH5A5LzEJKsWn3OCCcQ54q/QH1URmafaAFYFvtnjw8qRcLr34EeAs+iSznPgn01D7D8a3YPeEF8E4d7lYyunz/B/vPQ2vuaim8QAAAABJRU5ErkJggg==",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "id": 3211002,
       "soundPath": "Skill.img/3211002",
       "description": {
         "id": 3211002,
-        "desc": "Summons a puppet (your other self) for a certain amount of time. While the puppet is around, the monsters will attack the puppet, not you.",
-        "name": "Puppet",
+        "desc": "일정 시간동안 퍼펫(자신의 분신)을 소환해 낸다. 퍼펫이 있는 동안 몬스터들은 자신이 아닌 퍼펫을 공격하게 된다.",
+        "name": "퍼펫",
         "bookName": ""
       },
       "levelProperties": [
@@ -537,9 +535,7 @@
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADIElEQVR4nL2X61HjQBCE11UkQAoQAoQAIUAIOAQIAUKAECAECAFCwCHgEHx8gk/VGq18rvtxXQV6eHe6p3f2oaM2xa79H6y8SQG79/f3f4p2fHzcttvtwe3Pz893ilDAQH52dvbXzh8fH+P929tbu7q6ai8vL+3i4mJ8vxRns9kM1+fn53Z9fT2IOKrkEvCc9wmIIeRPclyoQjIev5+enrbPz89BtCJqDYyBkiihmPqb5FUs8YDkdahmAk5OToZAEGQWPVtpc3t72x4eHma/mfn3eHcTWBRAxyRPR2oAyL2mCGJI/Pr62i4vLxvD3HNpJgBUa81WWHxJah/Jd7ufGW3h1biLArIYJTVTCQmUQ0WfajVYrX6mu9O7N4xdB7JxZu4z2SuQdlhMxmRrxl73ke8VoJX39/cTqyGnkiVP4Aqg4iXvzaRFATnvnT53d3eTQNaEmQPHO2HmCFZYciw6AFEurTiAE7lMp+20x25IcggEghEBdC4dmQnILIUiuEIkOZDYe+xn6ilUEcIhnAmwYnsgEOQVZg4cd8hx0OLNxYrkqgujADJChESQZpERFMLv9XuSfQLyulmJXKwg17VRAB0hp+i48gwpJEn++Pg4jrtZ1HHPjBXhs8JmDpgtxeaighDVSo4g2vIOsTwTXOuTzJhm7hrSdaDaBrlESU7np6enoZ3kbK1OSUXrqtk6s+qWPRFAI4fAGshxTPIKa4f+iXrQqaenSQ041Vzrs3EtuMzeqYVbKYR7xSrCOLMh6JEnlqxPcskg//r6Gu7psw9HSQ5SMUHX6/UQTHIXFckrzBxRJlFdmAmwY4IgBmB4EAIoRt4nudMVl5zKCV3qnTEHAfU4Xvd2KhxicHNzMwQzQ67V5lxP6tJed8bZOlAXlR5xLlK2r1n7LpPrHVoXzwOK4k9iybSyZtP7tsi2vVqYCajH5sw4qxzkogPcyuuUrWeCxF4HzMAsJNbWnD1mWZHZLs2CFd9qPftqxnnyYTjcN3IHPQQUJct7+/00a4pgbqdVEvPejgna/n5idX9fguT8yyFY/X4wTsijw6GBD8F4+vkDJrW68Qnl1uUAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADyklEQVR4nL1X7XGrQAwUM2mAlIBLgBKgBFxCKAGXYEqwSzAlmBKghFCCKYEnHewh7o4470+UccCG065WHxwftLeZ/sYinGgC87P//i8vMU38F9vjb63ITjNIgIABz9Pk7eJhGOx5M0xUp9sRlqYphawdDWu6Pnq6nDND4sMFB4A40efaFsDYfHCufw8RHuKUqlNEj++Z6pL9rSTcGtgc0RB0KGRC1/DdJSvAYgJ+Y/BkEkLbPR4BDaCjCMkq9zy+cjrfO//auBwvp2j3u+vHIyBgGtxGR346BBxHTULAAXx9stRFZqLvuo7X71UKpsCVVh+1/Bo0SXNqaSm0hsHneenobo1lcvweEgA7rQQiBSByDTIxgzdZ5LqiKFpV4OjzKZzGoAIgAgCdEEQPggJ+z5aIJVpUPSKvfwD/kYA4yrKMytuTKiW1bjlicE0ujw1zKj4jCz5y3ik9HlI7AqG+b6uC+r63kSMtE4N3q+zIt7avfqZSWs4pOj3IggroijfOeW3ESggJ2JQs4ALcdIORW6LXKTjy584Pj4CO0iUh6RgZfCi2KrcTk49CouCWk+i/aAjOFLcTLAFUbNBqJtHw8V5Qdt3kRuQ67yWDX5lwdd+mKeZEaGRbAhKRkJjTDZTKPY9TzEWlos+d2soZnIaOqlVxHbkeVgLejY4CIqNIHHHRGRLNesGQeDJ4bsCvtwe1nPdxHCktS7tW243BqjVitHH1TgHkq+Zik3wbVVYSnww+reBJkpgn550JNJcLxXFCbVNR/pzpxg/Uy7CBwSfaWD9FPQVgkM2owGn45E2SBi/zlJp7Sx1HDfCUwTu+5ySCsYqIDsMq9NSEeQRapAA10G7XNLhrqB1JoVpi2lfPAd2SOwKYfDtwzj1MoteG6BOOvs9Z4n4hi7RFw6IG5gBI4NiNw0ZA9nRH4KjjkPQC/i3gVCxKKfD+tXRK0/p7BU8BC06rE/nUBe8a2ck5otfrZcG7+4ISPwC+N0Q+mcBWl44KHgEs1GakrJfzbhjpUp0tsNir1OCsVlnYdVIHOn26KMW8DYme81BE25nHK+2Aiw1Yzve3L6ObSaAj3o5i2dO7u2JrK/CsgVHmZWHPI78xTEfVKrjQpvVwP2BA5d2hfPrATfh+t+XEEJDdwju18COBxQoPGNHqOjGXD4pNT0XX3hNw2ksMNSMje1ZqhDadmsxRF0TyrhZ8NXMjVjsfkbZfnxto4aN9n2tNO8hbkXENBQwJeWfLFQcAy+9YqE3ulWvR4sy7fmQAl386BdH6wrgDVwt+6/g3Znc//wCx13OrEp0flgAAAABJRU5ErkJggg==",
       "elementalAttribute": "i",
-      "weapons": [
-        46
-      ],
+      "weapons": [46],
       "effect": [
         {
           "frames": [
@@ -826,8 +822,8 @@
       "soundPath": "Skill.img/3211003",
       "description": {
         "id": 3211003,
-        "desc": "Uses ice-based arrows to attack up to 6 monsters at once. Only works when equipped with a bow.",
-        "name": "Blizzard",
+        "desc": "냉기 속성의 화살로 6마리 이하의 적 다수를 공격한다. 석궁을 장비하고 있을 때만 사용이 가능하다.",
+        "name": "아이스 샷",
         "bookName": ""
       },
       "levelProperties": [
@@ -1138,9 +1134,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADeUlEQVR4nL2XjZGjMAyFxUwacEqAEqAEUkJSQraEpARSwlJCrgQoAZdgSggl5CSDjPwD2bubOe3Mxj/g9/nZFnAAP97wfyLjggR4d4OJrlQwufKEtVRf2P4pTlXxZggGsOJ1mUcXa61huo+zYJNDWZZeX1VVMAyD1859HGFf8xzgfqksxCEUpxvDGyx1f4Hu/g26iQeUECxMbRTUHsbtjPcvEAdIBA/ihBRDfCUhumvtIFiY2k5tD58iCQAtre0E+urpw2AMVEWBEE8LIYMh6NfCojjPXi4HR53vAWBU7QWG6Yl+rfuizHMPgvaEFXmMMNXtLE7GLHrsRhh0Tz9+ALAD/EIIeHptEmJ4PL3rVDPC2PcWgp2Qwa7Q8vWjXgHoOKVsckLXWSjLsrXtvLjzGFcI1UF+W25e9C2Q9sVlHFJWDbcuni1B4Nag8vv9nmHIHRXAAkHM+UH37a64A+Ddy7bJtOJDzGB6XBZQqeR1Bp0Y88dHcQdAmUxC2JtDyxdx+vVcWNolREEQ6GLRnnbFHYC9GS+SEMbgOWtLO1hKbHUBIljT4HVnDd1Ub2bKCIDTKi8DbZ4cSk+MHFfXyVoswcyyZ7w23A1Q9l6S2twDdAqkOOnmdW3bjRqCgRMuMF3YthysPQh3CmJx/8EUbjzTBGBYj9q+sf61nrAUhFsCmbe7b+Sorzj/EdQZrJ2hWNKFRFvqYSRzzkFexE6QAyRukwhGrppoYHUeYzCcsZ21aHs9DZ6qKbLey4R0DOWLB2cvF7c+Gpj2Bp8ABiO76botZ1KR3oR6XRKbF+yJqJMDSzAKnvVRutCZzfcM72Ek94F8thNQ0VbxwFS/iDxh/Fe6n7jgAaQ2DIPZvtEfmMRl3WZMM0PSrH0XXkkXHEB4PHinylyu8U+6QEGDkzAFi6ZcOJ6O8BpeaQdoE6ZeSCUYAeWTSlpuhU9FovxCoKO/PxBCletDbPeFZCt9blk+h3IzPVbHzf3xIwApzi5Imz3LVfrbIIZFKLMuxSZAauYOAmdIsyNRVyYGtHbSkyvbvmLue5m1LGPXgS0whpBCFCTOEFxmYfKHZp4FEH8MwBAsyBBcdvVx6cvVarksC4CMvtW2Ps32goXpV4qyMFCdfrm8QFAZv4qolrEDFoK+2f4qRMK7YdJ+6PidQPaxOP2TS5AtH4z/FPef9bnP899/pbk9XLaA3wAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACw0lEQVR4nL2XYZXCMBCEk/dqAAsgASSABJAAEkACFkACFkACSAALSOjd5DF50+2mKX/YH3dpku5+O9mkoQlda8NvLLKhAO39fv9J9MVi0RKCACn4fD7vTX48HuF2u6X2crnszMHYv7Pgvft6vcL7/Q6TySRMp9PO2OVyCZvNJkE0NjiceiCHwyEcj8fUtuMKwcDog3mqrtfrDGFrIBEDgoHwXINAHyEY+HQ6hd1uF2rWAwA9APDf2vP5DLPZLEOoEYJjCM7smRCSoV8uSw/AZot1p+ElhcAYgqBG0GYfa4ZqWMM7WKpBAIVQsxA6b7/fp2wJ4/nTWukAsHjUbKAYY08BZgvnkHi73aZnLWrM0eBqjScVCqiULdpt2yYYzZLzYISoBc8ArF441Kq3EASjfKV5VKAWPAMoBIJwskrO4PivKrDfg60F7wBgkiqBAOfzuRjMqmBhsQw8kEYpAIdUAMa9a4PBUUkF7cNScjcMQWQAFhqoeebzhbEq2D7ukCGIvAtY0faDUwrmqYDzXfs+531+x4PICqBgaDoJawk5ayro7lFY1IWeL5in441OohJ6iHgq8BPrZWz7rtdrmm9Vpe8EYE9AvQPAcMR6wSwY5Ga/Vx+e5SXQOgAAlwRyl3YETMFgzNqqULpndD5Gtg4ABXV4onnyrlar/IylVBujQgeA32/9bhMMY+yjYwTXZ8DxMLIq4H1PhYYB7fagUz1O4UAdw+Cc5z/HPBW4BV0FkJklY7YaHH2e5FwKzkcwJmVh8Y5eUgcvJKXj05Ncs2MbIKX6GAWgwXmLYVYMZCUfA6swRQAvc0iHpdDbr7a5VGwroN4V1AYVKIERQgMxWyrFtgb2IL4GYFCYZqt7HkrxmZcU21aAiN9qtZtLCQSB4FiDKoQdY/vzlYxUIEHo+f6N2Y+WPntjDI4/ugTx84PxF5Z/nv8BpePYx9joMz8AAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADd0lEQVR4nL2XjZGjMAyFzUwaICUkJZgSoISkhKSEUEJSwm4JbAmkBCgBSggl+CRhGfkHkrubWc3s4j/8Pj9kE3bKD6N+JzIuSADTdkM0MleTK09QS/WF7e+iKo6GIRiAxEt9iAb3fa90ZcvtpLTWXl9RFKrrOq+d+zjCvnvTqfpcEMQuFCfB4AaMbCrUq+oAIu6XECyMbRjYHsbtBPdbiJ1KBE8SCu1XIEwJgBaChantqd5GEkBfFT5Y1Te9194OL7U/7pWxEDIYAq8YKM6rl4+DozxsANAEI0x2BqFGKcqxCW/KCSJzEFbkDP0NjK/heoe/ep6D3QgD73mObwAkhE8uIGyfGzd8w3K/CcLUifmsK/j4nmO/AOB28m2at5UTOlihLKO2yrahO/osYAsYx7ytvSJQ7YvL2KWsMuUQr5YhsGwMwUh33DiCsGdHX22KOwDOXk6gVcv1LPgcJ2lUPK6CBdyPb8UdAJ5kOMhlMd5cBJZbcbx6LuguDfEYQPy4Ke4AMHCQgwByYy5wZt58sXI5qhcXZhs82BOMax7gxHI+bDqAwceqewyYPPnNF8Pm+wSAQwyWB/lxxcfwTYvZgnC7wBPHvazBgWaERAvE6pQLKm7DsFtRnpSruyASVydvYCiGNntgUDeXoO0G9cfRzZF6cblH4M5tSD7Tgf0aAX7AhRPZ6U18+dSFPPkykmeO24aeE+TAz5wHCv+GYGLoukAuqHjFtGrZlr9UX46R9d5JiNtQ/vDg08tFCxmdhxMPbtUMhnab2yuC3Yp0EtbLI6E2cuIeTDyroyCDEQTC3V8+7Be4oPr1XcAh39/y3T4D7eOJsV4vdTwHBNtHLngAqYRhMOp7+hOjuKzjIeROwq8Atkm74ADC7cGZKs9ynEBOTP0wOQpjcF/KhewM97SvtAOYhKkfpBKMfiv2B5VdY8tJ+GohYKUo5sphfrRQFi+9zR8k0ckVrMqzvFlWx2VadZgfKQfWQoq7R9AsNsuyF4lDaYEFF7rl+2cVILVlPAi2GZ5rVu1n0TJ3iYo2o90oSOO6pSxj04E1MIJojSc0L3eu09WWSbgQEIUP8dcADOEElRBVos7HvVaL5bIsADL8Vlv7NNsMFi4DUStGdS3Koh2+irCWsQMEgd9s/xQ/S/EGCo9RkIxxH4vjP/kIMvvB+F9Rf9bnEuEPzQ6Q6PnuiLIAAAAASUVORK5CYII=",
-      "weapons": [
-        46
-      ],
+      "weapons": [46],
       "effect": [
         {
           "frames": [
@@ -1427,8 +1421,8 @@
       "soundPath": "Skill.img/3211004",
       "description": {
         "id": 3211004,
-        "desc": "Attacks up to 6 monsters simultaneously by shooting multiple arrows.  Only works with a crossbow equipped.",
-        "name": "Arrow Eruption",
+        "desc": "땅 속으로 화살을 쏘아 뚫고 올라온 화살이 적을 공격한다. 6마리 이상은 공격할 수 없으며, 석궁을 장비하고 있을 때만 사용이 가능하다.",
+        "name": "에로우 이럽션",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1682,9 +1676,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADaklEQVR4nL2X4XWrMAyFlXO6AB2BjuCMACMkI5ARyAjJCGSEMAIeAUYIIzxG4Pkay5GNSXL6ozptA47RdyVLSvNFoc30N7bjCylg7vrHamdGk33d7/fUNQVN40Tmh5TK7Lq8x/Vg75fXvv9n94zjGPg0vmYWwQIsvFB5sHEYBguGxXBcW+cfwvM89/d933sRX+/g3d2Ah8nDZdSwFPzxmGky14AxmA33WO+6jsqynOMaCOHNAmdYni0R45evGd4OS6QMl1FnmTsuty5tJYDhl0o9U15kXoi8hgiGI+UASQiDJTyuh0CATPug03ASQcTwFFhaDA8ExGcOi4HkUs4RxXCspeBx6uW9FYBWk2eOyIpD7oFx5XPkOG9pW3AZeSzGCpBnbuFFCLcPumuOPIZvRcjwVAF6AV6pyYWFR0BExtfjhqMYLqP2s8S03qYA70AMGHbmnYo+T0XLBjjWTZ/7tRTcC3CTiWpz7shCDM1tBtYgGa0UIsEpuGxXK8Ak2YuAQQjD+bXVPFy2z5PBB9M9vJ+BKeFeAEwpZUXAWIi0wn34aNMlp+NP8F5zf9D397eL1syQ1gCK0YqATzmOXw4iiICxkOvZpdIJbg28v1c0ZeagpqdTCOKoy1L79XkOayU+qpUAKQSDyZsJHs4fXU15cSGty2D41NXBOdY+I6/m/1sBgN+uR8NdnNz0GMBzUsH+JTozP1wGkRGIYHs1C5IfRq2FmwfMn6q+003UhITDIcOlQQhE1JcuCZZdkszAQl/gKMhU9FtwLviqbmwNwUcMlwW9+jTUtyMdqvAhu/kNnMGZqpIxcdQMX2UA8KE9UWHgXIQQE1sMj8FlGT7T6gWMzjqfwgEVCICpQ+Phw+0UQPNMJeEAL9ClA6ri2Z6T61/UAo4j8+tEl6azxxsMIpkJ7M6isRzDj2dtwTw3YOgepuD56mKK+OzWMvKFqcdEBmJDRui6t1AMM4afrtqnlcXL7mHYQRQgi+FA9TisBcDJaKK3YHqOZ6SqqQsPl2B+DvWSuX+gZBFDFMByv7SgCAHPXR2kjOFb75OD+4ygo+r7y/1BBlJwmYUUXHZPHCWLeWWrIkwZi9iCqw3hnxgE7Mr9T/Lb0ScO1Ysj27JrO9D5aMf7jjNgRVzuPf3GuKI/NYbjj6yBnXnjz7+e/wdWLgwzeuSYWQAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8klEQVR4nL2XUZHqQBBFQxUGQAJIAAkgASSABJAAEkACSAAJIAEkgIS8vak98246k7C1H9tVIZNJ0ud2z0xP6Bd1K4u/sR4NF1DebrfWN6bTaaH7z+ezOmazWdXv1zrf7/d0xp+ug68SEQio4JPJpPagnAgsi3Cc/hQ+Go3Ste4hov8J/ng8kmOH0gZ+vV6L9/tdPat31FY/YEzX6r9cLsV8Pi/jHKjBJQy4v4xj2npGAmTAPerBYFCd6XdrCJBDwXe7XQIsFoskxNsCqH0+nyuxAjkEsMPjfKgJ8LTLaQ7ugAjPgWNwrRmIYy6LQMaVdoSrLwePqffrJMDHXMdqtUrAOPOJXGLd2uAeeRTTB86YyzmR52Y+kUd4W4SesZylDAAUPAIVGe3cOObg/hy1REuvVUBUDDA6ZZ3nonUf6v9a56kvB08CvitTsdlsGinzNd8VrQtxcA7uyzVlABEyCYnZ0LjLJKZtPAFrGHkeYE54TYBKMfUbIW5sPqp46/W6du9wOBTD4bBqv16v4ng8Vm2WqZfjzkLEfkA53e/3NcWC49AdSRBRI0RWlv93dyZwdhlGiwClkKXHEHjx0ZC5Y2Wkq/5/FCC4oseJUurwXGXzbwRlRCLcX5uYhgCqHKaKyJhGJ4iJ4yohEsFkjmBfJQ0BRK2zxpX9Ic7+NjjvS7iyqHOE+4SuCWC5CRy3Vk99Du7Cc0bUwBsZ4KNCD2g1+EeGW4QDJEOxCDGcWj3b7bbhr5aBNnhb5ILrcCgp9+xpLjCp6dckHY/H9UJEJnTkvmYifLlcpugwJmycC5h2XTiNDERDVNwPqISAyZrS7eufbLgY99kQwKcXD1GetRJY14KzG1JiGTJSzJaua2UEIfHLuybA4fFTGhM81vZogpMRwblusyRAauU4OtfLilgTpu3/gw5NYHxEMV2WBHRFpXtdcPXHe5/ALqCnv0k5wE8c5uCfTJP1ewX1yEAl4nQ6Fb+xT9+J0YDrx1dB7+vGn/89/wcWMDzhPm7n9AAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADaklEQVR4nL2X3ZGrMAyFzcw2QEpgS4ASSAlsCWwJSQlJCUkJmxKgBFNCKGFdAtdHtoxsnJ+5D6uZBDDC35EsmeRDxbaov7GCT6SAZdD3jWepDB2bprEOSs2z+7Stuy+vcRwnf7SfQf96nzma0861sAgWQPC2riLHaZoI7By2MBbwDryqqnCttQ4iPl7BF20fmla4jBqWg+v7oowxBGMwG64xPgyD2u/3S1oDMXxY4e7hFS7PAb+OzofhMuqyLOnI49I2Ahg+HETKu1WIPMf8DEfKAZIQBkt4Wg+RAJn28ZaHKxFECs+BpaXwSEC65rAUiPNQB2YLR5Q5eJp6eU0C0GpyzRFZ36/AtPI5cqy3tEdwGXkqhgTINSd4F8MpYn/OkafwRxEyPFeAQQA54v7s4QmwKtfzzDJm4TJq3kvQeg8FrIqFACPEqbjPU2A8x0zjts/DWA4eBPidSV2w7qLIGMo9n5qMVgqR4BxctisJsLUbRMBIiIqzcfYbDTbMR+vJ4EO7+jMwJzwIoInrmkTAWIi0vnbHqy3S89cuunf4+VW7nRtb7OqMRzcOEZhTbsdPNyKIgLGQ29EJYb2o/kVbn9qqmOrw3NEK4qiLYp1vWeJaSZdqI0AKwcakSkcvfTTL3VIqrGeBvPLM6nSqleE28hl5tv+/FAD4eG4IjK/jLYHPbeQP+GxBXeegWCKIYHu2F2RfRtO1CQHWvV2Om6gJCbcTMlwahEBEd9JZsOySbAa4ZqvedUYUvWqfwkv/dHe4UA21h7gFAZcFvXkbGhstwFsTqc/AGWyqUy6mEHVfx+PR21CNNvWdDkVobtt2TOEpuNl/Re7n0YHRWVffVfINGy9Bu8KjdQcM0WfgADuoA5868Zj/Qi1wS/sHVW/HrnZ5o41IZgJOXAuAlpXawD+/ZwLzvkHP2wIG1DiOai0IHeW5oTDHOZeBVaADt3BuCFrRy8n/RP82FBqDOWvztQkTYI5a1BK6qj3oEOjof/VsirCcGg9et2d0gr6oAJdgfo7qBWCjoiJGRgCW/tKiIiR4rbOOEv7oPqIuex1lpO4f+28ykINHWcjAZfekUVYv4JGAZ44sIgcvR7dkOeHvGAQU++Yz++/onQlz8Fd2vk32DUoFW3AGSMTpR6v/Ma7od43h+JI1UNgbf/73/B+igLZ6W9AXNwAAAABJRU5ErkJggg==",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "hit": [
         {
@@ -1804,8 +1796,8 @@
       "soundPath": "Skill.img/3211005",
       "description": {
         "id": 3211005,
-        "desc": "Summons a golden eagle. The eagle will be hovering around you, attacking monsters nearby.\\nRequired Skill : #cAt least Level 5 on Puppet#",
-        "name": "Golden Eagle",
+        "desc": "금빛의 독수리를 소환한다. 독수리는 일정 시간동안 자신의 주변을 돌아다니면서 근처의 몬스터를 공격한다.",
+        "name": "골든 이글",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2119,9 +2111,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADyElEQVR4nL1X4bmrIAxNv+8u4Aq+EegIOoKOoCPgCDKCjlBH0BHKCI8VGOG+BIhSUW/7ftz8KBQh5yQ5IH7Bq33D79iNOzGB7/n591fQy/ufbybBBBx4IfIfF2utkzEhxEcE+scTuvruSHx9Ct4uNhkfQCckrojKCttA4gtOjB3wIgYXIkvm0nhM4hOihwRiB7SIQfoihzzPQGkDQ7E5akGvJHiu7sqUaD8nJBICDM4OaBEZg5NJLFe7aEdibWEjTWsfAaR6PuF2u4Eg8CK7zkAMLqWEoiigLD2RfTyF7GGyBgrsT5MBg1mxxoKZlAM3Fss1DJfgCQGaQCmiqBWSUEq5xRy9MT5C7k8IwlmY+8q1WhRQ49o+z0G3Lczz7II4Sv9hCWISe+MSEHi3GCdIAnWlWjbVE+mONRAySFl9WwNklDLv2AIGiuM2EMzcf7YXHexI7O09DUxB/VXm+pIWYeTamDDHgiLFh+etRfBKrGTKRcGiuhcQIWc3/1IDHtyAVrWPHB7hCUYcejnW1Tgi1o1Ta2E7F6ZpApFl0CDQqn75OAVfCRAEg+/VX6vDdXDncdoNYNzZMFcFZkpD1vcReH55VDsCFAVNpKgVknDqlz4DjSAHqGht1nakg4jmI+kcxybKDrYLlylWP/ocdqCHIvTq31LPAN74CE6P13isqircvsrrhdWPAW3l9BYTOjgH9r59vTkD7r+Nn+N7pSrWJTlF12yAeqxXXbG1FrPS5CkBJuEWhu3Y1j6S/jE7vKMcvFg0gcCTI7nx4EtI7vnLaDTOwV6UbPeReyRC2poGtyzuElyrR6/Q5EgO4BTkYvQ5AVeKBl5EybclKsWEZwE5IpI5aqPCEox2CS1uucZHXWMAyZFMomw2rNP7wBrf8NiV5fU+QBkvxyVZ5wgiWDeG+rMoxzqQONFA4kRpBNmOWLo50X8azzDlc1M4AtxaLMUghXvuslkNh35/1oCKrlR2190pkcBjo7V6ahO/RIbIXWqAwdkBRyAKvjPa0DeQ3vqCD1ybqD8Cjy19GQXwWP16SkFEI1H1Au5t51q1XKj/BDwh4NQvSf0DKr/1RzJnANVeUOQh/SPuBKd6k62tqHyWagwgVf/gfL93IQkkyIg5mdeEV47BnTBLX3dqS4Xi02abawe8sAQNsPqR1BGJ83NAbn1PBB13pHz/TijVVhdL94N+S/HQ09wD9f+kgT2JhFTvSSSO+1fHPPcnn0zgRt9q73wdfeL46g6gJk1fRdS9cQYcCfpm+x/jPf2uMTj9xCW4hQ/G37D18/wf89F2ohgESC0AAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8ElEQVR4nL2XYbHqMBCF2xkMYAELIAEkgASQABJAAkgACSABLGABCbz7Ze7XWdK08O4Pzgw3uU12z9nNJmkH1Sue1XdQ24kCntfr9Svsk8nkqQgFJPLxePzW+H6/V4/H4+XZJ3YRx+OxWiwWScTgf8hvt1v6lZDbl+Y5Zz6fNyIGVQd0oJHkJaH5XLJUEjAcDqvRaPTyrCigFKnkOICgFDEELA/91WrV8rvf75NdtG0JkFwHGBmd6mkVFLNyuVxSi+16vU797XZb1XVdJG8JIDKcbDab5GA6nVaz2ayUpOSY+dr5OxwOyZb+crlsyPGVp78lgAkUCEDEbrdLRCqPa23K7WNHiw9s+R8x5/M5BYEfRPRmIBeRIy9IHCqK1u0JGSLA6XRqAuJ59FMUoEOcA9fV5zGNEDKPObZCsoi3GYBEJzqMlQ/cYpFQsWbE6KOYEvmLAAxJF+sOrOIIhZjq/EQ03dha/fRZ0lIBNgIoJgoG8rz6FZQjf042IEIg9p+QNwKIxMLDsUJA3AG2Vj0Rx/SbkVj9BhizVSzCfH0k6BoXOIZAEWQCO227MtgSEElUHFXHEy+vAbOgDw4g4dLmop3T2oZxr4OfGyu1Hsl54fXBUxFYlBDzc1d1XkYY66B0JDMGTH+sEcfyI1ly5vUKMI1Ea1H6tmQRMg4Rcy1gW9OLXX4kK0x0vg8IbzHJQV4DsVh9DgmtY7aIcfytACYRRVx3txvP6btbjJRdEO+C0r3i0nQKINJ32yciJ4E8z4rzIO+tAcl1oPO41WK/BGzz6o/kEa3LCPWkMVZ/KRoKjXHefjyAuqqf8RJ5SwATXD+rPx610QEEROUx7tUMStWPTwr67UtpFGEKAf9bjDhxq7kdyRJzORfISl79ZIjnvmF1Cogi4mu0oqwJ0y1JdBwDiMjJOwUooi8zfY5jAGat9E2ggJpvtU++jhhnHeMNSL9k1+eLjP3eMbUZSCL4XPoL3NOfQnL+xCWofz8Yv4Hm8/wfgiCVL+ICbh8AAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD4klEQVR4nL1Xf7WzMAwN5zwDRcKQUCQwCUzCkAAShgSQMCQMCSABJKwS+JL0xwplbO/74+UcVuia3Jv0tpQfWNsCf2ORvfEJLI9h+hP0c5osloQlwOCZPH10Hscx6JNS/orA7T5AdUmZxM9vwdM5BBtgDEgcES1zbA2JH3hjNoB1suB7yaajXJH4DdFdAhxglM7JgtylAikEXBT2ewVL6erlaiwU0TYspM0SkAgIOHATgJzIGPwk9D026axJuDbTJNjQ92niiWWBKMJYBC4/VMAHL8sSsiyD81kTuWyInpo7dEikxPsOE1eKAuDVXhi8J/DHA84H4AEBGkAloqxrJFHXNTvb7MdZ6XHmvsbpsFWYTDvKBWL0veM4dT7Dg0hgEnvl350CR+L22pMoO4I+mSnoRwXFLEBmGpSnavaCoO+lMhpAEmxIimJ+pQGyITOC6k+m32QvhccKKyBJdMBtMpp+JvGErVHMzxowgEM2830jNaglQG0xvv5PQMBkYlIb9z2oaqMYJEPjDzXgwKtYZ+4yUK59ERGwZ13XQU544Kn/ANwREBg87RC8jj31ayIF7Ftqad1wNeD8F3g9T1r9o1V/eQzuCCikMORYUlxANZJg9Ze6Ajf5yty21WjGI2mRCagoCQTv5k6TcuqPOabdoKztitCp32whFuD1/37Z3Qzh33meQ1F30NKzVX8du5jWfEK7+4Af3ManpZdJoZ9fsmCbspeLkDmoqwfYxkzCt1RhVa5zSMCSINPLETebSwI4IVA2kwfqM1hXRvnM2iTckq8Tg/fzTgWs8YpoBQd4iVITcVm0BlCgCBGPliYtWbsdkwVbMoMrTrKfx/cEeCquSEJNKMiERXmfdC49Um97FGGJK6dGkijCHK9CKNfCrKsVd8lmS0445lC+0cCeXZtBH1YU6WAOBygCUqtnMiYIE1yQBJsVJT5TP/3/kYDLUhlgSphPTjP3i1zAEy8iYFuFl/Mjy6fduJ81UO0sO+Vp0EuawP0x7NsnoX+Gmd8+aMCB2wDoRFhZ5u0JeJ9jFfo3WzL5Bur3wH0LX0aVDuCrv0Mpd1uQskGBzRBVCs8LeEyjd0StN+5A/dmwCx4QYPXfkEQxoPJTvSWjM5Ugz9WqCnQeyLn0yrV8YhX0Rkw36k855tB8eyBpNAmy4ab704JAtHI6IWG56vIvCB61CN7O6GfHDlgR87qy6h/3SbzfB5r1sVyTQtCrrgKDWjPg67FDENcfc0jAB96SSotwL9gG9hM4imkJRPSt9s3X0W8CH50BajxG41cR3Ua2AkyCvtn+x+ya/tYsOP34UxCZD8a/MPfZ9A+E3FTns6R93QAAAABJRU5ErkJggg==",
-      "weapons": [
-        46
-      ],
+      "weapons": [46],
       "ball": [
         {
           "frames": [
@@ -2323,8 +2313,8 @@
       "soundPath": "Skill.img/3211006",
       "description": {
         "id": 3211006,
-        "desc": "Fires 4 arrows at an enemy.",
-        "name": "Strafe",
+        "desc": "한 명의 적에게 4발의 화살을 쏘아 공격한다.",
+        "name": "스트레이프",
         "bookName": ""
       },
       "levelProperties": [
@@ -2517,6 +2507,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Sniper's Scope"
+    "bookName": "저격수의 길"
   }
 }
