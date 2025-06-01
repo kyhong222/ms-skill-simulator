@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/4000000",
       "description": {
         "id": 4000000,
-        "desc": "Increases accuracy and avoidability.",
-        "name": "Nimble Body",
+        "desc": "명중률과 회피율을 증가시켜 준다.",
+        "name": "님블 바디",
         "bookName": ""
       },
       "levelProperties": [
@@ -132,8 +132,8 @@
       "soundPath": "Skill.img/4000001",
       "description": {
         "id": 4000001,
-        "desc": "Increases the range of attack using throwing weapons such as throwing stars & knives.\\nRequired Skill : #cAt least Level 3 on Nimble Body#",
-        "name": "Keen Eyes",
+        "desc": "수리검, 표창 등 투척 무기의 사정 거리를 증가시켜 준다.",
+        "name": "킨 아이즈",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -184,8 +184,8 @@
       "soundPath": "Skill.img/4001002",
       "description": {
         "id": 4001002,
-        "desc": "Temporarily decreases the weapon def. and attacking abilities of the affected, even stunting the ongoing attacks. Can't use this skill on a monster that's already in \"disorder.\"",
-        "name": "Disorder",
+        "desc": "일정 시간동안 적의 물리 방어력, 공격력이 낮아지며 자신을 공격하지 않는 상태가 된다. 다만 같은 적에게 중복해서 사용할 수 없다.",
+        "name": "디스오더",
         "bookName": ""
       },
       "levelProperties": [
@@ -336,9 +336,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC2UlEQVR4nL1X0ZWCMBCM79kALWAJUAKWgCVgCVAClGBKkBK0BChBWqAEL7PJYiAJnHc+5+PMbRJ2dmc3hL2Y4ym+gx0PbALPW/f4ivdjengyCSZAzrMk/gqB+tqJ6pQSif23nQNlnghhSOy3Fvd979iSJPkYmVUCcJ6mqWPvuu5jJIhAJEZvpHB+Vc589s5jfwdZbBHwRUmL8kLIRnrtoT3vggg8HvP2OxwO4nK70XgcRz+5LBHV+ezsfQfws1oDIeefxD7oCLYVArznvySJQCsbZ6K/31V1qvIchhAFEdrLQKf4itshEMfuIRQp55GyD94IYYtEaK9NYCtDRCDLspnx0WXikB5FfbmIeNnv5oFVVal1N7GF5bPnaDSBO9JtFvP4UpfirKq8KPJpeRwnYhh6IWVL87zWdra0bc2vdgGRqLTGIIKo2b6FwaqdNZkcCXgMCcjZ9TrpWNdajrMh4pNAR9lTtub2ZPZ8jYUEDERdliXp3zspHY0sEZH0ZYOjZ8m0D38xOhKwc0R9Pp2msQ3UAEigSFEnv5EkhJkEFJFJeaMeTFEsW4nGLZGAJExiKQdkoP0qC5x+F5YEiBzOkXIp5VSAgzpImADIcEr1fKUyUVA2QB4ksHcJKfUerF3tAu3o70crR/3O/CSBffggtVzpSwl0dbeUHayFJGjPS13TvI7SdQQZtD2yJFl0wevw0WmFzrYEGqNxlFvOy1m1h7qA7XZHOF1gHz42oC2Ivf5vKRPcAThs4GAIvLxepOaHkpYgL2bGh/kfF4ZYyUMZUAQw5i4IXUSWRRYn7iE3oWrE5q34XYTeB6GXUvhCwrAvJup36yISev+H1q9eSoG2fUVjV/cnL6X4Rnt2get3URbE/t5KkZvKx9hev3brCX0/mAB2XAM7ZXjim23aGI3m4cOUPnuM33bl3Z8bze+eplCfZOQTf+wi3JkPxl/heDyuzsumWZuePs9/ADrxwngRm/9nAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACV0lEQVR4nL1XAZHCMBBsZzCABZAAEkACSAAJIAEkgASQABJAAlhAAs9m2Pw2vUvLwHRn+h/SJLuXu2suvaKKZ9ENSjZUwPNyuXTCPh6PnxRBAYF8NBp1IuBwOBTz+TyI6HVNDsxmsyii1zT4er3W+n4pNisA5C9/1fp/uWNRgGUpyE+nk9n/bcAOBoN/AZaVAHy13+/Nfm/OpwgCbrdbpXM4HIYgAR6PhzlxMpkUy+WyNvcTgCcbAx75L9HziNDXRsC3IoMAy88Iyn6/X9zv9yyxNZdApljBXRPAiFSAnI8F9ltzVUDTDgUBCCgFUgxRvtlsXIL1et0qFdO1TQHn8zkOZhvkIFksFnEwxMAl2Ha851glS/ua3mezgCIACGEb/U3Q2Mm5qeYCtvmh2e120Y8kphDLBbQyJeW6qUsqLiBAsFqtwiJWFNMtjJMUtJ4uszgqAixyWI0vHdsKxABE0EVtXOKh4gJYxC3fbrfRCiuVGIgUkbqDFmN+LhOiC7AIyLHlXBx92EIK0C3VLMHDE9L6MLEP47JZ8O1nNZeC3vvoAv34aPqlLmB0q++1bVlJDv3eVARYHx882Dp1gYKZQHKNdi8LrIyoZYFar2Dk62+OVzLv8FJRiiAAFY6Cv1Ew6IGidaBXiKTbr3PSbIChjVXxp/DOAy8V3YKE0MJEx3lzvPPfG58tSgG1Rhf/ZVGKO5p5LwQJAg/qj8djjA20dXyu6vHuD28DSsZAiQsjK2GAFQ8W5/ZpG/+bzn7AyorXlSxw4o8GYfm+MLbCdDrNvudZ4iBez/8AoT2r+wdN6+8AAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC90lEQVR4nL1Xi5GCMBCNMzbAlYAlQAlQApaAJUAJUIKUACWYEqAEKeEowcvbEAzkg845vpm7iZss+/ZLOLI1Huw7OKiFTuBx6+9fsZ7Gp4cioQiQ8SQKv0KgantWnmMicfy2caDIIsZmEse9w8MwGLIoij5GxksAxuM4NuR933+MBBEI2GT1FMZbS2HG8YlI/AdJqBGweUmH8oI1TWOVu3TeBRG439denk4nVt2kh9M0WRWRgvpyNnTfAex4a8Bl/JM4Og1B5iMw7/2XJBHgTWlsjANnVJ7T6CAg5TZdhShKRHHzfQJRaA6hIAjobxwDu/FAym26TwJib/IPOEkgSVbC3z5hP/GZVdcrC7cGEPIgYmVZinMt28P22Ws0ksDA+XJYrW9VztLLheV5thwPw0hEZBCt2dG+Oqsb28r29r1dQCRKOQdABF4r+R748Kwd33vGSIFaIwXAtW2XSq8qOX7TmYgtBdDnfFiNamgnSbR6vsQmBQrwuqgqyr8xokUBUlqCkEjaojHM3oOE0g+YvV2NFCjj8PpyPi9rHagBkECRok5eSYkLqxTAIxXyeg4zorAiMKH9OiKBlCgSejpE+1MaaC2ioMJvQksBPIdxhKyp66UAx3FcCIAMugCQ+yXLi4KiAfIgUdfmy0uloShyfxeQIdfkewHKa9/+dqwtKdCHD0KbOlKAWYAUIDo4i8FU1h1rq4L24aWNCNIA+SQoPFOy6YJl+MxhRZ71FBDmCFEnwLggCj2uVburC5Rc7wijC2Rua8MD1AWILb8FOURCdQCGDYaPPoB0KPl2KBGBMCtWwvv8GxeGACVNEai1dWe9iCAoXCsynAyTp8Fk+14oG7Z7K34XCU1CbpXb4L6QKOgXE23t0rFdbn3nvZdSQPdGf/gnL6X4RnvYrtkwkuc5sedNzbJMVj7W+nmX14Dr+2F24KBq4CAED3yzLYqBDFk3PNsQaz0FnWfwZHOvc0tTiE8ysol/ehEe5g/Gl5CmqXe/qb3by+f5H+VKvUCpU9vdAAAAAElFTkSuQmCC",
-      "actions": [
-        "darksight"
-      ],
+      "actions": ["darksight"],
       "weapons": [],
       "effect": [
         {
@@ -422,8 +420,8 @@
       "soundPath": "Skill.img/4001003",
       "description": {
         "id": 4001003,
-        "desc": "Use MP to hide behind the shadows. Can't be attacked, and can't attack either.\\nRequired Skill : #cAt least Level 3 on Disorder#",
-        "name": "Dark Sight",
+        "desc": "MP를 소비하여 그림자 속에 몸을 숨긴다. 적의 공격을 받지 않으며 공격할 수도 없다.",
+        "name": "다크 사이트",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -577,13 +575,8 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwElEQVR4nL2XgbGCMAyGw50L4Ag6AoyAI8AIOIKOICPICDgCjAAj6AgyAq9/S7DUtqDvzty9h1Xa70+aBLqhuQ30Gwv4gy5gqNv7T+iHeD+wCBYg4Um0+2ihrusoiiLn2GWXqqVzFksRm//AfWOfnVIhchSxoS8MsDiOqW1b69g1xxadjwUwzDV2zXHZm4ClUAJWCU+y8T5zbFuvKG90ytN1AhAmn1eAhVEoVn7BXcZwn1m3ACKwnzaAhEcvMbpxHrATgFfXC2XH82cCbCIkWP6gLnWeyGvf9W9zGZ6m9rCvEvAmgpSIcNTRj0LEN3QoGxqGgYJANTjAk2S5HywK4FyYIqCtCSG9cB7wun6VH8PDcEepuCL8SEBXg3IK0OHSYxFqeMueIwkBv1b1bN5az70C9Crg8polnAbfiVAAivBfq0r+zN6ba7Lp0XD2Ab2rzUrS4TmbDkf4b2Uh/3hNcyusfcClHKbD2XsXPO0aSscmZYNbBbjAPjjCX4lE1OG5CBUK1Ad3CtBzAJO5FFfDIyUeSYvy1RvU6gjA7vcr7fdKiAue5qfpUS5LLlFwlCjKdkmEtxUDrjcYGxz3Hs8qyeC5BHcK3pevLokqsolYbMUAqUgc6Pl8TvAoSac8CYWwvh9h3atnyKgYuWS+Nyw2oovo+fv9kdo6p+12q8QJOIAQiUy/RYkUUXZqDGiltU3fi4o3CQF/PB5ij0OKDyVVl4SyczPB0WLjuCC0H4hgj21PUnPvm0dnF2DCHwLWiJBivzOx1ywCj1nd2HPeYxaxZDMBDMeeF8digushzMaEM82s97UirFvQi/AkyU56qi96yml6teKXDhucjUWsFmCqNhd1dTNfp9OFLgowVa85ZPjg+pqrBawFf3OvS0CAs9o3p6Nv4cWtw6kIHwOOgBSBM9svjOH4p29BMB4Yf2HT8fwPH1fa6znCuBUAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPklEQVR4nL1XbZUCMQzsvocBkIAFkAASQAJIAAtIAAkgAQtgAQkgYe+md7Mv5JK0y/GYH+x2SzuTj6btID2jTZ9BwxcpoL1cLh9hn06nLUVQQCafTCa9Jrper09jdNvD8XhMy+Uyixj8hzxqR1gsFp2IQXoBIPt2Y2LIdNsbYxnZWwDJvLY3xsMfASVXgmyz2aTdbme2rfkOh0NarVZ1AuCmyCqQaTEeSB7BDAFEIJ4lAt3HPKARIN/v92m9XvcTUCOixnJkewlhEloihsNhfj4ej+5/iH/btqlpfgocyGezWapBKIC5YFkLIRAB8vP53H0nOfrxhPuRgF6dcQV45NpyFBSJWstDAXIVcHlpISSnpXA/xfCbnpOQ3nDrgKxqeklalhOSHO5HSLgUrZJv1gFPuSbXlmpytFmkvP0mzAENjxzuRyJqco6JNrtiDmAwl2JfcgAekAWq2gMAJqYQj1wuMZCPx+P8LldLJKJYimWB8ci3223XL4klPBHFUkwXz+fzdL/fO3IIYZ5ExHqX1OeGYiGClSDHpjIajXIfyEEIkSSXT5DKuhEdVMIkBPntdstEiC+XFMnRz2pJDzDrdRXVsce8pgBNjonxDW1ahic8IkHLGWOKKOFJAMkRc1qKb9KF3slHr/daEWYI6HY9KbzAoxUPHRY5QRHVArRqPalXzaJKJ4UWBWjVNXeFmjtF1O8Wolr0vdBYAhrc1V65Hb1KfjqdcCvCa0MPZBHeHv9ukBw/MgTN74XxE+iu519WxMyA2gXoKwAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwElEQVR4nL2XgXGrMAyGxV0XgBFgBBiBjBBG8BshjEBGKCPQEcIIMEIYIYzgZ9nIEdQ2JL2LemniA/z9kiUZf8HaJHzGIvrBBcjbcP8I/VRkkkSQAA0v8/SlicZxhDzPvWOfNd0AdVVoEV9/gYfGIbuclchFxBe8YQgrigKGYXCOfc+4ovOyAIL5xr5nfPZLwF4oEfZQ34ln7JqvbntoRHlMAIYp5BXCYpyrf8J9RvCQOZcAReB6ugAaLoyA7TXKA3IC4d33Bap/19cEcBHJIiKmCArzJZfx7HCQ4OJ8hj0LJuFKRL+IoGpdhMTqE6lrUkqIItPgEF4e6Ae7AigXbAQEu4hCJgPvbs8OSvA0TaEsUx1+TEBfg/IK4HA0DDV6a0W0Bt5831bPHfU8KIBXAZXXKuEYHD09K08x/CSGvN/OScaj4e0DvKutStLjORmHY/j7toaiBTvndimcfcCnHI3DyXsfvFNwtMQDdwrwgUNwDD8mIoffphrmHbhXAM8BfJhK8TC8NJ5j0mL5JqxBHY4AmpQXBTBCfPBSNHYr13Bh4FiiWDF7IoKtGOG8wbjgeG9Vm1arPUdwa+Bz9ZxTb1gOEbutGEEmEid4PKSFp6WAsTd5Equ/Wa+4gdueAb93ye17w24j6kSsgFeQ9xyiZImEgs/TDHmZ60yvVCRQxKlvoOtrDX2wPSL0ohJMQoRPKqRCRSzKRrh3MWTVbOHYYhPl8WMRQR7zTYxHlFs/jW4BW/g0z9Cqe3G9s6peRPwo+GX1HEaClxyJ2LOVAILjml9PrYVTCGswIly2rXf+TnFYgLWph7PK4qxaT9rgRiQGC6Bm5Ws2JOKwAJv52bMJ8Ul93SzU6bjQXQFb1UcOGSE4n/OwgKPgd+71CYjwrPbO6ehd+PVnxFMR/owoAloEntk+YQTHf3wJouXA+Amzx/P/Lq+wAbEfQJ0AAAAASUVORK5CYII=",
-      "actions": [
-        "stabO1",
-        "stabO2"
-      ],
-      "weapons": [
-        33
-      ],
+      "actions": ["stabO1", "stabO2"],
+      "weapons": [33],
       "hit": [
         {
           "frames": [
@@ -706,8 +699,8 @@
       "soundPath": "Skill.img/4001334",
       "description": {
         "id": 4001334,
-        "desc": "Use MP to quickly stab a monster twice in one turn using a dagger.",
-        "name": "Double Stab",
+        "desc": "MP를 소비하여 단 시간에 단검으로 한번에 2번 적을 찌른다.",
+        "name": "더블 스탭",
         "bookName": ""
       },
       "levelProperties": [
@@ -838,9 +831,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACYklEQVR4nL1Xi3GrMBAUMzRAC3EJogRTQlxCXIJdQlxCXglOCVAClGC3QAl+uhst73RIIHgz3slHxuh2b6XTpzQhXuY9KNCQAl5t/3gLe1MfXhABAUx+tB9vEfB97831VLOIEuSVGc0wDMZauxog970ULp+urxcRzIG6rk3f99xOERD5XqCvjD0JoIdETiIIMSEUQIqMEcSEgzjWtzQR3F0QLQQB1rJLESOWFhgIkC7c/YuStH88TH04RIlkdpqYYp0SQzdzQItAZyIfuniWUqT8jCS4fyT7QEBqclW2cl+agFxmy23vjCbOQTAJdTZsm/u5XL6nZ9S+3a7/xlU4A2IW7TAO42L2gQCIgP3a8vP5xP9/fu78a4+Ws9bDIsk3OTAT4YLHxh1CCNqZk3OGHGu/jvxsLfuoAC0CwSlrIs91JncelKkvIIJAQwKClDMAPU+V6yYBECGrg7JjQcoZwvP55MkJ5IooTSZgLcbXOC3N+ToJIPK1NeO/BGjyqgrFEWJrBmFp98wWME0qTz76KpNV0fzpZpWxtA+sCsDCpGc0k4skcytjdTNaAttrQ2IC75wbKkOLSAqIZu/jY5XDpIMIwlJlEPSZIMsBLK+SHNurPMSwoFtYGXhHw1ZjWoDMXq/tkpgDqQVrIvCVgcONtv72O+Q5sEQ8kfk23NiyHM8E6LFfIk4Bk00OTcyFmQBJvocYAFFsaDSiQ4BtdCuxJJd9g9NTqgz1wXLvxSPWTwuRIAEF3dXatl09POwhj33fdZ27FTXULOBA0TTNi+5s3XP/zScXIKc/cg4U/sL4DkzX87/yH9qSraeowwAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACA0lEQVR4nL2Xi5GCQBBElyoSMAZDkBQMQVMxBlPBEDAEDUFTMATOpmyrGWZgwTq66u44YLffNDt8ytRXm9ZRwQ0FaG+32yruVVW1hCBAZ77b7VYBqOs6HY/HDqJMUvn9fs+CyD0v0uFw+EL01sA7mkSYyADmS8WxOvcXADthDgjIA8EECukZeOA09saWydHpdBqAcIKp6iJjzmUBewCaAiCs6ePxSNvt1jXS6qwx5jqfzy74IAELwcEwj6pUSP2fRWB81GWlDhyTHtdqsc1krHGOeovQVsPYdEImwvM0Gc94rPoeACEYv4383bPdX/QvfnAuqv6lLQcACoHJvetOEMhLRvdPVe8CWAhO+LlzZSeTuw7K6AAhIFwSGkTJUNgftessAEKoEaO0ydBYez0XokyZ8qKFIQGwPXXP+AnAmm82mx6cypqPPT2zAaz56/XqtrUrmIKOGXsOTALwxmRXNM2p3M6YfBgtEeDmdIaFCAGi6q05Y8/pDMi+EyxOgBPrSwyBtDN4jhUXsQswVr2d1N6wKMbMhWijv1wuMYAnz9iaMY05t+MBgK1+zDgSF5teGi+FAYCaLzGmaORdGiv3EvAxOtdYzXWsgoRtaF8sl354eOMsiAoABb7VmqaZfHlYYu4dv16vvFsWTKDY7/ct+vf5fKb/Fs3xS9dA8flgXEPfz/M/mL/G0RDoFnoAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACaUlEQVR4nL1XgZGCMBAMMzYgJfyXACVICW8JWoKWoCVoCf8lQAlQwlOClsDnIouX4wKRn3FnVECS3dtcLsnK+OjMe5Dgggvoyvr3LexF/tlBBAQ48k328RYBp+/aHLe5E7EC+drcTdM0Jsuy2Q5i3wvh8GXb9iK8HMjz3NR17a5DBES+FGjL+x4E0EMiJxEETQh1wEVqBJpwEGttV0bBzX5SIQQdhKA5w4nRlxToCYALRH7rn6WMtK5vtrNUJeLRSWIXUED4yAEpAo2JvApEyZ3h90MQgeg9AaHkWm/sV2U8ch7t4/rhjCSOgZeEMhpnmyXfHS7DM7q+nvdsXJ/OgNiJtrhX09F7AiACM0FaftwX7vd0Kd1nY9+lqOWwcPKXHBiLSNVxhxCCdCa1zpBjXS9iLnpVgBSBzilqIo9xJrHtYvNgFfoDIgg0JCAIOQPQc/o/zUMTL1IARPDZsemtlM4Q2rZ1yQmEasZLAjiQdBhfs7NL2XY/CCDyuZrxLwGS3LCVG85oNYMwtXpGCxiSCuTt45bPikSpGVPrwKwAFKZRRhP59XkbWzNmF6MpOHt3PjHhsXLGzQxNRFCAGn1PjiqHpIMIwtTMIMg9QZQDKK+cHBMMK+cg6OzPDLwjka3vYQE8elnbObHriBUsvnfAzMDmRlp//mnCAjimiIdo+mssZEi6mHI8EiDHfoo4BCSbNzSKCyMBnHwJMQAibWgk1CHAMvoqMSfnbf3dU2Aayo3l0oOH1k4K4SABCZ3VyrKc3TwsIdf+r6rKnopctUzgQFIURUdntqpdfvKJBcjpi+dA0h8Y34HheP4HKSCxDgr6OpYAAAAASUVORK5CYII=",
-      "weapons": [
-        47
-      ],
+      "weapons": [47],
       "effect": [
         {
           "frames": [
@@ -1038,8 +1029,8 @@
       "soundPath": "Skill.img/4001344",
       "description": {
         "id": 4001344,
-        "desc": "Use MP to throw 2 throwing stars and apply damage based on LUK, regardless of the rate of Claw Mastery.",
-        "name": "Lucky Seven",
+        "desc": "MP를 소비하여 2개의 표창을 날려 LUK에 따른 강한 공격을 가한다. 자벨린 마스터리에 관계 없이 LUK 수치에 따라 공격한다.",
+        "name": "럭키 세븐",
         "bookName": ""
       },
       "levelProperties": [
@@ -1172,6 +1163,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Thief Skills"
+    "bookName": "도적 입문서"
   }
 }
