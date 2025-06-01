@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/4200000",
       "description": {
         "id": 4200000,
-        "desc": "[마스터 레벨: 20]\\nIncreases the dagger mastery and accuracy. It only applies when the character has a dagger in hand.",
-        "name": "Dagger Mastery",
+        "desc": "단검 계열 무기의 숙련도와 명중률을 상승시킨다. 반드시 이 기술은 단검을 들었을 경우에만 적용된다.",
+        "name": "대거 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -132,8 +132,8 @@
       "soundPath": "Skill.img/4200001",
       "description": {
         "id": 4200001,
-        "desc": "Recovers additional amount of HP and MP.",
-        "name": "Endure",
+        "desc": "HP와 MP를 추가 회복할 수 있다.",
+        "name": "인듀어",
         "bookName": ""
       },
       "levelProperties": [
@@ -264,9 +264,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9ElEQVR4nL2XjXGrMBCE5Rk3IJcglwAl4BLiEuwSnBJCCXYJoQQoAUqISkAl8LRCp5yw+HlJxpeZjCxsfXt70gF7EccgXhM7GnABQ91+vYR+yo8DiSABDl5k6iUCPj5b8X7OnYj9X8G7ros+Z1k2+93bm73mRezFL4PAeZ6HubZtN//+VwIAJ/AwDMIYIw6Hw3+t8WMBBAcYUVWVKIoiuk6xVI4fCeBwgBGAI3vY3zB4sQBfFZDKYgpXKt68gN8uFzcuH4/VZFYdoBrTxuLwpmnExcIgAtlTOTqtRcaELZVjUwn6vrWA7802BwfYQewcsof9hq0jE2tvEqBtBiRiCa5kjACc9kAz6RObBMAuWA/b2/oeRGBuCtfaCJVJIa0IZE/7AEdTSjnL2LwJ89NV3G5vTgg/+wRHJ+VwgBGYQ/ZSpI/jrADeZABGlGUluqZzn914Cb6Q9aoAgsNyBPZAZeuOaDodROXHo/1O/wQnvhRiMfukgDk4MoblAL1fr0HIwzeiCK7kJviTAG47h8N2BOCZykRdt9Z+u7hUbudj/BN4JGCaeVmW47yFI9u+H5uMMWPdw1goJwpO4GhyOK3LY1Mj0v5HsB0xhSNjWA4QAJ2JYYBzJylSt+kggM48zjk2GNn+cb9HcO2PF+AKJSiUndNuI+IP4wDs6zDOD6dUrrEDvPHwzCkz7eqsoybj9fijJ5woLqLSVQSktTJpngVwEdQ6jV8MtiOmcJc9ZWmPJQ9cp4bkrrOy1HWdFkAiEI9q3PVkO80T3ES3Gr/w1yeX4B0y0fzpeA7j2U6YTW4ilHk4AW5xE45aFxyzwpvn54BSp58NVm9GI8zn452gGifP+cT2tVi9HVN2tOvJ9rkmcz5923u3N66yGvuJfmiRik3PAyRiMXMRn3O34aDVpK+TS5sfSnmdU3A+x7vftBz0vbLqgoAd3tW2vB2t9fVpXM/X5Dzg9q0Iwx054ETgne0vAk2GzjkPuMHh+MdLsPMvjK+I8Hr+D/Y0RNjtTa2QAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbUlEQVR4nL2Xi5GCMBRFccYGtAQtQUvQErQErcUStAQtQUvQErQELYHdw+xlLiEEcB3fTHZDgJz7PklkmFUtz75jA3VcQH69Xr9Cn8/nuURIQAGfzWZfEXA8HrP1el2IGH4KfrvdKtep+VarVSlimP3TBP4NaznWJ5X/EgBc4DzPs9frlY3H415zvC1AcMDY6XTKFotF5b4slY63BDgcMAYc7wl/V3irgNhEIXwymdTe2Ww2Rf9wOLQ60xoB5ViF5fDL5VLAEIH3Ssfj8agIS0WkUwru93s2nU6LfgoOGGMM77ss7U4C8EAiUvDRaFR711PXWwAvE3rCzsYhEYyFcBrPIwLvVQcszZiwTgJc9e+uVUyKEF/7TXDAGGOaJ5aSRgG+yXhVq8rpp+Apr1sFCE7IdU3ePSqASMfz+azBXUDK+6iAJjgAQs7/7XZbTqyNyOFagm3wmgAPu8M1EXAmP5/PZdXT6L8DrwgIPd/tduU4jVBjQLTeVWhAiYRqxYu37ZhurAF5jIVwGjCJkxCHeSRlsWO6FKA1T2Fpcmy/31fgDiP8HEJedLqPKZqYdtJGAS5C6uW5xCjPvskIKBE0HwtToGsJrqVAIhyKKe8h3D2Oeen3PS0UclSARGA6bjWJxkOwmyZWJPScxrHlcln2G3fC8BCR54qEe8ezHmrtDW6xsaQAFxEC3fvYM03R6S1AAC23cH+PbTIcWjIOLi1lbeW9BbiIlOeYr3MVnL/j9zXe+Uep5zkG97FwBcWeU00gYMC3Wpevo75fTxxaMQP+l6qBIlCIIGefMGrFl52MiDicP56Cwd8H4zes/Dz/AWukRaPFDKd3AAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBklEQVR4nL2XgZGCMBBFw8w1gCVACVCClqAlaAlSgpSgJUgJUAKUYEowJXD5SRY3GBC9G9cZjQF5f382i/wIP3rxnYhowAX0dXv7Cn2Tpz2JIAEGvs6Srwg4XVtR7HIj4ue/4F3Xed+zLJs897jVx5yIH/HHIHCe58Nc27aLf/8nAYATuO97oZQSq9XqrWt8LIDgACOqqhLr9do7TjG3HB8J4HCAEYAje9hfdXI4d/uitmYFhLIYw5PEBwB+2m+F0uPyUr1M5qUDtMZUWBzeNI3Y7/dGBLKn5eik0nPxbCKLBSD6vhZR9Ci2KTjACMCRPexX4iEkFup9BxCy6ZyIzSw8jv3fAU79pWF1sVgA7IL1qbb9Vp8GEZgbw6WU+vxEi7DZow6MCJ30WNhiAXzt0k0hzse1EZKyvT8FV85twJE97A9tx0kBvMkAjDiUjdjq5cB3jGfhM1m/FPDYarX5jhrAuiOqDle3IvJ0JW73+xNc6rdEz0HDXPZBAVNwZAzLCw0qDzstxAq6VPbTgyfL4E8CuO0c3jS2FgDPkkxc65u2v7NZxokZfwL3BIwzvxSl+QQctt/vtskAIt1+N0AhjahSb8+jdoHD6bo8FjUi6TKG7YgxHBnDcoAaAFTnYHavA86dpAjdpgcBtOfR8VBgZPvxfPXgSlkI4FiCvb4J4Vjsik6qR7er++sw3kS7UK6+AySC1FPm1MUAB4A3GeWAynUciJKs4+qS9YC0JFmsngVwEXRLpYxgO2IMN9m79c7T1LuWwguXcT2BL0td12EBJAKBwkKBke1rN09wFfjt9X7mCqwzyp/frQ7DeLITkoiq8zOnHaCEvThttaHa9YFSFk/XK7vnuVkBXATdUqm+aFlC+9wkHL7xvS+ARCA7qnqyfarJHPKHvef2JIrGZq7CBiz7P0AiqLqn4Hyfo+BsrYSP0+5Z/KeUr3MIzue87qfC55VVNwiI8Ky25OnoVV8fR7EJ+w64firCMCIHjAg8s/1HoMnQPucB2zkcb3wJIvfA+I0YHs9/AVqoRmAZYK/8AAAAAElFTkSuQmCC",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -440,8 +438,8 @@
       "soundPath": "Skill.img/4201002",
       "description": {
         "id": 4201002,
-        "desc": "Use HP and MP to temporarily boost up the attacking speed of the dagger. Only applies when the character has a dagger in hand. \\nRequired Skill : #cAt least Level 5 on Dagger Mastery#",
-        "name": "Dagger Booster",
+        "desc": "HP, MP를 소비하여 일정 시간동안 단검의 공격 속도를 한 단계 상승시킨다. 단검을 들고 있을 경우에만 발동이 가능하다.",
+        "name": "대거 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -595,9 +593,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADWUlEQVR4nL1Xi43qMBBcpGsgV0IoIZQAJUAJUAKUACUkJZASkhJwCaQEXALPY3uTtWPzkU5vhFAA45n9eDb5oRBP+mPcbrfxerVa8eWCL6SAZ3e7/yl5QXokhRDef7NaPlkEC7Dk66p8u6lS6uXvVVWN60B+fzxIaRP98teKwO/n641Ou5UV8fMteTNoE1kxRVlwtAXZr71AkD+fTxq0nu1z3BqRXsQPfQAZ9b4sgt9kiuV3ILf/Nfz9i6wFAnLpvSgXReHfOAOX3Yq6a01au1pDhCRH9CBvdptAYFIAyA/9MBH5lBaUhiTve0X77XZGfuk9+f1BU4XU2CeBAHxZ02s0PhOSfBic6KZtk+RowuWva0BNFJAHAojCDgZOSgcZwDU2/YYc1xLZDMgFJ1uKef6bw0QOlGU5isiRxyWQASYF2HNKc6C+j8edehOtxOnSjNGTz1BAjubTRqS2r5GjH1RaAC+QKplc9b059y4OnTjfgCSX9ed9YwSnIIis1zZnvUk7k292B3qHVP2lVySbEJ7NR9B9nt6tOEMOoP4QsV1Pm7RRk60NwVFkgddiHXvFrAnR6/U6Y8XeXECeEyFRFTQjZ7BXSFMKfEDCngZ/DLd1Z0g3AXlVlMZmB4ohyXNrJLKzwJ2GKb1Hnwm222pbWoLWr5FHkMldRl6LSPoAIzaivckEpmGMHLndz5C33qphWPFMmA0jNKOcBTFAEiN2uxw5TobbuaA1JXwgNw94GsIJubFOZsOz2RifWZRsulTk2rsmduNDlxzH0orhAwxspn09QQYSm+61CMLXHOTn4946ZWzFyQzMx7Ejv9bOmNnzh8HVV4vGStU8II+sOJsB6QU82/u2sbaLweMwGBGmOQ2pjro7Ju8MOciwljOAMsxmQeyE6rSzkYM8hdLclg3+NMgjFkTOQ4jhM5C04tgJ+e49Hjhy9JKPjLMgya/mJlf7wCReDqP4ZiQmC4VMG/MskOQMbQSOJ7mY34wEAmJgs0+Ak8Hra09ecuQyg/pNBmIgouO5HpsQiLOCTDT+BqXupshhZRCRInwrAH9iv/8kC5O1vq93TsACz2ry6Qh/7rruow0+JZK4tApPRbhccAasCDyzTcg9EYRQraJvweR4kyVY+AfG/4Hx8fwfnpefp0lqJYEAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmUlEQVR4nL1XbbHCMBBMZzCABZAAErAAEkACFkACSAAJIAEkgASQ0Pe2w3a2l7tA5zFvf9DQJrd7H7m0g9RFnb6My+XSjqfTKYcVByqg1snfAklhm/Z/79UUQQEN+WQyeWvwer0Wn9MG5oH8drul5/PZjMlxOBzSYrFoRAz6kquA4XCYjfkchHVdp/v9ntmZz+etiEH6AEpqhWqI9R7IAXhfilpHQDTxfD43V/UYWK1WjScaYiWH97CJeVF9tQIw8Xg8ZhMsqUeOtcvlMiOHcMxDHSiPRrEV0KcAlZw53u/3Ifl4PG4jYHk6KdAKBhARW2h9yZm+txHQCV4qrOfAaDTqVLlHblMAJ7TWMgFRKpDfx+ORidtut633FKnkCD0FAxiDg8LdbYgJqpLkMMqUqFGF9byU/44AuwXpKTwk+W/jSO/g5V97RViEUd5pFHh1rzSbzbJnBAg0CpyL/9qOMwFojx5wHwtBHolQIEWWnGCv0KYU9gHuBhjcbDYNqZLbHaARIXk0RxGeBVYQ2yyv8AYEhG5BkgPvRLh9gLCNCJHwzouIXJ9BMBqWPROyw6hUjOyEFrYQI3LsJgu3FUcEWlgwCMP4T1FadJ7ntmtmAvQMINAHCBjjQpBhjHArMXMO8vV63ay3rdiNgBd+LN7tdh3FzK964+VcyW0rDiOgvYBnO0RhkRLzv61uS86CU6/Ds8CGHZ5HBQmD1hPAI7dnRtiK1Xvm3S62HmsUPHKL4mFkX0ZKzUOFcYeQ/HQ6deZq+O3LSEeAhVZ/CdgZnG/JrdhiBCzgETofixCwUcF97HHAI//kPdN9I2K//yQKffIdCajwrabnNK6eR38hUiCqr5ebihFoRPDM72usL0iOH01B9fpg/A+0n+c/fVeUY4RcNSMAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADV0lEQVR4nL1X4ZWyMBAM79kAlsBXApRwlqAlaAlagpagJUgJUgIpwZRgSuDLJFnYhET0vXs3Pw6E3M7sbjIJKxFiEL+Mvu/H+6Zp6LagGy5gePTPXyUvhR5JIYTib5p/A4kgAZb8p64Wg0op376v63ocB/J+GITUJvt1YUXg/fnei9OusSJW35KfdOWzE9O1dNcSf71AkA8gT8Q5bo1IL2IlPgDP+lyq4B0vMX8Gcvu/JvtW6WzsQECuvDtVTRn7G1zazVr097PQ2vUaIgJy4ci7Zh0ITAqwPZNTG3hpU+DkXSdNWX9m5CfpyB+vQWgfEzw0TwIBeNiL9xPsoJzAjpEr5VpyabskOSZhUxRjBTh5IIC/pFZseOn99Vty3HNkK8AHoBXUAgLCqN1EDlRVNYrIkcct4AkmBeRaYfv7fJp+34Lnh0s7Zm8rFJHb0qswHjg6/yy5DDGAqyRyKVuzClweVIUYAflC/wMB8RLcYEUYLm3KTuTN7iSWkOo/94rkJLSeLUMn5MsP5DaA6T9E7Jlr3mRoTNuqFGdWBRqLceQVs0moDV1fh4FGeHMBeU4ER12KGTmBvIKbUuADHGgJLcPq/jKk64C8NitAqrloTp4bw5HdCyDowVcDVcJfr5UjEL4FfAkSuY2zICLpA4TYiGpTiVNi8ufI7TtDjv6j/DCseE+YbUY0GWMjIsAJY8RulyV/DWPsH5HwgZwJ7fweIHfTxDqYgFcTGL9vjRPFJ10yc28+kNupTAUAbsXwAQKCad9PkIEE5d7zJHzPQX49bq1Tciumos4qEG/HVqkhf1yP9p48Xwk3RrOJleo5kd+fgyiZFVOzkhXgXjAeqdqLtd1qJFFGjHEO81tHsztFbkkrt8Rt9krO94KZEx5c5iBPoTJup/wxiy8xTm57rmWYtsicB2InpNN7vOGoKGNeBU5+fbrDaK3nu2CMmRPSRFRvzEOxQybtBUR+7qetWZW+9H7mxYeRQEAMBPsEWBk0nsjjzKkFbysQAxntz/dxEgJxVVAJrHErpH9NB0+TOUSkCBcFWDPyfn+4FGIJk7UycVp8RE4CCnyr8a8juxE9Hh8F+JSI49JKfBXhtqAKWBH4ZpuQ+yIIIVspvgWR4w9vQeE/GP8CY2//A0pLgkJM8/RkAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "affected": [
         {
@@ -885,8 +881,8 @@
       "soundPath": "Skill.img/4201003",
       "description": {
         "id": 4201003,
-        "desc": "Temporarily boosts the speed and jumping ability of everyone in the party.",
-        "name": "Haste",
+        "desc": "일정 시간동안 파티 전원의 이동 속도와 점프력을 증가시켜 준다.",
+        "name": "헤이스트",
         "bookName": ""
       },
       "levelProperties": [
@@ -1161,8 +1157,8 @@
       "soundPath": "Skill.img/4201004",
       "description": {
         "id": 4201004,
-        "desc": "Steals one of the monster's items with a given success rate.  It works only once against the same monster.  The effort can be continued till its success.\\nRequired Skill : #cAt least Level 5 on Haste#",
-        "name": "Steal",
+        "desc": "일정 확률로 적이 소지하고 있는 아이템 중 하나를 훔쳐낸다. 하나의 적에게 한 번만 훔칠 수 있으며 성공할 때까지 계속 시도할 수 있다.",
+        "name": "스틸",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1356,12 +1352,8 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChklEQVR4nL1XgXGjMBAUM2mAFpISoAQoISkhKSEp4VNCvgSnBCgBSni3oBL8LNbJq9MJ7EnGO5OA0d3t3umQ0INLcXL3QSU3LOA0TP/uwt63TycRIQJO0zQtF58ZN00T7+d5/hUBfw6T+3hpVxEQEDL3rm3bzBjCIALk1vitQLz35yWpIEL3gPt6bpLfIIUTrnrs7Xs2fUoQe0YmwNXOHcfLVHy9Nmfy5crPH7u66GMhsbcEoMwxUyLD1SJ/+ztH+58gqQCLOBCpX66iH+QvgVxQhz8rU4lh508CuMMtESVyC7AB4L+HpAJcTk0O4Pch9MRvIWtCUa0z554QG2RqCbXA4rmCDyVjJtdEuJa6+laYAji4zKeI2LO/ZcwUIIQACJmUx4C911DbFwXUYQ/guZHAPsSom4soCS5vyi3QomIFftLZ/so9qja0JlOwlQ1IMC5kuNfZ1AX3LYFZD2wZX5OpFrU3RZkAzkIT6jGpAlcGkF7iaYWvrKJY8sfjnAtg9YOhHC9UH2x4PL5o8/m5EA9BGO8VGlFA9gYYHgg2vDeu/5yjEBdE4bkfLzar/RgEdm71kewzAdjruuYxfvVIsC3oDYn92HeLPKmABThzFhIcRLKmS1BZlFj8Hnki4JrsSyJ0BQSWnSmgDh+k69yNYfq7QErGyEZsHAUHEl+GspNqZRVI0BHZFsZLw7nxOjvEZeQCutyIkVShRNwZYyM9LwkQ4q1djpvNFEAJJEILMNcBHbAkIpKoJHRj7gmoFsP1dIS1AJAP1NJUyNezkGhx+tXU8N4vp6Iet5VUoMKBEWe2laD2bhgGkxzOn3TC0Xbj0cV13hpfE+vP5PjHPVCFA+M9EI/n/wGzk7K0mnUwGQAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEUlEQVR4nL2Xb5HCMBTE2xkMoAUsIAEkYAENWEACSMACWMACErjbzm3nZbv504NhPxzt5SX7y8tL2i66VK/uO+p5EQFet9vtK+7r9fpFCAJkzVer1Xh9v98/AnA+n7vdbjdALKL5L9kkGG2AgLlrnyuMt91uRwitgW6/3yf3MEUn/Grb6XSyfXJifNTCxHXP5zMBonn8/3K5zPZx0vgJANIcZ8oB8evMMRvGv6MkAyUIZ+40NzMjQKxwB9FiTs2pjSQDMZ1qDnE5PrEbLACNaUZh5loTEGbqQJ0ifMxgdRcw7VoTuaqeKwsQB+d6EqIWP6fNAsTD4nA4JKZ6kNS2oTt4igBxbXRgzgRQ0PF4HGJ43yr0swDvVHZLEUJuOZIMlGYDE7TTDNc6m9x6lwAnNVAKbpmpQtWWaAIQZ6GG2sYsxMxA7vGOvojl4/3xeEwBIn2OnDGunVA0VjCnEaC0A9QAEBE2ZoExjId09hYgvvVwAKbcnXz6QHJbkn1y5glASWrONMdBeSgpRMk8AdDZ1xQhoFxfjcsCtJhzrXVwXtdgqerT0JmVBm9RPMKjLIAG/QesVfYcKD3lcsXmxmkBtedATREwV/VQS10BoMe3WtwqfEHNLQXfnmmicLo1VThXfr+KcNkzAwMEPpcg7Pvr9WrN0flyuYz3Gocznue8a4c2m83giT+xBvq/D8ZvaPw8/wHl/KCssGLaMwAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACmElEQVR4nL2X4XGrMBCExYwbwCVACVDCcwlOCW7Br4TnFijhUYJTApQQSohKICzRipM4YTzJeH8ExTppvzsJEAcTajSvUcaGBBjv3cdL3E91ORKCAGPXddPFroKrqvLtvu9/BeDf/878fatnCAC4zK2p63oVDDBAwFzrf1aY73qeknIQ8R4wH+fw/3IyxSCYr/pafUxKjJc6GEW9CMTkpTOXv1fn9BhNVQLSA6DMyDQ2w1UzRzaszE8UVGALQjPX9GxlPIDc4RrEHnPqmb0RVECWE4OHaaJc9A/tsidi5UZX6ncVgMY0o4rz8j8hoLJdQB9JwssKHlLB0jw2wrXYees9kgogJ+d6lm16TbdgHoGuAOTD4vMymV5EXxPGcrOmVO5Ymhkgd+8AuTbckNaZFpcFCjo23zGfAnCPjlESvgI/eaAMjdmlQoENlmArG5ign2Zox9kUifFbgKs9gGDcu/GLORd9W4qhAKrNlwRgFvOgjQxts1QBVxnLvSSXtXCxfL2/D/0aQNKnluPYpPs9lDOOwTR5AO0OSBo0IaysAmMYD+VR9isAOxX8T1X4U888gVhvrB/bvMYvJGQ9MuNmiYV5ljAPKiDFTZNfp+vNTeTaMIBR5p7pnBTtTELsMA8AmP3ojFQwCXFdICBtrBanAuTuQCongFms7GZ8jL0tk0Mp8DiO1VpVIM6UZmq/cfe1iElVTUIwCakVAM2lmRTBcsbclLhr2OfbSkIBAI23Dpt+s2kmzpzzzDEblQkAkuc8hZoQ3kQI5pwrAN0AmOLq+esIzwKIB9QsQc/TM01iuPjWjGWtnb6KTvNwViDDByO+2WaD3Jr7/a6aY/CtXU7Qcdz7YPxzXuuHTqdvc/yReyBzH4yvkP88/wKjl35mAFIIuwAAAABJRU5ErkJggg==",
-      "actions": [
-        "savage"
-      ],
-      "weapons": [
-        33
-      ],
+      "actions": ["savage"],
+      "weapons": [33],
       "effect": [
         {
           "frames": [
@@ -1584,8 +1576,8 @@
       "soundPath": "Skill.img/4201005",
       "description": {
         "id": 4201005,
-        "desc": "Use MP to attack an enemy up to 6 times in a row with a dagger.",
-        "name": "Savage Blow",
+        "desc": "MP를 소비하여 단검으로 적에게 최고 6연속 공격을 가한다.",
+        "name": "새비지 블로우",
         "bookName": ""
       },
       "levelProperties": [
@@ -1778,6 +1770,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Bandit's Tricks"
+    "bookName": "시프 가이드"
   }
 }
