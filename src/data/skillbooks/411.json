@@ -20,8 +20,8 @@
       "soundPath": "Skill.img/4110000",
       "description": {
         "id": 4110000,
-        "desc": "Increases the effect of the recovery items like potions and lengthens their duration. Percentage based recover items, like Elixirs, do not count.",
-        "name": "Alchemist",
+        "desc": "포션 등 회복 아이템의 효과가 상승하거나 상태변화 아이템의 적용시간이 늘어난다. 단, 엘릭서와 같이 %로 회복시켜 주는 아이템에는 적용되지 않는다.",
+        "name": "알케미스트",
         "shortDesc": "Recovery Rate: +#x%, Duration: +#y%",
         "bookName": ""
       }
@@ -561,8 +561,8 @@
       "soundPath": "Skill.img/4111001",
       "description": {
         "id": 4111001,
-        "desc": "For a certain amount of time, everyone in the party can make enemies drop more mesos than usual. This only applies to mesos dropped by monsters.",
-        "name": "Meso Up",
+        "desc": "일정 시간동안 자신을 포함한 주변의 파티원에 한하여 적으로부터 더욱 많은 메소가 떨어지도록 한다.",
+        "name": "메소 업",
         "shortDesc": "MP Cost: #mpCon, Meso Increase: +#x%, Duration: #time sec",
         "bookName": ""
       }
@@ -881,8 +881,8 @@
       "soundPath": "Skill.img/4111002",
       "description": {
         "id": 4111002,
-        "desc": "A shadow partner that mimics the summoner appears. It does not have its own HP and disappears after a fixed period of time.",
-        "name": "Shadow Partner",
+        "desc": "일정 시간동안 자신과 똑같은 행동을 하는 그림자 동료를 소환해 낸다. 별도의 체력은 없으며 시간이 지나면 사라지게 된다.",
+        "name": "쉐도우 파트너",
         "shortDesc": "MP Cost: #mpCon, consumes 1 Summoning Rock, Attack: #x%, Duration: #time sec",
         "bookName": ""
       }
@@ -1057,8 +1057,8 @@
       "soundPath": "Skill.img/4111003",
       "description": {
         "id": 4111003,
-        "desc": "Creates a web of shadow around you that can tangle up to 6 monsters. Once tangled, the monsters will be unable to move.",
-        "name": "Shadow Web",
+        "desc": "자신의 그림자를 거미줄로 만들어 6마리 이하 다수의 적을 움직일 수 없게 만든다. 거미줄로 포박당한 적은 움직일 수 없다.",
+        "name": "쉐도우 웹",
         "shortDesc": "MP Cost: #mpCon, Bind Chance: #prop%, Duration: #time sec",
         "bookName": ""
       }
@@ -1267,8 +1267,8 @@
       "soundPath": "Skill.img/4111004",
       "description": {
         "id": 4111004,
-        "desc": "Attacks enemies with mesos without consuming any mesos. Damage depends on the amount thrown. Cancels enemy's Weapon DEF and Magic Guard buffs. \\nRequired Skill: #cMeso Up Lv. 5#",
-        "name": "Shadow Meso",
+        "desc": "메소를 던져서 던진 메소에 비례한 데미지로 적을 공격한다. 몬스터의 물리가드 업, 매직가드 업 효과를 무시하는 공격이다.",
+        "name": "쉐도우 메소",
         "shortDesc": "Mesos Consumed: #y to #z mesos, Bonus Damage Chance: #prop%, Damage: #x%",
         "bookName": ""
       },
@@ -1575,8 +1575,8 @@
       "soundPath": "Skill.img/4111005",
       "description": {
         "id": 4111005,
-        "desc": "Throws a throwing star. The throwing star will go through an enemy and attack the ones behind it, too.",
-        "name": "Avenger",
+        "desc": "MP를 소모하여 커다란 표창을 만들어 던진다. 던져진 표창은 적을 통과하여 그 뒤의 적까지 공격할 수 있다.",
+        "name": "어벤져",
         "shortDesc": "MP Cost: #mpCon, Consumes #bulletConsume throwing stars, Damage: #damage%, Max Monsters Hit: #mobCount",
         "bookName": ""
       }
@@ -1595,8 +1595,8 @@
       "soundPath": "Skill.img/4111006",
       "description": {
         "id": 4111006,
-        "desc": "Allows you to double jump. The higher the skill level, the further you jump. \\nRequired Skill: #cAvenger Lv. 5#",
-        "name": "Flash Jump",
+        "desc": "점프하여 공중에 떠 있는채로 사용하면 진행 방향으로 한번 더 점프한다. 스킬 레벨이 올라갈수록 점프 거리가 늘어난다.",
+        "name": "플래시 점프",
         "shortDesc": "MP Cost: #mpCon, jumps a a certain distance",
         "bookName": ""
       },
@@ -1611,6 +1611,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "The Way of Hermit"
+    "bookName": "허밋의 길"
   }
 }
