@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/3220004",
       "description": {
         "id": 3220004,
-        "desc": "Increases the crossbow mastery as well as weapon attack.  Only applied with a crossbow equipped.",
-        "name": "Marksman Boost",
+        "desc": "석궁 계열 무기의 숙련도와 공격력을 상승시킨다. 반드시 석궁을 들었을 경우에만 적용된다.",
+        "name": "크로스보우 엑스퍼트",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -901,7 +901,7 @@
       "soundPath": "Skill.img/3221000",
       "description": {
         "id": 3221000,
-        "desc": "Increase party's all stats by certain percentage ",
+        "desc": "일정 시간 동안 파티원의 모든 스탯을 일정 퍼센트 올려 준다.",
         "name": "메이플 용사",
         "bookName": ""
       },
@@ -1945,8 +1945,8 @@
       "soundPath": "Skill.img/3221001",
       "description": {
         "id": 3221001,
-        "desc": "Fires a special arrow that penetrates through monsters. The arrow's power increases with each monster it pierces, inflicting more damage to each consecutive monster.",
-        "name": "Piercing Arrow",
+        "desc": "적을 뚫고 지날수록 에너지를 받아 더욱더 강해지는 화살을 쏜다.",
+        "name": "피어싱",
         "bookName": ""
       },
       "levelProperties": [
@@ -2605,8 +2605,8 @@
       "soundPath": "Skill.img/3221002",
       "description": {
         "id": 3221002,
-        "desc": "Grants party members the ability to locate enemy weaknesses, and in turn inflict more damage by exploiting them.",
-        "name": "Sharp Eyes",
+        "desc": "파티원에게 적의 약점을 찾아 치명상을 입힐 수 있는 능력을 부여한다.",
+        "name": "샤프 아이즈",
         "bookName": ""
       },
       "levelProperties": [
@@ -3307,8 +3307,8 @@
       "soundPath": "Skill.img/3221003",
       "description": {
         "id": 3221003,
-        "desc": "Drawing upon the spirit of the dragon, fires a powerful arrow of tremendous force that will knock back the target a long distance.",
-        "name": "Dragon's Breath",
+        "desc": "드래곤의 영혼을 끌어들여 강력한 화살을 쏜다. 화살의 강력한 힘으로 인해 맞은 적은 화살에 쓸려 먼거리를 밀려 나간다.",
+        "name": "드래곤 펄스",
         "bookName": ""
       },
       "levelProperties": [
@@ -3961,8 +3961,8 @@
       "soundPath": "Skill.img/3221005",
       "description": {
         "id": 3221005,
-        "desc": "Temporarily summons the Frostprey, an ice-based hawk. Attacks up to 4 monsters.",
-        "name": "Frostprey",
+        "desc": "일정 시간 동안 얼음 속성을 지닌 프리져를 소환한다. 최대 4마리의 적을 공격한다.",
+        "name": "프리져",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -4558,8 +4558,8 @@
       "soundPath": "Skill.img/3221006",
       "description": {
         "id": 3221006,
-        "desc": "Delivers a blinding strike that impairs a monster's vision with a certain success rate, decreasing its accuracy.",
-        "name": "Blind",
+        "desc": "적의 눈을 맞춰 시야를 차단한다. 일정 시간 동안 적의 명중률을 낮출 수 있다.",
+        "name": "블라인드",
         "bookName": ""
       },
       "levelProperties": [
@@ -5284,8 +5284,8 @@
       "soundPath": "Skill.img/3221007",
       "description": {
         "id": 3221007,
-        "desc": "Delivers a lethal blow to a monster by aiming for its weak spot.",
-        "name": "Snipe",
+        "desc": "정확히 적의 급소를 노려 한방에 적을 쓰러뜨린다.",
+        "name": "스나이핑",
         "bookName": ""
       },
       "levelProperties": [
@@ -5676,6 +5676,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Marksman"
+    "bookName": "석궁의 달인"
   }
 }
