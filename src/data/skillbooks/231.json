@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/2310000",
       "description": {
         "id": 2310000,
-        "desc": "Gains a higher tolerance for all element-based spell attacks from the enemy.",
-        "name": "Elemental Resistance",
+        "desc": "적으로부터 받는 모든 속성 마법 공격에 대한 내성을 지니게 된다.",
+        "name": "엘리먼트 레지스턴스",
         "bookName": ""
       },
       "levelProperties": [
@@ -107,9 +107,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADXElEQVR4nL1Xi3GjMBBdz7gBKMEuAUqAEqAEUgIuAZdgSsAlQAmmhFCCKcGnJ3nFSgjbydzk3eRCQPv27Ue/Pbl40N9gxw9SwKO/ff+J9zw9PlgEC9DOs+RgB43jGDROkuQl+Sd2TXejU5lqEXvfORPkeR4k6vs+KOQndnWhbJ8inB4ACRPc7/cgURzHlpBF/NYOsAKYhAmGIaehnfRzVi2l4e8g5Kh8O4a0D9lZARHNloQJYNx0pilP5ZGyTIk4kEPCkeAZ72z0E4S49kqmDUCK2HMEXZdY5+1pVCW6r5xnWb9yDuBZigAPbGALEfgp05iqxviALy6ZFoAXrLxtRz3wfwOcCKyqEh2METGIdWBaBiNSk4mUpmmmWf1E6l8o+lAWOuUMNrAFR9XcNGdL8eLrWU5nFvjRz/OsFev3VXjaSQESV9UDsBnHJTInCyQFqDFQvAWlw/kO50MUPT/al8t4ZG2bzmZ0EfAG/fed8mNMFzWd0Dz17Ubnr5NL2jTU5qke014nbTO0Ob2DFaBTplLE9QeiZ5ToXBbBzu995xDFeUlFp+r8ZcbyjGIOQHM3uVOGjzLAIrJ+7Xy3Mxvb4/HQIrKmdxajjzPwEqpHxuwSjFwKYRFUNFTRiT6BFrDVgJg+56+j6vDD0mye0xCWvpyovoS3ePa5mQGzmpl+KFXN6qU1Nh1LaJti6SHZWxKbAqZBKcyIztdZLzDDC2dIvQtjo2fMZeHaFBAdouBHKJebx1w3usZwGMoCviVFRU0SrTY3H+xTC0C6smXH1UZc/0woLyK1wNS1FbHlXGK8mj7wywCfVgCnqwoo5R2Os1Ap/rkyIiSkc44eNtwHEmrJ0Vxpmq57AEpRs0Ht31x/Ps1oRzhS0UhzUT/fmG6Gc3zjPYIFQ0xSLJw+zDRU6zIPtlszrQ8PvOHgd0O89kerb/5JSfZBWY6mqSchwAd2wQltL+rv73avTscyEwCin/XutC5HUACaBg3o1//dkZwhz5fcB9yImwI4daYMbv1/IsJ3LvuA0w+OYRKz4BX8JvwU/ul3C44ANwvm4Ii/ty4jIcgmBJhLRu8L2OGuxrcjKUKS/gTywgL4zs/XEbciPO44A1oE7mwMjgLThev1G4R42Dn+kyXYPS+MfwG7kfwDVJBffHjXNw4AAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC40lEQVR4nL2XjXHqQAyE7RkaICVACVAClAAlQAlQApQAJfBKgBKgBCgBSvDLd2T9dEJ2nMwbdobE4NNq9XMnu1fkqIr3oNSFFVAdz9e3eJ+Oh5VESEByPhkN6kWXyyU0Ho1GreRd7DaHc7Gej5OInncugul0GhIdj8dQyE/sVrNP2y8RWQ9AIoL7/R4SfXx81IQS8Vs7UAsQiQjW63Vxu93S9WDwrzS6D6Gi8naCtY/sagH94lGTiADjw+GQrufzeSZCJIqEa36z0Xt78bLGiugpgsViUS86nU7F+Xx+cb7ZbF6cA66tCHiwwRYRfMbjcTGZTNI9fKlkSQA/CDhn4f8GnJYbn9vttuhFi4kULJfLlMp+v58+UfSCzQLkj8cj2cKx2+0SJ1nwyAT46CHxygW/36NtiY0aMcpCJgBnTeCevQ+5/e5t/fqIj4xmAtpwvV6L4XBYzGaz1Dw0ld1uYLVapXSzhiix8WsiZOcAqVH9gVRCJBFyrl0iUF9saSzrXByA+/xuy9ApAxJBM3nnZfkcbFVVJRFkokvkLxn4DtrDPnIrRCIoQ1sPvAhoWkzE/hT0TttgT0MP+WzMANGqH/b7fbbNvnMsG9XZcnk0CpBCGoYDxu5nD1LvgY2O27ZyPIeR6VQLlNvhQYNRYxxGWVD9idwPN4/sHCBdts7qeOpvwRqOWYnwznHsT0z1gS8DPmsBNl0emnB2DhClP9dxzO9A0WMTDTZEwQXHSw+glJrpwNCAEaJBxHqcc08zQoIRYzk9ntvw85FEi+1o9g8Pct40DfXfPylZx6Se+6ebERBF1OSgLRP2np2WGk5Rs4cCaBoaMKp/F9jnS/VBNMAyAUqdmtHW/ycivHPbB0o/HKfbpTkDFr4Ju8I//TYhE2CzoAdHvje9jESwTQjEZaP3Akre1fR25EvR1bEXAdSI3vn2z4W3Ii5LZSCJ4J1NUBRsF9XrN4h45Jw/tgTl1wvjO1APkr+wxFDeRf7rtAAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADWklEQVR4nL1XjZGqMBDezNiAlKAlkBK0BCxBSpASsAQtQUqQEqAEKUFK4O0mbLKJQb03N/fN3ImS3f32L5usIMQEfwPFD5LAdO8ef2J9r7cTk2ACxvgu37hFfd8nhfM8f6v8G7n61kF10IbEKjbOCvZ7nVR0v3dJIj+ROxUoO5MIaoCUsILnM10OWaacQibxv3IER4CVOAWjgqa0j8XFK+L3pJC9iuUYUj4l5wisYfRKZgUkXNysUHNQUBT4sINACXtCz/SbI9GiTBPJX5RzQJJYOQ8enn21x0LpEsbX04txAj0HJHYow7JIgv4qraC+WxtkK9tqT+DJ3YfMqzPYhb8M0mkcO1lnyKbK5D7QitVr6/1wVtAP6CEWOPVIVr56n4wC5nxAGSOLOjanadapvK05nUEXxN6TgrrG3yv8jGzG/R6TurZWlmqBd5cgCiAJtJbxEoYxfE/GrxtvEF/DSRCitSSzqK/3pFbwBW6PCQ5bBd0RQGPBFvj9WlbhInS31XZN1VgZaBV8giNgQkbhX/uNxO3MWLlMgo1PtzpQpA4V5Ng51d6u5Y4Su7vRXd+VTUP+bQQ4lKhw3b0aV8oamqbJkBhv3ji8ScNLBN4Cc1bmac8lESaRHSd4wufwOwJLBUjt05TzRrRgNIWRPF9jB7S0DadnA9tcjgCFca6H7IBtK44KS4YlSObCxIWuGIsEhitFAEPf2L3+/MYYhT4GydAWT4OIdS0SMC3dJt6OKhgeI7Ya5djkOhEFegdFDd2mfxluMTayCzKcfEfZLqPy+RejuB57KE+exJJxiaaa6yBKQ1YKAhyuVH3zhOMoXLAl9kdLIoAwzt6TzCVRwNfB2tRaJ2oAmZqcHZXLP59mCGbo4Lari5AuGad3PCOYsKmD2uuMYQiM2DPG0Fb70QyvhwceOPTZQXoY8VSUkZB1kG2tU+0gCMSgKQhR5cbT7t3pWEaCQN6Tzk1ibZIAFQ0VoI7y/+lI7hwQ50uuA1eISwTcgcKkIcz/T0jExmUdcPhJRztvhR9nQVyE3yI+/S4hIBBGwR4c6fvSZSQFWYQEPvBK72MCiu5qfDuSJKTSn0BeWAix8XPT062IHhVHwJCgOxuDvaB2ad+d1z4gpYeN0z+ZAjVfGP8Crqj+AUcLIiNNNNLtAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert4"
-      ],
+      "actions": ["alert4"],
       "weapons": [],
       "affected": [
         {
@@ -451,8 +449,8 @@
       "soundPath": "Skill.img/2311001",
       "description": {
         "id": 2311001,
-        "desc": "Nullifies all monsters' Magic effects within the targeted area while healing all abnormal conditions suffered by all surrounding party members.",
-        "name": "Dispel",
+        "desc": "적용 범위내에 적의 마법효과를 무효화 함과 동시에 자신을 포함한 주변의 파티원의 여러 가지 상태이상을 치료한다.",
+        "name": "디스펠",
         "bookName": ""
       },
       "levelProperties": [
@@ -643,9 +641,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACM0lEQVR4nL1Xi5GDIBBdZ9IAKYErQUswJXglmBLuSkhasIRYwlGClBBKyJbgsQQiqBfhwuRlonyE99hdVtlBiBHeg8IVfAHjz3AFBpidDfWsPg7Vx+hEOAGGvC45SCmhqqqsAoZhgLIsH/XTZYDvz8qI2PnkwaBLm4W864RZkC/iq9F3K2L3bHDfi5fIm6a2hHwhwuGpAMLpcv23ANkfN5/ZFED4Fmr7IYozHb/MxtvXzKUvCUBvZ1ger86A60aumZXuqTl/iMgmIBSzBJGSCIV3MSmIFsBMhtC/uQKGIE0jS1p5koDGrJCBUArkTASVe6nbdX/JmbUEjYlTEyWgtpO1OrA6TSYQF64gKyg5tTa8hBgkxYAxNLNhiOv9qYgSQCYlWlq50BbAJ0ziaNN4G/deixJwFtLc0S6cxJAh0LbdMam63m4QizgLKG/JNtjo7wKwP4Yvr4/9HsYxowUCILmELpNFCDcitHVMiIbITDiBsoFS96w37+2VsgJAv3QybkOfB80m0MnnfAi690UR1E9ZXYDrZednF4wuU6Zsx/QYmIESkxOhbIJCzJ2IcLsbPfIURFtAdodFWzHze4C8MYB2znDSacVIuzKIg1gkx4Dv84XpvayY9YvoL6z7PW0b/EvAatBhOnm0gOHSgDu1tZGmzSKAvutjPq23cO7V6pnACSjorDY/HVWfHeTCnPzcSzoVUbFwFjAi6MxW8/uAnKBjhVDyUXfkdPFdUNgD4zvwyGC/qMgdUqPOkwkAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABz0lEQVR4nL1XAZGDMBAMMzVAJYAEkMBL4C1UAkh4JLQSQMIjASSABSTwXb7bv+ahBJp0ZyAkA9m9y+XIHdQjRvUeeHyQAsbvplO+GqyzDddZJT7icKQICpjIkyhQbduqOI6tCmiaRkVRdO9/lY3KP+NJxEGSS5zPZyvkVVVNBkkRWXptbyIOzz6u6/ol8iRJpjZN038iiKcCgLIsdwu4XC6r76wKAODGLfB9/269FQHDsLwzQMYL7+kutiJgDSClALROBJBAB8b6vldBEGwmNxaA9cTkyBEg04VwnCK2LIWRAExMIdiaIJQAIT3hRIDEmpufBexuAZwUFurW68jzfGqzLLMngHlAWrcUlEDXdcoURgJguSRGTGCNIQAxQauJMAzVOJr92XflAQac9AAI2d8SB7sFzO0EjJGcO8e6ABIURfEwfjweH/pOl0An0V3vfAkkeGZgMuKzs0Q0B2mxk0QE6GsOeJ6nlmA1ERFzgaW73pkHCHlOJKFOir7zE9GStc49oJO8EoDGAlAjsE4wda0VASAzOVqvAX/TuZqAAjzUanp1dDqdlC3o5EXVoirCo0cPTCJQsyXB7wc2Ufe4/n5eJMdNLoF3KxjfgXsG+wHG5CvK8+O82QAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLklEQVR4nL1Xi5GCMBANMzaAJWAJUAKWACWcJWAJZwlYgpRwlAAlXEq4lMBlkyxsImiQ6JsB8oHs20827I7ZGNhnEGGDEhh+ul8WMxFcmpCrUhyzw4AkkIASnqcJ6/ueZVkWlEDXdSxN07H/fevYucwUiR0VTjHcUhYCl0YrRElUhXwaErtHHzdtv0l4kWuBty92RwLxkIBapN4Ql81zVz4lADjyx/MYYsK04aoT5gUvAnRfxDP9RN5AHvAsYubEfAACS2QQIDQ1BDwVX08AtOILKaKV4/FKzVcRqEBDeV2lio2wrQBtGG/lfG4s0ZtvghHIjXaVtK9AEhhx0I51vxdTjFSeacSLAFVG+RhNQJ7ukC+8CPTGxw3X5hZzkpDl0Zwzg1/+8CJQ9lMQjnvdCOQzqneDf/LyIsBpIpKCi0THBQxfJDlRRtb7WRRJAwS0gAUINrPhOQajxJ8UKPT04nZ9nYCzIMQEugPn4HExbZURgxKY43SyzX6I7H7QIFzaW4MxO74CmoNLnpxd4QgAzsQF6BYgETQRaQnIYjoPqfbjJdYlI08LyCWb/d3w3vU7xTtigO5tV3s0P2fvsADBiayOgrnpCGQjUXvuQ38XuEPMzgXWK8ET0YxwDDYr6IgFghIYOjiEtf9rPPVe+f1ZS0D91zfbq6TyymZrAiQQQa3mVkdRua0ooXCFQ7UkqyIlBi2gSEDNlif6g5Bo4Z+RTwqhcLhRF0SmYPwExgz2D6pS+WXBU8AgAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -675,8 +671,8 @@
       "soundPath": "Skill.img/2311002",
       "description": {
         "id": 2311002,
-        "desc": "Creates a portal that heads to the nearest town. All members of the party can use it multiple times until the portal disappears. Press↑ to move.\\nRequired Skill : #cAt least Level 3 on Dispell#",
-        "name": "Mystic Door",
+        "desc": "가장 가까운 마을로 통하는 포탈을 만든다. 파티원만 문이 사라질 때까지 몇 번이고 드나들 수 있고 포탈 위에서 ↑ 버튼을 누르면 이동된다.",
+        "name": "미스틱 도어",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -830,9 +826,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNklEQVR4nL1XjXGrMAyW77oAHSEZAUaAEWCEdoQyAhmhHQFGICPgEZIRmhF4koyMbH5C3rt7Xy+1wZa+T7Js4A1CjPB/YKSjBYz9cDvsIYEHQHcBKL+wl7zEXmTnUUSIACbP09MhB9ZaJs8uHQwkBkWkaXpYQNMOUFcZi3j7J/LvErJPbDEBFo6L+Cpx3iTiDV4Ak18d+e9vD/fuh9v39wKG5jURgsMCPHntItfwmfgLESyACooJFPacnHDN71SACMoCXQMK2BW/J4BxvYRGGEmAKHoRweSwzEJsGyCfx9USPJDg6q/IUWjw4G5aNmC7mltCgn/+WmeBSZ1N6DdcvkUNUCTpRwPGnJWRE8fRY8XTuP2peYzJP5ooC2Ew43jj+RkLfOwLSD++cfInGv1yS9fGvAdj1Oo+C5E+khC5ttdjMVZ3gRjprGSTcUwckKv5W2NPBWhiB3fMjuOIYxU6a50YiWZqR7xP4zIP1PG89LkjgAhCQVVwbYxhkmDO/c73w8irhS/4NBCDBdDDJMkbLJ46ILBd5QOhPkUek7Po0wmG2w2y8xmP5dAmLVsvfGhy3FENnzHXu13PgCcmx2W7uHcEr9h5AaTKgstCVoWRzpEYeAaapyOnNo5+VUAsgowIQ1sGER2BiKBA2McG+UJALILgnLi6oF9chFSAPA/XX+578URM2CBfFaDBp1+rKrurvAgqOj9vIpfUiw2J9yI2sDwH+LFbT6dZWAeSDSGVyg+ibuf1J3O3/jVn9dASMNQ28lFW61uQI5+WwQtro8rfeWUMBHD0lh4ac/T2ipEXnSeSdEvEHLWcAdj6fo/Fm7dzFr7Xs7BbAzG5QApRtxqziIpF7GFTAJE743nNg3ElSCBzpEDJnvwcEqDTz86KueAIa+e/tHpHaOjMkN+1ZVh5IVlumzjFGnFm9vysIRSQNquTelReYAS34QvO2QX6YVjMKbLMjzP5hq9NAVsnlX6jJeeEfJob14GM00tXAnDo9ZwEGPpWe/Z11E8pLaYa0VtShPQH037pLH0VUddIBlgEfbPFyFFTMqXzYeunzhOVeiJag5DTP10DZvpgfApdlLrvspMdciGdPwq5IRsipGcVAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClUlEQVR4nL2XjW3CMBCFHYkFwghhBDJCOgKMwAowAqzACDBCGSEZAUaAEdI+q896XBzHaaU+CZwf2/fd+RzbC/eu3v2PCl4oQP/Z3rN7KN3L3W431zTN91U5y/pHveoJQQBvvFlXWR10XeeNHw4HdzwePcR6vc4GOF5ad9jWHmLxV+MsoVyI/ea73g/Ews2QGr/f7+56vfpytVrNhqCyAaznqt9GIgAgoWBAlepks9l47yGUuAdACj4JAMG7lKz3hEAJ2SjYtiok7QAAUi+0I22w2+3c+Xz2JVSWZbjX9mp0rN8BACugs+Vy+fZMvSMEpDBaT40+n09fLzZMAwB2zkYKo97bSGgU8NP2sQiNAiCk+/3enU6ncE+P9B1Kvtd7RgLPCabvJgFo2Krv+2CIXkIsCcZ6OX1GASytbVwUhTeiejwe/rkmmI2Kwg4AsJgg09GBGlDjuEYH1jhUVVX4Ilp4QhCQ68bt0cUjoIbVg1QYrea0CwD88jHh1FMd+xzj6jlK630UwEKgEa9TWZyCIHBqyR4MgUJAzHhEBD+bhEhACOPP5woPpfYLydXQfts5zWAASUfROEOv8LG1IQmgy67NA53/MKqZT6+h2PhDWUOg0gwem4J4xmEg2By9AcS81/kPQwy3esxIoNQdEiIwFYXJCKhxiomopUqHZmoGjQLYuW9Dq0AU6zBBdVGbBNDwQ5pwUOz7z1JnhEojM7ZnjG5IUh1ZjSXd1PSLAujWS8VQXi4Xt91uXdu2gzp1XYf3/PLNAhj7UumOFp1rXZsHfP96vZJ9WoACZ7Wp0xGzmUmlU5IguWvG6drhVITLghHwEDizWTWVC1tvngVSYl0aionG8ac5UPwcGCelSanXiE7mviE0+gI2KSAglzKd6QAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADIklEQVR4nL1Xi5HjIAwVM2nALiEuwS4hLsEpISlhr4RsCdkS4hKcEuwSnBLiEjgECAT4l7uZfTO3YAN6Tw+ZHAcIIeF3IKjDBciuH3dHyGCCsq1haDrVyz5ir6tCkggSoMlP5XFXgGEYNLn4npRlRkRZlrsF3B49/DlXWsThv8jvGYirFQH7RXw1ap4VcYAPEJDLB8DPVbdCnD8WQdgtIM6c41+dcAKwoJCAYzXIBbM/m75yQT9f61XxqwI0YRsGwEwCQXH2JAJbSF2I1waxGz8ebAESEDDQ3AK4qP5PbVqNzD9fq1nSIO5XuH1egH0vH6rT9KqwCr8os9njGE689ABtZdYgET7bteJsXAhI5ajn41h8ZKRF2JjgtCgQY8d0y/sI1y/sV+LX87EYM18BOoCLC/dMmQVjzejnB8/gnXLClk/YVEAbqzSBpFQHV5urYG8rJrfjuR3P9Libx71u08yXBSiCAM/cx1KtEMKQ8CmvybzvMq/Zig0hIIYWgD8mw6kDeatDgmfuZ6q+qKeEHHE6ZtCNyplCOdDlXgSuPxkROu4NNA+eMc/XMOfAFBKfWAZczBY+WOcPIqVqgF4dKFWaqctEwCZwHsscW539XWVf9skJGzgQiBCGTPZZmNEe4PxBbVllHF0iTwTEIhAmiKkL/BcXIRYgoi5y996Jv5s5S+SzAjjE1TpAGHInAouO4MjVOJRvtwbFk4glJAL0z+5QGXJeB85S4UhRBLZB1r0RofvSVr9yE13dtQUBXr6CdTYznyC+o23Q89CNcf8XEwiYzV6JEMXkiMhuyhhBTmDrzoNRbcPxvelC6gD/tYrIXZa2EHnL4UXkWkQSd1UAIzeL/Z5zcEEEmuMKFNe/dh5E2v4X/mabZ8ycHzxz5z+1/Ivg4M5gXPlItyFxQD7WA8WInVmLM4ewCI/9QjDjjBwb5UwLczcoddtx40i+FGtRwNJJxf9Hi8ERdImJ64DGt2LGAgTe1bZuR2Qp1Qj/JEnIXtu/2wFvRTocOaBF4J0txuno7SynCrbArUeiORA5/uE1IOyFcRNBdUeVDrAtEtjn9Rekg/HMbgOYkQAAAABJRU5ErkJggg==",
-      "actions": [
-        "alert"
-      ],
+      "actions": ["alert"],
       "weapons": [],
       "affected": [
         {
@@ -1462,8 +1456,8 @@
       "soundPath": "Skill.img/2311003",
       "description": {
         "id": 2311003,
-        "desc": "Temporarily allows all members of the party nearby to gain additional EXP while hunting.  It becomes fully effective only when there are more than 2 members of the party around.\\nRequired Skill : #cAt least Level 3 on Dispell#",
-        "name": "Holy Symbol",
+        "desc": "일정 시간동안 주변 파티 전원이 몬스터를 사냥할 때 더 많은 경험치를 얻을 수 있다. 2인 이상 파티를 한 상태에서만 100% 효과가 발휘된다.",
+        "name": "홀리 심볼",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1717,9 +1711,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADZ0lEQVR4nL1X7bWqMBCM59jAbQFLwBKgBCgBS8ASpAQtQUqAEqSESwuU4MssTLLEKN4/b85RkpDdmWw2H+zNGk/zf7BjQQt4do9fV0l+jGnGScq1rSzFr7Blmx8PT4qgACHP0kQq4ziKg1t+NFX3kDa++wawB2BvrD1EJIm3v9wf5lweRcR+ixzGfwHsQVabUcidCDM6EXWRGrOI2IfGJNdAm3bwiZx9NWIiCBGwNcgwhO/gRr4BTpETQNUc/fP5NLudS9SPEWDINaS/GpXzt0RB3qc/5kwBEqL741Wqzd5msKLK+T1FkFRCPkyrdvavf3/F/pM/FwERYRsrJYKqq0BYSPouMiSCHw0hV3ACwrAr0aunLkPM2RJdIiJi2wYFgYfvV6uAatEBZXZ24mw0Lnbu8AtBMa0iCf3FIAIK65idhmlyz/QnvjxAFNZjooDQH3iKZSBtGAHA9jP9NBP0i3FI1gbzKAhyBXb96P0IIhpFQIUlc/VR6NXmjXKmllQbSazBhv94OMjItJ0GfKxGv0RxXoZLpVAiWuUA5XBeNVKbgA+77CAitBW/JLf+kX3n3k5ZpvaB9rQOKYlug97Vvj8TpskLqOwZw9W14rl2PgKFrbSnfDW6pt/eUt8L8GX40X7nSHQ2AolPQlSgiEphUNu2cz+Yv4zcCVD/lyx1xIAj1zmAKUPjtIRFCzm1g5TxjOXBsBwsnH/2B6722KWvbPENHtm0hsELQJKf2tlRf84deamcERSBpCNI7sc9o1SiezvF2aUTnmvh++zn0Y0rYuJuR5DfZhFdla62apAy88OoaRvtk31OprMiEr8KUEGj7qRHzPbYEpRdTp3v4RasgQiQ7yUH0Eh1ACKiDygSMdzaOSOBJ37aBmVNDLzkABt5U3lHHo5ydVApUJB+TxHRK1kMNGJucK4JLYhgHyYo7GNH/FcCqJiI7f986hUR88NBbApAeLBEyqnzOTF9HkUYGUdcr32gHLs5vUQAne6Vn6urLZfGR2Nocnu3fL0/5sejSWvf71olKx/vbtXRKdCdKQgob3PYs3Re37E8uFcq0yP+YgJ2+FbTX0cxQWNAppdkKGTrG6KxO+R5vtTsGAERcYldzRcUcuXa+kKdHMEnkBx/egp2ywdj3Eh3VEmpy0NTmkNjvoEz+gfH2ozT170dOAAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC3UlEQVR4nL1Xi5GiQBQcqkzAFDQECIELgQtBQ5AQNAQN4QjhDAFC0BQMgduepWebxwPcu6rrql1m5H16+r0ZYBPG6MP/QcaBEuh/t4802W1DuN/vcVyWZXi+3o++5vuj2PckQQIxeZnv4uT5fMYAx+MxXK/Xz0DDvXcAf4D+ILHbffmff7Wh/llEEpu15HD+DuCPZPCDv0fiVOUhDCQ21pnJFfjNrmIuOW0Vc0oAkQBqtoR3ksc4w8rXwBIlAmTN1fd9H7IsNeqiApRcYVVgPKqA+9XHtSYBbTYL2w9IxqQquc5h/3g8VuMlBTwSytquWJPOKaNqKmx/JQJW9ndgyazBK+9oF5AtDDCmsa2h12gqv/ppPA+RAALTCIF4tat6vT6PNCTCeLvdpjlI8b4lpvF0IYmAdeQ2obOiaZpQ1/Uk0fl8Hs2ZVOPZhSQCeVkF+FOFruuSAcZ5nqc5kltSSLDf70ckNEbM8RED8WFTVVVoutcXge7epFXMkbB1VUBabDuQsL42OQAVQSKdA1ZSJuIT7btQiVFrdr1Xug1XbqUFy7+FEkAcjatlQM5IABPeBOAQ6/QPJAgb2+0BvDDQ0BK53W5xjKvXB+xw1p/2wOFwGCUmobi9hz5JT0OulnVCsMvlMlkRSehZz+SAyg9/2iMuSLABiUhA97au7nQ6JRIY6xGKpOx8q5r6aEz1H+0CTMjcPg/WjlM9cKydjaVlmPQA6qVQ+TQR5dbgVAJX/KkPxlSC0k96gD9yJXPJ7Sr1qiAhvU8S7iuZBzqxnqw1Yc93tWGD2r7xMEuAjAnv/Od17u2Hcbzd5BKAPOwF7YmlVVhlNLHGwNh7aZkoQBI09pqzbdtJoKIoRqrZGHNvTG4J1FhV4SnHx7PXB7S1MeYAAhm+1fTryCNkk+mWtPfW3g8vTYevIgwzKhBJ4JttDlW+8vViEiyByfFPS5ANH4y+kxpKU+oY/bHU8RqCgz8bFIA1BqDThAAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADYElEQVR4nL1X7XGrMBAUM2kAlwAlQAlQQijBLiEuIS7BKQGXgEswJaASTAk8rdDCScgfyY+3M4kE3N3unQ5hfSgfk/o/SDiRAqbuNiwXWapUozI7b5VWenw/+ivfuswniqAAS14Vs5PW2gbo80QVw1wUPnsH8Afg3xj/NtUqy1b/7/amjk1pRXy8IkcGvwH8QdYijvFfROhVxNdnYUozi/gInUkugXsywDNy2krERBBWANZswRjM03kdX5HbOFlAHolFoZ6AZnQlM2NfJmqaJpUkaxX4PCZCR+5b+3QlYbzmNi08baHVkQJAWpuHqdqiNsbaPe8cmRajFIdr2qthUOpJPIhZKmAzMTez27oNULW8x4wRpBPNFqsMiRCHGB0P556AsOzvIBTz0j6yvN5bQLUwwJzGHOvOLEOmVZcGjZY6MdpkXSeen4znYRQCsm51uI5qGatYUxiAKLyGsBjCeHZZXSJ5WAEKuzh1l1FtlDPLjajOt4OfjPMIVsDZlPQgqvAjHDDfi0qwxF6WZrOv8zkz6SexD7K/9OMq4OBKmrWriBMq6ogxD9dVojI7WTfcrQjrS3LXH18kb2ffujdLJvcB3fglJdHhd5+BBfLrd3bkIU/Zin0gNRdj42fX/JEckNVvtN9HEAO+WyGaEBdlu76fcGgzlOqPAoSCrliJAZJ7PYCSUYQ0hpDcicAY64Orq3ed7zx7YCh8YuV47KbV96sAfA3L69yI42El31232VEEmo4geZg9/GmPJU7Pk+W5VcHXEDclMXGvTAZOxFQpbwsF6dz5u03VpI+MSZvSCIGI5S3ARXm+e0YyY96PvYJ2lxNtH27BEqnlSC3ftgeq+UbuhKjDzvtwkIjllsFZCYz486qBuYs5c4zbHgD4Pbfv0DFOHmYpRwkK8p5/3xceic23QJJYp+O8xlxr4hr5nU6bpUG/7xtxIR4KoGIitv9zlG9ENM5x9/CxJwDlGT6xQ93N6HpCPc8irIwkljEwj/1o2VSAImhMQQtMNvIEtQgpc69qklDGeymAIkJBNpOf+fPIQ8ymD8zlsB+jMR4BAhKc1eTpKCZIB4cN+UqGQl79PjxdepyKME1YASsCZ7ZH+CxS9S5A8Awkxz+5BIk7MMadpKFoSq9BTzuVn97SuDj9A+vKgOjnnG4BAAAAAElFTkSuQmCC",
-      "actions": [
-        "magic2"
-      ],
+      "actions": ["magic2"],
       "elementalAttribute": "h",
       "weapons": [],
       "effect": [
@@ -1983,8 +1975,8 @@
       "soundPath": "Skill.img/2311004",
       "description": {
         "id": 2311004,
-        "desc": "Attacks multiple enemies at once with the ray of holy light. Applies massive damage to the undead + devil-based monsters.",
-        "name": "Shining Ray",
+        "desc": "성스러운 빛으로 적 다수를 공격한다. 언데드, 마족 몬스터에게 큰 데미지를 줄 수 있다.",
+        "name": "샤이닝 레이",
         "bookName": ""
       },
       "levelProperties": [
@@ -2265,9 +2257,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACMklEQVR4nL2X6ZGDMAyFzUwaSAu7JZASSAmkhFACLgFKICVACaEEKGG3BZeQRQ5iFSEfZDLoR/Ah630+UPBBvdpD7WMJFijA4z787KJ+Pn0/EAIBrHiWfu0CULWD0peThTjsLQ5W5qlSM8RBvWnjOHr70zSNirMZAIX1aLx+lRqjQDYBgDgK36+Z1/d86xcQH0Q0AIqHhNHQD0B8EFEALnGcpUscyz4IEQD3GQZAuZjEBxL05BDm/TgGIKCtESBWACgIBgMKdthC4tx3CGzZC4AV76elLuf9q/ulvGAQHuzjBuO4u92Ker0Km94CGtgljn3oSychmQhgZux2ojbC607bL2xL2nnJ4Yl9xpMy1gC+/ML6LvX6PEBbizPmsYTYwgqYxRMFloBLBP50kUrPYwggDM7rzQxYwCGbyhET9wAYRzmi3pDDVmjhdY3bgvWhCdVBrCLimpwNaH//ELKBEEzrXqxr7U9Q0N+UX+FMCKqGlJ+DO1VWuS2XVfZS9+0w+PBY3OREJKxZDaLzMtvn7INtNVn2cnkN/d8MMoCR0+4TolfXSs5qV3IGjKMfzkpTqfhUDGI3tre87gKifugDT4TwAtAZ5NOgznPAbjr87xidB2BpgA4oQRgTV87/TI5CVJrgHIqdnX1qdfrfcQ3AIbIyk4PFtpG+vv4XpyZuAYX4lEniTgAK8SnzfZQmcFeTbkexl4utVncj3IqgmOAKWAi4s+1hKA4/dAuS+cK4hy3X8z/wMjpQMSjjQAAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABsklEQVR4nL2Xb9GDMAzG4Q4DaAEJWAAJWAAJYAEJYAEJYAELSGBvuDdc6JK0ZVufD1v/pDy/Njm2JtFdRxRGMTYowLEsSxD3PM8PhECA0zzLsiAA4zhGVVWdEEloc1BZlhdEEj3Uuq7qvOuGvAHQeJomp3gbiBcAmKNx13VqbNu2ThDOAGhuM0ZhHIJIEE4AkjndJWeObQ2CBcA8wwLOXDI253GNBvEGQPMMMovNZm7G2lJ2AzB3a3uANMdBSqfApmDfd7bd9/3VbprmNkcFcxgLptCXpBahtJCOUyg6RyE0PX4TcuY4pu3YCwANfB7oK2sNuPTruj6/h2E427Z4FUAqQB8QEJceDuSjGqBmUmHa0ueVAtghHLPZN025tZge65uQEy6mpvS4JbnEOKcATOGfTJqmtwfTAvQxVgGkqoXXNEBwouPcepjn0qCeACwyf4zMvgRE4zCGQjgBSBAakK9uAHA0WGRFUVzjtP1EmJJ5nq8UbNv2DqBBfCpqTsWmgEJ8S5y5CEAhviXtT2kMdzXudvSr2xIU7t+tCJoxnsAJAdelEEJz+KApiP8vjCF0Xc9fsxIouHLHe2QAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACWklEQVR4nL2XjZGjMAyFzUwaICVcSoASlhKghKQEKCEpIZQAJZAScAlLCecScpaxQAbZkL0dNJPEP7LeZykD9km49hbHWIQNCvDu+u9D1LP08kYIBDDiX8mfQwDuTS+qIjUQp6PFwco8EcJCnMQPTUoZnE+SZFecjwFQOFVhgd76bYF8BADiKPz+CvtGr2QCCUHsBkDxLWE09AOQEMQuAJ949AqLYzsEwQJIUj8jPmjxnAi3YWCcxzUGotUQYg2xAkBBMFiAbTClP+cN8SXI3zzs4wCgOC46t3NbMYt9wTlI8D0zWViXQBEx5Qpf6rn9feWhzFw++57r0de3C+Y/AF7xJMIKkPHLwzZidw5+DYSP0gugAmuUsi6jWvognmoG6suY9cf+JgBaWo2d/h6v5ti+2JjfVwILGgf6i2Cd3XGmM9Jp2OVGQ5xMBtSYMiXcFNK+4lPclLN4UQ0k5A9LsJlCFLsNonnOr3Poo9Hx/SXw9J862E0HX/aXotxa8OtLtf0kXD4HzOJi0KeYcSd3ECX9UIHBZxlraex/YHImNasyqQMmEwT63G2Kq5ucx6yfW06eYFcJJohCirLhX6vl031nrOb1ulSv758fPIqvelFdSPpwFI/MPYpdOx6oJn7oA/FSPd4389zmecBAZNKbljoLnw23zAGA1AAdUOZkZ3m374DpM2Rvze5Hndcg1wArCKx3TKKQJ6IztpxXZDx2xamxJZggiv9LLzVO3AtAIX7LQofSCO5q3O1o7+XiU3u0Em5F0IwwAwYC7mxHGIrDFy1BZC+MR9h0Pf8HblVFkl47SoQAAAAASUVORK5CYII=",
-      "actions": [
-        "alert3"
-      ],
+      "actions": ["alert3"],
       "weapons": [],
       "effect": [
         {
@@ -2585,8 +2575,8 @@
       "soundPath": "Skill.img/2311005",
       "description": {
         "id": 2311005,
-        "desc": "Turns up to 6 monsters into snails.  Changes the look, the attacking capacity, and the speed of movement. Cannot be used against boss-level monsters.",
-        "name": "Doom",
+        "desc": "적 다수를 달팽이로 바꾼다. 모습, 공격력, 이동속도 등이 바뀐다. 보스몹에게는 적용되지 않으며 한 번에 6마리 이상 변신시킬 수 없다.",
+        "name": "둠",
         "bookName": ""
       },
       "levelProperties": [
@@ -2927,9 +2917,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE2klEQVR4nL1X25WzPAxUztkGSAmkBCgBSgglQAlQApRASoASoARcwlLCUkJ+jWwZE8jD//IpZ5eLLzMay7L4oaO96d/YTW9CAu9p+f1fs0S08S/62laMBQ3PQfrgGYb7PH28lYQSEPAsiQ+TGGPkmiTJCQBtr7WjMq5P7Wir5uqSDDDaYaGmSIXETwiugCFoYxpq+XdFIo6O3uv4jsdE0bUysPrJczkSnzEgTDG4559MOq80Rh2GnUign6GRO9nneXuJ0CCG6+b6QY1tPZLMnNgnAugYJ7sXUz1Q3hUU1zuQ9IsMxeRmYaQ1mqlJX/LYTrWHT9PUj0nH/X5ZljMBeAhABVcP+7qkqnvR0FrAaEsOEqcPO/H7/abb7SYKFGnn36nn67pSURQCPq9fFBApubUsM5lIiPBvaGu5z6uGlh7LE8nf454KCADGcaQoyRi88cBX4HB0Xs01AVUBsvdtKeDW20ggl37w3t9vDwG8p7kf/7tMts29m/r2BA5ChxhAyIQ7QAbW2L/GK0CeiKVyu93pD56vG73MSnPXePCRn9veBnFecQCa2a85cBDoal4BbDeVPJSeAvD92Ul7AT6zt+C5cQzO3JaVNY3VTCN2CL9c+Q9zrWY7EsB2O2pgDeutS0Diuc2i6j0sq1u535w++wbcTd9GosImCmNXCAGkR7wYt469j723URTvCjhwBYYnsPIje34zO+fGgboKli7DIQhfL2hgOOJLN4D8NQRX2YdhkHFJHDn5z56HbzB/9oypCRKTJ6DRD8sby25xgYSAQ7Q/OLIht4IrkStDECK9IyCzfqKKx9ZTySRmS2xczwpoqlUiaVXQ72CD64+DLNxuCv7ngg+GCEeeyOr6RAgkujw/PM9Vfp2IdK+qAqGpx5/gB3M7QIBYBb2vJ7cVeanMqzsroF6IxRgUnd+zLdNEaeCNtsN7SA/A2QFs5a7Gq9mX68nEEHI/n5Mg90vgbRH5DU1kU/BkPTb8rucYCJcEFoIjA+q4xJHANTaj9S+OjwpogRFrwomslo97Tsvfn9fCaPiy9YNdIsfRSy1gbhkPtu3Aaj4Vaya057jz+l4JuEy+hif80RRYZb+MDSVJCWVByhMCSAoKvmcs63OeF1QjG/J9w3m9DQIzXOtP4JP3AZOZ6wgzvnYCUNXQ0cO2fsp1mgbxHi0gMgYyI5K/gWLtYcmzDqY9KygEdN+jdNKDqOk4GDlrpfc7ta5ahsfmwmMAo/JBslKTwDvgHcGTZ8nzzfsSqBKr62jPhheXYhFnsYdPHKHpwST9f3vKH5X0E5IOz4ydZM1QOdQHSscvQaiE54zjk2yN1/C+H5aW/Abh/0XTSaVkw9ZOCfCybeXEuwKX+OKdsK1BKlZgTcWQFAfGXvdtksdXZtp1s8RHwzUixpnN7mssGewT/PsihAqwN58fJeLTRrRXApzJRsO1YiJgSlqPZT3f9ftHTb0PwbEE+uLyLJAB2z7MuOol40IORyrANNFgmUYm9uTK+RNp+7iGwKECN3yrhV9HYc22uuoFOwTVsoL79m1/h7ov3A3h2vv+Mwd2VpLpBOOmCggJfLNptRoGJgjhGfeo57WkRl8zs0v4kBn3ShdbDI7ixET98CmJgqsCajf3wXiw8GsmvP/WBzY3u4JjcTnG79//AGT0HR3LDxOAAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADU0lEQVR4nL2X7U0rMRREd6U0ACWQEqAEKAFKCCVACVAClAAlQAlQApRASsjjWJzV7F0n/HlipGg3jn1n7pftrIY5dsPfYPQlBeze3t7+K8v9/f1wc3OzGD87O9spQgGN/PT0dDbx/f29Peu4vz0/Pw+Xl5fddZD3xDD36elpuLq6aiJWSS5hkj4+Pg6bzaYr4uTkpCsYYUdHR8M+IFoRtQYm5YYOo6+vr91IQPL5+TkTsN1uJ3Letek8RSp+IYCJEOEFeHh4GK6vrxfeJpHrmOca8Z3v7rv1NhMAMYszhCgmGnhxd3c3eZ7kGt7tdsM4ju03xTCmHUR+h72RG5FFBAAhJ08S8YFcw+RPrNfrRmJR4gQkEvfImbNXgFGACM/TW56Q+/34+LjNz9C+vLzMooKtSo6gRQ1kB7gw81yFEGo9J2J4DwFrGDNdOMJ3c15bdBJAu0mCusxxJRd4ZuglqF1BKhWJODtjkYIaAZEh13OA9xqRJAVLlGOAcdYRYdI0CWAAlVl4NQqGHQOSn5+fL8gOAaFwmYZZEdr7VnyKgPzr66sRI5SU2Q0WVIa/AjusQTDPRQqsfmAPS2C1X1xctHAjlN94KroCJ6x43ukCns43ZYuNCCiERbYVRZbtJnmeoBhFPCJ7gm5vbxffuxuRynPDSWKfh47v3PMNN/bsBO2s9i08NE5USEf9He/xzNYEGY3sf51cVSN8agcAjJuObKNEkmc9IQKvs2O6O6FtmGCv//j4mB1Ovrtb9qKU94ucU0/VxU4IfOIh5NV47fu8iIBDtVGP8SaA3ORgEtg+gKr1XeJsw9oRh0R4yWkCehsI1zBA5WrMHIteGwr3EvJ+CE2ABUMagLsWeaQGbMd9HjNOuvLK9hsxv09dYHtkJDwbiIRpyI0EeDABW5M7hOEFvGMro5M8sxTkXQ5YC15QjIT1kjXhXEV7ZlRy1zt/lgJDyALTISBiEePeEb3tZBQreUXtoNlhVCfWc90/IpLX6NWNSWcqedrsngV1Qf5Dcpdzo7Glfiu6vA0lEDDyXy0vjLlnu+0y5mUio4VRxzwxM5WVVLE/HKMRaCIosnq5kFwheRtibu6CrjUa1EvvaJbcCIjx5w/jDPv+2eybEwRTFDqY+vcfOjAeTjDHavIAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE30lEQVR4nL1XaxGzOhBdZj4DqQQqoUgACSABJIAEkAASioQiASQUCY2E3j1JNoRH753759tOS4GQc/bsI+EP7e1Lf8ci+RMS+L7m9/+aRZHmj/p5L1kTmuPZjME5DP+z5P4VEkLAgKePeDfJsizm+Hg8TgC411BBLT1P93EvY/ArMsBonzM1RWJI/AnBBTAELXRGz+V1SeIRM+H1TLhiYkop4++V1TnP5Ugcc8Awhc38ga0TUVdWVC/9iUTMIMujY+TanI9xQ1prip3gOpxzYULxRjJ1Yp8IYGCcWi9ifmbOX5QMGaX1BgTTj8EAia183kWT9fCTegLJXULBYei2sMzzfCYAD2d6OXBlCEyqob5NqWomerWWtlpyht7yJUnsxN/vl6IoMs9Wt8lfM36x5+u6UlEUBnxafymAwaNmj5UBwWTwc25LQFPSdPRuEQpL4B4VBgQA4ziytiVV0eCBr8Dh6LQu1wREhaTj5GMgFXxA4NM+zRF2ixIDGGWVf/796vm399dA/AgOQrscQMqEFWAe5NhrGgLw2JPAJ4pu9GEvWSzqWM61qejD4Ij7wD9139vwVExkGnzMgZMEJeoVQLnZuCtTXjYAe3AhIApMB3AYCJkC5J+BfVI1k2ICg6po5QrB1zKxZeoJoNxWn7tbcb/bfqcCkgwG7yc3V8xjxuuS96aU0NfIbFtdXBWGANojLoClVUEUiHdeA1yABRyF8R/YloD7LqMrbReGXRIOg/X82e6BJeZvB9442Z9PK3uuLInpX5hgjoFjkvJghPsUAsl+WNJk5gj5YQBHtt85syG3gAuRK6v5fsnqDCvr+/xwX7hxg3pQ17nwdvqsgLRaIXJnIp/W/v+++l25CfjXJR/MZHgzmMSDJKEgINExifBcF7frRiS1KgqEJh4fwY9mo6kp53Y6LpZK+pauyMv40JwVEC8sC7TS+HydbLO5Z9XpOXgP6VF+urP3x7L1Y6Zqe8aE50gAk0y8okkVhGsaJp+DWm+f+5DAQnDbuvFcQ8qRwDGfrOdxHO8VAHiHMvT7HHu8RxnNH9fXUX4BYOuqQGI9BM1Uwng0ARbzrdh0Qu8zH5WmLOroxeCnEjvswgRYZP+ZG+icqqRaD3sCaAroVCK4Nh9rWVFR6fr6wDE0Pd7dRKIJ6BH45L3eDg2ToDFMwsWCL1iU3Mi2tiWJehfvQWRYNimQyb9AkTMwFSThlRkCaI3GW534BanpeDLeExS3iHJXPlNQPqHHpgISuzSL7YD17mAtb80q6UMgSixOCZAa44qbCpNhEtI4QouiLZavb21yxowTkmhGLHWP6thtXjcqPgShEmJYOnEHezx0sf6buzXC5mHWjLxNy33eGEwGT7mBmWZzAY5R8UPx6rtuBARYWjEkRVWEq3/5fhhCXTdRX6dU8BHPcfGaZ7BnhB3BQ7taq/xyfHwpEe/D78SulNzCKgdux/EuQpNf38PtOMxUygFUvPcEfpndvGizWTEK5XbJBpg0moVXu4lbY5n/mOMHcEggwrta+HYU7tn0ovwGYhmVBw+VkmvY9yVJ5KuhC/GEycQhS/n9ornjLBIFDAm8s8luNUxMebPBfzghW2qMNeqw99247XRNiZFdMbF/OMXAgYsCYpF7YdxR3t5m9m82oZ2uV1u5rslAF+Zfz/8Ba3vku9nUk1IAAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "hit": [
         {
@@ -2959,8 +2947,8 @@
       "soundPath": "Skill.img/2311006",
       "description": {
         "id": 2311006,
-        "desc": "Summons a holy dragon for a certain amount of time. The dragon will stay beside you and attack the enemies in the process. The higher the skill level, the stronger the summoned dragon is.",
-        "name": "Summon Dragon",
+        "desc": "일정 시간동안 성스러운 용을 소환한다. 용은 술자 곁에서 적을 공격하며 스킬 레벨이 올라갈수록 더 강한 용을 소환할 수 있다.",
+        "name": "서먼 드래곤",
         "bookName": ""
       },
       "levelProperties": [
@@ -3243,6 +3231,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Adv. Holy Magic"
+    "bookName": "상급 신성 마법"
   }
 }
