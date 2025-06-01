@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/3120005",
       "description": {
         "id": 3120005,
-        "desc": "Increases the bow mastery as well as weapon attack. Only applied with a bow equipped.",
-        "name": "Bow Expert",
+        "desc": "활 계열 무기의 숙련도와 공격력을 상승시킨다. 반드시 활을 들었을 경우에만 적용된다.",
+        "name": "보우 엑스퍼트",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -901,7 +901,7 @@
       "soundPath": "Skill.img/3121000",
       "description": {
         "id": 3121000,
-        "desc": "Increase all players' stats within a party by certain percentage ",
+        "desc": "일정 시간 동안 파티원의 모든 스탯을 일정 퍼센트 올려 준다.",
         "name": "메이플 용사",
         "bookName": ""
       },
@@ -1541,8 +1541,8 @@
       "soundPath": "Skill.img/3121002",
       "description": {
         "id": 3121002,
-        "desc": "Grants party members the ability to locate enemy weaknesses, and in turn inflict more damage by exploiting them.",
-        "name": "Sharp Eyes",
+        "desc": "파티원에게 적의 약점을 찾아 치명상을 입힐 수 있는 능력을 부여한다.",
+        "name": "샤프 아이즈",
         "bookName": ""
       },
       "levelProperties": [
@@ -2243,8 +2243,8 @@
       "soundPath": "Skill.img/3121003",
       "description": {
         "id": 3121003,
-        "desc": "Drawing upon the spirit of the dragon, fires a powerful arrow of tremendous force that will knock back the target a long distance.",
-        "name": "Dragon's Breath",
+        "desc": "드래곤의 영혼을 끌어들여 강력한 화살을 쏜다. 화살의 강력한 힘으로 인해 맞은 적은 화살에 쓸려 먼거리를 밀려 나간다.",
+        "name": "드래곤 펄스",
         "bookName": ""
       },
       "levelProperties": [
@@ -2717,8 +2717,8 @@
       "soundPath": "Skill.img/3121004",
       "description": {
         "id": 3121004,
-        "desc": "Fires away arrows at a tremendous speed, as chaotic as a nasty rainstorm.",
-        "name": "Hurricane",
+        "desc": "폭풍우가 몰아치듯 빠른 속도로 화살을 발사한다. 스킬 키를 누르고 있으면 지속적으로 화살이 나간다.",
+        "name": "폭풍의 시",
         "bookName": ""
       },
       "levelProperties": [
@@ -3257,8 +3257,8 @@
       "soundPath": "Skill.img/3121006",
       "description": {
         "id": 3121006,
-        "desc": "Temporarily summons the Phoenix, who is a fire-based ally. Attacks up to 4 monsters.",
-        "name": "Phoenix",
+        "desc": "일정 시간 동안 불 속성을 지닌 피닉스를 소환한다. 최대 4마리의 적을 공격한다.",
+        "name": "피닉스",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -3854,8 +3854,8 @@
       "soundPath": "Skill.img/3121007",
       "description": {
         "id": 3121007,
-        "desc": "Attacks a monster's leg with a given success rate, slowing it down tremendously in the process",
-        "name": "Hamstring",
+        "desc": "일정 확률로 적의 다리 부위를 공격하여 일정 시간 동안 이동 속도를 낮춘다.",
+        "name": "햄스트링",
         "bookName": ""
       },
       "levelProperties": [
@@ -4389,8 +4389,8 @@
       "soundPath": "Skill.img/3121008",
       "description": {
         "id": 3121008,
-        "desc": "Temporarily increases weapon attack, while simultaneously decreases skill-based MP usage.\\n#c Terms between skills : 6 Minutes#",
-        "name": "Concentrate",
+        "desc": "일정 시간동안 공격력이 상승하고, 스킬 사용시 소모 되는 마나가 줄어든다.",
+        "name": "집중",
         "bookName": ""
       },
       "levelProperties": [
@@ -4871,6 +4871,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Bow master"
+    "bookName": "활의 달인"
   }
 }
