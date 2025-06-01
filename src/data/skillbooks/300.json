@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/3000000",
       "description": {
         "id": 3000000,
-        "desc": "Increases accuracy.",
-        "name": "The Blessing of Amazon",
+        "desc": "명중률을 증가시켜 준다.",
+        "name": "아마존의 축복",
         "bookName": ""
       },
       "levelProperties": [
@@ -96,8 +96,8 @@
       "soundPath": "Skill.img/3000001",
       "description": {
         "id": 3000001,
-        "desc": "Launches a critical attack with a given success rate.",
-        "name": "Critical Shot",
+        "desc": "일정 확률로 크리티컬 공격이 가능해진다.",
+        "name": "크리티컬 샷",
         "bookName": ""
       },
       "levelProperties": [
@@ -213,8 +213,8 @@
       "soundPath": "Skill.img/3000002",
       "description": {
         "id": 3000002,
-        "desc": "Increases the range of attack for bows and crossbows.\\nRequired Skill : #cAt least Level 3 on The Blessing of Amazon#",
-        "name": "The Eye of Amazon",
+        "desc": "활과 석궁의 사정 거리를 늘려준다.",
+        "name": "아마존의 눈",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -380,8 +380,8 @@
       "soundPath": "Skill.img/3001003",
       "description": {
         "id": 3001003,
-        "desc": "Focusing to temporarily increase accuracy and avoidability.\\nRequired Skill : #cAt least Level 3 on The Blessing of Amazon#",
-        "name": "Focus",
+        "desc": "집중하여 일정 시간동안 명중률과 회피율을 상승시킨다.",
+        "name": "포커스",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -645,8 +645,8 @@
       "soundPath": "Skill.img/3001004",
       "description": {
         "id": 3001004,
-        "desc": "Fires an arrow with authority. Applies more damage than usual.",
-        "name": "Arrow Blow",
+        "desc": "강하게 화살을 발사한다. 평소보다 많은 피해를 줄 수 있다.",
+        "name": "애로우 블로우",
         "bookName": ""
       },
       "levelProperties": [
@@ -825,8 +825,8 @@
       "soundPath": "Skill.img/3001005",
       "description": {
         "id": 3001005,
-        "desc": "Fires two arrows at once to attack an enemy twice.\\nRequired Skill : #cAt least Level 1 on Arrow Blow#",
-        "name": "Double Shot",
+        "desc": "두개의 화살을 소비하여 두 번 적을 공격한다.",
+        "name": "더블 샷",
         "bookName": ""
       },
       "requiredSkillLevels": {
