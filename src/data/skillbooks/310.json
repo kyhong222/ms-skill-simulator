@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/3100000",
       "description": {
         "id": 3100000,
-        "desc": "Increases the bow mastery and accuracy. It only applies when a bow is in hand.",
-        "name": "Bow Mastery",
+        "desc": "활 계열 무기의 숙련도와 명중률을 상승시킨다. 반드시 이 기술은 활을 들었을 경우에만 적용된다.",
+        "name": "보우 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -192,8 +192,8 @@
       "soundPath": "Skill.img/3100001",
       "description": {
         "id": 3100001,
-        "desc": "Strikes an another, far deadlier blow following the initial attack with a given success rate. It works only when holding a bow.\\nRequired Skill : #cAt least Level 3 on Bow Mastery#",
-        "name": "Final Attack : Bow",
+        "desc": "일정 확률로 공격 스킬이 사용된 후 연속 공격이 발동된다. 다만 반드시 활을 들었을 경우에만 발동된다.",
+        "name": "파이널 어택 : 활",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -357,9 +357,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADNUlEQVR4nL1Xi42rMBBcpDTAlQAlQAmkhFDCo4SkBCgBSoASoAQoIZQQSsjzGNZsjCGR7pQ56SD+zezYXpsTveJJ34HHL1LAs+3vX2E/x+GTRbAATZ5EwZ+TDcOgn1EUmbK87umWxlrEySZ3dfgNcRzH1Pf9S931osZeRJzsTugA2J0Ynwizx0GfvcBOdqfLJTHKXZDCXGIkuSxruo4uSbJpb+8CGsdRPyGkLEvKsozya0K3otN1cnAWs+cK6kGsx1Pk0omNAFSiAxMMw0hNE+r3pumWNoEWVtctTdNIPz+hIeLB5ZwzuXRiUk9/zwEpIi9rXeb7vlIfqcEGytKzFuZ5Hj2fT3o87jSNDYULKZPbkSL6aXn3F55uHLYCbBHXPFeREhXV3Bi/Z1GBFgFAxF0FHFrkcs4n2sfJVShF9JyclPQoCGgYMTWNEYNpuPc51eU/4wCT205w9G8FvIoIqcWcqjC6ZbBkicxXfwXdVPS3jQgml3PuWqy7ArZObPOCEUfzFEAAwIuPyY9yx6EAlwjXapeAiDS7qXybm2k4wlsBLhGxY8FxObsAwAHU/8qBPRGu1Q403bi0T6hTdVgvRyI+FiBtP1rtyJZIWOk5NjvlCB8JkOR7TsBuLke2RMICApUzRpU191xwCrDz9dGc42mn10sSqFwxJ6yqqcy2/cgB12nmmvM9JwBeB7cs1c/CGmdXAJPXS6NB5eFiOR1tctt2uSXZgf7Rri7+nI8dYHIcMvx7SNMlou2RKpOMLYId0O/qsLKDBCJ/WgX4aji2nQ8ZGVEQRGp1D2YAO8PZRzkf3zjIpmk9iuTUtm27CpjUcJKQG8L+++Oh9vNMbh+pLrT3WvyaaOafXsrPYWreXy4kPM8sgvcxR4+7gYzIBVRXXbUpL8aKXNhcSHRjer1OAdfr1VzXjhXQW5G7AlgE722gqtZ9/MnA6Xm1t2xLKpp5E46VW/zuhYRXq7xOAUfzv1lH6Di56zmYwwuJBAQdkctymUlt18w0N+ud0MO3muvTTDrx7mLhQpZmznKQq68ivHrsgBaBbzYXVGIj5Ba+yb4Dkgzvcwm4IcnxT06Bt3wwfgPm8/w/d4BmXeuaK+EAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACjklEQVR4nL1XUbHCMBBMZ2oAJIAEkAASQAJIAAkgASSABJAAEkACSOhjMyyzvV5C3+MN+0Fo0t5u9nJJW4Y6qvAdFPyjAqrT6fQV9uFwWFEEBUTywWDw72Tn8zm2Gnu324XpdBpFlJbce+AT4sdsg3V2Mpm8RJT2ITwApNLRRpiNg2dSEyvtQ1BH5R5UmCdGybXveDyG0WjUuN9WQbher7GFkM1mE+bzefy/3+/jmAanmJQrGAcxAHJ1oiEAg3iABLgRpABb3MP83e/30O12X0QMrjknuTqRdUBFYPZAp9OJ6hHssWhikKIoQlVV4Xa7xX6SsrUztdZjnE43UqAiVqtVnOl2u41juKYoiAAgAo5Y8lTOsw54ImgnSHu9XlSOlFAM0gABuOb9JPdynqyCdyLgBIPZmSE1VkQb8qyAlBMK7WfKALv4cntHVoAnwlvtCohYLpexZRpyeCvAE+EtOF24Cox/5EBKRGq165bLsZyI1gLU9txqR5XgejweN9z4swAlTzkBsB+7JftQvqyg1lVgyyeXc28h4j7sFSBHm9uQGgK808zLec4JtjjIvDhJASRfLBbxmrsex7yce07Qgcvl8urr9/t5B0iOQ4bX6/U6/s8dqd5mxXHdPZUHQHpqAmg7DxmdEc8ADUByKwKgaxRhOYDD4VAXoIQaCDZ653iqrhmYq58C2A+gRInaCwnzTBGsY86eQd9BHcj11QRQBKGvU8BsNmtFrrNug+QLCaF13CYwjmYCRzRfZuwJmRRAEamzn+MevHWkonWc/dkXEgXXQYpc+7UMU/dxTUBAgW81b5fyav43sDshAfJnqgo6EEUgZx64D9CFd0C1aNkRcETJ8aMpKJ4fjN/A6/P8B0lEXuFtzxyLAAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADKUlEQVR4nL1XgZGrIBBdZ9KAV4IpIZZgStASYgmxhFhCLEFL0BK0hLMEKcHPEpasCMSZ+5N3k1NBeI+3sOAJtljhO4johgtY+/H3K+zX9LySCBKgyLNL8t/JpmlS18vlYsoe7QhVkSoRJ5vc1eAvxGmawjiOm7p7LvvWIk52I2yAsBsRjgiz+8E2voGd7EZ5nhnlLnBhLjGcnJc1wwS3bP++vQpgnmd1RSFt+4CiqKB9xlCUQtXxzkmMzxWsR2IEknMndgKwEhsQwTTNEEWv+6ijdxItrMc3TD23mcecyLkTQl5jnwNcxP3Zq7I4jpV67ExOGi0sgnVd5U8SiRqin9S0s2NOoxf6PtY8wzztBdgibo8nCNmyarSN8vklKlEiEChiXcCIIHIecwF+nFyFXMT4S8kphksSwzQLaLrOiMEwrEsOY5sZB4jcdoJG/1HARsT5DL2KqQAKaa5HhuFpKhx9txNB5DzmrsnqFbBzwpEX3uJ0CNrXElYOABjyUO4ICnCJcM12DuVCUcp8+zRhCOGjAJcIWwyO2JRrFxDoANb/yQGfCNdsR9SUM7IMumFQ8yUk4rAAbntotmO2xIRVpmezUkI4JICT+5xAu6kcsyUmLESSJEqUzwWnADtfB2Mur3Z6vecAMlWohFU3nVm2hxxw7WaumPucQNA8qMurujZWP14BRL7o50H+ClZnx5zbzpckOdCvrSm7RgW4sDsP4CZDz6CdcG2pPMnYIsgBRAf1htAcTGLxFhDL7sh22mT4iJLkIifSZDqwM5y9lXfdoK4C/2YwE4SHtu/7twAh3+CE9CKa9rsscj3PusMXQum1XdjSkw0EbqdiW178lOZ+cyChOJMIWsc0epzVQswQhCSr52pXXE8VuLA7kOAmgrOWH6cQj/tNCgnt7JofBzzDYXgPJETF17E40HOZvu19jg+ohtfIhdsA/4GEZis/TiFC8bfnkXJDuOuFYKvAJ+LGnlFQiJyXbzKpcL9Xd+8zYYTfaq5PM+7Ep4OFC9XV7TuS4wEX9KcZkAj8ZnMhk7pwJdJJ9hMwydA650DbOTn+4yGI9AfjN2A+z/8BfxFTgJcQSE4AAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -533,8 +531,8 @@
       "soundPath": "Skill.img/3101002",
       "description": {
         "id": 3101002,
-        "desc": "Uses HP and MP to temporarily boost up the attacking speed of the bow. It only works with a bow in hand.\\nRequired Skill : #cAt least Level 5 on Bow Mastery#",
-        "name": "Bow Booster",
+        "desc": "HP, MP를 소비하여 일정 시간동안 활의 공격 속도를 한 단계 상승시킨다. 활을 들었을 경우에만 발동이 가능하다.",
+        "name": "보우 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -688,9 +686,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACRUlEQVR4nL2X4ZGDIBCFcSYNpIWkBCwhV0KuBC1BSzAlmBJiCZcSpITYipenLi5kQb258f2ITED222VZ5KBc9WofJdTgAP1P+9rF+ld67gmCAAbjF33aBaB6tKr8TgeIw97GoeKqlZogDuoPMsYE+7TWm+baBECGb8/c+f9of5TKVL0JYhFA8ra41KvfWYIJAtAkZZN/9HGPQ/+hedW1nScEEgSgFyoV9tZfCijT8vgQyKoc8KMgRYB0N/nCOBfwA0Ba8+o6v5SmqdPXtq1tb0m+Z2c+AWC8vE8eHGfjmBh9MN73Y7U2XTcCnc8DxNbtR7IAMJC/jZu7G4FS5UMecOOQPp0GiPb1shAhxeDEHIChJEnsExBLiq99OJEXk5A8hAATBMiNymrZ06bLZ7BJ+litA0Coeegl8XzwIa4n2fvn+MoMgHWqs/od7Nx6GvOYC1GiJyAKBkHeA4TngrgLCMKueaTaNaWxhn0YKSlXV0IMrLJ4rYeKdgy5vy1DEKHzQcwB2vdSqYXgPYl2C21LZ1wnVNBBs4PRs6BgAwkGxkNJySFi9QFziznA5ZdkOoIbNZZi31sfJAbB5xYBePht2ITDh+qDJFoWgqgebhJG64AffhKvdiS75Y7unue5IUXiow5IECRERDJOhkl8z8NYCGJVDvgw2RSRu3KPY6nSEbwPIWn1R6k/KbVjJx36/PHQYhIugdBEa74BQuM3LYE06X+NB0CCu9qet6NbY3ArQjOhCAwQuLPtITKOH74EyXRh3EP2nP8FBclNvLhXLuoAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB90lEQVR4nL2X4bGCMBCEyQwN2IKWoCXYgpZAC7agLViCtqIlSAuUwHOZt5njvEuC7032hzBy5L5cNge0zVxjU0eBJxJgfDweVbLvdruREASYkm+32yoAt9utOR6PE0RbOzl0OBwiRNt8oefz6V5bOpFFAEx8uVzif6vVahbTdd0iiCyANdvT6VR8Tw7GBbBm60lXgUI1OI4H4gLwhtRsLTgkteSBFHmgpArU9Xo1//eq9AGQW/N3E5ldk81rifn6vv8EQHI9WyTHwLiG5OM4zgbYbDbNX/pIBGDy+/3+EQQImRxar9cTxOv1ihCeUnCzCgzDMB2RKIQQjyVauvYmgCXOEErBAMDbAVZV9/t9GQBKLUtvSfpBQ6Dvp+6JAFin8/k8+YAzLS0/qsSjhuDsASK9YO4CBOTarByYiTWMZcriTlgKgRgk0tvSg/CeD6YHuO91T6CjpeO5W7gtpRD39S7QlWBSHD1TSohUf8DYpgekdEumsQiiZ6tBUhBybBMAAV5jkWJ/sMRlIYT2VbIPoERWU7GgZJw8l96wKpFdAunU0orIPY9kHkSRBzSM9gBlVYrwGsJS8UupHpTnqScdrul4KGvCHAgHKnkH8OIXLYE16H/FAyDgW63m1xHM+v4qwmlgBSYIfC7VEJPjRy5B+P1grKH4nP8BbFlS/b8+sSwAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeUlEQVR4nL2X65GqQBCFhyoTYENwQ4AQJAQNQUPQEDAEN4Q1BA2BCWENYQmB5QzTQ9P28Lh1i/NDUIbur1+DbMxQjVlHCZ1wgOZR/azivcg/G4IgAOd8l21XASi/K3M55A5is7Zz6LzPjPEQG/MPstZGr2VZtsjWIgByfHkVJqUf07o7+I+jrRZBTAJo0Zbbx+x7pmCiAGTk9CwMhdtHzQ4iA3zd3lTBTgwkCkA33Ew82mtbCqlj61RTDGRWD5xs70iLNKhNxlea65miEzsEfAPQan7L+izkeT64VlW9wVnN55c8X/YdAM5dzRkxnMMwrsF50zTeQFf7/PPDQSwdP1IAgIND6/x1qQcLTrfC9QF3Du22qYN4/PwGiJjG4NQegKMkScIREFP6Ml1p1B6xcbjJJkSERRshBJgoQOv/GPHz3PZ9Q1BZ/ZgHgFTz1KsOfD8A9CwgdnXlpuPtHv9bAECdvttaH8oiRDoWMReyREcHwZ7qz3YsEfbuNWxUdQoI4lT6mrNBl7W9H+rgWMIUsinrBTshFo7tfiSkGt0vx5Ig5GTEng9qD9Dc9089b9xn4M6GgqaFxpKL0s/lvrKpGH0WlCwT1zoPzmNNySHUUjDbag9wyS35nHaG7n7eZbQShCC0TYrbVgGwgCKGUqOL9gdNVBaCuIl+Hd0HkKKzsnvRbsfFR25f9/fw3nDl+Bhm4m0f0CBIyIjmnAtZck1nus0HziQEf3BN9oCEOfqMSBAetYSXEJpm/ymVRul87EmHa3I9NNmEUyBkaM5/gNj6RSXQjP6v9QBI8K625tvR9W7xVoTThDLgIPDOtobIOT54CRL/wriGwnP+D6YTV8uy0QAiAAAAAElFTkSuQmCC",
-      "weapons": [
-        45
-      ],
+      "weapons": [45],
       "hit": [
         {
           "frames": [
@@ -781,8 +777,8 @@
       "soundPath": "Skill.img/3101003",
       "description": {
         "id": 3101003,
-        "desc": "Increases the success rate for pushing off the monsters when swinging a bow.  As the level rises, the number of monsters that one can push off with one swing increases.",
-        "name": "Power Knock-Back",
+        "desc": "활을 휘둘렀을 경우 적을 크게 뒤로 밀 수 있는 확률을 증가시킨다. 더불어 레벨이 올라갈수록 한 번에 밀 수 있는 적의 수가 증가한다.",
+        "name": "파워 넉백",
         "bookName": ""
       },
       "levelProperties": [
@@ -953,12 +949,8 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgElEQVR4nL2XgZWkIAyG43s2gCU4JWAJNyVoCTsleCWcJeyWoCU4JWgJWsJSgkfQsFFBcfZu//fmiQyQj2ACxLDWBD+jiAocYGq74bSnAAVZlkHXvkPzfEJVNdB1na4Vwdbv2W0iCAIwxn/J9LRz3/fGIEKUZW7rQ/qS/tQd/C4yAxFfNY6GUeiB7P6wMPiUUgYBlLlut0DEECgy/vnZwYjlxbir3VZHYEEAPuM0MPcCeYjryDunAGfGubDdNH0FUj+Oc/3t5u1zCHDFuEsyTQ1ENwxeCC9AqHFqhzOPomg3zhlE0DeA8R4iguDLcCYnwHb2lGxCXX9FOwATRuOHfQ+dPemqFyyAjV9m/H8JbUmhvgAwv8NYmQqZ19A3j537V5Ab4f981r4PErXNE7MH+grkW736Y3xqTwgBQ1sCqGauFHzDEcD3n2GoQY2NqUuS4nAJMCqUUnpTyiDu3vOdcSFLSHX4YCP8YTlEox44Fak1EqI4e2gXQ7GCUNojxtt6xsIMTGR+D+ALvirV6+WrtRduh4bbZVnnJdAz7ptiLuYLiJB2v78S11yYfHxCz1oAPEyItDQV+AFuFeJOzHIEyj9IV19sS7JhSEmmh7ddKPIOr4qPYU5Q+BHe7+5MmBUf5sDBO5waWMLrKAnRODjZqplDOvhAcpSGffkhZJxggBBd3YicAEhoTzjLMlw9830L4Dt6JVz/KQCJQk8GZFAnwJVl4Ed1Lp4XLgP8pLwA3At4A8Lf1gs0e99xPBQgwrua63YUAvGKMAnpWxEWI/KAgcA7m0tt25q0ySGoDp+0sbieVKZ3bpw8QIqWC6OfvGpsGY3zJypJklX77Ttra49LfwH0KsGSAu2vmQAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACIklEQVR4nL2XAc3CMBCFu2QGQAJIAAkgASQwC0hAAxJAAkgACWABCfvzGt7+R2nX6yC8hGxs7d3Xa+/a1e5VrfuNKt4oQHu5XEy95/O5OxwO7nw+u/1+76z9pH9LCAJ457PZLNv5er16h4DYbDbdc0tfCvDr9dpD1KXO4ViMdDBWG9BqteogamcUnd9uN39P57F2ofrATAAp5zSsUWCEVH3RyQLknKvQrm3/E+l+v/vrdDpN9ukFKHEe02Qy8RDon4JIAlidsx1GXlXVm50chGkNIN8tIoROQ05RgHD0LDYluT4YAA41layjp0qj0AHQaSyPvy34GI1GcQCUV4Q8DH8fHN7rqFMLEgrrRE3DWtchhh4lk/lMkT6EIGBYD0LB3uPx8O3q3W735nyxWPj0QSP8cG8RDLNtCJ1Svd1u/YgUQhce3oWhj0WAz7hbIuf7xGn1U4D0wlxDBIFB7vclea3COkoJke0ACAERRGUJJ0ZMUF2Qsb4anTcAKAx5LpwWqQ2EHxFYLpfxStg0jV/92iEnpldfEaIdDPZ4PPp784GkrwyXFC/zbjhEpRtRFACEPNlwGkrPfB8BfKIh6fpVAIqpZ6mgUYCSadCjukrrQjHAL5UE0CigPOMXRoGjTx3HrQAVvtVi4bVADBGKEA657vlp5gih1U91Op182VQIPsOVG0vsynv+V+eMAFU9PxiT0o0KzvUKjcfjl/bhf2nbHZf+AJ59vk+YNx5EAAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChUlEQVR4nL2XgZGrIBCGlxkbICVoCVqClpC0kBLOEpIS0oJXgpYgJcQSjhJ4LLqIRhS8N/fPZEQE92PNLksCSyn4GzFquACq7d+HMzlIKIoC3u0Duq6D+7ODvu91Lw+2XhWZIggCMMbLPD2cLIQwBjMN8foqbX/IXNKj6aG+FQYiiTWOq0ehB7KqNjDYh9c8z4MAvq563ASRQKDIuFItDJ2wxrfGrbUHFgTgM04vdr1AHnK1551DgCPjrsZxcyB1gxz7s4t3zi5AjPEtlSk3EO37xwvhBQg1Po9TwBj7eM8RRNB/AOM9RAThfoYjbQKsV0/JJtT1MfoAQOO5vNv70NWTYr1gASh+c3kDiEirZ2QWyeUMgPl9NKxV6v2g+3S/C7kWPndX7ftDotZ5wgDkgzZ+XW1EooaUc1A95vtaU5JXuOOgqYHj1EM3nuaWsXr3E2BUSCnhVmSQqIZ/GB/SBtI0NYPwh+0QDcMwja1tEjpSwm4SVJMtIFL0iMT18XGNApYesJfZA2bexKnUS3vhsmu4mbZ+8wmEXnHeZeOTcnwwyKvd72PietbdJB+f0LMWAIsJwRvTMYIsoyDEnZXOcgTq/iG35uJYkg1DSjJCNIs8sJ5wVu47TAWlPVBV1XYmZJXQBcd1MeFIFF57SYjeg4t9fo8hHVyQ7KVhX34IeU8wQIhiN6JNACSkohPrvhdAdM33K4Df6Ey4/lcAEoUeFiOnAGI+g1uqu3LzQjTAX8oL4HoBT0D4W3uBVu8rx0MBGJ7Vtk5HBFHsQJwRJiF9KsImIw8YCDyzbaltW5M2XQjqwyttLFtXatO9a5w8QGLTgdEr3BlJaNy9oi6X5Z6xvnfG2nLpH1q+vrK6o/FkAAAAAElFTkSuQmCC",
-      "actions": [
-        "alert2"
-      ],
-      "weapons": [
-        45
-      ],
+      "actions": ["alert2"],
+      "weapons": [45],
       "ball": [
         {
           "frames": [
@@ -1261,8 +1253,8 @@
       "soundPath": "Skill.img/3101004",
       "description": {
         "id": 3101004,
-        "desc": "Temporarily allows the character to fire bow arrows without using up the arrows. Only works with a bow in hand.\\nRequired Skill : #cAt least Level 5 on Bow Booster#",
-        "name": "Soul Arrow : Bow",
+        "desc": "일정 시간동안 활 전용 화살을 소비하지 않고도 활을 쏠 수 있다. 활을 들고 있을 때만 사용할 수 있는 기술이다.",
+        "name": "소울 애로우 : 활",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -1396,9 +1388,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuElEQVR4nL2X4XGkMAyF7Zk0sFcCWwKUACVACZcSoAQoIVcCWwKUACWEFiiBs2weK3uxgUxm9SOLjfH7JEsKfAjbFvEek7jgAEs3fL9FPUvuCyAAoMXTOPpVoXEcrXEcx/q3bgdRFYmG+PipOG2ODX3jJEmsZ4Zh0GvKXK1bIdwcOC1+NCZxErvdbqKua1FVlZ4DBOwyADanjUJjiHddJ7IsE/M86/t87WUAN6y+8Z64G6VdAN8iGG3e1anIqt475mF3xemeq2EBYIGbPDASE7ENY8G1CqbotzN3xfM8DwNgIZ2RK2BuCpGmX+ri/oRh+6V5qyAKBVFZ3kKcoJCE/TTuA+xCrF4bcRWJLn15htZJ+UdHoa1jUVR+8WAEwhCRBdL3n5s4IOkICKD8G4nm3xQUDwIgF7A5RI0RyMRolXDWi7LMRdM8tPcEYXLCL+4FsMT1hPJWfK4QTsdcxYfuSySZiQgih2uf+C4ArwKU10syrkZAUt43cV6SvNnwzA/mABbyh30lSZGQUj7FKTFH/zOncsBdEGpMXHxZvu2EZEYRuZwDEN/tBSr5eNiXZRFbQnKN8Vg8CGDZWgXkJU84I27MrhKTtAS/9x/wEgCSirofGQ+7VYpWdUwG+AREsAxb9kCh5njC4cxhvDlp8eZ5PwThLUMeXko4ajKoc7OQPbTuqaHWnkH2jJ6xwxcS7vljLSXyHB2ujFR7naYtweAdF6d5nri8pPdsAwh5TuK00aMoNs94t0NE+DyHOKyCm5i3zUiUGzzn9uKVU3IvcGcisBcqnBk8p/BDhDcpt96vQGiAWcXAfS13u6Avi33NBhCnAI6Me+5aqMnsvQNeBgg1kaM2C4gjAEnfar6voyMPf2LNY6SvIrqUiICGoG82WBoZ8V6VPV4gXfPNHxnE6Q8/Arl+ML7Dtlr/D4YzF4cshZl9AAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACP0lEQVR4nL1XiY3CQAzclWgASqAFaIESoARagBKgBUqAEmgBWqAEKCF3s2Kiic/rJOiEpTuy74y99mQzSV1r0ncs80EJNLfb7Svoy+WyIQkSKOCLxeJfge73e6fN/c/nc9psNoXE5FNwbK5rvPavp501xFmv1y0JmwODwfvaAAfYdDpNh8Mh7ff70medHU2AmzNfam2CX6/XtFqt0uv1KuM6dzQBG9Za2wO3UXIJ1CbRsPlut0vH47Ha1rBbcIxZjA4BTrDJQwOYJeOR45lbcCRfSIATcUYWQEkApDYGA7h6S3D0Mwkfj4dPICLB5xr4bDYrv9vtNp1Opyp4GIGIBM5WCfDslRD6QACgl8slBA8JMBc8r0GEZWWB4Tn+8Iw1EXiVgAUnANqMggV/K1tpM3J8jlT2DwGtAi/Eajx3gmtJqtho5oc5wIm6uFaSiETOuQMerRmUA3ZCJEwK/nw+q9FC/+gcILinBUg+DXvTNH8Scih4SMAaz1cTDuA6bsHR570BRxFgaPmrYVfPtTrQr4oZkRhVhl6201Sc7HhEolqGGl4kHISFdV4zGy1LsvdCop5DwbgJFY7yqptbWbYvqr6Lbksg8hzg2EhBVO00At5LbFAVcDOAqtFzNc8rLTmPXC8Bb1OeGT1H+AmiImXrfQyJlkCfCtayuCY2JDGYQGTqubVIZLw74GgCkYgM+aDpGweBjG+1Tz38xBDRt6ZkRqCQgNLR5vN5AcflkRdIa7X+PiM4/ukR5PcH4zesrfUfvc8bmj3YK+0AAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuElEQVR4nL1Xi3GjMBBdzaQBXwmmBKsEU4IpwS4hlEBKiEvwlYBLgBLsEo4SOK1gxWqtD2QyfjNxEBJ6b7+ID/Axwnug6IILGNvu8Rb2UhcjiSABlvx42P8qUd/33vhwONj/za2DutJWxMdPyXFz2jA21lp7z3RdZ9d8nsy6WYTMgdXkuTGSI9lut4OmaaCua3uPRBA2C6DNcaPUmMjbtoWyLGEYBjvP124WIN0aG4fIpZeCAmKLCLj5+G0y5xIfc7dLcpyTHJ4AWiCTh4BkcDZ/l4XcE2eqWBW9i7kkP51OaQG0EGMkCSyQHDB+ehFzZfP7hxFRGBG1Zy2RoyhKwvuzDwvgIpRmREDkxhOBfmlDoQrrhccNoKji5EkPBEU46+lhymLtyCk0RoMVcGsAqhqS5EkBlAuLBzo2ixuxWJ7ReoDvzyNcvu7G+knElBNx8qgAjxyBcT7rWYTYaCZ/tA0UZT35xxAWcyKnyIMCeBVQeb0ko4MJkdKOnJckbzY885M5QAv5w7GSRE8oY7ojx0S5xp9ZlQNyQaox+eRTaSKkt9Ajm3OAyIO9wCSf53Zr+iz0zJZd8+RJAR5YA+IJN3oNoRPPTOWrAm/ATQJsUtnEmlzsu52HiBP0k6AVIpJl+I/d++ORL4IW8OZkrq/LvK2OiIhoGXL3YsJhk6E6t+DvABd7zXrGUpJuNncg4ZYPSjnLqcOZ5gbVTP7aI7S772VGJ3JDwAlIWY7kuNGTNSh6Y3KP0H0lqidbBTsYlu6nlLeALOd4sUqUHIlYA+eBkKsoZmR5BQsJb1Ky3vmZYpWAwfhAHstlF9SRLI41GxKxSkAO3HKJVJMJnQE3C9CJJpJrsyQiJ0Dht1rs6yhn4U/w9bfHryK8VOQBKwK/2QjH/UR+f4I7QErE7udA5PjDQ6DmD8Z3wNX6f/mt41va84zDAAAAAElFTkSuQmCC",
-      "weapons": [
-        45
-      ],
+      "weapons": [45],
       "ball": [
         {
           "frames": [
@@ -1670,8 +1660,8 @@
       "soundPath": "Skill.img/3101005",
       "description": {
         "id": 3101005,
-        "desc": "Fires arrows with bombs attached to it. If struck cleanly, the bomb explodes on the enemy, knocking out some of the enemies around with a certain success rate. Can't attack more than 6 at once, and it only works with a bow in hand.",
-        "name": "Arrow Bomb : Bow",
+        "desc": "폭탄이 장착된 화살을 쏘아 명중할 경우 적에게서 폭탄이 터져 주변에 있는 적이 일정 확률로 기절한다. 6명 이상의 적은 공격할 수 없다.",
+        "name": "애로우 봄 : 활",
         "bookName": ""
       },
       "levelProperties": [
@@ -1984,6 +1974,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Hunter's Guide"
+    "bookName": "활과 사냥"
   }
 }
