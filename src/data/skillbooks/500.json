@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/5000000",
       "description": {
         "id": 5000000,
-        "desc": "Increases accuracy and avoidability.",
-        "name": "Bullet Time",
+        "desc": "명중률과 회피율이 증가한다.",
+        "name": "퀵모션",
         "bookName": ""
       },
       "levelProperties": [
@@ -127,9 +127,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACyElEQVR4nL1XjdGjIBAlM2mAlKAlYAmmhKSEtKAl5Eo4S/ArIZagJcQSQgk5Fl1cYFEn903eZCIhyHvsH3AUPt7iOzhggwp4P/rnV9jPRf5GESjAkpcqc4O019BMHzxcD+kLoaOf97YX9bWwIo4cOUB6DRn1afuQC4cUAfQyOICCr1nEUXwImfyx2hkhKWCvC85Fwb5/u93ss7xcEhNvCNgDIH+9Xl7fMI7uv77vRdM0sYjfEFAUeUQOUFlmRTwMebFDhCfgdDqJJ0yaMDtGPbfyPSJkVi6DpIwFAHIjYpp8ifxT0Pcpqtsi4M/PwAtozaCFcCL/LWimj42B9l46YhB0bTqh9VJ2lFIfCRiGYWcWZJOIa925rjzP9xPNmbAHTgCsGFYL5ErdbblqRT2JEYvvwBrgHuqmFDFNxfv97o8NYwBWbEErsmlfrx19z5GiCIh0DmvkrAXcygnMu9EqMTYwDlIpiSk4zdPYp6uO5VITVguRDZoAa/lPBYZjwT3UKlJdtgVA5EeiRi6ZtC0+5/PZI6ViUq5aFZDZiuYTmsMEOxaIQ4ulSHkBEGsKzF7bWNBjZ4Iniwj759PbDWHldKVUcLhTQgzYfcHEwKADAZBebVmLTJZWhJgzCuuB53sZNSwwM6gFqN8rkg0DW4qNFYqmdvXAYozL8xpwDFeMuJ3EE0CLTDtvHNAHQBGcC0KkKmG3VYqBnP4P5JbQoJhLsc2M6WPPkdQyWyV4GMjs4XaMk0ix+JKeDZ5GCBWnMhmRY9Clol8p6SwQBSEH6X95sceRY7BBG0WEh5KqqqZ3unFdwJ6A48ih7mPpZRcl/VD8r1Mxh24YRfvok1ao63rfXrB1MUkBLzjhbhmdD8lecIC7Gnc72sJW1Ici+vkJ5OZWBM0DWsCKgDvbXlR/H8bc2rV/TBsmxsMmNw6B5PBFXXCYL4zfgLue/wOjCNVXLD9XyQAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACRUlEQVR4nL1X0XWCQBDE92zAFkwJWEIsQUvQEqQELMGUICVoCVJCaIESjMNjeHvr7t09kzgfcsLBzO3O7sG8CHEv3oMZB1LA/XL7fgv7evVxpwgKGMg/y+XT5L7vzYdY5725GvX5VlTb1SBiHiMHFotF9vlcATtQjSLmxR/CExtDUkAqBfv93rxeluVw3Gw2vxMQA8gvl0twruu66dr5fC6Ox2NUxMsCLHJguVwOIk6nU7HdbpMiAgHr9Xp4aMrhHnlKBNMyznoWIEWkzr0CGYVj09oCMEkSYvyfMD1AERw3TROk4JVyA9q2zRMgiQnkMheshBxMArBi5kg7Vv6HKKTH8oUmlqVY13Vw7dopD3hlIqMAkJQi4HQLMXKJIAVaBHJmVQRAH3glyRKU91jdMdqILNOkylFWjZyL9MioLMpNWoAFz2BoPlixJJVivFRFBSDMlrEsWB3UI40KgOmQI4QfR02IEAIkw8rlSqVgfS88wH3h2ikBdDseKJ3PfqBzbzUjVgaBCHjV8FSGhLVz6fYcA+fkNqNAgGwyFMFoUISVAg2PPNmK9QpBTkLWNIlxRE5lZFKrDq+r7ViSy1ZLQgqZbh/NJ8lpOs/9MlqdNqEHb+ezyGk2jClCv5QcDodAgSsg9wVEk8PpsXcIvaCX34o9wGgQ4UWhqqr8vcBSnAI3HL1b6lTIvWCGb7XY15GHlOu1CBoZ5I+vIgxnjMAgAt9sufjc1UXT9tP469Fb8WC+bFrzHgkdfkmOH5mC2fjB+A5Mn+c/0k6xiTtvQ7kAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzklEQVR4nL1X7ZWDIBCE99IAKcGUoCVoCUkJpoS7EpISYglnCUkJZwlagpTgsYTVBRc1d/cyPxQBnXG/gJ3wMYj3QGKDChju3+1b2IvsMKAIFGDJ8zSxDxpnauE/2wftPWt23tThvetw+foWn6fMitiF5AAVNBR5WSvlPc8VPt/giD04ETvxItTGTnYeA1bAKy7IDnv2w2VZ2nt6/HhdwFYA+TD4ifPonvIKM9a2rbher4sifi2AIwfkibIi7m0vDhtEjAJA915K0ffTRzVeSTQbD5g04snXRIi0HOckKhCAQbPfy/Hjyl0l6fsLbmU6tq914wtADEeTnHIihPZ/gUtNNgaG+0RsBdVCdMQHaZqK36B+dNsEiNyJKKauw367JR6dFlsxCrBmN38rbJzcnYjieT9NL4A1wD3UTTFimoq3280bm8UA/LFFTmblIMxXjKQoAiKdwxI5xeQCS3z3BrMiN0R+H8YGxkERqQeYgoCqquydq46LhahrHrO+tXSkWUPngnuoVZK8XBegmViKBRgUnyzLPFIqJuaqRQGJq2gURWTxAeKmaby+GCkvACL9y1IIGwu6NubS5i98wtZ8lEpKjUj6p1RwKBZiANcF7cw7pSGkF5Br4xtl7u5nsB5sKcWYGQiwAPX7hWRDxZbiEwipSD2AmfPyvCYCwMUKt0nxBHhFhvTZDzsRnAtCxAK1WivFvSGnkQ/kbd/bVUQ6f3ZuFwq3o9lHUsusleCGjM+W49G86ilEkr2BViDEjdstmbJpF5Jj0MWin1prFoQUOE0t7Io5cgw2aKOIcFPycXkGYv2I7AdmFomIQ4TkUPex9HIIQ+bPu+IQdaPNlr+NWuF8Pq+vBUsHk9EvERxTZd8IV8vQFXQtkHBWC09HW7AW9aEIIAcAuTkVQVOiBawIOLNtBcxtmm5sg+nhw7jR4ObhCJLDhbpAugPjOzDW6x+M+8oA5YmXCwAAAABJRU5ErkJggg==",
-      "actions": [
-        "straight"
-      ],
+      "actions": ["straight"],
       "weapons": [],
       "effect": [
         {
@@ -291,8 +289,8 @@
       "soundPath": "Skill.img/5001001",
       "description": {
         "id": 5001001,
-        "desc": "Uses MP to speed up the punch to rapidly attack enemies.",
-        "name": "Flash Fist",
+        "desc": "MP를 소모하여 주먹으로 빠르게 적을 공격한다.",
+        "name": "스트레이트",
         "bookName": ""
       },
       "levelProperties": [
@@ -463,9 +461,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJUlEQVR4nL1X4ZGyMBSMM9dAvhKwBChBS8ASsAQtQUuQEqAEKUFKMCUcJfhlg4svIVHuftzOOESI7L7N8iJfysdD/Q1WHEgBj9vt/ifsRbF+UAQFOPI8zz7+eLUaxTfVxh3zMldZbsc68tvBKNN3qm9793VXd+rxeKhL06j9budEfKmp8kH1ff9RwO12e1ZRuOPdCogRQxDI19vz7HJVlraCUcS0BNtdrX4KuiBhuvE+cAWfpuqnygE4yDEwCbg2lSekPJQsJ0pe733BIAYh7cYxj7gjyT0BeZ5HhWjkYvCFmO7sqidBe/RtRsVA8/yOuWHlMwHLhbyAKkkmCVkpA/sOX6kLEMJQYjn6zo41SI/uHImzzUE1p9KFEueYC5AjsCwoJSYpAOSovrQ371ubarBbC/Ly5K5fDq8AglyGDJDkQMz+pACPvDMjt8LaGxu0zJHzMeRj6X5nTJT8HWYCXuTVSK5I3k+5CCvmuFivf0QeFSChNUzXyrSdI5e5mAk3L7GY8ysHWH2F6vvxhpI8JETFXvX3uzsCS52IO6DVtO4huq5zNydRCIiYBC0QMQmYqr9UtofDeK26uvWqb9vW+zGrl/aH4JKlhKQdSKC0G8kwzNuztN99DzatlBszAQjeG35HLp8CIM8y5wJFSHLMY15iIiIOjAraYx0NXwqhCOJTO547oEYXYoD95/PZVRLbXCgCCK8tb8WWPBvSi7DZjC04JUI+mhLcnMJliDqQCgESzVBJEZIg1fPd/CAjUQFg13qecpJLAkn+W3h/SBC67faorteT+7jxhyAu6QWLBEhoPW6978DEc5zqjHL+RwF0oSj26n6/eBPZgqf9PiDnusZyQHLZC3guuRvCg28r4t96rw7V+J8fTWhqMkHXg0DcmCIpkFjciOgCiL+FC+gB3Asy+7zLJBtbDa9TRLgki1txTESx3blz3AdQrXlaCDGhyFAgRaYErPCuFr6aSRFYkOPZ/kva5K4RsRmxcoDVU4QRoYMgzgNqe92+FWG4ogNOBN7ZQpxO/ttPmOZabNHdc+vVmf+eOATzSE4HiNXzhfEvMG0M/wG5gCM2UKk7EQAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrUlEQVR4nL2Xb5HCMBTE0xkMYAEk9CSABJAAEkACJwEkgASQcJUAFpDQu+3xK6+vSWn5wM4wDUna3fcnL8koNFGGzyCjYQWU55/rR9jnX9MSEQioyGf55OXLWfYvfr/fV8/JZFL9xuNxa+79fg+32636Cev1OpRlGXbHn7BdflUiRpBP/t5nYheu138vTafT6nk+n6PEEqTvzefz1vhmkYfwEFGHYLvdhqHACxZFUVRPPKM5WC7Ig7SFWsBut2sIWSwWDYs8TqdTi1iEeFFP/few5A0BTPZC6LciDodDZRljl8ul8VFZLOAhPb3lLQHvCJGVkFlCLCVhuzBKDVh3KhzEVtYLEK9Wq7DZbKqkVB8iRK6ERXhKTFKAyGW9JRdEBjEQuU0ywZILMfcnBVhytVnjJJrIWYYsS96LkXehJcCTA5GTF95i2uofQh4VEAPkNi9iwm37LQ9gvVyM67XEIPdzrSew3oamj4heHrCQNyyRhy3VfUTUArz1grfeFxys79pDGEsJiXogtrOBPM+j/d4rftNKeWNwCPioXdckJyIsueaRLzERSQHabGLJl4IXAV6V45aALvfPZrNKmEhim4tdpn5sUCnukwMpET48gM3Jh2FQDhBLgAhLkKr5zLc5EhWQst4XHsGSv4vGgURJp1qgLZX2q0TsUwt6CfDoygMIcaUPTWr+SwF4QQeL4/HYmEgJtvu9Jed/LA8gb9SCxxmjMwklYrlc1gdUHcd8hUMMZwVE2kRrkac8YL0gYusFLT9ORgqPP4gwjggfkkGl2ItQSNRHDRCRFeNFeoGITAnIdFfzVzMrQtBhVJVQJAjRR9UnaKdEpBWISOYJ36dCtyI1MzxQidCdzSNfbJ5W6FfYS8o4FKfi2a7HnKV/3c95oSbHAyB7XBg/gXpj+AWzzx2ZY3J1FAAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADHElEQVR4nL2X7ZWyMBCFwznbAFsClkBKgBKwBN8S3BKkhNcSpARTApRgSpAS2EzIjUNIUPeH9/iRI8h9ZjKZwJdYahKfUYYBB5iu/e0j7rXcTYAAgDWvyuLpn7Nshp8q98PRvKuD+WgiZ3dCqLMQrfuvMv+bJnG69OJnLy3EF8xzMYphGJ4C9H0/X0zKGeQYO6ubgYx5Vq+PHptSCAfhp0DuR/GufBa4lHOkYyYzU3X2kVtwk0GMSR6gv+QLkOJUbprrfcSYpsKlW7TneXpC6GlZ5x6gLEsHMjgQNx2LuhjtSyg5Rw+D+uwG8zdFbM1gWq0jXwGkQTQDye3Lq32YcUNEioLd0lfqAIGgKIv/ldBnCt28u539zRs3vehNJqQpSjvXri7InAoWAaVgkgBkTvVgzbvRRW4+DnfDMRrTR9GSOS8yEjcnxdKfBFiYK2dMUspOBZlLtwyxLO1hPUbNt7QCWJs7/065lTKuIsa43n2/ZR4F8Mrde3yY87oIhegRxJ8y4KO/sOiZeWhIEfPor7e7kOab9GomtjMQkTJ1QBeHUSiCIMkXp8MDIPryaqIfXPbbZfRd1y3+jOh5+kNhylIgb2egaRqzCteGFHnNsoLVwVdLDCIKkDvzWFxkzlcBqSpymwVAcHM6j46lpmQFgMCHf/HiS4lD8Pp41o7XAFh+EVH627a1kcQ2F0CQwmNvteKt+6Kqmpt9CoIvTS5sTuE0RKcgT2TArhRXVByCG6R6PgnTw9t3FCCWAZhzA27+Vy1uSOgeQEolrn1lbtkqO6bftgrxlV7wEgDXRh16oeIxrhOdkZ//FIBn4XZb3nGiBSPtobm/W47UAcz5bqn0sAbgojq4G4jvnRKnw3ynSU3IN5mg6xGgDcBBAhCqX21EyEJmjCeWBeoB2AuKolhUstbaHwdEuFm91YpDCFlTdNrvAxQtmQImhAwBAZkCyOhZLXw04xD0lPFjdsamym0jQjNC5CREDwgAAhLnkdpuoKciGmbIgIWgZ7ZQpxPWw3wBpfnRwl4MYz24Si+WBaydKQRzZADK3APjJ+Q3hl8fNApcMtQlfwAAAABJRU5ErkJggg==",
-      "actions": [
-        "somersault"
-      ],
+      "actions": ["somersault"],
       "weapons": [],
       "effect": [
         {
@@ -699,8 +695,8 @@
       "soundPath": "Skill.img/5001002",
       "description": {
         "id": 5001002,
-        "desc": "A devastating kick that accompanies a backward sommersault. Attacks all enemies in the vicinity.",
-        "name": "Sommersault Kick",
+        "desc": "도약하여 뒤로 회전하며 근접에 있는 다수의 적에게 다리로 일격을 가한다.",
+        "name": "써머솔트 킥",
         "bookName": ""
       },
       "levelProperties": [
@@ -871,12 +867,8 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC7klEQVR4nL2X0bmiMBCFw/fZQFpwS8AS3BKghGsJ3hK0BClBSpASTAlrCymBnRMycQhJRB88D/cGxfxnZpIJbNRco/qOKh5IA+P9/u8r9N3uz8gm2ICD1/X25Y+NMXRfXbzuDwfV7PNzXa5XdWhbZ2LzLny326n7/e6gqetXcKg2fTCxUSvFsNL1GnishQFMlBJgV4qy9d/H10U4KmSi65SBOCopwLSfiOGsd+F1c1Wm75cGUEfUMwZADl7rmRlLEx9p/D68pYtmaSBlQrMPD7/9TB8Ajrk/ghsVypBchDMT6mlCkwfrjRhjVXPcziFr4UJJA7wWQgYIqvXTRH+26kQGzW/7EbwfHmqby4CEQ0i1VtZFXoT7Ca22ZFqHNKfgzeWizOOxNCB3AW+v2WqXcBmpBw3DX7Xf3yZgAe6aVsoA154lt+TQeThNaPcUpdUzOAQ4ZwFjGNJGu3v68xMuldwFnI0ApyHgmJDqMcHpMxgBqKqmw20cx5AFWZocPGkgFmxw5PtmispFKeBN07jJMYYJZ9ob+aUsAs5BvcyAFJrMyZeE0yzHAN5uN9V1nXpQTU+nUzDB8DNBz6KUfHAVDfDBAnguvQx3hmjCnlqrLBvgwPAixqKO4UkDMTyVXh4Pw+DuR/S4B5nA54DveVuaPHxhIIbn0svS1BgefjtJeHOkzmH9PdRD0E3lc0PSQAqeSy/fz4vqQL+T8MmcmkyggRVMBAMS/iq9+M9rAwpp/3lGruisANx2NtyH9cAmkiWQyqUXJtkEK9TcQ/GfWzjURtmDCTySZQ1k00v7GZEjkl+xtcB2QG+CF95VPPrIqB0jbsWYvJRebiapiCB5ePGqjx9sZk/PsQH3pTDBYjj/OI4E4jMj3nJsoqTFYcQmZGbqTBQuEpGNeL+vMZE+jES6U80jpVyzYRO5ebKPZO+qBCnNBwMV3tXWvh2lJi/BU+qosdFbEYYVZ8CZ4L35iXhVrxHD8UeWoPIvjN9Q2Of/AX3ucL4ocZpTAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACdElEQVR4nL2XbbHqQBBEkyoMYAELIAELYAEJIAEsIAEkgASwgAUk5N2TR6eayWz4+EFX3btJSOb0zu7sJqPqWU31G9U6cAPN5XL5CX02mzUyIQMtfDqdvnz4er0+3Zed73a7aj6fF2McDodquVy2Jkafwv/cV7o/O38FR/f7vTMxqt6UYEPn78CjegYIlAnYer1uIdn5EHw8Hre99vPUQOyVC1g0I30KXywW1fF47BtgHBnPCJAmk0nPDMG+hfcMDJlQ2vza7Xb7Cs51xUsnYWaCB/hTFs7ncxvQIe/CXakBzQXBgcoxLYEoo/1+/xVc5lMDEY5ItUyU4D6zZaIEJzYxewa8ClRebsTh3lMHqR2CM8SpAY295CXJw8AVPKYYqdWxTziOBXelVaBsSLgVXPIU1/X/za1pmi4LbrAETw1ECc6QEEQmHE5LcI4xgWTkb73vhjFuXC8NEAA4iosPAng6ndo5gdHtdtuZEBwjnrm48RXLkB4D9/RuNpsW4nBEQCA+bMCpHBknXrbrpmXo8Cy9OmZicj+95x4ywXXBpRK8ZyDCS+mVmAcqJ4f7CsnvZMHfG1IDGbyUXt2vSbVarZ7gMocJMjFkojPg8FfppdXcQLrOxuQ9F1xyE+kQuErpfbxKPQ2FxjxC1WpVlTCh6ipWQZZeekDPaTmXfMI51Es3vnH3lmIFLaU3vgFFxd+zdwof+54BfnQTkuB6OPt28D3DS04mhtTbjGJ64xoey8irI9b7OybSzaiUtiGVFhuZKMUpvpJ9qiHIUDwM1Hyrvft1lAX/9FkWtscw18pAa0K1+Y18wXklwfnnQ1A/Phh/oa7O/wGpmYqF9PcaRAAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC60lEQVR4nL2X7bGzIBCFcSYNaAm5JZgSkhKSErSV24KUcC0hlhBLeC0hlOC7h7C4IpCPHzkzSSAqz2FhAXdqrVl9RwUXpIH5dvv3Ffrh8DOzCTZg4XW9f/rwOI50X52tj6eTao5lso3u76ray8ma2L0LPxwO6na7WWis/gwONX2rlDOxUy+KYbn6K/BQGwNoKCbA7vRbJepZeGOU0uW6biIGwl5JAVYe6WtY4P65d+FHeroftgYwjhjPEKAY3jwMsBlD5a4s34cPiNvf1oA0UTkTFqwcnDS7OuD9p3D8f1ZxAxsTgzCxX4z0I8HRCf0BXChqgOeCj0Dj4M6EPhH8TlcvPx/B9WDSEZBwCKG2jzVP4I2b1rV53AtYAl5fr2qczNaAzAJOLzkZV3DZUwYZWl3L+fF0Bm4XrSmTBSyZkrp1cDTYUeNjAIfKeYkCyjCk9/YefVEeLhXNAo6Gh48OjgZxGXD0qpssqCgem9s8zyIKyhtMwaMGQtlU454fHQAS8PP5bBtH2ZqAnBF9qSycO/U0AlIdwyEf5qUM4JUa11qraZrU7+/vYgLwqlKtMRhL3yZvXFkDfmMh+Cq8dgufV3AIDfZ9vx42gp8J7rLNTuoQHjUQwmPh5fIwDPZ+9B73IBL4H/CmfqQZ0jgF3xgI4cnwOpU0RLhmeyzhV4JP7h76YDWtxLkhaiAGT4XX3+8mVdu2aziElRMmmryJxYCAPwsvfnluQB7eLT23ewTBzWUxbc8PzkR0CKSS4SWTbILlx9xB8euXcLWsqiwscDgXJg2kwot8Rs/vDsrCbDe8a+pl4t2HpU3Za8sI9wI0ngsvLya+R8b4eqvUavPiWV8FB5vV6TncC+xFYYLFcH447AnEe0aYcmwip81mxCZkZKTzMI1kdoT5Lo94LxmQJlLAlFKLDZtItZM8kr2rHCTXHgwUeFd79e0o1ngOHpOmIzm9FaFYcASsCc7NT8Sz+hUxHF9yCAr3wvgN+Tz/D0ObS6+pklZqAAAAAElFTkSuQmCC",
-      "actions": [
-        "doublefire"
-      ],
-      "weapons": [
-        49
-      ],
+      "actions": ["doublefire"],
+      "weapons": [49],
       "ball": [
         {
           "frames": [
@@ -1097,8 +1089,8 @@
       "soundPath": "Skill.img/5001003",
       "description": {
         "id": 5001003,
-        "desc": "Fires two bullets at once to apply double damage to monsters.",
-        "name": "Double Shot",
+        "desc": "한 번에 두발의 탄을 발사하여 적을 공격한다.",
+        "name": "더블 파이어",
         "bookName": ""
       },
       "levelProperties": [
@@ -1386,8 +1378,8 @@
       "soundPath": "Skill.img/5001005",
       "description": {
         "id": 5001005,
-        "desc": "Press left or right arrow twice to temporarily boost your speed and jump.",
-        "name": "Dash",
+        "desc": "좌우 방향키 중 하나를 두번 연타하여 순간적으로 이동속도와 점프력을 향상시킨다.",
+        "name": "대쉬",
         "bookName": ""
       },
       "levelProperties": [
@@ -1470,6 +1462,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Pirate Beginner Guide"
+    "bookName": "해적 입문서"
   }
 }
