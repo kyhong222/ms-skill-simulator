@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/5100000",
       "description": {
         "id": 5100000,
-        "desc": "Apply AP to MaxHP to improve the rate of increase for MaxHP.",
-        "name": "Improve MaxHP",
+        "desc": "Level UP 할 때, Max HP에 AP를 사용할 때 Max HP의 증가량을 향상시킨다.",
+        "name": "HP증가량 향상",
         "bookName": ""
       },
       "levelProperties": [
@@ -82,8 +82,8 @@
       "soundPath": "Skill.img/5100001",
       "description": {
         "id": 5100001,
-        "desc": "Boosts the accuracy and the mastery of Knucklers. This skill only applies when you equip a Knuckler.",
-        "name": "Knuckler Mastery",
+        "desc": "너클 계열 무기의 숙련도와 명중률을 상승시킨다. 반드시 이 기술은 너클을 들었을 경우에만 적용된다.",
+        "name": "너클 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -194,9 +194,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC40lEQVR4nL1XgXGDMAwUd12AFZwRnBFYoRkhGSEZIRkhjBBWYIQwQhihjED9BhnZ2ECvbf6uxcHG/5Il2f4gHz29Bxk3pID++Xy9hX2/3/UsggVYcq2VN/BU1nQ/FsmJwv4sy+isFBVHTXXZ0K1tqe/nTr0/HnQ6HKyIDyZX5sOm7ajtzN/4xOSYNAVMnhIJEVQOoqQIFski3BLkOZE2/zTldGpqRx6zAGiMddwfilCFprZuZt8wuYQTYAy2VpfmwzVyQJuJnq+XJ4Ldn5ungp5yEiHJMaYNBQBbyVMiLje/Xy6DJLceaiMC/gKYPM8/TaMyvwYPsGdcP8SEAhADvwWTSDGFaOfB+nsC/hp5rqkbzWRyeKbrqv8VMFmpXDAyOaOzAaB8AcgCCaSZjrgsHLNF0EQ+H+954GhchXRCRCNyEeExEZJ4v9vZ8fXtMAbgFAdDe/q+6xprva0RKvAAozDlOBSRgiRnayWh3457KxoDyqSEFJEC1wDg9bx61odg65MCZCmmcZ4tnuD3O+MNokuigA3EHKAIzFkh4lIc24x40jDo9pbUFyM9NolBIConhEQz6QFYHyIklNZCHMcE/56XdDVy4Vn5AiR4d5MThJ4IxbAHtqSmRHQJYljanFKC/G9+kAXAlizw1xvBmCpcrc2CRQEcA2XZeIeLtSyA5V9fD9oCPw0jpfhS1dFj2FIx+incSSmshJI8tt4cXFyaZbBZyxRHt6Oi1JLgwKqun76AFJhIphgD73DYgFV213OFcFhzX1AcTgCsl4HHZNqelv0IXks1V3bNqUhuw4sCEAPhbsgiwgLD7+KYxDW3ivSZFveI1d0QiJHHU7T1t9wNx7zVGEiRx0q1JK/Fkbw4L3sgw12Nr2ZcB2KbkCTHmPIUCBDkuJbxUbxtKu9Aqq5X3IrQzNgDVgSuS9q4rawqe3XCU4LfyTGWgKbtFfmNFLuPP12f7Ve2n8nZA4xsvDC+Ay54vgEJNw9Y0sPZcgAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACaElEQVR4nL2XjXGCQBSEjxkbsAUsgZRgSjAlUENKMC1YQighlAAlaAlaAnGJq3uPd4AZdWcyQe5nv3t3745bhFhdeI0yPihA99PsX+L+/rbqCEGA3nxd5FHFqqrCZrNJdmTLsywLZVmGoihC27Zht9uFrhsGdfvdhM+Ptx5ioeaHwyGcTqfrHzpHpymh8xQkIACD9gpBSEJEayDP82hktrEKsCy3EIyAFc1VEQA6RcMpc8Lu9/sIguH3INQcZScPYK55CqKu66hcp0HN8VcfHIBHiAY6ehsZ1UMBbOf625Y9BUCF6cGaUnNvcT4NYLlcDswppPi5xjgA6JmWY3XmiOZ/xrEWtiLSCSsaKxcr3INQ49Vq1dfHrof2Wh/PjATbAaJvvyyGAGxkIVJSc0oN9dkbvQvAhgqREvcAqGma0Snj6BVqAGA7mBMJvkc0IG8D4+h1YbobUeowYqd20dFUYTRibAfjfvu9gGg/yQhg9FbWUEeLTrkm+Ntu6XEE2iGAmtvR20hYGEZgbmpS7hR4GjucUkDa5q4sgOZkgZYdj8fBClfzVGQGa8B+XExlAUaOFPyvIgCde9XYZnSvroeR3QmnPsMYQmaKDSl+2wMnNSWAyNeJrThlrClG4R0+NtChNbdAKV0BMHpdeDTTc91CTUFbsFEAyJ6GhLAbDN950nTjfI+dEZOnIeSZeymq6eZ9ls8CsEqZe1u1mivAVAQy3NV4O/KywTNPXdlojm8EforbNZOvS9yK8JgxAj0Erkvn4vBVtf3VCf9Vt3e3OhBmnccr8hsptl2Xw7JLOc0ZASq7XBhfoevi+QUz9hDsZZEZxgAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACyklEQVR4nL1XgZHiMAxUZq6BfAmhhFACKSFXwrXwKYG0QAmkBCghKQFKOErgvTZyJGGH/M89O3NcJna0K1mS7Q/SuNN7UPCDFHA/jZe3sDfbzZ1FsABPvqsrNXEzEF3avCE7XhQFje5//Zto6om2MHx/Dur+OFL3ufUiPpi8cuTD1X14C3/XWzAOoznAeE4kRIx9+F6KYJEsIi4BfK/cTys8sx9LnJ1CHn8S0TpD8MaAySWiAEyf3E83vSYHdlVJp8u3EsHhj570swhJjjlnKwBYS54TMZlxuQyS3EfomhDwI4Dx8uSi0BCzxMjweJUQoPP/3xBJhJiamZjY4OcjwCi/3E+nyRGZW/OfBUQvXTJVh5CMTM64zsmpqkACZYYkWwLmrBIUyYenYRWBfR16ADIamYsMT4mQxM3mV6iYrngk4Nc80T+LBnE7BO/RI+qEAAA2rIgcFDl7S6ojiedn75MCvJ1Si8iBewBwH433Fux9ToBsxYw1keD3hYsG0WemgT285wQFie0D3IpTmxEbtUnXeFItRkZsFuMMla0Qckg3IhmBTWLJLKH0FuJiTpDerGY8rHsxkxYgkdoNbSSsGI7AqtIUSC5BCkubU06Q/saGtNICLNZUgV7vI+kUlhhCFSjstQDOgc4cLl5VgV/37x2twlIZYqgZ0sewpWb01+CTku2EzYtjGCcXt2aVbPAMpVXazpdeEhxY6WgE5MBEssSiaPduZK/a2au45uXCkZqMAHgvE4/J4LEtrZelxm0XpyK5DS8JwMrY3ZBF2AbD79IQ5da5o+e+WdwjXu6GQIo8XaKD3nKXjxNpARY58lSrluQ+0QhpgSgsR6DAXQ23o9bdjrohvwlJcj/HWhPkuJbFS8jUqQPpOdyK8FhwBLwIXJegtR/C1akf9Emf38k5uGD4Swb3GFTCMfQ5NSbGmZwjwCgeF8Z3IAbvD2cGv8MS+ay4AAAAAElFTkSuQmCC",
-      "actions": [
-        "backspin"
-      ],
+      "actions": ["backspin"],
       "weapons": [],
       "effect": [
         {
@@ -466,8 +464,8 @@
       "soundPath": "Skill.img/5101002",
       "description": {
         "id": 5101002,
-        "desc": "This skill allows you to quickly slide back and elbow multiple monsters at once to apply damage and temporarily stun them.",
-        "name": "Backspin Blow",
+        "desc": "뒤쪽으로 빠르게 미끌어지며 후방에 있는 다수의 적에게 팔꿈치로 스턴과 데미지를 가한다.",
+        "name": "백스핀 블로우",
         "bookName": ""
       },
       "levelProperties": [
@@ -658,9 +656,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9klEQVR4nL1XgZGqMBCNM9cAlgAlYAlYApYgJUAJWIKWACVACVCClCAl+PMCGzcBQpz5d2/mjpgE3svb3UB+hIm3+BscqMEFvJvuuZh5OZ/UtWq61SdhPCnvoi2yzTk2zqfoTSJIgCJP4nD1BhCA6PV6Gf3H41GN6Xkb99soq048ist7GIbDzx45FwFCEkHkaZKIum3FN8jTWARBJbLz6f0jPAEiYYlwAfMIrvneAmwRtPo4DES9Qkp5sYfvBEgyMYsgci5sDXtufSWAi0hncgUSNgM54bN6QwC3z0sEQziL6IdRk/vkiSEAN5CIxLKT2w3c6l58fgXimvqVn1MAiQB4fXPy26NX1zAxCR9SUCJLC/hm9QsBXIgOiRTSTyaLeCaOg8/6+3EUo5jCUMz7gW+pbgogEUBx60WcmsSnyMyXu9zI4A5VA1zwFWEIwEoC1i5urbKWiBGJtQejLy8blYC8JNH/nOcGKxxLB9hoUUjya6yHtsiBpuvkC2Z6KWWnSPWhjb8IIp6vTQVWCKbRjJG3SDzVNktvD3wfiKLtcCxywCbnLviQ2kT9MKjrxz3TAkNAJhMulYTtXG76wbML3fNlhAEPh/WEtVXGYajmIUwqJ57mN8fCgVqSVWUiLtIJLgaJGDqi4Mp4LiKKImOuFnDJWlHmeE+bYn4bWkB1T4T8QpERkkmoxEy1X9wGHbJh/EUBgEqP8dM2BhyIY/9EdQogBXCj7wfdneYTAbZdG7QH/BcBIyuRcWPZSVrpSrAzfC0R7dd81TQOASPbsDzj7RJh/6ayvVeVXqgVArluXQWmAthfY59I5b5QG0NKBAARtPH4YvtltOEA+l2W74FypqyapQAlYeRvDaElYfX5FXb3aojnAoHCwbHnyCIHiN/lACHfOSfwCkF7S8ABZ7XPuXA7+3hlxLFflq6VKezPpjPngRxQIu7ycInHPlr50TknFr7CRmljkgZqJ0Q/EpLG8TDMdwFzeraNEjn+8RAccFYTfwN9PP8HBea2umPlvbUAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgElEQVR4nL2XgY2rMBBEjZQGaCG/BK4EUgKUQEqAEqCEpAQoISnhKOGnhZTAMeQPt15s40j/bqQIAo737ezahIOxNZnfUcITCTDdPv9uRnbNeTnW7cU5E+7neW7u97t3jNbp489ECAIswfPsuA0wfxAAgW63mz3R6bTco1y/d6ntP821KafH45EcQsGlEAgBCcHgzP4d1UVm0rQ359PHdDCRYqYSIiSMo0LjowE0BLM/Hr+dk0FjnXkLIMsyKwCDyz7Q2nPrLQAJIWEAIiGQeWxfrADSvlgIKk3TBWLu6jV4TJ9YAPgBIbSlutY6u1AJogEIAcn1LYMPw7Bki48UgOjKO9lvACSILAkB9BGC7RCg6EzsUvUCEAJC1jpwWZbW2LZtl+B0DeexEMFVcL1eF2sZGFm6Jsa1qqrMOI5WP8RAWADP53OtL4NTvuDQ5XIx5/ProdQ0zXKNG9UehNMBGRxZQbLuMZIrRULIJJ0AOrhe83tBdbZsUp8TFgAaDgGZNcXvfd9bE2FyWE+5AnCDQpnwW8zhBWAwNBSdkCXQ618qVGcJgRUkx64AXdeZoiisINqJn9AKUNf1Wi/CQLKZ0EA/BuCT7lqX9u5HAzBDuCHt50qgQ1LcA/4LQIzk5qI73NWI+jGPbdsLIO2OrXcIQn/nsoXDc+G2AKHA/LOBcuj/A9wlAeEqU0heB0IKWR7zW7hQ1O0WQMNIIWssTTan60HDckjtORJdAtc97JghJ+QKwbkPIMG7Gt6OYpoQ1zkuplFdyxT2z29FOE3owAKBd7ZxnnMcZpvTf0/BmecOF4/56zhf5xHKq8x0Q3jLzqvWDOM3bFO+gtMBKplv/Prr+RehuaMCrdqlegAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC9UlEQVR4nL1Xi5GrMAwUM2kASgglQAlQQighlAAlkBJICXklQAmhBCgBl8CzsAWy+cS5mbuducMxtrVaS7K5gIkJ/gYeNTiBqXn3m5FpHM7PvXfL+2aUjeBwzM6ciUgQgdl4El33Z0gDaRzANJkCeZ6njGsczrdQvd7wLLNpGAbv8tE4I4EGiQQZrxIfylbANyhuEVz9F2RpPF3AEbMhi8QZZoIaZ+OdCdgkyPvkwCjFxSd8RaDAf5oEN07E9vBJra8IcBKF1Y8kCHNMOHhvEDDkcyHBEOlny4y7xIlBACcsJCw57b3OnupJPtd3+DGMLbBTzDaePdQzupmL5JLQnUh84f2GAGazD6YaGFxJq94nd+VzwkpGO8h5Qm1DrOsBpSqvDqSWYO0NAY5Re5HmApLCNBxb8VL106xOVehskCogidFBidMsQOM3uSgZRi/3ChH2JdU0ByBPycCBhEmA6RNnAu7VKtaRcUTTy7MiVHFT8kCWfzOJUW6Hr5e29mCjgLCMP0vZg223c2YFqwNBcKzEhkCYCijq1ThXwcWorVA7qFAMDtQzCISZMv7IzdONVHjr7KCFcPE0XD3dM5Bc/XkcbhPO7cdR7sDq1EYBND42PgSpSQYDMYJjnOU+JxEGpkoLATTY1DI+mOK2Er+BhQB63dF+aTKINF8Hd79JACHEmiOqDWDWrX1EUQQ/xW4hQjXaThOQj+KlSGDZtaFqgNvR+5GAclqpIFb7BvxkvZbZEb4XiPYx/2rMm7N1GIklRQQcbIHF6IyE/ZvStpa3Ygr2jQKCH1sMKH8p60RdDJBnWxIIJEGFxxVWDKwMBOwvhP3vvne+HdugmHk17y0BpYBY2hzofVMLGZz6XbSVnLaD45MiX19KOYq6OVWCZwi2jwh4+K2GX0eCBYEQW+aC9d9vLQiH7d5LU5RffhVh0yMFZhL4zYZrPv51cL2q87eSQYclsJJX4UE2sR8r5vJezsHxZ8AxXbcWkTJTxkkBgidf/Pnn+X+gzLaGDSEklQAAAABJRU5ErkJggg==",
-      "actions": [
-        "doubleupper"
-      ],
+      "actions": ["doubleupper"],
       "weapons": [],
       "effect": [
         {
@@ -988,8 +984,8 @@
       "soundPath": "Skill.img/5101003",
       "description": {
         "id": 5101003,
-        "desc": "A quick round of two punches to apply damage and temporarily stun a monster.",
-        "name": "Double Uppercut",
+        "desc": "적을 향해 빠르게 주먹으로 두번 연속 공격하여 스턴과 데미지를 가한다.",
+        "name": "더블 어퍼",
         "bookName": ""
       },
       "levelProperties": [
@@ -1140,9 +1136,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACf0lEQVR4nL2XgXGjMBBF1zNuwC6BK4GUoJRgl0BKOErgSjAl4BKsEkIJpxKgBB9fsPJKSIwhPv+ZxLCA/tOukNCefN3pPdrxgQS4377/vsX98+PXnSEYwJqrPFt88Hg8Utd1Pwaomm8qzx8WYv+s+Sshfp9yogliTyvVFGoRYi3gaoAlCMTWahMAZXMIHCN2rvU2gJB+MY3TcGEIPt4iBwBD7kUMKAXVVeOvLs8ObBNACHG7jCB9S6Sqxt3z+VV7DdwuxcMcpanU0/AzgBDCGp9849MQvw51hjHU6tKZW03jw54bsmNiqZzRQSgfkMaQNIdyVc0bUGNJQnOZPaXyNIC8+VKNZtoYz1w2hlh4juzx+Ag7AfWmjwPEbmZzxGLXEQvPJRiuqSyj7DBUZfSlq2kfAJiGw4bxgBTHZSlchqZxweMDMUCzeTG0D+NkCWQP2Bi0rGJaJ5je3jeYfJW1/bNlERBhjIKBC/25igzExGYMIs1lSbgDMhOc+jAWkwXwBpGoJbLBxjCVCt8KziKPkxAinD+8EujWzEY3GpKmssZS/JzsRBjDcwCRZU2WIAbCv6lU9r2hwyHzrml9HnrZPMASa8UMgFe4GIhML0xDiLYth14qMq22s6CFqJrZPAFFJyKegu3cTuQeDkEYQvYWgnlvtJuCrWq/Q6xZCXgB8dbzeozFMuLPfM3Q65rMVbvpt4vM0DF5y3FKcnFKvU5ZXliAtVr1RaTrs03v6Egu1W7126B1n2TSUCy18kPmvwKkDH8C8TSAXNvZUCoWeylAOEhfBQGAHfZqS7uj1BsS/Uh9YlOCOWDYFeFwxxmwENizvUNsjn+yBLtpw/gOue35Pyjo2w46GLpNAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACOElEQVR4nL2XgZWCMBBEw3s2YAteCVwJWgJXgi1oCdqCJZwlSAlSwtGCJXhOztFh3SCgx76nxMVkfnbDhkxC085hHMvYUIDz4fgzivri8+NMCAJE8Xk+a++4WITD4fAywOb7GNZfnxFi0lX8nRCrIg/hCjEJPa0oilaIvoC9Adog4OtrgwA8CLTh2+/3wwAsfZcwEoLtIXYDgCBn4QGloJbLZbzudrvXACyEzogisPV63Rhgs9k0xDUqz+AfACyEJzyfz0NZllEY5uVc4XG/LZ3uItQOKgxTcSumhqhYcY3eNC/SAPrn1WoVr1VVNcR1MPjsb0SPEbSTiOOdgg/g/vkqDp93Hz77W8FwL8/zMJ1Ow+n0p1yV9R0AZdgOjA5q9GsqNEIExBU+QFMcHwgnU6AzoDBorTjp+b/tdhs/TAshrI9XXTvbfXUH8IxiBFFxTQknoJFg6K3PswhgF5HO8pazqmrcs0+FhhttC2HHb6SgrOqH1Y2BVFRzrMZ+OgnrQz+AaFqTKfBAeE2FElHC4HoPdQCPYSq6lxj4ANzhPBANr64JQqDwzGazUNf1Uwi3ELEEs7azswUhhM4WpuIs0ayGNnIPKeAGorWdbS8itvIhPRCnoO4jbdbYjlOmm1PqcUJkhmzJvd6IPAHMeOjLSG8AK8hw64vMvwKkBF+B6AygezsF1TzfWwHsIn0XBAAynNXaTkepJ8Tzd3mbRg24nIrQzBiBCIEz2xhGcXxpCrLrgXEMux3PfwEzpce5qR4+VAAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACfklEQVR4nL1XgXGDMAyU77JAOkI7AhmBjNCMQEZoR0hHKCPQEZIRwghlhGYE1zKW8xaGCzTN35EjwubfLyPBilJYegyMnKAAezx/P4R9u3mxIkIEePKyeJ6caIwha/9u0qE50/tu40WsbiW/p4i314IoiFjRTNjXaRFzBc4WMCWCY3OxSABV/eOCIvw5C/taKECrn7SxDGNgHpMvQRTAhLKKnKCBqLI/YmRnvDO01AHGD4iw5xD8cEdzJTbbNhV1LK7kLOh4g/gxAWsCJygQNylxdSiofm97Ykb3Esk9ypAOjtX9nphKZ3YT4gQkZiTkjGdXPXUJYdHOFU2O7h2qjIBLcAEHn5tA3KXkeDOO6f/snlX3kkV4dO1QwHpksJBzLHedY/o/CuNrlXOpcATtpR9z6sABLsP6xpWyNcYhFdGhsC9kf3CMRQv5Z9ETj6YAVyDExTqO9TdgiHo/zpFsdq0/vOUgQsdIb1yHj69MChBCJkKQHFMiC0AnxHody8ELSDYR5JLdEOK6SyfqpyLmOuwTLULXjyQFp7Yb7G6fTyDFHCNkHi5Cx3geC8G0ZlNwgcmDTTlp5Ym4AqXXuBraq7BDOk/2+GAPSIfLCUF7e1ItYutW4bxta18FvYjGDuoEI1uInqQZ7UItb/JCehElzAzjmbyrYwkOK0oWJBikQBpI0s+l1WYcSSufq3mXPdG+juX31neipB2PIbbpxo4+TrT+pOD7LMx7IzqZKwd2O+l+CzBPABJCq43t+78FJITwCpaL3V0A9nYhRORidxWgN+m9RLAAw99qU19HY09ILn7LRwnXAPdVxKdGHPAi+JvtERBy/sEUmPDB+AjEPP0CemS1k+GLUtEAAAAASUVORK5CYII=",
-      "actions": [
-        "screw"
-      ],
+      "actions": ["screw"],
       "weapons": [],
       "effect": [
         {
@@ -1720,8 +1714,8 @@
       "soundPath": "Skill.img/5101004",
       "description": {
         "id": 5101004,
-        "desc": "This skill allows you to run forward and punch multiple monsters in front at once.",
-        "name": "Corkscrew Blow",
+        "desc": "전방으로 돌진하며 앞에 있는 다수의 적을 향해 주먹을 날린다.",
+        "name": "스크류 펀치",
         "bookName": ""
       },
       "levelProperties": [
@@ -1892,9 +1886,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwklEQVR4nL2XjZWqMBCF4zk2EEuIJWAJUAKWoCVgCVIClqAlSAlQApQgJfhmQgYnIcHsc9d7dk2IkfnmhwHWwtZTfEcrmnCAZ9N0X7G+222fBEEA2niSqNnmtm312F9OehwGCf8w0hwXpcQP/afncpwX6Xi+JEmsc1bXqzju9xpi/c44Gf4flXWvx8KBOOS5EAZi7fuh6/WnQhAXgjQDQOO4kSB+SyEIC4CMbzYb8Xg8IFZnbxTSc+E3UtbWcQ5ZTSDcfasrRdcLJqW93eYAtvEmCJEUhTeUKPhKlJdX5Pq+FwoqdhiGaQ2nuC6VsgG48XKXeSEUjCHjdI7iABC3/uUUjn0/7ZEmvakLwI3rcHogloxbEGLMeV3XIgWX6xYBxigouDT1Ol4JHIAbJ7kQlKYlUfFei1xsyuO4yFLgihXhIIrmCkb308rhfobf9uLRXaMglr4LIbAUZKJrzuZIjgPkbpuV4qdC2ElSWkUYBNCUuFHK17EZdQ0w+XqE6/m96+BUcuY5rlXw3VDXcwADTLOg0Syza0UbvN+nBobAGIUOxmx3tJw5ZSfRNJWgTjAHIMNSeIXG3Yig0KAPQo8GAoXGt7B+riobIE1T8F4JhaEkBjjG9XfGdQSaBrzdhSG2Ryjmajq+mG5oNSKMv1Qsl3BMuV0yHg3BriTSBKCgM0kB3UmxriUwAtKu6kjxm5prXK+b7jgB5KYzSfZcgJt9BfdO9Bs3Er4+4X0ecEUeTG3ZEXmD4ef7SQQR9TywJPRIVzvk2hXlPhSxUIeMBuBekaczCGOc3/3eKRoAT+rz/FMtAmDYKOxcvA7c/JOoAD8C4BAkN8cJXL4EwffFGI8C4CeLeVCNNfwjgJBCl+XXAH5DCLDCd7XQ29FfCG9E8FaE0xVFQEPgO9s74W2U7mTuHIsxpgeQcfzgKViZF8ZvaHo9/weozcNkeYd0uwAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTElEQVR4nL2XgZGCMBREw4wN0IKWACVoCVACLZwlYCtQgpaAJWALlOC5OTfz80kwnnfszB0hJNmXn28gG+PrbtZRxoIEuJ+HcRX3Q7m7E4IA1nxfbGeNb7ebvV4uF3udpsldWc7z3P6xTO33e3vdbv1x224wx7q0EJtX5jT+jdgXIBLiqyqMeUJsQh31rD8VxtEQ1AwA5mhIiL9SDMIDoPlutzPjONoOoShUVRU06fveu8dYRVG4XIFQvl6vj1LuA0jzYRiiEDAPhZLPZFuZsBSS9OdeAUjz4/EYhIitoxxDAmOmsQjkz6R3ANIcCkEsmYcgsCSICgwJgXvUN0XlA0hzSkNwmZbE5G2axpxOJzfrmLwkbNvWQWCtMAg6n8/nJIilZzEIB1CWpem6zpmzU13X5l0BNsXcA2BDuZWyI2YuFdoj9MyxdCFhfES0v05zADYISZoeDofZcwzKDQzAXDIdQSyxjbTdCwIAr0BgriMCwTAFAuaob9rOBwhtMLiXu17MnBHA8yUImuP+1KsIYMMIzZz1S+apEPKXRDkA+U6XdQDQWZ0i+VLT5jbSOgf48SAh0DiUcK/EPjoSoX0imoRSnAFnocWQ0pjtKUIkfQ8siTsirlpc+1jEYjtkMoCcVcyE9e98zCQDYNDQzD/VIgDCxrBLyTzQ608xAT8CkBCUNpLfj7JdinkSgBwsZW1Tjd8CiCn2s1wN4C8EgAxntdjp6D+EF9HjVIRixghYCJzZXgmvUb7JdNl+ZDz3+CXRHP/kEmTPA+Macsfzb5h3xjDxL5gWAAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACwklEQVR4nL2XjZWrIBCFyTnbQCyBlGBK0BJMCdkSkhKyJWRL0BKkBCkhlCAl5M2gY4Yff96+t7nnrBh25H4MCPIhfD3Fe7SjGw7wbLvHW9zL4+FJEATgzItcRsFaa1fm1yNc98JYKayFUkAJfwbqsLR7KOX+VUJ0W4zP5rnX5q3uxPV0dBAfa+aDMZd1IJESVaUajFuhPYhLBfcjxIdIyO/1BqcVIUgIQYoAXK8hkCBizWTghxAeAJlnWSb6vhf61qWzUN8EDRhv7vrlh91lI/ZVJawZfhuIRnzbNHCVPoBvfp+FsPc6mUrU7aLF5/crO8YYZ2PsK0aO9UIGANxcZyco6whC39pZc2rjftbiNE4+GkZteNDYWVn4ANzcPZSCWDDnEDWMNY65UsrVNdolfgiopKvPq4sPwM1JEYTWqxDU6x7az2hOWDMbzyahFbmD+Hz15lFBtQLz8yaIVUAbV7EhuIq+G+c2zSMwz1JLwYoQds04AhgCYWHlr/j4IPacK7VGRMstPENNNfZFgHVnbK/RCQAMmFljuGlZltH/27adFjAExix0UB5K5WXg+6jEoytEM/7eDMDNw4yg0DAF4cqjmuJ6MD9A/eXe+gBFUQz5yRku0BTFujmqhg0NttkkxBPK3UGJ56OYoL7CIXBjmACgoV0y3wrB3yTSBCBl8AZMmZHxrN4gvqn1gTnWKxNkoIJNY3D0G0lNuDXRM2EmUutE8nsgFPWAehFKjbvNCdLP40kEsel7YEnYI2y4Tnw7nsaxn8vY3Aq5GYD3inoaisyVWVj6fgqAjda/8NW8CIBpo7Rz8XkQjj+JJuA/AXAIUjjGBXyCEwSP22K+CYA3Nv+hGsdu1V+9BaHmXsu3AfwPIcAOz2pzp6PfEG5EcCrC2x1lwEHgmW1NuI3SThbeKyOmNX5JZI4XPgS78cD4Dk3H8z/uxb1ChTim5AAAAABJRU5ErkJggg==",
-      "actions": [
-        "recovery"
-      ],
+      "actions": ["recovery"],
       "weapons": [],
       "effect": [
         {
@@ -2212,8 +2204,8 @@
       "soundPath": "Skill.img/5101005",
       "description": {
         "id": 5101005,
-        "desc": "Recovers MP by using up a bit of HP.",
-        "name": "MP Recovery",
+        "desc": "자신의 HP를 소모하여 MP를 회복시킨다.",
+        "name": "MP 리커버리",
         "bookName": ""
       },
       "levelProperties": [
@@ -2284,9 +2276,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACnElEQVR4nL2XjZGCMBCFw4wNYAmmBC1BSsASzhKOErwStASvBCgBSkhKMCVwbMjGzR8ix/hm7oQE2C+7m02yYa569hlleEEBeiEeH7HO+bZHCATQxne7PHhYSsmYqoY/0+D/4nV5Gd7fzQKo65YVxUFDbOYY54ffoE/cS8b2l/B5TzGo43FvITYsIWq8793UkEoxvt0ycTUNvjfgmc5cXK/01QAoCjBlXH8kz5l4PAxE6XZ+jV5BM6/CEgCMbkwbj0JcCMStckAwLCmQZAgWC1Jp8L48n/WtGsIFwTje71GQ9QBKNyFTjgePUIj1AH6r57V6JuFuSMKpPFg/BKAh/vMqggeACQgSbcmyLJtMxKRMIoIXIAdYIv4OgM1+7hYdgJgSzgSn7dudms3ppEHKug5ADICyxt8dMRQlBEHpqelBoHH9DqmY/84BWg8AHoF0H6mCvvul7CgATN4LE+K1y0G+lxAC3qWegFowuw5Ah5QjhJZirsw9L8KFaY4gDwDCX7CcECCElr84mntRs+jscEozif/ejJzaAHkhCB+g0tSyYnMkrAvDajg5DVOyK2MRn57UE+AFvVRzPgk2G+DVsgzGMOvBuGPw0dprvj0kbbw9Dek0syIgVI1yvYYJqMizbwHgTsgXuNd3uxq5rGh/2z69s6gQ6f0gtYQfFq3TjiOl7QfuhmN5JfQ2pGj11t2C1lv3k/zMcoCuCkBgvDQXctJO79cBQDUDyHGEKHhhm+u2ZpXZpHQ/XfL11UJA5zkkHKwANNtp/6JZECxSGAL/pIR7Q8WC9YRWwqZ5luIMzmqx05FdoDCJIwcQR2RjeipOycGA8eFUpMeFHtAQcFyK6ztsyr1fkBypYt+RQx8uQGgc/tEQZObA+AnZeP4B6gl2SYguh5kAAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDElEQVR4nL2XDZHCMBCF05kaqAWQUCSABJBALSABJIAEkAASQAJYQAJ3r3Ovs2x3k0A53gw/k7TZb/YvSRme9QjfUcE/EuBxvV6/Yn08Hj8IQYDW+Gg06j18v9/D6XRKLjqdTkNVVVkA5/M5TCaTFqLMMb7b7Xpzy+WyNaqf17Kg6rruIMrgSBo/Ho+9ucViEWIizHw+jwKZADHjXGS/37cQ8ISU9koqLD2AlPEUBPOFIPSEB+KGYKgOh0MHcLvdwnq9NkE+BqBd7wlAEuJjALpUZRLG8uBfQpDrjR6AbDpIrNlsFk1ET1wD6+HDJLU80QF4TQcQMbESpHRprlar9tdKxJIDOaVnibEGCGX1BxqX73QAQyT7AeDl4rILRvsAXmLipFwOaS8RAu9KT6AXZPcBTORkr7Ux5Qh5AAi9YT2FIBfCqg6vNetcSHZCK1a5ZwJIhiBn7WQSpspTegIGvK3aA4sCpHZGNhoa9wzGzg4vl6F16rHGmf3WM3L8JYCYe61xCSXnZVN6qxHpzKa2260JIMebpnl65u1O6JUrDyKpscEA+ugFyaTM1eC9ACCE4K4HIc4sXZ2MHwHQIbDKTnpDzr9VBXqT8jqjPA3rcLBX4GJyuVw6gAJ3Net2lLs3aOPQZrNxn4Px31sR/hb0QAuB65Il69pmia6Vda7nIBrHlwxB8Xdh/Ia66/kPCdVpU/tyP44AAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACpUlEQVR4nL1Xi3HDIAyV77IAGcEZwYxgj9CM0I7QjJCM0I6QjmCPACOUEcIILsLGFj/bSXp5ueYoEPSQngTswEcPr0HhGpRA34rfl1hv+KF3JBwBa7yuymiylBIqxgE0xH8wt+W7gKqqNhE4XwWcjtyS2K0aLzkU+3iR/mzGaxHND5Ei9flm+kYSO8iAGu97Xxqd0lAc9oYET3rDNrtxHeGTDAklCSwZR9Qlg/b3NpD4DH57XjYYIiJgjVfGeJE2niTxTgyeuEfEhSVHJBuCh8HAhqHkIxEYozKGYlMIHgFmQY4Po/Osh2cS/0ag+uaeGJ0IlVhOz/8PAcRCXIJHwAkQgforjBKXhJiDFSJ6QQ4akJn4ewSo+imKsCOAywSKvvbnKCNIhY0EEUuAGbpbUi8FLEqOyEQaUzPYbE0KEq2YT2vA1YMGjRryjhBKHwXosiB0f6fkTECbKVIKswBfdTki9NJUlMxvqSewFmyuAzjgSHgI6nwRDG8F6qA0JMIDywuBI7GEvuXJ7PBCQUTIxjBQGwgvBJCYQOHdCVYgcJeZscU0zCF3J3BaoZ5AL6CHOY/jJETas4sE1o5lVLxTPRqnaPvr1G6KY9bG3Wk4pRkB0woSlyH4gYv3vxOg1rgGu58AGm8O8f0M3Ru6XeNHTXa88bZtp/Y6ARZ3We+S65fb/PX2RRkMO9V+/3H/4a31cCWUVUJUxthFnaLui4z7niZQqSEtKRG7YXXfOk+fBVXHp+v5B5/d+yXOcOqGneu8Ax4kYHQhmR8CmucoOOsNnR7XZGAzgfCQciEIX0re3TDIWFoJ5c9cigt8q6VeR9MBdUs8QBKgxk9N3u8XY9y8iuy+nAcsCXyzpdCpzAEVXnlHAabW6dR8ADnj+EVDUIwPxldgiucf23V3LDCMdxMAAAAASUVORK5CYII=",
-      "actions": [
-        "alert2"
-      ],
+      "actions": ["alert2"],
       "weapons": [],
       "effect": [
         {
@@ -2460,8 +2450,8 @@
       "soundPath": "Skill.img/5101006",
       "description": {
         "id": 5101006,
-        "desc": "Uses parts of HP and MP to temporarily boost the speed of a Knuckler. This skill can only be triggered when a Knuckler is equipped. \\nRequired Skill : #cLevel 5 or above on Knuckler Mastery",
-        "name": "Knuckler Booster",
+        "desc": "HP, MP를 소비하여 일정 시간동안 너클의 공격 속도를 한 단계 상승시킨다. 너클을 들었을 경우에만 발동이 가능하다.",
+        "name": "너클 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2902,8 +2892,8 @@
       "soundPath": "Skill.img/5101007",
       "description": {
         "id": 5101007,
-        "desc": "This skill will allow you to safely navigate your way through monsters without being recognized by them...by donning an Oak Barrel. Some clever monsters may be able to tell, though, so be careful. If you are lying down, it's literally impossible to tell the difference!",
-        "name": "Oak Barrel",
+        "desc": "오크통을 뒤접어 써 위장한다. 몬스터들에게 공격받지 않고 이동할 수 있으나 드물게 들킬 수도 있다. 엎드려 있으면 진짜 오크통과 구별이 더욱 힘들어져 발각 확률이 감소한다.",
+        "name": "오크통",
         "bookName": ""
       },
       "levelProperties": [
@@ -2996,6 +2986,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "Brawler Guide"
+    "bookName": "인파이트 가이드"
   }
 }
