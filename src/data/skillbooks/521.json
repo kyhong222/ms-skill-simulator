@@ -10,12 +10,8 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADdUlEQVR4nL2X4XWrMAyFlXO6gFegI3gFZwQyQt4IyQhhBUZ4jBBGKCPUK3iE1FdYRhjT0j9VT4pDjL8rWbbMG63tRX9jJ2loAa/Pz88/ob+/v79EhAhgeN8PuZP3Pn4mejhD00Q0hEBNY+On4d/NNNLt+aQQuvXonij4kL8O/UTWEo/ROks+TPSMz53PZxbxJvD7vcuDa+MHr5ZsbNzHiUW1xjCchZgbi8AVFii2o+gwhg2c4vCNjyLGLovIU4CBYSJCrkO8D7ixhh5JEOCn0zyNr9drgUOIjYKmrgrn6MS/xlg0SU8BezUkEVpAGQ2BX69XatuW2xCho9HfxxUcUOPN3IfMaswsAHNcitA29iHDPz4+Yr70NI4jh1KL6C8juavh/jPcR6RyJkViIwAJNuikU0K054BzxKL3XdfF35Z+3flM14fjCOCKZDS+iGSEIxGJ3FqAhi1JF3LCiZcAhhgteG9jnCEC9xn+33EEBK49Fc8BB8O6TQT2k04b+gHKHtfg8YoVUIOLgxA4hUJAzWwbO8b1LqY9v1wuGzgi5Yd7Hd7Me0IWaCoCJApY7/Ae0wS1gAAmSw+2C1fG+wGmIsGlD+7TdCACUIrOgIgIsRrcNAswt2mBY3+QTaoagW0UYj40jgcUEWK7cFrguGJFyJaNTUr60pEc4ChgIMhNIsQEDq+a9sFXCTvmfAM38w7JcPh4ZAr2TOAMTFuvhnOfEo6i1VAWIrYRoKtgE7M9K67AOUKpGmohAuf7qU7oesFTVcuB38JjKi7wsIbrYrX2kOo5UIWnB0qvtOXwFvBasZJERDLbmy0FLHDu7AMXEpguRGuvbpvofFesIBbwyTRkqYgA4CxE7b3YjjW85lUNDtsrVnyyUhU5C0Dh0QZBR0owBj1arBDcYVxh1uVYT8fRElzaXrFChfWV51bVUBLxNyVY216xAnzPDm1Ee17h5MP3vilWmHOUd0nuXQHlMfwnrzBeiEUdibpXrJDtSDipK4cjAM9+8grJBLFy3pOyLcZwdbBlEW59IC0isOwDWP9aRM0rrw+v6WUEUcFq0i8wMF1hD0UgpPMSPKWKV5iu31rtmC8CTnhXw9uR7//xUpE9AZ5MBwaB9/Jc6X1NhIvH9fPs2EkiwCKeaa9/OPrBkNEtt3IsnDvw3GwCxz89Baf0wvgXljP7Cy7cKd2M469gAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACuElEQVR4nL2XjY3qMBCEE4kGaAFKgBKgBFqAEqAEKAFaoAQoAUqAFiiBd1/0JhqbdZLTSYwEzo+9Mzt2vMmoSvGuvoNaBy7g/Xg8vsI+nU7fEiEBDfn5fG47PZ/P6n6/V+v1umn5zWazajKZtPePx2P1er2S4JxzTyAm4xi/WCya+5fLpVoul42IkcgPh0Mb3MHA1WrVBDmdTq0QyMF4PG6C0kqACHNy9UGgRIycCEiEWhECuQH5fD5vrt1ut4SccRBE5HJL/X0K2s5CyQ2RE5Qfx4hwN3DTySUuQuJALqJETkuGXNvv94mI3W73MeeesTsROuCLrkQOCE6m1+u17bfZbKrtdttcp/XFKEDuovJ94GPRacEpS+4TQBniBNchxw0cELlnqsw1VlPcCuhadA76IQxE5LQSGdnOPXfnwwEHGboAgmA5IrA5J8cp7kfktAiWQCERIBfIkOwZhFpIINOjB0rkDpwkU5Grjy/2Tgc0HZBIhBCRaw+AUMdA5JznT9qHgNwFzgkoEUKJXDE41lRpy+Y879vpAFAgiRBEzn3WigKSocicnPEeq+jAEIjcs3VykJOrlZCiAK+CBM8VOzkQoQsROdBYrxdFAX8hzzP3YuXwgpUIiMidxLNy+Cbj5FGxEjmLmd02EeDkEiSVUQl2W92drmJFf3+SEgGQi9jRV4IjclAqVr7VJwK0v7ugISWYoEOLVVTuk3LsWQ8twTlKxYo5j8pzUg21EH9Tgh2lYqUFF2HQRlTKSq51Fav8bbooIH8N78vKp6xUrIBebLTIBznAoL6s8sdWZTt3TiiJCPcBlc2urHKXNEavcU7uFXaQAy4qyipazX3oWgM132p8HTHXBJdSn+euINo1o+yj8fT5+SrisJYDjQg+l4DX/QgEyB8tgveNE0TOn09B/f+D8RtoP8//Ad5hTwvDpwj5AAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADcUlEQVR4nL1X63GzMBA8ZtKAXAIugZRASiAl4BKcEkIJVgmhBFOCKSGUYErg0544PUDKR/5kZxweEdrd00knvVCMhf4GhdyEApbH4/tP2F9fz4uIEAFM3uneNZqmieZppEc5Uj8q6lRJqqyoLEv+f9131D6fRHMR927a0ugfdUfUVDP30daK5nmi29edLu9vLOJFyC8fnes8BH94NZ0MI71Opm8j6mo6YXJALVaEktE7EbWzYVY7cjL3aiyp0W9Eqwg3BHBr+ncicMVzN1ly1RI9tI0GyIvCOl+WxZNDSG3uh1OSnKNDRoTyRp0AuALZtD5no7GSN01DVVXxPYsIoqHfVUxOQs6Noj6dAIyxiAAmiqEvnvx+v5PWmvPk8/MzEqHPpt1ttu2FPCStQjGBACQYyF3SBQpC5yDnfoz7vu9pHH3G6dOJ2i/iCOBKY0zGGG0i7gREZC7pKpdw4nIYBiaFe4hAJPCeyZ/G+UnIKSZfnYO8T0Xgp6QLoZRicnacIv+2MyBF7gwiSnMmAhHZ1Xz0HkTPOMcPzi+Xy54cU7M7pcnNFTPDCSwTAiQKmO9wr+6zUauYBGQy9YAseQisByN5cmmD98OBCJipgflpPiQnQpAkr8gRunsiTz74RSoZgV0UkAuVaVzPK5l3mCXnsIsQzAjySzYWKWl7JAcY3KkX4SOgvKvremVlMuYbcmVXSCavjg5BBo4cqBPklCDHFeQihDICwiqoausE7pPkAFdDFQlx5ES+ToT1YszkwK/JZV9RP50QIY+KVYh1eHY5kCQHhk1It5DwBm2yxWpNRE7m20ZARM5Kza+0MsNCFLsKpuX5QLFSllxXDbW0EQByFjL4kGM5DsmTrhLkQK5Y8c4qCKATgMITAoKOlGC7IB0rVtgjdJs6H5XjcDiOluAtssXqiuju28fVcE3E35TgENlidc3qPbYQZV3d1iT9oVhhzLm81yrZd3IahnuAnCuM56xtokqd2BYrZDt6krpyOAK8p/uPK9m+0WT3fbzJCIYE5LKxdcWt3IvIrANzJCLlCu0dBnsYQVQwm8IDDBBW2EMRQGgBOKWEK8mH30BEpAQUOKvxufDjzAuRrAlwoqmKOkliJPfd1v1WBFDXFU5FuC0kAiwCZzbgh1mzAqIa6sNX7ZHvLIQcf8IhKNYD41/AZfY/Ji7uCcqqfwkAAAAASUVORK5CYII=",
-      "actions": [
-        "triplefire"
-      ],
-      "weapons": [
-        49
-      ],
+      "actions": ["triplefire"],
+      "weapons": [49],
       "ball": [
         {
           "frames": [
@@ -272,8 +268,8 @@
       "soundPath": "Skill.img/5210000",
       "description": {
         "id": 5210000,
-        "desc": "Increases the potency and the number of bullets fired when using Double Shot.\\nRequired Skill : #cLevel 20 of Double Shot# ",
-        "name": "Burst Fire",
+        "desc": "더블 파이어 사용시 발사되는 탄 수가 증가하고 공격력이 상승한다.",
+        "name": "트리플 파이어",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -427,9 +423,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD1UlEQVR4nL1XC5GrMBRNZ9YATwJIAAmtBJBAJYAEkAASQEKRQCQUCUVC3z2Bm96k6ba7b+admd0UCDnnfkO+lIu7+j848A8p4D5fr/+0avTm+bqPWZLcWQQLMOTROr58ue+1KvPUubcs2rnOzq/fB667gcPloorTyYj4YvI0julnZSa0da3WdVFNN9iXmy6w4rKYIUmSjWB4TFr3Z4D25rEYur77OWBQNY16h4UWDREzIjKIRcA4iOjKXI00pmlq37UCFt2GmdbAvTg3C9zmi2NpSIRZAqS7iJzGUWtVVaVq295JQpVktbrOrvX9qEkchaPJf0Qegi8CsAKQZPe7W4XIhSiK1TBvucBuB7m0MIpTEqOttSFP+OGAiEnpTcDU90HF73IBxPI3REiyT+CEgPOgpnJqut3lnAO76++3207kluRvYQTIkiuybONLK2fi8sN4+wiFwQpwiWOTdD45l80j1q4XVq8pfQojAInGa5mMJ/ebcAj3M/5kJzNuVfBM+tPKsCGQ5A449qJC9Dg6Qj4hf/VMNKJtgow9u96QiwViiuFtns1zCAl1whBpVj83uy9JPtCiQfIHsxESRRF5bTVCBirVpDgHRfiER5rfDI/9JaO8+9qs3hoKEtGEIMqfLIegFd2LiNPjMSgCQL8/0nPGvBtVF4URgH0A0LITppSBCxZLtx6g1KhyTNzJQSQxUQ4c89yIwB+LsM+nyZTa3FTGShhyEd8ah4P9HtlDIAjYG8YjpJqxiF2pyUv1HVCemiqERUhC9tKyrKoloU4VWDLRByRxVzUmBL5H3gEiGNpLzKcq8Eklzm1tRvYAC/G75LumBOsdASAH6Txf7YJ+EjKZJrch/uvuCb5f1Js4uFdam8axc80woZ5ebEYAPpkQOxaBZANAzoLwB7Egl8QSvsul9dYDFdVmSwlXnHvrhScR29vWQ5IcMdZvWrAklvuN9QCaEPpAliVWBMrLiqBxEeHIRIUAcocLWcrE5hmRowKsgJGSK6XtGCIgwP8+NCLEFy3fQ42X1C+441WiAUlCK4rbffw4QTjbMbrg0IkaZyPovHD95tACYliEhbm+DSZXFO7zNXLm3I+bgJzqGy6U7n8FhCHbvx3Kva1iYZmEA+0LBbVmjJpIpMXbGl4ZMiR56HACsNsBLAwrmDwUd76PuewpjGXXqZbCCgEHnNX8o1mek+qV9ohJ5EOcPy3sE+e0J0DkhcJ5Ii9gMxrJGDknrSr+wjqwB4wInNm+Bbl/Fls2sv7audsw7mEd0A2X0uwzpZiDDGNy/JMhOOwHxo/BW/IvYHenv3Uqmyx1OF4BAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC8UlEQVR4nL2XDZEiMRSEhyoMYAEkgASQABJAAkgACSABJIAEkAAWkMDtl7tOdd5llqFqa1/Vbpj8daffT2b6TWmv5nespx9O4HW/338FfTQavURCBBL44/FoXXS5XJrpdFr0xfmHw+Fb4OPxmNrz+dzMZrNEoi/w4XCY/rDdbtc8n89mu93mxRHcCSwWi9Tu9/squTgPAxMlYgwkW6/XzTtj0xqwjMMIWL/n83lScjwe57WZAANdjQ3ZAElR6rt5IisSKCl33m63IgibzWZTyC5iLFwulx+BtxFyElihwPV6LRYQC4PBIAePZNczY2pFpkaq5g6RSAROp1OV8btYEAEn4WS6WOECyUI6SXI/BacnhQT0E5YIeMopOt/l/KdWc0Mm4MA+6OAad1+7Cp8GpCwRYCNPGeT3tNSYE23Lgk+JZBc4uJt87xkCOSfSBbzNhf04wX0v6QH3zSEFsMZrlbAGSlpXCWiin8bBZTHVIIJiq9WqSiICss4L3WQy+UtAPgaQDV12d49+U8trJDDqvasoYlRZ5rIWowxnBRjQZrpS1YdF36qWQ0IB7LHDOH0UMohxEOqHn7xwQfSvTKeKc2KgRoOULiBIOKBUYjxfRvGEHjw+ptL8aap5SY+B2a8NtAEoqKSAx4fbO4I+P2cBi+SnWvqpRTb8z7P+MMUO8jqQu9SB1V+9jDBSEt+JhMquIlzgbAq4A7edtvacCJCbpAkSe7Q6CVdBigkcH7+7rOLp/7uMAEP2r7fVTEIVDxL0aRHgEHaLl1iNkN83RR3gFKgAGATi+6H6a324RMGpIhMBIyn6CwKYqmDtLYiFXqajAcyGUkGb0zopfyZmch1Q+XX52wwAqaGAZCMPQg6BKrSqiprnShQKYA5e+zjBJDvGxrxPCrwtEJWOUooWcrgeAj2+UOKnmaRqezFxQF+ni4mWQ3AZAeRzIPyFyc+eFEgkusjvc3iOMUOfVKNFxThH4PxzF/T+fTB2ttr7Y0fLn+d/AHZEosptlHfpAAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAECUlEQVR4nL1Xi5GjMAwVM9sAWwIpgZQAJYQSkhJCCaSEUAIpAUqAEuIS1iVwkmwZmXj2c3tzmtm1TbDe088ybxDLCv9HMploAus4P3+lNQf76e8W3yCpj4dVSAgBBq+Ky+su44ZLC3A/7xSaJVq/t58TmOeZx26YoW2OTOItgJcFTkd+4XZpwBgL9xHXpdt8HxPcFkfgeDw6K64bQ2OMmtvoPSGD63WfAyzX+wBfyYLgKWCRoigCiaLImcRYltBiICocZe9GwNbKNEjPBbzoWME6dLhIvKBIsAokIiQ6zIMWyV/PJ7j1jygJIXufYP2oIiWXnmJtYOiKH4GnCcUkSAIBDDusq69CH3fKBTLiOrrqELczOL9X+PGEPz68e15JpcJBJGohsPRtkvGXuUDAek4kiNQPPBMnoc+D5oguH7x1Xldw/fPpgU7wL4QJhJIj8MPB/VL6uvPhgGWB30gqDIGABs7xRWtiF+qS22K984I8/6bIkfUWGIFzOWc8uX+ptxIsurAxa1y+uCpIgP6wMkIIAvhcRLUfYr9ufcrc2pjIN8CNSf8WQhDcnm/H7wLLBq5yoMCT7GMYuBcQkdRJmAI9PKY0AQEfnls3DDWvLAcEZiJ5ARQ0ZAIjnmjZrU+S2AOesBmeh62p1HXtCOT+yKREpPgv0L1YbnG00wOstZh750CCsltIkNB5X1VlABl9dfVNDSXuqSp30k7TtHmAOqFBxZSITUPeaOBEpAR8XxV9D+XZk8gtn5ZEQmSaFk7s56mCA1pJhlQfmyezLNxHfBLarY+LN9gjTRPmmsK9ivvFi5BBiwkkNKB4aUHMFg2LqkBEW6yBB7SSQvDFxedFiETQt8N6rQJIdmCWpnd1HzxgjVe62/HFWbAoj4cqoC3zc9f1dBJ6EIPJw/FHcIvWWE+i9uTIvdpaCoNei+TUtCQEQXwzIhV0ZaLYCQnJDQZnQg6crCdwDaxl73JtffAA1SaVyRG7IHuhTJBwrnHgVJIKnGK8B9qLBibrrQ9T8AAdQnQOHPFPQlGiVYEEjlYIIPihvUUAusOlLBVgZ4DhCggEHu0FKjwwiAQRCPdDozyhbrTgn9X47IqhkROvUyWsAUXE6jLf8iJqx9SI5kE1Iz/SXVbu9CkhYLKIFEt9u/0mItWqNeVMjR5lAqfuzqehdr9HfplShdTeG1evjBTrJBzuHTT4JUOjwSNaW8w69mUoosGjjxMl4nYmhYrJCgFPxV2e07viKRor7KaY9Uwgo2+18GnmvcfNjeaP7XthURcTDaiBq4EaWQMfXQ7vFwrdABO27IhcN8gNKxMPMAn6ZvtUkNCocmHC9RznGT8jPb3D4TVb64V2Czj90yHI/Afjt4Ui28JfSehOfwC35nsPj/oKRgAAAABJRU5ErkJggg==",
-      "actions": [
-        "octopus"
-      ],
+      "actions": ["octopus"],
       "weapons": [],
       "hit": [
         {
@@ -531,8 +525,8 @@
       "soundPath": "Skill.img/5211001",
       "description": {
         "id": 5211001,
-        "desc": "Summons a loyal octopus that'll aid your attacks. The summoned octopus will not move, however.\\n#cWaiting time until the next summon : 10 sec#",
-        "name": "Octopus",
+        "desc": "공격을 도와주는 문어를 소환한다. 단, 소환된 문어는 움직이지 않는다.",
+        "name": "옥토퍼스",
         "bookName": ""
       },
       "levelProperties": [
@@ -1074,8 +1068,8 @@
       "soundPath": "Skill.img/5211002",
       "description": {
         "id": 5211002,
-        "desc": "Summons Gaviota, who's trained to throw a grenade at monsters. The summoned Gaviota will seek a monster, and when it finds one, it'll toss the grenade and disappear. \\n#cWaiting time : 5 sec.#",
-        "name": "Gaviota",
+        "desc": "적에게 폭탄을 투하하도록 훈련된 가비오타를 소환한다. 소환된 가비오타는 적을 발견하면 폭탄을 투하한 후 사라진다.\\n재사용 대기시간 : 5초",
+        "name": "가비오타",
         "bookName": ""
       },
       "levelProperties": [
@@ -1296,13 +1290,9 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADsklEQVR4nL1X7XHiMBCVZ9IAKUFXginBKUGUACWQErgSoATUAiXgEk4lRCVw+xatvLJkk1/sJIORbb23b7/EhyntYd5jnVxoAo/7/d9b0LfbPw8hIQQSeDR9308Pfn4WL95/fvL1OI7Fs/i+3W7N/X4v1ueG587XqznsdkziowUuwAN939jnizFM6yCCZ+ckXpkmKSRyCDS4BrabTXrA0FqfiWgS/B5tfN27RRUEfG5FEgo4A/fWbBL44E7m5r+NjZFYQKmhSeKV5zAhN4ZQE5jUmIDF5NpfDsaEyEQ1iVfgUGd38csKiPcA35D3Glyb259Zjd7Ag4kEANbAl6xQAHG3biAS+9lGF16TTyZHe4bDF91MxM5X4//uijzI4Min8AsCsMDxvPC1ENHg+Az+ZtzpavphSlxdorw2A4f8reSsCEDiJQN4pORBiCQXcpXg3SOpcNjxdQZ/YRUBbKxJiOfifRwDhymSCoGqAtXi3JQLAM3gK9JXBPAyNjmSRwKqScBkzX970ztrLG0++sBEChUoF37jfVOBcaTN7EhSf3OyARSqWK73RITAAYxPQ88HCos4gE8m4XdP71fiXxGQTVCK0U7yoyEhOUECOWDTRpmEmRKxlZCTc+NyEspN2QR25FZAcU8Shxz3yHkSxi9Sp+yCAu5cUsGYXJp8n5RoEtDDRTbhnDg9PUWPwByAx4ESEWEZaONI+cCkrC2mJ4diRoL3TEQwjCoF9LB4PB6FGgN6HwEF8hilJ72cCdGa20PaJC+VZ84HN5WmtGKoUM0C9jzJAyJd12USogZa9S3lgpBBvuDfZxKG7x1PLpPQwFnt1jCSBJEHRRWthlYFsqNqoIgMMCQsegPCptWEQy1rlOE032GIHSREr59n+TNH3DMR6W/YSwhCIjQ1KE1CJ2JBoHVoyCP00lVKMBYlpEgfk6wbKHMbOVyt0gRGlYQwnQfaZLCgw6HJ6M28H82JhpKUKlo1wGH6zDD3fPFA0jpKaeM2a0xBBCCYB4g9lyS38/gc79FWBxe9Z/NEpMGLsQpLuYV4Yl3nxkD3bmnz434w/hZSlfSLHXKVQGXBVMcqHZZ5gkqVIEecmR1m186ElfcKXPcKWZ/3DDEuT7c+Fn+lgG4k81OwkJKQ4LuuFmnhTMjaKhRNAvOTbNHBGvekekSV1mAD+JICHX6r4ddR35cPrc3xtXtzEjA9qC7e41cRLjtRgElIc4DJNZJFEubVPb2uP2H783TME3BRQKxLPxjfYXkw/Ae1N+R8hZ4MxQAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACyElEQVR4nL2X4a3CMAyEQWIBVoARWAFGYAUYgRkYAVZgBFiBEWAFRuC9i/iqi+u0T+8HllBK2vrOF9tJZ5Pa3pPv2JQLJ/B+PB5fQV8ul29IQKADXywW3YObzaZ68Xq9dtfP57N6Vv/3+/3kdDpV89H0nPz8+i4kZhk4wKvVajKfz8v16/Xq5uVAz0YSY+YkIdEtgYM7sI/6QcRJyOR4u902VQA8WpWEgDugTI4vl0s3L+cZibHIZZDjnVn2AuwFjHF9Pp/LKKJOYgzcg0gVIHo5U5QO7rbb7YojXzKRyJ538JZVCghYJFgG7H6/lzlGHB6Px4qY1PE8GAPvEQAMg4iDa9RPgFJhvV53KrhFcKmWJWePgBy3TMCSVUqRCySqqyAbi7xJQA6cBJETvcrQr0UgqvBX8IrApzGUlwF1EjLmSEKBSxERyVT4lwLUp0aREagcErUsdkFrr2WMJFrr3yOAEz2oqFBCkXItMJRwEoBnCenBNZOQmzhxQ2LWXT9FqTL0qiEIWUxI74QpAZcVJxAh8wWMOnKu5JO8zDvxuBQkJkQOh0NfAd8s5MDVkOwsC2Qg7pWCZflAK5YKvb1AjpBHRHDganhDgozecxIsmSLGhwO72hUBbviDqOJquCo4YoeU0Zh8h8zyCmuWIcuhSGhOMcu9b5CY+IjV4SQ8ESsC2aEB+TRGJZDbyxJlbrdbIZaVpjB6SciLsUx4ISqBCUhzJKVGzcn8zBAjbx5IsqOUGxntRASikoQALTo7PUWf6YnIwVt7OuvvueHtmtygSlodcpBAZvFYNZSgVImI+Y45eiZsRc+mIvNkjT0D8/Js2Z8U8EYST8GQYklitcSuGZciJRBPsrGDxXtUD6pkG1tLCRGY6ltNX0fxoaF9fOheJCHzTqgy/fyfokAh4dLQKOQolmLrns/76PeMTPVxWiY+H4zfsO7z/AcMy8tQBE6UKwAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADt0lEQVR4nL1X7XWrMAwV53QBOoI7QjKC3whkhHSEdIQyAhkhjAAjhBEeIzxG4OnaFpaNk/RXdU4LGCNdXX05b5TKSr8jldxoAOtw//sr1v8cP1YBIQCc8ZoWOhwOcWNVJR8OayRomqZkL56PxyPd7/dkPRfs+77d6et0dCDeSsbF8KUmMkHXPMV1AMHeHMQr0SAFxBYCbVwbNjZezRiBaBAQKF75m+oBC2I8lyQJxbgz6FDIA+fG/MGgFjLTQpbKIF55DhFw4zztAYjYC0XDpO4Nbt5Z4+KAahCvjDt2Cjg3AOK9M96Y1HiC7h+/+2AWZqI2glgLGLTxR5Iw4OJ+OfO/Ltv2GdbCFeAuyAlOyjFsuXNS9xWtbcyDzTican8AwMnYE1l56NRVgWivrHQl0xnqPueNBS25cdBfSs49AFD8UNj4PPoQjT4XXJUICw2DaH2pbsZfSIGB9wyEeB6872cfpv7qsKBaOrtEFtgowuCMa3CvAOBjp4SVkRWjGgT5tQswXsneai6KhcbTQvOitjahy1r6kewYGBm9PfS+67hK6AIrzQYExmEYV2IQvXYALADEEhL0Sfx3AESJnYJLRrK+DsnZ+Bzgq731EcQphqCUkCKl1v2WvxQl8GwYQkUIx63EvXd5Yg4VXf8sicLNeM1XGxIylCYETBQB6OEiSpw3g/cUPQLdEx7PLT9zRzTDmQznA/A1lE5PpyMDAREgGEY7BvSwWFlBZINzb/JEwGNEZHb09w4Q1s5DTedNmaqKOpamtGKwMM4FBoQeAKlYgYAQNtCq2XlXYQLGcojwJyAgCNPA9wJCGxZbxWEkCSIbt16u2NCsgPZx9Dlqpez4waBUTzE38H2VHW5EdmWo57v7GJiOlev1eZb7HPEhgNfnoQlaRh5qSzqsFAidiAmA0qFhG6EqJBoEElKodygcCzwrx6sLV6k0YWOXhBCdB1q2wcLTDk1GK/tEvLs6liq3ahiH6DND7vkuCTWInJVE+hDLJk3QDke2iycBAwodFaXbjPuDi9ZZPBFp48lYhUg9nyq/rnLjwuUH2tGCh2+ujC+fnPoIl8tTADtpC8cqFZY8QaVKkCMdLQkTT8+EO++Vcd0rtvVT2jNEXHne6qc+/YgB3UjyU7CAco0rHDx1tRiOSXB2a9caaBFAfpLVHaz0TqpH+vx+sHnjjxio8FsNv47swew8fzTHn73LQRClg6rtJ/wqcmqEAQdCmgNE7lGvkjCv3ul1f43vrNItxoWBzanwg/E3ZKPjP3MUk0udzlLUAAAAAElFTkSuQmCC",
-      "actions": [
-        "fireburner"
-      ],
+      "actions": ["fireburner"],
       "elementalAttribute": "f",
-      "weapons": [
-        49
-      ],
+      "weapons": [49],
       "effect": [
         {
           "frames": [
@@ -1679,8 +1669,8 @@
       "soundPath": "Skill.img/5211004",
       "description": {
         "id": 5211004,
-        "desc": "Attacks a monster nearby with a fire-based attack. The affected monster will keep receiving damage for a short period of time.",
-        "name": "Flamethrower",
+        "desc": "근거리에 있는 적에게 화염 속성의 공격을 한다. 맞은 적은 일정 시간 도트 데미지를 추가로 입는다.",
+        "name": "파이어 버너",
         "bookName": ""
       },
       "levelProperties": [
@@ -1991,13 +1981,9 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADt0lEQVR4nL1X7bGqMBANM7cBWsgrIZaAJUAJsQQsQUuQEqAEKcGU8GiBEnx7NiwuAdT3554ZRyAk5+xnwo9Z4ml+B5lcaAHPx+Pvr7AfDn+eIkIETOSjcc7xgz4Mq4mFs/wfQthY9GAej8c8PwXmyDu3tjWnqmIRP0LuaHFZGORCBoyjWTxPSbIsM6Vvd0UIucCXpTGTiDQHNpHnUUROF30/mFGNlYU1z+fTVKfureXAlrivBAiGAWHJmVTQ9YHunWlvpcmabXJ4p2uqzTV/9MtaneSAs3a6j+GxNl8sUNCcpgvkVseekDBq8neYBejkk/jjGu4Pw0jEdhKUrxZB/lyb3tS+4HU0ufcksFkn7UpASh6tsxxzWD3ukAuQH9drZ+q6XJHD/XsV8jEHChVvQCoin7WMJoWQf4O3AgZ2/dJqqYhx5s1ZxEgJCusBJCTGw7DuJW8FsMuTMGggFwD7Mt8MxBRCLM3ztSHi0dwutfLQlwLSKgAZys5aN98jB/j5y3wmjxjNpfZswOl0Nbdb/TH+Kw9M67DrB+W+MN+/PCMJ6UjgmZJPyPeQGrgrAEnX9bHh2MnikCysqwHeQCPaIo+J2C46Ic9XQhYCRKV0uo4aDJyNJtN0/RwCCYdAAtJ1Hd/IPeeSNywCSIUsBOjNAkBXK8uoFOS+LGbrIQDJJkQID9ICyTdMAqvqTPvNhUU0JsytWPJBKmQWIKpECHY4iNDkGlwQSoRLKqf03hxJxJ1ESCLG93Y2IxnQ7mGoPhOTPz7Q2T+LGnR1BLPVpFKscgAQL8ADL+KJRF/T+5Ysl3EkpFxjrXt742s5K4iBm0mYHhoACcO16Xgzkg1JVwXmIfaoAm5IYwyH9yWF4MQi9FYth5aVAKhauX9CTYthoxkT63Er5K917FRNNubBkUTcb4u1N5NQBjSwkHgBfR6tlkHMl4s3p/N1JhevdE1DYXFGpcuLdKMZ7W5Gek+X/QHdTgPWo+3aadHQ98pDMRzwwuFIVXBvN0V8fSTDmU8fqyAMsUXPr0gEzEXdA4i9s6/S9b4mY1CK69PRpoD0OKU3FUCSFaIgoiURGkg8xD52iWJhsXjhaw+sOpiajLHgH4uDp7yHxGOx5H6ExrmC3jvS+H0/CVPr0w62NSbVo0tYRPLYXfaBiuZdZhEfPfBuH/+0x8vzhZBHy+QpICDDt5p8mulGsUeQkm95IRUS37mziIZ2TfoqwlAmHmAR+GbDT+KzdaaT8f8dk2eeSlnIxQOCbPpg/A3Mn+f/AM0ercXZy9vBAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACyElEQVR4nL2X67EpQRSFW9VJQAqEIAVCIARCIARCIARCIAUhkIIQ3Pup86ltT89w/lhVCtOPtfaze37KK+7lO+j5Iwq4Xy6Xr7APh8O7IhTwJB8MBo/v0+lU+v3+4/ftdnv8Ho1Gj//X67Wx6WKxKNvt9rk+gzXOOR6PZTKZPET8SM5CNz6fz2U8Hjc2QRTPM8n/zcp0Om0VIblgD0XkHOgEHkBEhJvtdrtOy0FN3J8E4BlJhV6Zz+flcDhUyfFOHmsIYHJUJ5lx13L/C8jZHBI8YRgjeReeAiSHOJOShD4zMbMIQoAXzCXJGcthqwrI5G7M4i5ywdhmsynL5bJBjofaKuRtDtSqoU2AkPwTdAqw/t+BeXgP6wGhALV+0SnAMmtTDxGIoiAxgS1FBXyC1irQKsXoDb4VEkVJzD7mwrv4vwjIllqG/s+e0Qt4zTLscnk2sFVALBs2lzy6PecF82rkCo6dEEQhLwJU6UK7F9YRX54bglpy5m4X96oJeREQDwtAV7OL2WS0PsZd4YC4K9A80FrFmQ+ueQpQlUI44TxkalmdXZ7ji+Wr1aqs1+tnItbmNVpxdE8XcjX4zO9PesCLAOAivYAHsmKJJcmlK6girAfeFUAuyZc+kPPAMFgFLoxErLP++TDGPEgNQTyqvbQ0BLCozf0euTVvSa4wE0wREsa9q0noQCbRC/FSARHEJGg8/wFz8p0hkn58I4pnerQoAhGUmw0rdk/DwZx4V8wiPr6SYW0MA2LYnFpHBDDpiH3MlxiKjKqAfJ2KhwowWe0RHsMCITGho8Ux/h95oK2DOUaCxoun86JYb1qz2azs9/v2JMzW5w5WG5MsWuzmUQjkeEsRbz3QdY6/O+N9HoVACnkGAnq8q/lqFpOljSCT17yQhUQR5BTlXX5fzYoiqHcSKtd2hON/HYuNS3I9IHq/L4zfwPP1/B8KsI+DKRj82AAAAABJRU5ErkJggg==",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADsElEQVR4nL2X7ZWyMBCFwznbAG8JWAKUgCVgCVgCloAlYAlSgikBSpASlhJ85yaZMAnosn/2nrOrksB9ZjL54EuFeqm/UcJfJMDrMTz/xP1YHF4MwQDGPFWzyvPcXLjq9Y1NaT/HcVy1FUWhhmHw98fCPdynvQ/qcioMxBebl3nmHwxzNoOmWQXXY5MkoWDKFxkkmxBs7gOpqN1BxDWwqSy1EMToMzM7qLaiCF4vlRy375XmW3C7APzDJheByM6ldxAPZOKNOWVH6agxBkBnpkvTJdLKAfejjbqMhrgmmPNNqa62meBhDMw/yAOw+Y3ur50JIJB+Pdn0Q2W2fkgJiOusuiY1z5HmXUttlx0AbCjTi++49snci0BPl0nd22xtrpO3M+QrfkgsCQTxjMg2+no58z0KAeawEamPo+YZMcm+9H2mC4geQkGiXU+/BOCUx1FLIIZgjTDCP6I4XmylPrryc4a2AOQsYDMUNGeAs2Gui+h5UcSlR5ubIi5OWg338sfxDwDiSM2cT5ffWhhBVbZ8ovjYPOwlQccdRajcMPT2EZjzxlzj9+yJKlEXyEZVSfNFdhbYJRpCJiAJEgAwZVPZ35eb/WxrzHM7BP1k/yQEx9sTuYzdrCcOAopBAgC5WUBY1WAMnW92keHoAYAqZ7OR0oBV8nGv/PAVx5saHrWBOKOTXswRpJ7GEICpGAQ7HCCMeb0uaVf4HqIswz5lU6sDQTwJggsRersZcYNMj5HIqZz7WkeNKpz3o563anGlVQ1AnAVkIDaWU3CiXGe0TvPWzLvlbNp69RzcGJZhIW4WYXxogPwwXCeVZpni+5boZzIazcKDBYxrIafhqGoaguJKEE2wVfOpaAUAqlX6nbomo7mO7Czkk8sWzHkKsjnSn+cp1UGj/hHEN0HIZ28WITdIISuchTstNBbCGsH4eNbGHL9HNzb99UbZqlbDz9v07hOR3NP5jAAIKUAUp57qoDQQM427v98U4azKmrJwuKjvZ7sJsftIZs588lhFYBjbgeY+IBAy5j2EsU/zaunatB4i1iZAfJySmwrk14qj8hBSKDxAmDLVFdXFsmxyFvZnIFrBgncCahvHITh4cj9AQIgcG1ma1fT9TFno3hfhKvpoBdtq49nD85yfwfdw2mGe152H+DkDn/bxH/Z4vh6CWPNYAEjwrsavZnKheGcQmy9ZCBcyCSIhrnTGp7ciNCWcAQOBdzb88ZrO4yTF7b9t42sNbbFszhlgJe6F8S/kC+Y/78pnL/cYN9oAAAAASUVORK5CYII=",
-      "actions": [
-        "coolingeffect"
-      ],
+      "actions": ["coolingeffect"],
       "elementalAttribute": "i",
-      "weapons": [
-        49
-      ],
+      "weapons": [49],
       "effect": [
         {
           "frames": [
@@ -2338,8 +2324,8 @@
       "soundPath": "Skill.img/5211005",
       "description": {
         "id": 5211005,
-        "desc": "Attacks the closest monster with an ice-based attack. The affected monster will be frozen for a short period of time.",
-        "name": "Ice Splitter",
+        "desc": "근거리에 있는 적에게 냉기 속성의 공격을 한다. 맞은 적은 일정 시간 결빙 상태가 된다.",
+        "name": "쿨링 이펙트",
         "bookName": ""
       },
       "levelProperties": [
@@ -2650,9 +2636,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADGElEQVR4nL1X7ZWrIBDFc9IALfBKcEuwBSzBlJCUEEuIJWgJawlLCY8WKMHHQAaHL82+H7nn7EoE5l7uDKgXFmNjn0GDDSpg+/n5+xH2r68/G4pAAY6cc5MNFqI9Dai1qo7FPornPLNr3zsRlyPyIzSNd3HbtrdEUnStCCJCCiCI1qttcftnyLWO7+85CEGAIAofV2X3mNKunRYhIfVXECVEVxUxyNatCFESRB1KxRQEnANIgNioJdzr70s2bn7ISFApXZEAWKlPQ4zUBQgEgUUL97QjT61HoSBifdkNv9Nx/+UAom1tftUuGAlSIkgRiADX0BEowqKAzAWsxzeApOkq0YFpUaFvWpaygECa/NY236KVxeGYa7p6aj8Ql4TVBbDfnQkItBevSF4iPhQAK9VqYb8BrBZJAUB8Rl4VUAOmobQNKTGAEh+lryrAhH850m1Yy7OyxGf1WxXQWsVqnQ4nwza838ecmMwzVkLblVcfCYBJbTewM5TGIXlZcG6jWvfUXeIOH7zvezbbgwLaahnfej6pdWSlAwPFYsxdJE8EmDhyECFvXkR5MTvSouFAfguxaggC0tidzS8VsToR8Sil9idbNp+QQ6w1jI2PVpKCOIS2jlARnbyxI5T6kVxTd4NTWQryoKkIDFoiQtBxGXmB5u2DCEmGwW+pZdkrmRId5bskIQjohgdbp2s8VGumrFNS+ncBzvfcweuYsaTz/HS/hX51CBEyrODtx/JxIUhQz1V8GnbDM7SF4PBQ8HOIjSiC3jOa9Id/dhfY+W4cWTSQFx0oAeLI4WbtHl0QY/JCCeTkCACNIFTawlym0R7W9f2bCXDF07VRUOm2IRwgTsUeDhucXCwx535OuGnADREVcyZgGXsmb3EnRSf9iQYr2pe6N507HIr0wc6wjLbWXu+YxRQ4W8HGwtEKKRnHu68Fc05eShsFCGjgW41+F7pjAl7DbGua7kGIMx9JtUkzwCYrjAqHEY4/rkNm7Oqvfrs26IAT8XQnXv7ojNbAd8Las56O56Q+hD0vYPshOTqAaF4fjJ9A+Fr5B1/gx5rJ0hNUAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACQElEQVR4nL2Xja2CQBCEIaEBW5ASbEFLsAVbwBKswRYsQVuwBGzBEnxvjHOZW3bvCCZO8n6EvZ1v9xaQrsn1an6jlv8owGscx5+4933/IgQBQvP1el1N+Hg8wlieU12v12a3270humZh5f8JUrI5kCrEE6LTgx5tSafTKYFQSGzNbF49ZodwIgSWKsS5zWaTPntAut7CVAE8wQRJ7/d7Ona5XCZx+/0+A/K2KwOItsF24bN/qXKY29YTFBAExWcbt6gDFAC0CzSwRoxDEezIMAw+wJJhpGhqqyQk8vLc7XbzASKVhpF7rdVr+1mQt01fbYEV28u/NPeMiwB2wucI1dIUgnHNPASIhOQYKO8yVGNIjbnuawDKXobRPs/pYghgL7EohjegknFUfQbgten5fE4W4PLZbrfZMZrPnRuNSwAwY/Lj8fh+0OB/Xq81RXGEZU4LGW7BEoiSOWW7WpyBGkSp5WpemqcQAFNtIUryztO8dGvPZqAGwaSeEaVxNfMMoCaa2DsepEYeoAqFrlarKQAS65cKBCEpjNheXYhKkYyPVT6osIZxhMQ57bDOVNYBVkcz3hd0MZPrMe88hPV2a9VjAuAJC0CLRN6ceMcAgR9Uiq56MSEAh0fFlkUQ1pxrVNgGHeYJwPl8bg6Hg5tME3pfPiEOl20xjlloeHFm3C0oVQkDJFA4xlvzWi4CtHhX896OsNhWzIS6HYSxYBGAfDlt2YE3BJ5qtTueNahJ42GMWaI5fukWtJ8Xxl8ovZ7/AaUBtyaSqFT0AAAAAElFTkSuQmCC",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJUlEQVR4nL2X67GyMBCGw8xpIF8JsQQsAUuAEqAELQFLkBKgBClBSjAtpAS+bMKGzU0df7gz56jJZt8nuxsuf8y3lf3GCvxCAdb74/kT9dPxsCIEAhjxqlwS7vUHIacXvlM00o8PdmmOBuIvEldK/+O7N2dJKwqbxXVdP4TcTIc/15KxDYKUQAdRw+71gT0fvQNBs0DUIO4UjzG74bAJE8QairfZ6VHHqsv9dxKIkwwFMO8BEgYiICzmC8OuKS6x39r7QBFMBAA7dWUgFmQBAhmICsYGIx6n3ooDxLSQ34HfVxlAK0vBljkQ3OCoEJQIICBrmBE4CWkAk4XrV0AoGu4SM9BM+9x1+rQJ0QCKn9PCfbx7mv5m8gGppQHCU8i3scw1AQ3Ti58onhJ+DSD0TiVp6w8uC7BbFAUD4XfieYCcAZTok8eQChsgKryt+wIgvfXwGGbrLC/sneUBgHjpXi6GY3joUsLBOnH7AADEytAxkYGl0X6jN+TEYe5dpzrANgAAsS1415zYbbxbobnxY+Ya0ognHDZYFzPI6g6g/MVuQQUQp/e7UoEw5554bgd/uYmyKgmE/puPkeayyDwQEYdYy7wk3XwAwqCkCiAe7KUBZGAoDrH2wLkMJGobQbAwnSwao36ReMKyJfCM7yJta7t3mPbbIBVyMLnDABkgcztArZ+Ih4MnqqRkSpeurio7xIWbftxHHUux+2iPrhS2H8TmAxpysXXnYl9nNlo93aXTvxC1+2O5MF1cmmaGRbZ00kEoUkupZLRpWFfpzMiwBLX/6J++EnISpO51B3d6iAOGFpaeYygOa7jZNZSmZ/N0sRCZkkQAUEMgN0G2viirG5MaAg8Kbl5t87640p+cieq2zVkfoctAmzkGuOp7+Dl/68SAy9QZpfC6Ywf0qWnHaC0+Tjgb/unBezoDYFIHg0Ulj/NW1jc2DR2jOYV+MOVKiCuVOF/kJABAAe9q5u3IOdj4AKK0mGtEDKi4Sz8ja6ahcT1gkk/FiftVmLci+FpgBgwEPKmKunf+ySsDZ8mGSvpz/1OU9mEUxTEDaMX2wvgLc28r/wHPm5/tlYNbzQAAAABJRU5ErkJggg==",
-      "actions": [
-        "homing"
-      ],
+      "actions": ["homing"],
       "weapons": [],
       "ball": [
         {
@@ -2946,8 +2930,8 @@
       "soundPath": "Skill.img/5211006",
       "description": {
         "id": 5211006,
-        "desc": "Sends a parrot that'll mark a target on a monster. From then on out, all attacks will be focused on that monster.",
-        "name": "Homing Beacon",
+        "desc": "적에게 징표를 찍을 앵무새를 보낸다. 이후, 자신의 모든 공격은 앵무새가 따라다니는 적에게 집중된다.",
+        "name": "호밍",
         "bookName": ""
       },
       "levelProperties": [
@@ -3140,6 +3124,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "The Path of the Outlaw"
+    "bookName": "발키리의 길"
   }
 }
