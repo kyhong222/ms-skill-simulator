@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/5110000",
       "description": {
         "id": 5110000,
-        "desc": "When attacking a monster that's stunned, the critical attack will be triggered at a set rate.",
-        "name": "Stun Mastery",
+        "desc": "스턴 상태인 적을 공격할 때 일정 확률로 크리티컬 공격이 발동한다.",
+        "name": "스턴 마스터리",
         "bookName": ""
       },
       "levelProperties": [
@@ -766,8 +766,8 @@
       "soundPath": "Skill.img/5110001",
       "description": {
         "id": 5110001,
-        "desc": "A set amount of energy is charged after every attack. When the energy is fully charged, this will automatically trigger the effects of the Body Attack and Stance, and will allow you to use energy-related skills.",
-        "name": "Energy Charge",
+        "desc": "공격을 할 때마다 일정량의 에너지가 충전된다. 에너지가 완충되면 바디어택 효과와 일정 확률로 스탠스 효과가 발동되며 에너지를 이용하는 스킬들을 사용할 수 있다.",
+        "name": "에너지 차지",
         "bookName": ""
       },
       "levelProperties": [
@@ -1178,9 +1178,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADmElEQVR4nL1X63WrMAxWzrkLeAU6AhkBRiAjkBFghDJCGCGMEEYoI5QVPEKvJFtGNoae/olO05j48X16m38Qyw+8Ry4y0AR+vr6/34J+/fj4ERJCgMHLongLgefrBbe6ZhL/UvDrbXSrDEBTlTDN67bT0J9xY1z+aise1uMMdrXud7st75oChmlxW/Esi+OvZ4vnVoFEFAN0kJxP4F1T8uO4WPl5Y6KRYCNmecry3gh8XoKCREIkIkAasTYIKJrPDG4gYbAXYxiYlrUEPu/BM7whzYJAAhCfrWo25LYqYCRixkbmd2q7tW1peA2TrgyCr3nkIwKBBJpvVe6nM8ZldWcpUk7zxBL0IX6TVdh+kFhyFwOi2QvNSCTC4Wcu8HNt6S1ER8wyhVY40H5HgMxOoAS+kZgBdAxYCPP1tPm2xSxiCynwTWsXHzlX7F3AJNASjVjCx0RhAoFU+wBOvJZ47tlVcOtnnx3KXFkC4ltcTSQemK+EGwITnJlJJgJErdqyhBGDxY7Tdk5ZBrK3PrFGItkglA33ScWE/xZpPJHRIvgwwdfrMxDr7wMYX9hWnDchUH8h8GgLBJVIBza7DsxUiMRQ9wE8EHt0MPRjki30Kc7rwH1cOdfFTSMWkCPwv4ilAkVkuLD8EoQh10/60rXuT5/JIoNDdrp4d5Bb7K9ZUHiSSz53r4nJj6T7bNkN8p1JgAwBKrHVuckJPNU4BaY44Fjw4Hx0UWSr8a4ZaaGIlmhPSaQitYIAGz+vSVhf142Jz9u5gKubZAHKeJIFAvzEeVojltFuiixh9srEvYDapjQvH4gVHnCWipRqt2UB20+HsRFZ4oxAVEZ9MM5ourQSUqa02OebTHkmt4nftTA5FRN5AtQwGqPI2A28lKuYMw+RaIqt5OYA5V5BEtyCJGjcdVWGAIFPvnsZBc5FBLZyrgBD286IvtyYsopIYFTuCdjJ32Q0uFXJKx3Va6Vbt6maEIQEVmNcvLAphWse7VEk5MqXuAC4pe7AvcaPtsRyvairWawxkXB9H9iSNeRIlNGeiIBBP2uzBWR0AYGTJ+h7CVdwu7lB+TsIkVidlbYLb7zk8FbsgDGYPhuo8UJxH2a87aLmk29YBG7hNEX5lMVbQpE4JMCbtGnRBdf75J+xynGMnIvNjWYiAYFESuBC72rydqRfGs6kqeKq9pe2Pc0zvRXR8CIWYBL0uvQOEXD6p11w8S+M75Dwev4f2b0KIYHdfR4AAAAASUVORK5CYII=",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACe0lEQVR4nL1X0ZGCMBANMzZgC1wJWIJXApagJWgJWoKUICWcJWgJRwuW4M3L+JzHZgN4H7wZDBjY97Kb3SSL0MczzIOCNyrg+XP7nYX9e/X1pAgKiOTrqpxFwPFyC4fNKopYWPLdbheWy2W83263oWma9zNbAv0A3gEej0fSfzqd4n1VVeF+v4fj8Rj2dRXCS0RvDigZPi7LMrbX6zURYMm0H30Ur+TA4XCIIoieAH4EA23bhrquI7kduYcp5B5sFvQ+hjElX6/XURBJAPUaANEQj/9wdV0XW89jrgCKgBF8rPBC4XlHvTFEngjAaDgyjuQT0EMeckISDzD2QyLYr30eOUltmxVA11kRNs4WQyPXVJ7kAUJF6MTkfzCGi5mi3sDMVzveIEcFeCKsISW/XC5vYZvNJtYQgFnAPoueAC/mKsIChpWc/+FZKyoBzwzOARhDPPXZjvw/gBfgEa8gJSHITSYFXDz0rOEAGI5RDyhyxQNk6vIczudzDAPbnN2eAC2xOYDcjtgSswwrOb1gkSxGVpCX/54HmOsgZL+KYFkfTUObBWNeYfnGRc9omFQEvDCaBRashDkRTEWbjvYdOxdcAR6YiloJWRu88GCEHhHEeSKSSWh3PXZbxhEhXXMFioQUDTAsEIH7qt6nAqaQWwwt2+o5FDgV0Vy7VIDW7SnkdtXkJNQw5UQQ2R2RR07DueVXV0oVaPeIiiQEuT2hjpQEbHXPoGmmm1u1mxXAl7xQ4OLyywUL72iKeuV7TEQSAqxYuoXiwYL5roangBsXFWEFFDir8XSEGToF1tAny/apveNUhNuCHogicGabAyTHj4ageB0Y58D7eP4HeikWoXzDK18AAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADyUlEQVR4nL2X/XGzMAzG5bsu4IxARnBGICOQEdIRYAQYoYyQjNCMEEYoI9Qj8Eryl4yh7b1/RHcJhNjSz4/kD94gtwVeYyrcSIDl8/n1kujn03EJEAGAg9emeglAf3tCdzkxxNs6uDrf8VvzfdNUcH9Y303nXmoNy9U9UyO2ie1sbNI2Gob77B71NUD3wGA1PjcAHiKrAXYUgxu4YYB37D2Scy0BdBbIPfLPrM6DU9vecHA3QAcRLAOgESnAxo8ZRz7DBVCBiXxUmyKsCOKlRf/D3QO26G+YNpkLgARRsaTTnJySsYoMZHP5qR0H0C44K4a/rz64ZFxBFAARwmiYR9/JA3ReUTBCCrq33nFsi18f+HkPHSzsSVDUQBjZgvDqijcP4XgvBf45q03tP/DzLocsrjqHyBVAtdTkgkeI2RdgmKE2/U9tg98YvCepBBnH3kj+JgAZyq5qVKLxSuBVUUFVOkJmhmAt+FTzjVAFu333Gg6dB4U0y3YAPPHsgj5xrlOKGWJ0o+h9/jngZKHFlA2U6m5II6/rqNahM7l/+CkFWlxR9tNDKHHNyUlyiw15wOcBlq/Wg1lcYJCkChATZPljS1AZwCcWXVwIqU/llAgQa6P1ZTim4A4M2956hMBcVmL9YPVN4SMDOI+0gkGs+EHMiv83mqazG5ENBZT2nKIIObcma1OYOg4//iZFuBzm2T0w5m8KuMbgGo/bU0etJN+z/nblNIRr2kvI754CFUpuZCWWRsHXI14HpjpwteCDs7ttSYvNSBqloy1V21SApylO2w5nROv/zyC4DmwBUqSAV7ew7NIu+kshUuCvqzsbBGVkmjKIKuR3B0ARJE3Dyn9wKje1zvaIwjDAka4/1EYGsXKTKzBAmrO0jqAa98kFDyshOaPFpse1oQ3OZuGCF6KxgGA4WRObABS51wJGBJcKIEQn62OGwrhYqd/k/Ma0IATd9329AcB7uN8wjAhOG5FcQ0Qaecdcb1Dhv9CfdknTZBBhjcgBLn4otehsfXCZO1/QCtLWDI2YnvXV/Rcg6BmdkgTE4EOVKairFHwSRzL8+UTw0z0d88DkXaFukzyopEJFtyCk5QAyeDjXsXMNz9Zl4on97yHnk+V64DQYuzor4O8LQrQV/58g8oIpT8UcfI4+vm8VHHA0J1SXKr/D3bGttTvlTLAzRW2qE9Q6h/hlIcLzOMSDCdrhkgqAFqV4/t+yvaPXCmINoOhdLbwdLZ8N/MX6VTN2/Mete8CXDXwrolsVFGAIemd7hYXg9CVToPwL4yssvp7/A9z+0pRH2PWHAAAAAElFTkSuQmCC",
-      "actions": [
-        "eburster"
-      ],
+      "actions": ["eburster"],
       "weapons": [],
       "effect": [
         {
@@ -1486,8 +1484,8 @@
       "soundPath": "Skill.img/5111002",
       "description": {
         "id": 5111002,
-        "desc": "Blasts a ball of energy to attack multiple monsters at once. This skill can only be used when #cthe energy is fully charged#.\\nRequired Skill : #cLevel 1 of Energy Charge#",
-        "name": "Energy Blast",
+        "desc": "에너지를 터뜨려 가까이 있는 다수의 적을 공격한다. 에너지가 완충된 상태에서만 사용할 수 있다.",
+        "name": "에너지 버스터",
         "bookName": ""
       },
       "requiredSkillLevels": {},
@@ -1709,9 +1707,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADcklEQVR4nL1X0XHkIAzVzqQBWiAlkBJwCU4JTglJCdkSziWsS1iXEEoILVBCThLIgA3eu59oZtc2NnpP4knYT1DbD/yOXeSkJPDz9f39K+gvz88/QkIIMLjRmi/cdQDzfu86CGE9jCllu8+TPzHye7vf4XUYmMRTC9yvAX8vMN6/muDeXwF8MYhTafoZCfIZCQCM1m4kKg0IuNgy1CRCWMC7GU8Q0L4Xzq/I59ok8chnRYDSQ5GL7TNQgpdAGk/9jCTsFYypCTzyua8CDAEe2lmqW0ag+8i7BMbb8aHKwslg814m0bInOLFS7RS11hOu9QxuxiqZcpX4eU5CnIq5C0g6zzLWJbCpPRkLTI+ggsNAXX7OL5kk3pcx1ovMtX0STQKtUosqzzmWLPgFgQzkVRBwDN7YOzg3cJX0SDQJbOAYtTHRCeBqeDOjE5OQcvQ0FoJLc2PkBM5Hmr8O7HNfIV0CAkCTSyfaTAhEoTrQ48TR01HAy7ktfy1rEmCxrfNhXKmRwYParbuHTRc812ehchsmgZoJWtbPgM57gjipyBCwmuFfjJeNMtDoMQcCpapJXAxeiIxNxHnStLSdtrmbRnyulC4B9r9GFQsopzWVlRCsyk+EyRdFquiUcefYkt0Hun1AgMClydA67lMffCE4jMgtUZySFUXMQ9o30hiBr28vYP98sZilQg4ENuF8xP3bfMb1D3qncsJe0voLWMdYQx9D935XhHocM+skQkph9R6QCJQBbNc+g5MvN7dJnrRij9mYKhKU/rM3JSaR3n5K8NIUmOr6wWZUk2CATjpjg4LqOYXg5OPMTgmw43QUYLWLSEwlAkR2G4PHthGo6j8hs+JDbLtKtd1J5FK3nPI0Rts0zVPGQM/6GeCJNoVRt7HA7AqmmU0Vgbbm8Exw2Mp1flc43Ywwr1jjn9jb39C3ijW+B2qc8z9u3cbesO5f0U2dvdhLbE1AGhCtobYx8qCiQ63/4Jb8CrEWQzw2tjfOjIrEy2ZDvJTRdVmbHYHakzjPIMbc+OgCRuSPyo7gCDy2yjTAf23HmfZxmNO61GllIdLLy9jpEScvq0TgQt9qze9Cr3gN98YVIa9ghQaIWFyChBpUE9zj5xF+FdHpRTLAJOhzCcZPOHb+humTeyUokZFiwOOyrhs4/ZVLcEkfjL9h2+f5X7mO8SedvFG0AAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeElEQVR4nL1X0XGDMBQzd1mAFdIRyAh0BDpCVigj0BUyQhmhGSGM0KzACGnERT7xeAanH9FdGzD2k6z3bPAuzHELr0HBCxVw+7n8voT9/fB2owgKmMjraj/dnE6ncDwekwHGcVy0lWWZ7I94BOJ235fQfhwmETuP/Hq9hrZtQ9d1Lnnf94v2pmlWRSAm8dlUITxEzGqA5IQVoeQgJNCGP0/EVsyZANiDDoR1QMmVCPcUYVO3FdOugiysWe0BpKmU7rzOz8Iryty4qw5oYMy6rutwPp8XqwRtAJ6nxqaQFGCrHXne7/ehqqowDENs1wLDc7ZRFMemRLgCvKXGKifoghJZcjxHv9QKSQpQcgZhOxxQMkBdUXIrwtvcVmvABsEsmFvWA35zijAFVwDXtYVnIfKudWALle5p+jYFEDaIJc4FUgSXsmpAZ0MR/wGc4FgQQwBiW+GuA7ayaasK9JYfybx4cFKXb1IAOwPe7G0Q9NENiAJ0EnwfYDe0m9jibag557VX5UpgHVOkasgVoMCsVDXgWWgn4JFrPWQLwKytdRCw9qWkIpRcoRvZqgBPhBJYsCi1X84mlf09QGI7IxUL6MdHDqIAu/65boGtD1RUPte6btcQjSW6tmklHUBA5gsBNYi1lfd2t8N4uy+gjrRtswZgOd4LOiiVV7SrGDhnx9rxUQA3IOSQeWZHvpwYiHanRABMG+/hxmxZl9W2Awq+zTCYOfdmv7VMLVb3AQ+01ev7LDkFFDirpc6FIGNxacV7Qr09wns5jXf776ciXBZ0YBKBM1tZNWGIMcv4M+rvzJzSvYxk2vN+/Pvqh0iOf5qC4nFgfAXi8fwPgFnqIkL4znMAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADXElEQVR4nL1Xi3GkMAwVM2nAKcEpwSmBK4GUwJUAJUALW0IoIZQQSjiXcC5hT7ItkI1N9m7mohkWrz96T8/yhydI7Q7fYw0XJIH7x+evb0H/8fpyZxJMwIO3Rod/I7ZNV2LM2X+FT1/vPjZHGf1O758wvr16Ek8l8O2G71sD5neJBIGPAKuoarlQJ+F9opkJYOgMQCSR5gCDx5i255wEgrsI3k1H9Yp17U8sOHyGU/T2Fvy5gs+UAMqjbodcJwUScAFECozYNo1nAjSVFz7zVfCgDeVqClGdqzWC2ufylD6VOv8Pq/n9QgGZ7Ri1wsdg3YKSdsIhyY955dtrYyt2QSBmO9kuLc09JcF2dHOjGMOJiXWLINDVSVQIZEuNCLRjOr+swjwHACsIrXNITIXtDvstY5VEhUAE9+s7OiFOA0VrQpctkiJTWKejKi5Gru7He2tiAI8ScByRcEI7p5oiMj7DEKKnt1vhX61MgIDsWGigRMRdRS9pX1LMRQV8lCJRaRs23O9RAmQ0iM8EdpKTNCLRLJz77H2pwT1IwIlkGyIJekuVlwimoW7tEMbS8WAxmSw6UONJibICvIQYlGUls7eDKJtqj3YlWFG17z4HJe3raac8E6AlxJuMn0dI1XNiD/CpgH30EHLTLzUdyno+AkBw+6MB/UEkqH/tMOLEeYuHx3uc/76Q5TMrAnC+HwibhL+C1ZOw7w/WnIQk4ZL1E4L4APj/IsDRF8y3vyTgLCqbkdi2+k2pY0IxWgkuzZokea8Po5wEWUVOG/Mk6UfgPmcU1OyCQLZuGbgvX7t0PAyI7FFX8VUk4Ao7H0luN1ShS5dXwpNPIYzSOdB969+eDM67puDb2g51qQACtuq4zEkZd1DYwU5lHKQHHcbK+hWDMhRs9xUBHKQRSNO3wguGo8JzBbqX8d3iY+gkfMYny4FtLRCIG5BPuC5KptghktA0tzpsLjQdPuv4piKAaQztgPtm40IsRp2XdVUBjiS5ZN5DVpkmPRegELU0lXXL7GIfcOVBBOAyWamvgTM4A9cXgSfQ0Lea/zrKW2kJE5hxwpGCPSy3/wRbm6ASc7PsI72vz8Z/FVGxYQU8Cfpmg/7zHEHpwlNalQ7SrZn5ysiWbQenHzkFTfxg/A7bd6s/DQ5tJz/P3uYAAAAASUVORK5CYII=",
-      "actions": [
-        "edrain"
-      ],
+      "actions": ["edrain"],
       "weapons": [],
       "effect": [
         {
@@ -2269,8 +2265,8 @@
       "soundPath": "Skill.img/5111004",
       "description": {
         "id": 5111004,
-        "desc": "Uses energy to convert the lost HP of a monster into your own HP. This skill can only be used when #cthe energy is full charged#.\\nRequired Skill : #cLevel 1 of Energy Charge#",
-        "name": "Energy Drain",
+        "desc": "에너지를 이용하여 적의 HP 일부를 자신의 HP로 변환시킨다. 에너지가 완충된 상태에서만 사용할 수 있다.",
+        "name": "에너지 드레인",
         "bookName": ""
       },
       "requiredSkillLevels": {},
@@ -2447,8 +2443,8 @@
       "soundPath": "Skill.img/5111005",
       "description": {
         "id": 5111005,
-        "desc": "Transforms you into a more powerful state for 120 seconds. \\nSkills available : Shockwave, Knuckle Booster, Energy Blast, Energy Drain, Maple Warrior, Will of the Warrior, Speed Infusion, Time Leap",
-        "name": "Transformation",
+        "desc": "120초 동안 트랜스폼 상태로 변신한다.\\n사용가능스킬 : 쇼크웨이브, 너클 부스터, 에너지 버스터, 에너지 드레인, 메이플 용사, 용사의 의지, 윈드 부스터, 타임 리프",
+        "name": "트랜스폼",
         "bookName": ""
       },
       "levelProperties": [
@@ -2699,9 +2695,7 @@
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEY0lEQVR4nL1XgbGjOgxUZq4B/xKcEkgJUAIpAUpISkhKgBKghFBCKOG5BZeQr5UtY5z8+3c3c08zCdjY0mq1VsIP2tuLvscOepMDeD2fX98S/XQ6vhSEApDgVWV/y5H3njxfDT7GyJxzYa6yJq07HA70em3kDtNE/fksIH6UwX3+xU43N5/MAEUAERf6YgWCT8NtB8LaKoEoNSABkxNxbpLzt7U87/zGBsYm3udWVVW6n8c7mapN4zcA7xZBFHMlYB8I24EqDcHb7kLL6n4NgPox6p1nHG+2mVZCcE+K0DtHfl057Y5p/0foh+F67q80ZdnvAAQKgxcTSrsFiZrAvN0J1RO0tvqwRsGt3nK2Y1q1AlCZ1ScG9iBMyMzvNJk8rItjxTumtN6EaxWcD9ly1ggODSgIXyDIABh5iKA2gkB2LjrHM+cN6elybt2LtT+Tmx4ECOfmRF/Pxy4QQFw6op6fDY/nO4AQk0E4BPIpGVW1z/BjbdtttbTG03qb6L8sPwXTwPduIW9syUDUUVQxhIpyS91tGHPa5Hhj5i8ZgK28sa4CRUp9aSjNbXpyGPcOIDBhQjHY47LCYQQhYrN8Ilaer5hqR8dTI3tery/Gxlld70zNQ+gHgPyz00HsGR8BqLJdFN/Ce9y5oZadyukQpRsJrnU+HI70fEwE9+PCzt2aWChLMDCdfd9IJ/wAIFQaR0hq7AL1ZgjBUZKFWj5u845mqP3UnOUKMc6c4e0xpTX+PpKBAtl6LuOl+9AJUT9rVGBdAqG1HTlm1xoREOoIJ5rh7pyrv0h9Poa1HODOzoa6LRnwki2OoLU+qTz0HUNr09DdT3Tt+0T9yCCVXiSIIDhBNfuYWQ+2rXeg3LyEZ1mXyzoh6juT41bpGcjpeJR50AowwH/tTylzBMZnOfdCb8esCQAOUlo91MzgFrTNft32x7AKlDccXJUMul8cFLWDgBYOoIoWILG2ZRmQKdYqC5p9aQkAzi9+PAKdkf4oMKg8NwVg+YiscayUz7EEtuPS3JeYWGg6mHPjSt2lJv09TAAQPD+/Sq1m1vFJkOPDLFxZ8QimnT+tYZEuNFA/9vSgSoBoIAFVhTFA0K0QYa5qoYw7UEVbD1fd5Jmhtku/0BKzvp5nblaj1FiDqcm+D5YAlOJRetXGa5Mcg8LFbdTmwL4enQBJc6MUSfapiZ5KACqa9nYJ9eXNxlRJ2SJAtFAOijZsx0Uc696UCLfv29QGcBmjGPs156QAgIA1o1UxAfHSj1BnAMfBkfl8YoqfXaIUV6E7Bkb2uMozZF1QL/uuH/6SNdeZHiwMgHARsTjHw0hv7lApxbXMFmDAUjn/yXZ9oMqyyZ2DOmSfZ2eKd4jAWNARVG6HegcUPrR8SPTtGKLG+aI8CACN962R6LpPQD6ykK1T//rPOQGAMqkZ6WcmPfx/1qR1V/fTNcNUJwAHvKv9yavZn9o4z3grwu1BGRAQ+ifhb5sGx1cuwkN8YfwOS6/n/wJWeqojGiiy/QAAAABJRU5ErkJggg==",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCElEQVR4nL2XgbExQRCE76okQAiEQAiEQAiEQAiEQAiEQAiEQAiE4Ol9vnu9e3vUr+o3Ve/d3d7sTnfP7NhrFbHdi+9YyY0DuO+P569EHw16d0AAIAQf9rv/tNDtdqvu2+12NMazrCzL4n7/E3e5PRaLySCAaH0anCAOwoEBQMH3+30EYtx/vHuCaBUvzBd6Z698u90/cofDIXpuBJBj9klwNwUfDofF5XJ5DyAFQgBNdgY5f3yQX6braDQqzue40N8C8IUFwoO7SrrHR39iiznjVNlW+gKmTQXmLHXt9/vVmIMTW7E+nU7BR9ecVQAI6Pl0ECmYlNVutyum02mYMxgMalILxHK5DO+Ox2MdQBMID+7jKiafNx6PiyZzZaTK73rtOgA3zyfPuSbj7zwlTcVKarIKsLgvmKbDU9Hr9cL1er2GHKvwBEDyC4D+NP6qDrIKpKw3m00xn8/DOLn3PHc6nSqvFKeMgKgi0zpSQe24EQBMCEh+2YaAQGZJKkDb7TYUowKv1+sKBA1ItlqtQjHWFPD8ytlBeHPRNTB4LALDnLTIj3GvtReLRV2BdJshG+lQGjTZu5nYUmgCRFDNFVPfKa6sN6koBbBUUOVVJnkBA3P8NA4wpUnjvjim966GA4sAwEbBqWQFVZWLkQoIFrBlMW9MKOi5Z15qFQB+PJCTMSmAGu5LtaeSE8i3HWlkTB0TuBUABYe1nJCWRVThk8kkqDCbzSIZfbsJvIpM/s6Ygsa//TwAVQDILeaofds4Mxi7Csiedsuc/BGAtHiQFxN7Fg4SPsB6EIApZQKSgnXf0Au24xgARSOJYaRJNBLG08Nnyk7jdM300Jr7eY8AgA6mCqyrF4/2vrYc/t6sFJjdQtBU+vS5AiCJVTiO2J1hnzYofjHT09Er1lkAMpqQL8Cz2Kfs3PwY5v3BU8a9iNa2oRZODyI+WdvSj1+uQM5yR7zI/5YAEDuqt8nE8J0Pfu/Mf4xKfat9+nX0ia12J30V6bZEgQACVP/bCK5/XoTl84PxG1Z9nv8A5/eRfJDLHGkAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEe0lEQVR4nL1X7ZGjMAwVM9sAWwIpwSmBlEBKYEuAEkIJSwlLCXEJcQnrEs4lcHq2ZQTJ3dyfW80mgD+kp6dnZXmjva30M1bJjQaw3h/fPxL9cj6tAkIAxOCtaeJD4E/9D4582O6bvMH5dM2uolVVReu6kXv7etB4PUcQb6+Cx2tG8TcgNU96Lw8h75cdIQd/p/vnsAPRGFNAHDWg98ZryIFeLajzd8iA6xrhawo7Jymg7LPzRNTeytwTADgNtQpOcg2HlWG3AeUwDKCpPVnf7ACIIXjbDzS7beyPDCgS4ldiIZDnIjdGBQh7aME7qt3MaDqm/Rzph+F6+Zjo09xIWwEQwkY1rkH8H+YbU9OOXs7ae2aAqUjgarJ042zHssa7LeUjL296AkFEzdExapF3cAwyihdvEdgzpRjNkm9Qax/9IFtk7Ti4YQ24DCKoyu0ASNY+pOAJhCeH6kcgyLLhseTIeZUVLx8uFS2PXxHDyPffj69dpgBx69PccN+O5AYgfwGA43RNk85Xw/klEMiNosqh9q5vi5OuXmhkp80L4SViTLm/f/K9H8nV3R6AgJAKQ8lt4yIzhkPb0FDtF3JNR23taG8hAnQhLo6GuuvAYihN97XyMvcMAI6gAR9prWnxhrrGxoybGuLqqWWFL6FjB5ZO52vcta536jwfseuIthbpBwB8XP5oHWh7cQxD1kATSzG7lvpzRebXg8vDJAdfgkudq+pC3/fPeD9ZQ4bBwCSgUUzE/ntlf9wJDwC2+tl5YXV3rLsm0jo9VhpqyyXxtBCfazftaIbaT5cPvvYsxnfCbJfBAUTLtNvcD/ALdFP6KQAshIdWyh8ETyB4IZdh4bnRtnRruRx+jnWEE8mwUKs0KPSLyT3a0Dhzp2hflMBytnzQGIhPwUEfCzEw6e3pna4snuV6KdQv81yEhiPmvI/SQq4TgySVaTQOjLlRDe0aUW35eKBVMvVnDggDvW2f1ixcO2Qu1KO2DWvB85qu71PWrI8nu2Pz9qib8cYA+n/u0wguSgbdKwdF7SCgibPghr5RnGvrDwofZK2wkLM/WgHQGc9qPiWEeZMIDCrXhnEEHNjp1CeVu0z5mIMnBHmDHII8NgzbVAGA4JI1MgO1NvdyWPu5UvVRJRZw/jmYVFjWDJ1lALxuTus0hgiqzQP4fB0ASG3FJn4GcOnhpYTa6x2/ATY+xuFIVJVq3Kp1BcGzbRpgOl2v1md6xdzH5jgGg2p1p83AuBFmIGlsmGxSnToQsRccAYhojNA+4Ajm9snjqySUHSFz8bJLjoeHe16nDwTAPndixUBEq84v/i4Ts9IW1iGechyGbZ8EG3L2g2R7aAOaqScAFegTEIIYz9Fz3qQd6iDmkK1Vcy/awmsGYLlWg7V7524TWaRX5vTPP56l9hpsOSpUNFPKqQGsglxnKSLj8WlStdbrnn/ytzV6/ngNBwDxPWnfb55s/Ic1ZZ2c9z/YTfWBCu9q+u3of9u0OLwV4bYSBiKIW/4n4X+bBMeXFmGVXxh/wsrr+W8kuUbEGOVtWAAAAABJRU5ErkJggg==",
-      "actions": [
-        "swingO1"
-      ],
+      "actions": ["swingO1"],
       "weapons": [],
       "effect": [
         {
@@ -2953,8 +2947,8 @@
       "soundPath": "Skill.img/5111006",
       "description": {
         "id": 5111006,
-        "desc": "Strikes the ground with tremendous force, affecting multiple monsters. This skill can only be used during #cTransformation or Super Transformation#.\\nRequired Skill : #cLevel 1 of Transformation#",
-        "name": "Shockwave",
+        "desc": "강력하게 땅을 내리쳐 그 충격으로 다수의 적에게 데미지를 준다. 트랜스폼, 슈퍼트랜스폼 상태에서만 사용할 수 있다.",
+        "name": "쇼크웨이브",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -3210,6 +3204,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "The Path of the Marauder"
+    "bookName": "버커니어의 길"
   }
 }
