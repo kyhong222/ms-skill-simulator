@@ -732,7 +732,7 @@
       "description": {
         "id": 5121000,
         "desc": "일정 시간 동안 파티원의 모든 스탯을 일정 퍼센트 올려 준다.",
-        "name": "Maple Warrior",
+        "name": "메이플 용사",
         "bookName": ""
       },
       "levelProperties": [
@@ -1935,8 +1935,8 @@
       "soundPath": "Skill.img/5121001",
       "description": {
         "id": 5121001,
-        "desc": "Summons a sleeping dragon from the depths of the ground to apply damage to a number of monsters.",
-        "name": "Dragon Strike",
+        "desc": "깊은 땅속에서 잠들어 있던 용을 불러내어 다수의 적에게 데미지를 준다.",
+        "name": "드래곤 스트라이크",
         "bookName": ""
       },
       "levelProperties": [
@@ -2587,8 +2587,8 @@
       "soundPath": "Skill.img/5121002",
       "description": {
         "id": 5121002,
-        "desc": "Uses a blast of powerful energy to strike a monster. If there are other monsters around the affected monster, they will also be affected by this potent ball of energy. Only available when the #cenergy is fully charged#.\\nRequired Skill : #cLevel 1 of Ener",
-        "name": "Energy Orb",
+        "desc": "완충된 에너지 일부를 응축하여 적에게 던져 공격한다. 에너지 오브에 맞은 적 주위에 다른 적이 있으면 에너지 오브가 전이되어 추가 데미지를 입힌다. 에너지가 완충된 상태에서만 사용할 수 있다.",
+        "name": "에너지 오브",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2788,8 +2788,8 @@
       "soundPath": "Skill.img/5121003",
       "description": {
         "id": 5121003,
-        "desc": "Increases power to extreme levels for 120 seconds. \\nAvailable skills : Shockwave, Demolition, Snatch, Knuckle Booster, Energy Buster, Energy Drain, Maple Warrior, Will of the Warrior, Time Leap\\nRequired Skill : #cLevel 20 of Transformation#",
-        "name": "Super Transformation",
+        "desc": "120초 동안 슈퍼트랜스폼 상태로 변신한다.\\n사용가능스킬 : 쇼크웨이브, 데몰리션, 스내치, 너클 부스터, 에너지 버스터, 에너지 드레인, 메이플 용사, 용사의 의지, 윈드 부스터, 타임 리프",
+        "name": "슈퍼 트랜스폼",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -3494,8 +3494,8 @@
       "soundPath": "Skill.img/5121004",
       "description": {
         "id": 5121004,
-        "desc": "Apply a significant damage to a single monster by attacking it in a blinding speed. Only available when under a state of #cSuper Transformation#.\\nRequired Skill : #cLevel 1 of Super Transformation#",
-        "name": "Demolition",
+        "desc": "눈에 보이지 않을만큼 빠른 속도로 공격하여 하나의 적에게 큰 데미지를 준다.\\n슈퍼트랜스폼 상태에서만 사용할 수 있다.",
+        "name": "데몰리션",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -4062,8 +4062,8 @@
       "soundPath": "Skill.img/5121005",
       "description": {
         "id": 5121005,
-        "desc": "Applies damage to a monster that's far away, and drags it right in front of you. Only available when under a state of #cSuper Transformation#.\\nRequired Skill : #cLevel 1 of Super Transformation#",
-        "name": "Snatch",
+        "desc": "멀리 떨어져 있는 적에게 데미지를 주고 자신의 앞으로 끌고 온다.\\n슈퍼트랜스폼 상태에서만 사용할 수 있다.",
+        "name": "스내치",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -4671,8 +4671,8 @@
       "soundPath": "Skill.img/5121007",
       "description": {
         "id": 5121007,
-        "desc": "Attacks a monster nearby 6 times in quick succession.",
-        "name": "Barrage",
+        "desc": "가까이 있는 적을 빠른 속도로 6번 공격한다.",
+        "name": "피스트",
         "bookName": ""
       },
       "levelProperties": [
@@ -5073,8 +5073,8 @@
       "soundPath": "Skill.img/5121008",
       "description": {
         "id": 5121008,
-        "desc": "Allows you to break out of an abnormal state. As its level increases, the number of abnormal states that can be broken out increases. \\n#cWaiting time : 10 min.#",
-        "name": "Pirate's Rage",
+        "desc": "정신을 집중하여 상태 이상으로부터 벗어난다.",
+        "name": "용사의 의지",
         "bookName": ""
       },
       "levelProperties": [
@@ -5541,8 +5541,8 @@
       "soundPath": "Skill.img/5121009",
       "description": {
         "id": 5121009,
-        "desc": "Uses HP and MP to temporarily increase the attacking speed of a weapon. This can be combined with other boosters, and everyone in the party will have their attacking speed increased.\\nRequired Skill : #cLevel 20 of Knuckle Booster#",
-        "name": "Speed Infusion",
+        "desc": "HP, MP를 소비하여 일정 시간동안 무기의 공격 속도를 한 단계 상승시킨다. 기존 부스터와 중복하여 사용할 수 있고 파티원 모두 효과를 받는다.",
+        "name": "윈드 부스터",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -6133,8 +6133,8 @@
       "soundPath": "Skill.img/5121010",
       "description": {
         "id": 5121010,
-        "desc": "Resets the waiting time for skills for yourself and everyone in the party. This does not reset the waiting time for Time Leap.",
-        "name": "Time Leap",
+        "desc": "자신과 파티원이 사용하는 모든 스킬의 재사용 대기 시간을 초기화한다. 단, 자신과 파티원의 타임 리프 스킬의 재사용 대기 시간은 초기화 할 수 없다.",
+        "name": "타임 리프",
         "bookName": ""
       },
       "levelProperties": [
@@ -6357,6 +6357,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "The Perfect Buccaneer"
+    "bookName": "바이퍼의 완성"
   }
 }
