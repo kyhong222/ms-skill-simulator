@@ -15,8 +15,8 @@
       "soundPath": "Skill.img/5220001",
       "description": {
         "id": 5220001,
-        "desc": "Increases the potency of Flamethrower and Ice Splitter.",
-        "name": "Elemental Boost",
+        "desc": "파이어 버너와 쿨링 이펙트의 데미지와 효과가 상승한다.",
+        "name": "속성강화",
         "bookName": ""
       },
       "levelProperties": [
@@ -309,8 +309,8 @@
       "soundPath": "Skill.img/5220002",
       "description": {
         "id": 5220002,
-        "desc": "An additional octopus is summoned, increasing the fire rate and the damage.\\nRequired Skill : #cLevel 30 of Octopus#",
-        "name": "Wrath of the Octopi",
+        "desc": "옥토퍼스 한마리가 추가로 소환되면서 연사 속도와 데미지가 상승한다.",
+        "name": "서포트 옥토퍼스",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -758,8 +758,8 @@
       "soundPath": "Skill.img/5220011",
       "description": {
         "id": 5220011,
-        "desc": "Applies more damage to monsters under the effect of Homing Beacon.\\nRequired Skill : #cLevel 30 of Homing Beacon#",
-        "name": "Bullseye",
+        "desc": "호밍에 걸린 몬스터에게 더 많은 데미지를 준다.",
+        "name": "어드벤스드 호밍",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2095,8 +2095,8 @@
       "soundPath": "Skill.img/5221003",
       "description": {
         "id": 5221003,
-        "desc": "Uses the grenade attack of Gaviota to damage up to 6 monsters. \\nRequired Skill : #cLevel 15 of Gaviota#",
-        "name": "Aerial Strike",
+        "desc": "가비오타의 폭탄 공격으로 6마리 이하의 다수의 적을 공격한다.",
+        "name": "에어 스트라이크",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2445,8 +2445,8 @@
       "soundPath": "Skill.img/5221004",
       "description": {
         "id": 5221004,
-        "desc": "Fires rounds of bullets very quickly. Hold on to the skill key for continued shooting.\\nRequired Skill : #cLevel 20 of Burst Fire#",
-        "name": "Rapid Fire",
+        "desc": "아주 빠른 속도로 탄을 발사한다. 스킬 키를 누르고 있으면 지속적으로 탄이 나간다.",
+        "name": "래피드 파이어",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -2850,8 +2850,8 @@
       "soundPath": "Skill.img/5221006",
       "description": {
         "id": 5221006,
-        "desc": "Calls forth a ship that you can mount and launch attacks from. The durability of the ship decreases per damage received, and when it reaches 0, you will not be able to get back on board for a short period of time. \\nAvailable Skills : Battleship skills, Grenades, Gun Booster, Flamethower. ",
-        "name": "Battleship",
+        "desc": "해적선에 탑승한다. 데미지를 받을 때마다 내구도가 감소하고 0이 되면 일정 시간동안 탑승할 수 없다.\\n사용가능스킬 : 배틀쉽 스킬, 스로잉봄, 건 부스터, 파이어버너, 쿨링이펙트, 가비오타, 옥토퍼스, 메이플 용사, 용사의 의지\\n내구도 소진 시 재사용 대기시간 : 90초",
+        "name": "배틀쉽",
         "bookName": ""
       },
       "levelProperties": [
@@ -3084,8 +3084,8 @@
       "soundPath": "Skill.img/5221007",
       "description": {
         "id": 5221007,
-        "desc": "Rapidly fires a number of cannonballs. Only available when aboard the Battleship.\\nRequired Skill : #cLevel 1 of Battleship#",
-        "name": "Battleship Cannon",
+        "desc": "포탄을 연속으로 여러 발 발사한다. 배틀쉽에 탑승한 상태에서만 사용할 수 있다.",
+        "name": "배틀쉽 캐논",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -3568,8 +3568,8 @@
       "soundPath": "Skill.img/5221008",
       "description": {
         "id": 5221008,
-        "desc": "Fires a hardened cannonball that goes through monsters. Only available when aboard the Battleship.\\nRequired Skill : #cLevel 1 of Battleship#",
-        "name": "Battleship Torpedo",
+        "desc": "적을 뚫고 나가는 단단한 포탄을 발사한다. 배틀쉽에 탑승한 상태에서만 사용할 수 있다.",
+        "name": "배틀쉽 토르페도",
         "bookName": ""
       },
       "requiredSkillLevels": {
@@ -4153,8 +4153,8 @@
       "soundPath": "Skill.img/5221009",
       "description": {
         "id": 5221009,
-        "desc": "Hypnotizes monsters to temporarily make it attack other monsters instead of you.",
-        "name": "Hypnotize",
+        "desc": "몬스터를 마인드 컨트롤하여 일정 시간동안 자신을 공격하지 않고 다른 몬스터를 공격하도록 만든다.",
+        "name": "마인드 컨트롤",
         "bookName": ""
       },
       "levelProperties": [
@@ -4515,8 +4515,8 @@
       "soundPath": "Skill.img/5221010",
       "description": {
         "id": 5221010,
-        "desc": "Uses HP and MP to temporarily increase the attacking speed of a weapon. This can be combined with other boosters, and everyone in the party will be positively affected by this.\\nRequired Skill : #cLevel 20 of Knuckler Booster#",
-        "name": "Speed Infusion",
+        "desc": "용사의 의지특정 상태 이상에서 벗어날 수 있다. 레벨이 올라감에 따라 해제할 수 있는 상태 이상이 늘어난다.",
+        "name": "용사의 의지",
         "bookName": ""
       },
       "levelProperties": [
@@ -4535,6 +4535,6 @@
     "desc": "",
     "name": "",
     "shortDesc": "",
-    "bookName": "The Perfect Corsair"
+    "bookName": "캡틴의 완성"
   }
 }
