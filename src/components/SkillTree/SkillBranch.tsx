@@ -196,7 +196,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
           // 스킬이 필요 스킬을 만족하지 않으면 비활성화(툴팁은 표시)
           <div
             key={skill.id}
-            className={`flex items-start gap-4 p-3 border rounded-lg relative`}
+            className={`flex items-start gap-4 p-3 border rounded-lg relative ${isSatisfiedRequiredSkills(skill.id) ? "" : "grayscale cursor-not-allowed"}`}
             onMouseEnter={() => setHoveredSkillId(skill.id)}
             onMouseLeave={() => setHoveredSkillId(null)}
             onMouseMove={handleMouseMove}
