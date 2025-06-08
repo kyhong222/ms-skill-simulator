@@ -25,7 +25,7 @@ function App() {
     const dataUrl = canvas.toDataURL("image/png");
     const link = document.createElement("a");
     link.href = dataUrl;
-    link.download = "skilltree.png";
+    link.download = `${job?.koname} 스킬트리.png`;
     link.click();
   };
 
