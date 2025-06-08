@@ -184,7 +184,9 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
         <div className="flex flex-col text-left">
           <h2 className="text-black text-2xl font-bold">{skillbook.description.bookName}</h2>
           <span className="text-sm text-gray-600">총 투자 포인트: {totalInvestedPoints}</span>
-          <span className="text-sm text-gray-600">필요 투자 포인트: {remainingPointsForBranch}</span>
+          <span className="exclude-from-capture text-sm text-gray-600">
+            필요 투자 포인트: {remainingPointsForBranch}
+          </span>
         </div>
       </div>
 
@@ -219,7 +221,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
                   <div className="ml-auto flex items-center gap-0">
                     <button
                       onClick={() => increaseLevel(skill.id)}
-                      className={`px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
+                      className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
                         isMaxLevel(skill.id) ||
                         !isSatisfiedRequiredSkills(skill.id) ||
                         !hasBranchSatisfiedSP() ||
@@ -236,7 +238,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
                     </button>
                     <button
                       onClick={() => decreaseLevel(skill.id)}
-                      className={`px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
+                      className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
                         !isSatisfiedRequiredSkills(skill.id) ||
                         !hasBranchSatisfiedSP() ||
                         remainingPointsForBranch !== 0 ||
@@ -251,7 +253,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
                     </button>
                     <button
                       onClick={() => increaseMaxLevel(skill.id)}
-                      className={`px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
+                      className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
                         isMaxLevel(skill.id) ||
                         !isSatisfiedRequiredSkills(skill.id) ||
                         !hasBranchSatisfiedSP() ||

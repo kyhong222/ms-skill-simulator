@@ -94,7 +94,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
   return (
     <div>
       {/* 상단 바: 현재 레벨 + 스킬 포인트 정보 */}
-      <div className="flex items-center justify-between mb-4 min-w-[1500px]">
+      <div className="flex items-center justify-between mb-4 ">
         <div className="flex items-center justify-between gap-4">
           <label className="font-semibold">
             현재 레벨:
@@ -123,7 +123,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
         <div className="flex gap-2">
           <button
             onClick={resetLevels}
-            className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+            className="exclude-from-capture px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
             style={{ width: "120px" }}
           >
             스킬 초기화
