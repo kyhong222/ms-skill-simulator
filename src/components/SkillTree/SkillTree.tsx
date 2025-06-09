@@ -96,7 +96,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
       {/* 상단 바: 현재 레벨 + 스킬 포인트 정보 */}
       <div className="flex items-center justify-between mb-4 ">
         <div className="flex items-center justify-between gap-4">
-          <label className="font-semibold">
+          <label className="font-semibold text-black">
             현재 레벨:
             <input
               type="number"
@@ -104,19 +104,19 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
               max={300}
               value={currentLevel}
               onChange={(e) => setCurrentLevel(Number(e.target.value))}
-              className="ml-2 px-2 py-1 border rounded w-20"
+              className="ml-2 px-2 py-1 border rounded w-20 text-grey-800 bg-white"
             />
           </label>
-          <div>
-            총 스킬 포인트: <strong>{totalSkillPoints}</strong>
+          <div className="text-black">
+            총 스킬 포인트: <strong className="text-gray-800">{totalSkillPoints}</strong>
           </div>
-          <div>
-            사용한 포인트: <strong>{usedSkillPoints}</strong>
+          <div className="text-black">
+            사용한 포인트: <strong className="text-gray-800">{usedSkillPoints}</strong>
           </div>
-          <div>
+          <div className="text-black">
             {/* 남은 포인트가 음수면 빨간색으로 표기 */}
             남은 포인트:{" "}
-            <strong className={remainingSkillPoints < 0 ? "text-red-500" : ""}>{remainingSkillPoints}</strong>
+            <strong className={remainingSkillPoints < 0 ? "text-red-500" : "text-grey-800"}>{remainingSkillPoints}</strong>
           </div>
         </div>
 
