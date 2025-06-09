@@ -217,7 +217,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
 
                 {/* 현재 레벨 및 버튼들 */}
                 <div className="flex items-center gap-1 ml-0 min-w-[120px] justify-end">
-                  <span className="text-black text-left">{`${getLevel(skill.id)}/${skill.masterLevel}`}</span>
+                  <span className="text-black text-left">{`${getLevel(skill.id)}/${skill.masterLevel} ${getLevel(skill.id) === skill.masterLevel ? "(M)" : ""}`}</span>
                   <div className="ml-auto flex items-center gap-0">
                     <button
                       onClick={() => increaseLevel(skill.id)}
