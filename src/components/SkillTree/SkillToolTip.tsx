@@ -29,16 +29,21 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
 
       value = currentLevelProperties[key as keyof typeof currentLevelProperties] || "0";
 
-      // value가 -로 시작하면 -를 제거
-      if (value.startsWith("-")) {
-        value = value.slice(1);
-      }
-
       // 마스터리 스킬 후처리
       const masterySkills = ["소드 마스터리", "엑스 마스터리"];
       if (masterySkills.includes(skill.description?.name || "") && key === "mastery") {
         // 마스터리 스킬인 경우 mastery 값을 5배로 증가시키고 10을 더함
         value = String(Number(value) * 5 + 10);
+      }
+
+      // lt(공격범위) 파싱
+      if (key === "lt") {
+        // "lt": "Point [ X=130, Y=98 ]"
+        // X의 값을 반환
+        const match = value.match(/X=(\d+)/);
+        if (match) {
+          value = match[1];
+        }
       }
 
       // rb(공격범위) 파싱
@@ -54,7 +59,7 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
       // 어드밴스드 콤보 후처리
       if (skill.description?.name === "어드밴스드 콤보") {
         switch (key) {
-          case "damage":  // 데미지
+          case "damage": // 데미지
             // damage -= 120
             value = String(Number(value) - 120);
             break;
@@ -92,6 +97,12 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
           value = String(Number(value) / 2);
         }
       }
+
+      // value가 -로 시작하면 -를 제거
+      if (value.startsWith("-")) {
+        value = value.slice(1);
+      }
+      
       // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
       detail = detail.replace(new RegExp(`#${key}`, "g"), value.toString());
     }
@@ -151,7 +162,7 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => 
       {/* 현재 레벨, 현재 레벨 설명 */}
       <div>
         <div className="text-center">{`[현재 레벨: ${curLevel}]`}</div>
-        <div className="text-left">{curLevel >= 1 && `${makeSkillDetail(skill, curLevel)}`}</div>
+        <div className="text-center">{curLevel >= 1 && `${makeSkillDetail(skill, curLevel)}`}</div>
       </div>
     </div>
   );
