@@ -40,8 +40,4 @@ interface IJobSkillDescription {
 // hs만 있고 나머지는 정해져 있지 않음
 interface ILevelProperties {
   hs: string; // 레벨 속성 식별자 (예: "h10"은 10레벨)
-  damage?: number; // 데미지 (optional)
-  hpCon?: number; // HP 소모량 (optional)
-  mpCon?: number; // MP 소모량 (optional)
-  pdd?: number; // 물리 방어력 (optional)
 }
