@@ -34,18 +34,36 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
         value = value.slice(1);
       }
 
-      // mastery는 별도로 처리
-      if (key === "mastery") {
+      // 마스터리 스킬 후처리
+      const masterySkills = ["소드 마스터리", "엑스 마스터리"];
+      if (masterySkills.includes(skill.description?.name || "") && key === "mastery") {
+        // 마스터리 스킬인 경우 mastery 값을 5배로 증가시키고 10을 더함
         value = String(Number(value) * 5 + 10);
       }
 
-      // rb(공격범위)는 파싱이 필요함
+      // rb(공격범위) 파싱
       if (key === "rb") {
         // "rb": "Point [ X=130, Y=98 ]"
         // X의 값을 반환
         const match = value.match(/X=(\d+)/);
         if (match) {
           value = match[1];
+        }
+      }
+
+      // 어드밴스드 콤보 후처리
+      if (skill.description?.name === "어드밴스드 콤보") {
+        switch (key) {
+          case "damage":  // 데미지
+            // damage -= 120
+            value = String(Number(value) - 120);
+            break;
+          case "x": // 최대 콤보카운터
+            // x -= 5
+            value = String(Number(value) - 5);
+            break;
+          default:
+            break;
         }
       }
       // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
