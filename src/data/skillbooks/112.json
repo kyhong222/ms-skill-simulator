@@ -1671,7 +1671,7 @@
         "desc": "전방으로 거칠게 돌격하며 자신 앞에 있는 적을 10마리까지 밀고 지나간다.",
         "name": "돌진",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 데미지 #damage%, 범위 #lt"
+        "detail": "MP #mpCon 소비, 데미지 #damage%, 범위 #lt%"
       },
       "levelProperties": [
         {
