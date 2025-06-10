@@ -25,7 +25,19 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
   let detail = rawDetail;
   keys.forEach(
     (key) => {
-      const value = currentLevelProperties[key as keyof typeof currentLevelProperties] || 0;
+      let value = "0";
+
+      value = currentLevelProperties[key as keyof typeof currentLevelProperties] || "0";
+
+      // value가 -로 시작하면 -를 제거
+      if (value.startsWith("-")) {
+        value = value.slice(1);
+      }
+
+      // mastery는 별도로 처리
+      if (key === "mastery") {
+        value = String(Number(value) * 5 + 10);
+      }
       // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
       detail = detail.replace(new RegExp(`#${key}`, "g"), value.toString());
     }
@@ -83,9 +95,9 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => 
       <hr className="my-2" />
 
       {/* 현재 레벨, 현재 레벨 설명 */}
-      <div className="m-2">
+      <div>
         <div className="text-center">{`[현재 레벨: ${curLevel}]`}</div>
-        <div className="text-center">{curLevel >= 1 && `${makeSkillDetail(skill, curLevel)}`}</div>
+        <div className="text-left">{curLevel >= 1 && `${makeSkillDetail(skill, curLevel)}`}</div>
       </div>
     </div>
   );
