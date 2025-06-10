@@ -3,9 +3,43 @@ import type { IJobSkill } from "../../types/jobSkillBook";
 interface SkillTooltipProps {
   skill: IJobSkill;
   allSkills: { id: number; name: string }[];
+  curLevel: number;
 }
 
-const SkillTooltip: React.FC<SkillTooltipProps> = ({ skill, allSkills }) => {
+// 스킬 상세 설명을 만드는 함수
+const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
+  const rawDetail = skill.description?.detail;
+
+  // 현재 레벨에 해당하는 levelProperties를 찾음, hs는 "h" + 레벨 숫자
+  if (!skill.levelProperties || skill.levelProperties.length === 0) return rawDetail || "상세 설명 없음";
+  const currentLevelProperties = skill.levelProperties.find((prop) => prop.hs === `h${curLevel}`);
+
+  // currentLevelProperties가 존재하면 해당 properties의 keys를 가져옴
+  if (!currentLevelProperties) return rawDetail || "상세 설명 없음";
+
+  // 현재 레벨 속성의 키를 가져옴
+  const keys = Object.keys(currentLevelProperties).filter((key) => key !== "hs");
+
+  if (!rawDetail) return "상세 설명 없음";
+  // rawDetail이 없으면 기본 메시지로 대체
+  let detail = rawDetail;
+  keys.forEach(
+    (key) => {
+      const value = currentLevelProperties[key as keyof typeof currentLevelProperties] || 0;
+      // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
+      detail = detail.replace(new RegExp(`#${key}`, "g"), value.toString());
+    }
+    // 만약 detail이 비어있으면 기본 메시지로 대체
+  );
+  if (!detail || detail.trim() === "") {
+    detail = "상세 설명 없음";
+  }
+  return detail;
+};
+
+const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => {
+  const { skill, allSkills, curLevel } = props;
+
   // 필요한 스킬 이름 찾기 함수
   const getSkillNameById = (id: number) => {
     const found = allSkills.find((s) => s.id === id);
@@ -48,10 +82,10 @@ const SkillTooltip: React.FC<SkillTooltipProps> = ({ skill, allSkills }) => {
 
       <hr className="my-2" />
 
-      {/* 현재 레벨, 현재 레벨 설명 (미구현) */}
-      <div className="ml-[30px]">
-        <div>현재 레벨: -</div>
-        <div>현재 레벨 설명: -</div>
+      {/* 현재 레벨, 현재 레벨 설명 */}
+      <div className="m-2">
+        <div className="text-center">{`[현재 레벨: ${curLevel}]`}</div>
+        <div className="text-center">{curLevel >= 1 && `${makeSkillDetail(skill, curLevel)}`}</div>
       </div>
     </div>
   );

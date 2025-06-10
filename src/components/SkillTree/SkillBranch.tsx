@@ -291,7 +291,7 @@ const SkillBranch: React.FC<SkillBranchProps> = ({
                     zIndex: 9999,
                   }}
                 >
-                  <SkillTooltip skill={skill} allSkills={skillLevels} />
+                  <SkillTooltip skill={skill} allSkills={skillLevels} curLevel={getLevel(skill.id)} />
                 </div>,
                 document.body
               )}
