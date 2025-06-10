@@ -443,7 +443,7 @@
         "desc": "적 하나에게 공격을 가한다. 다만 검을 장비하고 있고 콤보카운터가 올라간 상태에서만 사용이 가능하다.",
         "name": "패닉 : 검",
         "bookName": "",
-        "detail": "MP #mpCon 소비하여, 데미지 #damage%, %prop% 확률로 암흑공격"
+        "detail": "MP #mpCon 소비하여, 데미지 #damage%, #prop% 확률로 암흑공격"
       },
       "requiredSkillLevels": {
         "1111002": 1
@@ -674,7 +674,7 @@
         "desc": "적 하나에게 공격을 가한다. 다만 도끼를 장비하고 있고 콤보카운터가 올라간 상태에서만 사용이 가능하다.",
         "name": "패닉 : 도끼",
         "bookName": "",
-        "detail": "MP #mpCon 소비하여, 데미지 #damage%, %prop% 확률로 암흑공격"
+        "detail": "MP #mpCon 소비하여, 데미지 #damage%, #prop% 확률로 암흑공격"
       },
       "requiredSkillLevels": {
         "1111002": 1
@@ -905,7 +905,7 @@
         "desc": "주변의 적에게 기절상태 공격을 가한다. 다만 검을 장비하고 있고 콤보카운터가 올라간 상태에서만 사용이 가능하다.",
         "name": "코마 : 검",
         "bookName": "",
-        "detail": "HP #hpCon, MP #mpCon 소비하여, 데미지 #damage%, %prop% 확률로 기절공격"
+        "detail": "HP #hpCon, MP #mpCon 소비하여, 데미지 #damage%, #prop% 확률로 기절공격"
       },
       "requiredSkillLevels": {
         "1111002": 1
@@ -1226,7 +1226,7 @@
         "desc": "주변의 적에게 기절상태 공격을 가한다. 다만 도끼를 장비하고 있고 콤보카운터가 올라간 상태에서만 사용이 가능하다.",
         "name": "코마 : 도끼",
         "bookName": "",
-        "detail": "HP #hpCon, MP #mpCon 소비하여, 데미지 #damage%, %prop% 확률로 기절공격"
+        "detail": "HP #hpCon, MP #mpCon 소비하여, 데미지 #damage%, #prop% 확률로 기절공격"
       },
       "requiredSkillLevels": {
         "1111002": 1

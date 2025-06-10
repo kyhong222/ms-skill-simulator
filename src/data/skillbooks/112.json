@@ -709,7 +709,7 @@
         "desc": "원거리에 있는 적을 6마리까지 자신의 앞으로 끌어 당긴다.",
         "name": "몬스터 마그넷",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 범위 #range, #성공률 #prop%"
+        "detail": "MP #mpCon 소비, 범위 #range, 성공률 #prop%"
       },
       "levelProperties": [
         {
@@ -1306,7 +1306,8 @@
         "id": 1121002,
         "desc": "강인한 정신력으로 적의 공격에도 뒤로 물러서지 않는다.",
         "name": "스탠스",
-        "bookName": ""
+        "bookName": "",
+        "detail": "MP #mpCon 소비, #time초간 #prop%의 확률로 넉백되지 않음."
       },
       "levelProperties": [
         {
@@ -1669,7 +1670,8 @@
         "id": 1121006,
         "desc": "전방으로 거칠게 돌격하며 자신 앞에 있는 적을 10마리까지 밀고 지나간다.",
         "name": "돌진",
-        "bookName": ""
+        "bookName": "",
+        "detail": "MP #mpCon 소비, 데미지 #damage%, 범위 #lt"
       },
       "levelProperties": [
         {

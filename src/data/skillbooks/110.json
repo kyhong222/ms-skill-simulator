@@ -599,7 +599,7 @@
         "desc": "HP, MP를 소비하여 일정 시간동안 검의 공격 속도를 한 단계 상승시킨다. 한 손 검, 두 손 검을 들었을 경우에만 발동이 가능하다.",
         "name": "소드 부스터",
         "bookName": "",
-        "detail": "HP #hpCon%, MP #mpCon% 소비하여 %time초간 검의 공격속도 향상"
+        "detail": "HP #hpCon%, MP #mpCon% 소비하여 #time초간 검의 공격속도 향상"
       },
       "requiredSkillLevels": {
         "1100000": 5
@@ -763,7 +763,7 @@
         "desc": "HP, MP를 소비하여 일정 시간동안 도끼의 공격 속도를 한 단계 상승시킨다. 한 손 도끼, 두 손 도끼를 들었을 경우에만 발동이 가능하다.",
         "name": "엑스 부스터",
         "bookName": "",
-        "detail": "HP #hpCon%, MP #mpCon% 소비하여 %time초간 도끼의 공격속도 향상"
+        "detail": "HP #hpCon%, MP #mpCon% 소비하여 #time초간 도끼의 공격속도 향상"
       },
       "requiredSkillLevels": {
         "1100001": 5
