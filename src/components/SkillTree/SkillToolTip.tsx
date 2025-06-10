@@ -38,6 +38,16 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
       if (key === "mastery") {
         value = String(Number(value) * 5 + 10);
       }
+
+      // rb(공격범위)는 파싱이 필요함
+      if (key === "rb") {
+        // "rb": "Point [ X=130, Y=98 ]"
+        // X의 값을 반환
+        const match = value.match(/X=(\d+)/);
+        if (match) {
+          value = match[1];
+        }
+      }
       // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
       detail = detail.replace(new RegExp(`#${key}`, "g"), value.toString());
     }
