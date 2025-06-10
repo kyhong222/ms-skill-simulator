@@ -66,6 +66,32 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
             break;
         }
       }
+
+      // 아킬레스 후처리
+      if (skill.description?.name === "아킬레스") {
+        if (key === "x") {
+          // x는 적에게 입는 데미지 감소 비율
+          // 995 -> 0.5로 변환
+          value = String((1000 - Number(value)) / 10);
+        }
+      }
+
+      // 블로킹 후처리
+      if (skill.description?.name === "블로킹") {
+        if (key === "prop") {
+          // prop은 블록 확률
+          // 5 -> 0.5로 변환
+          value = String(Number(value) / 10);
+        }
+      }
+
+      // 몬스터 마그넷 후처리
+      if (skill.description?.name === "몬스터 마그넷") {
+        if (key === "range") {
+          // range /= 2
+          value = String(Number(value) / 2);
+        }
+      }
       // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
       detail = detail.replace(new RegExp(`#${key}`, "g"), value.toString());
     }
