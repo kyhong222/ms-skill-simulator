@@ -38,12 +38,12 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
 
       // lt(공격범위) 파싱
       if (key === "lt") {
-        // "lt": "Point [ X=130, Y=98 ]"
+        // "lt": "Point [ X=-160, Y=-50 ]"
         // X의 값을 반환
-        const match = value.match(/X=(\d+)/);
+        const match = value.match(/X=(-?\d+)/);
         if (match) {
           value = match[1];
-        }
+        } 
       }
 
       // rb(공격범위) 파싱
@@ -102,7 +102,7 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
       if (value.startsWith("-")) {
         value = value.slice(1);
       }
-      
+
       // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
       detail = detail.replace(new RegExp(`#${key}`, "g"), value.toString());
     }
