@@ -217,7 +217,7 @@
         "desc": "옥토퍼스 한마리가 추가로 소환되면서 연사 속도와 데미지가 상승한다.",
         "name": "서포트 옥토퍼스",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 공격력 #pad, 지속시간 #time 초, 재사용 대기시간 #cooltime 초"
+        "detail": "MP #mpCon 소비, 공격력 #pad, 지속시간 #time초, 재사용 대기시간 #cooltime초"
       },
       "requiredSkillLevels": {
         "5211001": 30
@@ -722,7 +722,7 @@
         "desc": "가비오타의 폭탄 공격으로 6마리 이하의 다수의 적을 공격한다.",
         "name": "에어 스트라이크",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 데미지 #damage%, 재사용 대기시간 #cooltime 초"
+        "detail": "MP #mpCon 소비, 데미지 #damage%, 재사용 대기시간 #cooltime초"
       },
       "requiredSkillLevels": {
         "5211002": 15
@@ -1820,7 +1820,7 @@
         "desc": "몬스터를 마인드 컨트롤하여 일정 시간동안 자신을 공격하지 않고 다른 몬스터를 공격하도록 만든다.",
         "name": "마인드 컨트롤",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 지속시간 #time 초, 성공확률 #prop%"
+        "detail": "MP #mpCon 소비, 지속시간 #time초, 성공확률 #prop%"
       },
       "levelProperties": [
         {

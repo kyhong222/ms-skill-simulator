@@ -136,7 +136,7 @@
         "desc": "공격을 할 때마다 일정량의 에너지가 충전된다. 에너지가 완충되면 바디어택 효과와 일정 확률로 스탠스 효과가 발동되며 에너지를 이용하는 스킬들을 사용할 수 있다.",
         "name": "에너지 차지",
         "bookName": "",
-        "detail": "명중률과 회피율 + #acc, #pad지속시간 #time초"
+        "detail": "명중률과 회피율 +#acc, #pad지속시간 #time초"
       },
       "levelProperties": [
         {
@@ -559,216 +559,38 @@
       },
       "requiredSkillLevels": {},
       "levelProperties": [
-        {
-          "damage": "246",
-          "hs": "h1",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "2",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "300",
-          "hs": "h10",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "2",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "306",
-          "hs": "h11",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "3",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "312",
-          "hs": "h12",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "3",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "318",
-          "hs": "h13",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "3",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "324",
-          "hs": "h14",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "3",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "330",
-          "hs": "h15",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "3",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "336",
-          "hs": "h16",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "3",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "342",
-          "hs": "h17",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "3",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "348",
-          "hs": "h18",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "3",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "354",
-          "hs": "h19",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "3",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "252",
-          "hs": "h2",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "2",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "360",
-          "hs": "h20",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "3",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "366",
-          "hs": "h21",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "4",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "372",
-          "hs": "h22",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "4",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "378",
-          "hs": "h23",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "4",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "384",
-          "hs": "h24",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "4",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "390",
-          "hs": "h25",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "4",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "396",
-          "hs": "h26",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "4",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "402",
-          "hs": "h27",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "4",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "408",
-          "hs": "h28",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "4",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "414",
-          "hs": "h29",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "4",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "258",
-          "hs": "h3",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "2",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "420",
-          "hs": "h30",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "4",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "264",
-          "hs": "h4",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "2",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "270",
-          "hs": "h5",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "2",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "276",
-          "hs": "h6",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "2",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "282",
-          "hs": "h7",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "2",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "288",
-          "hs": "h8",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "2",
-          "rb": "Point [ X=5, Y=30 ]"
-        },
-        {
-          "damage": "294",
-          "hs": "h9",
-          "lt": "Point [ X=-100, Y=-80 ]",
-          "mobCount": "2",
-          "rb": "Point [ X=5, Y=30 ]"
-        }
+        { "hs": "h1", "mpCon": "24", "damage": "246", "mobCount": "2" },
+        { "hs": "h2", "mpCon": "24", "damage": "252", "mobCount": "2" },
+        { "hs": "h3", "mpCon": "24", "damage": "258", "mobCount": "2" },
+        { "hs": "h4", "mpCon": "24", "damage": "264", "mobCount": "2" },
+        { "hs": "h5", "mpCon": "24", "damage": "270", "mobCount": "2" },
+        { "hs": "h6", "mpCon": "24", "damage": "276", "mobCount": "2" },
+        { "hs": "h7", "mpCon": "24", "damage": "282", "mobCount": "2" },
+        { "hs": "h8", "mpCon": "24", "damage": "288", "mobCount": "2" },
+        { "hs": "h9", "mpCon": "24", "damage": "294", "mobCount": "2" },
+        { "hs": "h10", "mpCon": "24", "damage": "300", "mobCount": "2" },
+
+        { "hs": "h11", "mpCon": "30", "damage": "306", "mobCount": "3" },
+        { "hs": "h12", "mpCon": "30", "damage": "312", "mobCount": "3" },
+        { "hs": "h13", "mpCon": "30", "damage": "318", "mobCount": "3" },
+        { "hs": "h14", "mpCon": "30", "damage": "324", "mobCount": "3" },
+        { "hs": "h15", "mpCon": "30", "damage": "330", "mobCount": "3" },
+        { "hs": "h16", "mpCon": "30", "damage": "336", "mobCount": "3" },
+        { "hs": "h17", "mpCon": "30", "damage": "342", "mobCount": "3" },
+        { "hs": "h18", "mpCon": "30", "damage": "348", "mobCount": "3" },
+        { "hs": "h19", "mpCon": "30", "damage": "354", "mobCount": "3" },
+        { "hs": "h20", "mpCon": "30", "damage": "360", "mobCount": "3" },
+
+        { "hs": "h21", "mpCon": "36", "damage": "366", "mobCount": "4" },
+        { "hs": "h22", "mpCon": "36", "damage": "372", "mobCount": "4" },
+        { "hs": "h23", "mpCon": "36", "damage": "378", "mobCount": "4" },
+        { "hs": "h24", "mpCon": "36", "damage": "384", "mobCount": "4" },
+        { "hs": "h25", "mpCon": "36", "damage": "390", "mobCount": "4" },
+        { "hs": "h26", "mpCon": "36", "damage": "396", "mobCount": "4" },
+        { "hs": "h27", "mpCon": "36", "damage": "402", "mobCount": "4" },
+        { "hs": "h28", "mpCon": "36", "damage": "408", "mobCount": "4" },
+        { "hs": "h29", "mpCon": "36", "damage": "414", "mobCount": "4" },
+        { "hs": "h30", "mpCon": "36", "damage": "420", "mobCount": "4" }
       ]
     },
     {

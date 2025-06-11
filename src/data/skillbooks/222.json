@@ -1669,312 +1669,42 @@
       "soundPath": "Skill.img/2221007",
       "description": {
         "id": 2221007,
-        "desc": "하늘에서 얼음창이 떨어져 15마리 이하의 다수의 적에게 강력한 얼음 속성의 데미지를 준다.",
+        "desc": "하늘에서 얼음창이 떨어져 10마리 이하의 다수의 적에게 강력한 얼음 속성의 데미지를 준다.",
         "name": "블리자드",
         "bookName": "",
         "detail": "MP #mpCon 소비, 기본 공격력 #mad"
       },
       "levelProperties": [
-        {
-          "hs": "h1",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "330",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "2100",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "1"
-        },
-        {
-          "hs": "h10",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "420",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3000",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "1"
-        },
-        {
-          "hs": "h11",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "430",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3100",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "2"
-        },
-        {
-          "hs": "h12",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "440",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3200",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "2"
-        },
-        {
-          "hs": "h13",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "450",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3300",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "2"
-        },
-        {
-          "hs": "h14",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "460",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3400",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "2"
-        },
-        {
-          "hs": "h15",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "470",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3500",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "2"
-        },
-        {
-          "hs": "h16",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "480",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3600",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "2"
-        },
-        {
-          "hs": "h17",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "490",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3700",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "2"
-        },
-        {
-          "hs": "h18",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "500",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3800",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "2"
-        },
-        {
-          "hs": "h19",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "510",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3900",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "2"
-        },
-        {
-          "hs": "h2",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "340",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "2200",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "1"
-        },
-        {
-          "hs": "h20",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "520",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "4000",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "2"
-        },
-        {
-          "hs": "h21",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "525",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3950",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "3"
-        },
-        {
-          "hs": "h22",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "530",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3900",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "3"
-        },
-        {
-          "hs": "h23",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "535",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3850",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "3"
-        },
-        {
-          "hs": "h24",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "540",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3800",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "3"
-        },
-        {
-          "hs": "h25",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "545",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3750",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "3"
-        },
-        {
-          "hs": "h26",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "550",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3700",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "3"
-        },
-        {
-          "hs": "h27",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "555",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3650",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "3"
-        },
-        {
-          "hs": "h28",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "560",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3600",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "3"
-        },
-        {
-          "hs": "h29",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "565",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3550",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "3"
-        },
-        {
-          "hs": "h3",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "350",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "2300",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "1"
-        },
-        {
-          "hs": "h30",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "570",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "3500",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "3"
-        },
-        {
-          "hs": "h4",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "360",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "2400",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "1"
-        },
-        {
-          "hs": "h5",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "370",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "2500",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "1"
-        },
-        {
-          "hs": "h6",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "380",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "2600",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "1"
-        },
-        {
-          "hs": "h7",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "390",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "2700",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "1"
-        },
-        {
-          "hs": "h8",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "400",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "2800",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "1"
-        },
-        {
-          "hs": "h9",
-          "lt": "Point [ X=-400, Y=-350 ]",
-          "mad": "410",
-          "mastery": "10",
-          "mobCount": "15",
-          "mpCon": "2900",
-          "rb": "Point [ X=400, Y=250 ]",
-          "time": "1"
-        }
+        { "hs": "h1", "mad": "330", "mpCon": "5000" },
+        { "hs": "h2", "mad": "340", "mpCon": "5000" },
+        { "hs": "h3", "mad": "350", "mpCon": "5000" },
+        { "hs": "h4", "mad": "360", "mpCon": "5000" },
+        { "hs": "h5", "mad": "370", "mpCon": "5000" },
+        { "hs": "h6", "mad": "380", "mpCon": "5000" },
+        { "hs": "h7", "mad": "390", "mpCon": "5000" },
+        { "hs": "h8", "mad": "400", "mpCon": "5000" },
+        { "hs": "h9", "mad": "410", "mpCon": "5000" },
+        { "hs": "h10", "mad": "420", "mpCon": "5000" },
+        { "hs": "h11", "mad": "430", "mpCon": "5000" },
+        { "hs": "h12", "mad": "440", "mpCon": "5000" },
+        { "hs": "h13", "mad": "450", "mpCon": "5000" },
+        { "hs": "h14", "mad": "460", "mpCon": "5000" },
+        { "hs": "h15", "mad": "470", "mpCon": "5000" },
+        { "hs": "h16", "mad": "480", "mpCon": "5000" },
+        { "hs": "h17", "mad": "490", "mpCon": "5000" },
+        { "hs": "h18", "mad": "500", "mpCon": "5000" },
+        { "hs": "h19", "mad": "510", "mpCon": "5000" },
+        { "hs": "h20", "mad": "520", "mpCon": "5000" },
+        { "hs": "h21", "mad": "525", "mpCon": "4950" },
+        { "hs": "h22", "mad": "530", "mpCon": "4900" },
+        { "hs": "h23", "mad": "535", "mpCon": "4850" },
+        { "hs": "h24", "mad": "540", "mpCon": "4800" },
+        { "hs": "h25", "mad": "545", "mpCon": "4750" },
+        { "hs": "h26", "mad": "550", "mpCon": "4700" },
+        { "hs": "h27", "mad": "555", "mpCon": "4650" },
+        { "hs": "h28", "mad": "560", "mpCon": "4600" },
+        { "hs": "h29", "mad": "565", "mpCon": "4550" },
+        { "hs": "h30", "mad": "570", "mpCon": "4500" }
       ]
     },
     {

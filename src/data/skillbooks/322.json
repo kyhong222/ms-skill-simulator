@@ -1320,7 +1320,7 @@
         "desc": "적의 눈을 맞춰 시야를 차단한다. 일정 시간 동안 적의 명중률을 낮출 수 있다.",
         "name": "블라인드",
         "bookName": "",
-        "detail": "MP #mpCon 소비, #time초 동안 #prop% 확률로 적의 명중률 - #x% , 지속시간 #y초"
+        "detail": "MP #mpCon 소비, #time초 동안 #prop% 확률로 적의 명중률 -#x% , 지속시간 #y초"
       },
       "levelProperties": [
         {

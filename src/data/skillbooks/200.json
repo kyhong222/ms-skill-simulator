@@ -295,7 +295,7 @@
         "desc": "일정 시간 갑옷에 마력을 응집시켜 물리 방어력을 상승시킨다.",
         "name": "매직 아머",
         "bookName": "",
-        "detail": "#time초간 MP #mpCon 소비하여 물리 방어력 + #pdd"
+        "detail": "#time초간 MP #mpCon 소비하여 물리 방어력 +#pdd"
       },
       "requiredSkillLevels": {
         "2001002": 3

@@ -18,7 +18,7 @@
         "desc": "이동속도를 증가시켜 준다.",
         "name": "쓰러스트",
         "bookName": "",
-        "detail": "이동속도 + #speed"
+        "detail": "이동속도 +#speed"
       },
       "levelProperties": [
         {
