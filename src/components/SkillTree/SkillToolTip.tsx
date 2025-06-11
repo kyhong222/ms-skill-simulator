@@ -31,7 +31,7 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
 
       // 마스터리 스킬 후처리(비홀더, 엑스퍼트 등의 경우 다시 예외처리)
       const exceptionMasterySkills = ["비홀더"];
-      if ( !exceptionMasterySkills.includes(skill.description?.name || "") && key === "mastery") {
+      if (!exceptionMasterySkills.includes(skill.description?.name || "") && key === "mastery") {
         // 마스터리 스킬인 경우 mastery 값을 5배로 증가시키고 10을 더함
         value = String(Number(value) * 5 + 10);
       }
@@ -290,8 +290,12 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => 
 
       {/* 현재 레벨, 현재 레벨 설명 */}
       <div>
-        <div className="text-center">{`[현재 레벨: ${curLevel}]`}</div>
-        <div className="text-center">{curLevel >= 1 && `${makeSkillDetail(skill, curLevel)}`}</div>
+        <div className="text-center">
+          {curLevel >= 1 ? `[현재 레벨: ${curLevel}]` : `[마스터 레벨: ${skill.masterLevel}]`}
+        </div>
+        <div className="text-center">
+          {curLevel >= 1 ? `${makeSkillDetail(skill, curLevel)}` : `${makeSkillDetail(skill, skill.masterLevel)}`}
+        </div>
       </div>
     </div>
   );
