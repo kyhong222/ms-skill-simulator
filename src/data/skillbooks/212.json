@@ -1441,7 +1441,7 @@
         "desc": "적 하나에게 데미지를 주고 일정 시간 동안 몸을 마비 시킨다.",
         "name": "페럴라이즈",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 기본 공격력 #mad, 지속시간 #time초"
+        "detail": "MP #mpCon 소비, 기본 공격력 #mad, 숙련도 #mastery%, 지속시간 #time초"
       },
       "levelProperties": [
         {
