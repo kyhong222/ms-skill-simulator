@@ -1324,7 +1324,7 @@
         "desc": "위험으로부터 신속히 피하기 위해 자신 주위에 연막탄을 뿌린다. 연막탄 범위 내의 자신을 포함한 파티원은 연막탄이 지속되는 동안 적에게 데미지를 입지 않는다.",
         "name": "연막탄",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 지속시간 #time초, 범위 rb%"
+        "detail": "MP #mpCon 소비, 지속시간 #time초, 범위 #rb%"
       },
       "levelProperties": [
         {
