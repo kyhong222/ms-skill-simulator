@@ -161,9 +161,25 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
         }
       }
 
+      // 홀리 심볼 후처리
+      if (skill.description?.name === "홀리 심볼") {
+        // x += 100
+        if (key === "x") {
+          value = String(Number(value) + 100);
+        }
+      }
+
       // value가 -로 시작하면 -를 제거
       if (value.startsWith("-")) {
         value = value.slice(1);
+      }
+
+      // 리저렉션 후처리
+      if (skill.description?.name === "리저렉션") {
+        // cooltime /= 60
+        if (key === "cooltime") {
+          value = String(Number(value) / 60);
+        }
       }
 
       // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
