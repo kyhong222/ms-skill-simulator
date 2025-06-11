@@ -427,7 +427,7 @@
         "desc": "내면의 힘으로 마나의 흐름을 바꿔 적에게 그 힘을 돌려준다. 한 번에 적의 최대 체력의 20%이상 돌려주지 못한다.",
         "name": "마나 리플렉션",
         "bookName": "",
-        "detail": "MP #mpCon 소비, #time초간 #prop%의 확률로 마법데미지의 #x%를 적에게 돌려줌,"
+        "detail": "MP #mpCon 소비, #time초간 #prop%의 확률로 마법데미지의 #x%를 적에게 돌려줌"
       },
       "levelProperties": [
         {
