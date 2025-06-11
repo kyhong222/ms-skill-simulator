@@ -11,19 +11,14 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
   const rawDetail = skill.description?.detail;
 
   // 현재 레벨에 해당하는 levelProperties를 찾음, hs는 "h" + 레벨 숫자
-  if (!skill.levelProperties || skill.levelProperties.length === 0)
-    return rawDetail || "상세 설명 없음";
-  const currentLevelProperties = skill.levelProperties.find(
-    (prop) => prop.hs === `h${curLevel}`
-  );
+  if (!skill.levelProperties || skill.levelProperties.length === 0) return rawDetail || "상세 설명 없음";
+  const currentLevelProperties = skill.levelProperties.find((prop) => prop.hs === `h${curLevel}`);
 
   // currentLevelProperties가 존재하면 해당 properties의 keys를 가져옴
   if (!currentLevelProperties) return rawDetail || "상세 설명 없음";
 
   // 현재 레벨 속성의 키를 가져옴
-  const keys = Object.keys(currentLevelProperties).filter(
-    (key) => key !== "hs"
-  );
+  const keys = Object.keys(currentLevelProperties).filter((key) => key !== "hs");
 
   if (!rawDetail) return "상세 설명 없음";
   // rawDetail이 없으면 기본 메시지로 대체
@@ -32,24 +27,19 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
     (key) => {
       let value = "0";
 
-      value =
-        currentLevelProperties[key as keyof typeof currentLevelProperties] ||
-        "0";
+      value = currentLevelProperties[key as keyof typeof currentLevelProperties] || "0";
 
       // 마스터리 스킬 후처리
       const masterySkills = [
         "소드 마스터리",
         "엑스 마스터리",
-        "둔기 마스터리",
+        "메이스 마스터리",
         "스피어 마스터리",
         "폴암 마스터리",
         "보우 마스터리",
         "크로스보우 마스터리",
       ];
-      if (
-        masterySkills.includes(skill.description?.name || "") &&
-        key === "mastery"
-      ) {
+      if (masterySkills.includes(skill.description?.name || "") && key === "mastery") {
         // 마스터리 스킬인 경우 mastery 값을 5배로 증가시키고 10을 더함
         value = String(Number(value) * 5 + 10);
       }
@@ -71,6 +61,14 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
         const match = value.match(/X=(\d+)/);
         if (match) {
           value = match[1];
+        }
+      }
+
+      // 돌진 후처리
+      if (skill.description?.name === "돌진") {
+        if (key === "rb" || key === "lt") {
+          // value /= 2
+          value = String(Number(value) / 2);
         }
       }
 
@@ -134,7 +132,7 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
 
       // 비홀더스 버프 후처리
       if (skill.description?.name === "비홀더스 버프") {
-        if (key === "buffs") {
+        if (key === "pdd") {
           // level 1~5 = 물리 방어력
           // level 6~10 = 물리 방어력, 마법 방어력
           // level 11~15 = 물리 방어력, 마법 방어력, 명중률
@@ -149,7 +147,7 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
             value = "물리 방어력, 마법 방어력, 명중률";
           } else if (level >= 16 && level <= 20) {
             value = "물리 방어력, 마법 방어력, 명중률, 회피율";
-          } else if (level >= 21 && level <= 25) {
+          } else {
             value = "물리 방어력, 마법 방어력, 명중률, 회피율, 공격력";
           }
         }
@@ -157,9 +155,17 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
 
       // 비홀더 후처리
       if (skill.description?.name === "비홀더") {
-        if (key === "mastery") {
-          // mastery *= 5
-          value = String(Number(value) * 5);
+        switch (key) {
+          case "mastery": // 무기 숙련도
+            // mastery *= 5
+            value = String(Number(value) * 5);
+            break;
+          case "time": // 지속 시간
+            // time /= 60
+            value = String(Number(value) / 60);
+            break;
+          default:
+            break;
         }
       }
 
@@ -179,9 +185,7 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
   return detail;
 };
 
-const SkillTooltip: React.FC<SkillTooltipProps> = (
-  props: SkillTooltipProps
-) => {
+const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => {
   const { skill, allSkills, curLevel } = props;
 
   // 필요한 스킬 이름 찾기 함수
@@ -193,9 +197,7 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (
   return (
     <div className="p-3 w-128 bg-white border border-gray-300 rounded shadow-lg text-sm text-gray-800">
       {/* 스킬명 */}
-      <h3 className="font-bold mb-2">
-        {skill.description?.name || "알 수 없는 스킬"}
-      </h3>
+      <h3 className="font-bold mb-2">{skill.description?.name || "알 수 없는 스킬"}</h3>
 
       {/* 스킬 설명 (아이콘과 함께 한 번만 표시) */}
       <div className="flex items-start gap-2 mb-1">
@@ -207,30 +209,22 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (
           />
         )}
         <div className="flex flex-col text-left">
-          <p className="text-gray-600 mb-1">{`[마스터 레벨 : ${
-            skill.masterLevel || 0
-          }]`}</p>
-          <p className="whitespace-pre-line">
-            {(skill.description?.desc || "설명 없음").replace(/\\n/g, "\n")}
-          </p>
+          <p className="text-gray-600 mb-1">{`[마스터 레벨 : ${skill.masterLevel || 0}]`}</p>
+          <p className="whitespace-pre-line">{(skill.description?.desc || "설명 없음").replace(/\\n/g, "\n")}</p>
 
           {/* 필요 스킬 (설명 바로 아래에 위치) */}
-          {skill.requiredSkillLevels &&
-            Object.keys(skill.requiredSkillLevels).length > 0 && (
-              <div className="mt-1">
-                <strong>필요 스킬:</strong>
-                <ul className="list-disc list-inside ml-4">
-                  {Object.entries(skill.requiredSkillLevels).map(
-                    ([reqSkillId, reqLevel]) => (
-                      <p key={reqSkillId}>
-                        {getSkillNameById(Number(reqSkillId))} {reqLevel}레벨
-                        이상
-                      </p>
-                    )
-                  )}
-                </ul>
-              </div>
-            )}
+          {skill.requiredSkillLevels && Object.keys(skill.requiredSkillLevels).length > 0 && (
+            <div className="mt-1">
+              <strong>필요 스킬:</strong>
+              <ul className="list-disc list-inside ml-4">
+                {Object.entries(skill.requiredSkillLevels).map(([reqSkillId, reqLevel]) => (
+                  <p key={reqSkillId}>
+                    {getSkillNameById(Number(reqSkillId))} {reqLevel}레벨 이상
+                  </p>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
 
@@ -239,9 +233,7 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (
       {/* 현재 레벨, 현재 레벨 설명 */}
       <div>
         <div className="text-center">{`[현재 레벨: ${curLevel}]`}</div>
-        <div className="text-center">
-          {curLevel >= 1 && `${makeSkillDetail(skill, curLevel)}`}
-        </div>
+        <div className="text-center">{curLevel >= 1 && `${makeSkillDetail(skill, curLevel)}`}</div>
       </div>
     </div>
   );
