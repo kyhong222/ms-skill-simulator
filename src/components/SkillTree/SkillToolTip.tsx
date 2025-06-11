@@ -30,7 +30,7 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
       value = currentLevelProperties[key as keyof typeof currentLevelProperties] || "0";
 
       // 마스터리 스킬 후처리(비홀더, 엑스퍼트 등의 경우 다시 예외처리)
-      const exceptionMasterySkills = ["비홀더", "엑스퍼트"];
+      const exceptionMasterySkills = ["비홀더"];
       if ( !exceptionMasterySkills.includes(skill.description?.name || "") && key === "mastery") {
         // 마스터리 스킬인 경우 mastery 값을 5배로 증가시키고 10을 더함
         value = String(Number(value) * 5 + 10);
@@ -179,6 +179,14 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
         // cooltime /= 60
         if (key === "cooltime") {
           value = String(Number(value) / 60);
+        }
+      }
+
+      // 샤프 아이즈 후처리
+      if (skill.description?.name === "샤프 아이즈") {
+        // y -= 100
+        if (key === "y") {
+          value = String(Number(value) - 100);
         }
       }
 
