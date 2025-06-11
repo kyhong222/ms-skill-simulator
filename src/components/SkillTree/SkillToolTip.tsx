@@ -190,6 +190,27 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
         }
       }
 
+      // 다크 사이트 후처리
+      if (skill.description?.name === "다크 사이트") {
+        if (key === "speed") {
+          // 스킬레벨이 1~19이면 - x로 표기
+          if (curLevel < 20) {
+            value = `- ${value}`;
+          } else {
+            // 스킬레벨이 20 이상이면 정상으로 표기
+            value = `정상`;
+          }
+        }
+      }
+
+      // 메소 익스플로전 후처리
+      if (skill.description?.name === "메소 익스플로전") {
+        if (key === "x") {
+          // damage /= 10
+          value = String(Number(value) / 10);
+        }
+      }
+
       // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
       detail = detail.replace(new RegExp(`#${key}`, "g"), value.toString());
     }
