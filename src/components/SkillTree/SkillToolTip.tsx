@@ -29,17 +29,9 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
 
       value = currentLevelProperties[key as keyof typeof currentLevelProperties] || "0";
 
-      // 마스터리 스킬 후처리
-      const masterySkills = [
-        "소드 마스터리",
-        "엑스 마스터리",
-        "메이스 마스터리",
-        "스피어 마스터리",
-        "폴암 마스터리",
-        "보우 마스터리",
-        "크로스보우 마스터리",
-      ];
-      if (masterySkills.includes(skill.description?.name || "") && key === "mastery") {
+      // 마스터리 스킬 후처리(비홀더, 엑스퍼트 등의 경우 다시 예외처리)
+      const exceptionMasterySkills = ["비홀더", "엑스퍼트"];
+      if ( !exceptionMasterySkills.includes(skill.description?.name || "") && key === "mastery") {
         // 마스터리 스킬인 경우 mastery 값을 5배로 증가시키고 10을 더함
         value = String(Number(value) * 5 + 10);
       }
