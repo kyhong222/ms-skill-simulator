@@ -211,6 +211,27 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
         }
       }
 
+      // 에너지 차지 후처리
+      if (skill.description?.name === "에너지 차지") {
+        if (key === "pad") {
+          if (curLevel >= 4) {
+            // 4레벨 이상이면 '물리공격력 + value, '
+            value = `물리공격력 + ${value}, `;
+          } else {
+            // 4레벨 미만이면 빈 문자열
+            value = "";
+          }
+        }
+      }
+
+      // 타임 리프 후처리
+      if (skill.description?.name === "타임 리프") {
+        if (key === "cooltime") {
+          // time /= 60
+          value = String(Number(value) / 60);
+        }
+      }
+
       // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
       detail = detail.replace(new RegExp(`#${key}`, "g"), value.toString());
     }
