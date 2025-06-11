@@ -1259,7 +1259,7 @@
         "desc": "불과 독 속성을 혼합한 마법으로 적 하나를 공격한다. 불이나 독이 약점인 몬스터에게 큰 데미지를 줄 수 있으며 일정 확률로 적은 중독된다.",
         "name": "매직 컴포지션",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 기본 공격력 #mad, 숙련도 #mastery%, 공격범위 #lt%, #time초간 #prop% 확률로 중독"
+        "detail": "MP #mpCon 소비, 기본 공격력 #mad, 숙련도 #mastery%, #time초간 #prop% 확률로 중독"
       },
       "levelProperties": [
         {
