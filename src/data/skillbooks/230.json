@@ -254,7 +254,8 @@
         "id": 2301002,
         "desc": "주위에 있는 파티 전원의 HP를 회복시킨다. 범위내의 언데드 몬스터는 데미지를 입게 된다.",
         "name": "힐",
-        "bookName": "MP #mpCon 소비, 회복력 #hp%"
+        "bookName": "",
+        "detail": "MP #mpCon 소비, 회복력 #hp%"
       },
       "levelProperties": [
         {
