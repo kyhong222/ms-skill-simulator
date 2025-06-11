@@ -709,7 +709,7 @@
         "desc": "원거리에 있는 적을 6마리까지 자신의 앞으로 끌어 당긴다.",
         "name": "몬스터 마그넷",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 범위 #range, 성공률 #prop%"
+        "detail": "MP #mpCon 소비, 범위 #range%, 성공률 #prop%"
       },
       "levelProperties": [
         {
