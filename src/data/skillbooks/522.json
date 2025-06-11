@@ -217,7 +217,7 @@
         "desc": "옥토퍼스 한마리가 추가로 소환되면서 연사 속도와 데미지가 상승한다.",
         "name": "서포트 옥토퍼스",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 공격력 #pad, 지속시간 #time 초, 재사용 대기시간 #cooltime 초",
+        "detail": "MP #mpCon 소비, 공격력 #pad, 지속시간 #time 초, 재사용 대기시간 #cooltime 초"
       },
       "requiredSkillLevels": {
         "5211001": 30
