@@ -513,7 +513,7 @@
         "desc": "일정 시간동안 자기 자신이 받는 물리 데미지의 양을 감소시킨다. 마법 데미지의 양은 감소시키지 않는다.",
         "name": "인빈서블",
         "bookName": "",
-        "detail": "#time초간 MP #mpCon 소비하여 물리 피해량희 #x% 감소"
+        "detail": "#time초간 MP #mpCon 소비하여 물리 피해량의 #x% 감소"
       },
       "requiredSkillLevels": {
         "2301002": 5
