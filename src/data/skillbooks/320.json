@@ -469,7 +469,7 @@
         "desc": "석궁을 휘둘렀을 경우 적을 크게 뒤로 밀 수 있는 확률을 증가시킨다. 더불어 레벨이 올라갈수록 한 번에 밀 수 있는 적의 수가 증가한다.",
         "name": "파워 넉백",
         "bookName": "",
-        "detail": "MP #mpCon 소비하여 넉백 확률 #prop% 증가, 데미지 #damage%, mobCount명 넉백."
+        "detail": "MP #mpCon 소비하여 넉백 확률 #prop% 증가, 데미지 #damage%, #mobCount명 넉백."
       },
       "levelProperties": [
         {
