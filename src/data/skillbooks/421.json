@@ -843,7 +843,7 @@
           "hs": "h10",
           "lt": "Point [ X=-135, Y=-50 ]",
           "mobCount": "3",
-          "mpCon": "13",
+          "mpCon": "20",
           "rb": "Point [ X=135, Y=50 ]",
           "x": "2"
         },
@@ -852,7 +852,7 @@
           "hs": "h11",
           "lt": "Point [ X=-135, Y=-50 ]",
           "mobCount": "3",
-          "mpCon": "16",
+          "mpCon": "20",
           "rb": "Point [ X=135, Y=50 ]",
           "x": "2"
         },
@@ -861,7 +861,7 @@
           "hs": "h12",
           "lt": "Point [ X=-135, Y=-50 ]",
           "mobCount": "3",
-          "mpCon": "16",
+          "mpCon": "20",
           "rb": "Point [ X=135, Y=50 ]",
           "x": "2"
         },
@@ -870,7 +870,7 @@
           "hs": "h13",
           "lt": "Point [ X=-140, Y=-50 ]",
           "mobCount": "4",
-          "mpCon": "16",
+          "mpCon": "30",
           "rb": "Point [ X=140, Y=50 ]",
           "x": "3"
         },
@@ -879,7 +879,7 @@
           "hs": "h14",
           "lt": "Point [ X=-140, Y=-50 ]",
           "mobCount": "4",
-          "mpCon": "16",
+          "mpCon": "30",
           "rb": "Point [ X=140, Y=50 ]",
           "x": "3"
         },
@@ -888,7 +888,7 @@
           "hs": "h15",
           "lt": "Point [ X=-140, Y=-50 ]",
           "mobCount": "4",
-          "mpCon": "16",
+          "mpCon": "30",
           "rb": "Point [ X=140, Y=50 ]",
           "x": "3"
         },
@@ -897,7 +897,7 @@
           "hs": "h16",
           "lt": "Point [ X=-140, Y=-50 ]",
           "mobCount": "4",
-          "mpCon": "19",
+          "mpCon": "30",
           "rb": "Point [ X=140, Y=50 ]",
           "x": "3"
         },
@@ -906,7 +906,7 @@
           "hs": "h17",
           "lt": "Point [ X=-140, Y=-50 ]",
           "mobCount": "4",
-          "mpCon": "19",
+          "mpCon": "30",
           "rb": "Point [ X=140, Y=50 ]",
           "x": "3"
         },
@@ -915,7 +915,7 @@
           "hs": "h18",
           "lt": "Point [ X=-140, Y=-50 ]",
           "mobCount": "4",
-          "mpCon": "19",
+          "mpCon": "30",
           "rb": "Point [ X=140, Y=50 ]",
           "x": "3"
         },
@@ -924,7 +924,7 @@
           "hs": "h19",
           "lt": "Point [ X=-145, Y=-50 ]",
           "mobCount": "5",
-          "mpCon": "19",
+          "mpCon": "22",
           "rb": "Point [ X=145, Y=50 ]",
           "x": "4"
         },
@@ -942,7 +942,7 @@
           "hs": "h20",
           "lt": "Point [ X=-145, Y=-50 ]",
           "mobCount": "5",
-          "mpCon": "19",
+          "mpCon": "22",
           "rb": "Point [ X=145, Y=50 ]",
           "x": "4"
         },
@@ -987,7 +987,7 @@
           "hs": "h25",
           "lt": "Point [ X=-150, Y=-50 ]",
           "mobCount": "6",
-          "mpCon": "22",
+          "mpCon": "25",
           "rb": "Point [ X=150, Y=50 ]",
           "x": "5"
         },
@@ -1068,7 +1068,7 @@
           "hs": "h6",
           "lt": "Point [ X=-130, Y=-50 ]",
           "mobCount": "2",
-          "mpCon": "13",
+          "mpCon": "10",
           "rb": "Point [ X=130, Y=50 ]",
           "x": "1"
         },
@@ -1077,7 +1077,7 @@
           "hs": "h7",
           "lt": "Point [ X=-135, Y=-50 ]",
           "mobCount": "3",
-          "mpCon": "13",
+          "mpCon": "20",
           "rb": "Point [ X=135, Y=50 ]",
           "x": "2"
         },
@@ -1086,7 +1086,7 @@
           "hs": "h8",
           "lt": "Point [ X=-135, Y=-50 ]",
           "mobCount": "3",
-          "mpCon": "13",
+          "mpCon": "20",
           "rb": "Point [ X=135, Y=50 ]",
           "x": "2"
         },
@@ -1095,7 +1095,7 @@
           "hs": "h9",
           "lt": "Point [ X=-135, Y=-50 ]",
           "mobCount": "3",
-          "mpCon": "13",
+          "mpCon": "20",
           "rb": "Point [ X=135, Y=50 ]",
           "x": "2"
         }
