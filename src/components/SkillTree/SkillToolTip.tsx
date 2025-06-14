@@ -1,4 +1,5 @@
 import type { IJobSkill } from "../../types/jobSkillBook";
+import { SkillToolTipPostfix } from "./SkillToolTipPostfix";
 
 interface SkillTooltipProps {
   skill: IJobSkill;
@@ -29,13 +30,6 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
 
       value = currentLevelProperties[key as keyof typeof currentLevelProperties] || "0";
 
-      // 마스터리 스킬 후처리(비홀더, 엑스퍼트 등의 경우 다시 예외처리)
-      const exceptionMasterySkills = ["비홀더"];
-      if (!exceptionMasterySkills.includes(skill.description?.name || "") && key === "mastery") {
-        // 마스터리 스킬인 경우 mastery 값을 5배로 증가시키고 10을 더함
-        value = String(Number(value) * 5 + 10);
-      }
-
       // lt(공격범위) 파싱
       if (key === "lt") {
         // "lt": "Point [ X=-160, Y=-50 ]"
@@ -56,180 +50,11 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
         }
       }
 
-      // 돌진 후처리
-      if (skill.description?.name === "돌진") {
-        if (key === "rb" || key === "lt") {
-          // value /= 2
-          value = String(Number(value) / 2);
-        }
-      }
-
-      // 어드밴스드 콤보 후처리
-      if (skill.description?.name === "어드밴스드 콤보") {
-        switch (key) {
-          case "damage": // 데미지
-            // damage -= 120
-            value = String(Number(value) - 120);
-            break;
-          case "x": // 최대 콤보카운터
-            // x -= 5
-            value = String(Number(value) - 5);
-            break;
-          default:
-            break;
-        }
-      }
-
-      // 아킬레스 후처리
-      if (skill.description?.name === "아킬레스") {
-        if (key === "x") {
-          // x는 적에게 입는 데미지 감소 비율
-          // 995 -> 0.5로 변환
-          value = String((1000 - Number(value)) / 10);
-        }
-      }
-
-      // 블로킹 후처리
-      if (skill.description?.name === "블로킹") {
-        if (key === "prop") {
-          // prop은 블록 확률
-          // 5 -> 0.5로 변환
-          value = String(Number(value) / 10);
-        }
-      }
-
-      // 몬스터 마그넷 후처리
-      if (skill.description?.name === "몬스터 마그넷") {
-        if (key === "range") {
-          // range /= 2
-          value = String(Number(value) / 2);
-        }
-      }
-
-      // 버서크 후처리
-      if (skill.description?.name === "버서크") {
-        switch (key) {
-          case "damage": // 데미지
-            // damage += 100
-            value = String(Number(value) + 100);
-            break;
-          case "x": // 체력 유지 조건
-            // x += 5
-            value = String(Number(value) + 5);
-            break;
-          default:
-            break;
-        }
-      }
-
-      // 비홀더스 버프 후처리
-      if (skill.description?.name === "비홀더스 버프") {
-        if (key === "pdd") {
-          // level 1~5 = 물리 방어력
-          // level 6~10 = 물리 방어력, 마법 방어력
-          // level 11~15 = 물리 방어력, 마법 방어력, 명중률
-          // level 16~20 = 물리 방어력, 마법 방어력, 명중률, 회피율
-          // level 21~25 = 물리 방어력, 마법 방어력, 명중률, 회피율, 공격력
-          const level = curLevel;
-          if (level >= 1 && level <= 5) {
-            value = "물리 방어력";
-          } else if (level >= 6 && level <= 10) {
-            value = "물리 방어력, 마법 방어력";
-          } else if (level >= 11 && level <= 15) {
-            value = "물리 방어력, 마법 방어력, 명중률";
-          } else if (level >= 16 && level <= 20) {
-            value = "물리 방어력, 마법 방어력, 명중률, 회피율";
-          } else {
-            value = "물리 방어력, 마법 방어력, 명중률, 회피율, 공격력";
-          }
-        }
-      }
-
-      // 비홀더 후처리
-      if (skill.description?.name === "비홀더") {
-        switch (key) {
-          case "mastery": // 무기 숙련도
-            // mastery *= 5
-            value = String(Number(value) * 5);
-            break;
-          case "time": // 지속 시간
-            // time /= 60
-            value = String(Number(value) / 60);
-            break;
-          default:
-            break;
-        }
-      }
-
-      // 홀리 심볼 후처리
-      if (skill.description?.name === "홀리 심볼") {
-        // x += 100
-        if (key === "x") {
-          value = String(Number(value) + 100);
-        }
-      }
+      value = SkillToolTipPostfix(skill, curLevel, key, value);
 
       // value가 -로 시작하면 -를 제거
       if (value.startsWith("-")) {
         value = value.slice(1);
-      }
-
-      // 리저렉션 후처리
-      if (skill.description?.name === "리저렉션") {
-        // cooltime /= 60
-        if (key === "cooltime") {
-          value = String(Number(value) / 60);
-        }
-      }
-
-      // 샤프 아이즈 후처리
-      if (skill.description?.name === "샤프 아이즈") {
-        // y -= 100
-        if (key === "y") {
-          value = String(Number(value) - 100);
-        }
-      }
-
-      // 다크 사이트 후처리
-      if (skill.description?.name === "다크 사이트") {
-        if (key === "speed") {
-          // 스킬레벨이 1~19이면 - x로 표기
-          if (curLevel < 20) {
-            value = `- ${value}`;
-          } else {
-            // 스킬레벨이 20 이상이면 정상으로 표기
-            value = `정상`;
-          }
-        }
-      }
-
-      // 메소 익스플로전 후처리
-      if (skill.description?.name === "메소 익스플로전") {
-        if (key === "x") {
-          // damage /= 10
-          value = String(Number(value) / 10);
-        }
-      }
-
-      // 에너지 차지 후처리
-      if (skill.description?.name === "에너지 차지") {
-        if (key === "pad") {
-          if (curLevel >= 4) {
-            // 4레벨 이상이면 '물리공격력 +value, '
-            value = `물리공격력 +${value}, `;
-          } else {
-            // 4레벨 미만이면 빈 문자열
-            value = "";
-          }
-        }
-      }
-
-      // 타임 리프 후처리
-      if (skill.description?.name === "타임 리프") {
-        if (key === "cooltime") {
-          // time /= 60
-          value = String(Number(value) / 60);
-        }
       }
 
       // #hpCon, #mpCon, #damage 등을 찾아서 해당 속성으로 대체
