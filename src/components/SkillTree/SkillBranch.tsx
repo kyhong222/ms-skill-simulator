@@ -211,9 +211,10 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
           // 스킬이 필요 스킬을 만족하지 않으면 비활성화(툴팁은 표시)
           <div
             key={skill.id}
-            className={`flex items-start gap-4 p-3 border rounded-lg relative ${
-              isSkillActivated(skill.id) ? "" : "grayscale cursor-not-allowed"
-            }`}
+            className={`flex items-start gap-4 p-3 border rounded-lg relative 
+              ${isSkillActivated(skill.id) ? "" : "grayscale cursor-not-allowed"}
+              ${getLevel(skill.id) === skill.masterLevel ? "bg-amber-300" : (getLevel(skill.id) >= 1 ? "bg-amber-100" :  "bg-white") }
+              `}
             onMouseEnter={() => setHoveredSkillId(skill.id)}
             onMouseLeave={() => setHoveredSkillId(null)}
             onMouseMove={handleMouseMove}
