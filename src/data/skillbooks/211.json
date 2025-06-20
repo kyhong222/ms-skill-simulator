@@ -179,96 +179,6 @@
           "rb": "Point [ X=110, Y=83 ]"
         },
         {
-          "hs": "h10",
-          "lt": "Point [ X=-140, Y=-105 ]",
-          "mad": "84",
-          "mastery": "4",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=140, Y=105 ]"
-        },
-        {
-          "hs": "h11",
-          "lt": "Point [ X=-140, Y=-105 ]",
-          "mad": "86",
-          "mastery": "4",
-          "mobCount": "6",
-          "mpCon": "31",
-          "rb": "Point [ X=140, Y=105 ]"
-        },
-        {
-          "hs": "h12",
-          "lt": "Point [ X=-140, Y=-105 ]",
-          "mad": "88",
-          "mastery": "4",
-          "mobCount": "6",
-          "mpCon": "32",
-          "rb": "Point [ X=140, Y=105 ]"
-        },
-        {
-          "hs": "h13",
-          "lt": "Point [ X=-150, Y=-112 ]",
-          "mad": "90",
-          "mastery": "5",
-          "mobCount": "6",
-          "mpCon": "33",
-          "rb": "Point [ X=150, Y=113 ]"
-        },
-        {
-          "hs": "h14",
-          "lt": "Point [ X=-150, Y=-112 ]",
-          "mad": "92",
-          "mastery": "5",
-          "mobCount": "6",
-          "mpCon": "34",
-          "rb": "Point [ X=150, Y=113 ]"
-        },
-        {
-          "hs": "h15",
-          "lt": "Point [ X=-150, Y=-112 ]",
-          "mad": "94",
-          "mastery": "5",
-          "mobCount": "6",
-          "mpCon": "35",
-          "rb": "Point [ X=150, Y=113 ]"
-        },
-        {
-          "hs": "h16",
-          "lt": "Point [ X=-160, Y=-120 ]",
-          "mad": "95",
-          "mastery": "6",
-          "mobCount": "6",
-          "mpCon": "36",
-          "rb": "Point [ X=160, Y=120 ]"
-        },
-        {
-          "hs": "h17",
-          "lt": "Point [ X=-160, Y=-120 ]",
-          "mad": "97",
-          "mastery": "6",
-          "mobCount": "6",
-          "mpCon": "37",
-          "rb": "Point [ X=160, Y=120 ]"
-        },
-        {
-          "hs": "h18",
-          "lt": "Point [ X=-160, Y=-120 ]",
-          "mad": "99",
-          "mastery": "6",
-          "mobCount": "6",
-          "mpCon": "38",
-          "rb": "Point [ X=160, Y=120 ]"
-        },
-        {
-          "hs": "h19",
-          "lt": "Point [ X=-170, Y=-127 ]",
-          "mad": "101",
-          "mastery": "7",
-          "mobCount": "6",
-          "mpCon": "39",
-          "rb": "Point [ X=170, Y=128 ]"
-        },
-        {
           "hs": "h2",
           "lt": "Point [ X=-110, Y=-82 ]",
           "mad": "64",
@@ -278,117 +188,18 @@
           "rb": "Point [ X=110, Y=83 ]"
         },
         {
-          "hs": "h20",
-          "lt": "Point [ X=-170, Y=-127 ]",
-          "mad": "103",
-          "mastery": "7",
-          "mobCount": "6",
-          "mpCon": "40",
-          "rb": "Point [ X=170, Y=128 ]"
-        },
-        {
-          "hs": "h21",
-          "lt": "Point [ X=-170, Y=-127 ]",
-          "mad": "105",
-          "mastery": "7",
-          "mobCount": "6",
-          "mpCon": "41",
-          "rb": "Point [ X=170, Y=128 ]"
-        },
-        {
-          "hs": "h22",
-          "lt": "Point [ X=-180, Y=-135 ]",
-          "mad": "106",
-          "mastery": "8",
-          "mobCount": "6",
-          "mpCon": "42",
-          "rb": "Point [ X=180, Y=135 ]"
-        },
-        {
-          "hs": "h23",
-          "lt": "Point [ X=-180, Y=-135 ]",
-          "mad": "108",
-          "mastery": "8",
-          "mobCount": "6",
-          "mpCon": "43",
-          "rb": "Point [ X=180, Y=135 ]"
-        },
-        {
-          "hs": "h24",
-          "lt": "Point [ X=-180, Y=-135 ]",
-          "mad": "110",
-          "mastery": "8",
-          "mobCount": "6",
-          "mpCon": "44",
-          "rb": "Point [ X=180, Y=135 ]"
-        },
-        {
-          "hs": "h25",
-          "lt": "Point [ X=-190, Y=-142 ]",
-          "mad": "112",
-          "mastery": "9",
-          "mobCount": "6",
-          "mpCon": "45",
-          "rb": "Point [ X=190, Y=143 ]"
-        },
-        {
-          "hs": "h26",
-          "lt": "Point [ X=-190, Y=-142 ]",
-          "mad": "113",
-          "mastery": "9",
-          "mobCount": "6",
-          "mpCon": "46",
-          "rb": "Point [ X=190, Y=143 ]"
-        },
-        {
-          "hs": "h27",
-          "lt": "Point [ X=-190, Y=-142 ]",
-          "mad": "115",
-          "mastery": "9",
-          "mobCount": "6",
-          "mpCon": "47",
-          "rb": "Point [ X=190, Y=143 ]"
-        },
-        {
-          "hs": "h28",
-          "lt": "Point [ X=-200, Y=-150 ]",
-          "mad": "117",
-          "mastery": "10",
-          "mobCount": "6",
-          "mpCon": "48",
-          "rb": "Point [ X=200, Y=150 ]"
-        },
-        {
-          "hs": "h29",
-          "lt": "Point [ X=-200, Y=-150 ]",
-          "mad": "118",
-          "mastery": "10",
-          "mobCount": "6",
-          "mpCon": "49",
-          "rb": "Point [ X=200, Y=150 ]"
-        },
-        {
           "hs": "h3",
           "lt": "Point [ X=-110, Y=-82 ]",
-          "mad": "67",
+          "mad": "68",
           "mastery": "1",
           "mobCount": "6",
           "mpCon": "23",
           "rb": "Point [ X=110, Y=83 ]"
         },
         {
-          "hs": "h30",
-          "lt": "Point [ X=-200, Y=-150 ]",
-          "mad": "120",
-          "mastery": "10",
-          "mobCount": "6",
-          "mpCon": "50",
-          "rb": "Point [ X=200, Y=150 ]"
-        },
-        {
           "hs": "h4",
           "lt": "Point [ X=-120, Y=-90 ]",
-          "mad": "70",
+          "mad": "71",
           "mastery": "2",
           "mobCount": "6",
           "mpCon": "24",
@@ -397,7 +208,7 @@
         {
           "hs": "h5",
           "lt": "Point [ X=-120, Y=-90 ]",
-          "mad": "72",
+          "mad": "74",
           "mastery": "2",
           "mobCount": "6",
           "mpCon": "25",
@@ -406,7 +217,7 @@
         {
           "hs": "h6",
           "lt": "Point [ X=-120, Y=-90 ]",
-          "mad": "75",
+          "mad": "77",
           "mastery": "2",
           "mobCount": "6",
           "mpCon": "26",
@@ -415,7 +226,7 @@
         {
           "hs": "h7",
           "lt": "Point [ X=-130, Y=-97 ]",
-          "mad": "77",
+          "mad": "79",
           "mastery": "3",
           "mobCount": "6",
           "mpCon": "27",
@@ -424,7 +235,7 @@
         {
           "hs": "h8",
           "lt": "Point [ X=-130, Y=-97 ]",
-          "mad": "79",
+          "mad": "81",
           "mastery": "3",
           "mobCount": "6",
           "mpCon": "28",
@@ -433,11 +244,200 @@
         {
           "hs": "h9",
           "lt": "Point [ X=-130, Y=-97 ]",
-          "mad": "81",
+          "mad": "83",
           "mastery": "3",
           "mobCount": "6",
           "mpCon": "29",
           "rb": "Point [ X=130, Y=98 ]"
+        },
+        {
+          "hs": "h10",
+          "lt": "Point [ X=-140, Y=-105 ]",
+          "mad": "86",
+          "mastery": "4",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=140, Y=105 ]"
+        },
+        {
+          "hs": "h11",
+          "lt": "Point [ X=-140, Y=-105 ]",
+          "mad": "88",
+          "mastery": "4",
+          "mobCount": "6",
+          "mpCon": "31",
+          "rb": "Point [ X=140, Y=105 ]"
+        },
+        {
+          "hs": "h12",
+          "lt": "Point [ X=-140, Y=-105 ]",
+          "mad": "90",
+          "mastery": "4",
+          "mobCount": "6",
+          "mpCon": "32",
+          "rb": "Point [ X=140, Y=105 ]"
+        },
+        {
+          "hs": "h13",
+          "lt": "Point [ X=-150, Y=-112 ]",
+          "mad": "92",
+          "mastery": "5",
+          "mobCount": "6",
+          "mpCon": "33",
+          "rb": "Point [ X=150, Y=113 ]"
+        },
+        {
+          "hs": "h14",
+          "lt": "Point [ X=-150, Y=-112 ]",
+          "mad": "94",
+          "mastery": "5",
+          "mobCount": "6",
+          "mpCon": "34",
+          "rb": "Point [ X=150, Y=113 ]"
+        },
+        {
+          "hs": "h15",
+          "lt": "Point [ X=-150, Y=-112 ]",
+          "mad": "97",
+          "mastery": "5",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=150, Y=113 ]"
+        },
+        {
+          "hs": "h16",
+          "lt": "Point [ X=-160, Y=-120 ]",
+          "mad": "99",
+          "mastery": "6",
+          "mobCount": "6",
+          "mpCon": "36",
+          "rb": "Point [ X=160, Y=120 ]"
+        },
+        {
+          "hs": "h17",
+          "lt": "Point [ X=-160, Y=-120 ]",
+          "mad": "101",
+          "mastery": "6",
+          "mobCount": "6",
+          "mpCon": "37",
+          "rb": "Point [ X=160, Y=120 ]"
+        },
+        {
+          "hs": "h18",
+          "lt": "Point [ X=-160, Y=-120 ]",
+          "mad": "103",
+          "mastery": "6",
+          "mobCount": "6",
+          "mpCon": "38",
+          "rb": "Point [ X=160, Y=120 ]"
+        },
+        {
+          "hs": "h19",
+          "lt": "Point [ X=-170, Y=-127 ]",
+          "mad": "105",
+          "mastery": "7",
+          "mobCount": "6",
+          "mpCon": "39",
+          "rb": "Point [ X=170, Y=128 ]"
+        },
+        {
+          "hs": "h20",
+          "lt": "Point [ X=-170, Y=-127 ]",
+          "mad": "108",
+          "mastery": "7",
+          "mobCount": "6",
+          "mpCon": "40",
+          "rb": "Point [ X=170, Y=128 ]"
+        },
+        {
+          "hs": "h21",
+          "lt": "Point [ X=-170, Y=-127 ]",
+          "mad": "110",
+          "mastery": "7",
+          "mobCount": "6",
+          "mpCon": "41",
+          "rb": "Point [ X=170, Y=128 ]"
+        },
+        {
+          "hs": "h22",
+          "lt": "Point [ X=-180, Y=-135 ]",
+          "mad": "112",
+          "mastery": "8",
+          "mobCount": "6",
+          "mpCon": "42",
+          "rb": "Point [ X=180, Y=135 ]"
+        },
+        {
+          "hs": "h23",
+          "lt": "Point [ X=-180, Y=-135 ]",
+          "mad": "114",
+          "mastery": "8",
+          "mobCount": "6",
+          "mpCon": "43",
+          "rb": "Point [ X=180, Y=135 ]"
+        },
+        {
+          "hs": "h24",
+          "lt": "Point [ X=-180, Y=-135 ]",
+          "mad": "116",
+          "mastery": "8",
+          "mobCount": "6",
+          "mpCon": "44",
+          "rb": "Point [ X=180, Y=135 ]"
+        },
+        {
+          "hs": "h25",
+          "lt": "Point [ X=-190, Y=-142 ]",
+          "mad": "119",
+          "mastery": "9",
+          "mobCount": "6",
+          "mpCon": "45",
+          "rb": "Point [ X=190, Y=143 ]"
+        },
+        {
+          "hs": "h26",
+          "lt": "Point [ X=-190, Y=-142 ]",
+          "mad": "121",
+          "mastery": "9",
+          "mobCount": "6",
+          "mpCon": "46",
+          "rb": "Point [ X=190, Y=143 ]"
+        },
+        {
+          "hs": "h27",
+          "lt": "Point [ X=-190, Y=-142 ]",
+          "mad": "123",
+          "mastery": "9",
+          "mobCount": "6",
+          "mpCon": "47",
+          "rb": "Point [ X=190, Y=143 ]"
+        },
+        {
+          "hs": "h28",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mad": "125",
+          "mastery": "10",
+          "mobCount": "6",
+          "mpCon": "48",
+          "rb": "Point [ X=200, Y=150 ]"
+        },
+        {
+          "hs": "h29",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mad": "127",
+          "mastery": "10",
+          "mobCount": "6",
+          "mpCon": "49",
+          "rb": "Point [ X=200, Y=150 ]"
+        },
+        {
+          "hs": "h30",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mad": "130",
+          "mastery": "10",
+          "mobCount": "6",
+          "mpCon": "50",
+          "rb": "Point [ X=200, Y=150 ]"
         }
       ]
     },
