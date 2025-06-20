@@ -82,7 +82,7 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => 
       {/* 스킬명 */}
       <h3 className="font-bold mb-2">{skill.description?.name || "알 수 없는 스킬"}</h3>
 
-      {/* 스킬 설명 (아이콘과 함께 한 번만 표시) */}
+      {/* 스킬 설명 */}
       <div className="flex items-start gap-2 mb-1">
         {skill.icon && (
           <img
@@ -95,7 +95,7 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => 
           <p className="text-gray-600 mb-1">{`[마스터 레벨 : ${skill.masterLevel || 0}]`}</p>
           <p className="whitespace-pre-line">{(skill.description?.desc || "설명 없음").replace(/\\n/g, "\n")}</p>
 
-          {/* 필요 스킬 (설명 바로 아래에 위치) */}
+          {/* 필요 스킬 */}
           {skill.requiredSkillLevels && Object.keys(skill.requiredSkillLevels).length > 0 && (
             <div className="mt-1">
               <strong>필요 스킬:</strong>
