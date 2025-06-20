@@ -12,7 +12,7 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
 
   return (
     <div className="p-6 max-w-full mx-auto">
-      <h1 className="text-2xl font-bold mb-4">직업을 선택하세요</h1>
+      <h1 className="text-2xl font-bold mb-4">직업을 선택하세요.</h1>
 
       {/* 그룹들을 가로로 나란히 배치 */}
       <div className="flex gap-8 overflow-x-auto">
@@ -34,6 +34,9 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
             </ul>
           </div>
         ))}
+      </div>
+      <div className="mt-8">
+        <h1 className="text-2xl font-bold mb-4">나이트-아이스/블리자드 차지 제외 6/20 패치 반영</h1>
       </div>
     </div>
   );
