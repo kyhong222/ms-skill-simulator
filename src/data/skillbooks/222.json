@@ -1441,219 +1441,39 @@
         "desc": "고압의 전류를 사용하여 하나의 적에게 전기 속성의 공격을 한다. 체인 라이트닝에 맞은 적의 주위에 다른 적이 있으면 추가로 데미지를 입는다.",
         "name": "체인 라이트닝",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 기본 공격력 #mad, 숙련도 #mastery%, 최대 #mobCount명에게 데미지를 줌"
+        "detail": "[정확하지 않음]MP #mpCon 소비, 기본 공격력 #mad, 숙련도 #mastery%, 최대 #mobCount명에게 데미지를 줌"
       },
       "levelProperties": [
-        {
-          "hs": "h1",
-          "mad": "103",
-          "mastery": "1",
-          "mobCount": "2",
-          "mpCon": "16"
-        },
-        {
-          "hs": "h10",
-          "mad": "130",
-          "mastery": "4",
-          "mobCount": "3",
-          "mpCon": "16"
-        },
-        {
-          "hs": "h11",
-          "mad": "133",
-          "mastery": "4",
-          "mobCount": "3",
-          "mpCon": "24"
-        },
-        {
-          "hs": "h12",
-          "mad": "136",
-          "mastery": "4",
-          "mobCount": "3",
-          "mpCon": "24"
-        },
-        {
-          "hs": "h13",
-          "mad": "139",
-          "mastery": "5",
-          "mobCount": "4",
-          "mpCon": "24"
-        },
-        {
-          "hs": "h14",
-          "mad": "142",
-          "mastery": "5",
-          "mobCount": "4",
-          "mpCon": "24"
-        },
-        {
-          "hs": "h15",
-          "mad": "145",
-          "mastery": "5",
-          "mobCount": "4",
-          "mpCon": "24"
-        },
-        {
-          "hs": "h16",
-          "mad": "148",
-          "mastery": "6",
-          "mobCount": "4",
-          "mpCon": "24"
-        },
-        {
-          "hs": "h17",
-          "mad": "151",
-          "mastery": "6",
-          "mobCount": "4",
-          "mpCon": "24"
-        },
-        {
-          "hs": "h18",
-          "mad": "154",
-          "mastery": "6",
-          "mobCount": "4",
-          "mpCon": "24"
-        },
-        {
-          "hs": "h19",
-          "mad": "157",
-          "mastery": "7",
-          "mobCount": "5",
-          "mpCon": "24"
-        },
-        {
-          "hs": "h2",
-          "mad": "106",
-          "mastery": "1",
-          "mobCount": "2",
-          "mpCon": "16"
-        },
-        {
-          "hs": "h20",
-          "mad": "160",
-          "mastery": "7",
-          "mobCount": "5",
-          "mpCon": "24"
-        },
-        {
-          "hs": "h21",
-          "mad": "162",
-          "mastery": "7",
-          "mobCount": "5",
-          "mpCon": "30"
-        },
-        {
-          "hs": "h22",
-          "mad": "164",
-          "mastery": "8",
-          "mobCount": "5",
-          "mpCon": "30"
-        },
-        {
-          "hs": "h23",
-          "mad": "166",
-          "mastery": "8",
-          "mobCount": "5",
-          "mpCon": "30"
-        },
-        {
-          "hs": "h24",
-          "mad": "168",
-          "mastery": "8",
-          "mobCount": "5",
-          "mpCon": "30"
-        },
-        {
-          "hs": "h25",
-          "mad": "170",
-          "mastery": "9",
-          "mobCount": "6",
-          "mpCon": "30"
-        },
-        {
-          "hs": "h26",
-          "mad": "172",
-          "mastery": "9",
-          "mobCount": "6",
-          "mpCon": "29"
-        },
-        {
-          "hs": "h27",
-          "mad": "174",
-          "mastery": "9",
-          "mobCount": "6",
-          "mpCon": "28"
-        },
-        {
-          "hs": "h28",
-          "mad": "176",
-          "mastery": "10",
-          "mobCount": "6",
-          "mpCon": "27"
-        },
-        {
-          "hs": "h29",
-          "mad": "178",
-          "mastery": "10",
-          "mobCount": "6",
-          "mpCon": "26"
-        },
-        {
-          "hs": "h3",
-          "mad": "109",
-          "mastery": "1",
-          "mobCount": "2",
-          "mpCon": "16"
-        },
-        {
-          "hs": "h30",
-          "mad": "180",
-          "mastery": "10",
-          "mobCount": "6",
-          "mpCon": "25"
-        },
-        {
-          "hs": "h4",
-          "mad": "112",
-          "mastery": "2",
-          "mobCount": "2",
-          "mpCon": "16"
-        },
-        {
-          "hs": "h5",
-          "mad": "115",
-          "mastery": "2",
-          "mobCount": "2",
-          "mpCon": "16"
-        },
-        {
-          "hs": "h6",
-          "mad": "118",
-          "mastery": "2",
-          "mobCount": "2",
-          "mpCon": "16"
-        },
-        {
-          "hs": "h7",
-          "mad": "121",
-          "mastery": "3",
-          "mobCount": "3",
-          "mpCon": "16"
-        },
-        {
-          "hs": "h8",
-          "mad": "124",
-          "mastery": "3",
-          "mobCount": "3",
-          "mpCon": "16"
-        },
-        {
-          "hs": "h9",
-          "mad": "127",
-          "mastery": "3",
-          "mobCount": "3",
-          "mpCon": "16"
-        }
+        { "hs": "h1", "mad": "104", "mastery": "1", "mobCount": "2", "mpCon": "16" },
+        { "hs": "h2", "mad": "108", "mastery": "1", "mobCount": "2", "mpCon": "16" },
+        { "hs": "h3", "mad": "112", "mastery": "1", "mobCount": "2", "mpCon": "16" },
+        { "hs": "h4", "mad": "116", "mastery": "2", "mobCount": "2", "mpCon": "16" },
+        { "hs": "h5", "mad": "120", "mastery": "2", "mobCount": "2", "mpCon": "16" },
+        { "hs": "h6", "mad": "124", "mastery": "2", "mobCount": "2", "mpCon": "16" },
+        { "hs": "h7", "mad": "128", "mastery": "3", "mobCount": "3", "mpCon": "16" },
+        { "hs": "h8", "mad": "132", "mastery": "3", "mobCount": "3", "mpCon": "16" },
+        { "hs": "h9", "mad": "136", "mastery": "3", "mobCount": "3", "mpCon": "16" },
+        { "hs": "h10", "mad": "140", "mastery": "4", "mobCount": "3", "mpCon": "16" },
+        { "hs": "h11", "mad": "144", "mastery": "4", "mobCount": "3", "mpCon": "24" },
+        { "hs": "h12", "mad": "148", "mastery": "4", "mobCount": "3", "mpCon": "24" },
+        { "hs": "h13", "mad": "152", "mastery": "5", "mobCount": "4", "mpCon": "24" },
+        { "hs": "h14", "mad": "156", "mastery": "5", "mobCount": "4", "mpCon": "24" },
+        { "hs": "h15", "mad": "160", "mastery": "5", "mobCount": "4", "mpCon": "24" },
+        { "hs": "h16", "mad": "164", "mastery": "6", "mobCount": "4", "mpCon": "24" },
+        { "hs": "h17", "mad": "168", "mastery": "6", "mobCount": "4", "mpCon": "24" },
+        { "hs": "h18", "mad": "172", "mastery": "6", "mobCount": "4", "mpCon": "24" },
+        { "hs": "h19", "mad": "176", "mastery": "7", "mobCount": "5", "mpCon": "24" },
+        { "hs": "h20", "mad": "180", "mastery": "7", "mobCount": "5", "mpCon": "24" },
+        { "hs": "h21", "mad": "183", "mastery": "7", "mobCount": "5", "mpCon": "30" },
+        { "hs": "h22", "mad": "186", "mastery": "8", "mobCount": "5", "mpCon": "30" },
+        { "hs": "h23", "mad": "189", "mastery": "8", "mobCount": "5", "mpCon": "30" },
+        { "hs": "h24", "mad": "192", "mastery": "8", "mobCount": "5", "mpCon": "30" },
+        { "hs": "h25", "mad": "195", "mastery": "9", "mobCount": "6", "mpCon": "30" },
+        { "hs": "h26", "mad": "198", "mastery": "9", "mobCount": "6", "mpCon": "29" },
+        { "hs": "h27", "mad": "201", "mastery": "9", "mobCount": "6", "mpCon": "28" },
+        { "hs": "h28", "mad": "204", "mastery": "10", "mobCount": "6", "mpCon": "27" },
+        { "hs": "h29", "mad": "207", "mastery": "10", "mobCount": "6", "mpCon": "26" },
+        { "hs": "h30", "mad": "210", "mastery": "10", "mobCount": "6", "mpCon": "25" }
       ]
     },
     {
