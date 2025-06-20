@@ -1441,7 +1441,7 @@
         "desc": "고압의 전류를 사용하여 하나의 적에게 전기 속성의 공격을 한다. 체인 라이트닝에 맞은 적의 주위에 다른 적이 있으면 추가로 데미지를 입는다.",
         "name": "체인 라이트닝",
         "bookName": "",
-        "detail": "[정확하지 않음]MP #mpCon 소비, 기본 공격력 #mad, 숙련도 #mastery%, 최대 #mobCount명에게 데미지를 줌"
+        "detail": "MP #mpCon 소비, 기본 공격력 #mad, 숙련도 #mastery%, 최대 #mobCount명에게 데미지를 줌"
       },
       "levelProperties": [
         { "hs": "h1", "mad": "104", "mastery": "1", "mobCount": "2", "mpCon": "16" },
