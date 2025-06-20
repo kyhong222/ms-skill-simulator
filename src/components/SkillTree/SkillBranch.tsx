@@ -160,6 +160,24 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
     onLevelChange(skillId, newLevel);
   };
 
+  const decreaseZeroLevel = (skillId: number) => {
+    const currentLevel = getLevel(skillId);
+    if (currentLevel <= 0) return; // 이미 최소 레벨
+    // 해당 스킬 객체 찾기
+    const skill = skillbook.skills.find((s) => s.id === skillId);
+    if (!skill) return;
+    // 필요 스킬 조건 확인
+    if (!isSatisfiedRequiredSkills(skillId)) {
+      return;
+    }
+    // 사용한 포인트가 차수에 맞는지 확인
+    if (!isBranchActivated()) {
+      return;
+    }
+    // 조건 만족하면 레벨 다운
+    onLevelChange(skillId, 0);
+  };
+
   return (
     // 차수에 맞는 포인트를 사용하지 않았으면 branch 전체를 비활성화
     <div
@@ -242,8 +260,22 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
                       }`}
                       style={{ transform: "scale(0.75)" }}
                       aria-label="Decrease level"
+                      disabled={getLevel(skill.id) === 0}
                     >
                       ▼
+                    </button>
+                    <button
+                      onClick={() => decreaseZeroLevel(skill.id)}
+                      className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
+                        isSkillDecreasable(skill.id)
+                          ? "bg-orange-500 hover:bg-orange-600 cursor-pointer"
+                          : "bg-gray-400 cursor-not-allowed"
+                      }`}
+                      style={{ transform: "scale(0.75)" }}
+                      aria-label="Decrease to zero"
+                      disabled={getLevel(skill.id) === 0}
+                    >
+                      0
                     </button>
                     <button
                       onClick={() => increaseMaxLevel(skill.id)}
