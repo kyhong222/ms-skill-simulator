@@ -50,6 +50,11 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
         }
       }
 
+      // mastery(숙련도) 파싱
+      if (key === "mastery" && skill.description?.name !== "비홀더스 버프") {
+        value = String(Number(value) * 5 + 10);
+      }
+
       value = SkillToolTipPostfix(skill, curLevel, key, value);
 
       // value가 -로 시작하면 -를 제거
