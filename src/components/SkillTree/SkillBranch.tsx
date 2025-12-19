@@ -16,13 +16,21 @@ interface SkillBranchProps {
 
 const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   const [hoveredSkillId, setHoveredSkillId] = useState<number | null>(null);
-  const [tooltipPosition, setTooltipPosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  const [tooltipPosition, setTooltipPosition] = useState<{ x: number; y: number; isBottomHalf?: boolean }>({ x: 0, y: 0 });
 
   const { skillbook, skillLevels, onLevelChange, branchIndex, jobLevel, usedSkillPoints, remainingSkillPoints } = props;
 
-  // 마우스 이동 시 좌표 저장
+  // 마우스 이동 시 좌표 저장 (화면 절반 기준으로 위/아래 결정)
   const handleMouseMove = (e: React.MouseEvent) => {
-    setTooltipPosition({ x: e.clientX, y: e.clientY });
+    const screenHeight = window.innerHeight;
+    const mouseY = e.clientY;
+    const isBottomHalf = mouseY > screenHeight / 2;
+    
+    setTooltipPosition({ 
+      x: e.clientX, 
+      y: e.clientY,
+      isBottomHalf 
+    });
   };
 
   // 차수에 따른 포인트 계산
@@ -300,10 +308,15 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
             {hoveredSkillId === skill.id &&
               ReactDOM.createPortal(
                 <div
-                  className="absolute z-50 mt-1"
+                  className="absolute z-50"
                   style={{
                     position: "fixed",
-                    top: tooltipPosition.y,
+                    top: tooltipPosition.isBottomHalf 
+                      ? "auto"  // 하단에 있을 때는 bottom 기준으로 배치
+                      : tooltipPosition.y,
+                    bottom: tooltipPosition.isBottomHalf 
+                      ? window.innerHeight - tooltipPosition.y  // 마우스 위에 표시
+                      : "auto",
                     left: tooltipPosition.x,
                     pointerEvents: "none", // 마우스 이벤트 무시
                     backgroundColor: "white",
@@ -312,6 +325,7 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
                     padding: "8px",
                     maxWidth: "300px",
                     zIndex: 9999,
+                    transform: tooltipPosition.isBottomHalf ? "translateY(-100%)" : "none",  // 하단일 때 위로 이동
                   }}
                 >
                   <SkillTooltip skill={skill} allSkills={skillLevels} curLevel={getLevel(skill.id)} />
