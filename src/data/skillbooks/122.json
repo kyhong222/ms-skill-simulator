@@ -1041,7 +1041,7 @@
       },
       "levelProperties": [
         {
-          "damage": "102",
+          "damage": "112",
           "hs": "h1",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "11",
@@ -1053,127 +1053,7 @@
           "z": "43"
         },
         {
-          "damage": "120",
-          "hs": "h10",
-          "lt": "Point [ X=-45, Y=-30 ]",
-          "mad": "20",
-          "mobCount": "6",
-          "mpCon": "20",
-          "rb": "Point [ X=45, Y=30 ]",
-          "time": "150",
-          "x": "1",
-          "z": "70"
-        },
-        {
-          "damage": "122",
-          "hs": "h11",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "21",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "165",
-          "x": "1",
-          "z": "73"
-        },
-        {
-          "damage": "124",
-          "hs": "h12",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "22",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "180",
-          "x": "1",
-          "z": "76"
-        },
-        {
-          "damage": "126",
-          "hs": "h13",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "23",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "195",
-          "x": "1",
-          "z": "79"
-        },
-        {
-          "damage": "128",
-          "hs": "h14",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "24",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "210",
-          "x": "1",
-          "z": "82"
-        },
-        {
-          "damage": "130",
-          "hs": "h15",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "25",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "225",
-          "x": "1",
-          "z": "85"
-        },
-        {
-          "damage": "132",
-          "hs": "h16",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "26",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "240",
-          "x": "1",
-          "z": "88"
-        },
-        {
-          "damage": "134",
-          "hs": "h17",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "27",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "255",
-          "x": "1",
-          "z": "91"
-        },
-        {
-          "damage": "136",
-          "hs": "h18",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "28",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "270",
-          "x": "1",
-          "z": "94"
-        },
-        {
-          "damage": "138",
-          "hs": "h19",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "29",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "285",
-          "x": "1",
-          "z": "97"
-        },
-        {
-          "damage": "104",
+          "damage": "114",
           "hs": "h2",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "12",
@@ -1185,19 +1065,7 @@
           "z": "46"
         },
         {
-          "damage": "140",
-          "hs": "h20",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "30",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "300",
-          "x": "1",
-          "z": "100"
-        },
-        {
-          "damage": "106",
+          "damage": "116",
           "hs": "h3",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "13",
@@ -1209,7 +1077,7 @@
           "z": "49"
         },
         {
-          "damage": "108",
+          "damage": "118",
           "hs": "h4",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "14",
@@ -1221,7 +1089,7 @@
           "z": "52"
         },
         {
-          "damage": "110",
+          "damage": "120",
           "hs": "h5",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "15",
@@ -1232,8 +1100,9 @@
           "x": "1",
           "z": "55"
         },
+
         {
-          "damage": "112",
+          "damage": "122",
           "hs": "h6",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "16",
@@ -1245,7 +1114,7 @@
           "z": "58"
         },
         {
-          "damage": "114",
+          "damage": "124",
           "hs": "h7",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "17",
@@ -1257,7 +1126,7 @@
           "z": "61"
         },
         {
-          "damage": "116",
+          "damage": "126",
           "hs": "h8",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "18",
@@ -1269,7 +1138,7 @@
           "z": "64"
         },
         {
-          "damage": "118",
+          "damage": "128",
           "hs": "h9",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "19",
@@ -1279,6 +1148,140 @@
           "time": "135",
           "x": "1",
           "z": "67"
+        },
+        {
+          "damage": "130",
+          "hs": "h10",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "20",
+          "mobCount": "6",
+          "mpCon": "20",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "150",
+          "x": "1",
+          "z": "70"
+        },
+
+        {
+          "damage": "132",
+          "hs": "h11",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "21",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "165",
+          "x": "1",
+          "z": "73"
+        },
+        {
+          "damage": "134",
+          "hs": "h12",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "22",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "180",
+          "x": "1",
+          "z": "76"
+        },
+        {
+          "damage": "136",
+          "hs": "h13",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "23",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "195",
+          "x": "1",
+          "z": "79"
+        },
+        {
+          "damage": "138",
+          "hs": "h14",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "24",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "210",
+          "x": "1",
+          "z": "82"
+        },
+        {
+          "damage": "140",
+          "hs": "h15",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "25",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "225",
+          "x": "1",
+          "z": "85"
+        },
+
+        {
+          "damage": "142",
+          "hs": "h16",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "26",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "240",
+          "x": "1",
+          "z": "88"
+        },
+        {
+          "damage": "144",
+          "hs": "h17",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "27",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "255",
+          "x": "1",
+          "z": "91"
+        },
+        {
+          "damage": "146",
+          "hs": "h18",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "28",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "270",
+          "x": "1",
+          "z": "94"
+        },
+        {
+          "damage": "148",
+          "hs": "h19",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "29",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "285",
+          "x": "1",
+          "z": "97"
+        },
+        {
+          "damage": "150",
+          "hs": "h20",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "30",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "300",
+          "x": "1",
+          "z": "100"
         }
       ]
     },
@@ -1301,7 +1304,7 @@
       },
       "levelProperties": [
         {
-          "damage": "102",
+          "damage": "112",
           "hs": "h1",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "11",
@@ -1313,127 +1316,7 @@
           "z": "43"
         },
         {
-          "damage": "120",
-          "hs": "h10",
-          "lt": "Point [ X=-45, Y=-30 ]",
-          "mad": "20",
-          "mobCount": "6",
-          "mpCon": "20",
-          "rb": "Point [ X=45, Y=30 ]",
-          "time": "150",
-          "x": "1",
-          "z": "70"
-        },
-        {
-          "damage": "122",
-          "hs": "h11",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "21",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "165",
-          "x": "1",
-          "z": "73"
-        },
-        {
-          "damage": "124",
-          "hs": "h12",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "22",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "180",
-          "x": "1",
-          "z": "76"
-        },
-        {
-          "damage": "126",
-          "hs": "h13",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "23",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "195",
-          "x": "1",
-          "z": "79"
-        },
-        {
-          "damage": "128",
-          "hs": "h14",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "24",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "210",
-          "x": "1",
-          "z": "82"
-        },
-        {
-          "damage": "130",
-          "hs": "h15",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "25",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "225",
-          "x": "1",
-          "z": "85"
-        },
-        {
-          "damage": "132",
-          "hs": "h16",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "26",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "240",
-          "x": "1",
-          "z": "88"
-        },
-        {
-          "damage": "134",
-          "hs": "h17",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "27",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "255",
-          "x": "1",
-          "z": "91"
-        },
-        {
-          "damage": "136",
-          "hs": "h18",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "28",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "270",
-          "x": "1",
-          "z": "94"
-        },
-        {
-          "damage": "138",
-          "hs": "h19",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "29",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "285",
-          "x": "1",
-          "z": "97"
-        },
-        {
-          "damage": "104",
+          "damage": "114",
           "hs": "h2",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "12",
@@ -1445,19 +1328,7 @@
           "z": "46"
         },
         {
-          "damage": "140",
-          "hs": "h20",
-          "lt": "Point [ X=-50, Y=-35 ]",
-          "mad": "30",
-          "mobCount": "6",
-          "mpCon": "30",
-          "rb": "Point [ X=50, Y=35 ]",
-          "time": "300",
-          "x": "1",
-          "z": "100"
-        },
-        {
-          "damage": "106",
+          "damage": "116",
           "hs": "h3",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "13",
@@ -1469,7 +1340,7 @@
           "z": "49"
         },
         {
-          "damage": "108",
+          "damage": "118",
           "hs": "h4",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "14",
@@ -1481,7 +1352,7 @@
           "z": "52"
         },
         {
-          "damage": "110",
+          "damage": "120",
           "hs": "h5",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "15",
@@ -1492,8 +1363,9 @@
           "x": "1",
           "z": "55"
         },
+
         {
-          "damage": "112",
+          "damage": "122",
           "hs": "h6",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "16",
@@ -1505,7 +1377,7 @@
           "z": "58"
         },
         {
-          "damage": "114",
+          "damage": "124",
           "hs": "h7",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "17",
@@ -1517,7 +1389,7 @@
           "z": "61"
         },
         {
-          "damage": "116",
+          "damage": "126",
           "hs": "h8",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "18",
@@ -1529,7 +1401,7 @@
           "z": "64"
         },
         {
-          "damage": "118",
+          "damage": "128",
           "hs": "h9",
           "lt": "Point [ X=-45, Y=-30 ]",
           "mad": "19",
@@ -1539,6 +1411,140 @@
           "time": "135",
           "x": "1",
           "z": "67"
+        },
+        {
+          "damage": "130",
+          "hs": "h10",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "20",
+          "mobCount": "6",
+          "mpCon": "20",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "150",
+          "x": "1",
+          "z": "70"
+        },
+
+        {
+          "damage": "132",
+          "hs": "h11",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "21",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "165",
+          "x": "1",
+          "z": "73"
+        },
+        {
+          "damage": "134",
+          "hs": "h12",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "22",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "180",
+          "x": "1",
+          "z": "76"
+        },
+        {
+          "damage": "136",
+          "hs": "h13",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "23",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "195",
+          "x": "1",
+          "z": "79"
+        },
+        {
+          "damage": "138",
+          "hs": "h14",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "24",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "210",
+          "x": "1",
+          "z": "82"
+        },
+        {
+          "damage": "140",
+          "hs": "h15",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "25",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "225",
+          "x": "1",
+          "z": "85"
+        },
+
+        {
+          "damage": "142",
+          "hs": "h16",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "26",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "240",
+          "x": "1",
+          "z": "88"
+        },
+        {
+          "damage": "144",
+          "hs": "h17",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "27",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "255",
+          "x": "1",
+          "z": "91"
+        },
+        {
+          "damage": "146",
+          "hs": "h18",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "28",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "270",
+          "x": "1",
+          "z": "94"
+        },
+        {
+          "damage": "148",
+          "hs": "h19",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "29",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "285",
+          "x": "1",
+          "z": "97"
+        },
+        {
+          "damage": "150",
+          "hs": "h20",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "30",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "300",
+          "x": "1",
+          "z": "100"
         }
       ]
     },
@@ -1560,20 +1566,20 @@
         "detail": "MP #mpCon 소비, 데미지 #damage%, 범위 #distance%"
       },
       "levelProperties": [
-        { "hs": "h1",  "damage": "72",  "distance": "80",  "mpCon": "22" },
-        { "hs": "h2",  "damage": "74",  "distance": "80",  "mpCon": "24" },
-        { "hs": "h3",  "damage": "76",  "distance": "80",  "mpCon": "26" },
-        { "hs": "h4",  "damage": "78",  "distance": "85",  "mpCon": "28" },
-        { "hs": "h5",  "damage": "80",  "distance": "85",  "mpCon": "30" },
-        { "hs": "h6",  "damage": "82",  "distance": "85",  "mpCon": "32" },
-        { "hs": "h7",  "damage": "84",  "distance": "85",  "mpCon": "34" },
-        { "hs": "h8",  "damage": "86",  "distance": "90",  "mpCon": "36" },
-        { "hs": "h9",  "damage": "88",  "distance": "90",  "mpCon": "38" },
-        { "hs": "h10", "damage": "90",  "distance": "90",  "mpCon": "40" },
-        { "hs": "h11", "damage": "92",  "distance": "95",  "mpCon": "42" },
-        { "hs": "h12", "damage": "94",  "distance": "95",  "mpCon": "44" },
-        { "hs": "h13", "damage": "96",  "distance": "95",  "mpCon": "46" },
-        { "hs": "h14", "damage": "98",  "distance": "100", "mpCon": "48" },
+        { "hs": "h1", "damage": "72", "distance": "80", "mpCon": "22" },
+        { "hs": "h2", "damage": "74", "distance": "80", "mpCon": "24" },
+        { "hs": "h3", "damage": "76", "distance": "80", "mpCon": "26" },
+        { "hs": "h4", "damage": "78", "distance": "85", "mpCon": "28" },
+        { "hs": "h5", "damage": "80", "distance": "85", "mpCon": "30" },
+        { "hs": "h6", "damage": "82", "distance": "85", "mpCon": "32" },
+        { "hs": "h7", "damage": "84", "distance": "85", "mpCon": "34" },
+        { "hs": "h8", "damage": "86", "distance": "90", "mpCon": "36" },
+        { "hs": "h9", "damage": "88", "distance": "90", "mpCon": "38" },
+        { "hs": "h10", "damage": "90", "distance": "90", "mpCon": "40" },
+        { "hs": "h11", "damage": "92", "distance": "95", "mpCon": "42" },
+        { "hs": "h12", "damage": "94", "distance": "95", "mpCon": "44" },
+        { "hs": "h13", "damage": "96", "distance": "95", "mpCon": "46" },
+        { "hs": "h14", "damage": "98", "distance": "100", "mpCon": "48" },
         { "hs": "h15", "damage": "100", "distance": "100", "mpCon": "50" },
         { "hs": "h16", "damage": "102", "distance": "100", "mpCon": "52" },
         { "hs": "h17", "damage": "104", "distance": "105", "mpCon": "54" },
@@ -1609,156 +1615,36 @@
         "detail": "MP #mpCon 소비, 데미지 #damage%"
       },
       "levelProperties": [
-        {
-          "damage": "170",
-          "hs": "h1",
-          "mpCon": "17"
-        },
-        {
-          "damage": "350",
-          "hs": "h10",
-          "mpCon": "20"
-        },
-        {
-          "damage": "360",
-          "hs": "h11",
-          "mpCon": "23"
-        },
-        {
-          "damage": "370",
-          "hs": "h12",
-          "mpCon": "23"
-        },
-        {
-          "damage": "380",
-          "hs": "h13",
-          "mpCon": "23"
-        },
-        {
-          "damage": "390",
-          "hs": "h14",
-          "mpCon": "23"
-        },
-        {
-          "damage": "400",
-          "hs": "h15",
-          "mpCon": "23"
-        },
-        {
-          "damage": "410",
-          "hs": "h16",
-          "mpCon": "26"
-        },
-        {
-          "damage": "420",
-          "hs": "h17",
-          "mpCon": "26"
-        },
-        {
-          "damage": "430",
-          "hs": "h18",
-          "mpCon": "26"
-        },
-        {
-          "damage": "440",
-          "hs": "h19",
-          "mpCon": "26"
-        },
-        {
-          "damage": "190",
-          "hs": "h2",
-          "mpCon": "17"
-        },
-        {
-          "damage": "450",
-          "hs": "h20",
-          "mpCon": "26"
-        },
-        {
-          "damage": "460",
-          "hs": "h21",
-          "mpCon": "29"
-        },
-        {
-          "damage": "470",
-          "hs": "h22",
-          "mpCon": "29"
-        },
-        {
-          "damage": "480",
-          "hs": "h23",
-          "mpCon": "29"
-        },
-        {
-          "damage": "490",
-          "hs": "h24",
-          "mpCon": "29"
-        },
-        {
-          "damage": "500",
-          "hs": "h25",
-          "mpCon": "29"
-        },
-        {
-          "damage": "510",
-          "hs": "h26",
-          "mpCon": "28"
-        },
-        {
-          "damage": "520",
-          "hs": "h27",
-          "mpCon": "27"
-        },
-        {
-          "damage": "530",
-          "hs": "h28",
-          "mpCon": "26"
-        },
-        {
-          "damage": "540",
-          "hs": "h29",
-          "mpCon": "25"
-        },
-        {
-          "damage": "210",
-          "hs": "h3",
-          "mpCon": "17"
-        },
-        {
-          "damage": "550",
-          "hs": "h30",
-          "mpCon": "24"
-        },
-        {
-          "damage": "230",
-          "hs": "h4",
-          "mpCon": "17"
-        },
-        {
-          "damage": "250",
-          "hs": "h5",
-          "mpCon": "17"
-        },
-        {
-          "damage": "270",
-          "hs": "h6",
-          "mpCon": "20"
-        },
-        {
-          "damage": "290",
-          "hs": "h7",
-          "mpCon": "20"
-        },
-        {
-          "damage": "310",
-          "hs": "h8",
-          "mpCon": "20"
-        },
-        {
-          "damage": "330",
-          "hs": "h9",
-          "mpCon": "20"
-        }
+        { "hs": "h1",  "damage": "200", "mpCon": "17" },
+        { "hs": "h2",  "damage": "220", "mpCon": "17" },
+        { "hs": "h3",  "damage": "240", "mpCon": "17" },
+        { "hs": "h4",  "damage": "260", "mpCon": "17" },
+        { "hs": "h5",  "damage": "280", "mpCon": "17" },
+        { "hs": "h6",  "damage": "300", "mpCon": "20" },
+        { "hs": "h7",  "damage": "320", "mpCon": "20" },
+        { "hs": "h8",  "damage": "340", "mpCon": "20" },
+        { "hs": "h9",  "damage": "360", "mpCon": "20" },
+        { "hs": "h10", "damage": "380", "mpCon": "20" },
+        { "hs": "h11", "damage": "390", "mpCon": "23" },
+        { "hs": "h12", "damage": "400", "mpCon": "23" },
+        { "hs": "h13", "damage": "410", "mpCon": "23" },
+        { "hs": "h14", "damage": "420", "mpCon": "23" },
+        { "hs": "h15", "damage": "430", "mpCon": "23" },
+        { "hs": "h16", "damage": "440", "mpCon": "26" },
+        { "hs": "h17", "damage": "450", "mpCon": "26" },
+        { "hs": "h18", "damage": "460", "mpCon": "26" },
+        { "hs": "h19", "damage": "470", "mpCon": "26" },
+        { "hs": "h20", "damage": "480", "mpCon": "26" },
+        { "hs": "h21", "damage": "490", "mpCon": "29" },
+        { "hs": "h22", "damage": "500", "mpCon": "29" },
+        { "hs": "h23", "damage": "510", "mpCon": "29" },
+        { "hs": "h24", "damage": "520", "mpCon": "29" },
+        { "hs": "h25", "damage": "530", "mpCon": "29" },
+        { "hs": "h26", "damage": "540", "mpCon": "28" },
+        { "hs": "h27", "damage": "550", "mpCon": "27" },
+        { "hs": "h28", "damage": "560", "mpCon": "26" },
+        { "hs": "h29", "damage": "570", "mpCon": "25" },
+        { "hs": "h30", "damage": "580", "mpCon": "24" }
       ]
     },
     {
