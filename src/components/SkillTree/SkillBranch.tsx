@@ -313,11 +313,11 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
                     position: "fixed",
                     top: tooltipPosition.isBottomHalf 
                       ? "auto"  // 하단에 있을 때는 bottom 기준으로 배치
-                      : tooltipPosition.y,
+                      : tooltipPosition.y + 10,  // 마우스 아래 10px
                     bottom: tooltipPosition.isBottomHalf 
-                      ? window.innerHeight - tooltipPosition.y  // 마우스 위에 표시
+                      ? window.innerHeight - tooltipPosition.y + 10  // 마우스 위 10px
                       : "auto",
-                    left: tooltipPosition.x,
+                    left: tooltipPosition.x + 10,  // 마우스 오른쪽 10px
                     pointerEvents: "none", // 마우스 이벤트 무시
                     backgroundColor: "white",
                     boxShadow: "0 0 8px rgba(0,0,0,0.15)",
@@ -325,7 +325,6 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
                     padding: "8px",
                     maxWidth: "300px",
                     zIndex: 9999,
-                    transform: tooltipPosition.isBottomHalf ? "translateY(-100%)" : "none",  // 하단일 때 위로 이동
                   }}
                 >
                   <SkillTooltip skill={skill} allSkills={skillLevels} curLevel={getLevel(skill.id)} />
