@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { subJobs } from "../../data/jobs";
 import type { IJobSkillBook, IJobSkill } from "../../types/jobSkillBook";
 import SkillBranch from "./SkillBranch";
@@ -37,8 +37,77 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
   const [, setAllSkills] = useState<{ id: number; name: string }[]>([]);
   const [currentLevel, setCurrentLevel] = useState(10); // 기본값 10
 
+  // localStorage에서 데이터 불러오기
+  const loadFromLocalStorage = (jobId: number, loadedSkills: { id: number; name: string }[]) => {
+    const storageKey = `skillTree_${jobId}`;
+    const savedData = localStorage.getItem(storageKey);
+    
+    if (savedData) {
+      try {
+        const parsed = JSON.parse(savedData);
+        setCurrentLevel(parsed.currentLevel || 10);
+        
+        // 저장된 스킬 레벨 복원
+        const restoredSkills = loadedSkills.map((s) => {
+          const savedSkill = parsed.skillLevels?.find((skill: SkillLevel) => skill.id === s.id);
+          return {
+            id: s.id,
+            name: s.name,
+            level: savedSkill?.level || 0,
+          };
+        });
+        return restoredSkills;
+      } catch (error) {
+        console.error("Failed to parse localStorage data", error);
+      }
+    }
+    
+    // 저장된 데이터가 없으면 초기값 반환
+    return loadedSkills.map((s) => ({ id: s.id, name: s.name, level: 0 }));
+  };
+
+  // localStorage에 데이터 저장하기
+  const saveToLocalStorage = (jobId: number, levels: SkillLevel[], charLevel: number) => {
+    const storageKey = `skillTree_${jobId}`;
+    const dataToSave = {
+      currentLevel: charLevel,
+      skillLevels: levels,
+    };
+    localStorage.setItem(storageKey, JSON.stringify(dataToSave));
+  };
+
+  // 스킬 레벨 증가/감소 핸들러
+  const onLevelChange = (skillId: number, newLevel: number) => {
+    setSkillLevels((prev) => {
+      const updated = prev.map((skill) => (skill.id === skillId ? { ...skill, level: newLevel } : skill));
+      // localStorage에 저장
+      saveToLocalStorage(selectedJobId, updated, currentLevel);
+      return updated;
+    });
+  };
+
+  // 스킬 초기화 핸들러
+  const resetLevels = useCallback(() => {
+    setSkillLevels((prev) => {
+      const reset = prev.map((skill) => ({ ...skill, level: 0 }));
+      // localStorage에 저장
+      saveToLocalStorage(selectedJobId, reset, currentLevel);
+      return reset;
+    });
+  }, [selectedJobId, currentLevel]);
+
+  // 캐릭터 레벨 변경 시 localStorage에 저장
+  const handleLevelChange = (newLevel: number) => {
+    setCurrentLevel(newLevel);
+    saveToLocalStorage(selectedJobId, skillLevels, newLevel);
+  };
+
+  // onResetRef 등록
   useEffect(() => {
     if (onResetRef) onResetRef(resetLevels);
+  }, [onResetRef, resetLevels]);
+
+  useEffect(() => {
     const loadSkills = async () => {
       setLoading(true);
       const jobIds = subJobs[selectedJobId];
@@ -63,20 +132,16 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
 
       setSkillbooks(results);
       setAllSkills(loadedSkills);
-      setSkillLevels(loadedSkills.map((s) => ({ id: s.id, name: s.name, level: 0 })));
+      
+      // localStorage에서 데이터 불러오기
+      const restoredSkills = loadFromLocalStorage(selectedJobId, loadedSkills);
+      setSkillLevels(restoredSkills);
+      
       setLoading(false);
     };
 
     loadSkills();
-  }, [selectedJobId, onResetRef]);
-
-  const onLevelChange = (skillId: number, newLevel: number) => {
-    setSkillLevels((prev) => prev.map((skill) => (skill.id === skillId ? { ...skill, level: newLevel } : skill)));
-  };
-
-  const resetLevels = () => {
-    setSkillLevels((prev) => prev.map((skill) => ({ ...skill, level: 0 })));
-  };
+  }, [selectedJobId]);
 
   const jobLevel = calcJobLevel(selectedJobId);
   const totalSkillPoints = calculateSkillPoints(currentLevel, jobLevel);
@@ -103,7 +168,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
               min={jobLevel}
               max={300}
               value={currentLevel}
-              onChange={(e) => setCurrentLevel(Number(e.target.value))}
+              onChange={(e) => handleLevelChange(Number(e.target.value))}
               className="ml-2 px-2 py-1 border rounded w-20 text-grey-800 bg-white"
             />
           </label>
