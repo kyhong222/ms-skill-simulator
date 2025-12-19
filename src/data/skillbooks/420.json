@@ -841,186 +841,36 @@
         "detail": "MP #mpCon 소비하여 #damage%의 데미지로 #attackCount번 적을 공격"
       },
       "levelProperties": [
-        {
-          "attackCount": "4",
-          "damage": "40",
-          "hs": "h1",
-          "mpCon": "15"
-        },
-        {
-          "attackCount": "4",
-          "damage": "74",
-          "hs": "h10",
-          "mpCon": "15"
-        },
-        {
-          "attackCount": "5",
-          "damage": "60",
-          "hs": "h11",
-          "mpCon": "18"
-        },
-        {
-          "attackCount": "5",
-          "damage": "62",
-          "hs": "h12",
-          "mpCon": "18"
-        },
-        {
-          "attackCount": "5",
-          "damage": "64",
-          "hs": "h13",
-          "mpCon": "18"
-        },
-        {
-          "attackCount": "5",
-          "damage": "66",
-          "hs": "h14",
-          "mpCon": "18"
-        },
-        {
-          "attackCount": "5",
-          "damage": "68",
-          "hs": "h15",
-          "mpCon": "18"
-        },
-        {
-          "attackCount": "5",
-          "damage": "70",
-          "hs": "h16",
-          "mpCon": "18"
-        },
-        {
-          "attackCount": "5",
-          "damage": "72",
-          "hs": "h17",
-          "mpCon": "18"
-        },
-        {
-          "attackCount": "5",
-          "damage": "74",
-          "hs": "h18",
-          "mpCon": "18"
-        },
-        {
-          "attackCount": "5",
-          "damage": "76",
-          "hs": "h19",
-          "mpCon": "18"
-        },
-        {
-          "attackCount": "4",
-          "damage": "44",
-          "hs": "h2",
-          "mpCon": "15"
-        },
-        {
-          "attackCount": "5",
-          "damage": "78",
-          "hs": "h20",
-          "mpCon": "18"
-        },
-        {
-          "attackCount": "6",
-          "damage": "71",
-          "hs": "h21",
-          "mpCon": "27"
-        },
-        {
-          "attackCount": "6",
-          "damage": "72",
-          "hs": "h22",
-          "mpCon": "27"
-        },
-        {
-          "attackCount": "6",
-          "damage": "73",
-          "hs": "h23",
-          "mpCon": "27"
-        },
-        {
-          "attackCount": "6",
-          "damage": "74",
-          "hs": "h24",
-          "mpCon": "27"
-        },
-        {
-          "attackCount": "6",
-          "damage": "75",
-          "hs": "h25",
-          "mpCon": "27"
-        },
-        {
-          "attackCount": "6",
-          "damage": "76",
-          "hs": "h26",
-          "mpCon": "27"
-        },
-        {
-          "attackCount": "6",
-          "damage": "77",
-          "hs": "h27",
-          "mpCon": "27"
-        },
-        {
-          "attackCount": "6",
-          "damage": "78",
-          "hs": "h28",
-          "mpCon": "27"
-        },
-        {
-          "attackCount": "6",
-          "damage": "79",
-          "hs": "h29",
-          "mpCon": "27"
-        },
-        {
-          "attackCount": "4",
-          "damage": "48",
-          "hs": "h3",
-          "mpCon": "15"
-        },
-        {
-          "attackCount": "6",
-          "damage": "80",
-          "hs": "h30",
-          "mpCon": "27"
-        },
-        {
-          "attackCount": "4",
-          "damage": "52",
-          "hs": "h4",
-          "mpCon": "15"
-        },
-        {
-          "attackCount": "4",
-          "damage": "56",
-          "hs": "h5",
-          "mpCon": "15"
-        },
-        {
-          "attackCount": "4",
-          "damage": "60",
-          "hs": "h6",
-          "mpCon": "15"
-        },
-        {
-          "attackCount": "4",
-          "damage": "64",
-          "hs": "h7",
-          "mpCon": "15"
-        },
-        {
-          "attackCount": "4",
-          "damage": "68",
-          "hs": "h8",
-          "mpCon": "15"
-        },
-        {
-          "attackCount": "4",
-          "damage": "72",
-          "hs": "h9",
-          "mpCon": "15"
-        }
+        { "attackCount": "4", "damage": "40", "hs": "h1", "mpCon": "9" },
+        { "attackCount": "4", "damage": "44", "hs": "h2", "mpCon": "9" },
+        { "attackCount": "4", "damage": "48", "hs": "h3", "mpCon": "9" },
+        { "attackCount": "4", "damage": "52", "hs": "h4", "mpCon": "9" },
+        { "attackCount": "4", "damage": "56", "hs": "h5", "mpCon": "9" },
+        { "attackCount": "4", "damage": "60", "hs": "h6", "mpCon": "9" },
+        { "attackCount": "4", "damage": "64", "hs": "h7", "mpCon": "9" },
+        { "attackCount": "4", "damage": "68", "hs": "h8", "mpCon": "9" },
+        { "attackCount": "4", "damage": "72", "hs": "h9", "mpCon": "9" },
+        { "attackCount": "4", "damage": "74", "hs": "h10", "mpCon": "9" },
+        { "attackCount": "5", "damage": "60", "hs": "h11", "mpCon": "18" },
+        { "attackCount": "5", "damage": "62", "hs": "h12", "mpCon": "18" },
+        { "attackCount": "5", "damage": "64", "hs": "h13", "mpCon": "18" },
+        { "attackCount": "5", "damage": "66", "hs": "h14", "mpCon": "18" },
+        { "attackCount": "5", "damage": "68", "hs": "h15", "mpCon": "18" },
+        { "attackCount": "5", "damage": "70", "hs": "h16", "mpCon": "18" },
+        { "attackCount": "5", "damage": "72", "hs": "h17", "mpCon": "18" },
+        { "attackCount": "5", "damage": "74", "hs": "h18", "mpCon": "18" },
+        { "attackCount": "5", "damage": "76", "hs": "h19", "mpCon": "18" },
+        { "attackCount": "5", "damage": "78", "hs": "h20", "mpCon": "18" },
+        { "attackCount": "6", "damage": "71", "hs": "h21", "mpCon": "27" },
+        { "attackCount": "6", "damage": "72", "hs": "h22", "mpCon": "27" },
+        { "attackCount": "6", "damage": "73", "hs": "h23", "mpCon": "27" },
+        { "attackCount": "6", "damage": "74", "hs": "h24", "mpCon": "27" },
+        { "attackCount": "6", "damage": "75", "hs": "h25", "mpCon": "27" },
+        { "attackCount": "6", "damage": "76", "hs": "h26", "mpCon": "27" },
+        { "attackCount": "6", "damage": "77", "hs": "h27", "mpCon": "27" },
+        { "attackCount": "6", "damage": "78", "hs": "h28", "mpCon": "27" },
+        { "attackCount": "6", "damage": "79", "hs": "h29", "mpCon": "27" },
+        { "attackCount": "6", "damage": "80", "hs": "h30", "mpCon": "27" }
       ]
     }
   ],

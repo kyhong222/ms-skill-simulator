@@ -350,304 +350,244 @@
       },
       "levelProperties": [
         {
-          "damage": "210",
           "hs": "h1",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
+          "damage": "260",
           "mpCon": "12",
           "prop": "22",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "2"
-        },
-        {
-          "damage": "300",
-          "hs": "h10",
           "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "12",
-          "prop": "40",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "2"
+          "rb": "Point [ X=0, Y=0 ]"
         },
         {
-          "damage": "310",
-          "hs": "h11",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "19",
-          "prop": "42",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "3"
-        },
-        {
-          "damage": "320",
-          "hs": "h12",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "19",
-          "prop": "44",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "3"
-        },
-        {
-          "damage": "330",
-          "hs": "h13",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "19",
-          "prop": "46",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "3"
-        },
-        {
-          "damage": "340",
-          "hs": "h14",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "19",
-          "prop": "48",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "3"
-        },
-        {
-          "damage": "350",
-          "hs": "h15",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "19",
-          "prop": "50",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "3"
-        },
-        {
-          "damage": "360",
-          "hs": "h16",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "19",
-          "prop": "52",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "3"
-        },
-        {
-          "damage": "370",
-          "hs": "h17",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "19",
-          "prop": "54",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "3"
-        },
-        {
-          "damage": "380",
-          "hs": "h18",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "19",
-          "prop": "56",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "3"
-        },
-        {
-          "damage": "390",
-          "hs": "h19",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "19",
-          "prop": "58",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "3"
-        },
-        {
-          "damage": "220",
           "hs": "h2",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
+          "damage": "270",
           "mpCon": "12",
           "prop": "24",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "2"
-        },
-        {
-          "damage": "400",
-          "hs": "h20",
           "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "19",
-          "prop": "60",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "3"
+          "rb": "Point [ X=0, Y=0 ]"
         },
         {
-          "damage": "405",
-          "hs": "h21",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "26",
-          "prop": "62",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "4"
-        },
-        {
-          "damage": "410",
-          "hs": "h22",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "26",
-          "prop": "64",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "4"
-        },
-        {
-          "damage": "415",
-          "hs": "h23",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "26",
-          "prop": "66",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "4"
-        },
-        {
-          "damage": "420",
-          "hs": "h24",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "26",
-          "prop": "68",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "4"
-        },
-        {
-          "damage": "425",
-          "hs": "h25",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "26",
-          "prop": "70",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "4"
-        },
-        {
-          "damage": "430",
-          "hs": "h26",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "26",
-          "prop": "72",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "4"
-        },
-        {
-          "damage": "435",
-          "hs": "h27",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "26",
-          "prop": "74",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "4"
-        },
-        {
-          "damage": "440",
-          "hs": "h28",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "26",
-          "prop": "76",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "4"
-        },
-        {
-          "damage": "445",
-          "hs": "h29",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "26",
-          "prop": "78",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "4"
-        },
-        {
-          "damage": "230",
           "hs": "h3",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
+          "damage": "280",
           "mpCon": "12",
           "prop": "26",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "2"
-        },
-        {
-          "damage": "450",
-          "hs": "h30",
           "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
-          "mpCon": "26",
-          "prop": "80",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "4"
+          "rb": "Point [ X=0, Y=0 ]"
         },
         {
-          "damage": "240",
           "hs": "h4",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
+          "damage": "290",
           "mpCon": "12",
           "prop": "28",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "2"
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
         },
         {
-          "damage": "250",
           "hs": "h5",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
+          "damage": "300",
           "mpCon": "12",
           "prop": "30",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "2"
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
         },
         {
-          "damage": "260",
           "hs": "h6",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
+          "damage": "310",
           "mpCon": "12",
           "prop": "32",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "2"
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
         },
         {
-          "damage": "270",
           "hs": "h7",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
+          "damage": "320",
           "mpCon": "12",
           "prop": "34",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "2"
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
         },
         {
-          "damage": "280",
           "hs": "h8",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
+          "damage": "330",
           "mpCon": "12",
           "prop": "36",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "2"
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
         },
         {
-          "damage": "290",
           "hs": "h9",
-          "lt": "Point [ X=-150, Y=-120 ]",
-          "mobCount": "1",
+          "damage": "340",
           "mpCon": "12",
           "prop": "38",
-          "rb": "Point [ X=0, Y=0 ]",
-          "time": "2"
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h10",
+          "damage": "350",
+          "mpCon": "12",
+          "prop": "40",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h11",
+          "damage": "360",
+          "mpCon": "19",
+          "prop": "42",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h12",
+          "damage": "370",
+          "mpCon": "19",
+          "prop": "44",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h13",
+          "damage": "380",
+          "mpCon": "19",
+          "prop": "46",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h14",
+          "damage": "390",
+          "mpCon": "19",
+          "prop": "48",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h15",
+          "damage": "400",
+          "mpCon": "19",
+          "prop": "50",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h16",
+          "damage": "410",
+          "mpCon": "19",
+          "prop": "52",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h17",
+          "damage": "420",
+          "mpCon": "19",
+          "prop": "54",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h18",
+          "damage": "430",
+          "mpCon": "19",
+          "prop": "56",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h19",
+          "damage": "440",
+          "mpCon": "19",
+          "prop": "58",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h20",
+          "damage": "450",
+          "mpCon": "19",
+          "prop": "60",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h21",
+          "damage": "455",
+          "mpCon": "26",
+          "prop": "62",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h22",
+          "damage": "460",
+          "mpCon": "26",
+          "prop": "64",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h23",
+          "damage": "465",
+          "mpCon": "26",
+          "prop": "66",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h24",
+          "damage": "470",
+          "mpCon": "26",
+          "prop": "68",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h25",
+          "damage": "475",
+          "mpCon": "26",
+          "prop": "70",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h26",
+          "damage": "480",
+          "mpCon": "26",
+          "prop": "72",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h27",
+          "damage": "485",
+          "mpCon": "26",
+          "prop": "74",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h28",
+          "damage": "490",
+          "mpCon": "26",
+          "prop": "76",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h29",
+          "damage": "495",
+          "mpCon": "26",
+          "prop": "78",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
+        },
+        {
+          "hs": "h30",
+          "damage": "500",
+          "mpCon": "26",
+          "prop": "80",
+          "lt": "Point [ X=-150, Y=-120 ]",
+          "rb": "Point [ X=0, Y=0 ]"
         }
       ]
     },
@@ -830,7 +770,7 @@
       },
       "levelProperties": [
         {
-          "damage": "110",
+          "damage": "150",
           "hs": "h1",
           "lt": "Point [ X=-130, Y=-50 ]",
           "mobCount": "2",
@@ -839,97 +779,7 @@
           "x": "1"
         },
         {
-          "damage": "150",
-          "hs": "h10",
-          "lt": "Point [ X=-135, Y=-50 ]",
-          "mobCount": "3",
-          "mpCon": "20",
-          "rb": "Point [ X=135, Y=50 ]",
-          "x": "2"
-        },
-        {
           "damage": "160",
-          "hs": "h11",
-          "lt": "Point [ X=-135, Y=-50 ]",
-          "mobCount": "3",
-          "mpCon": "20",
-          "rb": "Point [ X=135, Y=50 ]",
-          "x": "2"
-        },
-        {
-          "damage": "170",
-          "hs": "h12",
-          "lt": "Point [ X=-135, Y=-50 ]",
-          "mobCount": "3",
-          "mpCon": "20",
-          "rb": "Point [ X=135, Y=50 ]",
-          "x": "2"
-        },
-        {
-          "damage": "130",
-          "hs": "h13",
-          "lt": "Point [ X=-140, Y=-50 ]",
-          "mobCount": "4",
-          "mpCon": "30",
-          "rb": "Point [ X=140, Y=50 ]",
-          "x": "3"
-        },
-        {
-          "damage": "140",
-          "hs": "h14",
-          "lt": "Point [ X=-140, Y=-50 ]",
-          "mobCount": "4",
-          "mpCon": "30",
-          "rb": "Point [ X=140, Y=50 ]",
-          "x": "3"
-        },
-        {
-          "damage": "150",
-          "hs": "h15",
-          "lt": "Point [ X=-140, Y=-50 ]",
-          "mobCount": "4",
-          "mpCon": "30",
-          "rb": "Point [ X=140, Y=50 ]",
-          "x": "3"
-        },
-        {
-          "damage": "160",
-          "hs": "h16",
-          "lt": "Point [ X=-140, Y=-50 ]",
-          "mobCount": "4",
-          "mpCon": "30",
-          "rb": "Point [ X=140, Y=50 ]",
-          "x": "3"
-        },
-        {
-          "damage": "170",
-          "hs": "h17",
-          "lt": "Point [ X=-140, Y=-50 ]",
-          "mobCount": "4",
-          "mpCon": "30",
-          "rb": "Point [ X=140, Y=50 ]",
-          "x": "3"
-        },
-        {
-          "damage": "180",
-          "hs": "h18",
-          "lt": "Point [ X=-140, Y=-50 ]",
-          "mobCount": "4",
-          "mpCon": "30",
-          "rb": "Point [ X=140, Y=50 ]",
-          "x": "3"
-        },
-        {
-          "damage": "140",
-          "hs": "h19",
-          "lt": "Point [ X=-145, Y=-50 ]",
-          "mobCount": "5",
-          "mpCon": "22",
-          "rb": "Point [ X=145, Y=50 ]",
-          "x": "4"
-        },
-        {
-          "damage": "120",
           "hs": "h2",
           "lt": "Point [ X=-130, Y=-50 ]",
           "mobCount": "2",
@@ -938,97 +788,7 @@
           "x": "1"
         },
         {
-          "damage": "150",
-          "hs": "h20",
-          "lt": "Point [ X=-145, Y=-50 ]",
-          "mobCount": "5",
-          "mpCon": "22",
-          "rb": "Point [ X=145, Y=50 ]",
-          "x": "4"
-        },
-        {
-          "damage": "160",
-          "hs": "h21",
-          "lt": "Point [ X=-145, Y=-50 ]",
-          "mobCount": "5",
-          "mpCon": "22",
-          "rb": "Point [ X=145, Y=50 ]",
-          "x": "4"
-        },
-        {
           "damage": "170",
-          "hs": "h22",
-          "lt": "Point [ X=-145, Y=-50 ]",
-          "mobCount": "5",
-          "mpCon": "22",
-          "rb": "Point [ X=145, Y=50 ]",
-          "x": "4"
-        },
-        {
-          "damage": "180",
-          "hs": "h23",
-          "lt": "Point [ X=-145, Y=-50 ]",
-          "mobCount": "5",
-          "mpCon": "22",
-          "rb": "Point [ X=145, Y=50 ]",
-          "x": "4"
-        },
-        {
-          "damage": "190",
-          "hs": "h24",
-          "lt": "Point [ X=-145, Y=-50 ]",
-          "mobCount": "5",
-          "mpCon": "22",
-          "rb": "Point [ X=145, Y=50 ]",
-          "x": "4"
-        },
-        {
-          "damage": "160",
-          "hs": "h25",
-          "lt": "Point [ X=-150, Y=-50 ]",
-          "mobCount": "6",
-          "mpCon": "25",
-          "rb": "Point [ X=150, Y=50 ]",
-          "x": "5"
-        },
-        {
-          "damage": "170",
-          "hs": "h26",
-          "lt": "Point [ X=-150, Y=-50 ]",
-          "mobCount": "6",
-          "mpCon": "25",
-          "rb": "Point [ X=150, Y=50 ]",
-          "x": "5"
-        },
-        {
-          "damage": "180",
-          "hs": "h27",
-          "lt": "Point [ X=-150, Y=-50 ]",
-          "mobCount": "6",
-          "mpCon": "25",
-          "rb": "Point [ X=150, Y=50 ]",
-          "x": "5"
-        },
-        {
-          "damage": "190",
-          "hs": "h28",
-          "lt": "Point [ X=-150, Y=-50 ]",
-          "mobCount": "6",
-          "mpCon": "25",
-          "rb": "Point [ X=150, Y=50 ]",
-          "x": "5"
-        },
-        {
-          "damage": "200",
-          "hs": "h29",
-          "lt": "Point [ X=-150, Y=-50 ]",
-          "mobCount": "6",
-          "mpCon": "25",
-          "rb": "Point [ X=150, Y=50 ]",
-          "x": "5"
-        },
-        {
-          "damage": "130",
           "hs": "h3",
           "lt": "Point [ X=-130, Y=-50 ]",
           "mobCount": "2",
@@ -1037,16 +797,7 @@
           "x": "1"
         },
         {
-          "damage": "210",
-          "hs": "h30",
-          "lt": "Point [ X=-150, Y=-50 ]",
-          "mobCount": "6",
-          "mpCon": "25",
-          "rb": "Point [ X=150, Y=50 ]",
-          "x": "5"
-        },
-        {
-          "damage": "140",
+          "damage": "180",
           "hs": "h4",
           "lt": "Point [ X=-130, Y=-50 ]",
           "mobCount": "2",
@@ -1055,7 +806,7 @@
           "x": "1"
         },
         {
-          "damage": "150",
+          "damage": "190",
           "hs": "h5",
           "lt": "Point [ X=-130, Y=-50 ]",
           "mobCount": "2",
@@ -1064,7 +815,7 @@
           "x": "1"
         },
         {
-          "damage": "160",
+          "damage": "200",
           "hs": "h6",
           "lt": "Point [ X=-130, Y=-50 ]",
           "mobCount": "2",
@@ -1072,8 +823,9 @@
           "rb": "Point [ X=130, Y=50 ]",
           "x": "1"
         },
+
         {
-          "damage": "120",
+          "damage": "160",
           "hs": "h7",
           "lt": "Point [ X=-135, Y=-50 ]",
           "mobCount": "3",
@@ -1082,7 +834,7 @@
           "x": "2"
         },
         {
-          "damage": "130",
+          "damage": "170",
           "hs": "h8",
           "lt": "Point [ X=-135, Y=-50 ]",
           "mobCount": "3",
@@ -1091,13 +843,205 @@
           "x": "2"
         },
         {
-          "damage": "140",
+          "damage": "180",
           "hs": "h9",
           "lt": "Point [ X=-135, Y=-50 ]",
           "mobCount": "3",
           "mpCon": "20",
           "rb": "Point [ X=135, Y=50 ]",
           "x": "2"
+        },
+        {
+          "damage": "190",
+          "hs": "h10",
+          "lt": "Point [ X=-135, Y=-50 ]",
+          "mobCount": "3",
+          "mpCon": "20",
+          "rb": "Point [ X=135, Y=50 ]",
+          "x": "2"
+        },
+        {
+          "damage": "200",
+          "hs": "h11",
+          "lt": "Point [ X=-135, Y=-50 ]",
+          "mobCount": "3",
+          "mpCon": "20",
+          "rb": "Point [ X=135, Y=50 ]",
+          "x": "2"
+        },
+        {
+          "damage": "210",
+          "hs": "h12",
+          "lt": "Point [ X=-135, Y=-50 ]",
+          "mobCount": "3",
+          "mpCon": "20",
+          "rb": "Point [ X=135, Y=50 ]",
+          "x": "2"
+        },
+
+        {
+          "damage": "170",
+          "hs": "h13",
+          "lt": "Point [ X=-140, Y=-50 ]",
+          "mobCount": "4",
+          "mpCon": "30",
+          "rb": "Point [ X=140, Y=50 ]",
+          "x": "3"
+        },
+        {
+          "damage": "180",
+          "hs": "h14",
+          "lt": "Point [ X=-140, Y=-50 ]",
+          "mobCount": "4",
+          "mpCon": "30",
+          "rb": "Point [ X=140, Y=50 ]",
+          "x": "3"
+        },
+        {
+          "damage": "190",
+          "hs": "h15",
+          "lt": "Point [ X=-140, Y=-50 ]",
+          "mobCount": "4",
+          "mpCon": "30",
+          "rb": "Point [ X=140, Y=50 ]",
+          "x": "3"
+        },
+        {
+          "damage": "200",
+          "hs": "h16",
+          "lt": "Point [ X=-140, Y=-50 ]",
+          "mobCount": "4",
+          "mpCon": "30",
+          "rb": "Point [ X=140, Y=50 ]",
+          "x": "3"
+        },
+        {
+          "damage": "210",
+          "hs": "h17",
+          "lt": "Point [ X=-140, Y=-50 ]",
+          "mobCount": "4",
+          "mpCon": "30",
+          "rb": "Point [ X=140, Y=50 ]",
+          "x": "3"
+        },
+        {
+          "damage": "220",
+          "hs": "h18",
+          "lt": "Point [ X=-140, Y=-50 ]",
+          "mobCount": "4",
+          "mpCon": "30",
+          "rb": "Point [ X=140, Y=50 ]",
+          "x": "3"
+        },
+
+        {
+          "damage": "180",
+          "hs": "h19",
+          "lt": "Point [ X=-145, Y=-50 ]",
+          "mobCount": "5",
+          "mpCon": "22",
+          "rb": "Point [ X=145, Y=50 ]",
+          "x": "4"
+        },
+        {
+          "damage": "190",
+          "hs": "h20",
+          "lt": "Point [ X=-145, Y=-50 ]",
+          "mobCount": "5",
+          "mpCon": "22",
+          "rb": "Point [ X=145, Y=50 ]",
+          "x": "4"
+        },
+        {
+          "damage": "200",
+          "hs": "h21",
+          "lt": "Point [ X=-145, Y=-50 ]",
+          "mobCount": "5",
+          "mpCon": "22",
+          "rb": "Point [ X=145, Y=50 ]",
+          "x": "4"
+        },
+        {
+          "damage": "210",
+          "hs": "h22",
+          "lt": "Point [ X=-145, Y=-50 ]",
+          "mobCount": "5",
+          "mpCon": "22",
+          "rb": "Point [ X=145, Y=50 ]",
+          "x": "4"
+        },
+        {
+          "damage": "220",
+          "hs": "h23",
+          "lt": "Point [ X=-145, Y=-50 ]",
+          "mobCount": "5",
+          "mpCon": "22",
+          "rb": "Point [ X=145, Y=50 ]",
+          "x": "4"
+        },
+        {
+          "damage": "230",
+          "hs": "h24",
+          "lt": "Point [ X=-145, Y=-50 ]",
+          "mobCount": "5",
+          "mpCon": "22",
+          "rb": "Point [ X=145, Y=50 ]",
+          "x": "4"
+        },
+
+        {
+          "damage": "200",
+          "hs": "h25",
+          "lt": "Point [ X=-150, Y=-50 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=150, Y=50 ]",
+          "x": "5"
+        },
+        {
+          "damage": "210",
+          "hs": "h26",
+          "lt": "Point [ X=-150, Y=-50 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=150, Y=50 ]",
+          "x": "5"
+        },
+        {
+          "damage": "220",
+          "hs": "h27",
+          "lt": "Point [ X=-150, Y=-50 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=150, Y=50 ]",
+          "x": "5"
+        },
+        {
+          "damage": "230",
+          "hs": "h28",
+          "lt": "Point [ X=-150, Y=-50 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=150, Y=50 ]",
+          "x": "5"
+        },
+        {
+          "damage": "240",
+          "hs": "h29",
+          "lt": "Point [ X=-150, Y=-50 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=150, Y=50 ]",
+          "x": "5"
+        },
+        {
+          "damage": "250",
+          "hs": "h30",
+          "lt": "Point [ X=-150, Y=-50 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=150, Y=50 ]",
+          "x": "5"
         }
       ]
     },

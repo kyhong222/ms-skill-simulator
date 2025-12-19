@@ -510,126 +510,26 @@
         "detail": "MP #mpCon 소비하여 데미지 #damage%"
       },
       "levelProperties": [
-        {
-          "attackCount": "2",
-          "damage": "98",
-          "hs": "h1",
-          "mpCon": "8"
-        },
-        {
-          "attackCount": "2",
-          "damage": "116",
-          "hs": "h10",
-          "mpCon": "10"
-        },
-        {
-          "attackCount": "2",
-          "damage": "118",
-          "hs": "h11",
-          "mpCon": "11"
-        },
-        {
-          "attackCount": "2",
-          "damage": "120",
-          "hs": "h12",
-          "mpCon": "11"
-        },
-        {
-          "attackCount": "2",
-          "damage": "122",
-          "hs": "h13",
-          "mpCon": "11"
-        },
-        {
-          "attackCount": "2",
-          "damage": "124",
-          "hs": "h14",
-          "mpCon": "12"
-        },
-        {
-          "attackCount": "2",
-          "damage": "126",
-          "hs": "h15",
-          "mpCon": "12"
-        },
-        {
-          "attackCount": "2",
-          "damage": "128",
-          "hs": "h16",
-          "mpCon": "12"
-        },
-        {
-          "attackCount": "2",
-          "damage": "130",
-          "hs": "h17",
-          "mpCon": "13"
-        },
-        {
-          "attackCount": "2",
-          "damage": "132",
-          "hs": "h18",
-          "mpCon": "13"
-        },
-        {
-          "attackCount": "2",
-          "damage": "134",
-          "hs": "h19",
-          "mpCon": "13"
-        },
-        {
-          "attackCount": "2",
-          "damage": "100",
-          "hs": "h2",
-          "mpCon": "8"
-        },
-        {
-          "attackCount": "2",
-          "damage": "140",
-          "hs": "h20",
-          "mpCon": "14"
-        },
-        {
-          "attackCount": "2",
-          "damage": "102",
-          "hs": "h3",
-          "mpCon": "8"
-        },
-        {
-          "attackCount": "2",
-          "damage": "104",
-          "hs": "h4",
-          "mpCon": "8"
-        },
-        {
-          "attackCount": "2",
-          "damage": "106",
-          "hs": "h5",
-          "mpCon": "9"
-        },
-        {
-          "attackCount": "2",
-          "damage": "108",
-          "hs": "h6",
-          "mpCon": "9"
-        },
-        {
-          "attackCount": "2",
-          "damage": "110",
-          "hs": "h7",
-          "mpCon": "9"
-        },
-        {
-          "attackCount": "2",
-          "damage": "112",
-          "hs": "h8",
-          "mpCon": "10"
-        },
-        {
-          "attackCount": "2",
-          "damage": "114",
-          "hs": "h9",
-          "mpCon": "10"
-        }
+        { "attackCount": "2", "damage": "98", "hs": "h1", "mpCon": "8" },
+        { "attackCount": "2", "damage": "100", "hs": "h2", "mpCon": "8" },
+        { "attackCount": "2", "damage": "102", "hs": "h3", "mpCon": "8" },
+        { "attackCount": "2", "damage": "104", "hs": "h4", "mpCon": "8" },
+        { "attackCount": "2", "damage": "106", "hs": "h5", "mpCon": "9" },
+        { "attackCount": "2", "damage": "108", "hs": "h6", "mpCon": "9" },
+        { "attackCount": "2", "damage": "110", "hs": "h7", "mpCon": "9" },
+        { "attackCount": "2", "damage": "112", "hs": "h8", "mpCon": "10" },
+        { "attackCount": "2", "damage": "114", "hs": "h9", "mpCon": "10" },
+        { "attackCount": "2", "damage": "116", "hs": "h10", "mpCon": "10" },
+        { "attackCount": "2", "damage": "118", "hs": "h11", "mpCon": "11" },
+        { "attackCount": "2", "damage": "120", "hs": "h12", "mpCon": "11" },
+        { "attackCount": "2", "damage": "122", "hs": "h13", "mpCon": "11" },
+        { "attackCount": "2", "damage": "124", "hs": "h14", "mpCon": "12" },
+        { "attackCount": "2", "damage": "126", "hs": "h15", "mpCon": "12" },
+        { "attackCount": "2", "damage": "128", "hs": "h16", "mpCon": "12" },
+        { "attackCount": "2", "damage": "130", "hs": "h17", "mpCon": "13" },
+        { "attackCount": "2", "damage": "132", "hs": "h18", "mpCon": "13" },
+        { "attackCount": "2", "damage": "134", "hs": "h19", "mpCon": "13" },
+        { "attackCount": "2", "damage": "140", "hs": "h20", "mpCon": "14" }
       ]
     },
     {
