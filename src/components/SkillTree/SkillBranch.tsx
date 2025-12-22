@@ -18,8 +18,32 @@ interface SkillBranchProps {
 const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   const [hoveredSkillId, setHoveredSkillId] = useState<number | null>(null);
   const [tooltipPosition, setTooltipPosition] = useState<{ x: number; y: number; isBottomHalf?: boolean }>({ x: 0, y: 0 });
+  const [isShiftPressed, setIsShiftPressed] = useState(false);
 
   const { skillbook, skillLevels, onLevelChange, branchIndex, jobLevel, usedSkillPoints, remainingSkillPoints, fourthOnly = false } = props;
+
+  // Shift 키 이벤트 리스너
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Shift') {
+        setIsShiftPressed(true);
+      }
+    };
+
+    const handleKeyUp = (e: KeyboardEvent) => {
+      if (e.key === 'Shift') {
+        setIsShiftPressed(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keyup', handleKeyUp);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('keyup', handleKeyUp);
+    };
+  }, []);
 
   // 마우스 이동 시 좌표 저장 (화면 절반 기준으로 위/아래 결정)
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -134,18 +158,34 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   }, 0);
 
   // 스킬 레벨 증가 핸들러
-  const increaseLevel = (skillId: number) => {
+  const increaseLevel = (skillId: number, e?: React.MouseEvent) => {
     const currentLevel = getLevel(skillId);
+    const skill = skillbook.skills.find((s) => s.id === skillId);
+    if (!skill) return;
+
+    // Shift 키가 눌렸는지 확인
+    const isShiftPressed = e?.shiftKey || false;
+    const increment = isShiftPressed ? 5 : 1;
 
     // 스킬을 올릴 수 있는 조건인지 확인
     if (!isSkillIncreasable(skillId)) return;
 
-    // 조건 만족하면 레벨업
-    onLevelChange(skillId, currentLevel + 1);
+    // Shift로 5포인트씩 올릴 때
+    if (isShiftPressed) {
+      // 남은 포인트와 마스터 레벨 고려
+      const maxPossibleLevel = Math.min(
+        currentLevel + Math.min(remainingSkillPoints, increment),
+        skill.masterLevel
+      );
+      onLevelChange(skillId, maxPossibleLevel);
+    } else {
+      // 일반 레벨업 (1포인트)
+      onLevelChange(skillId, currentLevel + 1);
+    }
   };
 
   // 스킬 레벨 감소 핸들러
-  const decreaseLevel = (skillId: number) => {
+  const decreaseLevel = (skillId: number, e?: React.MouseEvent) => {
     const currentLevel = getLevel(skillId);
     if (currentLevel <= 0) return; // 이미 최소 레벨
     // 해당 스킬 객체 찾기
@@ -159,8 +199,14 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
     if (!fourthOnly && !isBranchActivated()) {
       return;
     }
+    
+    // Shift 키가 눌렸는지 확인
+    const isShiftPressed = e?.shiftKey || false;
+    const decrement = isShiftPressed ? 5 : 1;
+    
     // 조건 만족하면 레벨 다운
-    onLevelChange(skillId, currentLevel - 1);
+    const newLevel = Math.max(currentLevel - decrement, 0);
+    onLevelChange(skillId, newLevel);
   };
 
   const increaseMaxLevel = (skillId: number) => {
@@ -262,28 +308,34 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
                   }`}</span>
                   <div className="ml-auto flex items-center gap-0">
                     <button
-                      onClick={() => increaseLevel(skill.id)}
+                      onClick={(e) => increaseLevel(skill.id, e)}
                       className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
                         isSkillIncreasable(skill.id)
-                          ? "bg-orange-500 hover:bg-orange-600 cursor-pointer"
+                          ? isShiftPressed
+                            ? "bg-yellow-500 hover:bg-yellow-600 cursor-pointer"
+                            : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
                           : "bg-gray-400 cursor-not-allowed"
                       }`}
                       style={{ transform: "scale(0.75)" }}
                       aria-label="Increase level"
                       disabled={isMaxLevel(skill.id)}
+                      title="클릭: +1, Shift+클릭: +5"
                     >
                       ▲
                     </button>
                     <button
-                      onClick={() => decreaseLevel(skill.id)}
+                      onClick={(e) => decreaseLevel(skill.id, e)}
                       className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
                         isSkillDecreasable(skill.id)
-                          ? "bg-orange-500 hover:bg-orange-600 cursor-pointer"
+                          ? isShiftPressed
+                            ? "bg-yellow-500 hover:bg-yellow-600 cursor-pointer"
+                            : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
                           : "bg-gray-400 cursor-not-allowed"
                       }`}
                       style={{ transform: "scale(0.75)" }}
                       aria-label="Decrease level"
                       disabled={getLevel(skill.id) === 0}
+                      title="클릭: -1, Shift+클릭: -5"
                     >
                       ▼
                     </button>
