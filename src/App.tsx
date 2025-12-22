@@ -8,15 +8,27 @@ import html2canvas from "html2canvas";
 function App() {
   const [job, setJob] = useState<IJob | null>(null);
   const skillTreeRef = useRef<HTMLDivElement>(null);
+  const skillTreeOnlyRef = useRef<HTMLDivElement>(null); // SkillTree만을 위한 ref
   const [showSnackbar, setShowSnackbar] = useState(false);
+  const [fourthOnly, setFourthOnly] = useState(false); // 4차 이후만 모드
 
   const captureSkillTree = async () => {
-    if (!skillTreeRef.current) return;
+    // 4차 모드일 때는 스킬 브랜치 컨테이너만, 아니면 전체
+    let targetElement: HTMLElement | null = null;
+    
+    if (fourthOnly && skillTreeOnlyRef.current) {
+      // skill-branches-container 클래스를 가진 요소 찾기
+      targetElement = skillTreeOnlyRef.current.querySelector('.skill-branches-container');
+    } else {
+      targetElement = skillTreeRef.current;
+    }
+    
+    if (!targetElement) return;
 
     await document.fonts.ready;
     await new Promise((resolve) => requestAnimationFrame(resolve));
 
-    const canvas = await html2canvas(skillTreeRef.current, {
+    const canvas = await html2canvas(targetElement, {
       backgroundColor: "white",
       scale: 2,
       useCORS: true,
@@ -31,12 +43,22 @@ function App() {
   };
 
   const copyToClipboard = async () => {
-    if (!skillTreeRef.current) return;
+    // 4차 모드일 때는 스킬 브랜치 컨테이너만, 아니면 전체
+    let targetElement: HTMLElement | null = null;
+    
+    if (fourthOnly && skillTreeOnlyRef.current) {
+      // skill-branches-container 클래스를 가진 요소 찾기
+      targetElement = skillTreeOnlyRef.current.querySelector('.skill-branches-container');
+    } else {
+      targetElement = skillTreeRef.current;
+    }
+    
+    if (!targetElement) return;
 
     await document.fonts.ready;
     await new Promise((resolve) => requestAnimationFrame(resolve));
 
-    const canvas = await html2canvas(skillTreeRef.current, {
+    const canvas = await html2canvas(targetElement, {
       backgroundColor: "white",
       scale: 2,
       useCORS: true,
@@ -71,6 +93,15 @@ function App() {
             <h2 className="text-xl font-semibold">전직명: {job.koname}</h2>
             <div>
               <button
+                onClick={() => setFourthOnly(!fourthOnly)}
+                className={`exclude-from-capture text-gray-900 ml-2 px-4 py-2 rounded ${
+                  fourthOnly ? "bg-green-300 hover:bg-green-400" : "bg-gray-200 hover:bg-gray-300"
+                }`}
+                style={{ width: "120px" }}
+              >
+                {fourthOnly ? "전체 보기" : "4차 이후만"}
+              </button>
+              <button
                 onClick={copyToClipboard}
                 className="text-gray-900 ml-2 px-4 py-2 bg-blue-200 hover:bg-blue-300 rounded"
                 style={{ width: "140px" }}
@@ -94,7 +125,9 @@ function App() {
             </div>
           </div>
           <div ref={skillTreeRef} className="p-4 bg-gray-100 rounded-lg shadow">
-            <SkillTree selectedJobId={job.id} />
+            <div ref={skillTreeOnlyRef}>
+              <SkillTree selectedJobId={job.id} fourthOnly={fourthOnly} />
+            </div>
           </div>
         </div>
       )}

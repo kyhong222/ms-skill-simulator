@@ -12,13 +12,14 @@ interface SkillBranchProps {
   jobLevel: number; // 전직 레벨 (1차: 10, 마법사: 8)
   usedSkillPoints: number; // 현재 사용한 총 스킬 포인트
   remainingSkillPoints: number; // 남은 스킬 포인트
+  fourthOnly?: boolean; // 4차 이후만 모드
 }
 
 const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   const [hoveredSkillId, setHoveredSkillId] = useState<number | null>(null);
   const [tooltipPosition, setTooltipPosition] = useState<{ x: number; y: number; isBottomHalf?: boolean }>({ x: 0, y: 0 });
 
-  const { skillbook, skillLevels, onLevelChange, branchIndex, jobLevel, usedSkillPoints, remainingSkillPoints } = props;
+  const { skillbook, skillLevels, onLevelChange, branchIndex, jobLevel, usedSkillPoints, remainingSkillPoints, fourthOnly = false } = props;
 
   // 마우스 이동 시 좌표 저장 (화면 절반 기준으로 위/아래 결정)
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -49,6 +50,9 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   const remainingPointsForBranch = Math.max(calcPointsForBranch(branchIndex, jobLevel) - usedSkillPoints, 0);
 
   const isSkillActivated = (skillId: number) => {
+    // 4차 이후만 모드일 때는 모든 스킬 활성화
+    if (fourthOnly) return true;
+    
     // 해당 스킬이 현재 활성화되어 있는지 확인
 
     // 이 스킬 브랜치가 활성화되어 있는지 확인
@@ -101,6 +105,13 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
     if (!skill || !skill.requiredSkillLevels) return true; // 필요 스킬이 없으면 true
     return Object.entries(skill.requiredSkillLevels).every(([reqSkillIdStr, reqLevel]) => {
       const reqSkillId = Number(reqSkillIdStr);
+      
+      // 4차 모드일 때: 선행 스킬이 현재 스킬북에 없으면 (다른 차수 스킬이면) 조건 무시
+      if (fourthOnly) {
+        const isInCurrentSkillbook = skillbook.skills.some((s) => s.id === reqSkillId);
+        if (!isInCurrentSkillbook) return true; // 다른 차수 스킬은 조건 무시
+      }
+      
       const reqSkillCurrentLevel = skillLevels.find((s) => s.id === reqSkillId)?.level || 0;
       return reqSkillCurrentLevel >= reqLevel;
     });
@@ -144,8 +155,8 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
     if (!isSatisfiedRequiredSkills(skillId)) {
       return;
     }
-    // 사용한 포인트가 차수에 맞는지 확인
-    if (!isBranchActivated()) {
+    // 4차 모드가 아닐 때만 사용한 포인트가 차수에 맞는지 확인
+    if (!fourthOnly && !isBranchActivated()) {
       return;
     }
     // 조건 만족하면 레벨 다운
@@ -178,8 +189,8 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
     if (!isSatisfiedRequiredSkills(skillId)) {
       return;
     }
-    // 사용한 포인트가 차수에 맞는지 확인
-    if (!isBranchActivated()) {
+    // 4차 모드가 아닐 때만 사용한 포인트가 차수에 맞는지 확인
+    if (!fourthOnly && !isBranchActivated()) {
       return;
     }
     // 조건 만족하면 레벨 다운
@@ -187,10 +198,11 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   };
 
   return (
+    // 4차 이후만 모드일 때는 비활성화 처리 안 함
     // 차수에 맞는 포인트를 사용하지 않았으면 branch 전체를 비활성화
     <div
       className={`p-2 border rounded-xl w-full shadow bg-white relative ${
-        !isBranchActivated() ? "filter cursor-not-allowed grayscale" : ""
+        !fourthOnly && !isBranchActivated() ? "filter cursor-not-allowed grayscale" : ""
       }`}
     >
       {/* 직업 아이콘 + 스킬북 이름 */}
@@ -207,9 +219,11 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
         <div className="flex flex-col text-left">
           <h2 className="text-black text-2xl font-bold">{skillbook.description.bookName}</h2>
           <span className="text-sm text-gray-600">총 투자 포인트: {totalInvestedPoints}</span>
-          <span className="exclude-from-capture text-sm text-gray-600">
-            필요 투자 포인트: {remainingPointsForBranch}
-          </span>
+          {!fourthOnly && (
+            <span className="exclude-from-capture text-sm text-gray-600">
+              필요 투자 포인트: {remainingPointsForBranch}
+            </span>
+          )}
         </div>
       </div>
 

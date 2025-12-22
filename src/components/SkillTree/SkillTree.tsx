@@ -12,9 +12,16 @@ interface SkillLevel {
 interface SkillTreeProps {
   selectedJobId: number;
   onResetRef?: (resetFn: () => void) => void;
+  fourthOnly?: boolean; // 4차 이후만 모드
 }
 
-function calculateSkillPoints(currentLevel: number, jobLevel: number): number {
+function calculateSkillPoints(currentLevel: number, jobLevel: number, fourthOnly: boolean): number {
+  // 4차 이후만 모드일 때는 (현재레벨-119)*3
+  if (fourthOnly) {
+    return Math.max((currentLevel - 119) * 3, 0);
+  }
+  
+  // 일반 모드
   let sp = (currentLevel - jobLevel) * 3;
 
   if (currentLevel >= jobLevel) sp += 1;
@@ -30,7 +37,7 @@ function calcJobLevel(jobId: number): number {
   return magicianJobIds.includes(jobId) ? 8 : 10;
 }
 
-const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
+const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef, fourthOnly = false }) => {
   const [skillbooks, setSkillbooks] = useState<Record<number, IJobSkillBook | null>>({});
   const [loading, setLoading] = useState(true);
   const [skillLevels, setSkillLevels] = useState<SkillLevel[]>([]);
@@ -38,8 +45,8 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
   const [currentLevel, setCurrentLevel] = useState(10); // 기본값 10
 
   // localStorage에서 데이터 불러오기
-  const loadFromLocalStorage = (jobId: number, loadedSkills: { id: number; name: string }[]) => {
-    const storageKey = `skillTree_${jobId}`;
+  const loadFromLocalStorage = (jobId: number, loadedSkills: { id: number; name: string }[], is4thOnly: boolean) => {
+    const storageKey = is4thOnly ? `skillTree_${jobId}_4th` : `skillTree_${jobId}`;
     const savedData = localStorage.getItem(storageKey);
     
     if (savedData) {
@@ -67,8 +74,8 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
   };
 
   // localStorage에 데이터 저장하기
-  const saveToLocalStorage = (jobId: number, levels: SkillLevel[], charLevel: number) => {
-    const storageKey = `skillTree_${jobId}`;
+  const saveToLocalStorage = (jobId: number, levels: SkillLevel[], charLevel: number, is4thOnly: boolean) => {
+    const storageKey = is4thOnly ? `skillTree_${jobId}_4th` : `skillTree_${jobId}`;
     const dataToSave = {
       currentLevel: charLevel,
       skillLevels: levels,
@@ -81,7 +88,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
     setSkillLevels((prev) => {
       const updated = prev.map((skill) => (skill.id === skillId ? { ...skill, level: newLevel } : skill));
       // localStorage에 저장
-      saveToLocalStorage(selectedJobId, updated, currentLevel);
+      saveToLocalStorage(selectedJobId, updated, currentLevel, fourthOnly);
       return updated;
     });
   };
@@ -91,15 +98,15 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
     setSkillLevels((prev) => {
       const reset = prev.map((skill) => ({ ...skill, level: 0 }));
       // localStorage에 저장
-      saveToLocalStorage(selectedJobId, reset, currentLevel);
+      saveToLocalStorage(selectedJobId, reset, currentLevel, fourthOnly);
       return reset;
     });
-  }, [selectedJobId, currentLevel]);
+  }, [selectedJobId, currentLevel, fourthOnly]);
 
   // 캐릭터 레벨 변경 시 localStorage에 저장
   const handleLevelChange = (newLevel: number) => {
     setCurrentLevel(newLevel);
-    saveToLocalStorage(selectedJobId, skillLevels, newLevel);
+    saveToLocalStorage(selectedJobId, skillLevels, newLevel, fourthOnly);
   };
 
   // onResetRef 등록
@@ -134,17 +141,17 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
       setAllSkills(loadedSkills);
       
       // localStorage에서 데이터 불러오기
-      const restoredSkills = loadFromLocalStorage(selectedJobId, loadedSkills);
+      const restoredSkills = loadFromLocalStorage(selectedJobId, loadedSkills, fourthOnly);
       setSkillLevels(restoredSkills);
       
       setLoading(false);
     };
 
     loadSkills();
-  }, [selectedJobId]);
+  }, [selectedJobId, fourthOnly]);
 
   const jobLevel = calcJobLevel(selectedJobId);
-  const totalSkillPoints = calculateSkillPoints(currentLevel, jobLevel);
+  const totalSkillPoints = calculateSkillPoints(currentLevel, jobLevel, fourthOnly);
   const usedSkillPoints = skillLevels.reduce((sum, skill) => sum + skill.level, 0);
   const remainingSkillPoints = totalSkillPoints - usedSkillPoints;
 
@@ -159,7 +166,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
   return (
     <div>
       {/* 상단 바: 현재 레벨 + 스킬 포인트 정보 */}
-      <div className="flex items-center justify-between mb-4 ">
+      <div className="exclude-from-capture flex items-center justify-between mb-4 ">
         <div className="flex items-center justify-between gap-4">
           <label className="font-semibold text-black">
             현재 레벨:
@@ -196,26 +203,31 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef }) => {
         </div>
       </div>
 
-      <div className="flex overflow-x-visible gap-6 pb-4 w-full justify-between">
-        {Object.entries(skillbooks).map(([jobId, skillbook], index) =>
-          skillbook ? (
+      <div className={`skill-branches-container flex overflow-x-visible gap-6 pb-4 ${fourthOnly ? 'w-1/4 mx-auto' : 'w-full justify-between'}`}>
+        {Object.entries(skillbooks).map(([jobId, skillbook], index) => {
+          // 4차 모드일 때는 마지막 스킬북(index 3)만 표시
+          if (fourthOnly && index !== 3) return null;
+          
+          const actualIndex = fourthOnly ? 4 : index + 1; // 4차 모드일 때는 branchIndex를 4로 고정
+          return skillbook ? (
             <SkillBranch
               key={jobId}
               jobId={Number(jobId)}
               skillbook={skillbook}
               skillLevels={skillLevels}
               onLevelChange={onLevelChange}
-              branchIndex={index + 1}
+              branchIndex={actualIndex}
               jobLevel={jobLevel}
               usedSkillPoints={usedSkillPoints}
               remainingSkillPoints={remainingSkillPoints}
+              fourthOnly={fourthOnly}
             />
           ) : (
             <div key={jobId} className="text-red-500">
               직업 {jobId}의 스킬 정보를 불러올 수 없습니다.
             </div>
-          )
-        )}
+          );
+        })}
       </div>
     </div>
   );

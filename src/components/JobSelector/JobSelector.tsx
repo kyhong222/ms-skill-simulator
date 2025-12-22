@@ -41,6 +41,7 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
         <h1 className="text-2xl font-bold mb-4">25.10.17  돌진 사거리 오류, 마그넷 설명 수정</h1>
         <h1 className="text-2xl font-bold mb-4">25.10.21  숙련도 오류 수정</h1>
         <h1 className="text-2xl font-bold mb-4">25.12.19  패치 반영, 클립보드 복사기능, 스킬트리 자체 저장기능 추가</h1>
+        <h1 className="text-2xl font-bold mb-4">25.12.23  4차만 찍어보기 기능 추가</h1>
       </div>
     </div>
   );
