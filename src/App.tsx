@@ -85,13 +85,13 @@ function App() {
   };
 
   return (
-    <div className="p-0 min-w-[1500px] flex flex-col mx-auto max-w-full">
+    <div className="p-0 flex flex-col mx-auto max-w-full">
       {!job && <JobSelector onSelect={setJob} />}
       {job && (
         <div>
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-semibold">전직명: {job.koname}</h2>
-            <div>
+          <div className="flex flex-col md:flex-row items-center justify-between mb-4 gap-2">
+            <h2 className="text-3xl font-semibold">{job.koname}</h2>
+<div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setFourthOnly(!fourthOnly)}
                 className={`exclude-from-capture text-gray-900 ml-2 px-4 py-2 rounded ${
@@ -103,14 +103,14 @@ function App() {
               </button>
               <button
                 onClick={copyToClipboard}
-                className="text-gray-900 ml-2 px-4 py-2 bg-blue-200 hover:bg-blue-300 rounded"
+                className="hidden md:inline-block text-gray-900 ml-2 px-4 py-2 bg-blue-200 hover:bg-blue-300 rounded"
                 style={{ width: "140px" }}
               >
                 클립보드 복사
               </button>
               <button
                 onClick={captureSkillTree}
-                className="text-gray-900 ml-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
+                className="hidden md:inline-block text-gray-900 ml-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
                 style={{ width: "120px" }}
               >
                 캡쳐하기
