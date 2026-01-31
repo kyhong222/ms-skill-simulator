@@ -19,8 +19,18 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   const [hoveredSkillId, setHoveredSkillId] = useState<number | null>(null);
   const [tooltipPosition, setTooltipPosition] = useState<{ x: number; y: number; isBottomHalf?: boolean }>({ x: 0, y: 0 });
   const [isShiftPressed, setIsShiftPressed] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
 
   const { skillbook, skillLevels, onLevelChange, branchIndex, jobLevel, usedSkillPoints, remainingSkillPoints, fourthOnly = false } = props;
+
+  // 반응형 뷰 감지
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Shift 키 이벤트 리스너
   React.useEffect(() => {
@@ -283,8 +293,12 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
               ${isSkillActivated(skill.id) ? "" : "grayscale cursor-not-allowed"}
               ${getLevel(skill.id) === skill.masterLevel ? "bg-amber-300" : (getLevel(skill.id) >= 1 ? "bg-amber-100" :  "bg-white") }
               `}
-            onMouseEnter={() => setHoveredSkillId(skill.id)}
-            onMouseLeave={() => setHoveredSkillId(null)}
+            onMouseOver={() => setHoveredSkillId(skill.id)}
+            onMouseOut={(e) => {
+              if (!e.currentTarget.contains(e.relatedTarget as Node)) {
+                setHoveredSkillId(null);
+              }
+            }}
             onMouseMove={handleMouseMove}
           >
             {skill.icon && (
@@ -306,7 +320,7 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
                   <span className="text-black text-left">{`${getLevel(skill.id)}/${skill.masterLevel} ${
                     getLevel(skill.id) === skill.masterLevel ? "(M)" : ""
                   }`}</span>
-                  <div className="ml-auto flex items-center gap-0">
+                  <div className="ml-auto flex items-center gap-0" onMouseOver={(e) => { if (isMobileView) e.stopPropagation(); }}>
                     <button
                       onClick={(e) => increaseLevel(skill.id, e)}
                       className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
