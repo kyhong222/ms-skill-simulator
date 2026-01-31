@@ -1,0 +1,17 @@
+name: Trigger Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger root repo deploy
+        run: |
+          curl -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.DEPLOY_TOKEN }}" \
+            https://api.github.com/repos/kyhong222/mapleland-st-root-page/dispatches \
+            -d '{"event_type":"deploy-trigger"}'
