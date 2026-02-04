@@ -1,24 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
-    <meta charset="utf-8">
-    <title>메이플랜드 세팅</title>
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      var pathSegmentsToKeep = 1;
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
 
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+    <!-- 검색엔진 중복 방지 -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <script>
+      (function () {
+        var target = "https://mapleland.st/";
+
+        // 혹시라도 자기 자신으로 다시 들어오는 상황 방지
+        if (!location.href.startsWith(target)) {
+          location.replace(target);
+        }
+      })();
     </script>
+
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=https://mapleland.st/" />
+    </noscript>
   </head>
   <body>
+    이동 중입니다…  
+    <a href="https://mapleland.st/">https://mapleland.st/</a>
   </body>
 </html>
