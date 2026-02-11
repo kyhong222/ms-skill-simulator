@@ -2,6 +2,10 @@
 
 메이플랜드 스킬 트리 시뮬레이터 — 12개 4차 직업의 1~4차 스킬 포인트 배분을 계획하는 웹앱 (React 19 + TypeScript + Vite + Tailwind CSS)
 
+## 참고 문서
+- 프로젝트 구조와 아키텍처 상세: [architecture.md](./architecture.md)
+- 기능 추가/수정 시 반드시 architecture.md를 함께 참고할 것
+
 ## 빠른 시작
 
 ```bash
