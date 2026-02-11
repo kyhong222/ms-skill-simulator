@@ -6,6 +6,15 @@
 - 프로젝트 구조와 아키텍처 상세: [architecture.md](./architecture.md)
 - 기능 추가/수정 시 반드시 architecture.md를 함께 참고할 것
 
+## 기능 추가 시 진행 순서
+
+1. architecture.md를 참고하여 영향받는 파일/타입 파악
+2. 구현 방법 2-3가지 제안 (장단점 포함)
+3. 사용자 승인 후 구현 시작
+4. 기존 코드 컨벤션 준수, 타입 먼저 정의
+5. 한 파일씩 수정/생성하며 설명
+6. 완료 후 architecture.md, CLAUDE.md에 변경사항 반영
+
 ## 빠른 시작
 
 ```bash
