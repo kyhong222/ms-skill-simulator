@@ -12,7 +12,6 @@ dist
 dist-ssr
 deploy
 .claude/
-claude.md
 *.local
 
 # Editor directories and files
