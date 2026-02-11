@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import type { IJobSkillBook } from "../../types/jobSkillBook";
 import SkillTooltip from "./SkillToolTip";
 import ReactDOM from "react-dom";
+import { useSkillBranch } from "./useSkillBranch";
 
 interface SkillBranchProps {
   jobId: number;
@@ -20,7 +21,22 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   const [tooltipPosition, setTooltipPosition] = useState<{ x: number; y: number; isBottomHalf?: boolean }>({ x: 0, y: 0 });
   const [isShiftPressed, setIsShiftPressed] = useState(false);
 
-  const { skillbook, skillLevels, onLevelChange, branchIndex, jobLevel, usedSkillPoints, remainingSkillPoints, fourthOnly = false } = props;
+  const { skillbook, skillLevels, fourthOnly = false } = props;
+
+  const {
+    getLevel,
+    totalInvestedPoints,
+    remainingPointsForBranch,
+    isBranchActivated,
+    isSkillActivated,
+    isSkillIncreasable,
+    isSkillDecreasable,
+    isMaxLevel,
+    increaseLevel,
+    decreaseLevel,
+    increaseMaxLevel,
+    decreaseZeroLevel,
+  } = useSkillBranch({ ...props, fourthOnly });
 
   // Shift 키 이벤트 리스너
   React.useEffect(() => {
@@ -50,197 +66,12 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
     const screenHeight = window.innerHeight;
     const mouseY = e.clientY;
     const isBottomHalf = mouseY > screenHeight / 2;
-    
-    setTooltipPosition({ 
-      x: e.clientX, 
+
+    setTooltipPosition({
+      x: e.clientX,
       y: e.clientY,
-      isBottomHalf 
+      isBottomHalf
     });
-  };
-
-  // 차수에 따른 포인트 계산
-  const calcPointsForBranch = (branchIndex: number, jobLevel: number) => {
-    let branchLevel;
-    if (branchIndex === 1) return 0;
-    else if (branchIndex === 2) branchLevel = 30;
-    else if (branchIndex === 3) branchLevel = 70;
-    else if (branchIndex === 4) branchLevel = 120;
-    else return 0; // 잘못된 차수
-
-    return (branchLevel - jobLevel) * 3 + (branchIndex - 1);
-  };
-
-  // 차수에 따른 남은 필요 포인트
-  const remainingPointsForBranch = Math.max(calcPointsForBranch(branchIndex, jobLevel) - usedSkillPoints, 0);
-
-  const isSkillActivated = (skillId: number) => {
-    // 4차 이후만 모드일 때는 모든 스킬 활성화
-    if (fourthOnly) return true;
-    
-    // 해당 스킬이 현재 활성화되어 있는지 확인
-
-    // 이 스킬 브랜치가 활성화되어 있는지 확인
-    if (!isBranchActivated()) return false;
-
-    // 해당 스킬의 선행 스킬을 모두 만족하는지 확인
-    if (!isSatisfiedRequiredSkills(skillId)) return false;
-
-    return true;
-  };
-
-  // 해당 스킬이 레벨업 가능한지 확인
-  const isSkillIncreasable = (skillId: number) => {
-    // 스킬이 활성화되어 있는지 확인
-    if (!isSkillActivated(skillId)) return false; // 스킬이 활성화되지 않았으면 false
-
-    // 현재 레벨이 최대 레벨인지 확인
-    if (isMaxLevel(skillId)) return false; // 이미 최대 레벨이면 false
-
-    // 남은 포인트가 있는지 확인
-    if (!hasRemainingPoints()) return false; // 남은 포인트가 없으면 false
-
-    return true;
-  };
-
-  const isSkillDecreasable = (skillId: number) => {
-    // 현재 레벨이 0인지 확인
-    const currentLevel = getLevel(skillId);
-    if (currentLevel <= 0) return false; // 이미 최소 레벨이면 false
-
-    return true;
-  };
-
-  // 해당 차수에 필요한 포인트를 사용했는지 확인
-  // 예: 1차는 0, 2차는 30, 3차는 70, 4차는 120
-  const isBranchActivated = () => {
-    const pointsRequiredForBranch = calcPointsForBranch(branchIndex, jobLevel);
-    return usedSkillPoints - totalInvestedPoints >= pointsRequiredForBranch;
-  };
-
-  // 남은 포인트가 양수인지 확인
-  const hasRemainingPoints = () => {
-    if (remainingSkillPoints === undefined) return false; // 남은 포인트가 없으면 true로 간주
-    return remainingSkillPoints > 0;
-  };
-
-  // 해당 스킬의 필요 스킬을 모두 만족하는지 확인
-  const isSatisfiedRequiredSkills = (skillId: number) => {
-    const skill = skillbook.skills.find((s) => s.id === skillId);
-    if (!skill || !skill.requiredSkillLevels) return true; // 필요 스킬이 없으면 true
-    return Object.entries(skill.requiredSkillLevels).every(([reqSkillIdStr, reqLevel]) => {
-      const reqSkillId = Number(reqSkillIdStr);
-      
-      // 4차 모드일 때: 선행 스킬이 현재 스킬북에 없으면 (다른 차수 스킬이면) 조건 무시
-      if (fourthOnly) {
-        const isInCurrentSkillbook = skillbook.skills.some((s) => s.id === reqSkillId);
-        if (!isInCurrentSkillbook) return true; // 다른 차수 스킬은 조건 무시
-      }
-      
-      const reqSkillCurrentLevel = skillLevels.find((s) => s.id === reqSkillId)?.level || 0;
-      return reqSkillCurrentLevel >= reqLevel;
-    });
-  };
-
-  // 특정 스킬의 현재 레벨 가져오기
-  const getLevel = (skillId: number) => {
-    return skillLevels.find((s) => s.id === skillId)?.level || 0;
-  };
-
-  const isMaxLevel = (skillId: number) => {
-    const skill = skillbook.skills.find((s) => s.id === skillId);
-    if (!skill) return false; // 스킬이 없으면 false
-    return getLevel(skillId) >= skill.masterLevel; // 현재 레벨이 마스터 레벨 이상이면 true
-  };
-
-  // 총 투자 포인트 계산
-  const totalInvestedPoints = skillbook.skills.reduce((sum, skill) => {
-    return sum + getLevel(skill.id);
-  }, 0);
-
-  // 스킬 레벨 증가 핸들러
-  const increaseLevel = (skillId: number, e?: React.MouseEvent) => {
-    const currentLevel = getLevel(skillId);
-    const skill = skillbook.skills.find((s) => s.id === skillId);
-    if (!skill) return;
-
-    // Shift 키가 눌렸는지 확인
-    const isShiftPressed = e?.shiftKey || false;
-    const increment = isShiftPressed ? 5 : 1;
-
-    // 스킬을 올릴 수 있는 조건인지 확인
-    if (!isSkillIncreasable(skillId)) return;
-
-    // Shift로 5포인트씩 올릴 때
-    if (isShiftPressed) {
-      // 남은 포인트와 마스터 레벨 고려
-      const maxPossibleLevel = Math.min(
-        currentLevel + Math.min(remainingSkillPoints, increment),
-        skill.masterLevel
-      );
-      onLevelChange(skillId, maxPossibleLevel);
-    } else {
-      // 일반 레벨업 (1포인트)
-      onLevelChange(skillId, currentLevel + 1);
-    }
-  };
-
-  // 스킬 레벨 감소 핸들러
-  const decreaseLevel = (skillId: number, e?: React.MouseEvent) => {
-    const currentLevel = getLevel(skillId);
-    if (currentLevel <= 0) return; // 이미 최소 레벨
-    // 해당 스킬 객체 찾기
-    const skill = skillbook.skills.find((s) => s.id === skillId);
-    if (!skill) return;
-    // 필요 스킬 조건 확인
-    if (!isSatisfiedRequiredSkills(skillId)) {
-      return;
-    }
-    // 4차 모드가 아닐 때만 사용한 포인트가 차수에 맞는지 확인
-    if (!fourthOnly && !isBranchActivated()) {
-      return;
-    }
-    
-    // Shift 키가 눌렸는지 확인
-    const isShiftPressed = e?.shiftKey || false;
-    const decrement = isShiftPressed ? 5 : 1;
-    
-    // 조건 만족하면 레벨 다운
-    const newLevel = Math.max(currentLevel - decrement, 0);
-    onLevelChange(skillId, newLevel);
-  };
-
-  const increaseMaxLevel = (skillId: number) => {
-    const max = skillbook.skills.find((s) => s.id === skillId)?.masterLevel || 0;
-
-    // 해당 스킬 객체 찾기
-    const skill = skillbook.skills.find((s) => s.id === skillId);
-    if (!skill) return;
-
-    // 스킬을 올릴 수 있는 조건인지 확인
-    if (!isSkillIncreasable(skillId)) return;
-
-    // 남은 포인트만큼 레벨업
-    const currentLevel = getLevel(skillId);
-    const newLevel = Math.min(currentLevel + remainingSkillPoints, max);
-    onLevelChange(skillId, newLevel);
-  };
-
-  const decreaseZeroLevel = (skillId: number) => {
-    const currentLevel = getLevel(skillId);
-    if (currentLevel <= 0) return; // 이미 최소 레벨
-    // 해당 스킬 객체 찾기
-    const skill = skillbook.skills.find((s) => s.id === skillId);
-    if (!skill) return;
-    // 필요 스킬 조건 확인
-    if (!isSatisfiedRequiredSkills(skillId)) {
-      return;
-    }
-    // 4차 모드가 아닐 때만 사용한 포인트가 차수에 맞는지 확인
-    if (!fourthOnly && !isBranchActivated()) {
-      return;
-    }
-    // 조건 만족하면 레벨 다운
-    onLevelChange(skillId, 0);
   };
 
   return (
@@ -279,7 +110,7 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
           // 스킬이 필요 스킬을 만족하지 않으면 비활성화(툴팁은 표시)
           <div
             key={skill.id}
-            className={`flex items-start gap-4 p-3 border rounded-lg relative 
+            className={`flex items-start gap-4 p-3 border rounded-lg relative
               ${isSkillActivated(skill.id) ? "" : "grayscale cursor-not-allowed"}
               ${getLevel(skill.id) === skill.masterLevel ? "bg-amber-300" : (getLevel(skill.id) >= 1 ? "bg-amber-100" :  "bg-white") }
               `}
@@ -377,10 +208,10 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
                   className="absolute z-50"
                   style={{
                     position: "fixed",
-                    top: tooltipPosition.isBottomHalf 
+                    top: tooltipPosition.isBottomHalf
                       ? "auto"  // 하단에 있을 때는 bottom 기준으로 배치
                       : tooltipPosition.y + 10,  // 마우스 아래 10px
-                    bottom: tooltipPosition.isBottomHalf 
+                    bottom: tooltipPosition.isBottomHalf
                       ? window.innerHeight - tooltipPosition.y + 10  // 마우스 위 10px
                       : "auto",
                     left: tooltipPosition.x + 10,  // 마우스 오른쪽 10px

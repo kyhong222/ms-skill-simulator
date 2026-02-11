@@ -24,26 +24,33 @@ export default function SkillTreePage() {
     return null;
   }
 
-  const captureSkillTree = async () => {
-    let targetElement: HTMLElement | null = null;
-
+  // 캡처 대상 요소를 반환하는 공통 함수
+  const getCaptureTarget = (): HTMLElement | null => {
     if (fourthOnly && skillTreeOnlyRef.current) {
-      targetElement = skillTreeOnlyRef.current.querySelector('.skill-branches-container');
-    } else {
-      targetElement = skillTreeRef.current;
+      return skillTreeOnlyRef.current.querySelector('.skill-branches-container');
     }
+    return skillTreeRef.current;
+  };
 
-    if (!targetElement) return;
+  // html2canvas로 캡처하는 공통 함수
+  const captureToCanvas = async (): Promise<HTMLCanvasElement | null> => {
+    const targetElement = getCaptureTarget();
+    if (!targetElement) return null;
 
     await document.fonts.ready;
     await new Promise((resolve) => requestAnimationFrame(resolve));
 
-    const canvas = await html2canvas(targetElement, {
+    return html2canvas(targetElement, {
       backgroundColor: "white",
       scale: 2,
       useCORS: true,
       ignoreElements: (element) => element.classList.contains("exclude-from-capture"),
     });
+  };
+
+  const captureSkillTree = async () => {
+    const canvas = await captureToCanvas();
+    if (!canvas) return;
 
     const dataUrl = canvas.toDataURL("image/png");
     const link = document.createElement("a");
@@ -53,25 +60,8 @@ export default function SkillTreePage() {
   };
 
   const copyToClipboard = async () => {
-    let targetElement: HTMLElement | null = null;
-
-    if (fourthOnly && skillTreeOnlyRef.current) {
-      targetElement = skillTreeOnlyRef.current.querySelector('.skill-branches-container');
-    } else {
-      targetElement = skillTreeRef.current;
-    }
-
-    if (!targetElement) return;
-
-    await document.fonts.ready;
-    await new Promise((resolve) => requestAnimationFrame(resolve));
-
-    const canvas = await html2canvas(targetElement, {
-      backgroundColor: "white",
-      scale: 2,
-      useCORS: true,
-      ignoreElements: (element) => element.classList.contains("exclude-from-capture"),
-    });
+    const canvas = await captureToCanvas();
+    if (!canvas) return;
 
     canvas.toBlob(async (blob) => {
       if (blob) {
