@@ -27,6 +27,7 @@ export interface IJobSkill {
   description?: IJobSkillDescription; // 스킬 설명 (optional)
   levelProperties: ILevelProperties[]; // 레벨별 속성 리스트
   requiredSkillLevels?: Record<number, number>; // 필요한 스킬 레벨 (optional)
+  invisible?: boolean; // 스킬 비표시 여부 (optional)
 }
 
 interface IJobSkillDescription {
@@ -37,7 +38,8 @@ interface IJobSkillDescription {
   detail?: string; // 스킬 상세 설명 (optional)
 }
 
-// hs만 있고 나머지는 정해져 있지 않음
-interface ILevelProperties {
+// hs는 고정 키, 나머지는 스킬별 동적 속성 (damage, prop, x, lt, rb, mastery 등)
+export interface ILevelProperties {
   hs: string; // 레벨 속성 식별자 (예: "h10"은 10레벨)
+  [key: string]: string; // 동적 속성 (damage, prop, x 등)
 }

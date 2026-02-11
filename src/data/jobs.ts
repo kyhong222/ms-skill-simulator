@@ -44,45 +44,25 @@ export const jobs: IJob[] = [
   { id: 522, name: "Corsair (4th)", koname: "캡틴" },
 ];
 
-export const selectableJobs: IJob[] = [
-  { id: 112, name: "Hero (4th)", koname: "히어로" },
-  { id: 122, name: "Paladin (4th)", koname: "팔라딘" },
-  { id: 132, name: "Dark Knight (4th)", koname: "다크나이트" },
-  { id: 212, name: "Arch Mage F/P (4th)", koname: "아크메이지(불,독)" },
-  { id: 222, name: "Arch Mage I/L (4th)", koname: "아크메이지(썬,콜)" },
-  { id: 232, name: "Bishop (4th)", koname: "비숍" },
-  { id: 312, name: "Bow Master (4th)", koname: "보우마스터" },
-  { id: 322, name: "Marksman (4th)", koname: "신궁" },
-  { id: 412, name: "Night Lord (4th)", koname: "나이트로드" },
-  { id: 422, name: "Shadower (4th)", koname: "섀도어" },
-  { id: 512, name: "Buccaneer (4th)", koname: "바이퍼" },
-  { id: 522, name: "Corsair (4th)", koname: "캡틴" }, 
-]
+const findJob = (id: number): IJob => jobs.find((j) => j.id === id)!;
 
-export const groupedJobs: Record<string, IJob[]> = {
-  전사: [
-    { id: 112, name: "Hero (4th)", koname: "히어로" },
-    { id: 122, name: "Paladin (4th)", koname: "팔라딘" },
-    { id: 132, name: "Dark Knight (4th)", koname: "다크나이트" },
-  ],
-  마법사: [
-    { id: 212, name: "Arch Mage F/P (4th)", koname: "아크메이지(불,독)" },
-    { id: 222, name: "Arch Mage I/L (4th)", koname: "아크메이지(썬,콜)" },
-    { id: 232, name: "Bishop (4th)", koname: "비숍" },
-  ],
-  궁수: [
-    { id: 312, name: "Bow Master (4th)", koname: "보우마스터" },
-    { id: 322, name: "Marksman (4th)", koname: "신궁" },
-  ],
-  도적: [
-    { id: 412, name: "Night Lord (4th)", koname: "나이트로드" },
-    { id: 422, name: "Shadower (4th)", koname: "섀도어" },
-  ],
-  해적: [
-    { id: 512, name: "Buccaneer (4th)", koname: "바이퍼" },
-    { id: 522, name: "Corsair (4th)", koname: "캡틴" },
-  ],
+// 선택 가능한 4차 직업 ID 목록
+const selectableJobIds = [112, 122, 132, 212, 222, 232, 312, 322, 412, 422, 512, 522];
+
+export const selectableJobs: IJob[] = selectableJobIds.map(findJob);
+
+// 직업군별 그룹화 (4차 직업 ID 목록)
+const jobGroupDef: Record<string, number[]> = {
+  전사: [112, 122, 132],
+  마법사: [212, 222, 232],
+  궁수: [312, 322],
+  도적: [412, 422],
+  해적: [512, 522],
 };
+
+export const groupedJobs: Record<string, IJob[]> = Object.fromEntries(
+  Object.entries(jobGroupDef).map(([group, ids]) => [group, ids.map(findJob)])
+);
 
 // 하위 직업 목록
 export const subJobs: Record<number, number[]> = {

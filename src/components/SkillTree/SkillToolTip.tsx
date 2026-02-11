@@ -28,7 +28,7 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
     (key) => {
       let value = "0";
 
-      value = currentLevelProperties[key as keyof typeof currentLevelProperties] || "0";
+      value = currentLevelProperties[key] || "0";
 
       // lt(공격범위) 파싱
       if (key === "lt") {

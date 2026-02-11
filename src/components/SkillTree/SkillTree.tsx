@@ -41,7 +41,6 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef, fourth
   const [skillbooks, setSkillbooks] = useState<Record<number, IJobSkillBook | null>>({});
   const [loading, setLoading] = useState(true);
   const [skillLevels, setSkillLevels] = useState<SkillLevel[]>([]);
-  const [, setAllSkills] = useState<{ id: number; name: string }[]>([]);
   const [currentLevel, setCurrentLevel] = useState(10); // 기본값 10
 
   // localStorage에서 데이터 불러오기
@@ -138,8 +137,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef, fourth
       );
 
       setSkillbooks(results);
-      setAllSkills(loadedSkills);
-      
+
       // localStorage에서 데이터 불러오기
       const restoredSkills = loadFromLocalStorage(selectedJobId, loadedSkills, fourthOnly);
       setSkillLevels(restoredSkills);
