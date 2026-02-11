@@ -45,16 +45,17 @@ ms-skill-simulator/
 ├── scripts/
 │   └── prepare-deploy.js            # 빌드 결과물을 deploy/ 디렉토리로 정리
 ├── src/
-│   ├── api/
-│   │   └── skillbook.ts             # 외부 API 호출 함수 (현재 미사용, 데이터는 로컬 JSON)
 │   ├── components/
 │   │   ├── JobSelector/
 │   │   │   └── JobSelector.tsx      # 직업 선택 화면 (5개 그룹 × 12개 직업)
 │   │   └── SkillTree/
 │   │       ├── SkillTree.tsx        # 스킬 트리 메인 (상태관리, 포인트 계산, 데이터 로딩)
-│   │       ├── SkillBranch.tsx      # 단일 차수 스킬 브랜치 (스킬 목록, 활성화 검증, 레벨 조작)
+│   │       ├── SkillBranch.tsx      # 단일 차수 스킬 브랜치 (UI 렌더링 전용)
+│   │       ├── useSkillBranch.ts    # 스킬 브랜치 비즈니스 로직 훅 (활성화 검증, 레벨 증감)
 │   │       ├── SkillToolTip.tsx     # 스킬 툴팁 (레벨별 속성 치환 렌더링)
 │   │       └── SkillToolTipPostfix.tsx  # 특정 스킬의 속성값 후처리 (15개 스킬)
+│   ├── constants/
+│   │   └── skillPoints.ts           # 게임 상수 (전직 레벨, SP 배수, 최대 레벨 등)
 │   ├── data/
 │   │   ├── jobs.ts                  # 직업 목록, 선택 가능 직업, 그룹화, 하위 직업 매핑
 │   │   └── skillbooks/             # 45개 JSON 파일 (직업별 스킬 데이터, Base64 아이콘 포함)
@@ -100,7 +101,7 @@ SkillTreePage (캡처, 모드 토글, 네비게이션)
     ↓
 SkillTree (스킬 레벨 상태, 포인트 계산, 데이터 로딩)
     ↓ props (skillLevels, onLevelChange, remainingSkillPoints ...)
-SkillBranch (스킬 활성화 검증, 레벨 증감 로직)
+SkillBranch (UI 렌더링) + useSkillBranch (활성화 검증, 레벨 증감 로직)
     ↓ hover
 SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 ```
@@ -112,7 +113,9 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 
 ### 컴포넌트 구조
 - **페이지 컴포넌트**: `SkillSimulatorPage`, `SkillTreePage` — 라우팅 진입점, 네비게이션 처리
-- **기능 컴포넌트**: `JobSelector`, `SkillTree`, `SkillBranch` — 비즈니스 로직 담당
+- **기능 컴포넌트**: `JobSelector`, `SkillTree` — 상태관리 및 데이터 로딩
+- **UI 컴포넌트**: `SkillBranch` — 렌더링 전용 (로직은 `useSkillBranch` 훅에 분리)
+- **커스텀 훅**: `useSkillBranch` — 스킬 활성화 검증, 레벨 증감, 포인트 계산 로직
 - **표시 컴포넌트**: `SkillToolTip`, `SkillToolTipPostfix` — 순수 렌더링/데이터 변환
 
 ## 데이터 모델
@@ -194,10 +197,13 @@ main.tsx
         │     └── types/job.ts
         └── SkillTreePage.tsx
               ├── SkillTree.tsx
+              │     ├── constants/skillPoints.ts
               │     ├── data/jobs.ts (subJobs)
               │     ├── data/skillbooks/*.json (동적 import)
               │     ├── types/jobSkillBook.ts
               │     └── SkillBranch.tsx
+              │           ├── useSkillBranch.ts (비즈니스 로직 훅)
+              │           │     └── constants/skillPoints.ts
               │           ├── SkillToolTip.tsx
               │           │     └── SkillToolTipPostfix.tsx
               │           └── react-dom (createPortal)
@@ -255,6 +261,5 @@ main.tsx
 | `gh-pages` (6.3) | GitHub Pages 배포 CLI |
 | `typescript-eslint` (8.30) | TypeScript ESLint 지원 |
 
-### 외부 API (현재 미사용)
-- `src/api/skillbook.ts`에 `maplestory.io` API 호출 함수가 있으나 실제로는 사용하지 않음
-- 모든 스킬 데이터는 `src/data/skillbooks/*.json`에 로컬 내장
+### 데이터 소스
+- 모든 스킬 데이터는 `src/data/skillbooks/*.json`에 로컬 내장 (외부 API 미사용)

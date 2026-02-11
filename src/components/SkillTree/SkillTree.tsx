@@ -2,6 +2,21 @@ import React, { useEffect, useState, useCallback } from "react";
 import { subJobs } from "../../data/jobs";
 import type { IJobSkillBook, IJobSkill } from "../../types/jobSkillBook";
 import SkillBranch from "./SkillBranch";
+import {
+  MAGE_JOB_IDS,
+  MAGE_JOB_LEVEL,
+  DEFAULT_JOB_LEVEL,
+  FOURTH_ONLY_BASE_LEVEL,
+  SP_PER_LEVEL,
+  BRANCH_2ND_LEVEL,
+  BRANCH_3RD_LEVEL,
+  BRANCH_4TH_LEVEL,
+  BRANCH_1ST_BONUS_SP,
+  BRANCH_2ND_BONUS_SP,
+  BRANCH_3RD_BONUS_SP,
+  BRANCH_4TH_BONUS_SP,
+  MAX_CHARACTER_LEVEL,
+} from "../../constants/skillPoints";
 
 interface SkillLevel {
   id: number;
@@ -18,23 +33,22 @@ interface SkillTreeProps {
 function calculateSkillPoints(currentLevel: number, jobLevel: number, fourthOnly: boolean): number {
   // 4차 이후만 모드일 때는 (현재레벨-119)*3
   if (fourthOnly) {
-    return Math.max((currentLevel - 119) * 3, 0);
+    return Math.max((currentLevel - FOURTH_ONLY_BASE_LEVEL) * SP_PER_LEVEL, 0);
   }
-  
-  // 일반 모드
-  let sp = (currentLevel - jobLevel) * 3;
 
-  if (currentLevel >= jobLevel) sp += 1;
-  if (currentLevel >= 30) sp += 1;
-  if (currentLevel >= 70) sp += 1;
-  if (currentLevel >= 120) sp += 3;
+  // 일반 모드
+  let sp = (currentLevel - jobLevel) * SP_PER_LEVEL;
+
+  if (currentLevel >= jobLevel) sp += BRANCH_1ST_BONUS_SP;
+  if (currentLevel >= BRANCH_2ND_LEVEL) sp += BRANCH_2ND_BONUS_SP;
+  if (currentLevel >= BRANCH_3RD_LEVEL) sp += BRANCH_3RD_BONUS_SP;
+  if (currentLevel >= BRANCH_4TH_LEVEL) sp += BRANCH_4TH_BONUS_SP;
 
   return Math.max(sp, 0);
 }
 
 function calcJobLevel(jobId: number): number {
-  const magicianJobIds = [200, 210, 211, 212, 220, 221, 222, 230, 231, 232];
-  return magicianJobIds.includes(jobId) ? 8 : 10;
+  return MAGE_JOB_IDS.includes(jobId) ? MAGE_JOB_LEVEL : DEFAULT_JOB_LEVEL;
 }
 
 const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef, fourthOnly = false }) => {
@@ -171,7 +185,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef, fourth
             <input
               type="number"
               min={jobLevel}
-              max={300}
+              max={MAX_CHARACTER_LEVEL}
               value={currentLevel}
               onChange={(e) => handleLevelChange(Number(e.target.value))}
               className="ml-2 px-2 py-1 border rounded w-20 text-grey-800 bg-white"

@@ -1,4 +1,10 @@
 import type { IJobSkillBook } from "../../types/jobSkillBook";
+import {
+  BRANCH_2ND_LEVEL,
+  BRANCH_3RD_LEVEL,
+  BRANCH_4TH_LEVEL,
+  SP_PER_LEVEL,
+} from "../../constants/skillPoints";
 
 interface UseSkillBranchParams {
   skillbook: IJobSkillBook;
@@ -15,12 +21,12 @@ interface UseSkillBranchParams {
 function calcPointsForBranch(branchIndex: number, jobLevel: number): number {
   let branchLevel;
   if (branchIndex === 1) return 0;
-  else if (branchIndex === 2) branchLevel = 30;
-  else if (branchIndex === 3) branchLevel = 70;
-  else if (branchIndex === 4) branchLevel = 120;
+  else if (branchIndex === 2) branchLevel = BRANCH_2ND_LEVEL;
+  else if (branchIndex === 3) branchLevel = BRANCH_3RD_LEVEL;
+  else if (branchIndex === 4) branchLevel = BRANCH_4TH_LEVEL;
   else return 0;
 
-  return (branchLevel - jobLevel) * 3 + (branchIndex - 1);
+  return (branchLevel - jobLevel) * SP_PER_LEVEL + (branchIndex - 1);
 }
 
 export function useSkillBranch(params: UseSkillBranchParams) {

@@ -26,14 +26,16 @@ npm run deploy       # GitHub Pages 배포 (gh-pages -d dist)
 
 ```
 src/
-├── api/skillbook.ts              # 외부 API 함수 (현재 미사용)
 ├── components/
 │   ├── JobSelector/JobSelector.tsx  # 직업 선택 UI
 │   └── SkillTree/
 │       ├── SkillTree.tsx            # 핵심: 상태관리, 포인트 계산, 데이터 로딩
-│       ├── SkillBranch.tsx          # 단일 차수 스킬 UI, 활성화 검증, 레벨 증감
+│       ├── SkillBranch.tsx          # 단일 차수 스킬 UI (렌더링 전용)
+│       ├── useSkillBranch.ts        # 스킬 브랜치 비즈니스 로직 훅
 │       ├── SkillToolTip.tsx         # 스킬 툴팁 (레벨별 속성 치환)
 │       └── SkillToolTipPostfix.tsx  # 15개 특수 스킬 속성값 후처리
+├── constants/
+│   └── skillPoints.ts              # 게임 상수 (전직 레벨, SP 계산 관련)
 ├── data/
 │   ├── jobs.ts                     # 직업 목록/그룹/하위직업 매핑
 │   └── skillbooks/*.json           # 45개 스킬북 데이터 (Base64 아이콘 내장)
@@ -90,13 +92,14 @@ src/
 - `subJobs[4차ID]` → `[1차, 2차, 3차, 4차]` ID 배열
 
 ### 스킬 포인트 계산 (`SkillTree.tsx:calculateSkillPoints`)
-- 일반 모드: `(currentLevel - jobLevel) * 3 + 보너스SP`
-  - jobLevel: 마법사 계열 8, 나머지 10
+- 게임 상수는 `constants/skillPoints.ts`에 정의
+- 일반 모드: `(currentLevel - jobLevel) * SP_PER_LEVEL + 보너스SP`
+  - jobLevel: 마법사 계열 `MAGE_JOB_LEVEL`(8), 나머지 `DEFAULT_JOB_LEVEL`(10)
   - 보너스: Lv≥jobLevel +1, Lv≥30 +1, Lv≥70 +1, Lv≥120 +3
-- 4차만 모드: `(currentLevel - 119) * 3`
+- 4차만 모드: `(currentLevel - FOURTH_ONLY_BASE_LEVEL) * SP_PER_LEVEL`
 
-### 차수별 활성화 조건 (`SkillBranch.tsx:calcPointsForBranch`)
-- 공식: `(branchLevel - jobLevel) * 3 + (branchIndex - 1)`
+### 차수별 활성화 조건 (`useSkillBranch.ts:calcPointsForBranch`)
+- 공식: `(branchLevel - jobLevel) * SP_PER_LEVEL + (branchIndex - 1)`
 - 1차: 0, 2차: `(30-jobLevel)*3+1`, 3차: `(70-jobLevel)*3+2`, 4차: `(120-jobLevel)*3+3`
 
 ### 스킬 툴팁 속성 치환 (`SkillToolTip.tsx:makeSkillDetail`)
@@ -113,40 +116,31 @@ src/
 - **스킬 데이터 JSON** (`src/data/skillbooks/*.json`): 패치 반영 시 수치 변경
 - **SkillToolTipPostfix.tsx**: 새 특수 스킬 추가 또는 후처리 로직 수정
 - **JobSelector.tsx**: 패치 노트/변경 이력 (하드코딩)
-- **SkillBranch.tsx**: 스킬 레벨 증감 로직, UI 버튼 동작
+- **useSkillBranch.ts**: 스킬 레벨 증감 로직, 활성화 검증
+- **SkillBranch.tsx**: 스킬 UI 렌더링, 버튼 동작
 - **SkillTree.tsx**: 포인트 계산 공식 변경 시
+- **constants/skillPoints.ts**: 게임 상수값 변경 시
 
 ## 주의사항 / 함정
 
 - 스킬 아이콘은 **Base64로 JSON에 내장** — 파일 크기가 큼
-- `ILevelProperties`는 `hs` 외 동적 키 — 타입이 느슨함
-- `src/api/skillbook.ts`의 외부 API는 **현재 미사용** — 데이터는 모두 로컬 JSON
+- `ILevelProperties`는 `hs` 외 동적 키 — 인덱스 시그니처 `[key: string]: string`으로 정의
 - Vite `base: '/skill/'` + BrowserRouter `basename="/skill"` — 로컬 개발 시에도 `/skill/` 경로
 - `isShiftPressed` 상태와 `e.shiftKey` 두 가지 방식 혼재 (useState는 버튼 색상용, 이벤트는 실제 로직용)
 - `isBranchActivated()`: `usedSkillPoints - totalInvestedPoints` 계산 — 현재 브랜치 투자분 제외
 - 툴팁: `ReactDOM.createPortal`로 `document.body`에 렌더링 (fixed 포지셔닝)
 - `prepare-deploy.js`와 `npm run deploy`는 별개 프로세스 — deploy 스크립트는 dist 직접 배포
 
-## 현재 코드의 문제점 / 개선 가능 영역
+## 남은 개선 가능 영역
 
 ### 정리 필요
-1. `App.css`에 Vite 보일러플레이트 CSS 잔존 (`.logo`, `.read-the-docs`, `.card`)
-2. `index.css`에 다크/라이트 테마 CSS가 있으나 Tailwind에서 다크모드 비활성화 — 불일치
-3. `src/api/skillbook.ts` 미사용 파일
-4. `src/assets/react.svg`, `public/vite.svg` 미사용 에셋
-5. `@/*` tsconfig 경로 별칭 미활용 (모든 import가 상대 경로)
-6. `SkillTree.tsx`의 `allSkills` 상태 — `setAllSkills`만 호출하고 값을 사용하지 않음
+1. `index.css`에 다크/라이트 테마 CSS가 있으나 Tailwind에서 다크모드 비활성화 — 불일치
+2. `public/vite.svg` 미사용 에셋
+3. `@/*` tsconfig 경로 별칭 미활용 (모든 import가 상대 경로)
 
 ### 구조 개선
-7. **Prop drilling** (8개+ props): Context 또는 커스텀 훅으로 개선 가능
-8. **SkillBranch.tsx 비대화** (400줄+): 활성화 검증, 레벨 증감, 포인트 계산 분리 가능
-9. **캡처 로직 중복**: `captureSkillTree`와 `copyToClipboard`의 html2canvas 호출 코드 거의 동일
-10. **패치 이력 하드코딩**: `JobSelector.tsx`에 날짜/내용 직접 입력
-
-### 타입 안전성
-11. `ILevelProperties`에 동적 속성 인덱스 시그니처 미정의
-12. 스킬북 JSON의 `invisible` 속성이 `IJobSkill` 인터페이스에 없음
-13. `jobs.ts`에서 `selectableJobs`, `groupedJobs`에 동일 직업 객체 중복 정의
+4. **Prop drilling** (8개+ props): Context 또는 커스텀 훅으로 개선 가능
+5. **패치 이력 하드코딩**: `JobSelector.tsx`에 날짜/내용 직접 입력
 
 ## 테스트
 
