@@ -235,17 +235,31 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
       // 스킬 레벨 초기화 후 적용
       const newLevels = skillLevels.map((s) => ({ ...s, level: 0 }));
       const newLog: SkillLogEntry[] = [];
+      const totalSP = calculateSkillPoints(currentLevel, jobLevel, fourthOnly);
+      let usedSP = 0;
 
       for (const [skillId, level] of entries) {
         const idx = newLevels.findIndex((s) => s.id === skillId);
-        if (idx !== -1) newLevels[idx].level = level;
+        if (idx === -1) continue;
+
+        const prevLevel = newLevels[idx].level;
+        const delta = level - prevLevel;
+        if (delta <= 0) continue;
+
+        const remainingSP = totalSP - usedSP;
+        const affordable = Math.min(delta, remainingSP);
+        if (affordable <= 0) break;
+
+        const appliedLevel = prevLevel + affordable;
+        newLevels[idx].level = appliedLevel;
+        usedSP += affordable;
 
         const skillInfo = findSkillInfo(skillId);
         newLog.push({
           skillId,
-          skillName: skillInfo?.description?.name || newLevels.find((s) => s.id === skillId)?.name || "알 수 없는 스킬",
+          skillName: skillInfo?.description?.name || newLevels[idx].name || "알 수 없는 스킬",
           icon: skillInfo?.icon || "",
-          level,
+          level: appliedLevel,
           masterLevel: skillInfo?.masterLevel || 0,
         });
       }
