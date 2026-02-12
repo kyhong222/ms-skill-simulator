@@ -120,7 +120,7 @@ export default function SkillTreePage() {
         </div>
         <div ref={skillTreeRef} className="p-4 bg-gray-100 rounded-lg shadow">
           <div ref={skillTreeOnlyRef}>
-            <SkillTree selectedJobId={job.id} fourthOnly={fourthOnly} />
+            <SkillTree selectedJobId={job.id} jobName={job.koname} fourthOnly={fourthOnly} />
           </div>
         </div>
       </div>

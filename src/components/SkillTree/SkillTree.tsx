@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { subJobs } from "../../data/jobs";
 import type { IJobSkillBook, IJobSkill } from "../../types/jobSkillBook";
 import SkillBranch from "./SkillBranch";
+import SkillLogDialog from "./SkillLogDialog";
 import {
   MAGE_JOB_IDS,
   MAGE_JOB_LEVEL,
@@ -24,8 +25,17 @@ interface SkillLevel {
   level: number;
 }
 
+interface SkillLogEntry {
+  skillId: number;
+  skillName: string;
+  icon: string;
+  level: number;
+  masterLevel: number;
+}
+
 interface SkillTreeProps {
   selectedJobId: number;
+  jobName?: string;
   onResetRef?: (resetFn: () => void) => void;
   fourthOnly?: boolean; // 4차 이후만 모드
 }
@@ -51,22 +61,25 @@ function calcJobLevel(jobId: number): number {
   return MAGE_JOB_IDS.includes(jobId) ? MAGE_JOB_LEVEL : DEFAULT_JOB_LEVEL;
 }
 
-const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef, fourthOnly = false }) => {
+const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onResetRef, fourthOnly = false }) => {
   const [skillbooks, setSkillbooks] = useState<Record<number, IJobSkillBook | null>>({});
   const [loading, setLoading] = useState(true);
   const [skillLevels, setSkillLevels] = useState<SkillLevel[]>([]);
   const [currentLevel, setCurrentLevel] = useState(10); // 기본값 10
+  const [skillLog, setSkillLog] = useState<SkillLogEntry[]>([]);
+  const [isLogOpen, setIsLogOpen] = useState(false);
 
   // localStorage에서 데이터 불러오기
   const loadFromLocalStorage = (jobId: number, loadedSkills: { id: number; name: string }[], is4thOnly: boolean) => {
     const storageKey = is4thOnly ? `skillTree_${jobId}_4th` : `skillTree_${jobId}`;
     const savedData = localStorage.getItem(storageKey);
-    
+
     if (savedData) {
       try {
         const parsed = JSON.parse(savedData);
         setCurrentLevel(parsed.currentLevel || 10);
-        
+        setSkillLog(parsed.skillLog || []);
+
         // 저장된 스킬 레벨 복원
         const restoredSkills = loadedSkills.map((s) => {
           const savedSkill = parsed.skillLevels?.find((skill: SkillLevel) => skill.id === s.id);
@@ -81,27 +94,84 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef, fourth
         console.error("Failed to parse localStorage data", error);
       }
     }
-    
+
     // 저장된 데이터가 없으면 초기값 반환
+    setSkillLog([]);
     return loadedSkills.map((s) => ({ id: s.id, name: s.name, level: 0 }));
   };
 
   // localStorage에 데이터 저장하기
-  const saveToLocalStorage = (jobId: number, levels: SkillLevel[], charLevel: number, is4thOnly: boolean) => {
+  const saveToLocalStorage = (jobId: number, levels: SkillLevel[], charLevel: number, is4thOnly: boolean, log?: SkillLogEntry[]) => {
     const storageKey = is4thOnly ? `skillTree_${jobId}_4th` : `skillTree_${jobId}`;
     const dataToSave = {
       currentLevel: charLevel,
       skillLevels: levels,
+      skillLog: log ?? skillLog,
     };
     localStorage.setItem(storageKey, JSON.stringify(dataToSave));
   };
 
+  // 모든 skillbooks에서 스킬 정보 검색
+  const findSkillInfo = (skillId: number) => {
+    for (const book of Object.values(skillbooks)) {
+      if (!book) continue;
+      const skill = book.skills.find((s) => s.id === skillId);
+      if (skill) return skill;
+    }
+    return null;
+  };
+
   // 스킬 레벨 증가/감소 핸들러
   const onLevelChange = (skillId: number, newLevel: number) => {
+    const currentSkillLevel = skillLevels.find((s) => s.id === skillId)?.level || 0;
+    const isIncrease = newLevel > currentSkillLevel;
+
     setSkillLevels((prev) => {
       const updated = prev.map((skill) => (skill.id === skillId ? { ...skill, level: newLevel } : skill));
-      // localStorage에 저장
-      saveToLocalStorage(selectedJobId, updated, currentLevel, fourthOnly);
+
+      if (isIncrease) {
+        setSkillLog((prevLog) => {
+          const lastEntry = prevLog[prevLog.length - 1];
+          let newLog: SkillLogEntry[];
+
+          if (lastEntry && lastEntry.skillId === skillId) {
+            // 같은 스킬 연속 → 마지막 항목 레벨만 업데이트
+            newLog = [...prevLog.slice(0, -1), { ...lastEntry, level: newLevel }];
+          } else {
+            // 다른 스킬 → 새 항목 추가
+            const skillInfo = findSkillInfo(skillId);
+            const skillName = skillInfo?.description?.name || prev.find((s) => s.id === skillId)?.name || "알 수 없는 스킬";
+            newLog = [
+              ...prevLog,
+              {
+                skillId,
+                skillName,
+                icon: skillInfo?.icon || "",
+                level: newLevel,
+                masterLevel: skillInfo?.masterLevel || 0,
+              },
+            ];
+          }
+
+          saveToLocalStorage(selectedJobId, updated, currentLevel, fourthOnly, newLog);
+          return newLog;
+        });
+      } else {
+        // 감소 시 마지막 로그 항목이 같은 스킬이면 레벨 업데이트
+        setSkillLog((prevLog) => {
+          const lastEntry = prevLog[prevLog.length - 1];
+          if (lastEntry && lastEntry.skillId === skillId) {
+            const newLog = newLevel > 0
+              ? [...prevLog.slice(0, -1), { ...lastEntry, level: newLevel }]
+              : prevLog.slice(0, -1); // 0이면 항목 제거
+            saveToLocalStorage(selectedJobId, updated, currentLevel, fourthOnly, newLog);
+            return newLog;
+          }
+          saveToLocalStorage(selectedJobId, updated, currentLevel, fourthOnly);
+          return prevLog;
+        });
+      }
+
       return updated;
     });
   };
@@ -110,8 +180,9 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef, fourth
   const resetLevels = useCallback(() => {
     setSkillLevels((prev) => {
       const reset = prev.map((skill) => ({ ...skill, level: 0 }));
-      // localStorage에 저장
-      saveToLocalStorage(selectedJobId, reset, currentLevel, fourthOnly);
+      const emptyLog: SkillLogEntry[] = [];
+      setSkillLog(emptyLog);
+      saveToLocalStorage(selectedJobId, reset, currentLevel, fourthOnly, emptyLog);
       return reset;
     });
   }, [selectedJobId, currentLevel, fourthOnly]);
@@ -206,6 +277,13 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef, fourth
 
         <div className="flex gap-2">
           <button
+            onClick={() => setIsLogOpen(true)}
+            className="exclude-from-capture px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            style={{ width: "120px" }}
+          >
+            스킬 로그
+          </button>
+          <button
             onClick={resetLevels}
             className="exclude-from-capture px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
             style={{ width: "120px" }}
@@ -241,6 +319,15 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, onResetRef, fourth
           );
         })}
       </div>
+
+      <SkillLogDialog
+        log={skillLog}
+        isOpen={isLogOpen}
+        onClose={() => setIsLogOpen(false)}
+        jobLevel={jobLevel}
+        fourthOnly={fourthOnly}
+        jobName={jobName}
+      />
     </div>
   );
 };
