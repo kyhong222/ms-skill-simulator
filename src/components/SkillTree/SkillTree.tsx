@@ -329,7 +329,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
   return (
     <div>
       {/* 상단 바: 현재 레벨 + 스킬 포인트 정보 */}
-      <div className="exclude-from-capture flex items-center justify-between mb-4 ">
+      <div className="flex items-center justify-between mb-4">
         <div className="flex items-center justify-between gap-4">
           <label className="font-semibold text-black">
             현재 레벨:
