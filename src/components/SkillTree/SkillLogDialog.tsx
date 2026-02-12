@@ -25,6 +25,7 @@ interface SkillLogDialogProps {
   jobLevel: number;
   fourthOnly: boolean;
   jobName: string;
+  jobId: number;
 }
 
 const BRANCH_LABELS = [
@@ -79,10 +80,11 @@ function LogEntry({ entry }: { entry: SkillLogEntry }) {
   );
 }
 
-export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthOnly, jobName }: SkillLogDialogProps) {
+export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthOnly, jobName, jobId }: SkillLogDialogProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const [showCopied, setShowCopied] = useState(false);
+  const [showCodeCopied, setShowCodeCopied] = useState(false);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -138,6 +140,18 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
     });
   };
 
+  const generateSkillCode = async () => {
+    const data = { j: jobId, s: log.map((e) => [e.skillId, e.level]) };
+    const code = btoa(JSON.stringify(data));
+    try {
+      await navigator.clipboard.writeText(code);
+      setShowCodeCopied(true);
+      setTimeout(() => setShowCodeCopied(false), 2000);
+    } catch (err) {
+      console.error("스킬코드 복사 실패:", err);
+    }
+  };
+
   const saveAsFile = async () => {
     const canvas = await captureToCanvas();
     if (!canvas) return;
@@ -169,6 +183,12 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
                 className="px-3 py-1.5 text-sm bg-gray-200 text-gray-800 rounded hover:bg-gray-300"
               >
                 파일 저장
+              </button>
+              <button
+                onClick={generateSkillCode}
+                className="px-3 py-1.5 text-sm bg-green-500 text-white rounded hover:bg-green-600"
+              >
+                {showCodeCopied ? "복사됨!" : "스킬코드 생성"}
               </button>
             </>
           )}

@@ -68,6 +68,10 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
   const [currentLevel, setCurrentLevel] = useState(10); // 기본값 10
   const [skillLog, setSkillLog] = useState<SkillLogEntry[]>([]);
   const [isLogOpen, setIsLogOpen] = useState(false);
+  const [isCodeInputOpen, setIsCodeInputOpen] = useState(false);
+  const [codeInput, setCodeInput] = useState("");
+  const [codeError, setCodeError] = useState("");
+  const codeDialogRef = React.useRef<HTMLDialogElement>(null);
 
   // localStorage에서 데이터 불러오기
   const loadFromLocalStorage = (jobId: number, loadedSkills: { id: number; name: string }[], is4thOnly: boolean) => {
@@ -193,6 +197,68 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
     saveToLocalStorage(selectedJobId, skillLevels, newLevel, fourthOnly);
   };
 
+  // 스킬코드 입력 다이얼로그 제어
+  useEffect(() => {
+    const dialog = codeDialogRef.current;
+    if (!dialog) return;
+    if (isCodeInputOpen) {
+      setCodeInput("");
+      setCodeError("");
+      dialog.showModal();
+    } else {
+      dialog.close();
+    }
+  }, [isCodeInputOpen]);
+
+  useEffect(() => {
+    const dialog = codeDialogRef.current;
+    if (!dialog) return;
+    const handleClose = () => setIsCodeInputOpen(false);
+    dialog.addEventListener("close", handleClose);
+    return () => dialog.removeEventListener("close", handleClose);
+  }, []);
+
+  // 스킬코드 적용
+  const applySkillCode = () => {
+    try {
+      const decoded = JSON.parse(atob(codeInput.trim()));
+      if (decoded.j !== selectedJobId) {
+        setCodeError("다른 직업의 스킬코드입니다");
+        return;
+      }
+      const entries: [number, number][] = decoded.s;
+      if (!Array.isArray(entries)) {
+        setCodeError("올바르지 않은 스킬코드입니다");
+        return;
+      }
+
+      // 스킬 레벨 초기화 후 적용
+      const newLevels = skillLevels.map((s) => ({ ...s, level: 0 }));
+      const newLog: SkillLogEntry[] = [];
+
+      for (const [skillId, level] of entries) {
+        const idx = newLevels.findIndex((s) => s.id === skillId);
+        if (idx !== -1) newLevels[idx].level = level;
+
+        const skillInfo = findSkillInfo(skillId);
+        newLog.push({
+          skillId,
+          skillName: skillInfo?.description?.name || newLevels.find((s) => s.id === skillId)?.name || "알 수 없는 스킬",
+          icon: skillInfo?.icon || "",
+          level,
+          masterLevel: skillInfo?.masterLevel || 0,
+        });
+      }
+
+      setSkillLevels(newLevels);
+      setSkillLog(newLog);
+      saveToLocalStorage(selectedJobId, newLevels, currentLevel, fourthOnly, newLog);
+      setIsCodeInputOpen(false);
+    } catch {
+      setCodeError("올바르지 않은 스킬코드입니다");
+    }
+  };
+
   // onResetRef 등록
   useEffect(() => {
     if (onResetRef) onResetRef(resetLevels);
@@ -284,6 +350,13 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
             스킬 로그
           </button>
           <button
+            onClick={() => setIsCodeInputOpen(true)}
+            className="exclude-from-capture px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+            style={{ width: "140px" }}
+          >
+            스킬코드 적용
+          </button>
+          <button
             onClick={resetLevels}
             className="exclude-from-capture px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
             style={{ width: "120px" }}
@@ -327,7 +400,48 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
         jobLevel={jobLevel}
         fourthOnly={fourthOnly}
         jobName={jobName}
+        jobId={selectedJobId}
       />
+
+      <dialog
+        ref={codeDialogRef}
+        className="rounded-lg shadow-xl p-0 w-[480px] backdrop:bg-black/50"
+      >
+        <div className="flex items-center justify-between px-5 py-3 border-b bg-gray-50 rounded-t-lg">
+          <h3 className="font-semibold text-lg text-gray-800">스킬코드 적용</h3>
+          <button
+            onClick={() => setIsCodeInputOpen(false)}
+            className="text-gray-500 hover:text-gray-800 text-xl leading-none px-1"
+          >
+            ✕
+          </button>
+        </div>
+        <div className="px-5 py-4">
+          <textarea
+            value={codeInput}
+            onChange={(e) => { setCodeInput(e.target.value); setCodeError(""); }}
+            placeholder="스킬코드를 붙여넣으세요"
+            className="w-full h-24 px-3 py-2 border rounded text-sm text-gray-800 bg-white resize-none focus:outline-none focus:ring-2 focus:ring-blue-300"
+          />
+          {codeError && (
+            <p className="text-red-500 text-sm mt-2">{codeError}</p>
+          )}
+          <div className="flex justify-end gap-2 mt-3">
+            <button
+              onClick={() => setIsCodeInputOpen(false)}
+              className="px-4 py-2 text-sm bg-gray-200 text-gray-800 rounded hover:bg-gray-300"
+            >
+              취소
+            </button>
+            <button
+              onClick={applySkillCode}
+              className="px-4 py-2 text-sm bg-green-500 text-white rounded hover:bg-green-600"
+            >
+              적용
+            </button>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 };
