@@ -17,6 +17,7 @@ import {
   BRANCH_3RD_BONUS_SP,
   BRANCH_4TH_BONUS_SP,
   MAX_CHARACTER_LEVEL,
+  isCygnusJobId,
 } from "../../constants/skillPoints";
 
 interface SkillLevel {
@@ -40,7 +41,8 @@ interface SkillTreeProps {
   fourthOnly?: boolean; // 4차 이후만 모드
 }
 
-function calculateSkillPoints(currentLevel: number, jobLevel: number, fourthOnly: boolean): number {
+// hasFourthJob=false(시그너스)면 120레벨 4차 보너스 SP를 제공하지 않음
+function calculateSkillPoints(currentLevel: number, jobLevel: number, fourthOnly: boolean, hasFourthJob: boolean = true): number {
   // 4차 이후만 모드일 때는 (현재레벨-119)*3
   if (fourthOnly) {
     return Math.max((currentLevel - FOURTH_ONLY_BASE_LEVEL) * SP_PER_LEVEL, 0);
@@ -52,7 +54,7 @@ function calculateSkillPoints(currentLevel: number, jobLevel: number, fourthOnly
   if (currentLevel >= jobLevel) sp += BRANCH_1ST_BONUS_SP;
   if (currentLevel >= BRANCH_2ND_LEVEL) sp += BRANCH_2ND_BONUS_SP;
   if (currentLevel >= BRANCH_3RD_LEVEL) sp += BRANCH_3RD_BONUS_SP;
-  if (currentLevel >= BRANCH_4TH_LEVEL) sp += BRANCH_4TH_BONUS_SP;
+  if (hasFourthJob && currentLevel >= BRANCH_4TH_LEVEL) sp += BRANCH_4TH_BONUS_SP;
 
   return Math.max(sp, 0);
 }
@@ -235,7 +237,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
       // 스킬 레벨 초기화 후 적용
       const newLevels = skillLevels.map((s) => ({ ...s, level: 0 }));
       const newLog: SkillLogEntry[] = [];
-      const totalSP = calculateSkillPoints(currentLevel, jobLevel, fourthOnly);
+      const totalSP = calculateSkillPoints(currentLevel, jobLevel, fourthOnly, !isCygnus);
       let usedSP = 0;
 
       for (const [skillId, level] of entries) {
@@ -314,7 +316,8 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
   }, [selectedJobId, fourthOnly]);
 
   const jobLevel = calcJobLevel(selectedJobId);
-  const totalSkillPoints = calculateSkillPoints(currentLevel, jobLevel, fourthOnly);
+  const isCygnus = isCygnusJobId(selectedJobId);
+  const totalSkillPoints = calculateSkillPoints(currentLevel, jobLevel, fourthOnly, !isCygnus);
   const usedSkillPoints = skillLevels.reduce((sum, skill) => sum + skill.level, 0);
   const remainingSkillPoints = totalSkillPoints - usedSkillPoints;
 
@@ -415,6 +418,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
         fourthOnly={fourthOnly}
         jobName={jobName}
         jobId={selectedJobId}
+        isCygnus={isCygnus}
       />
 
       <dialog

@@ -1,0 +1,1451 @@
+{
+  "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB1klEQVR4nO1W7VHDMAxV77qAGMErmBHMCKxQRqArZAQyAlkhIzQj4BHwCEFybNdfaVISOH7w7tz4VFnvSXasHOGKEX4GB/7xROPH+xvoYYCh7wERQUgZPLXWIISY5uQT/xd8Mju652PTcgIHJho/Lxfozi9gjIGBBk1A8tPBmogszE1fELFd69QuBYa5zagnkrVAhNXonDiCOsICuGScKToGLiPPMWM0UQUmPwOxyRLJ0wn6toW9YbWYiGh5wVW9PxQMnwWuqOdNommDdRLIz5kkLukmonuQC6gS8TtQ+3NamG907pcGngmzX0ZLCBntBa5gLavFjOYW3otdS3dL0GYiDr7mhP/uYfgn+nNEii7gTg8pkW3DhhqV61W2nZMjUpc0+npu0XXN2JbaQ7NLrqajJ2m7LpVjnWhRfmnMXSKZXZLQovF5EkWECDMvBaZqvWK0ActLlRNuI/9QOiYRUoFU5ReOXWxKEvsMHy2OIcqiSuRRu2CLYFlAE4nQun4PBaKeCF6VSr7Npg2n8pDNlqkSgEUgyCBERk6nKCsmOnTajM90apqmCU5oB3Jbg3svb+EkxcJ8Rpasohe+h2TdE40h3qMHGuVJ2A7edBMTGZh/S7bApvcFKefrHVfiEZAAAAAASUVORK5CYII=",
+  "job": {
+    "id": 1411,
+    "name": "Night Walker (3rd)"
+  },
+  "skills": [
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADL0lEQVR4nL2XgW2DMBBFD6kLkBHSEcwIMEIYIYwQRkhGgBHICDACjFCPUEZI/U3OOYyBVKr6pSaRcf2fz3fG/qC5HvQ/iviHBHi0/defjB7TuPpsNE+z5PPBEAxgzVN1/BOAYRgoSZJFe9/31uPa9FTmiYX48M3zolwd+HI+ud+3+r7br/9uXVtyyF7PT4roCTHLgT1zOSvMRoJIOKm7noMiOlD6DLafhJvmbXMlrUfSo3YwAGEIP+zjiL9XPoQmsAvgm7Mej6lgoihyg0HtVyMRaPIfZ+3ZZ+5+vxUBiM0xe6011XVN5/N50Q+GdVcv2m962fY7AGM8gWjRNtL1WtkIuSh4Yd/TLgDWF4PDpGoaiuMJ4HhUpAdNSinbzsqzV3irtqLb/TbB1ppCWgBslVqRvwZv297ONI5jStOURhMZmQs24RAIEQz5PAiwVmrOVFRBliUOBJGAlNlLAMSlBvnLgUk11dVEZpgD8O4VKjVpzpJVAIhpDLMkqRIRK2hPFgB7916pbVVBKkxZoXCvArC2TLaqAIASGok5G9f0+zwc9nNgy6Qsi80qOJ9Oti/DcPRsX5MXWKZZuUoAvCL3Ss0NZtqQaPb/RBWwEYy7brAgEmJNwX0gZPL1/W3DCF2uV9PHZDxNfQAJZK4C5AT6vwPhADBLjsKaCcIIk4MBwbLEx3g2GFdBTK+wc5WgbPnF1VRqCQDxrgcBZM1kitI0W13OS42z52RM4yc07xmbEZAQvBuyye0W3tt9c6m7MY3VifDal8u3C+CrLJED4WeDyQ+19tBoHO6mMlIaknK7CrY0jtgy1QwiTVvK88wOei9yt90iWhIHeTDqzn6vKQgg34AwKYqOeEuPA4OhjSHwyT24grb01nngZTCdcDCmUpVNLgB2JgokIGS40JZWzXtVIOVHoSwHd7xiHwmBpZCmezN/KwJbEGwUgkA7zxwgcva/AtiHiOlyQan2DoIBICQqtGa+AMBBIXQ38CHWTPxjuX93YA8fIMJdjW9Hfgd/wDUT3sql+CUmk84CmdOQuRXhZ8QRsBC4s+3JN+k0fw+LvqE2iM3xIZcgel4Y/0PuBPMDMnRrjMkd6TEAAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC2klEQVR4nL2XjW0qMRCE7yQagBKgBCgBSoASoAQoAUqAEqAEKAFKgBKgBF6+e5nT3OL7iRRlpSSOveyMZ71r08uq9s7+xnINnMD7er3+GkK/389er1dybTKZvEVCBArw8Xj8K+C32y0bjUYf88I4Ho/ZYrEoSPQi+Gq1qg28XC7LnR0Oh0Y/7Pl8lnODwaAcz+fzkkTlDLSBf0lX2Q0mIgKNFtOAOmxiOBwW//eyDibw8/mcPR6P4kdkICISTlDgTsDX7/d7NwLr9brIp8Bl7/f/gsnzPPPDq8BOIs4TT/OtBOQocP7qDKRkZw2Zozl5jDR0IhADuKSMt9ttIa2rUFd+kWgnAuyU4IBwckWEQ8ROVVbakeeZtF0ul2K82+0qcWsVIOdip8Ml56+yqQTHj7XpdFoQcxUgEg+h1r1JVQiQU28gHBwP4FUwm83KOeUcNQju+Y7pYFP7/T47nU5VAgSJpeZkmqqANcVADYG6YnVWEnDwFEhTFQAaLd4rdXdDJQVNIE1VAEEnHe8U/GjFsUfUEkiBbDabShUAIsmZp7/jKzJST7tHXVIalSkJtJWajDnJKaJKAfMAU3oQcRJOJknAFwQiBRhzs+lGo1RFirVYBRDC30l4vCQBQKVCHQjr+EGEtDD2gEqJy64qoWx1cVGGHwQwdT0MIhHE+7xUUj3L9D+fVXOKt2RSASehky+Q2EYjWMo4tJLd09dKAPPzUAeOsUM9LFKGYvjw0CENKBFLsVf3QR/Hk0ue6XIEhaD8o5/SF+dbCfgNCAhy1oFoLtXlHLy1CtrMa58xFcLJlgpOIoLpSddaBW0qxJ1FEqmdtz1OGhVoSkUTCSlFL8HHe8CPCHQhQb07iLdoXcd14B8EyE3qu0EkIfAIEhuOHjQO7vkXgZzvavp2FB3cUiDqnHw2PrnUI2JMGtg38VwKFCS4CdssXqf+hoiWmsMEzi9PQf79hfEvrHzB/AOLOrN9vvXozQAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADMElEQVR4nL1XjZGzIBBdZ64BUoJXgpagJVxK0BKSEs4STAm5ErQELSGWEErwY4HFFQX9Zm7u3eQ0QHiPxy4/H7DGDH+DhF64gLkbXr/SuwAZrJOqtsw/ZxJBAjR5kaW/ImAcR8jzfFM+DIPm+H4OcL/mWsSHT36tm2DHt6pw782jP2zXzU9XVibXpf4rA7AiVjFwRM5HhaPhQrg4jh9Y94nuIAprth+EUfKhu8E0TeojnRgUQiJ82yX+TYBBsamnARwK8MkJ82wSJkkS1xni+W65ApBS6icvv15q937KAQSR4+ilGtbj8YCqqrYNFVkz3TfFzbgt+08BJrWkXFyY1OhubWscsi7oAU9wGocCcH6xcyRpn53q3ARRmmXalUI9U1VOqPPF3nb4hntvRi73DdgKiKVafS3de6FEoStpKqAoMiVsWsUCCtZusDWJ1+8KCKWa+86yoLTtOi3EeJ6lKQghXKppeIsiDurZ3qD5GdcCaPXaSzVOTuBZ0Fmho6rP1JQQ7mXAd98BXLuPUi2WBQUjdYJ37A4KIMRIYlmAArnozBOE7T4vl+MYiJHc6zqaBdVXoduSGHJPt1Vx0dlM8kVoAbhFHqUarehpmunIJ8GUBUSExL2KJxTCRYSwuw7skbzeb20jovpudcQvzqmghSULUDC2PyPCCcB5IxdCJGgjll2UEJyWVKzPD5QFAhbbKUtKa79JwyVGVg7QqodAISES7ZIqR2eEtwNS9Ij3DKnKdSI/dICLoNWQSMp8m2aaJNKxvCQgihugfD59hwJ8hMgRuFAXEIbsGxCygrGp41kQxx7NrPYFM7c9rvm2VIA7e5g4QBHjwzwDve8K4DugmcOedbGOCSKU7CnsU7L6EE6eBzgNUZng0puRjQXp/YJOY+JsFnBsXfDHuhUhvRbkRMyFqAP7InyaF140zI5oRTj71apqsihfHV5PC9gXQSFlPu1zUiSLEwjaU+gAEyLfCMCDwt7dwBeBptKuzUn8Y7l/dyAOX0CCdzW6HfkN/A5DJLSUc9C2zINOC1IrpLoV4WtCDmgReGc7gk/ST/QcN233yhBEjv/4FCT2wvgXcCeYfxkyR1zYZeEDAAAAAElFTkSuQmCC",
+      "weapons": [],
+      "id": 14110003,
+      "soundPath": "Skill.img/14110003",
+      "description": {
+        "id": 14110003,
+        "desc": "포션 등 회복 아이템의 효과가 상승하거나 상태변화 아이템의 적용시간이 늘어난다. 단, 엘릭서와 같이 %로 회복시켜 주는 아이템에는 적용되지 않는다.",
+        "name": "알케미스트",
+        "bookName": "",
+        "detail": "회복량 #x% 상승, 상태변화 적용시간 #y% 증가"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "x": "103",
+          "y": "103"
+        },
+        {
+          "hs": "h10",
+          "x": "130",
+          "y": "130"
+        },
+        {
+          "hs": "h11",
+          "x": "132",
+          "y": "132"
+        },
+        {
+          "hs": "h12",
+          "x": "134",
+          "y": "134"
+        },
+        {
+          "hs": "h13",
+          "x": "136",
+          "y": "136"
+        },
+        {
+          "hs": "h14",
+          "x": "138",
+          "y": "138"
+        },
+        {
+          "hs": "h15",
+          "x": "140",
+          "y": "140"
+        },
+        {
+          "hs": "h16",
+          "x": "142",
+          "y": "142"
+        },
+        {
+          "hs": "h17",
+          "x": "144",
+          "y": "144"
+        },
+        {
+          "hs": "h18",
+          "x": "146",
+          "y": "146"
+        },
+        {
+          "hs": "h19",
+          "x": "148",
+          "y": "148"
+        },
+        {
+          "hs": "h2",
+          "x": "106",
+          "y": "106"
+        },
+        {
+          "hs": "h20",
+          "x": "150",
+          "y": "150"
+        },
+        {
+          "hs": "h3",
+          "x": "109",
+          "y": "109"
+        },
+        {
+          "hs": "h4",
+          "x": "112",
+          "y": "112"
+        },
+        {
+          "hs": "h5",
+          "x": "115",
+          "y": "115"
+        },
+        {
+          "hs": "h6",
+          "x": "118",
+          "y": "118"
+        },
+        {
+          "hs": "h7",
+          "x": "121",
+          "y": "121"
+        },
+        {
+          "hs": "h8",
+          "x": "124",
+          "y": "124"
+        },
+        {
+          "hs": "h9",
+          "x": "127",
+          "y": "127"
+        }
+      ]
+    },
+    {
+      "invisible": true,
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADVUlEQVR4nL1Xi5HbIBBFM9eAUgIpgStBKUEuQSrhXIJTglWCVUIo4VRCKOEowdkHWhnQYnsmiXdG9nGGfW//6E3lclX/UNq2DY9zrvyp4T9SAtfPz9/qFfL+/v3KJJhAADdGv4TA+fJLjYcfV5Jvb4/AvfdqmmflFqd88dvlfFKH8bit4e6h70iXCeestcrSOVpsZ3EGexSRaJrmq8yBnUBpZzo1uzlTtNtHT0fAAIfMBL4U4NhzPP5Up9PHdu4hAQi845wha5agkC1ZaI3vkbzQar2B2xXcr3vbaIkytKfrTKb7KQIQHEQ2O8kLwUtGaY2M98HtAGdgDXA63xmz05sRgEVG2BT1EEhHoaB8OJMLsZfPYM2k7GKVJ6IAh1c6Ez2D85JkBObZBgsRc2k/h0Ii3Ia1C8nKHoHXasAigZi5C1lAJChTtXAYXpAI4CzWeo0zviUJoUn05gRgCRQ5IjH5AFaWJ84CKA1B9I5ZnzqwDeecOn0MMgEmgQ/nXYi3990uc2sigbNXF8oL5EaZwNUqiER8qGfkfU/eSK2GtdM0qWEYMi/sLY4hrfWPu2V4phpnwBQc5chrkJASDWT6UDX2HoRM4JIAp9+smAnBehDg+Kf7Sl1py64SqAGnigEIATg8wSTGccxCUIalRiQjgB/hTHa9JAzI8WcPpLmQAvP3Ux7glsm1KnVFgPBvDI512UUfAYsEPqg+y4RC3UpE8D+4nS03ySSEoPQwlKCtVgE7Aik4WrKlDEb9tjNc34fuxiAMKoFDuA2DBHoKWEhE9o3I8zhd4jhdh1Cttd4TNKZW9zdDhEmaEUDjiLMgdiz4QwszvPQCHtR733eqFORV3/eqpSm52Nt9QiQQW+9tDRf2BThCw0OqLLsYor2nsB1NSYeQ5L2imIbJoRWgdD3CM5BFpfAdUJPLayNYuheInbDm+nAjoqo42ON2JYNSLjW3Dh4pFCylQfIsWBOvZBvyw98pquRO8MwVH/p3BG6321xBsD4Zp7C6vJbzBMW17F4oqgS2e5ww/+3ywPqERLiYPghF5OpzAuc1riVzjn0JX22zT4aCCTR4V+O3I6ntQlH6MvG3MlHPoFcz/NmwBwIJvLO9QhgcH2kIGrww/g9ADmmSQ9vr+R9Zrjjczw3E6AAAAABJRU5ErkJggg==",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACiklEQVR4nL2Xga3iMBBEEykNcCXQApRAC1AClEALUAKUAC1QArRACZ8S+P9FmmhidhNOd5+RQhJi74x37V27qfp4Vv8Rk8mkve73e/mp1oMLeF6v1+oTmM/nT4mQgJZ8Npt9RMDpdKpWq9XzB3+aMfLH41Gdz+fqdru9fDscDtVms+necfdyuWxt0e9yubT9ePY+tEFEXddfTTUCjGKQOLqhrJ0GEpGD/X5fbbfb7n1UAJAAN8hIeJcXELBYLFJyvk+n067NXwkAdMRgFAqNXjPeyUXs3kkF0DGbCx6K3W7XCeHOu9ugjZagiHmO0BOA61CedZCATDDvXCLGaxlxKEATjSvr7DF0AQqP4sw9Au3cbhM1UAyjuNFZI5UIoLZDy1n9RlcBjUtvvIOI3Illz5GuAjVWB0T4qCE7Ho/Ver3ueSEiDmrBuADAGhehk2upAURkExbRZNEhhAKc2O8yLEGMHgGKfZaugafsVEBG7IYhBJDjCYmAoFySEjwkpCdAH9U4gggVf3nA54IT6/6WB5QytVajWe2JRuRamt5+jDgUwCjKCZWlZ/7DuEZe5gAVJOwNVdGeACfXPoA4Y4waLg+5sIgcKJNq1WQi0kyouiB3Z6l1COqX7Q1eBDixGkc1vPQCF97CSyW0T3BvpAIwUm4iSnIvJuWy8xBlIhhgKqAkj1yv+VDCq2FWgqMyn6biaPRKwYjQlkyrQd8zgUI5oFCAu8yRTSTBvfDOFh/7TfRntKy8AAFGXW7LSxFju6FUQFT/o0KTQWLH9hGIfSlGyl6lwSiZZGlWh5IsnZcCas5qOh1FHXCnb6P+FSz3n6MZj7U80IrguPQJiJwfD0HNgfE3CBVSC2F3PP8GjZZF/WKB3L4AAAAASUVORK5CYII=",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADN0lEQVR4nL1Xi5GbMBAVM26AlKCUoCuBlIBLsEuwS7BLOEo4SohKsEqISgglOHoLi1dCAmaSeGfuDLa07+1fOqhYnuofSl3X9Oe9T3+q+EESeP58/FLvkB8f359MggkQeGP0Wwjcvh7qevx4Bvl22AIfhkHdO5tzo/r6vKjj+T6/w91t25Au7OutU855epZ7Lq0JDw9VVdXvg9oQUtoY1fVDpCgnJgATeHjue6esc4s152unPm+n+X2TACs2XitrXwphiQsA7AWt6wBu6DesW4DXQY8OBBsTfb2LAARe8H7IhgICcJDAGpeAawLWM8EiARviVcoFGQq4kEHYC8OswxEJ2jN5BTqxPycRgb63Ic6GNuXWU4z9iyDAzWRVTe+e/gBGawNhXQDOEkCSIX5DsIA26+XmpmmyBGhveKdcCHsR75xgnfTGIbeA3Bg+4XKThAR7ASxDADFm9JxZKWdLHnLqdtlRBUg2xLtFSBqj9kgOnL3qgj7ODSmrVcDNBOXfhuYhrYbFXder0+kUeSEG9uTNtf6xSgDZzYASHNbwe9d1KpexIAPSvbVrEHkCElh+suKRkA/Wt+QFalTGLOpf6pItu0igBCwVAxACcHiCSZzP1ygH0rCUiEQE+EdenBPEHG4f4//ygMwFCcyfuzyA+kQpca2aTOskkKnRMDjeZU/YA5wlcLu0i5aJWOeI4Du4nS031ANe61B6vV3mxCoBCY6apXnunar7Wl2Cu9HlGGQE1VlwCHoH9EFHaYAtCEBQsjaUjhUHCZRTri1viZmGEDeiXD9IpqGjxbJj8VCJFUsvjNZjkOE0lAqI4/t60p2SiAh0Xdw0eARLwYzgCRfFPHhMa59tx1jeTiGxSV6sdkIo08lUg4JTxlJu27C4NPtxLkjHc5EAgNsmBhpPO14d7X0+ksELXGpItr5A8KV3D4HJ9akhvXWbB1M6lBRCsYSp8wQa6u2xgvQ8CKvTYzlkTyhWCVDWZub/1liNyA6ecqVdCQWTXQwjO53pIoVT7FMpttlhvSpSAhXuanw7yp2K4RV5mfhbuYdLS7ia4bFiDxAJ3NneIQyOfzIEFS6M/wOQQypyaL6e/wEffhu6V34r+AAAAABJRU5ErkJggg==",
+      "weapons": [
+        47
+      ],
+      "id": 14110004,
+      "soundPath": "Skill.img/14110004",
+      "description": {
+        "id": 14110004,
+        "desc": "표창에 독을 발라 공격한다. 일정 확률로 적이 중독상태에 빠져 지속적으로 데미지를 입는다. 최대 3회까지 중복이 가능하고 적의 HP가 1 이하로 떨어지지 않는다.",
+        "name": "베놈",
+        "bookName": "",
+        "detail": "공격력 #mad, 지속시간 #time초, 성공률 #prop%"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "mad": "31",
+          "prop": "11",
+          "time": "2"
+        },
+        {
+          "hs": "h10",
+          "mad": "40",
+          "prop": "20",
+          "time": "2"
+        },
+        {
+          "hs": "h11",
+          "mad": "41",
+          "prop": "21",
+          "time": "3"
+        },
+        {
+          "hs": "h12",
+          "mad": "42",
+          "prop": "22",
+          "time": "3"
+        },
+        {
+          "hs": "h13",
+          "mad": "43",
+          "prop": "23",
+          "time": "3"
+        },
+        {
+          "hs": "h14",
+          "mad": "44",
+          "prop": "24",
+          "time": "3"
+        },
+        {
+          "hs": "h15",
+          "mad": "45",
+          "prop": "25",
+          "time": "3"
+        },
+        {
+          "hs": "h16",
+          "mad": "46",
+          "prop": "26",
+          "time": "3"
+        },
+        {
+          "hs": "h17",
+          "mad": "47",
+          "prop": "27",
+          "time": "3"
+        },
+        {
+          "hs": "h18",
+          "mad": "48",
+          "prop": "28",
+          "time": "3"
+        },
+        {
+          "hs": "h19",
+          "mad": "49",
+          "prop": "29",
+          "time": "3"
+        },
+        {
+          "hs": "h2",
+          "mad": "32",
+          "prop": "12",
+          "time": "2"
+        },
+        {
+          "hs": "h20",
+          "mad": "50",
+          "prop": "30",
+          "time": "3"
+        },
+        {
+          "hs": "h3",
+          "mad": "33",
+          "prop": "13",
+          "time": "2"
+        },
+        {
+          "hs": "h4",
+          "mad": "34",
+          "prop": "14",
+          "time": "2"
+        },
+        {
+          "hs": "h5",
+          "mad": "35",
+          "prop": "15",
+          "time": "2"
+        },
+        {
+          "hs": "h6",
+          "mad": "36",
+          "prop": "16",
+          "time": "2"
+        },
+        {
+          "hs": "h7",
+          "mad": "37",
+          "prop": "17",
+          "time": "2"
+        },
+        {
+          "hs": "h8",
+          "mad": "38",
+          "prop": "18",
+          "time": "2"
+        },
+        {
+          "hs": "h9",
+          "mad": "39",
+          "prop": "19",
+          "time": "2"
+        }
+      ]
+    },
+    {
+      "masterLevel": 30,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+klEQVR4nO2X3XHCMBCEpRkaoAVcgl0CKYGUQAu4BGghJYQSTAlWCdCCSzCszDHnQydZQPyUfUgc58b76efW1sKM1Zt5ZOmCA/RNe57F/asqeoIgAG++LldPxc654EPKssyq4dr/tqb+rjzEImVeVVXwIW3begPUdF0drHFuH4TYbW737hALo4jM+368Ldzl4n9XReEhYP5zCM/AdlerEKQggGYOlauVh2jPZw+xWS/N8dRpw0hCPAHEzDUITQNYHEJdgrn0D/ASAHXCnwBgo6C9rLVqC5JSXYD/bXelWS4zukBCYKeHxHMAO11CTDFXATgEtRmB8LZDu6IGbSYhprRgFCCUB9T7XLFl+EgOwBTBA1EA0TX0bhipUUzya30zkRC0SfH3OxBqFKcE01Cn5GoEINcdI9VGhvvvmj8BPEAiQUNQUyBJsZYcAcjWC0GlzGVHpPJATUJvpiwHh+GmZBYKJk1qG4bM/ezc7vNRS3OMlIIJyo5ibSPSrEA8FaV5rqJBxM3pAxSSIcRHyTPk419E8k3JQ4gmaIDYi/dDZhK+DjHMVA6E/jJKfHQ0zTr6upYQmtQ2fLyG76MKPbxp6kl1A4RRg8jirMZPRzwLtPahh/O1j9XxmsPR4VSES0sz4CFwZpM6XfTpy62jGjLHD74E9n5gnEOP4/kVAGbTfuBuDq4AAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACK0lEQVR4nO2X0Y3CMBBEE4kGoAQoAVqgBCiB4qAEWoASoAQoIXfPuok2y9oOdyhfNxKQBMczXu+O7VkzRNdMg1YXVkB3uVwmYd9sNp1ESEAiX6/XL43v93vzfD6b+XyefgXb9nq9pl/bhuvlchkKOB6PzX6/TyJmJXI6/lYbdqJ3EGiJILbvR/3udrtexKzJQORdN0wLCMFqtUoiIN9ut2Ef5/M5K0IIBeTIAYSIuN1uSQSd5wgQVhPxIqBEXhIRgec1EdkpmAr/An4lQJUgyCc+IoBEobzats2WoKAEzJGTeCQg742uAi+CTI8AOf9BTqZ7gjHkWQFWBERAQnSva9pAhAjKU9EYU4JFAZEfqPYtSmYkl/yTD1ivlwHpGkRmpKTkU4tE1ortCCHxIpSk3EvE4XBIbbQqRtPhF6+sFdcAaVQpwtiyHAhAnZ137m3SWfC8tF6MxUCANhO+3r1IS657hT+CSpL+/SZlIMCXnicGNXKfaDU/yDohcxiReTGWVGSRMeUQVkGOHGHkiI2QPMCOVCLA21bsDciSC9YVPfm7KBqRJRcR8Cb0eDz6UVoP+fiOiA5s/cuEFotFHyHtlG0uvO2EJUBql2vrhIoUz3xC5kS8CJCD1eaTsJeWa18VObwI0AiV6dGhRZ0jgvDX2iFCg4qmoOWsZjvQXONcpS03Hdq5L0VCKyM4nU6cirhsFYEkguOSx9jSGtNOFSJyvuwUtD8HxinQH8+/ANesDKb6g34lAAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/UlEQVR4nO2X4VXCMBSFm3NYQEaAEZoR6Ai4giPgCDACK8gIMEI7AoyAI8TeyNXXkJcQwP7y/tBa38n90uTdNpNqKFeNI8MLCeD27XEU98bOHSEI4M0X9eyquOu66CB1XRfVSK0/2ur91XqISc7cWhsdpG1bb4Caehav6bo2CrFa9vcuEJNKEc2dG26Lw+nT/7bz6TdEb/7+Fh9jvbUqBBUF0MyhxezFQ+yPZw+xWlbVZqeOn4W4AkiZxyCaHkITwVIQ6hKMpX+AuwDYCX8CgI2C9jLGqC1INZkuwP/W235jnwq6IITATo+pETkAhRC3mKsAEsJe2owgsu3QrqhBm4UQt7RgEiCWB+x9qVQYPSUHYIrggRhAvIYeDSM1iikMDpMQgpsUfz8CoUZxTjCNdUqpBgDhumOm2sxw/1HzKwAqFTSEugWSSrXkACBsvRhUzjzsiFweqEkIacshYaQpzaDUN0ISgIqZ+6fT35ezDs0xUwYTVBzF2kbkU4FkKobmpUoGkTTnBygUhpCcpcyQp38RhW9KhpCZAvK3Bmbh+6EoCe+BsOJJlUCoALmPDtdvg9TrOoTQpLYhs4Czig3uztY//lwdIbQgMjirydORzAKtfTi4XPtUnazZ7DqcinBp+AQ8BM5soQ6n+LnvnjrW0Bw/5BKYy4FxDP0cz78Aw13CZ4TkeSsAAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 14111000,
+      "soundPath": "Skill.img/14111000",
+      "description": {
+        "id": 14111000,
+        "desc": "일정 시간동안 자신과 똑같은 행동을 하는 그림자 동료를 소환해 낸다. 별도의 체력은 없으며 시간이 지나면 사라지게 된다.",
+        "name": "쉐도우 파트너",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 #time초간 분신 소환, 통상 공격 #x%, 스킬 공격 #y%"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "200",
+          "time": "60",
+          "x": "20",
+          "y": "21"
+        },
+        {
+          "hs": "h10",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "155",
+          "time": "60",
+          "x": "49",
+          "y": "24"
+        },
+        {
+          "hs": "h11",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "150",
+          "time": "120",
+          "x": "52",
+          "y": "25"
+        },
+        {
+          "hs": "h12",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "145",
+          "time": "120",
+          "x": "54",
+          "y": "26"
+        },
+        {
+          "hs": "h13",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "140",
+          "time": "120",
+          "x": "56",
+          "y": "27"
+        },
+        {
+          "hs": "h14",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "135",
+          "time": "120",
+          "x": "58",
+          "y": "28"
+        },
+        {
+          "hs": "h15",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "130",
+          "time": "120",
+          "x": "60",
+          "y": "29"
+        },
+        {
+          "hs": "h16",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "125",
+          "time": "120",
+          "x": "62",
+          "y": "30"
+        },
+        {
+          "hs": "h17",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "120",
+          "time": "120",
+          "x": "64",
+          "y": "31"
+        },
+        {
+          "hs": "h18",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "115",
+          "time": "120",
+          "x": "66",
+          "y": "32"
+        },
+        {
+          "hs": "h19",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "110",
+          "time": "120",
+          "x": "68",
+          "y": "33"
+        },
+        {
+          "hs": "h2",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "195",
+          "time": "60",
+          "x": "24",
+          "y": "21"
+        },
+        {
+          "hs": "h20",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "105",
+          "time": "120",
+          "x": "70",
+          "y": "34"
+        },
+        {
+          "hs": "h21",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "100",
+          "time": "180",
+          "x": "71",
+          "y": "35"
+        },
+        {
+          "hs": "h22",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "95",
+          "time": "180",
+          "x": "72",
+          "y": "36"
+        },
+        {
+          "hs": "h23",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "90",
+          "time": "180",
+          "x": "73",
+          "y": "37"
+        },
+        {
+          "hs": "h24",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "85",
+          "time": "180",
+          "x": "74",
+          "y": "38"
+        },
+        {
+          "hs": "h25",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "80",
+          "time": "180",
+          "x": "75",
+          "y": "40"
+        },
+        {
+          "hs": "h26",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "75",
+          "time": "180",
+          "x": "76",
+          "y": "42"
+        },
+        {
+          "hs": "h27",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "70",
+          "time": "180",
+          "x": "77",
+          "y": "44"
+        },
+        {
+          "hs": "h28",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "65",
+          "time": "180",
+          "x": "78",
+          "y": "46"
+        },
+        {
+          "hs": "h29",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "60",
+          "time": "180",
+          "x": "79",
+          "y": "48"
+        },
+        {
+          "hs": "h3",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "190",
+          "time": "60",
+          "x": "28",
+          "y": "21"
+        },
+        {
+          "hs": "h30",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "55",
+          "time": "180",
+          "x": "80",
+          "y": "50"
+        },
+        {
+          "hs": "h4",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "185",
+          "time": "60",
+          "x": "31",
+          "y": "21"
+        },
+        {
+          "hs": "h5",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "180",
+          "time": "60",
+          "x": "34",
+          "y": "21"
+        },
+        {
+          "hs": "h6",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "175",
+          "time": "60",
+          "x": "37",
+          "y": "21"
+        },
+        {
+          "hs": "h7",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "170",
+          "time": "60",
+          "x": "40",
+          "y": "21"
+        },
+        {
+          "hs": "h8",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "165",
+          "time": "60",
+          "x": "43",
+          "y": "22"
+        },
+        {
+          "hs": "h9",
+          "itemCon": "4006001",
+          "itemConNo": "1",
+          "mpCon": "160",
+          "time": "60",
+          "x": "46",
+          "y": "23"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACw0lEQVR4nL1X0ZXjIAwk76UBt3BXgl3CpoSkhKQEp4SkhKQEuwSnBLuE2xauhCyDGRAEbHwfp/d2BQJphgHHZq9Ce6v/Yzs2JIH3MP4pyq7UX9U0jXqca3V5TmocRx2pitEPze83SZCAAf+qfy0mTtNkPMHPjxE90wcJWF3XqwRu3aiup8aQ2EtwAtBQTMYABHu0Gvw2AxoSVePGSCSVz1h71CQtifgMuEIsJvsANqAa/HltAg8l1vIlOdoHAQlkpG69pFw1QKV5EsoRifMv91CJRQIeTBb2wCgmic3Fm4AkyVClnAUEsD9ets9kriI4A5aoX6Gfz3yMoW7qgAYEcGAA3mmAo07urbTwJ12ks6vmmJxTWWDOi8f4pMQksltAI1CnZs9Yag6M8/oF2TcRMCtKFCUg4xw7JhQrIpCSP5ZziwdpSb7LbMOnAlXe93cLon1JPOlTCvC3vbvp1bZzodN1CvpGXtuWsVScbaPC1arQhioEBGJwWA4cJsFycUlCjsUk9hKMQNJkX7ZjEiU57JOEIyBlSkkbt0u2YykHePzBMwTYkSRiUinZcz4Gi88W8F7f4gzgY4IkhmouBH+4TK7/ejbmj+3Knmr4OP51ntsAGx510Odj+PqePIFSYyH6tXiJOQLyRTSouRi8UUGFxQkmwWUc3uSJ1aP/T+8CWYSg3A4JLsdIfpMCOQtWpJogFs+BpRQrJpDaBhaBEihu2upzC9zYY5Y43o5N3wMp2QmcWiX3m4Rocju2fQ/g0er9Y0hjcRnD3KHThI/2DPR+zOUvXBmSBA6nWc74q3bo7BnQYBJI9pmbyi8iEH/Xyz6LgQhXTHBJOpe/SiB1SGSMxcw5sSQInrsZrd2UQGCHu1rJ1YzF3JPSefCSKxnt3k+4FaG5owKGBO5spUYSfLHwt73ECI5/cgt29sK4ydYOWcbc9fwHfBWlUkhYqfsAAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAClElEQVR4nL2X4ZWCMBCE4T0b0BK0BG3BErRILcEWtAQtQUvgbvL8uGHdAHc/bt5TCCQ7k9klhEUzRNf8D1pOXEB3vV5njV4ul83r9Wp2u10zd4zje1yHCAQU8u12OzrwdruVI+TP57NZrVYDEVMxhNPp1ByPxyJi4eQQeLB47T2DQi5EEd6/FvNwOPQiBjWAteDxeHwQC13XNW3b9uS0BXcjEx+xyC5CpGCcQyxAJsH6IcLvxfG1WhkI8NkzKwITXIQKtt/v++uXy6WIcJH0d3cmBSg/sl0EcTDEgshjDUiEgBCfBOOyAh0IIGeyzR2AgFmLdLPZNPf7vRxpy0H6xfqQCMWPItIacCgIwZi1yByI4Zz+czApgPwySwAhLnCPtjsGlMaqgMx+ii1ariOroI7e9n6IH0vDpAMOJ3e4mN9iIGBs9kKcOaDNccwFXfcFqghQbtTZHzuvZN0noM6dzMV4GhBBMUYR6/X6RwDkgi8kApWPA5ntcZXzfj6e+IjoBaiRLTw1BzLbPR2eMn8cFQ9yVt0iQI0oQoH88cuqv3Z0cq5Fcl50fRFmIgiSiXA4OXHUt0bOkj8QMAdxHXDbvQDHEBejXgCbhykXBF96nTQ+frXZpwJq8K2XvwucDHdcxJ/fBdEiyD1o9l7gbejF6yLibisVQBqwzR9Lt93dQJg74H3YumX2fwhQZWqF8lUr2xF5XUAOsS88PgldJ35VgINBvp3yfZ+nqrYnjOMnU6AOrIA4EmeEEM41xtveP47P8OGAb8VZMFBOME+NW5yN582XbUY+BGRF4jkjWCxS8pvFmPpSkoBW32pzPs24708K5HM+ycD5fNZXkU5bHCgi9Ln0G0DOby4g15+noH1/MP4H+kfjCw0H6WtWVwisAAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADAklEQVR4nL1X0XXjIBCE99KAXIJVglSCU0JSQq4EpwS7hEsJSQl2CaIEuwS5BB2zYtAKIwvfR/bDywI7MyxYEi9mboP5HbNsaAHDqbsUZVfmZtq2Nd3emPZoTNd1vqcqZn9t64EiKEDId832YaJzTjzJm8NgOo8jsRcBa5pmVcDhuzOf762IeNHkJKABTPeBCEZymaNEyFgQkstn3/7Niwwi0jMQgQim48t+9FtPev200UPEJWxr/SBfi6PdCdBEAGObxDCQaqMYyZ3O1yy/PpqsZQXgPG33flWVFR+JjjaCXQ7T3PrTyFwtkmKkSse54EUB2B+USZSbkVwng0iADyYKE6F+bhxTFSA5xoCbO6AzATgw2DMSIJleVhlWnY5RBEWm+SIw/FNSEfktUKZBuOq0pJzDCqSVe2SrAmRFGVC9BejnWK5iRQJi+f96kA8P8hVAVCzg8B+J39/HOJT1HxMPssSZbVitgDZNUtJfYiKAz/ber7byQLevUb2O8aRnexv8mHvfz3bvt24DHKNi9diOAlJyWBrrtgiisIV+tnszH0tFiID+2xO8DZFIm451+/YTyIIvyWHcV6OIKGDzDhFWRAAwTlbx0tj/5ICP7wkRgACKtIhUlCZb8ykZK6zJz1d1BvAxkYqAfyRC27Pk+Buer24SMN+kZV/tPNA5kJ3tan/WJxYF8EWEKgwnK6C995tXE2NzHv+O4nfh0IZ+qUToh0defzKz+Ol3AcgGD2JIEkilzTiQV2oMbYhOi/qwAosWSGyohO5L58DivHROiQBug8U2dAqkGisBcFgcI7mzaiyAOTsbe+p7QECaYQIxihirbEM7zBljrkI9eNw4B3Pt098DEViVMYDP+rhqErtp7C4/Y1kBNnzIcjsmIjsJcYkwZ2e5ufwiAel3vY4JFsuvyLXopfxVAblDovsIFg+pIl+6Ga3dlCDA4q5WcjUjWPynXCbykisZ7fjjcCuStbACIgJ3tlITEXUbXyx8tpcYyfGjt8CGC+NT1q4csgWLJ/gfbhp1yVzSdD4AAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 14111001,
+      "soundPath": "Skill.img/14111001",
+      "description": {
+        "id": 14111001,
+        "desc": "자신의 그림자를 거미줄로 만들어 6마리 이하 다수의 적을 움직일 수 없게 만든다. 거미줄로 포박당한 적은 움직일 수 없다.",
+        "name": "쉐도우 웹",
+        "bookName": "",
+        "detail": "MP #mpCon 소비, #time초간 #prop% 확률로 포박"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "lt": "Point [ X=-200, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "10",
+          "prop": "42",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "5"
+        },
+        {
+          "hs": "h10",
+          "lt": "Point [ X=-200, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "14",
+          "prop": "60",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "6"
+        },
+        {
+          "hs": "h11",
+          "lt": "Point [ X=-250, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "18",
+          "prop": "62",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "7"
+        },
+        {
+          "hs": "h12",
+          "lt": "Point [ X=-250, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "18",
+          "prop": "64",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "7"
+        },
+        {
+          "hs": "h13",
+          "lt": "Point [ X=-250, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "18",
+          "prop": "66",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "7"
+        },
+        {
+          "hs": "h14",
+          "lt": "Point [ X=-250, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "18",
+          "prop": "68",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "7"
+        },
+        {
+          "hs": "h15",
+          "lt": "Point [ X=-250, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "18",
+          "prop": "70",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "7"
+        },
+        {
+          "hs": "h16",
+          "lt": "Point [ X=-250, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "22",
+          "prop": "72",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "8"
+        },
+        {
+          "hs": "h17",
+          "lt": "Point [ X=-250, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "22",
+          "prop": "74",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "8"
+        },
+        {
+          "hs": "h18",
+          "lt": "Point [ X=-250, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "22",
+          "prop": "76",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "8"
+        },
+        {
+          "hs": "h19",
+          "lt": "Point [ X=-250, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "22",
+          "prop": "78",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "8"
+        },
+        {
+          "hs": "h2",
+          "lt": "Point [ X=-200, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "10",
+          "prop": "44",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "5"
+        },
+        {
+          "hs": "h20",
+          "lt": "Point [ X=-250, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "22",
+          "prop": "80",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "8"
+        },
+        {
+          "hs": "h3",
+          "lt": "Point [ X=-200, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "10",
+          "prop": "46",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "5"
+        },
+        {
+          "hs": "h4",
+          "lt": "Point [ X=-200, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "10",
+          "prop": "48",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "5"
+        },
+        {
+          "hs": "h5",
+          "lt": "Point [ X=-200, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "10",
+          "prop": "50",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "5"
+        },
+        {
+          "hs": "h6",
+          "lt": "Point [ X=-200, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "14",
+          "prop": "52",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "6"
+        },
+        {
+          "hs": "h7",
+          "lt": "Point [ X=-200, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "14",
+          "prop": "54",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "6"
+        },
+        {
+          "hs": "h8",
+          "lt": "Point [ X=-200, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "14",
+          "prop": "56",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "6"
+        },
+        {
+          "hs": "h9",
+          "lt": "Point [ X=-200, Y=-120 ]",
+          "mobCount": "6",
+          "mpCon": "14",
+          "prop": "58",
+          "rb": "Point [ X=0, Y=0 ]",
+          "time": "6"
+        }
+      ]
+    },
+    {
+      "masterLevel": 30,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADmElEQVR4nL1X0ZWjMAw0720D2RLYEqAEUgIpIZQQSgglJCVsSgglQAlLCesSchqTMcKYhP25eS+XPWJLo7EsiQ8zx8P8HyT8QxN43LufTbt3xi6eWXm6Ffv860ESJOCcF1n6dnPf9ybPc3MpC5Olsn63Mzv53sl3WpSbCJy/O1Mfckfi4y/OY8hO5z/vOZWZMU8S/ggQ2aqTLPNrEP3v42E+k8SpYJraKeCUkM+oSBa1STsangAMAzFpbS8nnBUvo9Ly07G2WRyPUTuzW/CQyJIkmTal47EMSLAXCgG2vTnS+NCxtreWH55A13VuMTYBbuOt9QtBqJL/Q/7DoTbf9x9z2H+Zi/xW1c3MqLbhAilLMwhBd0QIRl2YsA6YVhbemsYb8WTeQK+v9rkpT6fFmpn8T0U9ASQIVIB89/u3M+Iiv3ejUaWGhn7OPXC+3x/GfCqmxLM91kpuqWRcKOAJDsOYjAIQgkHKDzT1dAz4Xe+LnfbbHAhxvlxmUb0CjgwfRL5WijbnAIBoAUSGiDTam064sQhxTan2rsHLH+YAwDwAkAvaGIsPks3aViJqTC7y8xhSiY7rx1oyXskQVhwvcgDNJSwedErQub4R3aXwJIoi9euYmGESehJDb47yuCaBNadMOMj++3v3daKqKnO9Xk1etZ5EUZ6ipI0iE7uaH2tOQ0ByoJFkG1Re2GHemvX+kAyUcUTOZ3PtFYFPJSvkJHDVJk/jV13PCdK/fZI6nafuqO1OCjyblU5CJh6Q518RMmcns5O7UuVZDrKSUDRpJKR2ihzY7dJZQi5yANMM5wF9C7QxOCEJyI7I6Vyv846DWxAWouYWuYbs9wTqQC0Jx8hIQpPCc+fMjMULVzF2C1iIXrZj7ZhgOe5FNlw1ZrtVicg1eu9aQUIdeFsJAUQOw2hG6JDXdr3CIbkKkRhlG1WRZTzEy24YQkfFaJDVbEjIdp49fmc71vtCsBtGFeD5Q0I0FrZhggNJCP3ct+597jsotCjKJanZLdCAlPhsGUI09Ho9nIRgH1jcAkS/mAlllLLpVMu703QMnIrRwH5knZ6KaYP2nAoylMYG25kCnOE4FTvGdvDXp38zmNIBa0mo4suJSFdDv+H5nUbm+YVzOhCynP+1Tfv8hO8GIJDgXW3L2xHnhU+tFAiWx9X1MeD85a0IfyZUwJHAO9s7FBGOw+3qIr/Zba93dI5/dA4kzxfGTVibkjfCJ8c/0PQBiT83N+sAAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADBklEQVR4nL2X4VHrMBCE7Zk0QAtQApQAJZASQglQApQAJUAJUAIpAUogJeTxefg864sckveDnQkmsk63t3c6KYtuim33N+j9Jwls39/fD7I+OTnpNpvNf3u/uLjYSkICg/Pz8/NfjdfrdXd2dtbd3t52p6enIyE+l5eXBxF4fn7ulsvlQGJxjPMWVqvV0TbX19cjiTEFRCaqxJJjzrd83Xa77fq+H1R4enoaFVARn3VNxxMjARYGLWk/Pz+bxomUH8fY5Zq8J6iq9GQXGJlGTFaNjKYFnWYwud5cfYwEqAMmYwQ0FBB6eHgY3l9dXXWvr6/D0/EaiGsYyNvb26jorAKAieTVRVpkWsj538XVLM6UX0UX+RIVkI/oWARQrSCjzChyXBucq051WotxR4GcrLFyKz+4u7sbx3nWyAT1s69HzBJ4fHycRLUPpIxPS3bVOrgGgFESWY2IhSpyjrZCBUTtERMC1gGgFnIxt5TFRm+gJZsGnDif3Lei1a5ZAzJyD+tU6Dx3RBatOea9hVmLMEk4vmg5VTbz//LyMlHg5uZmyLnOiVwCX19fY+RJFjKcARWLGqky2gFdDNaA6Pwf1GMZ0tpUBbGFCMU6qYFkmluKraYDn4xVOfP9/f39xGlVwD4wIUAujTjTkWQYN+cCZ/aDqqBOzXUW5E4NACtzbhfgxJxDlEWyGSVau6A2IupqQkBmVQEKzsiqM79LnubF99YusBHtPY7NY0qqAeSIgjwyr3VhSduqSgY5SyAlI3IW5jCCvZK5M5IAVQ05dgDFZRvP+ZVosxPORWU09gG+U4COe1BVuxpUXlp2FPC+h4Q0GY9h0bp41HFtUCIvLK1uuLMLBFLyOeQSksj52YAqLNidXZC3XSODZR4cFGCeCV5giZxnbcE5j6BaSkwUyEUFdcF3PrWC56Kzl1QV996IshuCPAt+u5ILCRppXTNJJoGe32pM/s0R7z8+PkallLx1yiWRCvL/c9L2KjCQqJU/R6K14CEpEjrnT9ZA//OD8SC0tuQRGIvjHyKQNacJ8S78AAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADtklEQVR4nL1X7ZGjMAwVM9tAUkK2BFMClEBKSEoIJUAJoYSkhFAClHApYSmB07OREcYk2ftxbyYfY2TpSZYl8UVLjPR/kMgfTWB8dH8+2r2jYbU28OqnyNPvUUgIAWs8M4e3m/u+pzRNqTM7MgeWP7Bh/O74U1w+IlDdOiqPqSXx9RvjcW2PX2+5FIZoIuGPAJ5twRjjZeD9zzjSPkmooyeZMp8jYH8RkSyqU/RoeAJQDERDy4bIFK/dUuEXwwudF34+8Hp2ihMAxvGHkmQPDW7TyR1LTwe79hL32kcgTfOlvoBglEDXdVYYmwC78dx4QRBK+8GGPz/WdH38UJrv+Rj4WPp2oVTrcI4UjiCOBxG1F2a3joD1tm1ZtvRKPJk30PJlnrLD1VpIh3+KqCeABEEU7BV73KwSoHp09hfex6DXZQ+Mp/nReZ9ls3DbuAiYeW0VAU/wOXAyujCBEBRK+IG6LO0xnHEM/Fzvi6bruxwIUV2vC69eAUeGI4bnxbbQlAPTZysHAHgLwDN4pNHfS03TrU0yhdq7CbnOYQ7YZ1MeWBKcC1qZFJ9xRAW9c2k4UvK998eA0/LEbS2ZMj4EbkyYA2guYfEQowIxniS+kXEN5xuSOxJFtvNyNjH505lhmYSCZ0sXLoqlENgyKgmHsI/jzRoHifP5TE3TsHEmcXMkmqKKkubNc1QqyAxEqnN+bRlds3bhreuans+nWl+K6f0rMvnZEbndqO5VEu5VWBFOAa5aaKjUa1ieKvQwkbpUcwHSen0EbNPKlkkoiQek6Vz1ZjKVDbM789n4H07o7/uSNBJyYRQ5ECZkmAOYZmQe0LdAK4MRS+LmogHPxbiW84ZDo0Ehqu+Rayj93itCSeaEE8+EhCaF9WyqmCheuIrRWyCF6FU71oYFUo5blFi+apLtg0pEkdF7NwsS6sCrbiiA51CMZoQOWbfbFQ4lGJ6ibKMqShlf4VU3DKG9Em+Q1dKQkO1y9ngu7VjvW0G6YSwCftrlEKK5SBsWyEASQq/LHkRCOmhHrRtIAlw4P/wtWHjOoTRZ99EQoqHl9XCywtQHVrcA3usZTkap3sznBv/kGOxUbO+5ofG0nIpFh+jrmrsbSoMbsCAgXsxTsbvDhouG/c9ttH83mE6tVmrJKoqvJiJdDUMzsXk+CjQejoCZDMR0hrpAIMG72idvRzIv+PDbKHE2n66b8jHg/PmtCH8TiYAlgXe2d8hWHPkGNGcb2poy+gRiHF86B5LphfEjuHLb0z/Ct8m/0Ifx5Fa6Rt4AAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 14111002,
+      "soundPath": "Skill.img/14111002",
+      "description": {
+        "id": 14111002,
+        "desc": "MP를 소모하여 커다란 표창을 만들어 던진다. 던져진 표창은 적을 통과하여 그 뒤의 적까지 공격할 수 있다.",
+        "name": "어벤져",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 최대 #mobCount명에게 데미지 #damage%로 공격"
+      },
+      "levelProperties": [
+        {
+          "bulletConsume": "3",
+          "damage": "65",
+          "hs": "h1",
+          "mobCount": "4",
+          "mpCon": "16"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "110",
+          "hs": "h10",
+          "mobCount": "4",
+          "mpCon": "16"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "114",
+          "hs": "h11",
+          "mobCount": "5",
+          "mpCon": "23"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "118",
+          "hs": "h12",
+          "mobCount": "5",
+          "mpCon": "23"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "122",
+          "hs": "h13",
+          "mobCount": "5",
+          "mpCon": "23"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "126",
+          "hs": "h14",
+          "mobCount": "5",
+          "mpCon": "23"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "130",
+          "hs": "h15",
+          "mobCount": "5",
+          "mpCon": "23"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "134",
+          "hs": "h16",
+          "mobCount": "5",
+          "mpCon": "23"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "138",
+          "hs": "h17",
+          "mobCount": "5",
+          "mpCon": "23"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "142",
+          "hs": "h18",
+          "mobCount": "5",
+          "mpCon": "23"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "146",
+          "hs": "h19",
+          "mobCount": "5",
+          "mpCon": "23"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "70",
+          "hs": "h2",
+          "mobCount": "4",
+          "mpCon": "16"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "150",
+          "hs": "h20",
+          "mobCount": "5",
+          "mpCon": "23"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "153",
+          "hs": "h21",
+          "mobCount": "6",
+          "mpCon": "30"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "156",
+          "hs": "h22",
+          "mobCount": "6",
+          "mpCon": "30"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "159",
+          "hs": "h23",
+          "mobCount": "6",
+          "mpCon": "30"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "162",
+          "hs": "h24",
+          "mobCount": "6",
+          "mpCon": "30"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "165",
+          "hs": "h25",
+          "mobCount": "6",
+          "mpCon": "30"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "168",
+          "hs": "h26",
+          "mobCount": "6",
+          "mpCon": "30"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "171",
+          "hs": "h27",
+          "mobCount": "6",
+          "mpCon": "30"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "174",
+          "hs": "h28",
+          "mobCount": "6",
+          "mpCon": "30"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "177",
+          "hs": "h29",
+          "mobCount": "6",
+          "mpCon": "30"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "75",
+          "hs": "h3",
+          "mobCount": "4",
+          "mpCon": "16"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "180",
+          "hs": "h30",
+          "mobCount": "6",
+          "mpCon": "30"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "80",
+          "hs": "h4",
+          "mobCount": "4",
+          "mpCon": "16"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "85",
+          "hs": "h5",
+          "mobCount": "4",
+          "mpCon": "16"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "90",
+          "hs": "h6",
+          "mobCount": "4",
+          "mpCon": "16"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "95",
+          "hs": "h7",
+          "mobCount": "4",
+          "mpCon": "16"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "100",
+          "hs": "h8",
+          "mobCount": "4",
+          "mpCon": "16"
+        },
+        {
+          "bulletConsume": "3",
+          "damage": "105",
+          "hs": "h9",
+          "mobCount": "4",
+          "mpCon": "16"
+        }
+      ]
+    },
+    {
+      "invisible": true,
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEVklEQVR4nL1XjXGzOhA8z6QBpQS5BLkEXAIuAUrAJUAJUIIpwZRglRBKCCX43Z44LPhE4vfmzXeZDGCEdm/vR9IHre1Jf8cOehMTeD4eX38F/XQ6PpWEEhBw5+wyaJyI/DSSM5asSU+kY/phojwzMvbaD2SMIXyS8Xx9cyWTF5TzveVf+RW1tzuVl7OQ+EiBxwYA4k97P8rH1oRJLKVZ3YpsuR/AkA10nHmNL3IeM5P4oF8M3lE2Bg8izNj7W+Ho0nkZB2pQociceF8UOXVdQ3wnRMyG968EYhKqBIg4a3fHA3xRYRiX+3xWGd934/g+gdhDTAISLjEOHo7TRN21lGfnMrIy0NE49NTxvysKiji9RyBFIpYfsS4yS015kQSsqkI8B3jTDPzMMfeWMh7Td11QwWU/EwjxtgIIYACtYx0M4AKc11S1N/mtmRXggQI+euQME+5HUYA4otO/CUFKCZTd1ib+QykWdSvPSEKRnxnkVb28R/p0/5VATAKyXy9nut/vdLlc2OF2CQ3eiQZ87XisgnsG9lEp/EggFYaUwUPxeJgWgmLsdccqZFUl4J33q36wIjD3jLdMkw7eZ3lOHlWRZeT7q6ixNe2mdVSend8QCB0vbaGxTktnK88nueacUM6ZV6Zz0kkoYFkleVJxPgBcHbR7jUjl2xo8vZyOlNV3uaLMHo+HyA7PAe6ckytabM4laLn+yrKkwRvqXbFJ2J0QYNAfMaRXP5ffim95Pp1eCsBzVcB7VqkJdX673ZY5Lqq3KLOjAOKk9a0fwPvz8ZOezyd9fn7S9/c3Zaxhe3/Ie+QA0xDPAe6HIZkDsUM6t4qyEFgyXt7u54O8ngNZ84oGEm1bU39tkuCwMlIgn8tz8n5N4EUiEEFPV+8nTtCWJVUVtmZtujzV2zgHtAyH+TnZBwCuBvDBpxWBElABmb/nfdioGHRfST/gx2m4IqAJB89hKKGQ7WHHU3BjOR6PwZPqttuYtoZZB55DwM26FIXAxL8CXIFvszfWTFIZXuLlQl0Xd57ECpFTF0oym8dvu+Vr3Qh7gYHbsKGEAgqMeAuhWXYFr+uKrpxkIOHcSGhoX19hA4uSlD0gr4Yg+FPLLhLbPiFw/wqJdTgcFiIAgQIABTiaDQAQJZC7luelKan3sJiExh0pNUHNMchvaLMYGR6BTemWCHIgZLBbGlXfXeVdzbKnuqf2EyXRzmFA7FM77FUSan0rEYTGMRD6veVFvGtO0oSwH4zXDgBkGMMozRCWaSiI+q+ZQJg1vYv+owwhMdbuWCbs75F471o3hG0bubgJaUB+IRBPAiXiVgzv8yWRXlLroQQCtvkrAccJ2/Bxd6H7kcCenZvQwxBb7Ve4juxhM8xlZoyQQUjiNWaPwAFnNT0dxbsgTAAVYu/zqJSQM/BQvc/sXmNa50zHB5dSFrJwNCMlgTNbbANha+1WH6YM494xHafgqoDaYT4wJg2bkf/RluP5P7ENaaLQGj5yAAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADXUlEQVR4nL2XgW3yQAyFD6kL0BFgBBgBRoAR2hHKCDBCOwKMACPACGWEMgI/35UvvxPuaCtVfVKUQBz7+Z3PcR5SG+f0N+h5EQmct/v3P4k+HQ/PkpBADj4ZDRqj0+mUjsdjGgwGqd/vFx1ps9ls0mw2y7Zvb2+N/WQySavVKp9Ho1H+n2O53qfFfJxJPJSCR0hit9s1DjxKeHl5aT0r8NHYzEYpXUl0a+AGZkcWMWjMfrlcpsVi0VKBa7J/enrKv8V/H5/nLwlEEjg/HA75PyStAVuBcoIkJHHYHL5PIGZIYEl0gWOUwVaSSg8RnsMHNj9SoEQiys81Uj8/P2cS1AEBXQ7uqQDPZLKj2X0COMIBAQlMoEhCEJzAkHp9fc3/qQAgODZxt6DA4ZR+pkBJiS5wDGlsAEUoSVTx/o9roEaC7Obzedput/kMKTONsrMMBqcO4m66S6C0DCW4311f7cjarRh7SURD4LMyvweLzqzJikwJgBpdKHtrex47SxC7Vhey1mY6neazmVnpkICUQQmIGm7P6OtGAeXrAsfj8bg542C/32cyZE5wdoDdD9kJzs7wvWDmkMA2qt0QwKi7hjFrtyG/ISI5W63bzcpfr9eNj7gtqwooWXwAp8PhMJ3P5/T4+Jg+Pj6ynetsDVj9tRqICen7phFZ8apxD9qRJSRoQDguBTdo1/fu2FFAEgZgncye7AiiCjVCpcDdhBrb69IW+0AsEoutBJypQi17doYJmWC1EVlwZA4sOg6qlwr3nlvsO8i9/9oBu8NMqw/o3ArOPfvyYJwByJSMsKXo2JJm3+2W8b2BEiUlM4HLkJh/sN6SMTCHjswGvL9/DrD2Bsh91bIdSDIOoRMyEw4uqvR6vRYRpcIpAWwikKIb2pS04R5BIgnX3xGuugQYmpVEcOLo5STkfMcydbunW5mzJOglcV6sNiJJRHlZZwLxP4fVznV8dxDAodW3n69hA9dwsw2VKzKNs120q4HidL1tzbUhtjoPwB4lYism+7gkSh3ljQXoetdedHcJ1EBAnCKzKqga2Uoknu+1dgj0+Fbz6yg+xDUqxOyjlKpQyj6iWzOryzx4+SrisqcCmQTfbC1cHpqN+q0Hi7gzzJTsDK4Conf9YGzBN7kzwC+h+Tz/B3ymiIBnFUoXAAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAERklEQVR4nL1Xga2rOgx1pbdAOgKMACPkjkBHCCPACDACHQFGgBHKCGWEMkK/j5NAoNCnK309V1VoCTnHx45j/tDW3vRv7OIvQgLv/vH8J+g/afz2JDwBAddJtEwa+TvMRFoRJScL+Tn3O5Exdu6tm0nhw9eGHxzKnGbTkOGlI/4PCFX7oPKWCok/R+ChAYDXo/u4LoDFcX1kz2y90c12xHwdzC8yZuZI7HPgw+AdGetNqETo/bMgims7j5wKFSPC+6LIqK5zurEKnoyy08T+SiAkESqho/P5VeBuN0wyQozKeYChHn9BIPQQStzH43ngNDFSl98skNaUJLOF7ErqOvahqCQ0v1LgiEQoPxas+P/77YclVlTxD3gO8LycqKkioZexbPe6dDJk3wmIWsoCAhhAm1g7AziAJ91zdvfyX+kU4EAJ+DgqmqaJCU+igNgw/k6BvRLGfN5DtBH+rGktBichXJnGkXTVLPclB9wzvyYQkoDs9U9Kfd/TjVUg0y+hqRxByF4zAQ+OnByCLfmVwFEYjmyerZyyWyiYx17XrELEI8DL0ZLAkvOewEliH5pPOnivs4zDOUvG0/AjauzNy94HheQjBMNMp+a3vK9sZRrLmHEiADcvB5fpmkNhE3BMWskT0zQC7h3cl/WFgJdvb/A0j6+cvS878jZ7PB4iOzwHeJIkPI5UGE2Gy6xS/Jt3wlQqukXNNmF3JXwhgEkfMQy8lv+YBH6ngQLwHOAYB86wsrO+tm27rBHX63q02z0LAa3Wm/4BeH+7Xuj9ftP1eqXX60Vy1rhjGznANMRzgI/DcJgDoUN+bRPtCCwZf8Byb8uB1z+ERNtWlN+PwRdQl/1QWnbBsCOwkHBEUNO994h3w5J6FfaGmJ8C07Zo+XPK4R/XgSnYET7ZjkyUYBVQhM68942KayvkG50R8AkHz+XhqnUEFDcRM2VFQ3Ecu5Wfp4Vpb1hWctM1NMm+Es5RJOAeuHXeJNFEdceNhRwciZCoTCuSg0ja2S2Zufn7ahmeGzhBu2ltSDYEPDDiLYSc7B68bQq65bWQ0HzE6mSk59PuhDRNpTbgNDR/KdlV0MRsQtC+LPDlshIBCBQAKMC1tgqMkxJyZR4vRcl7DxMS6BOMizviP9trlBnpDPYhUHxWoyndE0EOANTLL4rcc3uPa8FR9ZQsz1YlHk4VZY477E0S+v3tiSA0Oun5C084T+ofKh4v6QfDswMAmbHJlQ+29+MzilIm2Burwpl9bEOk20TrASReJep0ry8WEELDiaTjs4nSmr7aaT9Q3q0SYSmG94VnFvQJJpD3odc1EGtlzg+6rwTO7FrblrY3SpILhhGq5aMrNO7FJVHbM+aMwAXvav7tKOyCsAhUCL0viiCg0Ta5Mk3HprY5U3NV4rciXF68AkIC72yhYa9GOtk8eGQDrfv6m/l5Htwr4O3iXhgPrYwv9D/asth/BLEKwUbrTr8AAAAASUVORK5CYII=",
+      "weapons": [
+        47
+      ],
+      "id": 14111005,
+      "soundPath": "Skill.img/14111005",
+      "description": {
+        "id": 14111005,
+        "desc": "한 번에 표창 3개를 던져 공격을 한다.",
+        "name": "트리플 스로우",
+        "bookName": "",
+        "detail": "MP #mpCon를 소비하여 데미지 #damage%"
+      },
+      "levelProperties": [
+        {
+          "bulletCount": "3",
+          "damage": "102",
+          "hs": "h1",
+          "mpCon": "11"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "120",
+          "hs": "h10",
+          "mpCon": "15"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "122",
+          "hs": "h11",
+          "mpCon": "16"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "124",
+          "hs": "h12",
+          "mpCon": "16"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "126",
+          "hs": "h13",
+          "mpCon": "17"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "128",
+          "hs": "h14",
+          "mpCon": "17"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "130",
+          "hs": "h15",
+          "mpCon": "18"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "132",
+          "hs": "h16",
+          "mpCon": "18"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "134",
+          "hs": "h17",
+          "mpCon": "19"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "136",
+          "hs": "h18",
+          "mpCon": "19"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "138",
+          "hs": "h19",
+          "mpCon": "20"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "104",
+          "hs": "h2",
+          "mpCon": "11"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "140",
+          "hs": "h20",
+          "mpCon": "20"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "106",
+          "hs": "h3",
+          "mpCon": "12"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "108",
+          "hs": "h4",
+          "mpCon": "12"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "110",
+          "hs": "h5",
+          "mpCon": "13"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "112",
+          "hs": "h6",
+          "mpCon": "13"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "114",
+          "hs": "h7",
+          "mpCon": "14"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "116",
+          "hs": "h8",
+          "mpCon": "14"
+        },
+        {
+          "bulletCount": "3",
+          "damage": "118",
+          "hs": "h9",
+          "mpCon": "15"
+        }
+      ]
+    },
+    {
+      "masterLevel": 30,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADIklEQVR4nMVXi3HjIBBdz6QBtYBLUEpQSpBLsEuwS7BLiEqwSohKCCWYFighxwMvWhDI8d2M780kMBbLe/vh90Ypfug12HBHCvj5/r69hP39ffvDIliAJ//42FWNVKNIqdb327YrjtF68q0xmow13gZtjs/rlQ67nRfx9ogck/jWkTNx16mKTCHM8fb9kcbxshBxOlyiiLwGHhJPk6G2a2pW93F7P+54RsRSEdfrJ+12h2iRCOCPIId6hBTkIGbStmtpu90W6W83WUOKLicd08LpkOQLAZK87+HNTC5Jz/uvogA5JohRZK2KESylo5iCoDoll6TGFvmTMbCBCGMUNbFkljWRCOBKl2FncklqzLKywwRzccKGRUyTphqigN+QM7G15QlZl1LK20gR46CdnaEGPEUBT5KbTIRqWv+tcS3GlkSYE7nvxo0rCFiDJGfiPAqcFHgnRUiE/SPdxN7yAbW8S8JSCtj7vJ9HARK1MI8Cattr4qXV1fwzMSKh7uQ1BC6TCvhfWBXQtijOxq/lYdD0DLCRBVtL1tTHrQrABKq9/6m9n+xw+lglPh/P0Y6hazsXPZECFvKlvklPlk5DKgSFhgKWxL/B0zXAQoi+ogiQ90dFf4MoAPs/jlEJcw9dzavmQbUbbeMcEp6rVakAAGc41inWa9wLaClivBgapzEuN/Rd2SVRYHIUICKFOZG6wFGIAK5RQB4FTIAignEca5fe4zcIWwPI4X3gKkSgFAUJ3h0VguG2WdXM5Nzit7xA2fsS5gg4V9umc2u/cTsaPM5vOBTTgmo3o/WtnJjJczsOPXtfvA/0LvRd1/kjHZ744pnmSeQ9EN+0Hp3YPhCIviQFOOdMfv481u+EIRJzPy2YZVoOp2EmNKGfF1u/V/eV0HkB1Tth4wknHwX2EtvpOJp4RWMRa2ByPCFQa2ZlF0wEDNMQr+J+Ik8a7nAzgog1cK7Hkc+Oo/9fupAmAgAMMNMc1sQo2q4f23mhsQOmciJBwAZvtdLrSBr5/voyD+OyKi8RoxDdqwjdDUfAi8Bz6d/x+ExgcvyTKdjcH4yvQHye/wHB5CsNYLIy+QAAAABJRU5ErkJggg==",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACd0lEQVR4nL1XgY3CMAwsUhdgBRiBFWAEWIERYARWgBFgBBgBRoAVGIH/i7jo4rfb9PXPSYWqdXwX23HStinxaj6DEW9UwOt+v3+EfTqdviiCAhL5arUKB00mk3QBs9nMtbndbun/8XikC/b4tzifz81isUgi2j5ykuKfxJEAi+Vy2ZxOpx8ittttFtEGY0NizJLvItAOAgAVsd/vm/V6nW0LAXwJAgyGEzjDpYK+lbvEmJUCxEwL06HkPwQo+Xw+z7OxpLvdzhWgNhTzfD5zBL10uCmgaiVXUjj1oDYYAxFavJ6IQgCNNewkV1KvsjlexVBEZF8IqCGnoy6H9IUxKuJyuaRn4/G4EFoIGEJuRbDI9N+KQPghQKMZLkOFkvKedRJFgCIUXv9orUFN3j1yLlnaktxGwY7PAmq6Gxx3zVzXfBeUqyoF/4lOAZgJq/ZwOAxyjEbGgov6Rq8AOOC12WySo6gNE8g3xxC/FuCJuV6vqRbs7nk8HnPEhmBwDYAARQRCisB97RYdCtBlRHA5RbPqI0Xova4JLm52rX0BvA8LKZ+eCNihq3G54d4KUnIeQLxlnAXQ2JuVnQWc27WOZ109gsJxhbshjQBGQcHuyKXJqLDK+Q4zVnTtiEUE2IoZPnvCYVpgw6OZOia5HcfQc/ZuBHgKogBbQBpyvMP2yme4Z1EpKcCIkhz9JDwT0jlhc2rToo40dVpsEKZbengmRPh0JjDGPZ6pEBteC5LXtOFCAHq9XWoAl1gtvEqnH68QixRArRJGg/oEaKHRX9cqGOFbzfs60kG1QmyVe+N4QGnen2YNRfTl969AcvxoCkbvD8ZPIH+efwHqVy1DaEJRHAAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADJklEQVR4nMWXjZGjMAyFxcw24Ba4EtgSvCWQEkgJpIRQQlJCUsK5hKWEuAVKyOkZ5MjEZv9m9jRDwmDL77NkZPNCqd3pd6ySGw1wf3+//Yr66+ufu0AIQBB/e90XnWrTkOEL1jQ222ccXfifppE8X/DB/9pOl7+0370FiJePxOtFFOIibK0pYNoFhP1Cv56cG54gDrshQrxQwUrCzk1ku5KXWfq13M/S8WTosE8hLpcT7XaPySYA0ghx0COkEIewiNrOUFVVlLP7Xa9hiE8xLZIOLf4EoMVbFqLzQ1yLHrv8y6L7zDCG10PNUZwjmEtHNgWBeiWuRSef1U/6wAcQ3huqm2l5+rwmEgBZ6TrsIq5FfYGg9nUCIxDuWiDWAJ8RF+Ep82qF9jhWHXw0xPng2Q89am7PAHxVfCKXiLNXaDNhsfksxGE3cTtAMgBbpsVFeA0QbaIEQttcP2yoE1mArbzrsOfE8cwshUgiEe5XUUCssgCl8roWKc5cgQlIyWatMQX4X7YJ0LS8ZjmNnl+v8zDSV6zt6sWXrw3XTQAMgGg14b7lwVo6DH82hfv+FP2CuR8AaHuA3LiwcKF0KUhnb8R7EH1iKX0PIAGByP4WISDOE/+WRQDUf2yj2iR0pVl9tNrHQvihVbcmBYBhr8eweF/XG5CGGPboe40AuKd9m0RBxLEID+dlTziLxsMiAIoHCsRTFPx8QSP29RQLjX42lE90cYKY/VzU7HMEclHQJtURFRY7n1RaqZjShhlrk9nnLAJgj7a15SplwmYBh/SE8yjRCNJ1oPCvIyPiaz8Jvcze5yJgm57DzwB2WoqHSaj1ORDto79S4+d0hfs6TZ34Ss5F/HjqymdCGTwOkiyY57Q4lXO3+K0XW9cbHnMKM3Zu40xogiC/ikto4IRz4fUsB0sbIbZMxBHJ0Yl42SLAdRx4+Mf+7T1E5zMcbN5CLcnRuwiw5Bqzna1fng/Zj5QkBZx9cuOgBns41QlE2dKFRnECvnCMA0CFb7Xc15F2Cp9aEaJsWrwkfLz0+CrCbSURCBD4XPq5WfooSiKOH52Cavlg/A2Lr9I/a/4YhymuQNAAAAAASUVORK5CYII=",
+      "weapons": [
+        47
+      ],
+      "id": 14111006,
+      "soundPath": "Skill.img/14111006",
+      "description": {
+        "id": 14111006,
+        "desc": "독구름을 만들어 내는 폭탄을 던진다. 독구름 범위 내의 몬스터는 지속적으로 독 데미지를 입는다.",
+        "name": "포이즌 봄",
+        "bookName": "",
+        "detail": "MP #mpCon 소비, 데미지 #damage%, #time초간 독 데미지"
+      },
+      "levelProperties": [
+        {
+          "damage": "104",
+          "hs": "h1",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "21",
+          "prop": "51",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "4"
+        },
+        {
+          "damage": "140",
+          "hs": "h10",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "prop": "60",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "16"
+        },
+        {
+          "damage": "144",
+          "hs": "h11",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "26",
+          "prop": "61",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "16"
+        },
+        {
+          "damage": "148",
+          "hs": "h12",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "26",
+          "prop": "62",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "16"
+        },
+        {
+          "damage": "152",
+          "hs": "h13",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "27",
+          "prop": "63",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "20"
+        },
+        {
+          "damage": "156",
+          "hs": "h14",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "27",
+          "prop": "64",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "20"
+        },
+        {
+          "damage": "160",
+          "hs": "h15",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "28",
+          "prop": "65",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "20"
+        },
+        {
+          "damage": "164",
+          "hs": "h16",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "28",
+          "prop": "66",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "24"
+        },
+        {
+          "damage": "168",
+          "hs": "h17",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "29",
+          "prop": "67",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "24"
+        },
+        {
+          "damage": "172",
+          "hs": "h18",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "29",
+          "prop": "68",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "24"
+        },
+        {
+          "damage": "176",
+          "hs": "h19",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "30",
+          "prop": "69",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "28"
+        },
+        {
+          "damage": "108",
+          "hs": "h2",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "21",
+          "prop": "52",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "4"
+        },
+        {
+          "damage": "180",
+          "hs": "h20",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "30",
+          "prop": "70",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "28"
+        },
+        {
+          "damage": "184",
+          "hs": "h21",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "31",
+          "prop": "71",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "28"
+        },
+        {
+          "damage": "188",
+          "hs": "h22",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "31",
+          "prop": "72",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "32"
+        },
+        {
+          "damage": "192",
+          "hs": "h23",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "32",
+          "prop": "73",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "32"
+        },
+        {
+          "damage": "196",
+          "hs": "h24",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "32",
+          "prop": "74",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "32"
+        },
+        {
+          "damage": "200",
+          "hs": "h25",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "33",
+          "prop": "75",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "36"
+        },
+        {
+          "damage": "204",
+          "hs": "h26",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "33",
+          "prop": "76",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "36"
+        },
+        {
+          "damage": "208",
+          "hs": "h27",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "34",
+          "prop": "77",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "36"
+        },
+        {
+          "damage": "212",
+          "hs": "h28",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "34",
+          "prop": "78",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "40"
+        },
+        {
+          "damage": "216",
+          "hs": "h29",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "35",
+          "prop": "79",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "40"
+        },
+        {
+          "damage": "112",
+          "hs": "h3",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "22",
+          "prop": "53",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "4"
+        },
+        {
+          "damage": "220",
+          "hs": "h30",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "35",
+          "prop": "80",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "40"
+        },
+        {
+          "damage": "116",
+          "hs": "h4",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "22",
+          "prop": "54",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "8"
+        },
+        {
+          "damage": "120",
+          "hs": "h5",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "23",
+          "prop": "55",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "8"
+        },
+        {
+          "damage": "124",
+          "hs": "h6",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "23",
+          "prop": "56",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "8"
+        },
+        {
+          "damage": "128",
+          "hs": "h7",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "24",
+          "prop": "57",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "12"
+        },
+        {
+          "damage": "132",
+          "hs": "h8",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "24",
+          "prop": "58",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "12"
+        },
+        {
+          "damage": "136",
+          "hs": "h9",
+          "lt": "Point [ X=-100, Y=-82 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "prop": "59",
+          "rb": "Point [ X=100, Y=83 ]",
+          "time": "12"
+        }
+      ]
+    }
+  ],
+  "id": 1411,
+  "description": {
+    "id": 1411,
+    "desc": "",
+    "name": "",
+    "shortDesc": "",
+    "bookName": "나이트워커의 길"
+  }
+}

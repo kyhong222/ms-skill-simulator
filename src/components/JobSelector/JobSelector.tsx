@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { IJob } from "../../types/job";
-import { groupedJobs } from "../../data/jobs";
+import { groupedJobs, cygnusByGroup } from "../../data/jobs";
 
 export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => void }) {
   const [selectedJob, setSelectedJob] = useState<number | null>(null);
@@ -10,31 +10,54 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
     if (onSelect) onSelect(job);
   };
 
+  const renderJob = (job: IJob) => (
+    <li
+      key={job.id}
+      className={`cursor-pointer p-4 border rounded text-center ${
+        selectedJob === job.id ? "bg-blue-500 text-white" : "bg-white text-black"
+      }`}
+      onClick={() => handleSelect(job)}
+    >
+      {job.koname}
+    </li>
+  );
+
+  const groupNames = Object.keys(groupedJobs);
+
   return (
     <div className="p-6 max-w-full mx-auto">
       <h1 className="text-2xl font-bold mb-4">직업을 선택하세요.</h1>
 
-      {/* 그룹들을 가로로 나란히 배치 */}
-      <div className="flex gap-8 overflow-x-auto">
-        {Object.entries(groupedJobs).map(([groupName, jobs]) => (
-          <div key={groupName} className="min-w-[160px]">
-            <h2 className="text-xl font-semibold mb-3 text-center">{groupName}</h2>
-            <ul className="flex flex-col gap-4">
-              {jobs.map((job) => (
-                <li
-                  key={job.id}
-                  className={`cursor-pointer p-4 border rounded text-center ${
-                    selectedJob === job.id ? "bg-blue-500 text-white" : "bg-white text-black"
-                  }`}
-                  onClick={() => handleSelect(job)}
-                >
-                  {job.koname}
-                </li>
-              ))}
-            </ul>
+      <div className="overflow-x-auto">
+        <div className="min-w-max">
+          {/* 모험가 직업군 (상단) */}
+          <div className="flex gap-8">
+            {groupNames.map((groupName) => (
+              <div key={groupName} className="w-[160px]">
+                <h2 className="text-xl font-semibold mb-3 text-center">{groupName}</h2>
+                <ul className="flex flex-col gap-4">
+                  {groupedJobs[groupName].map(renderJob)}
+                </ul>
+              </div>
+            ))}
           </div>
-        ))}
+
+          {/* 구분선 */}
+          <hr className="my-6 border-t border-gray-300" />
+
+          {/* 시그너스 직업군 (하단, 각 모험가 열에 대응) */}
+          <div className="flex gap-8">
+            {groupNames.map((groupName) => (
+              <div key={groupName} className="w-[160px]">
+                <ul className="flex flex-col gap-4">
+                  {cygnusByGroup[groupName] && renderJob(cygnusByGroup[groupName])}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
       <div className="mt-8 text-left">
         <h1 className="text-2xl font-bold mb-4">25.06.20  패치 반영</h1>
         <h1 className="text-2xl font-bold mb-4">25.09.19  스나이핑 쿨타임 수정</h1>

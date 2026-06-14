@@ -1,0 +1,1632 @@
+{
+  "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB1klEQVR4nO1W7VHDMAxV77qAGMErmBHMCKxQRqArZAQyAlkhIzQj4BHwCEFybNdfaVISOH7w7tz4VFnvSXasHOGKEX4GB/7xROPH+xvoYYCh7wERQUgZPLXWIISY5uQT/xd8Mju652PTcgIHJho/Lxfozi9gjIGBBk1A8tPBmogszE1fELFd69QuBYa5zagnkrVAhNXonDiCOsICuGScKToGLiPPMWM0UQUmPwOxyRLJ0wn6toW9YbWYiGh5wVW9PxQMnwWuqOdNommDdRLIz5kkLukmonuQC6gS8TtQ+3NamG907pcGngmzX0ZLCBntBa5gLavFjOYW3otdS3dL0GYiDr7mhP/uYfgn+nNEii7gTg8pkW3DhhqV61W2nZMjUpc0+npu0XXN2JbaQ7NLrqajJ2m7LpVjnWhRfmnMXSKZXZLQovF5EkWECDMvBaZqvWK0ActLlRNuI/9QOiYRUoFU5ReOXWxKEvsMHy2OIcqiSuRRu2CLYFlAE4nQun4PBaKeCF6VSr7Npg2n8pDNlqkSgEUgyCBERk6nKCsmOnTajM90apqmCU5oB3Jbg3svb+EkxcJ8Rpasohe+h2TdE40h3qMHGuVJ2A7edBMTGZh/S7bApvcFKefrHVfiEZAAAAAASUVORK5CYII=",
+  "job": {
+    "id": 1111,
+    "name": "Dawn Warrior (3rd)"
+  },
+  "skills": [
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACaUlEQVR4nL1X7ZWCMBAM710DsQQpAUrQEqQELUFKwBK0hFgClgAlSAlHCRwTWF1DAkF4Nz8U8sFMdjebzY/4RCP+BwE9cAFNXjxX+boUtbOvbnv3cdiQCBKgyXfRdhUBZVmKOI4H7UVRaI5MFSJNYi3ixyRPTuliAefjQf+r5++rLQk37/5D1HZ2Ij5iYAk5kZq4l9XHO6wD7Hpjm0G4CDazu/rhjtUFAKp4m13HYj1sT+K3O7wFuExsw+1RebV5CwD56V6NjrkeeqeyVftgUgAnLy+JdUx0Vq/nZP82r8p/xa2f+7jZ42NUgCaH6WRLniaiaT4TZVl1H4/DUIhD8Qos3ebIA94CQJ625BLqLeRAtN1qEcXzqUXsss4S2c7tjsvtLtQ1E5d7OS6A4CKfEgEkyUZMYUKAFN/CZu7ZAuQX/LKfBFMvFvAfGLeAxwdoJ8yZ4y0AOF5zEQSBcwsSEIBHlc9KQqMC4ENsReSRc3t0QgQi3QaQYwyAk9bX/6MCbCJ0wmlBQuh9CSYzYZ8IUTwM3MAtAjFZXujxmLd4F2hy+LNlT/cdOdxAIDEgxjMlIoiYA6sAkJe11Cs/7cMXOZHwdxPdLP9IHHUBJ7eBYoCLieS8beAUwLMgmZtvPR4PvB3H13YtC6i2WjZXj5W6LKK+uFdYBdD2q9q1UC2HOo7MbPoerujIsfpqnTxAIoBaduc7jl4ObnocQrKeRz4QgEKB3w24CA5bavYFOEwBAe5qdDsyB9BF4lsCG1ANIbGJ/momSESmhkkE1ZXPCUdjqNQaA5Hjh7sg6C+MTvDoN3dCHE6XX/xT9PAH9PU8+q1ck+0AAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACN0lEQVR4nL1XgZGCMBAMMzaAJWgJUgKU8F+ClqAlaAlaAl8CloAlaAlSAv+bcZnjDCF8GHfm3xBIdtm7HMnC9NGazyBhQwpoq/o+y+ypaQbvNX93i2zdUgQFWPJ8s5pFwO12M1mWvfXXdW05jmVtDt+ZFbHQ5LvdLlrAdru1v8/ns+tbLpdde/+1MeYlopcDMeT7/d40Td96XD8ej14f3EnT1OQvs3US/hsgc9kuRcn7CMesAvTEJKcA2S+FBAtgXGGftlr24Rc2a1yvV+e8QQJAPjQBked519YCXYDoIAGS/HA4OJ85Ho9duyiKrl2WZTf2crk4x3oFaPK27RdKZvh6vbYxxh/DwThLN3R+eAWMkQOr1cqKuN/vVgSdYDhcuXI6ncz5fDann9u4Az7yMRGAriuu3PAKYKJMAcdIu32YvQ4QQ0n3MQGhiBaga/2sAhBPrOUkSQaXIIEExLOzCUAMsRRBRBHIdBckOVZFaPy9AlwiQARQCK9jMFoJQY5QoMTqMEhH6AKex7joVYANhiZHGAiKATHaLERVVZkpcArgmwOSnCTyOhbeELjeXII5IMVMrZ6DAuREtFsuPZkPMbXA6wDquX57vOmQI6H1f1QAl5+cFN932qxjz/2AHB8lQIqQ+z0UGQmX9VPI3wRgoyC/4ZgMy1Enlqs0hyYfOLSABGc1no70AzxIhEKPdwG7ob9TEZoJHbAicGbTyCceF7nV8oHk+CdDkLwOjIOQ2a9XwsTvQjf4F/utZZEdOGwFAAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACfklEQVR4nL2XbZWzMBCFJ+esgVRCkQASQEJXQiuhSAAJrYQiASSAhFbCIoE3FxgIIXwVznt/7AIJuQ8zkzT5oaEq+j8SfKEDVGn+PmR0SeVkW6laA8+pGIIBanPfPR8CUBQFeZ43ep7nee0RvXIKf70a4sc0/73FuwHuV7/+H1V9RkMh+vaLS9RCDGpgjzmbDqQyERvZQHQgvw22WYS7NAo7zD/2dqTjcAAoehsTqRw/D50+HasBrCG2CWHPxo/jD1m1CgDmXiZn++R+2QHMzMLtAAPz0LF3ivr1Iwz68EavisKkvUkE2TQLUJsXEisL0c2hqhrmN/s0nxo4J1RVV1hQV3BaNPT2RQCYB8oc3qXFHPLPsoZI33/kKQj5aCKRutPpiJ8ZvR53ipNiHoA1ZW6DCDQIKLwJWtICwHzhTb9TWsO9GaAZars9hFDvBvg6ABu0GIEl8Uz40n8ZwH/9kVC/ZFNTkIUCRN+tmgRADiM1FcPyTH7aQKDSbarN06Ytkp/V+Z8F0CFiBXFJm2kGMQjfQ9+UyyLAvTWHkuA0SoMeEcAAEv3r9/bOAgzyVIPhy56tudB2NQwDY1zzQnRNt9WBFQDmCbkklXvsic6cTfR7U1JuS8Z8DWjmNnEN6DAXKo4B0L+Dw61PPb0e9OeZipy/AWI6ArLZRplfjy+diki37dq7IUEF369qBytderSD3pw+zGbukQru55bFMesAQ0AAgfDTq8tcDbeajwCwUdDPBg2EP1pkbEvz2tqHhwkgcFbj05HZgQ8Sa2W+bxN2Q+pUhEvBEaghcGYzhRPMmqkt280Db7XmxOb4o6dAtAfGSenVb86E4LS8/dKH4ot/6A87LasrhLsAAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 11110000,
+      "soundPath": "Skill.img/11110000",
+      "description": {
+        "id": 11110000,
+        "desc": "10초마다 더욱 많은 양의 MP를 회복할 수 있다.",
+        "name": "MP 회복력 향상",
+        "bookName": "",
+        "detail": "MP #mp 추가 회복"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "mp": "2"
+        },
+        {
+          "hs": "h10",
+          "mp": "20"
+        },
+        {
+          "hs": "h11",
+          "mp": "21"
+        },
+        {
+          "hs": "h12",
+          "mp": "22"
+        },
+        {
+          "hs": "h13",
+          "mp": "23"
+        },
+        {
+          "hs": "h14",
+          "mp": "24"
+        },
+        {
+          "hs": "h15",
+          "mp": "25"
+        },
+        {
+          "hs": "h16",
+          "mp": "26"
+        },
+        {
+          "hs": "h17",
+          "mp": "27"
+        },
+        {
+          "hs": "h18",
+          "mp": "28"
+        },
+        {
+          "hs": "h19",
+          "mp": "29"
+        },
+        {
+          "hs": "h2",
+          "mp": "4"
+        },
+        {
+          "hs": "h20",
+          "mp": "30"
+        },
+        {
+          "hs": "h3",
+          "mp": "6"
+        },
+        {
+          "hs": "h4",
+          "mp": "8"
+        },
+        {
+          "hs": "h5",
+          "mp": "10"
+        },
+        {
+          "hs": "h6",
+          "mp": "12"
+        },
+        {
+          "hs": "h7",
+          "mp": "14"
+        },
+        {
+          "hs": "h8",
+          "mp": "16"
+        },
+        {
+          "hs": "h9",
+          "mp": "18"
+        }
+      ]
+    },
+    {
+      "invisible": true,
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADzklEQVR4nL1XbdGzOhDNM1MDRQJIAAlBQpBAJVAJRQJIAAlFAkgoEoqE3pwkGxYI7f31nhmGkCx7zi5LPi5ii4/4N/ijBhfwGcfXj/cWkWWZNX5prVfmMbI+x3EUm4EAsiz5kAgSYMjTND59aZomQ/5+uSQ506EYrIP3xwuBiDRNT3013VPcityIuOzJi9v98EJVKkf+FsN98P2qk0Lqa2pn0d9sPwRGiRVRt/3BV9c8RKmkblgRmxoIkYcQy1ikZWyIcae+eZgFPtM3gAMiCBfxAz76EdFPIk4deT2bcdzTyj5jDDbIVJREp1ngCAoAaQiIjcg4uAhvGPAVErMRQMZU6edYNGHqyCd/R99UrOL2fuwfciKAqhxAujmiLCJeMWgiqYkGR8zbZEM488OFXOgt+s5Ayyq9eirx+XxEnfcilbbguAhqU38sr6LX78NXz/xwQRBCIowAQ/58e2L6JeXDOdaFBSG4E9DGOO6+/7omAb5IMAkEEAiEUDYORbgn/wYuwjNzH9UaAAGBLMP6nYwARF/Xg5CByENC8joTz2rcOOd95IMTc7SaC5xRHlkBpAd3xQjhpGdO+BQDwj2WL8+K+VrY2GW1XJzRtnDOXO5/qf0vBzIiVaHPuXABeFq2AxyqkX6u56AFB7+wfXf7MoJRD+nv3vmyq4GkSMSre4lb1opmLA9EnLxo88Nqhzb6kIWufB6i3N/LSmrO/V/gBiHi27L8C8tJX6uDKHUm4b+qpB8zAqA+yXQWGrshqdvtfEC46egJSPvhEzibhmUBxNNkp+dZr55VKU3GKWMuA1cvwghiQiQTQY6p4KgQ6ZkTr0ItKZDcEv/eNC9rBmy0KXPoDB8vUfe9kHEqys46afUOqFFbIfTsv7GzLbJaVEptiIlrmoetABtx71fEPXnrtl687YkZ+Hg3VkYEfGX3xHN0zVrAPzckiwtrYeW1BEtNT7Od+joewmE/gLSOekpF9GkcG6d1sW4k0N73cXI+jmuThSw5TGCnGVic0z1hqO8MG5slnJWgADczm6UTq9fayRznjPy6Rs5JqS/XGTj7KOEMMOuNCNYXsve27hltY/ulJA5/AU0Qz1LXwYA6SPeafHua7QRENgQQ353IQdtUUpnVk3bJp38B9ut8VltJVKBPGMdG+NB7IUT80CLy5HjO4GcCEvCHsxqdjvjCgiwAcPR8PXybiPPWTkRkR0Ks3bSx4wtY2w84FaH5RxkwInBmI5AIo1qNoi9s1GWqPPF+KoYdB7fD1EuzH5FTBgh/7sB4QNGHzwn7Tcj/tRPseP4fAhqAoYw0pSgAAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC30lEQVR4nL2XYRHqMBCEywwGQAJIAAkgASSABJAAEkACSAAJIAEkgIS+2QxfZ5smbd/78XaGSUivt3uXXJIOizrK4v9gQMcFlI/Ho/PN+Xwe2s/nUxsfj8eh7emjRAQCAvlsNsu+9Hw+AznEo9EotMfjsSZIQrp8XS6XYr1eBxHDmHy73TZe2Gw2Ffn5fK7Gd7td+N3v92pcNohwW3A6nYrValWJqK2BFHkKErtYLAKxWsaUpS6IQyLAsOgA0b9erxCRkwuIUKtnsunKgiMpQKQ5iOx6vdbG9F9pZfz7/SZ9pcTUBGDMSm+DCCF3ESzKlJ9UhVQCWOWC0u2YTqehVWRxtN7HBuT8uJBKAPMseKoOh0NRlmWx3++rSnER9BlnHbBmHPiXEEQMnZwXIHLHEuKRxiJisGDdj6BAxEU2qgyQutRLOcTTAVIBAAXyfr+r/0GA0iGjyWQShLAYFYX6iKP1WiZrcX3rvVwJalycynyjDL1s2pz03bS6fNWmoI0wRlxSccmRPdocOndCISeMuc5twTkRXqpVFSiieB7dEZBNfNqpz5ym3k8FRMYaVSCCtqP0X0EW5N8rrKoCKbrdbmGQslFVOFTDQGlPTYEIVGpAWzNlpwNL5MvlslkFDAguxEXgGDsWIv+dGIiciEXMe4iqBDCP7lBCEKGLBxHFQmJibEm3E8PVECD4atWNxck55byfitifa0FKhAJBhDh6X0i8XPqAyGMfbX4a9wGlleiVKo9IUD8ec3J/rt/v7hdayj0rIBWRVr5STQXQ97E4YtqcTW8BEMVIOcbWnzGmDPyVAJ+zlIhcVLGti8mtg0YV+JaqjSPejByUUmzjxLLRRZYtvLUK9CA+WPzyEI/xTcAVXUJ8raRSH58VEjDQtxoHTOpgYRXTh5g7AXYISdn5AaYK+4kbkIEgAhLBt2YRcCKSTmwEt3O4nbJG5iAnA2Dw+2BsIHf7iS8hfe0K+zz/A51Xe20FFEgHAAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD4ElEQVR4nL1X0ZWrIBDFc7YBLUFLkBJMCVrCpgRTQizBlKAlxBK0hFhCLMHHBUZGxOS9n3f35MDCMPcyMCA/Yo9V/B9EVOEC1uf4+jgqFouQUhrjcUWD85gZn+M4KqtYfMJFZiuJIAGavMjT00HTNGlyTQzkppgz6+C1bkIgIs/zU1/3bhS3SmoRPz55dW0OA+rfYiOfq2VrT1+x+gmx3JSQi2mHTSSNiOYxHHx1bS3qUomzInZ7IETuAzRpGYv4bohRArFqm/tFfAM4IILwI75gm/1zFZOafVpY8qsVpMq4NSX6YPMtChxBASANAfMD2Xz12kFu2xcyDPgKidkJIGPa6Z8AQoDEzCQicza+H0TkVADtcgDh5oguJsWWhRFdnRAekYXN/uBHulTdCaD8XjszoK/mzaB8p2JdV9Ens8jVGoNhrhRxF+uMoLqOgvo/L8x4kHM/XBDtj00AkT+uZoAmQmkdY2NByMRSEHX0o+TtOgrq96jmgx/goSYCLorGYROGBp2Bi/jkg/f/qomI3tlqAWu7ikbNvggMDAmRfSLG8r1zztvIhy+MgEjrKFTRPgLYQMXTEcLJcFl2/VzEv4AL4qm6CVjUX/FMd4Sf4KcU9hEXCD+YDJX7CTjDH+//IMiRD7pwkMIhhERsdDwC0S0S7/sqrtEk2jUPOiJchuRw26GONikT8Sze4hvuda45NwFOltAiTq/l74kRDCbaejWJUkUB/u93J14LgPpE5eW7NgfFrTEh9YVUg9t4CHtoCWDT5S4KvVzEMJnzpbjlevbJLbIRk0YAvmBIBEBCrs0gSiaiy80Xk5TmwKeNSEc49fM49Iq8rc0dkzTuKB5mFgGA1lEbkpBftS8eRkQ5pnZG80GIIzYg2yoaRKsuOE5MXMM87QUAuC7pRgR5xcgf0kj+ZfXWEvN15/3dWmgR8JU8oo2ja709EMRyUvp1Tv5KD/3+94GPw/cA1vNVqtn3avZpqp0+Mneroe63cXLej99TReGCKCifCbsFgwJ82XDUKCe1LWNLdCbCh7NZToNwugQYQOQ7XdZx45GTLe+jtl7l/pmCDxEwZaPu7xpXKHOAthA2WwuK3KeT/pAFWKNMrdUrV/tg6kUZnz8w+sWkkm+jia3IXqVbl5ciG9xX8mkW4Hvdv1hAUov00KbtlWMAQkkIESMSMuqFD/4mIAER3mr0OqIDCVEYU3MiwtG4llu9S009m0xuv6xdNTtCrDsJhB2/wJp+wqsI1YgioEXgzUYwZ7U9wRTBZD+3W0WezfuTLWN2HCSQjl46/YicIkCI7IPxADlHItjufff/rZ1gz/M/JbxnBoDu4CAAAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 11110005,
+      "soundPath": "Skill.img/11110005",
+      "description": {
+        "id": 11110005,
+        "desc": "최대 콤보 카운터 수가 10으로 증가하고 일정 확률로 콤보 카운트가 2개씩 충전된다. 콤보 어택을 마스터해야만 스킬을 올릴 수 있다.",
+        "name": "어드밴스드 콤보",
+        "bookName": "",
+        "detail": "데미지 #damage%, 최대 콤보카운터 #x 증가, #prop%의 확률로 콤보카운터 2개 충전"
+      },
+      "requiredSkillLevels": {
+        "11111001": 20
+      },
+      "levelProperties": [
+        {
+          "damage": "121",
+          "hs": "h1",
+          "prop": "11",
+          "x": "6"
+        },
+        {
+          "damage": "130",
+          "hs": "h10",
+          "prop": "20",
+          "x": "8"
+        },
+        {
+          "damage": "131",
+          "hs": "h11",
+          "prop": "21",
+          "x": "8"
+        },
+        {
+          "damage": "132",
+          "hs": "h12",
+          "prop": "22",
+          "x": "8"
+        },
+        {
+          "damage": "133",
+          "hs": "h13",
+          "prop": "23",
+          "x": "9"
+        },
+        {
+          "damage": "134",
+          "hs": "h14",
+          "prop": "24",
+          "x": "9"
+        },
+        {
+          "damage": "135",
+          "hs": "h15",
+          "prop": "25",
+          "x": "9"
+        },
+        {
+          "damage": "136",
+          "hs": "h16",
+          "prop": "26",
+          "x": "9"
+        },
+        {
+          "damage": "137",
+          "hs": "h17",
+          "prop": "27",
+          "x": "10"
+        },
+        {
+          "damage": "138",
+          "hs": "h18",
+          "prop": "28",
+          "x": "10"
+        },
+        {
+          "damage": "139",
+          "hs": "h19",
+          "prop": "29",
+          "x": "10"
+        },
+        {
+          "damage": "122",
+          "hs": "h2",
+          "prop": "12",
+          "x": "6"
+        },
+        {
+          "damage": "140",
+          "hs": "h20",
+          "prop": "30",
+          "x": "10"
+        },
+        {
+          "damage": "123",
+          "hs": "h3",
+          "prop": "13",
+          "x": "6"
+        },
+        {
+          "damage": "124",
+          "hs": "h4",
+          "prop": "14",
+          "x": "6"
+        },
+        {
+          "damage": "125",
+          "hs": "h5",
+          "prop": "15",
+          "x": "7"
+        },
+        {
+          "damage": "126",
+          "hs": "h6",
+          "prop": "16",
+          "x": "7"
+        },
+        {
+          "damage": "127",
+          "hs": "h7",
+          "prop": "17",
+          "x": "7"
+        },
+        {
+          "damage": "128",
+          "hs": "h8",
+          "prop": "18",
+          "x": "7"
+        },
+        {
+          "damage": "129",
+          "hs": "h9",
+          "prop": "19",
+          "x": "8"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADgElEQVR4nL1X7ZWqMBSM59gAloAlQAlYgpbgK0FL0BIeJSwlSAlQgpSwKcF3J2TwJgZW348djwcIIXcy9yPJ2oR4mN/BijeawOPW3Re/yow1ZVm6+9v9O3i3227ctes66ZUtjrMrtw+SIAFnvCry2Y/6vnfGabjKRyPluQkIlUIEJIqimB3r8tWZ86F0JNafGj/XrWvL8tzcjoXpLnuzq/upHX1+InHaS7snsTb/ARpvBzspgTY7DB+P9SOBePa5GPryxgFcQeYgKoAE+ryjwiIBGJ2DNk7gGe1/mtfv9FgpMutUZ0b6Eii9VuKv+Lbsn26Ix4EiMZGJAKUG5lIMuLaDOVW5uwK4jxUh4nFKlaoBAeY3P2BEu84S5Y/Hw6XbvhqZ1/1IAlf8jz6DQAp9GAd6HE2I8TERiFMslwEhMCQFMEMQqb28jVwz+cFw01v3r0XBvTxbEYMkCk+M4zhbMhEG6URAA1GeRR8RMApDeIeAk8CXDKikDrRTG0gYTwIqcQJaUf28pjRMMVincfqboPHtZmPu36Ocg7VBG0mcivnYoIsQWy8KfKmZLwUYDM4hS6wFyJrUWAGBVI7PQUcyEKccg1NXyxTeKsUYoE8QYz7HhSuDPZtNJM7iykuVXmscAfjCRaZEKIIkBmZxbZ/+j0ss7tGm4+C4tBoicOeyACQqieDMzwT+zJaX9yT2BRR4qgZSrlLK+CAQKAD2pVcBYD04TtnwnD0B2VMuoApITWQDMqltx/etPHP2zqbEjSOAHQxJAJrIaV9JNow5ztQjEQYiA5Dv6QIrv0aMc8Z61+Qr+dMF9KMbUBEhiRsHkeeYiDbsvvN9y3Mb+FsvRu3QhwT4gnLSONwAfzI9WflShqGUzncENEsvScRLcnI51rCJsnDxixIN4xndlvJd20gux4RemCpfz3VxYmHB9eSJaOO6AHER0wtQXMAWC9GlygODxjxLKq5N/yqPVgx9Uruktwkwd2Ng4LoPN6DX1jq1tGKpXdJHBOwMCe6GYsQlF0SxWV3CSxboouSW6MR5gSqzwCBW0GhN6CZgkK26Lj6LWZDCAPkiBWiYBYaVEwF3gM/tuLLy1LQEEFjhrMbTUawCoBcpXct3UeXUBsvzEPTTs78KSTkV4XZFBRwJnNmIuDRT0lRli0s4EZdeVj8apwLEyh8YX6C35RrxJuTdfkYdz/8BQ7WUri4Iv68AAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+ElEQVR4nL2X4ZHaMBSEzQwNmBKgBCiBlMCVQAukhNACJYQSQgm4BCgBSnBulft868ez4e5HdoaxkGXtav3ekzyt+mir/4MJDRfQ/jlfRp+qq3u1Wq1K+3Lpj10sFuV6Pp/fR9Wj8/xYLVpEIKCQr5fzwYeapinkEM/n/8bu9/ueIAmRiOVyOTjXr9/n6ufbqoiYfpX8eDyWvrquq+12W+12u+pwOHT9GvNMxG7z3v8hYlp9A5Bfr9fOCfXd7/femFfwVEBcvQg3m00hF3SVGN0Tqa6vuDAqQKRxRcDJgf6rn9cQ5wKZmGk2mEgfA9a7ExJBUGbzyBktyoV0ArCagQ5STDidTtV6vS5XQe3oiBNm83h/ETCvdfMzxdxKRXnbtmVlKEeEROvn/WoTB/GVxFTtBKjDH8BeWSpohRLCK3Ji2vzHYgLW5xG0EIK0E+DIHnKIiIBTWxmgOkCfi5BLLMAd9f9TrMkUY3Ukn81m1e12K30i8z5E6DcUG56qDw74yscCTIRfgRaXzdUTkOX4EAgiEFOOmPBqmeGlUjyknuj3YiNQxDxl/VU+CCALFKEKkgiRaxLedSyxaqsvxsHQfqB5BrPA850JXt1YHKQokCgqpcdZESD1uMBgAdt89e4K79aJcEGpKRF6lvuUa7i6LNAJBhGCC5EI/dQm9RBCIBKA3OcVII4V+6np2Nw/HcAyJnQhiFDBEbSyKMSJBcZitxPDdbo2fQHcwC4n96JC5cuINdYzRgEdS2/cktPt2JGdCYiNGCtj+Q5iXXjIAj/9UM+9BjCBrp7bHpA4xibmLsQCNlqIIHdbaev6zDGNyU5JgwJivpO7ERk51c4dy05JkaMnIHvfmQhOQxGx5GYORI6HLPCi5Ft0BlzgDODE0YWhU/LTzSjbhCDGGVapgKMdrR+CBEz0rcbXUXRB8E3Ka3msnE4Yx/nq98dGX0VqTnCgiNA3G4ilGSeyypaddmO/Si/VD3IcAJOPD8YH+LHcEQ8hQ+OS/u7z/C+nmKV9LDc9xgAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADgElEQVR4nL1X4ZWyMBCM79kAVwKWACVwJWAJUoKWICV4JUgJRwlQgpYgJfBlkkxcQkD9fty85wND2Jnd7G7CVk0xqr/BhjdSwPjb3VbfStSg8jw395fbVGu1sza7rtOzklU73/lupAgKMORFli6+1Pe9ISfxwU3d1PeJoFwLgYgsyxZtna+dOu1zI2L7KXnVWMIqTdVY6pePqdo0yo9jzisRx1KPOxFb9R9INPlDk4OzTJUNuB4b7vePbb0UEHqfaqKbIwdwhZhdY0VgzjtRWBUA0iVIcgL/Mb5rlU7AZVsxMdvYZGb6Gsr0Se5FFDqrhPbQDiISCvECGGpgqcSAvSa4ZvaKtb9k84gQoZ1clOpEAOubL1TCIrL8MI6m3A6FdfvkROCK39k5VOn7snjmQRUoC0vVCwhLDImWaPe6wr6IYQgBGdyu4X1iidEG8MOzo1sWishcadMOAEeYpF6ABEpMJdOX/LPEEuFZ3tp79AL0AY5JEdfs6YCM6I/4v2VooDhxnt8cOdeb8ORfOoQPG85+mI5RxFpu+CXSUZhF4CY8v64YAeESkshWgKqJ2ZoIeJTLhCFkJhtBouTAf9J2zumzWy7hrVZs1A/zcdZzrHEZEa5CvvWy/EZyygvAWmBNkKHjcS4XSVPJ9Q9aLO4xJvPgvNKBL9qjaqkKIAI7Y5pYLxJ3/RTw4yS7YmsdMGUo1sQIMOpdFAD2g6NrPNJ7AmGPLQGjgNKECFRS21t7P7rK6L3h1HljBOAEQxEmRELIWb+AkjIeuNKjECYiE9A/d0sw6Lxp2qfH8tTU3kUEAK6jMSCEmJot7eEDME0nFCKIAT/XhbsK9gBwtfd+KoAPGE6SYxkOoobZ+WLE6Buy3s1pqX42HXJIRLdjiUj1qWthE9MTF3biWr1Ljuh2TMiNCdUQtlQ2FpTmxdnBWvOQytrHPG5icgMKG9hqI0LzICFF8B6EdaRryohhLqO0hFUBrN0QZVDjAEoVEZERw7ULTkkfCRgWROydwURNPQ5bLoR+NWoVsyqQTYmn4Jkwx9q4BsNvCoqRS4ajumw+q1UQw92c9aci2Nl8g3FsSDhzMh7szrqpX2+tELDBtxq/jsIoAHKTkr28CjqnJNzUajJPel83Pb6KzDRGwIjANxsRtmYeo2KdLWzhRNh62f1Izgh40e6DcQZ5LJcIz/3vzlPi8/wfq7459ifws2AAAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 11111001,
+      "soundPath": "Skill.img/11111001",
+      "description": {
+        "id": 11111001,
+        "desc": "콤보를 쌓을 수 있는 상태가 되며 공격할 때마다 콤보카운터가 올라가 피니쉬어택을 사용할 수 있다. 콤보카운터의 최대는 5이며 데미지는 콤보 카운터가 3일때가 기준이다.",
+        "name": "콤보 어택",
+        "bookName": "",
+        "detail": "MP #mpCon 소비 #time초간 지속, 데미지 #damage%, 최대 콤보카운터 #x"
+      },
+      "levelProperties": [
+        {
+          "damage": "101",
+          "hs": "h1",
+          "mpCon": "25",
+          "time": "120",
+          "x": "3"
+        },
+        {
+          "damage": "110",
+          "hs": "h10",
+          "mpCon": "25",
+          "time": "160",
+          "x": "4"
+        },
+        {
+          "damage": "111",
+          "hs": "h11",
+          "mpCon": "35",
+          "time": "160",
+          "x": "4"
+        },
+        {
+          "damage": "112",
+          "hs": "h12",
+          "mpCon": "35",
+          "time": "160",
+          "x": "4"
+        },
+        {
+          "damage": "113",
+          "hs": "h13",
+          "mpCon": "35",
+          "time": "180",
+          "x": "4"
+        },
+        {
+          "damage": "114",
+          "hs": "h14",
+          "mpCon": "35",
+          "time": "180",
+          "x": "4"
+        },
+        {
+          "damage": "115",
+          "hs": "h15",
+          "mpCon": "35",
+          "time": "180",
+          "x": "5"
+        },
+        {
+          "damage": "116",
+          "hs": "h16",
+          "mpCon": "35",
+          "time": "180",
+          "x": "5"
+        },
+        {
+          "damage": "117",
+          "hs": "h17",
+          "mpCon": "35",
+          "time": "200",
+          "x": "5"
+        },
+        {
+          "damage": "118",
+          "hs": "h18",
+          "mpCon": "35",
+          "time": "200",
+          "x": "5"
+        },
+        {
+          "damage": "119",
+          "hs": "h19",
+          "mpCon": "35",
+          "time": "200",
+          "x": "5"
+        },
+        {
+          "damage": "102",
+          "hs": "h2",
+          "mpCon": "25",
+          "time": "120",
+          "x": "3"
+        },
+        {
+          "damage": "120",
+          "hs": "h20",
+          "mpCon": "35",
+          "time": "200",
+          "x": "5"
+        },
+        {
+          "damage": "103",
+          "hs": "h3",
+          "mpCon": "25",
+          "time": "120",
+          "x": "3"
+        },
+        {
+          "damage": "104",
+          "hs": "h4",
+          "mpCon": "25",
+          "time": "120",
+          "x": "3"
+        },
+        {
+          "damage": "105",
+          "hs": "h5",
+          "mpCon": "25",
+          "time": "140",
+          "x": "3"
+        },
+        {
+          "damage": "106",
+          "hs": "h6",
+          "mpCon": "25",
+          "time": "140",
+          "x": "3"
+        },
+        {
+          "damage": "107",
+          "hs": "h7",
+          "mpCon": "25",
+          "time": "140",
+          "x": "3"
+        },
+        {
+          "damage": "108",
+          "hs": "h8",
+          "mpCon": "25",
+          "time": "140",
+          "x": "4"
+        },
+        {
+          "damage": "109",
+          "hs": "h9",
+          "mpCon": "25",
+          "time": "160",
+          "x": "4"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADXklEQVR4nL2X3ZGrMAyFxcw2QErwlgAlOCVACVAClAAlhBKWEi4lxCXEJSwlcHUMIiZAIC+rmV0IP/qOJFs2X7S0gf7GAjnxBQz/7o8/oV/j70FEiAAH15E65cBau3ldqef7xpjNZ6IoournTmUaOxFfn8AFnNbl5v2fonLHvu8pjuPV/fv97oRpRomILzphr2BE8Wo6et43TUvDsBxOQRBQ0zTuPMuy+fqhAMBfwaFalyBSmgr2m8algyNSvItjVVW7/t8KEDjAiDDiGjemIx2Gi+d0NAK+42AF38rWKQE+HBGbnigJC4abGegbUrwF9wfmaQGvcD9iH255sLnIL5ddOI4Q59f9rQAfXiSKf/ebUFjT9VSn34dwxfVru44SrZ0QXO+s2c/ADOB6V/q2AAMqdgYe8ZyTN4qiWJVkIWAv9YALuEpGB+9qLvCEo+17Q4r9JFXifKNX+CKOp+EEF3DZ2pORJ+55FXIpK01mp3vOAraiV6qY4QCfTTvqbOyYsdttLCGplqKpWUnHPJUB3z6JHCYNqDMldW4MrafkSkCTj12v5r9hqCjT59OOmtspcp3td79dAejhtyqbuxecin0SOdIuJftIAMxNN4D4+Pt7f4o7WfOzkW8KiLKE6rqdf6tpGjog/7Xtcc39PvGRADjF6EwnoGkbBnaLh4sioa6zu5FvwWUA9la57M19wBx0Ql1oqq8NPR4PytPrfN1wd0zTdIYrFVKoi7lPwFD/TIcug4rbuOpbqo/6wCIL6Af0XEZ1knA22sXSKvAfHnAYL/6gE/hu9HsCfMN0RPQtl6Is69V9F7mcMwzTlbzfTjhH33U5vbOVAOznMB19uE7GyONr7sYBZsflEi+WWOUt2Yh8FMl5DBXVO9GvBCBN2Ez6cCylECUvY0Vrp70dLM/zud0KuJtWzr61u6lfCdiCI0Ks4yridEfIccfT9FkO25ttsFWzz3fwVQZgPhyGTYThFR3OsltF9dSqEy667Ja3wLAj+EIARjj27ciCX1uch1N93ezgZlVkEYtEwwrdDOntM4sChh3BVxkQETDs4WX7JCaOISRUy2g/BfsCAnyrydeRAF/hvmN/Pd+6f2Q1t3T+KsJpIBlwIvC55JtsHE+bOfe8wPHPL0EwfTD+hc3r/H9ogpNqKbj+ZgAAAABJRU5ErkJggg==",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACyUlEQVR4nL2X4ZWCMBCE4T0b0BK0BChBS9AStAQtQUvQErSEswQsQVuwBO59OYdbQhLgj/MeB0dwZ3Y22cAka6POvoNcF1ZA/VM9v8K+Khe1REiAI18W80EBXq9X8P58/v/7x+PRGZ9Op+6Z47XKDpvSiZiMIRfx6XQKju/3e3d+v99ZWZad8aqqnLB1Mc2yj4hJNgA+8XK57DxTFEUzfrlcsrpuT6c8z919sN1um/u9AiD3ia3VAvdwYLFYOHIy5becj8djNH5SgMghJkNICOgLoLYgRM7vUogKsOQQUldlKkILLA6Rh9zqFeCT2yCWXKJms1mUnDPibN3/YrzDAiz5er12JCFSANFqteolJ9b9fndnhLiEPss0OQdsDUVs1/cQciUBmKR+SVoCYtYTQMRaCbGaS4C1HQfP57OL7YvoXYYiFzFWpjIXue0VkMe6ZyMglr3IIba283xqwokQcsA4ceTCYAcsYplb223makC42OuAsNlsmmvICJ6y3a+5iGyWKbQE0KuxTPYT1IoZU3OVbJQAoAw42w1laM2HZh4UQCC71coJTSAcCjUZgZqH3gMGCdBuBgh6u93cAWgmWAoB92KZh8g1ATmI0fSBvk7Ig7xUPJ/PbLfbNSIgYaKKnGCMWSd4DpFq4VwPWgVyQf1AkCO2viJnwpGlnXQij2YfE2BBlmQP8eFwaFyxYgXI7L6vzEPbdtIBgGommyVXT6cXIILVEd5i/2PoHkcs+44A6qu6ixz77ZbMRNS7HWB+qN2K2C7lFHlLQIicDDWhtAxVDt81nxj0kXccAL7tdhe8Xq9Nq2Y8RQz6yFsCyJL3dlywteVa9rM6+J/AWK/xEDHoI+84IBEAuwluZ7cCI0TB7fIbQ2wF5Hyr6etIhD65DRzr90OJT7cHX0Vc5nLAieCbzeL+GtfXs4H7gMj5Y0uQfz4Yv4Fmn/8FXCuTyJCKJMoAAAAASUVORK5CYII=",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADdUlEQVR4nL2XXZmzPBCGh+taA6wEVgJICBJAAkgACVQCkbBIAAmNhBcJHxL6zZMwNBQo9GTnoKGF5p6fzA9ftJYH/Y0EcuEr8Ojv//6EniY/D1FCFLBwFUeXNhjHcff3KHr+3xiz+0wcx9T83qnOE6vE1ydwASf6tnv/XlR2naaJkiTZ3r/frWKKUaLEF12QV3Cs4s0zRWwoubn7003T47E+TkEQkNbaPVsUy++nCgD+Co6ibvOcCjNqK0P5t4PDUvwXa9M0h/u/VUDgAMNCFRLVY0fFS7Ri6u2afwcbOGL+Tg4V8OGweJiIsrBleLcAfYGL9+D+wbyswCvct9iHm8mtyfcxHCuU8+P+VgEf/qv4+wEUUnOmDek5PFSKtBk4jMoqgt+H0Rx7YAFwvNuoX4FrL72vwKMs5LR0z1dVtQnJSoEj1wMu4F659V3MBZ5Zt3cU8uFVjbJpilrhK3GahgIXcDpcdHvmYh5SRk3LLp/2K+OiwK71U7/AAb7qdsS5m93etq1dVah5b1fMpGJe8oAvn1gOqRoHN5SStsU0O/bAE1LaFUUT1bSJr7sdMR9my+OivWTUSgHU8L7JKJqrFzYV+cRyuF1C9pECkBE5AxCvj4eX/xdjftXyXQXCqqDyppfvEfIHK4NwOLvuPOb1/mE/VwCb4nSiiwM26pp05/woiIZzuWNTjyzfg8sBHMeMzGCedcCcVELFp0//DPTfvzuVebooMXFJDfJ8gaNDjlm71AkI4o/DG1sH9tREmvL9IWqtwOIF9H+FlHEeiNnNutO86bO1CvyXDxyKlX/oBH5o/ZECviAdYb3uOqprN5D4YwXg4XwNWOO1/Xi+4ZpYSu9kowDmOaSjD88Kt+NPWvPUo2x2BEG6arEChZgZGnHhUWFE5YH1GwWQYhgmfThaqZkwDcFEbqlNRYOXKWVZLuVWwHqON0ZJPjKH8JUCe3BYiD4e85/HjM+EHkjXz4l4om4Gjy9gV3LNG8t3PWA38eAQDBEd3Mubqb6lci7VRaGWDrcHhpzBVwogtzG3wwt+bHFdzQUJ2YFi1XIzK3M3K8VVRvKe4oMhZ/CNB0QJaxXP8DI+icjGdv6fX2QE+inYVyDAu5q8HQnwFe5v7PfzvftncuOSzm9FuAzEA1YJvC75IoPjZTHXnhc4PvwQBPML41/I0uf/BzKqbL4gNHPdAAAAAElFTkSuQmCC",
+      "weapons": [],
+      "id": 11111002,
+      "soundPath": "Skill.img/11111002",
+      "description": {
+        "id": 11111002,
+        "desc": "적 하나에게 공격을 가한다. 다만 검을 장비하고 있고 콤보카운터가 올라간 상태에서만 사용이 가능하다.",
+        "name": "패닉",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여, 데미지 #damage%, #prop% 확률로 암흑공격"
+      },
+      "requiredSkillLevels": {
+        "11111001": 1
+      },
+      "levelProperties": [
+        {
+          "damage": "130",
+          "hs": "h1",
+          "mpCon": "10",
+          "prop": "42",
+          "time": "5"
+        },
+        {
+          "damage": "220",
+          "hs": "h10",
+          "mpCon": "10",
+          "prop": "60",
+          "time": "5"
+        },
+        {
+          "damage": "230",
+          "hs": "h11",
+          "mpCon": "17",
+          "prop": "62",
+          "time": "7"
+        },
+        {
+          "damage": "240",
+          "hs": "h12",
+          "mpCon": "17",
+          "prop": "64",
+          "time": "7"
+        },
+        {
+          "damage": "250",
+          "hs": "h13",
+          "mpCon": "17",
+          "prop": "66",
+          "time": "7"
+        },
+        {
+          "damage": "260",
+          "hs": "h14",
+          "mpCon": "17",
+          "prop": "68",
+          "time": "7"
+        },
+        {
+          "damage": "270",
+          "hs": "h15",
+          "mpCon": "17",
+          "prop": "70",
+          "time": "7"
+        },
+        {
+          "damage": "280",
+          "hs": "h16",
+          "mpCon": "17",
+          "prop": "72",
+          "time": "7"
+        },
+        {
+          "damage": "290",
+          "hs": "h17",
+          "mpCon": "17",
+          "prop": "74",
+          "time": "7"
+        },
+        {
+          "damage": "300",
+          "hs": "h18",
+          "mpCon": "17",
+          "prop": "76",
+          "time": "7"
+        },
+        {
+          "damage": "310",
+          "hs": "h19",
+          "mpCon": "17",
+          "prop": "78",
+          "time": "7"
+        },
+        {
+          "damage": "140",
+          "hs": "h2",
+          "mpCon": "10",
+          "prop": "44",
+          "time": "5"
+        },
+        {
+          "damage": "320",
+          "hs": "h20",
+          "mpCon": "17",
+          "prop": "80",
+          "time": "7"
+        },
+        {
+          "damage": "150",
+          "hs": "h3",
+          "mpCon": "10",
+          "prop": "46",
+          "time": "5"
+        },
+        {
+          "damage": "160",
+          "hs": "h4",
+          "mpCon": "10",
+          "prop": "48",
+          "time": "5"
+        },
+        {
+          "damage": "170",
+          "hs": "h5",
+          "mpCon": "10",
+          "prop": "50",
+          "time": "5"
+        },
+        {
+          "damage": "180",
+          "hs": "h6",
+          "mpCon": "10",
+          "prop": "52",
+          "time": "5"
+        },
+        {
+          "damage": "190",
+          "hs": "h7",
+          "mpCon": "10",
+          "prop": "54",
+          "time": "5"
+        },
+        {
+          "damage": "200",
+          "hs": "h8",
+          "mpCon": "10",
+          "prop": "56",
+          "time": "5"
+        },
+        {
+          "damage": "210",
+          "hs": "h9",
+          "mpCon": "10",
+          "prop": "58",
+          "time": "5"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADsUlEQVR4nL2XjZGjMAyFnZk0wJVASoASSAmmBCgBSoASoIS4hLiEUEIoYVNCTk9Yjgkk4XZvVjO7YWys70mWf9irud3V79hOHkIB9/Pl+iv0Y3q4iwgRwPAsif8bZBiG1fYkSVRzuqg6T1nE/ifwcRxVHC/HAZ6m6aL9crlwX0ZDRMRefdMAz+tWnZpqJkLg9/u8nHa7ner7np+LovDt3xIg8DgrZiJCOJ7xHn6bpnnpa5MAOAqN4bpQJ52oPHqIWINjzt/ZWwECBiA0gcNYhCrU4XBYha/VyCYBU5qnOUt0Mevr9Dwqk6cv4fjF/Ifz/lEAw9uewHoVGBqcf4Jr5wcGIWi347AuwMMzPQOXZrmu+w2Rx+THDiMv86qqFjUxEyDwjAY1Di7gwRr+FWFbIpe0DypWYxSrKIoWQXgBcFIyvCD4VDi1GdXowBHDp74t8ChO1DDeVBJH6nI+sS/476piVph7cV62ZnpyIms7ctQYgD7UQ5NthyPlnPrqpHwE9A++ukrPBZS98YVSZfNlgwEZ9VUb4Ug7Igcc0yVJh/hWae+zKbKHAAHA4ETser2yOGn/BAdQjGuFIp0yO/l/BKe9372oE0jXFL5SsbnAbFt/TjvGuHB11Sjrakct646F3EjE0NeTgJbmW9SNtxtOFP79+rr4QW8jpwzKrtl1nertGJCjhQb0WxNkwFhLSyRTHR3LZXrwL8Zu2TCQ/oxZwjF9g4MXVTOLuuwt1VamCnfU98P0Hngd1UDaOwEdvVQbO0VAIjDgmJcEtPPU0ZxaUv9Ie8YFB2JDkWMcIBgHAAT4qF07M6jPDLdHBm6uEQMkYedTxxAuxPwYTIVVeZ5T5I+9HZHrJGKnAoGvgrKD9nAiwOF9YHjaitE4iZiqVgbCkGZDcxZuo7HrxpxzWgneo/CovXCrQXxIn4cHNtuKvQiKIk9zjt6YXtVPxzFsnDLoU8mZeAI/4Janee1oXhxGN6p+W8/hsqenx5LrAKvjz5+U20NYaNYpnOCv7wUzAXKlCuExFdr4CJJPNOPudrCyLHkabPgSWSsFp99fSryANbhsz1hmuAURWbXtcjoAb59WjBzl/3wjek477Hxy61tf/e6o3SrAvtUbu7i0fAIvBKDCcW9HFkI4nkNn2JKx62GfSNCeaD6itwJfCghFwHCHl+vTswGGfQJn/E/gImCHbzX5OhLgK3gootHqW/CWtnT6KsLjTjLAIvC5FJpcHN/asOGdJxM4/oVTsHMfjL9h/tLxF/rKlsQyGs6HAAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC70lEQVR4nL2XC5HqQBBFkyoMYGGRABJAAkgACSABJIAEIoFIIBLAQiTw3pnHzd5MPmR5W3QVJEyYPrd7ej4ZJXV7JJ+xVDcu4HG53j5CX8wmD4mQgACfT79+DVIURWv7dDpN9udrslvNgojR/8Dv93vy9dXsB3w2mzXar9dreDb/20UiRsmbBny32yX7/b4mQvDHo15OaZomp9Mp3K/X66r9LQGCL5fLmgjaBUcIv7nyvMsGCcCRm+B89BvIZDJpwBnzPusVIDCA8XiclGUZfjtcV8Hp4/C2GhkkACeHw6EGkcW/V6tVa+TAuTL+Pu4vBQg+n89bgW44fwX3/tvtNjzL70W7AId7xyzLGvAhkeNH7YJ3ZkBwwIo+z/Mw9lyVDZ4p8njMJSBOOzXEJ7ZKQBfcI4/hbZELrmnJ9XK5BF/4j7MQBKBLBScTnA4ubMiY655n9HeTiJqA0+lQjbeiV9pYvV6lPa52Pfcacr/yWQnwtONEdrvdquXzJ9WOcNoQo/74j0VUAhx+PB6rMWJxUdpewX3FA6yibTN45VPESOMtEVr9uPqGEsO92olc/QigDy5enuXfGaCBtLFd+jaqTHBFIEXZB1dxabpprJUdnRHgrdfLUHvPGiBl/6YbIujAIqMpiBM6seHQJjj/88hV+fzHx19wZYZnWVF+Z6B8QnzOn8/nAKEQN5tNJQJHiIuXV8GVTXx59DLaQmaLaCmm0UV4R6Xf56/STORxhKonTz3PKrhZbSl2EdQC0XPPdqxIZdqa/ewXg1/BGwLkGKDDtaYvFosggtmhRafrwKHa6IM3BOg853AAihajEL24qA+GIT41eQH3HUoqAW1wFZqWVR+OOFrtmjL1/fGJKE47xoyQU62OAmir9mV2CLghgFRrIXI49+5MmxFTUQsUn6HATgEuAmOcu4oMGFlR5O/CJSDlXU1vRwL2VbhEvAs/ZAVvRdymykAQweuSmw6OvVYM+E9kgvPlQ5A+Xxg/YdWh4w+NgaWxhMPBWgAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADw0lEQVR4nL2Xa5WzMBCGh3NqAAsgASQECUEClQASQAJIaCQQCSABJCwS+GaSDA2lF3b3Ozs/Ck1InncuCeECe1vhbyzgG1/A2g/Tn9CzNF5ZBAswcJFE/w0yjuPT9iRJoL4NUOWpEXH5DXyeZ4ii4ziCp2l6aB+GwfQJHMIiLvBDI3hWKehruRPB8HXdl1MQBNB1nbkvimJr/5EAA28UgCzx2kBfWhE+nO7pObrWdf1yrlMCaCLfDFyUMEmAOLyLeAannL+ztwIYbIC+oeeTsLd0jaGEOA6ewp/VyCkBW5gd0DeGb89mr+F0pfz7ef8owMI1hA48CHhpNPknuJRye56EULuex+cC7vBiB071ET6e8DwUBahxBomlUJbloSZ2AhgeIbwXe/Ci7BJiYWc857CrEFdImEAYhgcnNgHP4BnCF23BgGMjYfvOwCERoBYsHxz3dWvNXBnuA30hdoV5cXNjJ+bEU0gDZq3MAOqLhPwWXEYhKOyf697zNzRz9V49GgGZwu3RFcrNpYi10IAE+6j9bNg1ek5wihjPQ+LzULo5FdxkdBcghNzAxgNn0zTZyMA5OKWPzaSrSAwsBzs/M+g/tW8CbuION3u7q9Q4jm19NHAq7GyibEErXjYhPJYeCckxqlTXRsAVnWydunlZ6I1irut6z98nz3nXbNvWzPfOqF9rLwIK1YYgoBxWuKb3FEQugRSRRCT43BGeIHycF+OpRM+tz/YnU7j+pYDaOVc5YVpr6LEG0sYJoD+5tiErpxVqrI80v0KnrErObF3j0sK1dQ+7dHAc194MiCDKAUgAG7czT43LPQKLa8xwcs7XgGs3CDr4mga45tkmYhk1BHluPGeTdQslim5mgozGfZqrQO9Lt+RDF5YeNwazD4wPWzE19nI2S5L2zdJ7iRGsw4qpvW00cUop52QE75SdtJD2OZ6D+za4Z7ut2BdRVanxntJQVY1NgfesiyB0Lsqkp3TgwmN0b+AHAWQLVv/8AOc9Pc4qaEthVkcQZKa9ePG6Z2GNnl/CDwL4SLXzHAvN1Zn1ri5BN932/3q9mjR0+0OTAZPRDvjuULIJeAbn97jCqEQSE4B10Ll0+EbFzkA2fqF9+0T0GHayqXYnItyaeXcUrp+wFYX54dDyCXwQQGubzu0UBR9O9/5ktCXTrhdfG3O+n5Ma4ctp4EsBvggyOsPz8enRCDa1eBrW4a/gLCCgbzX+OmLgK7gvohfzj+ANLfPcfDkFHAEjgj6XfOOD41sbTzzzYAynHz8Fgftg/Avb3nj/ADUnhm+DWdguAAAAAElFTkSuQmCC",
+      "weapons": [],
+      "id": 11111003,
+      "soundPath": "Skill.img/11111003",
+      "description": {
+        "id": 11111003,
+        "desc": "주변의 적에게 기절상태 공격을 가한다. 다만 검을 장비하고 있고 콤보카운터가 올라간 상태에서만 사용이 가능하다.",
+        "name": "코마",
+        "bookName": "",
+        "detail": "HP #hpCon, MP #mpCon 소비하여, 데미지 #damage%, #prop% 확률로 기절공격"
+      },
+      "requiredSkillLevels": {
+        "11111001": 1
+      },
+      "levelProperties": [
+        {
+          "damage": "94",
+          "hpCon": "15",
+          "hs": "h1",
+          "mobCount": "6",
+          "mpCon": "12",
+          "prop": "42",
+          "range": "130",
+          "time": "2"
+        },
+        {
+          "damage": "130",
+          "hpCon": "15",
+          "hs": "h10",
+          "mobCount": "6",
+          "mpCon": "12",
+          "prop": "60",
+          "range": "130",
+          "time": "2"
+        },
+        {
+          "damage": "134",
+          "hpCon": "20",
+          "hs": "h11",
+          "mobCount": "6",
+          "mpCon": "19",
+          "prop": "62",
+          "range": "140",
+          "time": "3"
+        },
+        {
+          "damage": "138",
+          "hpCon": "20",
+          "hs": "h12",
+          "mobCount": "6",
+          "mpCon": "19",
+          "prop": "64",
+          "range": "140",
+          "time": "3"
+        },
+        {
+          "damage": "142",
+          "hpCon": "20",
+          "hs": "h13",
+          "mobCount": "6",
+          "mpCon": "19",
+          "prop": "66",
+          "range": "140",
+          "time": "3"
+        },
+        {
+          "damage": "146",
+          "hpCon": "20",
+          "hs": "h14",
+          "mobCount": "6",
+          "mpCon": "19",
+          "prop": "68",
+          "range": "140",
+          "time": "3"
+        },
+        {
+          "damage": "150",
+          "hpCon": "20",
+          "hs": "h15",
+          "mobCount": "6",
+          "mpCon": "19",
+          "prop": "70",
+          "range": "140",
+          "time": "3"
+        },
+        {
+          "damage": "154",
+          "hpCon": "20",
+          "hs": "h16",
+          "mobCount": "6",
+          "mpCon": "19",
+          "prop": "72",
+          "range": "140",
+          "time": "3"
+        },
+        {
+          "damage": "158",
+          "hpCon": "20",
+          "hs": "h17",
+          "mobCount": "6",
+          "mpCon": "19",
+          "prop": "74",
+          "range": "140",
+          "time": "3"
+        },
+        {
+          "damage": "162",
+          "hpCon": "20",
+          "hs": "h18",
+          "mobCount": "6",
+          "mpCon": "19",
+          "prop": "76",
+          "range": "140",
+          "time": "3"
+        },
+        {
+          "damage": "166",
+          "hpCon": "20",
+          "hs": "h19",
+          "mobCount": "6",
+          "mpCon": "19",
+          "prop": "78",
+          "range": "140",
+          "time": "3"
+        },
+        {
+          "damage": "98",
+          "hpCon": "15",
+          "hs": "h2",
+          "mobCount": "6",
+          "mpCon": "12",
+          "prop": "44",
+          "range": "130",
+          "time": "2"
+        },
+        {
+          "damage": "170",
+          "hpCon": "20",
+          "hs": "h20",
+          "mobCount": "6",
+          "mpCon": "19",
+          "prop": "80",
+          "range": "140",
+          "time": "3"
+        },
+        {
+          "damage": "102",
+          "hpCon": "15",
+          "hs": "h3",
+          "mobCount": "6",
+          "mpCon": "12",
+          "prop": "46",
+          "range": "130",
+          "time": "2"
+        },
+        {
+          "damage": "106",
+          "hpCon": "15",
+          "hs": "h4",
+          "mobCount": "6",
+          "mpCon": "12",
+          "prop": "48",
+          "range": "130",
+          "time": "2"
+        },
+        {
+          "damage": "110",
+          "hpCon": "15",
+          "hs": "h5",
+          "mobCount": "6",
+          "mpCon": "12",
+          "prop": "50",
+          "range": "130",
+          "time": "2"
+        },
+        {
+          "damage": "114",
+          "hpCon": "15",
+          "hs": "h6",
+          "mobCount": "6",
+          "mpCon": "12",
+          "prop": "52",
+          "range": "130",
+          "time": "2"
+        },
+        {
+          "damage": "118",
+          "hpCon": "15",
+          "hs": "h7",
+          "mobCount": "6",
+          "mpCon": "12",
+          "prop": "54",
+          "range": "130",
+          "time": "2"
+        },
+        {
+          "damage": "122",
+          "hpCon": "15",
+          "hs": "h8",
+          "mobCount": "6",
+          "mpCon": "12",
+          "prop": "56",
+          "range": "130",
+          "time": "2"
+        },
+        {
+          "damage": "126",
+          "hpCon": "15",
+          "hs": "h9",
+          "mobCount": "6",
+          "mpCon": "12",
+          "prop": "58",
+          "range": "130",
+          "time": "2"
+        }
+      ]
+    },
+    {
+      "invisible": true,
+      "masterLevel": 30,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADz0lEQVR4nL2X7ZGjMAyGlZk04CvBVwIpwZQAJYQSkhKSEkgJUAKUEEpYl7CUwEnGMjKYJHtzc/pDAsbPqw/b4gixTfB/7MA/pICpO5vNyPzRw/P59U/pp9PviUWwgKlrPHz0dwaGPyHLNAzD4F8+/TWY5pqvX0HEkeE6mwXYoQfoJTxz9/nKk5CQzoiIZQniEP+ld+b3R6ibDqoyn47ste2ROo6QX4cAYqiba4hno+ccje7ihejluaI//v9orRNDghcRsx396Pl9U0CnlBvMA0kEwV+FPr/30NUGsuI2A8feXV000TmlNV5iERSBRQDBMQVK0SQGx12BClKKYI9d2H1g3MTKQmZuMPRXaIcqVoa+mKyYhXB0VmlZUoCDdMaRMKgXvbplSRFUI8/6HODOWzVClcez110GvW2DCCd4sCkBo5Nr2zaWZ9VuJE7Vww35/gbnOcGnaYLBjjgdBhzzXuW5E/HKjgwCjSJG5fKZMhbhrt57sj14galcJWSuA9IjEE4ALTm5CckqXYtwV++9qTHEZRoujWqL0utqIRUBvzG4G+uQSyMQGa2KK3reV/twJT3HVcErIilAev1up/sUfjgcXP6NLpblCH45pgSsd7o9+MPefw4HD7d2M+f6NNyEncFkBH+U7UdwjQUd4KN2dSP3kF0BKfh1uILGHfIn8ACtl4LMcbvvsrhAXwpgeF/NnryD06rQuKQp3LxSXMq1nPTDCEh4qP43cKqNG+4RBJeHFVvqXlIAwcu2BHu3H8NvWQ24P0aFFs6Pi9ncSwrgYpPw069f4fm5bnbhXLy0k8pTdO/eRgB7LY3gdePLFouqqkoU8C3gBuG3aOVIUHSAeeN7FNFIAG0u5HUYiFXv4K3f03wU5Q7HE7LJnXJ9gO1ZEEAFdCmWyfp+EWNRrRZo6f0nlgr9RoA0pYSfRjl4VbXwxLN3L/Rs7L1sv2hcamwkgHN186eiMZjzklQvygmuLzrAOc9ptyE6dtcCNy0Z3SzOGq54NHMqtJ4j0WIXQ2CKRFM0UZ+YOjVdFLH7oeX3rrcMAgiuM+Wu98cARaY3kzJcmuxy5TNqWNYiODW0JW8EENwOoys4EtE+bFLE2jjXZOtqX4ugK/3fdERkDKewE1yuXwp/yvvZbQQXZ7cDBiHUssHcsLoWvYcA51ZOCjjQZ1LdNFh0JZbcKD6hFo92iw0dUmbudh2YhNBZgL+pVScRVl2jFh4TR19F9PaBI3BA+MSVybuUtMGmm1VapHNLb0L/z0IISiL4mY6P4ujj1IvIf/x5Ho5d6F+M6tdjwuf5H+Dt+LcH7bTgAAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACzklEQVR4nL2XjY3qMBCEE4kGaAFKgBJoAUqgBSgBWqAEaIESoARogRLy3hcx1mSzOcLT0410Mmd7d2bX659Mqi6a6ndQ64cLaHa7XW/m8Xisbrfbf2VfLpeNREhAcz6fO5Pu93shXywW7f9v438mViC0EoGAho7X69UO0kZyoFZOEOIZm06nPUL5tMiLPQFvNpumzcDz+azU7vf7QiRSZSRGo2wcDoe2nc1mZRxfLgoxCHYRYOKGGKAMMk1U+n9KPaKxkx/IsFMGJMZFaMlLETLIJKl2tThTxPR7ZJDyB4ky6WCuhDEel6UsAZM0iBGkpDYTobSLXPi7ph3nRKnAInFPgLeelaFMeK1gB3nTNCVK9cXdlQqQAZDjCImgVfQSnZGv1+ueDy1VTwBbzrfU0MGj9Evkeyt9JFfNZMswEaGcx5Q7IALsim8iZ+zHGvCoP510Y8nrum4z5AWY7ZIiIJ50v0HeERCFRGI5GUsOnJy6iWdIKiAjv16vbQV/Qy5S34YUu47tUQJErqr/lly/HelJ+Ilc1f+JnAwRITa+s4SsLxUA+eVyaVM2ltyP5EjoaY8iOgJUbE4+n8/LOI6GyFW8it4fMVlfT4CidkC+3W7b31QvjiQAch3JvnOcKF5gQH2qjSKADqIWcAx59tJxOLmflPECG0IRQAF5ej1Vuq4FRb9araoxyFLfE+CIUUNOdh6PR4d86NDSw8WzkM3tCNBaac0xOJ1OncmQ41jkWucxQUSBvScZnTiGVEshJxjpumbM34nZrSnEF1X2tiwCICfVtOyGzKnIHf7K9TE9PlyElsaLfRINOGwQwSk4FJlDaw1itUcR8R7oCBA5aYc8PlKy6AHz5Tj7TmCc1GffDhJQ85mks9wj8YiGsiESxIuEA8sJlQl/Rb+5amWg5jPJb7OIoQeFHPv7X+Sy0VjYGZ2P0yKi+hJDr+gPKJ/nfwCDNvAQSbSrXAAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADuUlEQVR4nL1X7ZGjMAyVZ7YBrgRvCVACLiEpISlhU0KuhKWEpAQoIZRwlHAuwWfJli2DSXZvbk75QTDG7+lbvEEpDv6PKP4jCTjXV3ZOAOPj1z9FN927YxJMwDnGWOL1ZwB/PB7Qthrmeablruv+GhjPQkGFmMRbAtenuG0AOEvwllb5yocgkcJfJ9jKUN4q/w6+34CF6+0Bl2Pn3pLWy0BXdc5sGRSFLSC1UdEajsEPYoPVAOzSaSEyTpBgCQR0vOtP4PQQzB83IgkEf2Z6hYeP+P4YV+7hEpWCXgctBQm0QCZAJE5BhR7VMAVbJIHXZHbWGA9u/cHaAy8GJmtKZo3f4pUiIk1cW7kluwCfCEvgvTtsSZDZUZObAEcrewDzozx8/O3X7eB5hvOI8LAUewQBPGVFz1sSU7NmCXUMLzkHpDmCO38zW3+ctTAvi1/riMQzeWMgCqA5+LMmXSRBbmDtYR/8o28xlEppluA+gUEEMOVkSskoXZOg/VF77bct73XwUg7RvVvtiAAWBtW908La5FIQCAWz4ggdLN0+eFO8ec8ZUSMgtVYvKt1XwZVS5P++OWVwG9OxRmBd6fbALx7+2+AQwaetCdbdcGN2BkZB8KlbvgZuETSCz5ripqghewRq4Ecf6bppvgfOoGM+C9vfut8/JcDgi7Hec/YlOGZFj8ayOmUKpbhs89VK+AI8Rf8LcIwNuAVwrhlSZAN7SoCaD552hC+D38AD+p8MNAZ0UK5JYgWBNHQIcKPS9ATt+NgF5+DFSiq76N7ahkDSWgiCjxw1UwvGUP5l8LHx4GORORJI9o6kRFxjQyUCWFxQaxaMGwLvYou8QtJcigSXlbJbNbA9SQRQ+c9DPv5+t+n/YhdfyjNQ0r4ROfZEaqbfEJCiNRKJBK4NgRsze4u4AnyvaPHgIntKbW9BgH01fgSTH7w1jKKKkjYjuHd6Amc/V2XVdtcENyMZLh68n81lSa7QsYAMvl0jMBHV5ZxY65okfvrB9Hs1WyYCCN72Hvhq4XyxcKp8pDC4lE5MucUzGlhKEsk1NQIIPk8WfLwRmeECVRJrYV8TwXW0r0jQ+I5z4TEXplwHInjjn98vq4p1q2tPcsIhJrTa9J1wi30fB1aNzWAK1bDPo5wkoPAz6fM2etObQhOp0W6w4SzZe1O1QyaCXZBImECiHcgSeYo2+FWEbyu2gDofjePIrMwNfq2exzRo4NDBo3eTLRIGQZOf6WIYKD5OaQG/1eCbktpukXNxbVg/G/h/isM/1J2Qf228aUAAAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 11111004,
+      "soundPath": "Skill.img/11111004",
+      "description": {
+        "id": 11111004,
+        "desc": "눈 앞에 있는 적 여러명을 두번 공격한다.",
+        "name": "브랜디쉬",
+        "bookName": "",
+        "detail": "MP #mpCon 소비, 데미지 #damage%, #mobCount명을 공격"
+      },
+      "levelProperties": [
+        {
+          "attackCount": "2",
+          "damage": "115",
+          "hs": "h1",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "1",
+          "mpCon": "16",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "160",
+          "hs": "h10",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "1",
+          "mpCon": "16",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "164",
+          "hs": "h11",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "2",
+          "mpCon": "24",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "168",
+          "hs": "h12",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "2",
+          "mpCon": "24",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "172",
+          "hs": "h13",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "2",
+          "mpCon": "24",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "176",
+          "hs": "h14",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "2",
+          "mpCon": "24",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "180",
+          "hs": "h15",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "2",
+          "mpCon": "24",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "184",
+          "hs": "h16",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "2",
+          "mpCon": "24",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "188",
+          "hs": "h17",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "2",
+          "mpCon": "24",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "192",
+          "hs": "h18",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "2",
+          "mpCon": "24",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "196",
+          "hs": "h19",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "2",
+          "mpCon": "24",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "120",
+          "hs": "h2",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "1",
+          "mpCon": "16",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "200",
+          "hs": "h20",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "2",
+          "mpCon": "24",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "203",
+          "hs": "h21",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "3",
+          "mpCon": "30",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "206",
+          "hs": "h22",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "3",
+          "mpCon": "30",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "209",
+          "hs": "h23",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "3",
+          "mpCon": "30",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "212",
+          "hs": "h24",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "3",
+          "mpCon": "30",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "215",
+          "hs": "h25",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "3",
+          "mpCon": "30",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "218",
+          "hs": "h26",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "3",
+          "mpCon": "30",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "221",
+          "hs": "h27",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "3",
+          "mpCon": "30",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "224",
+          "hs": "h28",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "3",
+          "mpCon": "30",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "227",
+          "hs": "h29",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "3",
+          "mpCon": "30",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "125",
+          "hs": "h3",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "1",
+          "mpCon": "16",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "230",
+          "hs": "h30",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "3",
+          "mpCon": "30",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "130",
+          "hs": "h4",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "1",
+          "mpCon": "16",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "135",
+          "hs": "h5",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "1",
+          "mpCon": "16",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "140",
+          "hs": "h6",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "1",
+          "mpCon": "16",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "145",
+          "hs": "h7",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "1",
+          "mpCon": "16",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "150",
+          "hs": "h8",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "1",
+          "mpCon": "16",
+          "rb": "Point [ X=-10, Y=0 ]"
+        },
+        {
+          "attackCount": "2",
+          "damage": "155",
+          "hs": "h9",
+          "lt": "Point [ X=-150, Y=-110 ]",
+          "mobCount": "1",
+          "mpCon": "16",
+          "rb": "Point [ X=-10, Y=0 ]"
+        }
+      ]
+    },
+    {
+      "masterLevel": 30,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACrUlEQVR4nL1X0ZXiMAw079FAWvCWEEoIJUAJ2RL2WtgSoARSAimBlLBuwSVwkfEYWZFNbt875oOEOPGMxpKcbE2Ou3kPNjjhAu63289b2He7jztEQMCDfPpjfOONbftw0U3n7MHGN2Gcjm505nC5pbHv/YfputYYO4/H5318Xv4/XS7m83gMIracHCBiiPgfaN2QRMgcSFGWQONVuPl5c05RA164CWxNAXCBjpKU7NcwjlM40lKQCBJDSyIFvhRQcwFrPxx3i7Gv60/IBUlUir4oIJGxB2XUTZ9H0n7ZdM6dyCdcLl9RgOYCRT4O+zj5NRvD/67vTHs4PZ14gYUARGo7m12n/2Q7Lz0NILdWRBujhztNf1gK4LVNZERKLqD2bftaBMittYsxIqc8Gce9cdHcag5oqIlQyV29bIsCkOlwIcw1uSBAEyFtl4nIo1cFhBZcWGfeelF+uIcmpARECXIRuCarYfp2cw68cIC7wAnXwLm8ZEvRZwLQ7TQXSuRhQv90QUPWnMwjenJkkgJK7ZVXxQI+9gtT3jsggkdPjizKsGZxIOfJHPngWmmD0pzp510wzBkDXlWGKRca8yvw6Ke07fe6AGl1zRk0KG3jomp4rPfyObUKQJxasH/UPRciXegO17A30FHCza2Orz2Rpue0JJS9P1xb0Xq1ZQG5ROoH7B3hn1oxd6HUCTm5VvfyBSUrQ4pYopknXbML/hZZGaY8UIRo99WQZX5sPgHYnKwQgMkJIGjQ1xXL14LI5buB2ohqQmSilVzQMh/ktD+4+BJAr2+r3geqbVgBz/yc/EkskQRoGYs2yoXgXC4HJufz1Ii5gA19q9HXkfef2aAUJd+EJfj9NVLne/oqotMNHAgiTnGjqOE8DOJKH6+t/5QDOf3wHNjED8Z3IH2e/wVCKrla5HMB/AAAAABJRU5ErkJggg==",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTklEQVR4nL1XgY3CMBArUhdgBRiBFWAEVoARYAQYAVZgBFiBEWAFRuDf0bty3Evaf+mxBG3TJvY5l2vTNjnezWcw4YkKeD8ej4+wz+fzN0VQQCK/3+/NdDpNP+D1emUdcY17OOLZw+HQ3dtut81yuQz7+/X1em1Wq1US0Sq5E/0XMD5FtNHNGrm7UrrvY5T6tU0Bard3VrcUt9stHTEVOkZNSCig5gLnfr/f9+6dTqeUC05Uc63ogHf0qBklsV6vu3N3oiZkcAoUiPx8PoeD8xpHiKETQ+gJYKSLxSJrxzVs16UXgeSz2SxrZ/R0h45lAnRtgwykXNcYYIwIkrsAkiNPns9n+vUEjEFNREQ+tGyLApjpdAGAQ7iORLjtnogafSgAJKXotPRy+fEZDAwSLkEVwTZP2OPxGOdAyQUlHAOPshR9JoBzFblQIsfAGJQuRNDiBCB6fbYTUCqvuiocms01ePQQ3JuCmsUg16JEtzhoSUTkzG63y/qMWobMhb++omsu9QS41TVnkPEYPCo6aLtcLmFuhKuAxFqCNS8iFzabTXo34OiAMJ17kBJhEnrtZ9tQ6Y2iJ7mDxBrEr0qxulCqhEoezb3nUbYMIxcw6Ji34F+RLcMoDxylryGHRq/Fx78ZsynwosP5jSwfC5B7noSFqCYk+jIqVUbPfJJr1UQxGlWIamU4gma+k5PY0Qng+1vBeVMhPPfp8BI7RKwCJtirYXcUvUYjQSVo/xopnvveFeF0QgeSCGyXhhA5FbXVQHL8aQ5MfjaMn0C3Pf8CzerVtmbekdEAAAAASUVORK5CYII=",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACoElEQVR4nL1Xi3HjIBBdzbgBtYBLwCUoJSQlOCXEJeRKOJdgl2CVIJUQWkgJOhZYAcuCdJmJ30yMAKH39hvpADkWeA46ukgFLNP09RT20+m4kAgS4Mi1eQH7A6A+/aq55Cdn5fftaP4YUFN02HjsYDjb/cHu63B+DufZ/O/tAe9vL07EISMnIDGJ+AWczTtAEHEodsnKGnC/hRH3L9Hq9dxFvP0ANZAXcGSk6H6R++rXBwgixhCSQuCWgIYXKPbm1BV7w9ficqEgqlhfF7CyxYPcajVx8ni9euLMwjWW4asLELzgsn4my3nL8PPhpu25KXpiA4UAslR95Gpxjm5PS09EINearQfryTvwKQhIa9uRfQQvhNpXr9siiLzXpbuRHPMEe9D1LgjYg5YIkXxsl21VAGX66gULczdOgCSCu50nYmq9LMCSVOOctF4qv3gPzpe1BFMRtMarYTyCnAM1L+SEDN/2r2dLc149NetzAaHbSV6ok9sHIpeyYy/fkzUn8NajR65cQK29plVRAI8Y5S80VMGtd/nBQ9AqLSTvkzB+k1aj4igK8PmRi7m58b/KkHKhV/BDpN57C+NDFsBd3ex8ynjrVRk+rAYXb+ElS6yCNdupBRtf96mQwgs6xFaXIuc5j70jDRCTkPd+t7aj9YIQlkieY+0H+I5gmIA9SL1Q64Q5uVA57AUlK0O0mKMf+n3/BX+IrAzXPHitp3vxNtTX7iybj5+EUTEB9HAEEaD1bhRcvhdIzt8NxEbUFKLKfakzSplP5Pj/AfcRWJq7GlGzDQtIMz8lT4k5EgESyVIIoWsejvjw+JwWcSqgw28193Wkj2ybd0XYQLy/RXq9u68id4A84ETgN9s2RjZ/hLU9Zz2IHH/SHOjCB+MzsLrqH08Kbd0Td+qTAAAAAElFTkSuQmCC",
+      "weapons": [],
+      "id": 11111006,
+      "soundPath": "Skill.img/11111006",
+      "description": {
+        "id": 11111006,
+        "desc": "소울의 힘을 땅으로 스며들게 하여 다수의 적을 4번 공격한다.",
+        "name": "소울 드라이버",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 최대 #mobCount명에게 데미지 #damage%로 #attackCount번 공격"
+      },
+      "levelProperties": [
+        {
+          "attackCount": "4",
+          "damage": "46",
+          "hs": "h1",
+          "lt": "Point [ X=-150, Y=-150 ]",
+          "mobCount": "3",
+          "mpCon": "15",
+          "rb": "Point [ X=150, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "55",
+          "hs": "h10",
+          "lt": "Point [ X=-150, Y=-150 ]",
+          "mobCount": "4",
+          "mpCon": "15",
+          "rb": "Point [ X=150, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "56",
+          "hs": "h11",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "5",
+          "mpCon": "25",
+          "rb": "Point [ X=200, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "57",
+          "hs": "h12",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "5",
+          "mpCon": "25",
+          "rb": "Point [ X=200, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "58",
+          "hs": "h13",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "5",
+          "mpCon": "25",
+          "rb": "Point [ X=200, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "59",
+          "hs": "h14",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "5",
+          "mpCon": "25",
+          "rb": "Point [ X=200, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "60",
+          "hs": "h15",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "5",
+          "mpCon": "25",
+          "rb": "Point [ X=200, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "61",
+          "hs": "h16",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=200, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "62",
+          "hs": "h17",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=200, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "63",
+          "hs": "h18",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=200, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "64",
+          "hs": "h19",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=200, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "47",
+          "hs": "h2",
+          "lt": "Point [ X=-150, Y=-150 ]",
+          "mobCount": "3",
+          "mpCon": "15",
+          "rb": "Point [ X=150, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "65",
+          "hs": "h20",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=200, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "66",
+          "hs": "h21",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "7",
+          "mpCon": "35",
+          "rb": "Point [ X=250, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "67",
+          "hs": "h22",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "7",
+          "mpCon": "35",
+          "rb": "Point [ X=250, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "68",
+          "hs": "h23",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "7",
+          "mpCon": "35",
+          "rb": "Point [ X=250, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "69",
+          "hs": "h24",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "7",
+          "mpCon": "35",
+          "rb": "Point [ X=250, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "70",
+          "hs": "h25",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "7",
+          "mpCon": "35",
+          "rb": "Point [ X=250, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "71",
+          "hs": "h26",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "8",
+          "mpCon": "35",
+          "rb": "Point [ X=250, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "72",
+          "hs": "h27",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "8",
+          "mpCon": "35",
+          "rb": "Point [ X=250, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "73",
+          "hs": "h28",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "8",
+          "mpCon": "35",
+          "rb": "Point [ X=250, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "74",
+          "hs": "h29",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "8",
+          "mpCon": "35",
+          "rb": "Point [ X=250, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "48",
+          "hs": "h3",
+          "lt": "Point [ X=-150, Y=-150 ]",
+          "mobCount": "3",
+          "mpCon": "15",
+          "rb": "Point [ X=150, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "75",
+          "hs": "h30",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "8",
+          "mpCon": "35",
+          "rb": "Point [ X=250, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "49",
+          "hs": "h4",
+          "lt": "Point [ X=-150, Y=-150 ]",
+          "mobCount": "3",
+          "mpCon": "15",
+          "rb": "Point [ X=150, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "50",
+          "hs": "h5",
+          "lt": "Point [ X=-150, Y=-150 ]",
+          "mobCount": "3",
+          "mpCon": "15",
+          "rb": "Point [ X=150, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "51",
+          "hs": "h6",
+          "lt": "Point [ X=-150, Y=-150 ]",
+          "mobCount": "4",
+          "mpCon": "15",
+          "rb": "Point [ X=150, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "52",
+          "hs": "h7",
+          "lt": "Point [ X=-150, Y=-150 ]",
+          "mobCount": "4",
+          "mpCon": "15",
+          "rb": "Point [ X=150, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "53",
+          "hs": "h8",
+          "lt": "Point [ X=-150, Y=-150 ]",
+          "mobCount": "4",
+          "mpCon": "15",
+          "rb": "Point [ X=150, Y=30 ]"
+        },
+        {
+          "attackCount": "4",
+          "damage": "54",
+          "hs": "h9",
+          "lt": "Point [ X=-150, Y=-150 ]",
+          "mobCount": "4",
+          "mpCon": "15",
+          "rb": "Point [ X=150, Y=30 ]"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADM0lEQVR4nL1Xi7GqMBCNMzaQWwKWgCVACVAClIAlQAlQApQAJUgJUsJNCb7sho1LCKjvOh5HgQSzJ2c/SY5iibv4Dg50wwncr9fbV6yfz6c7kSACaDwMg68QqNtW5GmKJI7c+DDEyzeVEFJJew8YxhGvURiaBmn6oD3JCmzqmsr06z4llXmHIUt6IWYSbgyIKOoNkQ3jRWvcVKUnY0TtzzZK+vXEGFYEnhk/nU74fLvdHiQ2EGbtclKvEHAHGKt0YRwMN01j7zmJIIzmf1b4OzYpjjF08coNLxHwGSe02oechBfKkNgy/pTAJ2AVAFd6iOwSkCDpHPXPUNS9mMbB3ld5jK4BBaT+YDZ4sCbA3lPzgH8Cn7lHhePq5Q8DVFTTgFmFKjg2vC6A3MXgeREg+dhctL9LfIZ76wbLZK4J3TId14UIqpR4pOAn4cuIo++ld43DjH1tPBjJ/7bA+QhQJ8nPa0Df9ysj0Gbrg5psu9cVmoSUOh7UMrC9MeBTIAj2V8rJkzFEhADB6MJLYC8Azz8/eK0dRXwpC5pAeV644hUCBPgDlFmQGKSWSomy1VJOUuRxrNNKYh+pxWcM8gMpIrEFLwEZRKsZgfHr768YKm14UKIuI5FfBmt47HJjeL6GWb0gsaWCl8BWBYQlNSrWSysZRcNJjc+mbWcV2iTAKhXPglpLL0Zo08YhqzqjgjcLNAlLjqUoqcA12CzFfPfj9nkhgwUJUIATITJAgsPrAncPQEFYlwGqAF+ZSJFWo90jcCW4SzggVkABPrH1lswxTlswCMJLPoqy1lkQSBOAOguovy3CxaYFY8GpkC8HoSWjgy2c42hSsLcLkAQSwt2w0gXKvKACvo5LaxxWQ0jD/6oDkO/jPC6YgZkDiUmzUcp02P5pHfFknBAkmZi6Zp+AW3xIUqqALtwYmIbG7KTEowDB7LOytqR2CbgkONS0kQo68CgA+Yz5HgFmDgpgjYmyBYEDnNXwdFS0tsP1FpTdbuQE5KPOyGB5pTHm8XjUh0Ukmq6DUxE8HkgBJAFnNh+qy8WkIN/bCbN8g/RFWYp3QMbhh7vgMB8YvYjTaauLBnwH9nj+D/EA7/qpnFFhAAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbklEQVR4nL1XC7HCMBBsZ2qgFkBCLYAEkAASQAJIAAkgASwgASwggcdmWGZ7uaTl8dmZR9Km726z92laFW3cit+g5EQJ3M7n80+8D4fDG0mQQHA+GAx+QuBwOBTj8TiQqNT5druNHq7runV9PB7DOBqNovuz2SzMYYfr1+s1sonnSKLyFknEc77ZbMJ8Pp9HJDyoPQ8RgS7nd9bhGjvoIjGZTDpJVEUGMLDf71vO4Rj3OFcSNofwHGy8pIA1YJ0Tq9WqRSJnI4csgU/gLQVeKUsocrlcnvPlchlCAwWQT141dBKgwW/i6yGAithISgWXAMqmK3kUkBzJymrAXMOgdm0+uI0IYAl+Ep69ynvoVedsz/aep4JtcC0CXKRz7QG73S5ygnvsBRrfVCiYD0kChKeAZW7hVYxt094zLoGc/Pd3eRitIqmSxa69UGQJEPgHtNnHqzM4WSwWQY3pdBqM893A5wnIT1K5huYS8GKFa5wbUEaIN3dFxyTBEWFUEikVXAIpOeHcq2UNGfOHLbgL2RBoFUB6kgCoglcFPAfQBkEVdD1JQE8/fWBbLfuJtQkSCpeAPQMwCdUgHEINnhFUiVQVIf5QQDcWEbDOeQRDXqzX62cVwBCSlevIDT20MAkVvZOQsMnWNE0gQQVAiiWm8mONzrGOv3/1AZvF6sy+Wr2Mp3PdwOl0yhOwzYeSsgNa2ByAAzrliN2zimxTchVQEopUf4AaTEB1oGcEEIMCsIFRCZT4VkOX0yy3JQTDNs6U3Y7WhmY97IDYI3lLKhBI2B0TSDxLiA61SfUFneNHQ1A+PhhdeIeOPmsJPD/P/wBH4dZY5SHg6wAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADC0lEQVR4nL1XgZGrIBCFmTRgC6QEUwKWYEpISsgvISnhLCGWEEvQEkILluDfBRZBF5P7P5M3cydB5T0euwvuRIpJfAeSGrGAqe+fX2E/HPYTiSABlrws1VcE/Nwf4nysrIhdSi7TJw38DWpuA7rONbT2/crdw359ubhnbjd3H++Vxl0jnGrg9iKWMSBcGMgsuX64MOkq6UjMi+mq4DYLRsA2uZRusGmaZhE51BRTeRE7sQUc4LZPyJG4aZrQTkSUJ//izV3avRvDyNUyvCeAISf0fZ+IYGG8iDJPsS3gEyAHUAzjwraAssaQfotH34FoaEK7O+7d0qADyFzy0boWED83tOK/Ec+ccWG3evjTQBfH1mUVurAQwS8B5u6wf5vD2t9UUGEergPaYRmEd1H5cU0asGsByke6T8GPgsmIHfvQb8lx9kxfEoxk/aA2loCqX+vI4xrwfK53SuwL9WGMAohbClusNI6ajMHHAOOAUi92Sp+CCUgIwXSrR3gBbd7+yu8FJVTCVEAmZaE8py68I8ADX8Ayixaj1Wig3QxbJarDwZpp7Se34hljXJCosEeswQsoamRJxVhyIGvAgbMRjzuIOJqZuDu4Nl1PfSIi5wIvIFsBgfwEIs6LzYdILVPvftu+QrzCZilOd0LoaEgEXI7OBTYLdBQfUYoGFy45AQw5d49FoVIR6IBeBKpPyxjsEizPABSEE76LmyM6gbMHF+iMkDgRL0kMiBXrQDSxlYAlOR3BMAgrCPYHitBzAIYjWrwc9oV+VSHfD8IAKU7atbCG1HUBIkb8ZR3XeOD190Ud2W+KmRx3Q0jDf6oDmO8NHcMFVsMCRECSjGNY7sYXt5/Wn89jePIAfQUb/mwLWBYfspQq4BKrGEACJLYCHLmd/fXu+lS9LWApIoYxIysC7QgBGM84PiOgMHTAYI25JgIkfqvZr6PLnCJxrtr38a/NCChUeiX48ZJ0BneatsOvIvwlyQErAr/ZOODDNgXjsx1icJGfey8HIsd/8RJI/8HIQrIbpIkH/A1CQP0Fc5ud5jzeDRAAAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 11111007,
+      "soundPath": "Skill.img/11111007",
+      "description": {
+        "id": 11111007,
+        "desc": "일정 시간동안 검에 성속성을 부여한다.",
+        "name": "소울 차지",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 #time초간 검에 성속성 부여, 충전 공격 시 데미지 #damage%"
+      },
+      "levelProperties": [
+        {
+          "damage": "101",
+          "hs": "h1",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "11",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "110",
+          "x": "1",
+          "z": "12"
+        },
+        {
+          "damage": "110",
+          "hs": "h10",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "20",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "200",
+          "x": "1",
+          "z": "30"
+        },
+        {
+          "damage": "111",
+          "hs": "h11",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "21",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "210",
+          "x": "1",
+          "z": "32"
+        },
+        {
+          "damage": "112",
+          "hs": "h12",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "22",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "220",
+          "x": "1",
+          "z": "34"
+        },
+        {
+          "damage": "113",
+          "hs": "h13",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "23",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "230",
+          "x": "1",
+          "z": "36"
+        },
+        {
+          "damage": "114",
+          "hs": "h14",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "24",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "240",
+          "x": "1",
+          "z": "38"
+        },
+        {
+          "damage": "115",
+          "hs": "h15",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "25",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "250",
+          "x": "1",
+          "z": "40"
+        },
+        {
+          "damage": "116",
+          "hs": "h16",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "26",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "260",
+          "x": "1",
+          "z": "42"
+        },
+        {
+          "damage": "117",
+          "hs": "h17",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "27",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "270",
+          "x": "1",
+          "z": "44"
+        },
+        {
+          "damage": "118",
+          "hs": "h18",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "28",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "280",
+          "x": "1",
+          "z": "46"
+        },
+        {
+          "damage": "119",
+          "hs": "h19",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "29",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "290",
+          "x": "1",
+          "z": "48"
+        },
+        {
+          "damage": "102",
+          "hs": "h2",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "12",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "120",
+          "x": "1",
+          "z": "14"
+        },
+        {
+          "damage": "120",
+          "hs": "h20",
+          "lt": "Point [ X=-50, Y=-35 ]",
+          "mad": "30",
+          "mobCount": "6",
+          "mpCon": "35",
+          "rb": "Point [ X=50, Y=35 ]",
+          "time": "300",
+          "x": "1",
+          "z": "50"
+        },
+        {
+          "damage": "103",
+          "hs": "h3",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "13",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "130",
+          "x": "1",
+          "z": "16"
+        },
+        {
+          "damage": "104",
+          "hs": "h4",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "14",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "140",
+          "x": "1",
+          "z": "18"
+        },
+        {
+          "damage": "105",
+          "hs": "h5",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "15",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "150",
+          "x": "1",
+          "z": "20"
+        },
+        {
+          "damage": "106",
+          "hs": "h6",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "16",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "160",
+          "x": "1",
+          "z": "22"
+        },
+        {
+          "damage": "107",
+          "hs": "h7",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "17",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "170",
+          "x": "1",
+          "z": "24"
+        },
+        {
+          "damage": "108",
+          "hs": "h8",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "18",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "180",
+          "x": "1",
+          "z": "26"
+        },
+        {
+          "damage": "109",
+          "hs": "h9",
+          "lt": "Point [ X=-45, Y=-30 ]",
+          "mad": "19",
+          "mobCount": "6",
+          "mpCon": "25",
+          "rb": "Point [ X=45, Y=30 ]",
+          "time": "190",
+          "x": "1",
+          "z": "28"
+        }
+      ]
+    }
+  ],
+  "id": 1111,
+  "description": {
+    "id": 1111,
+    "desc": "",
+    "name": "",
+    "shortDesc": "",
+    "bookName": "소울마스터의 모든 것"
+  }
+}

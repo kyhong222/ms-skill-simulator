@@ -42,16 +42,33 @@ export const jobs: IJob[] = [
   { id: 520, name: "Gunslinger (2nd)", koname: "건슬링거" },
   { id: 521, name: "Outlaw (3rd)", koname: "발키리" },
   { id: 522, name: "Corsair (4th)", koname: "캡틴" },
+
+  // 시그너스 기사단 (4차 전직 없음, 1~3차. 전 차수 동일 직업명)
+  { id: 1100, name: "Dawn Warrior (1st)", koname: "소울마스터" },
+  { id: 1110, name: "Dawn Warrior (2nd)", koname: "소울마스터" },
+  { id: 1111, name: "Dawn Warrior (3rd)", koname: "소울마스터" },
+  { id: 1200, name: "Blaze Wizard (1st)", koname: "플레임위자드" },
+  { id: 1210, name: "Blaze Wizard (2nd)", koname: "플레임위자드" },
+  { id: 1211, name: "Blaze Wizard (3rd)", koname: "플레임위자드" },
+  { id: 1300, name: "Wind Archer (1st)", koname: "윈드브레이커" },
+  { id: 1310, name: "Wind Archer (2nd)", koname: "윈드브레이커" },
+  { id: 1311, name: "Wind Archer (3rd)", koname: "윈드브레이커" },
+  { id: 1400, name: "Night Walker (1st)", koname: "나이트워커" },
+  { id: 1410, name: "Night Walker (2nd)", koname: "나이트워커" },
+  { id: 1411, name: "Night Walker (3rd)", koname: "나이트워커" },
+  { id: 1500, name: "Thunder Breaker (1st)", koname: "스트라이커" },
+  { id: 1510, name: "Thunder Breaker (2nd)", koname: "스트라이커" },
+  { id: 1511, name: "Thunder Breaker (3rd)", koname: "스트라이커" },
 ];
 
 const findJob = (id: number): IJob => jobs.find((j) => j.id === id)!;
 
-// 선택 가능한 4차 직업 ID 목록
-const selectableJobIds = [112, 122, 132, 212, 222, 232, 312, 322, 412, 422, 512, 522];
+// 선택 가능한 최종 직업 ID 목록 (모험가는 4차, 시그너스는 3차가 최종)
+const selectableJobIds = [112, 122, 132, 212, 222, 232, 312, 322, 412, 422, 512, 522, 1111, 1211, 1311, 1411, 1511];
 
 export const selectableJobs: IJob[] = selectableJobIds.map(findJob);
 
-// 직업군별 그룹화 (4차 직업 ID 목록)
+// 직업군별 그룹화 (모험가 4차 직업 ID 목록)
 const jobGroupDef: Record<string, number[]> = {
   전사: [112, 122, 132],
   마법사: [212, 222, 232],
@@ -62,6 +79,19 @@ const jobGroupDef: Record<string, number[]> = {
 
 export const groupedJobs: Record<string, IJob[]> = Object.fromEntries(
   Object.entries(jobGroupDef).map(([group, ids]) => [group, ids.map(findJob)])
+);
+
+// 모험가 직업군별 대응 시그너스 직업 (전사↔소울마스터 등) — UI에서 각 열 하단에 배치
+const cygnusGroupDef: Record<string, number> = {
+  전사: 1111,
+  마법사: 1211,
+  궁수: 1311,
+  도적: 1411,
+  해적: 1511,
+};
+
+export const cygnusByGroup: Record<string, IJob> = Object.fromEntries(
+  Object.entries(cygnusGroupDef).map(([group, id]) => [group, findJob(id)])
 );
 
 // 하위 직업 목록
@@ -125,5 +155,17 @@ export const subJobs: Record<number, number[]> = {
   522: [
     // 해적, 건슬링거, 발키리, 캡틴
     500, 520, 521, 522
-  ]
+  ],
+
+  // ── 시그너스 (1~3차) ──
+  // 소울마스터
+  1111: [1100, 1110, 1111],
+  // 플레임위자드
+  1211: [1200, 1210, 1211],
+  // 윈드브레이커
+  1311: [1300, 1310, 1311],
+  // 나이트워커
+  1411: [1400, 1410, 1411],
+  // 스트라이커
+  1511: [1500, 1510, 1511]
 }

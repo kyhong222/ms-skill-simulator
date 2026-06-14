@@ -1,0 +1,1146 @@
+{
+  "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB2ElEQVR4nO1W0XGDMAxV7rKAO4JX8ApklXaFrMAKjFBW8AjxCNEI9QipJBDI1E1CQ3r96MsRDJb99GRheQ8zLvAc7PhPiS7vpzMkROj7HrzzEJowWWJK4MPwnGIq+mo2Ajfc2sOBBeyY6HI6f8Bb20HOSCMQ5MdtRc7ihLaxN33WhsgsfNNMbVF0JBV3w7m7TVM3zdvs4QYChQMxg/cDAXvtKLT6rGAbi4ysbn4nRK8kse1WqLoTjtQr1U1FDOt9MAuuKpbqarhONC4wh2pJyiScPLbv50QrsHSgSsSpW+sUZB44p21amFGyQ5HVuUyKgug3IEQxJtgM/J1VVN1W9M3Atdg2dFccepyIJ3ePfkcb4p/obxK50HBJLokaKhWZ9in9dL33cslWb9LWjRmWF6ms7xHnPcrWKCFqgoe+64qBKCX9AZCT9rsSIiVhVWJQQ4Zi4+U5+FzBB5nl+ULvGOdiWoSOi1oIdaIhCgG0POt8SA0aVYZybHc1IkXCr9sIZp28vsXkcV24e2pDaTsRxRjpvEaqTFmWgaxDE6Ky1bATbizvYmPGc75p+JhohylePKViezzOM9hJ1+7eFYdUkZDBc3CgK9k1eoFhtbeGHPAsUR5fbg2J+yekOekOrYuljQAAAABJRU5ErkJggg==",
+  "job": {
+    "id": 1210,
+    "name": "Blaze Wizard (2nd)"
+  },
+  "skills": [
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC00lEQVR4nL1XgXGrMAw1d1mAFcgIZoQwQrtCRygjkBHaEcIIYQQYIazACPl+ArmykYH0//vvLsUUrPckWbY4mRBP83+Q8UAKeN77x+rN3Ezuz2DMZN0of4kFc8uy9Pd935ONqjw/WQQLIPKLLVZGhmEw49iaIrfq8y1gLhl/Pk3bVSQGIppbb+r3kkScNHJMtNYmjaaexcB7IMyyjETc7msRpyNGzNDQlaIx1f7+X2AlgD2UngZXQc4hVkX/VgAZHr9hJmmcieUCk0CINRHvVeefdeOQFsCLbiUsIv666yI5zzzmRahhdw1IciZuHDEKshsm9/8JhepxsTkJkyLarnTeD2pkDglg8ubOuQcxRpMzmBMpA6LwYxE3d02RHxIgyX+I5fM5CkAsBiIms42VgLjsAvLRYHsz2DIsEc1kcn+sv0cSgV+3CJMp+VUKgLYe/Rijdhm/NYUnY++ZGPcQtCUiKUB6X7scYiUHz8fZcHk+u1VZUITitSDvU1AFyFrXyOmdYt66+8eDRBRvufeaI8DXlwXIktPIY7CIzs5ec2nKVHz8TRkexaCEfS8N6lkA7z9d7q+VvtcfAWi5LD/29gE0DnKbBfl4IH8a7XVZ9UfIvQB5qDB5YV/rfhggxg+zY3KtlyABeIk9B0AOEfaz8M2EBlmKjTiY6iV1W54HAtCnsQgGxKDQLhdLIrDSyUNXfkzM5JKUiedohH1D3Gd4AfyQJ5Lh6KxnIo4G30tCaUuD1mcEVSAnxud58J6LAkeEhez1kLK5TQqIIcnlWsDYC102oa18b3VYgYAjHS8Lkdc9Eex5kTfpnXCr42WPpecSRH4gEpsNSdzxSmydB7wWUtiyGwiIFcqPCg0c/kDMgbrXBGT4VtM+zViEVglEKMIeOxDbkbi2A76KMMw4AiQCn0uryfn+mTBN7iyZct/r74HJ8UemIFs+GFWkUgFUVWVehDf2B0Hj9WRhE67XAAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACUElEQVR4nL1Xi63CMBBLJBZgBRgBRoARYBVYoavACowAI8AKjNCHI1w5xyUNRXqWoIW0Z98nyWUWcvThfxB5owL66/XqPv18PsN8Pp/EtF6vh3vaf/3XUwQFJPLVavVh4Ha7hcvlEna7nTteA95Nxvs+HI/HJAY8p9Mp7Pf7JGLmkePFElltzALPwXaMMYkArIjZiI2BDFeQn8/n7P9f8SGAHqqnpStDXBI9SQCAnJeKjuIALTBFqZ66rhvGHo9HXQCKzsISHw4HVwDzzHsWoYfRGlBySwwv6AmxWCzSuIoAuXr/tQCSe8QgxIfgGEXgWiJvEqDknsc1MaUUVQXYaafkXBHxUSIF6odCKExTMikFAOe/BYqVZBSlEYGgmoiiAPUeOeRKRpBkuVwmESqA46UoKVwBOtc9cnoH3O/3JIJeaehtvTQL0CnnkVtQhM29puKnadgKL+xjaXD3As39L2BEmtYBXWY57aaAVd9CPgjQTYXkLRXsQRcjS+71EkkAHtKlloW02WyyZsJCp6KuekxdzfNMgIogaBAGIAKVruIIkCspbfFdes7fNgqDALZPhN3rScRo8LcSqi0PXp+RzQJ90e7nCkSBEaGQsR5Sm9uiAAsl11rAPcFFqJbvWoeVCWjpeClEr2Mi6LnX2mfrQKnjpcfquQLkLZGoLkS241XU9gPWQgk1u5kA+5AeKjww/IqWee8JiDireS9ThDcTAA27dcDaUSDVr1MRbiMjkETguGTRcihFq4ZP6/5BcnxpCuL7wOiilApgu92GLzEY+wNoguIQCIAIngAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC2ElEQVR4nL1Xi3GrMBA8ZtyAXYJTApQAJUAJSQlxCXEJTgmmBFMClBBKCCUQrcTBIQ5BnDdvZzDCIO3qPtLpQHP09H8QcUMK6B/11+LLI3V0jktqm9y0jr9iQd8kScbnuq7tGFny0rMIFmDJ0/i8GKRpGmrpalq5+j4E9LWD9z01hi+JEivi417TpUisiINGjo5xHK8OuvbOB74DYRRFVkTdL0Uc9gzSNPVwNzOKk/H5X2AhgGcoZyrvkpxNrIl+WgDQ0YXg87XBmVgGmARMrIlIould1TbrAjjofPjE9yFp/dxgP/O3HIQaNmNAkvvEZWku9kLnbnlK9OjnIlwG6JbZJYDJbwpxbsbL88kKn6W7RhE9rZLvEiDJKzNw5cUdhEgxr8Jzjx3r6kKAn3Yg/2DyluxUU7NkpDmp62L25twAIbAEUAuXPOUCoCxEe7iA/O5cALfgDlVl5d5BBASFRKwKkLO/RG45lahaF3XZy8lEpXNDLswPEa96Js+gCpC5rpED6dk54PH17US8u/8RBzYmuskFRGOS7BMgU04j98EiyiEjOChnrvhLGu7FzA0wUOcCMgR1L8Ds37+Jrqe/CeJsyLbWARQOcpkFeVs9R1pcBvLBHSHyUYDcVJj8vGE6DbB6Gk9uKDxyrZawAvARzxwAuRVxo7GY0CBT8SY+KYZ9JzTzmQDUaVbEaW4JWyPlTgQiHUD6MTGTA29is+NNyK8b/DpjFMAvuSMgxUgitgY/S0I5lgatzphlgezo7+cSsAJbhIVs1ZCyuF0V4EOSy1hAmwEhiRER8neowpoJ2FPxshB53xIxzrwJrIShipdnLGcuATfssUSwIPErXonQfsCxsIbQuDMBvkJ5qNDA5pfYk/eagAhnNe1oxiK0TAB4F/Tz3of//9XsWuZUhGbEFrAicFxadD6u7eQTus7sJd1xrPW3wOT4kS6IhgOjijVXAFmW0S8xDvYDB8bI7fge/SAAAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 12101000,
+      "soundPath": "Skill.img/12101000",
+      "description": {
+        "id": 12101000,
+        "desc": "잠깐동안 명상하여 주위에 있는 파티 전원의 마력을 일시적으로 향상시킨다.",
+        "name": "메디테이션",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 #time초간 파티원의 마력 #mad 향상."
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mad": "1",
+          "mpCon": "10",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "10"
+        },
+        {
+          "hs": "h10",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mad": "10",
+          "mpCon": "10",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "100"
+        },
+        {
+          "hs": "h11",
+          "lt": "Point [ X=-300, Y=-200 ]",
+          "mad": "11",
+          "mpCon": "20",
+          "rb": "Point [ X=300, Y=200 ]",
+          "time": "110"
+        },
+        {
+          "hs": "h12",
+          "lt": "Point [ X=-300, Y=-200 ]",
+          "mad": "12",
+          "mpCon": "20",
+          "rb": "Point [ X=300, Y=200 ]",
+          "time": "120"
+        },
+        {
+          "hs": "h13",
+          "lt": "Point [ X=-300, Y=-200 ]",
+          "mad": "13",
+          "mpCon": "20",
+          "rb": "Point [ X=300, Y=200 ]",
+          "time": "130"
+        },
+        {
+          "hs": "h14",
+          "lt": "Point [ X=-300, Y=-200 ]",
+          "mad": "14",
+          "mpCon": "20",
+          "rb": "Point [ X=300, Y=200 ]",
+          "time": "140"
+        },
+        {
+          "hs": "h15",
+          "lt": "Point [ X=-300, Y=-200 ]",
+          "mad": "15",
+          "mpCon": "20",
+          "rb": "Point [ X=300, Y=200 ]",
+          "time": "150"
+        },
+        {
+          "hs": "h16",
+          "lt": "Point [ X=-300, Y=-200 ]",
+          "mad": "16",
+          "mpCon": "20",
+          "rb": "Point [ X=300, Y=200 ]",
+          "time": "160"
+        },
+        {
+          "hs": "h17",
+          "lt": "Point [ X=-300, Y=-200 ]",
+          "mad": "17",
+          "mpCon": "20",
+          "rb": "Point [ X=300, Y=200 ]",
+          "time": "170"
+        },
+        {
+          "hs": "h18",
+          "lt": "Point [ X=-300, Y=-200 ]",
+          "mad": "18",
+          "mpCon": "20",
+          "rb": "Point [ X=300, Y=200 ]",
+          "time": "180"
+        },
+        {
+          "hs": "h19",
+          "lt": "Point [ X=-300, Y=-200 ]",
+          "mad": "19",
+          "mpCon": "20",
+          "rb": "Point [ X=300, Y=200 ]",
+          "time": "190"
+        },
+        {
+          "hs": "h2",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mad": "2",
+          "mpCon": "10",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "20"
+        },
+        {
+          "hs": "h20",
+          "lt": "Point [ X=-300, Y=-200 ]",
+          "mad": "20",
+          "mpCon": "20",
+          "rb": "Point [ X=300, Y=200 ]",
+          "time": "200"
+        },
+        {
+          "hs": "h3",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mad": "3",
+          "mpCon": "10",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "30"
+        },
+        {
+          "hs": "h4",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mad": "4",
+          "mpCon": "10",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "40"
+        },
+        {
+          "hs": "h5",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mad": "5",
+          "mpCon": "10",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "50"
+        },
+        {
+          "hs": "h6",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mad": "6",
+          "mpCon": "10",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "60"
+        },
+        {
+          "hs": "h7",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mad": "7",
+          "mpCon": "10",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "70"
+        },
+        {
+          "hs": "h8",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mad": "8",
+          "mpCon": "10",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "80"
+        },
+        {
+          "hs": "h9",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mad": "9",
+          "mpCon": "10",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "90"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/0lEQVR4nL1XjZWyMBCE92wAS5ASoISzBCzhLEFKgBK0BC1BS4ASsAQpgS8TmLiJCf597+a9O9nNJjPZbBJYRDaG6G8Q80EKGM5N99FoSdRbdq88c23rPB0oggI0+U+20kbbtqZDlmWz5IjN89zyNU2j+4XaqmMTlZtci1j4yMt2azpU0T4oggRNt7f8eZprork2ili4A4K8yu6dtC1EIEbODgTl5WDPUvk00VybEgEYAZJczhjkFCEFEcn0t/v51b8gxG+xz4JtElYGXHIANkXIGFknQK0GrxSRDyT3wQiYKzaKILgMSGOq0tl1R+1P042eeWTmmUz+7RijzHS50f0uV08GJIEURVtWNNeQIviMmOp25z9t24cYjHu5tn4BcuuQhHZ3O5q4dHmPYZxEVewsmzFuph92AchAhFSRnMTlqTax9EGIFAq/G8cY3zJbu2Ac4KwGKKNftZa0a2UDXNl+EpNogrMlglHyLJyDtwbYRZL72gG0UwREp8u1FXvY2rZXAM5rzPY2zT6kvSoq8+zGgfygCm4Y7PusvY7lnqepdxmcDNwpq0Lt/dP2RTvxkgPZaqVFNF3nFfG4BEngebKrHxyvW6t9qdLvI58TERbwBCC3RHwJW0CSmEnXICqOqsg2uuppl8rGM+N2yneI0v8kIBq3WDL9uoAYiHB932AxkiZ6XZZxqtay07NMBGEpSD4h5E4ICrBxr7zxwIGIs7bLk72nma1huEVxHAe3ICF3wcNdwNstjpd6QJBRCokpxAXad8dMi0Cl+/DSOeAT4RI9A4gACqEdwsMS2CLGlNanPHoV7jLIjLx2EFki4odBXTG7YjxUWAPsI/uBGM9vHUQUwcFDM5QiWQMknKuJpwIoApCKpRgpyucHWAMhMS8dxXLN3Lcfvi0xM3LryWyFzoK37wJ3G8laMT4101BGfOdAjG81+XX0riD5SsY0u+mWO6A+tfgqgjtmBrQIfC59iiwZbw9cvRIy9X3fW+T4J5cgnj4Yv0Io9cB6bQ4yE/QPnGMUXchgEkQAAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACd0lEQVR4nL2Xa5HqQBSEkyoMgASQABaQABKwABLAAhJAAhZAAkgACbnbqfulOoeZJLBV2z/IvHK65zxmyKhooyr+BiUNF1Bdr9c/YV8sFhUiEFCTz+fzunO73ZrFjOWgtT8GW2PYys2dTqdivV7XIkYp8uPx2Lyw2WyyIiC4XC5xhzVR1xwiRtGgyEUK6LtA350Izudzi0RjfXOEuxHg5L5j9V1UFAhWq1X9hNDXxDlHywMpd6uPCF/jeYJxiFJIkbcEdCUbIgBhIM64U22tG4/HdZ/ncrlsrVH78Xi8e8AJXBR9z2gMIsLbMYfiGtnNCvDScdXej2Op8yPmCWuip9+qwEsIIl728owu9XZcx3gqzK0qcAPaQcogYCzmwacYdU3myKMQj308+frebwToxfv9XhwOh2aSLAbb7bZpx3WUalW17zOSbTabJcOQ9YDInKSvnyIXptNpLUKbS4noDMEQYYIMp8i7RHwtQOQpEd+iJcBjLoL9fl/sdru3vpNrrC/RBgtAxOv1aolhTOQidCDw1wIUl8lkUjyfz2aH7FpPBEXXx0pJgUroFJADMU+RA4kuyzJbgsCr4O0u4HaTF2TIXQuxvKFQCOxcfURKhDI9hUHnACLYTYzvkHiLSEAI/RzeQhBFDCUGMQzukcEHkYuIRqMYqgLBvOPvcVB9dBAhAuO5HbpIcgDCrpzoFYAIwRW7GBeVGhfIgZyYQUexxyze+1y/eMZLz72VOws+vgtiGXmuAO0055HUOVDqWy33l2mIIP9Lhpuju70C9Bf956tIwyUeqEXoc+lbcDDp6nW463VoObl+PATl/w/GXyHnekHfByyj8Q+uPRmuIfZE1AAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADCElEQVR4nL1X/5WyMBBM3rMBLEFKgBKkhLOEo4SzBCzBK4Er4SwBSpASpAS+TGDiJgbk0/du/tDsZsnMbn7BRvkY1N9AsyEFDL/N9aXREtV7dm88S31Fng4UQQGWfJ/trNG2rXsgy7JFcsTmee75mqaxz831VXWjjofcitjEyEt1f+jcNrMiSHAbvjz/VueWaKmPIjbhgCA/q8b5rC1EIEZmB4KiPXkk8IFoqQ8iACdAksuMQU4RUpAEZrzOxkwPE+G+me+T8CoQkgOwKULGyHXCwUkUQ4zcE7C02CiC4DSgjGOpK+vf6uOUOXdBMvlPXgyeu3SBAAlmJ+cdkCuac0gRbNsYcZpc8scYjHvp2rgAuXVIQptZjJncYxgnUWeVZzMmrPTDLhhX9tkQlI4cNlC2pYulT65oxoZxjIlNs7cL5AAfTXxAgj5J8AoiayBxa+g21KrsDkqcrI9CutLGQcTHVbnKET+qVEvYjJT9lG2tjoZQ8sl2tatdG3ESn4b8OzXrb/Dvs0s33gV5uo1OQ3QXkEySPNq/xi6czBg5sN8lVsTv9RYV4QlIvFvMrzvtsyEuDbHs3eoiSr4kIipgJIq3aSPr85T9wtJYjUDAfUgQVDtzY3W56oR9MPa99Mr6Tsq/ct8QYF4YsAn68d/JQrtXVky987cbfO/ACsBbCuZFm600DFd1VOlY7j43GRq7T11x4POwYh64E2YFhOCYKP3JkFfJ+KqGtgT68RoD0Vrr2S1IFGIXPNwFvN20Ts1AN0O2Vbupj8RfyS2aBWIr0wURWOkxFGvOgbuIrRMREj0DiAAKoT2HhykIRawlJsJpkBV5ehDFRISDfvfai/1Mxj6uAfyHYlAFtFcdRKEIDj6XIftIDhISLq2JpwIoApCKpRgpKuYHuAbmxCwKCIWEYgC+LbEycuvJas2dBasEzImhoDB7ZDpXkdg5oPGtJr+O/leQfCVjmcNyy3Pg9NPiqwhuzQpYEfhcehVZMpYYV6+ELH3f9x45fuQU6OmD8S3MlR4oCneLuqB/cAsPXpLPFW0AAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 12101001,
+      "soundPath": "Skill.img/12101001",
+      "description": {
+        "id": 12101001,
+        "desc": "일정 시간동안 주위 적의 이동 속도를 낮춘다. 중복하여 사용할 수 없으며 한 번에 6마리 이상에게 사용할 수 없다.",
+        "name": "슬로우",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 #time초간 적의 이동속도 -#x"
+      },
+      "requiredSkillLevels": {
+        "12101003": 5
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "8",
+          "rb": "Point [ X=200, Y=150 ]",
+          "time": "2",
+          "x": "-2"
+        },
+        {
+          "hs": "h10",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "8",
+          "rb": "Point [ X=200, Y=150 ]",
+          "time": "20",
+          "x": "-20"
+        },
+        {
+          "hs": "h11",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "16",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "22",
+          "x": "-22"
+        },
+        {
+          "hs": "h12",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "16",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "24",
+          "x": "-24"
+        },
+        {
+          "hs": "h13",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "16",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "26",
+          "x": "-26"
+        },
+        {
+          "hs": "h14",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "16",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "28",
+          "x": "-28"
+        },
+        {
+          "hs": "h15",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "16",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "30",
+          "x": "-30"
+        },
+        {
+          "hs": "h16",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "16",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "32",
+          "x": "-32"
+        },
+        {
+          "hs": "h17",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "16",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "34",
+          "x": "-34"
+        },
+        {
+          "hs": "h18",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "16",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "36",
+          "x": "-36"
+        },
+        {
+          "hs": "h19",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "16",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "38",
+          "x": "-38"
+        },
+        {
+          "hs": "h2",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "8",
+          "rb": "Point [ X=200, Y=150 ]",
+          "time": "4",
+          "x": "-4"
+        },
+        {
+          "hs": "h20",
+          "lt": "Point [ X=-250, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "16",
+          "rb": "Point [ X=250, Y=150 ]",
+          "time": "40",
+          "x": "-40"
+        },
+        {
+          "hs": "h3",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "8",
+          "rb": "Point [ X=200, Y=150 ]",
+          "time": "6",
+          "x": "-6"
+        },
+        {
+          "hs": "h4",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "8",
+          "rb": "Point [ X=200, Y=150 ]",
+          "time": "8",
+          "x": "-8"
+        },
+        {
+          "hs": "h5",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "8",
+          "rb": "Point [ X=200, Y=150 ]",
+          "time": "10",
+          "x": "-10"
+        },
+        {
+          "hs": "h6",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "8",
+          "rb": "Point [ X=200, Y=150 ]",
+          "time": "12",
+          "x": "-12"
+        },
+        {
+          "hs": "h7",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "8",
+          "rb": "Point [ X=200, Y=150 ]",
+          "time": "14",
+          "x": "-14"
+        },
+        {
+          "hs": "h8",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "8",
+          "rb": "Point [ X=200, Y=150 ]",
+          "time": "16",
+          "x": "-16"
+        },
+        {
+          "hs": "h9",
+          "lt": "Point [ X=-200, Y=-150 ]",
+          "mobCount": "6",
+          "mpCon": "8",
+          "rb": "Point [ X=200, Y=150 ]",
+          "time": "18",
+          "x": "-18"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAEAUlEQVR4nL1X7XGjMBBdz6QBpQRRgihBlOCUACXgEkIJUEIowZQAJYQSTiX4dldaECA75H7czngQWOg9Pe0Xb7C1B/wfu8ggJvAYx+/jVDcBzB1MzQzXewt9UUH57ed1WcZX215hqHowX/dT6HmePYSEEGBwY/Rx9uxgmv1QacPgMbC2n2FiD1oPm1eVKpMEWiRafRRM4u01+ATTcOPdy65nvJfxMg2fmVpDnzdgP+36h+2SRMorzgkk9j7A5hy+6DQu3GzAwQ3Rjldwh0RNece5Gb4LeB2QkAXlFApIG8P/jUmqcSDA4Cg7jkAbBKtvLDmTUHYB1cbyvRCSYxHwWeFZZx/LuuM4JkmkFZjp0GeUzib+PKowdcUyJnB9NWBQ9sejRf9x/DzP3pMkDgT4vHQDcz/gKXQcBNsJKymRX4zOX1mzOXOjFZMYv/8kSSQVUAYXQAJ0/q+MlODjwCudv9LXpGopEmkCzkUk0Hn6NAGSnEKSgBlcjkDBr20lgOBT752GnE/pEhd3uMPp8JKAM5mmQAIz+rmDK59Xwm/OECDwRXL0fK1rBPKK7OM+dkIC5znoeN55G5ygniahNAG3Sr1kurpZFn9mbjqqQ6eoT4BrtSHgDhM2CeiJkQOSmatmn7lhDqA0y+spBZfLJflenufLOBDoNoBngDn8wi4mdFY1zIA0oCoKJPEFGYI8Hs+L64AFpsgzT+DMbmMjH5DMV46tzw2YoFxeAVeUoKgkoVf2Bv9oB8JIgp8hkQ6J3O93jvlndg+l/00Wkx0tALKzhLl54L5gMy8Ak9m2xSjSnHiemQsqMQECp3Iamyx22ClGDINb7wA3GqPDkexY/KCuMYfQPf6M8nPierA3JkDg2rYhhiZfDeuBCuJaCfc2+EWt9SpRFBTVDVq6V89ToqRhUqBAh/U+YFbWJC8lFKV0SCw7w+cxISKo+L0JZVcvwcWoGHX9sCrA8cQvrl4rdd3AUQUpQGQac8BMYYjj0ia6qh9sFwWKHUppD04kUka7FRL28w7DnGP35uD38Kl+AAuN404Yd19DkgS1X2JExH6NrNJ8Iu5/JLDa8GMtkIxIFZHfQALnStBPBOKdhBBbDONd8kNckvk+ckAJPaNfO2WyKSXvJ8cypY+EqYsJ2U1TyiA1dsRdBnssivtX9SBJQHZP3u3Bt2153Anz9HAMlP3m7ga/tXRPqKm81qFPqDZteRyCTDT0hW5qUlX9FIELfastX0e7bkZpjIZyCCTGTSWUTzP69VUGncK27AQoJSH8KqLhRRRYSACnntDpSKek5HZKfJz2vh03CkpUTopMfHWRNDQWcFFA7BK+Wp9alXlvr/adzke3jpttwXl/395T/ofo8/wv6LVCgKd8XOsAAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+ElEQVR4nL2Xja3iMBCEHSkNPEqAEqAEKAFKgBKgBCgBSoASoAQoAVqgBO4+i4kGY5PwdLqRovw5ntld73pTh1c8wv9BpQsX8Difz28j7/d7uN1u4XA4hO12GxaLRTgej/HdZDKJ5+VyGTabTViv153YR6PRQyIkIJIPh8OiANDv9yO5E4/H43iNAN47fn5+sgL2+32YzWZRRN1GjuUcsvp0OjXXAs+m0ymThvl83jyXuFQIYyUiXQMNMQcTOznPNKmT4yGIGQt2u1281zwgZyB4E+AuFxkuR4QsgZQJufcxKflgMGjmLXk56wGPeU5g6gVIBch5jziuNRdiciLeBPAhxFjpLvT3gtyfIxeYizHX6zUrIusBBij+nwAZ4zgzVmFJkRORFeDW5twv4HLeQ8zhIfgWjQClnCzDGo7L5ZK1SOsAcr7LhesrAcp3AXKIEJDmvS9CfUNu++ItFaGsAFfula5tDeS8w1xdyDWmLg3wAtQmAI9gNeFgv5CIqqqy3/3dC5rrKECbjQjbiNP0414WUY4ps71eLzwe5c0V8Qipu1rrwGKFCTLIsRpyXXN2kSXU4ZdIBUPIMwlBmJfiFKoFtSaTRYIsywHL6At8nIgBfQFrgsJTghZ+FAA5aeTQZKmlfAi5yqnGCfQIEq5i5vtBiigAct+7PXbaCVN4BohMwj6loVyPIcwdBajoaCvmKC0ixdoFaiznLjUAPtWYl0XoHzNAnkm9oA1IHuDevfEN3rJAcYO8VAmxViKIOZ4jJJ82sM4C1A8waUmE930IYdXjpS553ypAUE/4CaqI2o7/mQCfSDnuwrRWfEvW2HSOtrAUm1JiCoE3qSLxphSoI04zgLz/tB9kBYgMAjUp3pZ7JwwUBtbBbzqjbAhwmwQAb8s9BYHSMNcbdBVQ8a+mbjXtZrgmGyTCd0L9mnFQkrsuQrz6LOGVPNCIcKQ9njYh/znlnxAhqdf8nC5ikcsDQvX8ay1Cm0na6Xi6rlarl3c0Jo6n95oJ/gBWk1M+qf9DGAAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAECUlEQVR4nL1Xi5GiQBBtqzaBNgQMYQgBQoAQNAQNAULQECAEDUFCWELYCcF73cPAAKOeW1fXVa4swrw3/Xnd80Vze9D/sY2/CAk8rvfv1ZOJvVHSHcieiPh+JpseiB+Op924dbhJyJY9dZH3Y5anu4cn4QkoeGaS9dM97nXDtSkAvp8BU+FBN5Qlh/m7fI0SqJo7ncpUSXy9Br8Rtbnb/bBranfTtTe5V8Ej2xvxOVinyKNEjoUhGkgsc8CZxYu2wMKHObitgx1P4NT3WBXPnOAZy3inAyFDlgx+wjpwoTEmCrUmIOC9xTc+5oqFcnW5kuDjBJrt3f8DIR8WD97CEeUWhKnW+/f7PUoi7oEO4HSZAGcEI16ox6RWcNozFXC7cL7JZmDpbhslsSYg8TIp8JF5klTd8veAlHe//0niX/As5lnCSuL6/RMlEfdA0uDPTuP/0sQTQkK+Jf4GmcjF6rEYiTgB63eDXWhV9BQ1cXkylKB8fAjY0qc2ERDwy26gDBcmZ2wGVdBGSCRB/QNcPHUB56NF3tD+lwQuk8sl88mc8QF4S+u69+CoFP/OUatNPID8SfipCEUJsJ1cJ2BadtXhfQ503fqeKKdp3gKbIVwDgbWbZwL0zG5O6Vi8jpw5XHo6nxtXGcy02W6jr6VpOl4rgaQvZ4BvgX358UBWJIN7cGA65Sm0/kq7PIcOPF+n7Xoq050j8Fe7DQ05MDakn8ppAwSq2PqYOfd6EXplX/RLWxEGCX44InZbUnO9a80/s2Zo3V9+Mb+jcT2/s5j1LdldOX9OgZ0HuGk0HCI8z8zaIAld1i8e0MVO653aTsG7odz7FL2Ba+d1gO6ryukEkjBjlyQ+FHnEI84DAp6JPOLBpNZuyJUrsbETLsxc3HeWGVVAm2WUHmraZ4WCPzMvw+KBHImqBG7Zt+q1EhC2Iigsk1BEBdkE8wGAUWoMQO5q3fgr8JE8mlHddpMH3MKLF08ArxLUeL/2gm9AAryXMrRakVVGH9uiCtjFw5wUXEnETDTAkzg/iHv0A0xv8ZnnIwKwJNOximSUqi5xEseFNxpkO0IhEfuUxHMdEHmr37ztFbF22d3+MwKhgg25ORGrJ33wXfHkNMQEaeRLzyX3JwRkKJUqQBsmwZEIhJ4Q8HAoFTv+qBeWu5e6f7yR+DUBv3vp7+iSuuFwLA8mYbUhDKJ+XJf0qcVDIL40d7ewzIbhWO6z35ufC9FR6fOJTAls5Kw2no7CaUbCh0Ln42Ug8TPvhE0wF+JeiX/fjyKkIoRTkVxuvAdGEkyiy9B7XMnBVGzMo66NHE43jgiqV44EvsmE3zaYuOT6VOogMzucjiReUk+Hw+eic1I5aIXwrecNZ7uYikT/KTie/wE3VvBMFKyfPwAAAABJRU5ErkJggg==",
+      "weapons": [],
+      "id": 12101002,
+      "soundPath": "Skill.img/12101002",
+      "description": {
+        "id": 12101002,
+        "desc": "마법의 힘으로 불 화살을 만들어 적 하나를 향해 쏜다. 얼음 속성의 적에게 큰 피해를 줄 수 있다.",
+        "name": "파이어 에로우",
+        "bookName": "",
+        "detail": "MP #mpCon 소비, 기본 공격력 #mad, 숙련도 #mastery%"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "mad": "53",
+          "mastery": "1",
+          "mpCon": "14"
+        },
+        {
+          "hs": "h10",
+          "mad": "80",
+          "mastery": "5",
+          "mpCon": "14"
+        },
+        {
+          "hs": "h11",
+          "mad": "83",
+          "mastery": "6",
+          "mpCon": "28"
+        },
+        {
+          "hs": "h12",
+          "mad": "86",
+          "mastery": "6",
+          "mpCon": "28"
+        },
+        {
+          "hs": "h13",
+          "mad": "89",
+          "mastery": "7",
+          "mpCon": "28"
+        },
+        {
+          "hs": "h14",
+          "mad": "92",
+          "mastery": "7",
+          "mpCon": "28"
+        },
+        {
+          "hs": "h15",
+          "mad": "95",
+          "mastery": "8",
+          "mpCon": "28"
+        },
+        {
+          "hs": "h16",
+          "mad": "98",
+          "mastery": "8",
+          "mpCon": "28"
+        },
+        {
+          "hs": "h17",
+          "mad": "101",
+          "mastery": "9",
+          "mpCon": "28"
+        },
+        {
+          "hs": "h18",
+          "mad": "104",
+          "mastery": "9",
+          "mpCon": "28"
+        },
+        {
+          "hs": "h19",
+          "mad": "107",
+          "mastery": "10",
+          "mpCon": "28"
+        },
+        {
+          "hs": "h2",
+          "mad": "56",
+          "mastery": "1",
+          "mpCon": "14"
+        },
+        {
+          "hs": "h20",
+          "mad": "110",
+          "mastery": "10",
+          "mpCon": "28"
+        },
+        {
+          "hs": "h3",
+          "mad": "59",
+          "mastery": "2",
+          "mpCon": "14"
+        },
+        {
+          "hs": "h4",
+          "mad": "62",
+          "mastery": "2",
+          "mpCon": "14"
+        },
+        {
+          "hs": "h5",
+          "mad": "65",
+          "mastery": "3",
+          "mpCon": "14"
+        },
+        {
+          "hs": "h6",
+          "mad": "68",
+          "mastery": "3",
+          "mpCon": "14"
+        },
+        {
+          "hs": "h7",
+          "mad": "71",
+          "mastery": "4",
+          "mpCon": "14"
+        },
+        {
+          "hs": "h8",
+          "mad": "74",
+          "mastery": "4",
+          "mpCon": "14"
+        },
+        {
+          "hs": "h9",
+          "mad": "77",
+          "mastery": "5",
+          "mpCon": "14"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChElEQVR4nL2X65WCMBCFwzk0QAtYApSQLQFLwBK0BCxBStASoARSgmmBEthMYNhJyEPcXe8PjZDjfJlHJkmZqYl9RgkOKMDUDc+PWP8qDxNCIIA2zov8IwDNfWCXY6kh0pBxIcSuPy6K4qV550rNWyBS3yQwXpbl1kh9mwd5ZjyHX80bYE4AND5NZk4KKVl5OMwQctxAXMSoQbIs+/lWA6meV4U51wvgM65XkudseD6DEFRnHs8pDZCxcY23z/g7ENdeag+gN7hjXopG19j+g6pAdWkAWHGSJFEIyAFUbG5TvVYRKdshcD9CiPYUhLg8xJqEGAKIQJ6ZYXgZgK4+pHvN2R5tAGBVEA47Eenq1wQEWYl1bPtNGdpjLwC4FWVDUOP2XAo/wjffxp/nkX3AVXoAYb93zbM9I3rBuAGRsV6VK3ig2JMDWB1oNJYHdH/YVQV0pSFhHmAYbNjy1K65AeOq4mvcfXuBBhiGwWvUbki4E+p36PIlH25nbiboqjkE3p0QWojvLABwdkKiJ9Dlr0qMY7gKjMmRswAty5DqyCEn2I6pME98jcoH0woZzwGXcV+5uQxBzDEU1a1T/V/+TRmiUZ9o/AEiW1YJG9GfNCN797MVSkLajOpYO6aC8xvNfJrtWF5QdliK9N0I8XYYe8Dz0IFkLwTG3AUB8ae94K0qcEHYhkIQtBdgFezyQAjCeN/ctVEXYK8gYCueNRvGjYgeSqJVQCH0b+scABAIaB9YH4+e1eSAYpcgAiRwVwtdzRDC1qmXUYh5EzINX1WFqFsRDBP0gIaAO9seNfSPu05DdBboVZ2QmPKChOP7IjQOHzQEyXJh/JW+yBaOXfLYbqat/f8bOUWgWMeRML8AAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACLklEQVR4nL2XgY3CMAxFG4kFWAFGgBFYAUaAEVihrMAIsAIjwAiwAiP0+NX9yri2k+g4vnSiB2n9Yn8n6aR5V9d8R4kXEqC7Xq9fib5cLjtCEKAPvlgsvgJwOp2azWbTQ0yi4LfbrerBpRNYr9cDxMQbhOCvVI2+3263/ed0Ov0ImAnA4F337snH49HM5/Me4vl8jiDO53P/Hf8Iiud5ECMALzg0m82a+/3uQmggpDqnAYD19oKXQkjpjOBeEwBBWdv/UNYDmHFKKQsBD1C5sSXpHwBKhRQS4ng8hhBIP6RNqctQDCBnH2m/3zc1GgFgViiHNqKcPQ0ISQPCkIfDYdSG8v8QAGmlNIQMrsdKeEBYptOpZ9cNAFbrAUL/bo3TmcHDV6uVOabKA+wOBs35QK4PVV0gZxqJPmAZNOxutxu8gWtkgfUPl+LoHKA3JK6EEGdLP6ADpEGlAO6uhJBHCDhtSGaCKS+VVcJwO44k2zKSNqN+frgdS9En3kblwVwul7wHrOBeu1mBUHOWom3bfsxH2lDeaEnWHxB8OGb7kc1Ir35akQnlZuT5wAQAvXS+dDvbC23HVpS/ea2GsoYHkloI1tyDkIaLZu8CWBA6UAQh9wJ2QVUGIggprnwWIAKXdEK2CyQEpM8BgCCgPrACQnaDl4GEd7Xo1YwQWnR6BGEtQrjv9VaEy8QM9BB4XaqRTDGuAaFBeXaU6wmDMwNU+n1h/JPkEs5d0jg9Dfv/D4lOqwXa217mAAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkElEQVR4nL2XjXGzMAyGzV0W8DcCGQFGICOQEcgIfCO0I5QRkhFgBBghjFBGoJZjEVn+AfqT964JDT70YL2S7YOwNYvXKMELCjC3/f0l0U/5cUYIBNDBiyx9CcDbtRf/z7mGOMSCD8Ow68FZlm0aV5dqnIE4hAZB8DzP3RtVb6K5wL3wA8fAvAAYfJ5tT3bjJE7Hfw+IYXQgTmMqpPpO1Qd8SykFjIChVSC7DkAoOKhQT27vn1EIqo8NGdEAUkxLvkPBvwNxUY+EO1I+/koZANC5xtz+gapIcWkAeOMkSVYhwAPPp8bHXgsptuggdgimf4Fo4rN27qbFhNKYEsyZMa7NANbbR3Qvt715GEC9FaSDG5G+/WJAEDPg8TY5ZYgm1L9FAZpn4+EQVnA2FjUpKBiVlq7r+MR0HMBXetqY7L5vHJ+Z7jaKEiFMYDUx+rLY4wGsDgy65gPaH3ZVAX3TmNAHSxo4LHQe4w24rqps8UC0Ffd9uJz4goSdELSY0fihrVPboESQgmAnVBUb3AsAHDckzsQy5RvVTWtVQLS2F7CaUkR1YEFyqoAH51OPPgktVCGY92GDB3zBQ+XmDaRyjqlIr59i7EgZGn2rDDFoSFb+FYQsHkELFfxXFiOn+zHFTEgXozqyMXEAYP9GnW+5HctLlR2WIr03qanHWaBqxpUNyW4Ik3MfBOSfrgX1yrYsmAIOwQPFIOhagFWwawZiEJY+HkF9gDcFAa2Ydh5sRHRTsloFFEKL7wMUBALyDWvTDOKNQBSBGUjgrBY7miGErVHkwzqErwm93wY4FcFlgjOgIeDMtkdtStp122qIKzvgXsAEyokTae0YHD5oChJzYPyRzvnx+Y9ZJS+NM2xZ/78AVz2TjK3Kyl4AAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 12101003,
+      "soundPath": "Skill.img/12101003",
+      "description": {
+        "id": 12101003,
+        "desc": "상, 하, 좌, 우 방향키를 이용하여 같은 맵 상의 다른 위치로 일정 간격으로 이동할 수 있다.",
+        "name": "텔레포트",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 텔레포트, 이동거리 #range"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "mpCon": "60",
+          "range": "130"
+        },
+        {
+          "hs": "h10",
+          "mpCon": "33",
+          "range": "130"
+        },
+        {
+          "hs": "h11",
+          "mpCon": "31",
+          "range": "132"
+        },
+        {
+          "hs": "h12",
+          "mpCon": "29",
+          "range": "134"
+        },
+        {
+          "hs": "h13",
+          "mpCon": "27",
+          "range": "136"
+        },
+        {
+          "hs": "h14",
+          "mpCon": "25",
+          "range": "138"
+        },
+        {
+          "hs": "h15",
+          "mpCon": "23",
+          "range": "140"
+        },
+        {
+          "hs": "h16",
+          "mpCon": "21",
+          "range": "142"
+        },
+        {
+          "hs": "h17",
+          "mpCon": "19",
+          "range": "144"
+        },
+        {
+          "hs": "h18",
+          "mpCon": "17",
+          "range": "146"
+        },
+        {
+          "hs": "h19",
+          "mpCon": "15",
+          "range": "148"
+        },
+        {
+          "hs": "h2",
+          "mpCon": "57",
+          "range": "130"
+        },
+        {
+          "hs": "h20",
+          "mpCon": "13",
+          "range": "150"
+        },
+        {
+          "hs": "h3",
+          "mpCon": "54",
+          "range": "130"
+        },
+        {
+          "hs": "h4",
+          "mpCon": "51",
+          "range": "130"
+        },
+        {
+          "hs": "h5",
+          "mpCon": "48",
+          "range": "130"
+        },
+        {
+          "hs": "h6",
+          "mpCon": "45",
+          "range": "130"
+        },
+        {
+          "hs": "h7",
+          "mpCon": "42",
+          "range": "130"
+        },
+        {
+          "hs": "h8",
+          "mpCon": "39",
+          "range": "130"
+        },
+        {
+          "hs": "h9",
+          "mpCon": "36",
+          "range": "130"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADrklEQVR4nL1X4dGjIBAlM2nAFvxKwBJMCaQELSGWoCVoCbEELSGUcLZACbl9wCqoJN/9uZ1JJLjse7zdNXgVsb3F/7ELD0IC7+n157+g34qfN5NgAha8lPnXxYseP97Ppfoao32+RHMvLInrN/DbMO9mso/BezF+JfJQUghP4ppyKjzwU5poHoGLgNSrKs/X/YIILEkAgXUgNwdCCp7yCMhE+Ip5kEcM+YFEkoDWgxAmE/fFS65513EKQsBQDYwx1+fGxpKy+j0BLKh1HgGkrDjUSGyy9CnT82msAwELPufi9dici+4ziCX6OCFqXLxXVdkY+Oz9EikwIiy96fFZBY8V2a0bCUy5VHqPiX4Xfv6UAJyNEdYBjg78e1/vgWEMgtwjVipOsgj70qyL/9V45/W8FSwTQ9xTArz7siTQhmRqfdXSXH+SgtrXxat1O8Ma9rNjJSKpuRPmefBpkTEBj+UXmzVQS5ULYo2tdjffVsrOs4+bc35sADtrP7iEjXwNb7hNhQW4jR8E0A0OrBm2tDwqta6HwceLEhVmahzXAN2pSMYG7dILm4aidlWM+eqkj5niwCnpSWak89AX4nQuIoCUdT4QgBEMpSBlKW51+lnQqm3X8+zUMctZ634hAHu2UiyLpn/Hiq4LrRnpIeYA8ry3PnciqUgNaWr7+3Y7kpsmupfFrWfMLwiwTABfljoKjqDNqOyOQYzvvd/bQUrrxV6L4of8Eack4nkUO0nAhAQ0gd+pFuisIP1Z4XK52KB7YAZlYDb4TU+o1K8Ekl0AyVE8izYix+7u8xrw5Y9qAASJPXAIWpU5/QE5iLrRbjNmxh+rMIidOSy96KMCe5umUsyDWQFABOAA3oOGpmezknA75+/jaSoisKogFEnnJMTxCZ+yyiJQWPvIRZZlFnBv4ZzJSKklX3efJJAyVO/YuYBQBWlieYdhsYH3BmJQBqnEZpbs/Mx5IACGI6tAtYP+Z4mVzFxhEYme2hUkZH5+SI1ajobAL09ORacKKE8iGXBny8mtPS+ZnZ8pkimwJOjKKmD3bv53KjAp1AnWTz21Y9mvz4SvBJj14o/XpcrFPG79jjpYyapMjONRBsyvlhDwIwHLllhPLT2Umu2JyDsPVcBOYUxEkwS6S6ctJHDBu1rq7ciSUERC1OsckwlVaLolWje1cc5ztcnfjRpvRRheWAFLAu9sKVOq34J7MkxkD8aAoY3aHpEdWQ+OrzAFF//CeGqNSFuYnm3Bj/hg6+v5X2vEG0Svt4DYAAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC4UlEQVR4nL2X71HyQBCHkxkb0BKgBC1BSoASoAQtQUuQEqAELAFK0BKgBF6fjA/v5nJ3gS/uDJOQ3O4+99v7l7umb+fmb6z1JgKc9/v9n2R/eno6CyFAl/zx8XHU+XQ6Vd/f39+PxthsNs1isegg7saSb7fb5hYjDhA1kPl8foG4KzUy8fPzc3e155PJpAdFsJrfmCJFAAJ/f393P0yFAIlQJhTEK8+BBYDrzQAkJoEAXnOgJoxqcC8EviWILAAOn5+f3f1yuWxqtl6vi+/oAMrZJhdrAGDy2LiWRCuBEo93xOCXtiuW4JrgNTNZLJ0gMV4PwLrT4P39vXv28vJyU+LUj9rzzP/pOlKdBTrfaiSjM3G6GiedthcAe8+gicRYrgSOC9vhYzvuSRRjOBMOh0OvLD0FAHh9fb0E4j4miD0kAXOcNj7Dn2dcS9PPNlkAp17qoAr2OsIIa7uoxDU2GAMment76372kOe1wMLhU1q0RgFYYu3darVqPj4+uqTIyH9NmTWSxlHO+2shBgqQ1NpxNRlJoswktJYPDw+DwMfjcXTrzgLoZPIYnKCUBJiY+Hz+f5BilPuO9nEg5oCy64CjmCDxrNC2bRc0TWxSjFIBTjkjRDr6BwBSEszkBHEsmBCINHEcH/g6WJlVJLZDxvZ+oEAqEacW6m2vkJ7kODs7IryW23RKOXoASO1K9fX11anAYEMJrj9HqJ6zy3Vut4zP7DGdSI9+xb0gkgKkzKhCMKcrSuRqyzMAp9NpUzttDwBUAQAcf47QvQ0EFYBAkViGWgcEyh18swoIUQs49i5VpXQ4LZZAiN1u18xms8tBFFOFuFSXoJhBqEgcLB2w1RNRXHKRPG5CKmStcwPxmk2pCiCtKmj8B8axEHdAQQCM60MNoOVbrfR1FCFUQxhVYMFJt3LgYt1dgDBOSr9TulWBDgKnkkU42wmS80s7A6zAJlcBrf39YLzZ0gXqCrt8nv8D/WUrw408vm4AAAAASUVORK5CYII=",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAD1ElEQVR4nL1X7bWjIBAdz0kDpgQtwZRgSjAlmBK0BC0hKUFLiCVoCaGEUAI7A4yCou6vd8/uk/Ax984FFC7gQ8HfIOKCK0B9xu+fsN9vqWIRLECT51lyOljK9rA9jqvTGE03Qv24aRGXM/JoWNccE/yy9lRIVWQAVsRlrxMTc0AQ5hFnlSdK5etx1X8LIewKoMDaboeYQHW/bEvIQvhJ9b+4BZm0hyJ2BTD5VdjBglv8YKqwhP1SZiFRjyLgWERQAJFfObMCDkHER9BT1vtiDwUIJE+H0usc9RLOoIo4UCsxmTe2VTqGccnvF54Cqf/N+AWDb4Z4uL4lqDLGhNAF2+GHvyNbHxQgBM4XdlS2I+FbnpO7SO04Jklw7ikWxQn5uLsIv/kbkoQG8+qLTRrek+HWE3mik0mHYh7Lwiiuu5BnAZx9RoumFaCqao79qZI5ED/vrRGmdFusx3A/Kn8LI8SNTwlNkykD5FsHpB08Fr1WSeUOg5Cwx+wE6LquXMi4TjoeazIkypJqju16tXGAGu79ap/IZfs3SFBbske7iGls1lxDfcbSJLAHdy1c1k1VlcGtzUE1aGGTQFRPuoXqq2r7veBgbWv6qSbDzPUGDPSV+w4QumLA7EyZiCnYWA4QJzmkVkgIqrlB0yy/6bsmxPatI5fXaVgAYWxQpZggx7kTQkAW1zpNVdFLypwX0lZCieJe9lwRRbCB+qUwyEWVdP7uCpCOSiJP4hSiqx80qkedsSa2bUotB6lhErYtxf61diJJktmBtQRvEZqn1HPE5O5ZIcJU1e+2IWZSAp525jL1I9FCfOfYax9mAWT5gNsG3YcCbWcSCshHNSLUIlbELmmD2zu3G+B2B7uTevwiIv0UY2KGa5omX8DaCUMI0D8XAhJC5ES8JnUxtIsIjmnsz2ANTwApA3ShxcWjxlovrq40/4sXTUHqDe5e9MIxhGvMdeRAhtlOGS5oy7EnYA+4HqG9mzK5Mg3WXkT9BG3rGlRHzkS4XtXY47Fkm31QACmU7MIHXbgvFpeZ2XIkYvwYEfnOQVq4cymNU+vsgwIIBXbs6YPhBBESdhFqW7uSQfhotTsFWgQ+VYcuPEz2hP91gUXROiEXVYfbEb7zO+FUwKK6NsT4UnvXS9vkHM1LdPYdWIjl+R3lWACpJdXqleosGJy56wJlSmAhAy7c4ekE25lCEhDRXW3vdqRF5EYEg8W4Ljye/jj18n9TDLa/7Se6FelQ7IAWQXe2PRT5cnFVTeoJUc22v8j9i24/oQX27cfk9MedgsheGIOoYR9RqLFO4QDz9/Mf9Hn1gToloKIAAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 12101004,
+      "soundPath": "Skill.img/12101004",
+      "description": {
+        "id": 12101004,
+        "desc": "많은 양의 HP와 MP를 소비하여 마법 공격 속도를 향상시킨다.",
+        "name": "매직 부스터",
+        "bookName": "",
+        "detail": "HP #hpCon, MP #mpCon 소비하여 #time초간 마법 공격 속도 #x단계 향상"
+      },
+      "levelProperties": [
+        {
+          "hpCon": "58",
+          "hs": "h1",
+          "mpCon": "53",
+          "time": "10",
+          "x": "-1"
+        },
+        {
+          "hpCon": "40",
+          "hs": "h10",
+          "mpCon": "35",
+          "time": "100",
+          "x": "-1"
+        },
+        {
+          "hpCon": "39",
+          "hs": "h11",
+          "mpCon": "34",
+          "time": "110",
+          "x": "-2"
+        },
+        {
+          "hpCon": "38",
+          "hs": "h12",
+          "mpCon": "33",
+          "time": "120",
+          "x": "-2"
+        },
+        {
+          "hpCon": "37",
+          "hs": "h13",
+          "mpCon": "32",
+          "time": "130",
+          "x": "-2"
+        },
+        {
+          "hpCon": "36",
+          "hs": "h14",
+          "mpCon": "31",
+          "time": "140",
+          "x": "-2"
+        },
+        {
+          "hpCon": "35",
+          "hs": "h15",
+          "mpCon": "30",
+          "time": "150",
+          "x": "-2"
+        },
+        {
+          "hpCon": "34",
+          "hs": "h16",
+          "mpCon": "29",
+          "time": "160",
+          "x": "-2"
+        },
+        {
+          "hpCon": "33",
+          "hs": "h17",
+          "mpCon": "28",
+          "time": "170",
+          "x": "-2"
+        },
+        {
+          "hpCon": "32",
+          "hs": "h18",
+          "mpCon": "27",
+          "time": "180",
+          "x": "-2"
+        },
+        {
+          "hpCon": "31",
+          "hs": "h19",
+          "mpCon": "26",
+          "time": "190",
+          "x": "-2"
+        },
+        {
+          "hpCon": "56",
+          "hs": "h2",
+          "mpCon": "51",
+          "time": "20",
+          "x": "-1"
+        },
+        {
+          "hpCon": "30",
+          "hs": "h20",
+          "mpCon": "25",
+          "time": "200",
+          "x": "-2"
+        },
+        {
+          "hpCon": "54",
+          "hs": "h3",
+          "mpCon": "49",
+          "time": "30",
+          "x": "-1"
+        },
+        {
+          "hpCon": "52",
+          "hs": "h4",
+          "mpCon": "47",
+          "time": "40",
+          "x": "-1"
+        },
+        {
+          "hpCon": "50",
+          "hs": "h5",
+          "mpCon": "45",
+          "time": "50",
+          "x": "-1"
+        },
+        {
+          "hpCon": "48",
+          "hs": "h6",
+          "mpCon": "43",
+          "time": "60",
+          "x": "-1"
+        },
+        {
+          "hpCon": "46",
+          "hs": "h7",
+          "mpCon": "41",
+          "time": "70",
+          "x": "-1"
+        },
+        {
+          "hpCon": "44",
+          "hs": "h8",
+          "mpCon": "39",
+          "time": "80",
+          "x": "-1"
+        },
+        {
+          "hpCon": "42",
+          "hs": "h9",
+          "mpCon": "37",
+          "time": "90",
+          "x": "-1"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADVUlEQVR4nL2XjZGjMAyFtTNpwC04JWRLgBJICVBCUkK2BFJCUgKUsJQQWnAJe3rGMgZsk7uZW+1k+TPW5ydZxgda2g/9jn3ISQjw8/392rQ8nTT1fWnP1UhkRuOfKa3IaKKi6Oy1tMP1MIxJ75+fxx+BEADrHM5ihg7ROZwp/rMQAx/5D9cLQD2Dp6x9PKg5ny3EYc95EoJmCGIlxPk0+oH7OyX7qquKyEE4BYx9KWfSoQ8DOxfz9/R0L+wrBwLzOdCfz3mA15Qf3vmFL76CBobv9YZ6KqmuO7rf729BeICCJQGE1irZ2I5UnPdIRmUdT4mpLJhykawgM9vz+cxCOAA15UACouq+p0RzjqZ8+JxVCNoDBm3DXJCQxCAWdcA2cBBFUURHX3Sdk8yBsOQ+FBZoViHsFyGp63oDsS5EGzu17TR6VhLO+7K0R5n7izz4B1sAQCqMvqqraGNxviSck9KqxNfGhWQc52IERWMq7CqwsEvkHoeCXLQQf1THE6sjybdnHiA1+vHrSsWFE2rkIgS5l6nhCxTMlmaXhFW1hYAK1+uVbrfbFsDbKoM0S4YO05NzXgtgCBMK2xo0ZW+FwMYWg7nk2wH0rhTVAyVVyAKs5/969OFIYzYMBdn86nsLDTPGZN/ZVUBGr1zcYh0qHjVySGvtMz9ctv8KQOn4qihSigMcAYOSi2eAQJLhPLf8hFMzCpB7UX6igjiXTqGCLbs8CKVzafsmgOFYnnhlG7DCPQ3d2Zl2CqGYiPMwLBaG2+A9TLm3AWx1urU0crXSVbwShvL3DOdBHQDudxwGFX/dAj94rbELlOtrNwShCrenIqzyiHUIsDa0b5rG5sWebVbDgaeeVYGPHgLLahCKxiWdmMwCjB5rBZzb94LQAFhGnwTImUAQc7Vc7cqVAuK85Gda578vswCiAhyqFa1xHxZw1JXl4lm4Sq6nGgxQZ15r1ipEFbAQOEFxiSUkS7tZltmOx2N29AsI1y4ZAoEYXQHagKwrotp+A6RMILIAIQSFIEFyru31mndWe5/5YvufZC5eHsR9bvtZgCP/5Nq4495+4O4GdGgfHfZqtLc78h3udPxOAYbzZtqHfByac2k3idgwti4u/9vEOf6FIfhwG8bfML89/wPhbuZz0KixegAAAABJRU5ErkJggg==",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAChElEQVR4nL2XjY3CMAyFW4kFWAFGgBFgBBiBFWAEGAFGgBFgBBgBVmAEjq+6V7mp88NJx5O4pqljP/8kvgyqLl7VF3A+n6v5fF4ztgRe9/u9Jzwajarb7daMH49H87Pf+E0mk+ZdcrxbuRDj8bgdi0BjHGUeUIhyfZfy0AjvkonpAr8RINr1IGe8hARzesr7lL7ZbNaSaFOQCpn1KEyDnZOMUmHXxdAS2O12ScH9ft8hiheXy6Ujo/fFYlGdTqciEi2B9XrdkBgOh1HhmHEbEcakARlLKkaiJYBAjMR2u23CKkMYQLEXBWSQVS2odmIkOueAJSEPQi/5riho+4mECMmwwPhwOFSr1apHIjyIeiCf8l7keIbG/4oOAYxgAKMeZNwD3itK4VbVdy8K2QiERlJz9iwojUznHPC8V7HxnbHNLQiLTEXoFShzm82mKeoeASHcAdZADCLFEyc8ojEUpUAnnZcCCxWrGpgXhSSBnPc5r7T/n89nuxUZFxPwIO9VG55CiNumpHUlyNaAwNkOCWsAMsyxvVhHyJFLnf0hseJtqEjIMFDTkVJSoJad64JFBBR6dTbrHfmVcZsWCLCGX67DdgigmFNKhRQjpKetbhFgLXs85j2Ej8djp1aKilBR0IGU217Ic+CkWrvQ64byxO55FZtNhVXOGEJ4T6/AuNYJfJf3UQIpiIQgI4KML5fL4gJ0CdhOFiqSR15HtHPeGYAuyIVRcCOgIgn/sYgZFKbTadJ7j8QgJazOBkqbS8kJKBJJApYEKCFyvV4/IpIlIBJWoYiEuyC2LgZtYwjU77ta9nb0SWXngPH3rYhhrQg0JLgufQMyzh+bgvr3wvjvINq6If8AL/X9U95Sw6EAAAAASUVORK5CYII=",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADTklEQVR4nL2X67GzIBCGceY0wCnBlJCUgCWYErSEpARTgikhlhBLMCXEEkIJfrsLi6iIfudHdsbEC/I+ewHkR0xtEN+xhE98gKHr3ouWx2M6tm8lHHp8qOBa4TVzc7+DeL36VfXT6TBwYwYgcSMWMtuexAyEvuGZvVYeoNIeeNjqx1OU54w6/dkWD0OguINQvjh6/4L+jqs9FTm8YCFsBDS9FDPXYTtGwBmnRplLv68YCJqrAX06RRuKweaZww+XOvGeo+YVjioRRTGI+/2+C8IByK4jiFRGIMBTfdMkTmIsLEzeCYwKU4g8z+le0zRRCAsgqQZeANEHINKPzX/Ld8w1R2HSnFIBz+RYC5ySEMRkHqDGFkKpWVE6720qKgMih8SlwgHZKPj9YkqKolhAzCeipT3f5K3OBInrJLEQBmRSB3+wCQCGCutAFSrYeBQfTV6EK0qMkrxoNxf0/TgZKaWCUdiOgC8WmqghFbKy55R/rIiPK74tcwCr3pcQ+xpy/fyFCOgAhJtVjbgtwjwfFhAYhev1KqqqcveWEZCz4qtqKxAbn5YK2HWWmJaV2GX7UoAjINPhFEwsESWM//rWQFrCUYgCLCahhfdxgtutElRfKNqaoai1jr6zHQHrfQ/zA/bdBzpMpaQakmkqNFe+tzb8H8DKlMmhfFkBFELvcMq9wjMJEFhkt42Q+0MzDBB5EcVZGA3FEYw7xSi4lVDFinYvQAMrWv6hIVhnjSjhVpqaUZJCpFjcz7PzUH1oyO0GoHXg2cEqd4YvhkuwMXdO/61bmRwA3v/Av3yGvUfgx+NhtPp2CrBqXhSe2UuUEAHMdesBLAy8L8uS6mLLlqthBYQYhUs9PkAxNabiBBB+59KOAvIe1goUR/NTg8Ds/SpA1BgCpoIOFqXf2WMWz7LM1ckeWwC4KGDoVb6EsEKfZLoO+6vkfKihIdT5fF5EIRgBghCFgQgVJAjMl2W0w+EQ9X4CYafd1RQ4iLv9/J2DzL20wiHv58YQUQAfgs4ZpKpX27/f485q6zOfbbMIOV8O5GoqnD2m5RtHhD20HR1b+4F7M84DCe7VtnZHrsPjegSIR2wbisOuCE8TjgBB4J7tG8bi+OOnILEbxm+YG8P/ACZiuOHrNLsvAAAAAElFTkSuQmCC",
+      "weapons": [],
+      "id": 12101005,
+      "soundPath": "Skill.img/12101005",
+      "description": {
+        "id": 12101005,
+        "desc": "일정 시간 동안 시전하는 공격의 속성을 무속성으로 변환한다.",
+        "name": "엘리멘탈 리셋",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 #time초간 공격 속성을 무속성으로 변환"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "mpCon": "12",
+          "time": "110",
+          "x": "5"
+        },
+        {
+          "hs": "h10",
+          "mpCon": "30",
+          "time": "200",
+          "x": "50"
+        },
+        {
+          "hs": "h11",
+          "mpCon": "32",
+          "time": "210",
+          "x": "55"
+        },
+        {
+          "hs": "h12",
+          "mpCon": "34",
+          "time": "220",
+          "x": "60"
+        },
+        {
+          "hs": "h13",
+          "mpCon": "36",
+          "time": "230",
+          "x": "65"
+        },
+        {
+          "hs": "h14",
+          "mpCon": "38",
+          "time": "240",
+          "x": "70"
+        },
+        {
+          "hs": "h15",
+          "mpCon": "40",
+          "time": "250",
+          "x": "75"
+        },
+        {
+          "hs": "h16",
+          "mpCon": "42",
+          "time": "260",
+          "x": "80"
+        },
+        {
+          "hs": "h17",
+          "mpCon": "44",
+          "time": "270",
+          "x": "85"
+        },
+        {
+          "hs": "h18",
+          "mpCon": "46",
+          "time": "280",
+          "x": "90"
+        },
+        {
+          "hs": "h19",
+          "mpCon": "48",
+          "time": "290",
+          "x": "95"
+        },
+        {
+          "hs": "h2",
+          "mpCon": "14",
+          "time": "120",
+          "x": "10"
+        },
+        {
+          "hs": "h20",
+          "mpCon": "50",
+          "time": "300",
+          "x": "100"
+        },
+        {
+          "hs": "h3",
+          "mpCon": "16",
+          "time": "130",
+          "x": "15"
+        },
+        {
+          "hs": "h4",
+          "mpCon": "18",
+          "time": "140",
+          "x": "20"
+        },
+        {
+          "hs": "h5",
+          "mpCon": "20",
+          "time": "150",
+          "x": "25"
+        },
+        {
+          "hs": "h6",
+          "mpCon": "22",
+          "time": "160",
+          "x": "30"
+        },
+        {
+          "hs": "h7",
+          "mpCon": "24",
+          "time": "170",
+          "x": "35"
+        },
+        {
+          "hs": "h8",
+          "mpCon": "26",
+          "time": "180",
+          "x": "40"
+        },
+        {
+          "hs": "h9",
+          "mpCon": "28",
+          "time": "190",
+          "x": "45"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADZklEQVR4nL1X7ZWCMBBc37MBroRYApaAJUgJWgKWgCVgCVIClEBKMCUcJdztJCwkfIl/3Pe8QySZ2ZndJOwpjD/6Tuzkwifw1zSvr6Afj4c/ISEELHgcq68QKJ5PuqapJbEPwFtjHzC65Et33RrtRrWfgcSXfPgSRWTqh7tUii7njKgjsZ8bHKmEP9QPmoSJqO4ISiQ8Mal2Ck4r81BYAx7hyE3ETOt7GmbfgeevsF5uhwMl5EggSwk73iYVvycA6W32HQGbWfak+pZOwI/HYzBRw/dAIiuqARzjIlqNiQIiF7K3PoBE0fRZCvizKKjlmjHGfXCv8VSpr0faEvulH0R6AUf44FrXjnBXC8qrCWuH1ATs81SAwm8J9JUPIqdTIPscuNa6/56maW+H1AQCirbttJUWFZDC88GLPJsFV6a1rVY+7qQ428Phh16vX2dZ9erbey6WCViUiPwWEL+FoGalzlZi7vMk7pWQ8DsFlkonxJdiGwE/+zMD+ASkU1TiCrXswCGz4t98FZIkWuyGdQVWAkBZPHhMmnqP2w9Wzc0EjJnxkcHb0fbRfrhkrxJAK0HCprMh5gqLtKGYJXbSD2jZJaLb/UP0dwSsvF3iT948bkwC3mv4zPfuZduDt+xxflF0vRum1Q7+q5DoJgJYfm3wSijLhuKJ8qah29Uty6Y2trDgOzIH+GISKxEQUPGZPV0ecDrBBmVBddd+CPiOzItzbAmXtD02FaHsAb6ShuthvLJZVTiqqqGtsb4O3I6L9o3BxSo91+8rO+IsAV3eg/1AuuH1+0uHnx+quBau6SloOXTGA+XH905crHgWqo13Rf+sMCHgH8WC4LrAxiIk7LO8/vvnBgTAoQyeEduwm0LJTQeSkGnsVJDtgElgY+nrYXHgQAo7aVJVfVdB2bcEINFEBZ4zyV1hBXbwf4HD2gCeL9mKu/MAshcCKrnw3PU2BXwV7AS8pbqj2XxFJXlO+fkcHkZmAq3+loCvgrCXw2VQD5ytqJAwOMYE4B1XSG9Pyh8dSKiTzFXWNGM1kLAgdW2X53HmUnw4a46zXyUAcAld3oaMuoLEYUVIIDI+qgXuzDiFLpuzYId3Nft2lGSzZKQAZ38bfy/er4KPssRbES53ooAlgXe2b4SA449vwa57YfxG9K/n/90B7sOUBrJ5AAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACgUlEQVR4nL2XgZEBQRBFV9UmIAVCIARCIARCkAIhEAIhEAIhkIIQnLd1f6u39cwudedXOXtrZ/7v3z09s2XRxKP4Dnq6sAIe1+v1K+zD4fAhERJQkQ8Gg68IOB6PxXQ6rUSUlvx+v1cPXC6X+vp2u31EMpvN6ut+v1+cTqf6ejKZ1CLKaPBoNKq+NSgCIqMxnrxtnrLIAKW73S4k3+/3jXvz+bwWQZSCxqfS2xDAxDYSsFgsGiJE/rSv8RyWImK73b6Q5/DigOwiekWyWq2qbwhEDhF1Qo3w4R4ihM1mU3RBMgVSL3JgyVUDUZHadHj4+6EAOymRWNsjcv2PI5ArHZYMRyNki1CTi3y9XofkpIoPrvH9bDQFS1sp05L+SICF8m3Fqboh9kvTrhTE6Vm7TLMCbPRYaAWoQDWpipdouWddSNVDq4AcIPJ5ldU5yz8W0LUlv0PeKgDrVNWkwebbdzbcOBwOxbvo7ADLb7lcNjYt27QAxUWx8XuX/CcF0H6B7ekQU5CIAEoJZETuN6CuaAhoUzsej6tnILW55prIEc7vud0vKyAFNRQLLwLIlfP5/DcCchuKJ5d7iOA3m763BWChXXZaDRQWDYZVQS1YEeqE3GPF8Cyu+SC8sJfzQGodWxGK1E+mtNh9gN0UEZ0OJBYM8M2HCaN6SAFiBGhVRcX5IoCoIhd0LvDpkAs+etUEIiSAfuE3rGwRygUm0FJLgT5As2prPp0OJNYFqbfkkQtEx5iIHOsRGDnbeioG0UBflDqYeNjtOhKXFGC32tQmIxGA01IbolM3Anq8qxFJ6txmD6Zt6PIsbvwe63tyoBJhj9X/CZHzx6ag9/vC+A3Ur+c/ICLTjmta/3MAAAAASUVORK5CYII=",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADZElEQVR4nL1XgbGqMBA8Zl4DWEIsAUqAEqAELEFL0BKwBCgBSoASTAlSgj+b5CBBQJw/4834HgTI7u3eJfBHfrzoNxHwgUvg1XWPn6DH8fHFJJiABo8i8RMCZdXQKU81iT8PfOjNHf2NSNpjKe3YlyjXajoOQ6L2ZI5FREWmrlkSf4sPi0L9aHpoFkOrLs3GEuAkC+C0Pg9imUBorQDTW+xlz+DZy6/XOggoaS0Jfl4lrp/XSS3b6xOA9MgeknGcO6I8fgNP46P3aKPGQCK7dtMgnotoM94VYLmQfRjx7OYSACx4WVa6ZqSqEdlLPda4qqQB7Ym/1SssfTNN6oLLvtZjAEdE9j9C20HWDszhqgCFPxKQ02SDmsyVfQm8Vx0D04a+p/yUj3aMNaHZQ7HhCwVs4Xng1/MieNKa4/p+I6GYxIcDdVwTUFCu9/A6ATJF5wb7PXJUE58teFtk+twNr1NgKXdCMa24mwTc7LMo0uDS2iOE6RRRiJGMJj2Ya1qF59OoABtWumGTwFZIOVAJ7Mz6egtHi4cFr9diNwHpFOYYAE8mAt+CfyQA5SBhY22I1AIVtb1Wk6XnKEtJef79ZrZJQLeQLUTsYPejWf3gNqBOyFr9AI6B6jpQejJ1wP4ntB3LBM52OVUrYWaHhKrgc9fR5ZLr8+iuQBOhwZA5wFeT2E0gOiukdQ/TNFXbdqh9dhsO58i8SUIqVK3c3L3kQ+wqwtruAQOBnJm8tdm7Ie+mUJum+V8CemElugSrLyJz8EKagVq92CiRyNNgY0dcJlCn3n7A3fBQKhwPqitQC3nutRwwLpEwdsQxPZ4vsxLOd0Xhs3l/H1hYt1FI2FiYhL5VERQzrwEu1Q/gbJveTaHkrhcSj6kwKoBwb0hgYxknXguHFHbSEPfqrgqNsh8JQKK5CiBxNaCeHccDcV54AqY9Hk//fQDZc1snJSp1pwKajFUBE4DUKV69NawqemSZDz5ddZI57yDgqsDs7wZ8Xg+sQqLA8ULigXO9Qfqi0Y01j20FIBkqfWGDca1AyLo2dsxXPi6+9vKW/TYBgHPUZvl1CxIvK0wCkSkLyC30pd5Hly1YEOBbTX8dJRUtxvW96tnVbH6h+fx9e69bfBXhMGAFNAnseL8IBscf14LAfjD+Isbl8R8fDbMGb//rAgAAAABJRU5ErkJggg==",
+      "weapons": [],
+      "id": 12101006,
+      "soundPath": "Skill.img/12101006",
+      "description": {
+        "id": 12101006,
+        "desc": "자신의 주위의 적에게 화염 데미지를 준다. 최대 6마리까지 공격이 가능하다.",
+        "name": "파이어 필라",
+        "bookName": "",
+        "detail": "MP #mpCon 소비, 기본 공격력 #mad, 최대 #mobCount마리 공격"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "lt": "Point [ X=-150, Y=-100 ]",
+          "mad": "42",
+          "mastery": "1",
+          "mobCount": "6",
+          "mpCon": "10",
+          "rb": "Point [ X=150, Y=40 ]"
+        },
+        {
+          "hs": "h10",
+          "lt": "Point [ X=-150, Y=-100 ]",
+          "mad": "60",
+          "mastery": "5",
+          "mobCount": "6",
+          "mpCon": "20",
+          "rb": "Point [ X=150, Y=40 ]"
+        },
+        {
+          "hs": "h11",
+          "lt": "Point [ X=-200, Y=-110 ]",
+          "mad": "62",
+          "mastery": "6",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=200, Y=40 ]"
+        },
+        {
+          "hs": "h12",
+          "lt": "Point [ X=-200, Y=-110 ]",
+          "mad": "64",
+          "mastery": "6",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=200, Y=40 ]"
+        },
+        {
+          "hs": "h13",
+          "lt": "Point [ X=-200, Y=-110 ]",
+          "mad": "66",
+          "mastery": "7",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=200, Y=40 ]"
+        },
+        {
+          "hs": "h14",
+          "lt": "Point [ X=-200, Y=-110 ]",
+          "mad": "68",
+          "mastery": "7",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=200, Y=40 ]"
+        },
+        {
+          "hs": "h15",
+          "lt": "Point [ X=-200, Y=-110 ]",
+          "mad": "70",
+          "mastery": "8",
+          "mobCount": "6",
+          "mpCon": "30",
+          "rb": "Point [ X=200, Y=40 ]"
+        },
+        {
+          "hs": "h16",
+          "lt": "Point [ X=-200, Y=-110 ]",
+          "mad": "72",
+          "mastery": "8",
+          "mobCount": "6",
+          "mpCon": "40",
+          "rb": "Point [ X=200, Y=40 ]"
+        },
+        {
+          "hs": "h17",
+          "lt": "Point [ X=-200, Y=-110 ]",
+          "mad": "74",
+          "mastery": "9",
+          "mobCount": "6",
+          "mpCon": "40",
+          "rb": "Point [ X=200, Y=40 ]"
+        },
+        {
+          "hs": "h18",
+          "lt": "Point [ X=-200, Y=-110 ]",
+          "mad": "76",
+          "mastery": "9",
+          "mobCount": "6",
+          "mpCon": "40",
+          "rb": "Point [ X=200, Y=40 ]"
+        },
+        {
+          "hs": "h19",
+          "lt": "Point [ X=-200, Y=-110 ]",
+          "mad": "78",
+          "mastery": "10",
+          "mobCount": "6",
+          "mpCon": "40",
+          "rb": "Point [ X=200, Y=40 ]"
+        },
+        {
+          "hs": "h2",
+          "lt": "Point [ X=-150, Y=-100 ]",
+          "mad": "44",
+          "mastery": "1",
+          "mobCount": "6",
+          "mpCon": "10",
+          "rb": "Point [ X=150, Y=40 ]"
+        },
+        {
+          "hs": "h20",
+          "lt": "Point [ X=-200, Y=-110 ]",
+          "mad": "80",
+          "mastery": "10",
+          "mobCount": "6",
+          "mpCon": "40",
+          "rb": "Point [ X=200, Y=40 ]"
+        },
+        {
+          "hs": "h3",
+          "lt": "Point [ X=-150, Y=-100 ]",
+          "mad": "46",
+          "mastery": "2",
+          "mobCount": "6",
+          "mpCon": "10",
+          "rb": "Point [ X=150, Y=40 ]"
+        },
+        {
+          "hs": "h4",
+          "lt": "Point [ X=-150, Y=-100 ]",
+          "mad": "48",
+          "mastery": "2",
+          "mobCount": "6",
+          "mpCon": "10",
+          "rb": "Point [ X=150, Y=40 ]"
+        },
+        {
+          "hs": "h5",
+          "lt": "Point [ X=-150, Y=-100 ]",
+          "mad": "50",
+          "mastery": "3",
+          "mobCount": "6",
+          "mpCon": "10",
+          "rb": "Point [ X=150, Y=40 ]"
+        },
+        {
+          "hs": "h6",
+          "lt": "Point [ X=-150, Y=-100 ]",
+          "mad": "52",
+          "mastery": "3",
+          "mobCount": "6",
+          "mpCon": "20",
+          "rb": "Point [ X=150, Y=40 ]"
+        },
+        {
+          "hs": "h7",
+          "lt": "Point [ X=-150, Y=-100 ]",
+          "mad": "54",
+          "mastery": "4",
+          "mobCount": "6",
+          "mpCon": "20",
+          "rb": "Point [ X=150, Y=40 ]"
+        },
+        {
+          "hs": "h8",
+          "lt": "Point [ X=-150, Y=-100 ]",
+          "mad": "56",
+          "mastery": "4",
+          "mobCount": "6",
+          "mpCon": "20",
+          "rb": "Point [ X=150, Y=40 ]"
+        },
+        {
+          "hs": "h9",
+          "lt": "Point [ X=-150, Y=-100 ]",
+          "mad": "58",
+          "mastery": "5",
+          "mobCount": "6",
+          "mpCon": "20",
+          "rb": "Point [ X=150, Y=40 ]"
+        }
+      ]
+    }
+  ],
+  "id": 1210,
+  "description": {
+    "id": 1210,
+    "desc": "",
+    "name": "",
+    "shortDesc": "",
+    "bookName": "플레임위자드 가이드"
+  }
+}

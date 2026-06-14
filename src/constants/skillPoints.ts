@@ -5,6 +5,10 @@ export const DEFAULT_JOB_LEVEL = 10;
 // 마법사 계열 직업 ID 목록
 export const MAGE_JOB_IDS = [200, 210, 211, 212, 220, 221, 222, 230, 231, 232];
 
+// 시그너스 직업 ID 판별 (4차 전직 없음 → 1~3차, 120 추가 보너스 SP 없음)
+// 플레임위자드(1200대)도 마법사가 아닌 일반 취급이라 jobLevel은 10으로 적용됨(MAGE_JOB_IDS 미포함)
+export const isCygnusJobId = (id: number): boolean => id >= 1100 && id <= 1599;
+
 // 차수별 전직 레벨 (Branch advancement levels)
 export const BRANCH_2ND_LEVEL = 30;
 export const BRANCH_3RD_LEVEL = 70;

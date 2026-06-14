@@ -1,0 +1,620 @@
+{
+  "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB2UlEQVR4nO1W0XHDIAxV7rIAHYEVWIGM0FnqFbyCV2CEMkIYoYxQRnAlbEA4JLZbp9ePvotjDIKnJ0BwhoIRnoMT/SWi8Xp9B+8tGGtASAVaymzpvAc1f1ss87aWDUGI6X259CTgRETjx+cV+qGDgMb4A/AOgnS5UwhY5V0uG1/auI1zdb3WhTgqMqaDrUiebsFgMrE+wwqUUuDRXTkzkNcCQyQXjGRTfTsMDauKRFq9wWB7OBoiOhMK0Rq496QwIamQG+L5kChNsGCrKQ1KJLR4RGMF7ibag6UDTSLaP61GAqkKrrTdWGE/t7Bv4TBFa4hEtrEBvwuKYEvVqqJ7Hffi0NA9cujHRDT4lrT0u4vhn+jPESk8+Jz1NZHWr5hNqHLavBKTpRDTucPPGp7TOEo9S1fMJhIpvCMMg6k6TqTt/LcFlNTD8uBLJFrrh3sisJ5UCt7Fi0zw9f0iva0pjrLQ6Xiokbo1komIBtFT1kf3fSMtWDPcEiX4sEywInvs7+SY5AT9+3yk1LaZyFqLqhROalEUyJhSjNSxXGudBydFc7yJUGpuZXP4iOiES3Ckpdh15YLC52pv9m7Nc1IUyeA5uODj+By94KPgeNAEB04UAOC4o7YeF74Ar1DhY0jci0AAAAAASUVORK5CYII=",
+  "job": {
+    "id": 1200,
+    "name": "Blaze Wizard  (1st)"
+  },
+  "skills": [
+    {
+      "masterLevel": 10,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACVElEQVR4nL1Xi5WCMBAM79kAVwKUACVgCViClsCVICVoCVAClBBKgBIuJXBszs1tfoiAzr2nSHI7k93J78B0jOwzCPCBChgb3u/GEDIx/YXOtmMajygCBUjyLIl2Ie+6jqVpyjjnLEkSq/1acfZ9SqWIg0l+upSbyItzJsmr/oel8ZcUUd5b1V7dClbkk6iHCM0De5HnU/C6G+Q3ZgJFAAeIQBzYTqDkFC4RFIsEQHAKM5Aiv03kwv5/eO8T8VQABqeggbA9u3ImBPMC2lHEYgEYfBz15SEIAhVIkhfukVsiCluEV4CPHMD7fnJ4rAK15X+GsrPhgTxkl2PsFbXZhHQ0ZqkkhN1vVwEA8IMyqpjvB4Bp2A6dX4DLeIhuGLTfLmO9AksArT2YTRpuqnkSRYoc6y/JDT8kmb7+D0/MuagEQIBmhGf57clQefEb7mUB5gyALKgR9/bOuaYUlgAwCgSC1KvAjxJQYCaQ2LXMrhJARUiiKdUmOZLS/mvhLYE2tWawhXxWgAu0LGjCLen3CvCNHE0J0xGNSKfgLgJcixAduWtv8E1JH7ybEZI3TSN/34W+qNQnNxFsteGC4+Q5FEowcjhLED1cnxun2toTGMjzBQfayLFROAXU9R9VO9heMPcCgJi631v7vYksWngkE3i0MQRnOdcWIHiGd66+s3GfCcCzfOe4V2TJescnkX1H0ATgCviqq5cCCwAcWDFNABwU4Ny+ZV4vAWSYHkgCuKvh7YheGt6Fsu7gVgSPAWZAirhW7x05Asnhg5YgeFwYPwG1tP4CFD8+dRpZlCcAAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB9ElEQVR4nL2XDbHCMBCEk5kawAJIKBJAAkgAC5WABZAAEkACSAALSOh722Ez13BHk1L6zTxahrzbTe7yV7g2tRsHzxdpoL5er6Ooz+fzmiZooBEvy3IQgdvtBhFnxTwej269Xjcmilh8u91+Jb7ZbII4n4fDIfy+3+/darUKJlo1MJT4brdzl8ulecYmoAETpHADIcUlmglJkgEEl8SBLPEUE50GGFwiA3WJayaSDTB4XbeXB+99CJQi/smEacASB/f73c1msxCoqqqWiASza7lcmqa+LkLZmzhVVrtBDQDUQ1yoVjuAafh4PGwDWuER/iPRCiuHNwMy9yg2/CHn0+k0iDP/aBfXA9pJns9nngENCLAY8Q6sEfpfXl0OHw3EMwC9Y4/xjOmTijcDKBQEwtATpkDCkaCwtsz2MiBNAAx1LE5R2b4vZgpyp9bgBjRkWliE3wy/acDqOYsS05GFKKfgIAa0RUj2XNsbPi3BGuZmRPHz+dx8x9lOIjcdSepuyGOf1FBTwKqfTCYulcVi0dlGi6caOJ1OZpB4LyA4A/ZBNcD1O3aMoZYLEN5Th1/G7TTAXGm9zRG04poGuALmVnUu0FDPAzgo4Nz+6ysaRkIa8Lir8XYkLw2/AkX+2rY9R6AxgevSGFAcHzIF/nVhHIOwtP4B1oMyHideRgoAAAAASUVORK5CYII=",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACW0lEQVR4nL1Xi3WjMBCU3nMDpARSAirBLsEuwVcCLsGUkCvBlAAlQAmmhKgEHaN4hb4xBs6Tl4AtZWe0O/rtmAvF3gNOL7YA1XT3zRgyJsefLNp2EJ+KRJAATb4v8k3I+75nQgjWdR0riiJov946djkJLWLnk5/+VKvIy/Nek1+VYoJzLaL625r221fJyuMo6iHC8cBW5NldsWpg+ik+XRHggAjCjm0EQ96MmR2m7/FZiDATLwlAcBt+IEN+G8ll+P/4PiXiqQAKbsMOZMiv7sgDEddJxGwBFFwpd3ngfAqkycv4yAMRZSgiKSBFDjT379FcHyaQrPjUeHT7l+exZAfOUlhtQns0ulReJqQM+20qAIAfjFH9Uki3H4Bp2A59WkDMeIR2cBloxVuKQIBde5gNv6j5Ps8M+eFRf/Tz/bA/uvGGJ+acVQIQkhnxDiQzdEkb7mUB/gxAFjBiiMDTx5JSBAJgFARC6glUAhuUCSKOLbOLBNgiAKTaJydSu/9SJEvgTK1fsIb8VwEx2GUhE65Jf1JAauRkSkxHMqI9BTcREFuE7JHH9obUlEwhuRkRedM0+vOJuZmQiU1Fb8UFe4oba41g4oiWIM9/zoeld0a9pCKP5OVzv7J8CA+9UQF1Xf8Q9mXQ1kbWVjkqu8w5UBf1PAGS9lD/hFOo0XxTGfRiVKh431jcPBQfFUBn+Sx2rzguvzwVeWgURwCtgK+6ei5Ojyc42iEiAAcFnNvXzOs5QIbtAwnHXY1uR/al4X+hqnvcivDKKQNaBO5s7wCR449dAv64ML4DZir9A2kOObv1o8HyAAAAAElFTkSuQmCC",
+      "weapons": [],
+      "id": 12000000,
+      "soundPath": "Skill.img/12000000",
+      "description": {
+        "id": 12000000,
+        "desc": "Level UP 할 때, Max MP에 AP를 사용할 때 Max MP의 증가량을 향상시킨다.",
+        "name": "MP 증가량 향상",
+        "bookName": "",
+        "detail": "MaxMP LevelUP시 #x, AP 부여시 #y 추가 향상"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "x": "2",
+          "y": "1"
+        },
+        {
+          "hs": "h10",
+          "x": "20",
+          "y": "10"
+        },
+        {
+          "hs": "h2",
+          "x": "4",
+          "y": "2"
+        },
+        {
+          "hs": "h3",
+          "x": "6",
+          "y": "3"
+        },
+        {
+          "hs": "h4",
+          "x": "8",
+          "y": "4"
+        },
+        {
+          "hs": "h5",
+          "x": "10",
+          "y": "5"
+        },
+        {
+          "hs": "h6",
+          "x": "12",
+          "y": "6"
+        },
+        {
+          "hs": "h7",
+          "x": "14",
+          "y": "7"
+        },
+        {
+          "hs": "h8",
+          "x": "16",
+          "y": "8"
+        },
+        {
+          "hs": "h9",
+          "x": "18",
+          "y": "9"
+        }
+      ]
+    },
+    {
+      "masterLevel": 10,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACB0lEQVR4nL2XjZGCMBSEw4wNaAlaAikBS8AS7krQErQErwQtQUogJUAJWgLnRtZ7QPASRHZGBSZmv7yfaGaqqUpNo4gXEqC65MUk7mu9qghBAGuexMtJAPanXO022kLMQsyNMSqO47cBtul9jhpipgL1DoTru8EAO3NTexUOAXOXggGGQMDcfieejwMQIpr3aRDAKU3U5pzZKEB9kaA5x48GsFg89hFd3+d53oGQ5vNu5IcDZN9rVVV/G6YpS6VXqwaEr3kQACbVWjfMoXi5VHlRPCEgX/MgAF/RXGr9k9kOcNXKqADS3Gf1vQAhux1qgGqvHOLqOS8Vz29uAOa6Xdm4xrMoimzOpZB/iN3R1u546Tzb1j89DQCap8f0JQQNIRRluzDtXHVkMFZGxu4f94hkpQPgaaC1ckl2AiLhase2rtfHGNSELMasNF0ACWHpRRSkOVcn8w+xHWkqVw25OsFZhBgEWkaDnzRnz9vPVj3gHrWQiLyzCL3aEMYQ9+8+c1kPLgi5Mb3qqAYAzGmM1+XrUTysfl5zQgkh60Km5r92bgDAEBA0lpP4rGaIOimQ5hJmbONeAGmOdLgiMglAXzomAyDEp9UBONz3yG3if0CRvxGQq1u8AWg+FKL9zEcAiHBWw+loiHmoIXQ4G5yKcBkxAhYCZzYO+KRojjeZgqg+ME6h5x+HX+4AammoiMgmAAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB+UlEQVR4nL2XjW2DMBSEjZQFyAgwAoxAR6CrwAiwShmhjIBHgBHoCDRn5egDTGqThJMSAyK+z+/HkS9qqUmdo4AXEmD67vpT3D/SeCIEAYx5lkSnAFRfnSo/UwNx8THXWqskSZ4GKPLbHHeIi/LUMxC233oDNE1jRl8ImNvkDXAEAub4TZ7nrwHwEc33dAigKApV1/V8vxcJmq/ffxrger2akZN2XbeBkOZhGO7O5Q0A02n62zCHYVBxHC8gXM29ADBpmqYLcyiKItX3/QwBuZp7AbiK5lJlWZoOsNXKSwGkucvqdwF8djvUALVeOcTVc14qCX/sAMz1urJxjWdBEJicSyH/ELvDRVmWbQFojpU8gqAhhKJcFybEyOBdGRl0ESLS3gO3AKABzG2SnYBI2NpxrXEczYiakMXYDnoLICEgGQVpztXJ/ENsR5rKVUO2TrAWIV4CLaPBkebseYzresA9akGGnUXo1IYwhrh/75nLerBByI3pUUctAGBOY3yqqjLPWf285oQSQtaFTM1/7bwAgCEgaCwncVnNEW1SIM0lzKuNdwGkOdJhi8gpAHvpOA2AEO/WBqBt23mfdpH8j4Bs3eIMQPOjEOtnLgJAgLOaOR0dMPc1hOpG41SEy4ARMBA4s93+NpRutHqnaI4vmYLgfmA8Q/Px/BeAeGbRH8nvcAAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACEElEQVR4nL2XjZGCMBSEkxkb4EqAEpISpARt4Uq4K+EswRa0BCkBSoASzhJybMzDRwgcQWRnVGCQ/fJ+ErITfRmxjSQdcABzK+tN3HOdGYIgAGu+V+kmAD+XUnwftYXYxZhXVSWUUi8DfB3aZziInYjUKxCh/0YD6EaJUsRDwDykaIAlEDC3/0mHEIsAYkTmY1oEUB+EyK6PKEBjkSDzx/0rAmTyMY9od16W5QCCm0/1VzzAUQpjnhNm0dyFzj56EHPNowDsQ7XumUP7NBG3+reDgOaaRwHMFZlzyTb/6IBQrawKwM3nTupBgJjZDjVA8kcO0ejpuSSV3MMAlGu/snGMa7LtAOScK2/zD1F3+NKX4Sp/S4ohAJmrUk1CaGcIoSj9woQoMoDjkclcRIomGQJ0BlqLkHgnIBJ+O+YMjFS7e1ATvBiLphoCcAiIR4Gb0+h4/iGkxo7YiwjNgqFOCBYhbrK0Lhr0S+a563mkwq8HnNtaYHmnIpzVhtLRdvP9iDmvhxBEnskuklMd1QOAOS0c+BhbPM/qt6NhhckheF3w1PzXzj0AGMrO+CleF2u8ko0CEASJw6xtPArAzeuRiGwCYDYwnwQgiHdrAPDZtuw5It18jYBC3TIbgMyXQvjX5ggAEns17I7O7e4o1jzWEDpdK+yKcCgpAhYCezYsGqdGvFVkji+eAuk2jFuoe3H4A7ZkUfDWA5kUAAAAAElFTkSuQmCC",
+      "weapons": [],
+      "id": 12001001,
+      "soundPath": "Skill.img/12001001",
+      "description": {
+        "id": 12001001,
+        "desc": "일정 시간동안 받는 데미지의 일정 수치를 MP로 대신한다. 다만 MP가 0일 경우에는 그대로 HP를 소비하게 된다.",
+        "name": "매직 가드",
+        "bookName": "",
+        "detail": "#time초간 MP #mpCon 소비하여 데미지의 #x%를 MP로 대신함"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "mpCon": "6",
+          "time": "150",
+          "x": "8"
+        },
+        {
+          "hs": "h10",
+          "mpCon": "14",
+          "time": "600",
+          "x": "80"
+        },
+        {
+          "hs": "h2",
+          "mpCon": "6",
+          "time": "200",
+          "x": "16"
+        },
+        {
+          "hs": "h3",
+          "mpCon": "8",
+          "time": "250",
+          "x": "24"
+        },
+        {
+          "hs": "h4",
+          "mpCon": "8",
+          "time": "300",
+          "x": "32"
+        },
+        {
+          "hs": "h5",
+          "mpCon": "10",
+          "time": "350",
+          "x": "40"
+        },
+        {
+          "hs": "h6",
+          "mpCon": "10",
+          "time": "400",
+          "x": "48"
+        },
+        {
+          "hs": "h7",
+          "mpCon": "12",
+          "time": "450",
+          "x": "56"
+        },
+        {
+          "hs": "h8",
+          "mpCon": "12",
+          "time": "500",
+          "x": "64"
+        },
+        {
+          "hs": "h9",
+          "mpCon": "14",
+          "time": "550",
+          "x": "72"
+        }
+      ]
+    },
+    {
+      "masterLevel": 10,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACBklEQVR4nM2X3ZWCMBCFk3NogBakhKQELUFL2BaWErAELQFL0BJICaSFlMBmsgw7hCSAP5y9DxJBc79MZkaTsbE6to04DihAd2/aTdwPsugQAgGc+V7sNgGo6oaVJ+kgsjlzpVR0IiHEUwDfR/u9HiJLfRDM8zwMYNSNKVY9DYGKAoC5lDL4rG0vLBdHC1G+DBEEQPOuGxeF0tpdi6J4G8QEIGYOErvfPGna9m0QI4CUuS8K8YoytpFgcaEIbQKAkW2aZgLxcQA0v9etvRYTiI8CUPPbVbGvfT1EIggAZPCQcx5NRCxFOZOAvjno+jgNEXhoNQXwISDT3T1bfmjsm0NHZLtxCVLzhzXP7b0zMadKbgEYgTAa+H6NOfPM/WpY3IggChiRWBMasp2svPTMkzngm9NcgDEq1Qlhcsj2yiYcqCKJF/ptWVQFCEKv8xCSXXqIC0JAKZ6KZQC4YrpyKsiHWDumEPX+7u7BVV/1ZJ4oQOr3AHMhJQrR2pWrgPkEgJZgDMp/FusFmE9grvuEnAXwyUNRgNX7TcgvR/pnpvD2fBZgrUK9ABexRIsBaCdMmVOIlKKtOGaOXXBJAq7Rqi14t/lqgE/oXwBwOKtteTQ73xScimDIMQIOAs5sIJGb2UmMMUxrY09Oxk24RmgOL3QLeH9g/LvhdT2sBDeWZT86sCc0TPwDoLWMOVv4qp8AAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVR4nM2XjXGDMAyF8R0LdAUYAUaAEcoqdISyShkBRoARYAVGoHkkSoWxjPm9vrsEEojfZ1kSse/NNXr3SNEJBxirprvFPY3DkSAIYDJPouAWgO+fxvvK4gnCXzNv21YcKIqiXQD55+N3LwjfdiPMh2Gwgu2FIIkAMIjj2HitqqrJuK7rwxBGADIfx3lR9H0/HcMwPA1iASCZQ0HwzJOu606DmAHYzHVxiCPyvZuEyZkidAsARbZpmgXE5QBkjqUyQVwKwM2RqHmevyGMACDDRaWUmIh6KbqaQ0VRvCNQ9+0SQIdApkMoPzLWzWGUJMksrGvmXNYlgBFE0aDPR8z1anBuRIgCRURqQi7m1hzQzXku4Jxk64QYHGMg4SCeeKZni1MVEAg/7oHAvWmaugHQjPnMuWAutWMJgiCdAGzPA8oFmzgEjmVZGu8T+4AEpV+TegFPOMl8AaCTm6JgCrtejvzPjPSnRgTYKlMvoEm4yBmAd0KbOYewSWzFkjl1QZcE3KJNS3C2+WaAK/QvABT2anduzYqyxa4Ip4oiMEFgzwZFH4O3JuyY6IUBt4jM8caXQL02jH9faF2PKgHKsuw5m8fjdofeA/8CfxWFx+r598wAAAAASUVORK5CYII=",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACFElEQVR4nM2X3ZWCMBCFk3NoAEqQEpIS1hLcFrYELQFKWEvQErAEKAFKMCVkM8hgSDIR/OHsfdigYXO/DDODSdhUmq0jjhc2gK7qdhX3rcw1QiBAb/4lNqsAFKeaHb5lD5E8Mm+ahlxICPEUwH5n/m+ASGI3grkQZ2KyNPP10xAoEgDMpZTBOa33Zvt7Jhr5MkQQAM21nhbFpVP9yHn2NggPgDIHfW3Sfqza69sgJgAxc1cTiBeUsJV0S2g/QqsAYGTr2n9MHwdA81NxNWPmQXwUAM0rY34sFdulrfmc9xBBACCDSc45mYhYits8noCuOeis8jECl67xAVwIyHQQlB8ae+bQEdk0rLb5xZhDky8tc1vRRwBGIIzG/fN8c+aYu9UwuxFBFDAiVBMas73Qhg12nrIflU3MsRqCAK65nQtwjYp1QlhcSs5+0xssjJj9oXfLrCpAEHt8DJGxaoCoBojWRCY/8MnaJADu2N65LcgHqh3bEPUAAaMqlbcOCRB7H2AuxGRDXM3OQ+YegF2CFJQ7R/WCMZ8K2HnHUgKU7APUWxF27zUhpxztHzP8kLGYXm/FgV6Am5ij2QB2J4yZ2xDx9YhWTJljF5yTgEu06BG823wxwCf0LwA4nNXWPJqV5wZORXDJMQI9BJzZQCJV7JGUMvd0ZjT3woJLhObwx34EfDgw3r9wuh5WAijLjvgte0Ljwn+oB4sXdrXBEwAAAABJRU5ErkJggg==",
+      "weapons": [],
+      "id": 12001002,
+      "soundPath": "Skill.img/12001002",
+      "description": {
+        "id": 12001002,
+        "desc": "일정 시간 갑옷에 마력을 응집시켜 물리 방어력을 상승시킨다.",
+        "name": "매직 아머",
+        "bookName": "",
+        "detail": "#time초간 MP #mpCon 소비하여 물리 방어력 +#pdd"
+      },
+      "requiredSkillLevels": {
+        "12001001": 3
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "mpCon": "8",
+          "pdd": "4",
+          "time": "40"
+        },
+        {
+          "hs": "h10",
+          "mpCon": "16",
+          "pdd": "40",
+          "time": "400"
+        },
+        {
+          "hs": "h2",
+          "mpCon": "8",
+          "pdd": "8",
+          "time": "80"
+        },
+        {
+          "hs": "h3",
+          "mpCon": "10",
+          "pdd": "12",
+          "time": "120"
+        },
+        {
+          "hs": "h4",
+          "mpCon": "10",
+          "pdd": "16",
+          "time": "160"
+        },
+        {
+          "hs": "h5",
+          "mpCon": "12",
+          "pdd": "20",
+          "time": "200"
+        },
+        {
+          "hs": "h6",
+          "mpCon": "12",
+          "pdd": "24",
+          "time": "240"
+        },
+        {
+          "hs": "h7",
+          "mpCon": "14",
+          "pdd": "28",
+          "time": "280"
+        },
+        {
+          "hs": "h8",
+          "mpCon": "14",
+          "pdd": "32",
+          "time": "320"
+        },
+        {
+          "hs": "h9",
+          "mpCon": "16",
+          "pdd": "36",
+          "time": "360"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC/0lEQVR4nL1XgXHiMBA8ZmjALZgSTAlOCaQEUsKnhKSEuARcQlwCKiFqwSXw2rPWnIQNhmG4ySQExO3u3eokryWNk7wmVnxhCZx+j38vQX/bbk4kQQIKXlfl3cn6vhHvGn3tv/vw//B+9VVIWe2lKPbjmsKX4lonX4ejfL5vlcT6HnAkQkILjKS+HVB3v3/SbDcX4H3bxTVOql0lde1EIom1LAwmkt3wv1WEpOX+oOD1vpKiqhXcddtxDcn1pZdSRTjNs4gAwQHim3d9L2gcEyMITgCso2qCk5yNRQS07EE5kgLAqrLgxa6WPlQG6+zno5BIDpUR+bmvAkwAo1FVHrYt9nOrnm0JJbxNAEqgyrqc/c6T8/OcnG1NHwnq99sFHiA4VZX/QufraXBrRiuAlcOuoI+GilbzBOzenirpFPhUS7rGjaUHuHok5HafIXd9xQPPALellwDOv94FH7nQqrgZLgjQcM8CRx4FV2E+CD9qa1qZIJCPzNxMiHvBNW9EA3j3EXYBhlmfEZgDR8KiOAPfAw7Fmtv3uh7gZRj5Ooy6jAD7nicEON09N2D0+8bxQz6vwAiuR++LnecISAkg8rkNNQDG8LgGjqDje4nqfbotF43iKXBEVR+lfdvMguelv0ZUhU4dRurW3qUuD8oJDjWPgtuzgsf5RQXGEqKH4Yc9Z2/thHsE/HwMpzESwCUC/cPIxJQk8FLH3wSvBnBW9YKAqoy3GD2xpHwauJpSmgC8T8ATAgTXE/DJ4PYik8fZhBGcZ/5S8NycvBPqtUxElTPvVQJYdGbqkkV4LzGpCZoTOwXBCylFoex53ycJjAOn7WfPAHuuz94HDThjDjwhoF/Sw+Os3s4E3cMyjGySnCKXg9+K2Uk4ldiSTPwQ+80bzz2ReABPNVY1we3TDR9CkrkRVRf75cotgRWe1X7CMWkVaVJJy4ndgXsh4pFyM75DpcNTEV6uWIHVh/Onr+IwXBQ6u5yeCFXBLokXifOadMcsCYLjl/XAKj4wviLGx/P/TsjFzMCI8NQAAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTElEQVR4nL1Xi22DMBQ0UhZgBToCHYGOkI6QGRiBrMAIZYQyQhihrJARaA7l0PlhU5xGOSkFFfvdvQ/Pj4PzMbnXIOONCpi+Lz8vYf94f5soggJm8qosHjI4DMNyvV6v831VVa4sS29NURSu6zrXfF1c/fk+izj8h5xGKeB0Ornz+bwihyiswe94PLo8z527izi4BMDQvNl4RKMgh4jQGoobx9ETt1sAyRliNQyQnATqNclVXLIAkoMgRk7jWKfPCYpjypIE0IB6ZWFDTqhArrkZ+1sAw65VvhSRMc7nVpymBgC57t8UoIrhFcIXI9diVAcYOdbF7hqg16GQhshDKWnbdgm9fYM2BTyDXEMPO3rt+/5mvNqOwLPJAaYC/2v7SBFuVTKQSq6wr+BKQIgcBpE7JUv1nG8G7cNePw6+AKtMyVndsQYDaMXzqmcEgNzbc8KLgO3btnnEyAFWvHZKfS13teIQOQDFJAjBhn5LqMUiABsRItvZSA5vHiWPee8J0BACWAyDzG1ocwq5PYZXAlAcuojEeyt+LzmjuhIA6KKtXKaSc2qCfRuFRYB6/mxypjMELwIcOGLnfYjcFidnQpCy87EpbdYATysdMvWZLVKCxYnngG00FBEi9wSw4YQGCsDOe1vzoEWM3BMAWO+1J2hIddC04lIR7YQxwxSpXlNcaOLZLQCb8VOvLTm9B2zfAFLJKSDDt1rTNJ5HgA2pFtMj4SbO3YCvItxmjEBW1/XEMYln9Qp56e6DTHzNDpAcf7QGsvsH4yuwfJ7/AiFGnH9l3T6wAAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC30lEQVR4nL1Xi3GzMAwWd1kg/wjOCO0IZAQ6QjoCGSGM8HeEdoQwQhghjFBGoJYs2TIYanq5KJfwcvR9elgSO4hlhOdIISeawHi93Z+Cfnw9jEJCCBB4+WL+oK4B6M901h/tl++WV/tjLvanDms6Yw89XD5vcH57JRK7beANK1TApNTdMfcR+kMxB//64DW9vW2grloAJrGDbHGKoOJLZREqheoOLYLjuTk58L4Iayw5fG5eeibWkZpMAgJuc+TrwPeCYhQPLgB2nbeawQO5IJkEamc5giNAtwBenZxnCDw89yLk0DNw2+gBVoCJJlbNRIdFPY+s57CIrBNAi8UqcFku8Z4p5+dTclFomKALZU4OCLhYRdm9AK6SMTIABcFxV0gekUfLNQJhb6dcmgRPhKS1973rCfxEuod3q79cI/AIcO16BOfj0A7Q2S87IEWgeSx4J1sTCHz//xtKG5oOkgSa1UxG2QyOwM2ejgg+vP+DfT1IHdIE0uBUvRTwFnC0WCzH9QReWjKmThCQuE8UIqzP7qUCg6IznkGFgKzH2Jf1EP0tDsGkbpcCjMVjDRxUxoNYH2/LrFKcBCcTbJc7FsvgE9evEXWSakb4R/yoLCfLjWuxRuXAVvCoV/h2PvGAdyEpgtD5Oo5tNZ+WNoH7NhyLJ0BDBHDJRGM5qXIz/ldwGlDAe3VGgESmGGqX5nHgVA/ObvuZeF0gIOBk+YPBJZyJNFIeqP3AQW03F3ySnK2fCWW7ncMgk5BAgHq/jFyTxfZelKRaODl7KdV+IGWj0O1QzFw/J8AFBwviYg9QfX1xHtTgIma5JswqobZedz63h4FKtpBMkpuC/yKLlTCtOJCMrWZyfuLJlygH0PaoEnrw8HYjPSuqGyQ4OedbrgkU+K52NTC3SBSz0O648sUf3C3S2IHUvhXhaSEeKI49jBf4dGW408vlws5Ql1u47KbP80XA8UfnQMEvjM8Q/3r+A1l/OiC1WUxCAAAAAElFTkSuQmCC",
+      "weapons": [],
+      "id": 12001003,
+      "soundPath": "Skill.img/12001003",
+      "description": {
+        "id": 12001003,
+        "desc": "MP를 소비하여 적 하나를 두 번 공격한다.",
+        "name": "매직 클로",
+        "bookName": "",
+        "detail": "MP #mpCon 소비, 기본 공격력 #mad, 숙련도 #mastery%"
+      },
+      "levelProperties": [
+        {
+          "attackCount": "2",
+          "hs": "h1",
+          "mad": "11",
+          "mastery": "1",
+          "mpCon": "10"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h10",
+          "mad": "23",
+          "mastery": "5",
+          "mpCon": "13"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h11",
+          "mad": "24",
+          "mastery": "6",
+          "mpCon": "13"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h12",
+          "mad": "26",
+          "mastery": "6",
+          "mpCon": "14"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h13",
+          "mad": "27",
+          "mastery": "7",
+          "mpCon": "14"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h14",
+          "mad": "29",
+          "mastery": "7",
+          "mpCon": "15"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h15",
+          "mad": "30",
+          "mastery": "8",
+          "mpCon": "15"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h16",
+          "mad": "32",
+          "mastery": "8",
+          "mpCon": "16"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h17",
+          "mad": "34",
+          "mastery": "9",
+          "mpCon": "17"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h18",
+          "mad": "36",
+          "mastery": "9",
+          "mpCon": "18"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h19",
+          "mad": "38",
+          "mastery": "10",
+          "mpCon": "19"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h2",
+          "mad": "12",
+          "mastery": "1",
+          "mpCon": "10"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h20",
+          "mad": "40",
+          "mastery": "10",
+          "mpCon": "20"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h3",
+          "mad": "13",
+          "mastery": "2",
+          "mpCon": "10"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h4",
+          "mad": "14",
+          "mastery": "2",
+          "mpCon": "10"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h5",
+          "mad": "16",
+          "mastery": "3",
+          "mpCon": "11"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h6",
+          "mad": "17",
+          "mastery": "3",
+          "mpCon": "11"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h7",
+          "mad": "18",
+          "mastery": "4",
+          "mpCon": "11"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h8",
+          "mad": "20",
+          "mastery": "4",
+          "mpCon": "12"
+        },
+        {
+          "attackCount": "2",
+          "hs": "h9",
+          "mad": "21",
+          "mastery": "5",
+          "mpCon": "12"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADR0lEQVR4nL2Xj3XiMAzGzXtdwCv4RjAjpCOEEcIIdIQyAoxARriMgEc4r+AROEm2bEVJuNJ3r3qlBP/R97MkO8mbmdvD/Izt+EICPO73Pz+ivt//ejAEA5C49259RozGOGfC+WBSTKa7/F4MGd/fTUyJrk/3+6xvOu9Nd2ptl9vNHA8Hgnj7pzgaiCOEP92yw+P7DALF7QBg0RHgeb+fgYTRAEBzN/S9MQVC18BTiBSCsd4b62yFYHFbxENIdcoMpERR29cBwKy1BIGRQIBq4JvFdfhz/7r4awDoRMJAFGj1LhGAFK8pUnO+D1AcpZRmza6ztHJtKM4QlDaI3PcBhDjmH208HIztI+UdYkFt2IU5X03BE9sGEOFjcRRGY3G9eu8tQeD3YvVfLkIlTIJFvPvs6XcIZzGmhdfaROJoHI0FBJoAaQAbwmgLcVFbKMoQ/I1ttR98IERuVyA6Alo4jlc4RKYqjub9yQRzhvBDGpxbLUIE4ZroT4Nx/ZDbNYgEkEWGwhQpmBiuY105ir9q6EP6kyAzABTXA3Gfd5ehhh1Xngmx9pcFFUtoHUZGRIF3xsx/GVsBsLMSihyReMCwudrO4jL8UczBaycKjeex/wxiG4CNE3XywBSmOpm2Gyw5pUgQzWkWl7uADbVxji0izV9XQboSjVYDIM4DuRYgCXCLhbsg5jFcCSKFVkQs3kKPc/PivIfUFRH2p0EqABdKE1YrAmf4QZuue1QGZ66KS+FuaCchA9RoCpCcjuNrd0NiLwL4kJGjkcXlA8crRgAYfrldmLS7fMJN5cOMH7CfP5vANIJ4bOcJXmNb17cxOAdKywy3S23j7Se1MgDlplNV2kAs5BodNk8wpm1lusaEjEGMEaelFOYFzyPgoCgKhByIIH5opyCeiqsKDFG2nu/Bj6c/EtfCuOBJbkMdFg2yZt5sm56ntzf1j+McQJJqkC3HW5bUk9BM2GwdxeV5Tw6MahtpoE2AMM1+f+lmJDs0CNsSaN0WKVgRXgLw2Y23WQWy5XjL9LyZMOuUMcuDaAVky/GWrT6EPnks3+G72uLtSE9YAXpqbvtN6wo74JifL3ccAYLAd7b/Zk+ixeL4T6ZgV14Yf8Lq6/lfHXYTIdin0BQAAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACkElEQVR4nL1XbZXCMBBs36sBLIAELIAEkAASQAJIAAkgASwgASwggbvJu+mbTjelvR+dHxBIdmf2I2laFU18inFQcqACPs/ncxT22Wz2oQgKSOTT6TQ0eL/fxWQyKc7ncxrvdrvWmu12m+aAy+XSmLvf78Visah/3263YrlcJhHVN3IA5HC+2WzS7+Px2BAB8tVqVbxer7RuvV43hEC4CsCYIrwHOkWAAEIxpggnfzwetY0KYRYdvQWoCGQCAhQk9/RzLiIfJID1VTGIHhkBsZIzO27zbwF05A7n83lIAnKKQMZy0fcSoORs1P1+nxoJzlUMah6VoAtZARoZyUEMkDzKCETg26Pv3YRODJCc21Aj1/UgADnAbLgIrmsJyBEDOXI68x5RAvigjQtpZcCJ0dnX67UmV4f8jpoQ/7EcKAWz4kJaGVBiAIY4xWjcdVrmAB/qT4U0BHA/60LsczaTG3opGAQj1CxwZ6h/2tcCMEliTSsWYg5OmQEaR33DsaaZc/Svx3XFBXqoRJFiLur+qAd8u9GOAWhZGj3gC/k/9j2a0aOLup/pxwMKj2H1F/mvVFGuyTDP9PEwUnIl1sc0BRAqhP4GPQ2Bw+GQvnHWK3l0SemDRg+wLlQKMkTsFxBEBhutv996YAN/p9Op/o8laPUA97h3qZZEn/9OjjEEaHf7TiKxzyUBetvRhXCopyAbMYI6RQMquRPrCVr3QFQCGg6F2/n2xjwbtBagSqMSDBHkZ4OXIDyKWQZdqDWNBOXgx3Svh5FOuBDCBeXgdhFxS0B0c8lF8g3RnSEaNwR0Cck5ziGKtOtaXuJdzd+O3KDrbt9XBIEd8PtWhGHJDCQReF0aAyTHh5ag/HthHAP16/kPfDlB2m33ZsUAAAAASUVORK5CYII=",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADcklEQVR4nL2XgXHrIAyG5bsuQEegI9ARnBHcEZwR4hHSEeoR4hGSEcoIZYQwQp8EyAiw275376q7JMSA/g+BAD9AaZ/wO9ZxQQJ8vr9//Ir68/PTJ0MwQBA3Rm809wDOAWgDMD2Ctx7UtQ2UfXwEl8rD/V5Wzqg1ch8Pb5crHF8OAeLha3EyheJY5yzA+U7/wB+6AoLEzdWDWVQAXPC/BFkmBcOYBoMexqEHSBAP8CNLEHYBMAMoo1YIFockfrNq7VWA0AAoipX9EMAnjgSBkYBDl6vRN4s34ScL4tsR/gbACyeuqKEo0Oh178HfoBBfp4iEv7ENAN8+YnFfQpixeRThUHyFoIgpHn1cAzsAG8K1OM5/ePT0BPoS55279SYuvs0pKKzU2Z8CGfIkTsJk+uLWRSeNIei3GX1I5XYdtAC1MFkS1++n1OYommSnSrsgTrZGo4YII8h9MsCOcKiqxcXaIlGG4F96thr5IIhY0WiVEaiEYZ7AvS5ZPNC/4RdFAMMM7TQwSG9cjMIZV+p4jhU1SAEgFhkJB8OOfprzyIP4XxqJC38ZRFUAJF41DLvcx1mEPc09lV2ZToHRx2hopcoocGZI/+5WAVAlE8oNhMSprQ+nQHoWxWX4WZzLBJEf2DICpKX6DGDsnKhSw9uSO1OuKx8/YtQsLrOATWMmEM/amv31sIKMCHEsIkDi3NBwyxnHjIttIDikRq9uzo5ZfA09Cms69aiBPoGnkVrhrwZZAXihGFFTDOkUP1RUXbwiTFm8EO7lXWEq/UgQ0jy+/vQ0FJYENF5oKBo0LUF8+LfbXASg8Mt0SaTmegF7eAli6iwEbBdOQJfOfiorjZExuY2fOrjNeEKij9wvrnypFQEoJD2Uq1SAhPN+Eue/p1TOC5LKhh6q3MbLk1gK84BlBCyeq+Y2F6uUQcx5XBvTrlhQSA2E4NTTpyFsdnpI4rUwDngOaSjXgJyCGiSZ3ik3VvVr0pvql3ojsks7BXVS1I73rL4JSWHWarZivu/JhnOVRjtZ2pjcyBrhpJWmsExDPqVqELYaaM/qfhunIFsG0OKsrkH2HO9Z3U8Ks461FQCkw2YLZM/xnm2MtLyO5RQmgI7e1cq3I9/e37aAvrLN94AoPGMG4FsRFTuOQICgd7b/Znb/nYDF6Usuwi69MP6GrVvmHwRYzgKs0fatAAAAAElFTkSuQmCC",
+      "weapons": [],
+      "id": 12001004,
+      "soundPath": "Skill.img/12001004",
+      "description": {
+        "id": 12001004,
+        "desc": "자신을 수호하는 정령을 소환한다. 주위에 근접한 적을 공격한다.",
+        "name": "플레임",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 #time초간 마법 공격력 +#mad, 물리 방어력 +#pdd, 마법 방어력 +#mdd의 정령을 소환"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "mad": "10",
+          "mastery": "1",
+          "mdd": "10",
+          "mpCon": "11",
+          "pdd": "10",
+          "time": "105",
+          "x": "1"
+        },
+        {
+          "hs": "h10",
+          "mad": "15",
+          "mastery": "5",
+          "mdd": "15",
+          "mpCon": "15",
+          "pdd": "15",
+          "time": "150",
+          "x": "1"
+        },
+        {
+          "hs": "h11",
+          "mad": "15",
+          "mastery": "6",
+          "mdd": "20",
+          "mpCon": "16",
+          "pdd": "20",
+          "time": "155",
+          "x": "1"
+        },
+        {
+          "hs": "h12",
+          "mad": "16",
+          "mastery": "6",
+          "mdd": "20",
+          "mpCon": "16",
+          "pdd": "20",
+          "time": "160",
+          "x": "1"
+        },
+        {
+          "hs": "h13",
+          "mad": "16",
+          "mastery": "7",
+          "mdd": "20",
+          "mpCon": "17",
+          "pdd": "20",
+          "time": "165",
+          "x": "1"
+        },
+        {
+          "hs": "h14",
+          "mad": "17",
+          "mastery": "7",
+          "mdd": "20",
+          "mpCon": "17",
+          "pdd": "20",
+          "time": "170",
+          "x": "1"
+        },
+        {
+          "hs": "h15",
+          "mad": "17",
+          "mastery": "8",
+          "mdd": "20",
+          "mpCon": "18",
+          "pdd": "20",
+          "time": "175",
+          "x": "1"
+        },
+        {
+          "hs": "h16",
+          "mad": "18",
+          "mastery": "8",
+          "mdd": "25",
+          "mpCon": "18",
+          "pdd": "25",
+          "time": "180",
+          "x": "1"
+        },
+        {
+          "hs": "h17",
+          "mad": "18",
+          "mastery": "9",
+          "mdd": "25",
+          "mpCon": "19",
+          "pdd": "25",
+          "time": "185",
+          "x": "1"
+        },
+        {
+          "hs": "h18",
+          "mad": "19",
+          "mastery": "9",
+          "mdd": "25",
+          "mpCon": "19",
+          "pdd": "25",
+          "time": "190",
+          "x": "1"
+        },
+        {
+          "hs": "h19",
+          "mad": "19",
+          "mastery": "10",
+          "mdd": "25",
+          "mpCon": "20",
+          "pdd": "25",
+          "time": "195",
+          "x": "1"
+        },
+        {
+          "hs": "h2",
+          "mad": "11",
+          "mastery": "1",
+          "mdd": "10",
+          "mpCon": "11",
+          "pdd": "10",
+          "time": "110",
+          "x": "1"
+        },
+        {
+          "hs": "h20",
+          "mad": "20",
+          "mastery": "10",
+          "mdd": "25",
+          "mpCon": "20",
+          "pdd": "25",
+          "time": "200",
+          "x": "1"
+        },
+        {
+          "hs": "h3",
+          "mad": "11",
+          "mastery": "2",
+          "mdd": "10",
+          "mpCon": "12",
+          "pdd": "10",
+          "time": "115",
+          "x": "1"
+        },
+        {
+          "hs": "h4",
+          "mad": "12",
+          "mastery": "2",
+          "mdd": "10",
+          "mpCon": "12",
+          "pdd": "10",
+          "time": "120",
+          "x": "1"
+        },
+        {
+          "hs": "h5",
+          "mad": "12",
+          "mastery": "3",
+          "mdd": "10",
+          "mpCon": "13",
+          "pdd": "10",
+          "time": "125",
+          "x": "1"
+        },
+        {
+          "hs": "h6",
+          "mad": "13",
+          "mastery": "3",
+          "mdd": "15",
+          "mpCon": "13",
+          "pdd": "15",
+          "time": "130",
+          "x": "1"
+        },
+        {
+          "hs": "h7",
+          "mad": "13",
+          "mastery": "4",
+          "mdd": "15",
+          "mpCon": "14",
+          "pdd": "15",
+          "time": "135",
+          "x": "1"
+        },
+        {
+          "hs": "h8",
+          "mad": "14",
+          "mastery": "4",
+          "mdd": "15",
+          "mpCon": "14",
+          "pdd": "15",
+          "time": "140",
+          "x": "1"
+        },
+        {
+          "hs": "h9",
+          "mad": "14",
+          "mastery": "5",
+          "mdd": "15",
+          "mpCon": "15",
+          "pdd": "15",
+          "time": "145",
+          "x": "1"
+        }
+      ]
+    }
+  ],
+  "id": 1200,
+  "description": {
+    "id": 1200,
+    "desc": "",
+    "name": "",
+    "shortDesc": "",
+    "bookName": "플레임위자드 입문서"
+  }
+}

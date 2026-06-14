@@ -26,21 +26,23 @@ interface SkillLogDialogProps {
   fourthOnly: boolean;
   jobName: string;
   jobId: number;
+  isCygnus?: boolean; // 시그너스는 4차가 없어 3차까지만 분류
 }
 
 const BRANCH_LABELS = [
   (jobLevel: number) => `1차 (${jobLevel}~30)`,
   () => "2차 (31~70)",
-  () => "3차 (71~120)",
+  () => "3차 (71~)",
   () => "4차 (121~200)",
 ];
 
-function categorizeLogs(log: SkillLogEntry[], jobLevel: number) {
+// 시그너스(isCygnus=true)는 4차 구간을 3차로 합쳐 3개 차수만 반환
+function categorizeLogs(log: SkillLogEntry[], jobLevel: number, isCygnus = false) {
   const threshold1 = (BRANCH_2ND_LEVEL - jobLevel) * SP_PER_LEVEL + BRANCH_1ST_BONUS_SP;
   const threshold2 = threshold1 + (BRANCH_3RD_LEVEL - BRANCH_2ND_LEVEL) * SP_PER_LEVEL + BRANCH_2ND_BONUS_SP;
   const threshold3 = threshold2 + (BRANCH_4TH_LEVEL - BRANCH_3RD_LEVEL) * SP_PER_LEVEL + BRANCH_3RD_BONUS_SP;
 
-  const branches: [SkillLogEntry[], SkillLogEntry[], SkillLogEntry[], SkillLogEntry[]] = [[], [], [], []];
+  const branches: SkillLogEntry[][] = isCygnus ? [[], [], []] : [[], [], [], []];
   const skillLastLevel: Record<number, number> = {};
   let cumulativeSP = 0;
 
@@ -51,7 +53,7 @@ function categorizeLogs(log: SkillLogEntry[], jobLevel: number) {
     let branchIndex: number;
     if (cumulativeSP < threshold1) branchIndex = 0;
     else if (cumulativeSP < threshold2) branchIndex = 1;
-    else if (cumulativeSP < threshold3) branchIndex = 2;
+    else if (isCygnus || cumulativeSP < threshold3) branchIndex = 2;
     else branchIndex = 3;
 
     branches[branchIndex].push(entry);
@@ -80,7 +82,7 @@ function LogEntry({ entry }: { entry: SkillLogEntry }) {
   );
 }
 
-export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthOnly, jobName, jobId }: SkillLogDialogProps) {
+export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthOnly, jobName, jobId, isCygnus = false }: SkillLogDialogProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const [showCopied, setShowCopied] = useState(false);
@@ -106,7 +108,7 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
     return () => dialog.removeEventListener("close", handleClose);
   }, [onClose]);
 
-  const branches = useMemo(() => categorizeLogs(log, jobLevel), [log, jobLevel]);
+  const branches = useMemo(() => categorizeLogs(log, jobLevel, isCygnus), [log, jobLevel, isCygnus]);
 
   const captureToCanvas = async () => {
     if (!contentRef.current) return null;
@@ -211,7 +213,7 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
             ))}
           </ol>
         ) : (
-          <div className="grid grid-cols-4 gap-5">
+          <div className={`grid gap-5 ${isCygnus ? "grid-cols-3" : "grid-cols-4"}`}>
             {branches.map((entries, branchIdx) => (
               <div key={branchIdx} className="min-w-0">
                 <h4 className="font-semibold text-center border-b pb-1.5 mb-2 text-gray-700">

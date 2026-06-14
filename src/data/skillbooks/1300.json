@@ -1,0 +1,612 @@
+{
+  "icon": "iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAYAAAAy2w7YAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB2UlEQVR4nO1W0XHDIAxV7rIAHYEVWIGM0FnqFbyCV2CEMkIYoYxQRnAlbEA4JLZbp9ePvotjDIKnJ0BwhoIRnoMT/SWi8Xp9B+8tGGtASAVaymzpvAc1f1ss87aWDUGI6X259CTgRETjx+cV+qGDgMb4A/AOgnS5UwhY5V0uG1/auI1zdb3WhTgqMqaDrUiebsFgMrE+wwqUUuDRXTkzkNcCQyQXjGRTfTsMDauKRFq9wWB7OBoiOhMK0Rq496QwIamQG+L5kChNsGCrKQ1KJLR4RGMF7ibag6UDTSLaP61GAqkKrrTdWGE/t7Bv4TBFa4hEtrEBvwuKYEvVqqJ7Hffi0NA9cujHRDT4lrT0u4vhn+jPESk8+Jz1NZHWr5hNqHLavBKTpRDTucPPGp7TOEo9S1fMJhIpvCMMg6k6TqTt/LcFlNTD8uBLJFrrh3sisJ5UCt7Fi0zw9f0iva0pjrLQ6Xiokbo1komIBtFT1kf3fSMtWDPcEiX4sEywInvs7+SY5AT9+3yk1LaZyFqLqhROalEUyJhSjNSxXGudBydFc7yJUGpuZXP4iOiES3Ckpdh15YLC52pv9m7Nc1IUyeA5uODj+By94KPgeNAEB04UAOC4o7YeF74Ar1DhY0jci0AAAAAASUVORK5CYII=",
+  "job": {
+    "id": 1300,
+    "name": "Wind Archer (1st)"
+  },
+  "skills": [
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADYElEQVR4nL1Xi3HqMBCUZ9KAKMEuwS4BSgglkBKSEkIJUAKUYErAJVgloBL8tCedfJZlA/Nmspkk/si3ex+dpA81xaD+BgVfSAFDe+9Xv9LKuh/91DrGAUtjd001sAgWQOTbulw13HUdGa/renVM0zTqfr8v2vu93NXPviERHyn5/uu4aPz7sI3Gj+fb4nuGtIV3+OZy+lbfn86BIGJSAzly/lAiJ4LJLy46exeF1IbkgAhGWoRZpCJAIkVI8ty3PDYHEoC8Inc5b6XHElIEk+vaWersjHwNMQI8kImWws4A2UXVE/Kc8FxKZgIwXdiTVEjqsQSLIHJEX/AspSQrICViA6kQfhcJ+dph93XLjpMpWRWAuS3zmQqRZCCXhEDfPxT1HcdXVRt61tZb9QyLs4DJUiO7UBuPYVDWWhWantKlJn7jnt37Xv38HN3Y83sCUHgxCsjtYVpY8HoYxuUCZCTCoTROQFlSFKxBtyzV6RetXceIPBUwA4qqHskfj8f0vfW/+GfoYuz+Wxe58/WqDp8H+m6z2WQ76EzALApqLDhDnomo8KXl98aPD4+01j4i7qZ3Iqog4vUIJLh1NyfgEO9LR9CFFHhGoU37KJjOqNKlZmkNnQmQbVVON0bnvKzLcZUjj7WYalrFKLDINUwEzMiJ0Vc+iq8oCnW5tFEAQqxLFWshxUidhCcngNdxnv/cQNBGufJRTDYhgocG9afzDYefrqYAixE3nLW+TR7nLFEW/H4pfaFDc7ILDTFGYGm5hDDMdb2SS4oCVhTr2XzAw/hYo34nlS5qcTHCjijdkPBGgmwEF5aEsAgVRdhJMeLV7+lEZiCibdtpBHLgnoD5S/knHWMs1yo8ksupaZMZo17oAywCnax3Pd6ISJhgqyx1fM7CZKQg2k8UO6uFlxpRjERVqTbkzxv1teFaQww5NT9Bjr5BY61vTmnMXu6EskVLQBCnhVbEQG7DQoX27UX5tDS7iuzczJsCpAgJKUguVkaQkzh30VSeHLPhZrr3BbAICRbkp6v3NCXfid2VPxuM/X0iAPv1tYPJmiBfIxvaGfliM2q/209E8sFEAgIKnNX4dJQOeAcsQt4DfJRjz4/XDqciXBYcARKBM9v/ghsMwIXG+WYwOf7IFBThwPgXiMfzfxV5BwXYyv/cAAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACbElEQVR4nL2XAZHCMBRE0xkMgASQABKwABJAAhqQABJAAhZAAkgACT02w3Y2vz8JcDPszF1Lm2Rfkp+fZhBSteE3anijAO35fP6J+2w2awlBgGg+nU6LFS+XS7yWyqHM0yCU2jscDmG5XEaIgTVfr9fZxlerVdf4fr/Pvqe0LbxDnd1uFxaLRQeRxIBnzooqD4Lmm80mbLfbXhvqAQjKBqErCwEThVBzry7LeuoAMHdeb7XHKoWomZfUAbAgjXLD7kF45qzjTYkLwJ5YEGtmVTOvqRcDrOSBlBrUXr5j3APAMtT5tCAlQ+h6vXb3k8nkbZDqKrCN0Lht2/B4POIfNB6P4/V2u8WOoFxp7l0ABF4pqtEgjCkFgDEghsNhd89R4YhUAUqC+f1+T54pAK4wp+bzeTgejzHrod5oNHIzaA+gNAromc3vMNVR0GcEwr1CfDUCEJKVAmCYuUFZwRxlOR059QBKaRU9sQ1qL71nJfMeQM6cwdc0TWyQjcII92qu0pioAnAfz5lDmEdrZuf7U/X2gtLahYlnpIGYU+59shd4Alith14ceEJQ2k0tScX2g0Q/JNh4DqQ2CniHDxFcAXE6nVIAT8wJWL9MQlzrUC3CFSwHWM0DCoHUqiNBGLsSvFipxsA7EMjpGDrtjYJ45nin778CUAi7PeOZ7ogakExcBIMYhHz+USomhEqBdLOiOY1xxQjyCPAVACFUBNLlaoddv654NqASALwoHUxKQIwRfgMA5nnwSCCtOQEanNU4NLbAJyKE/oa4g7JtfCe84BqOQITAcem/YoKBOA12FdAc/3QKmteB8Rfqjud/HcH6Fq3gfhYAAAAASUVORK5CYII=",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADXklEQVR4nL2XgXGzMAyFxV0XMCOQEWCEZIRmhHSEdoRmhGaEdIQwQhghjIBH4PczfiCMoen9d1UvTUJsv0+yLNsvMrde/sYyftAA/e3+2OxlxLo/8+PoaAdba3uodj0hCODF92WxOXDTNH7wsiw321RVJff7fXW8z+tdPo6Vh3iJxY9v59XB30/7cfDzpV79nabHwm/oc/16l/dX50CAmOVASpwdtaUgKN65z3liDK0BCFqchEmLIbyIgtDiqb4ETpkHwLxi7lLewlIDaAiKG+eoVd3jKVkFoAiMQmthp0GsqwcIiqfAU1OyAMByoScxSOyxNkJ48ZN7XZbiP9kiB9gpT4Dwt1EQn8N7dpRkO7uc0TQA1jbEGNIYZBSWQVwLwh7d5G+eD0F/pqyurgKKxYNk8Mi9ur4Xa+3U3hhf91r37P54yMf5ItllvaYkAZB4YxQwt9dI3Hnd9xMSxMjg9KUsTHguUhSFPBwIftjl62m4XQeQVGqOu26eVta/Qt13b2YKiOz3pVy+azmdXl2/3k1LlqygC4BFFGSCaJzK3sw3GATeT4V73LbDuyFQaAtI5AgiEa+upyohra4b2Z+mDaY0hdS2DZTW48g4JUZKF4WmaV2Cr29yCwBdVvVyozWtG7CYBvROWm7A4bsy49oO0XgCYCEOuwyZj6zPs0yK220EwKAFd3+1IoJ09C1NMAJwH2easYAgf5n5SCYbCRWOoh1dDNMgMcyUrEkA+MASvFW3oWFSsRwTz0wPVB+b1p4AYGvbJcC25hDGKGixWfvwHNU23tTGzQgnovhAwoOED1/wbg0khtDQvkK6MT6/rn4KAXFzuTSLQMpYE7B+UYR84VHhLBQNHycjIKFeGObIZD/WgbEwoYg8usFLGXKhDbIAYXJSWMO1pIo9kCcLESGqXe7OksPR3YZ9gCADgPHC1MYTVMcBIHgfRebpSjhCVLvZcw9kp0iM4nbwvG1bHxYTxA+7IQnr9pcAGkKbBtJnAopz2eKt2u18f6yGum1+D0AIbQTSh0/tOewQILkbXr+mi80MAOf1rYvJFhBXC6Iw5IeVt8PyoKvvBATIcFfj7Shu8BsjhP4O41WOnp+/G9yK8DFjBDwE7mz/aywwMCYa55tGcfzTU5CFC+Nf2Hg9/weuD/fHy5flXAAAAABJRU5ErkJggg==",
+      "weapons": [],
+      "id": 13000000,
+      "soundPath": "Skill.img/13000000",
+      "description": {
+        "id": 13000000,
+        "desc": "일정 확률로 크리티컬 공격이 가능해진다.",
+        "name": "크리티컬 샷",
+        "bookName": "",
+        "detail": "#prop% 확률, 크리티컬 데미지 #damage%"
+      },
+      "levelProperties": [
+        {
+          "damage": "105",
+          "hs": "h1",
+          "prop": "12"
+        },
+        {
+          "damage": "150",
+          "hs": "h10",
+          "prop": "30"
+        },
+        {
+          "damage": "155",
+          "hs": "h11",
+          "prop": "31"
+        },
+        {
+          "damage": "160",
+          "hs": "h12",
+          "prop": "32"
+        },
+        {
+          "damage": "165",
+          "hs": "h13",
+          "prop": "33"
+        },
+        {
+          "damage": "170",
+          "hs": "h14",
+          "prop": "34"
+        },
+        {
+          "damage": "175",
+          "hs": "h15",
+          "prop": "35"
+        },
+        {
+          "damage": "180",
+          "hs": "h16",
+          "prop": "36"
+        },
+        {
+          "damage": "185",
+          "hs": "h17",
+          "prop": "37"
+        },
+        {
+          "damage": "190",
+          "hs": "h18",
+          "prop": "38"
+        },
+        {
+          "damage": "195",
+          "hs": "h19",
+          "prop": "39"
+        },
+        {
+          "damage": "110",
+          "hs": "h2",
+          "prop": "14"
+        },
+        {
+          "damage": "200",
+          "hs": "h20",
+          "prop": "40"
+        },
+        {
+          "damage": "115",
+          "hs": "h3",
+          "prop": "16"
+        },
+        {
+          "damage": "120",
+          "hs": "h4",
+          "prop": "18"
+        },
+        {
+          "damage": "125",
+          "hs": "h5",
+          "prop": "20"
+        },
+        {
+          "damage": "130",
+          "hs": "h6",
+          "prop": "22"
+        },
+        {
+          "damage": "135",
+          "hs": "h7",
+          "prop": "24"
+        },
+        {
+          "damage": "140",
+          "hs": "h8",
+          "prop": "26"
+        },
+        {
+          "damage": "145",
+          "hs": "h9",
+          "prop": "28"
+        }
+      ]
+    },
+    {
+      "masterLevel": 8,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACeElEQVR4nK2XgXmCMBCF4/d1AR2hHQFGKCPICGUEHKGMgCPoCDgCjGBG0BFsXsrBJRyBqK+fxWCS9+cuJOFDvVcP4d4m1MAHeKgX1d6a4Xu6yxahOMCjaa9DYavu5m8bNEMdrjRN7fWszyNQ2zp10GeWfj0IggCs+XfyaQtd19nO0DhJklkAqucY3PEZwfjv6A8ev6dWHfLUQnyEzKvjxdy5zAKUP9/22lxPzhj//e/O/ewrH9vtzaB6CGcOTM1HI172BcPj5Ti5X+npvbyo1Kkuh7IDABOYcwiYS1AugRv2GE0eQx9i0Ryjysbw1k2tqnNlv+ujjgeQIELp4LPcTjgEggXDfwpWAcxB+OnwwUh+OkLRC66Ez6SjyAsVo8Wl+Nl0cFF0JPBVe0HM0+EvTFwS4OrNaC4dEMFAp8DKSXXQbnvv4gAkCN5pyJhEdXiUordjDsE7zc0qugaC2mjzpBy0Vm85D/jmlVCnVLKiASjf0sjJuGmaSbssy0SQlyMAc0Bg2ybj3W6nbrebU49+AwiHiALwR0+COXbSOXMfBBD7ZwAkVUqJI6eQKzVNCco0iVcDzI2eC+aAQEQozEgPYKR5EQUgiY+eNKSjnxsE7EPUdW3vvfVYPkwwzxwqBQgoGqBjW21nFhKafLZsvnef/2fL0lzXLE7RAMl2PKoj3PzUbMus7pqV8a0poEdMWvWk+fIygJRXCUIyL4oiDoBvQkuhJQhenpMDgPM6zu0xmpvdIVMM4sdcDz3ABu9q9HbEXxokSVGYgwiaa3tk31AELATe2ZZEJxntnXz3ajxoYJHxRTnn5vjHU7DpXxhXqe9EFM//pF3vReU/Mne6SRAN+vIAAAAASUVORK5CYII=",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACW0lEQVR4nK2XjZGCMBCFceYawBKwBCkBSsAStASuhLMELQFLwBKwBC1BSuB8DI9bcpuQKO9mTsSQ92V3yc9XtKw65d7K9YAJ0EUf6n6/j9ebzWYWSgJ0dfP3cBy1r7/YaYY2UmmaRm3bRrfbbbzXNM2kDfrM001HCAL05tk26b+gA3SGh7fbrRWA7UwBQkJJGHj8VE30vUt7iC+X+fl8dkZgv9/3n3Vd959xHPfmBOB9KM/z8bosXoMaICY1YDOH0RzM5XLxunc4HKLT6TR+nwDABOYSAuZzEZGjDtW/19CE8EnHbrcbr6uqGtter9dwAA3ClQ5Z5Sw4GQ3zLfACsEGY6TDBTHPZVzCABuGTDhRZiGan4nfTIcXoaOBea0HI26FNTC5A78XIlg6IMFBZltY+2AbPxe0tDECDkJ26jCm2kVEKXo4lhOz0eDx6QfCZx+PRz5SL7AdMc20CyrJMfTYYgPnWRk5juQhRXIxMkI8jAHNAYNmm8Xq9jp7P56QdfwOIhAgCMEdPwZybEM3cBAFEkiThAJoQdm3kcv03U4LvLGJvANvopWAOCESEYUZ6AKPVRRCAJjl6iukAgCxQEwKbEtxbdFvOAjPNIdzTIhEMgAmEwkjlDhjXLK6iKLwmp2AAGkAIt9w141r+7jMzLpoCvmLarKfVy8cAWl41CM2cG5e3luO50BJCfrdpAoBXI3RLZatulykGgXpBQQNghbMaT0fy0KBJi4INwmU+HFpWjEAPgTPbnLiTka8jhOrn9KoNgpGV5vgnU7AaDoxe0o5dlMy/qQF8PJ7/AscQ0jJNtNZdAAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAhCAYAAAC4JqlRAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACcUlEQVR4nK2XjbGbMBCE5ZnXgCkhKcGUYEoIJYQSTAmmBFICKQGXgEoIJUAJhNXj8EmcQLK9nrGRjLSfdPr9Up/VJOSd9gq4AJN6U+3UrM/ZKT+E4gBT2/1bE2c1zp/zrhne4UrT1Pz+VdWa13Wd9Q7qzNKfE0EQgDG/Xn6YhNbaVIbCl8vFC0Dv2Qbzpzd0FhTBwOPedKrMUwPxtWde/XnMOQ8vwO331fw2Q80J1DiO5pfn50nxLPdrbtQCYY2BrfnTiKc3ms2qvtxkV3qblxeVaurbmrYAYAJzDgFzCcryR4N79ZI209CFODKHivTZvXV3V+Xju+VjqQ4lrgNST5DccPBRjvdNb7DJ4c6CIAAfhBsOF2zVuK0rGkCCCAlHmQX0eyiABBEaDi7qHQk8aC+ImR3uwsQlAQZvRr5wQAQDDTt1JMs7KHcedRyABAGFGJPonYT1UvR2zCGsSgMhqAyClr8CIMk1z4QNrNVaLBsNQPGWWk7GbdtuymVZJoK83QPDAoFtm4yTJFHDYAeE/gMIh4gCcFtPgrleKpXMXRBA3PQLs0BS5mk5dTmZuhBmEPd9OICv9VwwB4QJB/XIAiONC+itHuCtJ1nhUMsAndMuRF3XJu+jx3I+wNyp2QoQUDQA307QUs1GNJ7p/0aFLU7RAGzXN93NT814vjKgkJXxoyGgKSatetJ4eRtAiqsEIZkXRREHQJtQcjAVOQRP+2QB4LyOc3uMfKN7zxTryX1ehGg3POGuRrcjfmmQJPWCD+LIXC1XM0UQuLMdiU4y7unuxu6JWGRcUcy5Ob54CE7LhTFIuZTZf1+PePw95dbr+X+sSbtPXWP/awAAAABJRU5ErkJggg==",
+      "weapons": [],
+      "id": 13000001,
+      "soundPath": "Skill.img/13000001",
+      "description": {
+        "id": 13000001,
+        "desc": "활과 석궁의 사정 거리를 늘려준다.",
+        "name": "아마존의 눈",
+        "bookName": "",
+        "detail": "활과 석궁의 사정 거리 #range 증가"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "range": "15"
+        },
+        {
+          "hs": "h2",
+          "range": "30"
+        },
+        {
+          "hs": "h3",
+          "range": "45"
+        },
+        {
+          "hs": "h4",
+          "range": "60"
+        },
+        {
+          "hs": "h5",
+          "range": "75"
+        },
+        {
+          "hs": "h6",
+          "range": "90"
+        },
+        {
+          "hs": "h7",
+          "range": "105"
+        },
+        {
+          "hs": "h8",
+          "range": "120"
+        }
+      ]
+    },
+    {
+      "masterLevel": 10,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACPUlEQVR4nLWX65WCMBCFwzk2ICVACaQELEFLkBK0BLYEW8ASpIRQApSwKYHNDAwbQh7oZu8PeWTI/TJ5mBzYWiOLKCEE45zbihK60QHGl+ijmR+ZRHOAkOpJ14nnI0EQAJqXRRbFvOu6yfy7ZzzNEaIoiqW8bgS7XzhCHP7PXKgniVee8hXE7ayuM8SBRRSZv/oXk1Iu7+GZ53yTCVA0ADJ/iIYNmjkJ3tOY0CGiAJD5+XFmbfd0xkE5QUQFID2rybyo12m+lldW8cr6TTQAahW0cOiGdWG5jokOQH0KXYGS4dh26OIBmKrrenfs2wBLKw3pI9vV338GQPPhbi9jU6tt/RwFgMz5pbWWi0aBZfVmoYkCoJuP4/oPsxumEc/zHCEgE+9ABAF85qAiyxBC9P1HEF6AkHkMCCdAqM99gm/2QlgBzJZD65IkwRZCazfx2jigTGH8DogNQCjtZBbS3u5YAdjMwRAr6sPbNYjRM7UHYgHwmjflLggzdg8EAsAG0meOrQtA+GJ9EFMGHOZYsTEL6D1VTs+uWBtEK2/Y7F8AQ5A637zXZWbEN0tsmgDUGg5kNIBs0qeYabhajkNdpLxK1QXdU9sPwMHhOEPoKf1Eru/J3LkrhgIYIPivZqt454pIA3GjLDANdYiNHHsAp7JtHb6FKIGzGp2OzEDXDigk3/L7pfpfnYrgNqEMIASc2UxlbGDH+aAhpX23qb+He6kGZetZsckcfvQuSOYDo1NpmrKQThVk7BIKW47nP8AUqy7sg9/zAAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACDUlEQVR4nLWX4XWEIBCE8b1r4K4ELUFLMCVoK1qCtpKUoCVoCdqCJRiHZA3uwcIlZH7cKaDzwcIKN3XVriJqmiZVFIWtKqELE2AfpiWa+V1t2hwQ23Fn6q3IdoIgAG1e5mkU83metfmyLCrLMg2R5/lZ371Pqq0LDXH7T3PIBtFUx/83xE1FFJnrYd+2s5zmAh8JKBoAmQ/DcDEnodwGEQWAzJumUeM4OtuhniCiApD6vtf/VVVdynFf17X1mWgA1Cv0cF1XsU10AIopQhHadlzneABciHWoXgZw9dKc2a54/xkA5tIsh2xxjgJA5m3bWuu7rlNlWT4lmigApvm+Xz+YNOORbgEBvQLhBZDMoTRNNQTl/FchRACfeQwIJ4Av5pLwTCiEFYD3HL1LkkT3EL3lMucBjRTah0A8AfiG3ZVmuULDcQGwmcMQL6INhs/UHKkQiBNAMscLQiB42xAIDYANpGQO+SCkthKEBnCZQ3wVUDm9nO5dbW0QXzum+w8AF4ZOWvem+IhIq8QmDYAcDjKaQDaZS4wbmsvQFyL6Xswfxn4ABweCMIf0N3I97/pYnSGgCpooXKEZ0fW860t5mQOuZOHbA9jMuKRElOCsRqcj3jBkn2eTlH77I/7HqQiXCY2AhsCZjeuYYudBw3bg4OW4xqQchYxN5vgxQ5B8Hxidejweyic6G3h0Hs8/AeTRouQrC/M8AAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACNklEQVR4nLWX73WDIBTF4ZwsEEeII8gIOkKzih0hGaEdwY6gI8gIOkIYwXoxz4PIH5PS+yEqEO8P3gPhxLaaWEL1fc+EEK4qTjcmwNT2QzLzM1PaHBBqfjJViXwiCALQ5mVxSWIupVzMHwMTWa4hiqJY629Nzz6vQkOc/su8ndBzpa+Ciw1E/TFfnxAnllBk3jwaptS4luNZZGI3ElAyADK/DV9sVGpXj3KR7yGSAJB50RfsR31726GeEjMpwAoi5HLTbMvrsmb37O78TzIA6pWe99KqLLdtkgNQTBEKLRVv240yHYCt+lYfbvsywNpLS2Zm++L9ZwCYz3nsqVvi64pzEgAy525/NvVizr39QpMEwDSfpu0HsxuXjON5tkDI1yCiACFzqLycNUQ7PN6CCALEzFNAeAFiMQ9JAx+EcALYPUfvOOe6h+itLcqDCr1/jhTaH4HYAcSGncxiOhqODYDLHIboGV54yNQYqSMQK0DIfN7U6BfFIOy2RyA0ADaQIXMoBhFqG4LQAD5zyJ4FVE4vp2dfWxdE17W62yuALQxdaN6bskckNEtc0gBYw0FGCeSSOcVsQ3MaxkIEr7IsmPwx9gM4OKwQxpC+o8rzfzL37opRgQQBhEtHV8TJ8zX2fSk3OUAQtnx7AJ9gtntHYCHiOKvR6chu6NsBxRRafu9z/OdTEW45jYCGwJnN1oWNjBJbKXc2m+W4HedTUTcyr8gcP2YI+PPA6FWWxRM0q/B7jTVbj+e/dgebUgoyHBQAAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 13001002,
+      "soundPath": "Skill.img/13001002",
+      "description": {
+        "id": 13001002,
+        "desc": "집중하여 일정 시간동안 명중률과 회피율을 상승시킨다.",
+        "name": "포커스",
+        "bookName": "",
+        "detail": "#time초간 MP #mpCon 소비하여 명중률 #acc, 회피율 #eva 향상"
+      },
+      "requiredSkillLevels": {
+        "13000001": 5
+      },
+      "levelProperties": [
+        {
+          "acc": "2",
+          "eva": "2",
+          "hs": "h1",
+          "mpCon": "8",
+          "time": "110"
+        },
+        {
+          "acc": "20",
+          "eva": "20",
+          "hs": "h10",
+          "mpCon": "12",
+          "time": "200"
+        },
+        {
+          "acc": "4",
+          "eva": "4",
+          "hs": "h2",
+          "mpCon": "8",
+          "time": "120"
+        },
+        {
+          "acc": "6",
+          "eva": "6",
+          "hs": "h3",
+          "mpCon": "8",
+          "time": "130"
+        },
+        {
+          "acc": "8",
+          "eva": "8",
+          "hs": "h4",
+          "mpCon": "8",
+          "time": "140"
+        },
+        {
+          "acc": "10",
+          "eva": "10",
+          "hs": "h5",
+          "mpCon": "8",
+          "time": "150"
+        },
+        {
+          "acc": "12",
+          "eva": "12",
+          "hs": "h6",
+          "mpCon": "12",
+          "time": "160"
+        },
+        {
+          "acc": "14",
+          "eva": "14",
+          "hs": "h7",
+          "mpCon": "12",
+          "time": "170"
+        },
+        {
+          "acc": "16",
+          "eva": "16",
+          "hs": "h8",
+          "mpCon": "12",
+          "time": "180"
+        },
+        {
+          "acc": "18",
+          "eva": "18",
+          "hs": "h9",
+          "mpCon": "12",
+          "time": "190"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACqUlEQVR4nL2X4ZWqMBCF4znbgC24JUAJUIKWoCW4JawlaAlaApQAJeyWICW43MANkyEBdPe9+SECSb47k8yEvBnfHub/2Ip/pIBHUX39E9raNPaapqkBI0/fHxRBARaeJZunBq7r2iRJMnlPMKyqqvb9xnxeK/OxS62It9/A5+4J3m635na7uXfHbSuyF6HXwGI4BodHc/f4fzgceu+T0VhPC5Cehe5127IsJ8cbCdCh1AbYtfVkJ+ZX3lPQ+Xy2nsPoPceWkRgJYMOYV4Ctk3VLGuBa4D7buLBLx+Q0RQVQBBqGABaeDGJC8Ev5bd8R6GeB3ye6BrQIC7Yvukuxz+y1qRvXR8KlqOPxaE6nU5AzuQg9EaYTse51ND2jfWLySzmCY03c73cb+jzPX8sCzpuLgOgPIU3rvIQzKl3nF7MgBLcet6GGt/QcgBgcz4uisJ7DYt5HBcgsYHp5C07Dz5n3/LMVw7DLMWmTaciGsrOXkgpeXfvF2Azwj0s57mcWZoFuoAtT0HM8PwxwnZ6I4p+U4hDcei7g9nmvGetmCj4pQHrOVAwuOAF30yFSFOnLgrQ4AqFSzNru4LU/53I6mKJI2zkRwUXIzQTGvQFwObcefN+FXaYo4M1lqJKyNEezIAaXxYTz6sG9QYaaAdupRaw3JCdAhp3bKIQAnmWZ+6KRcAqCcYekwKsom3oHlOZFQDeU0dBwttXVkqte76R67svv2hcwlf+MiITLDwwNl5vYnM1mAeGs7bF00vm+VEQ0CwDkQHNbaqzYUMRiATH43JY6Ven0VEUFyLBzG4UQZkHsi2YKLkXMCgiFS0bjlcGXGASscFbrTkfjYxUsNv+vwk+3Gqci/F0xAlYEzmy0bOPD2z3I5e5vjXD8yEW46g+MI1uSz0+aO57/AAq/SZrlsy44AAAAAElFTkSuQmCC",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACTElEQVR4nL1X7XWDMAw072UBVkhHgBFgBDpCMgIdAUZIRigjwAgwQjNCGCGt3ByVhb9I2t6PBIzxnSRLwjtl4qb+BwkuuIBbP378CVuqZv2f57kijjJ/uUEEBGjyIttvWniaJpVlmfcexIRxHL+e71XzPqq311yL2D1DHroHcVVVquu65VldfYm8i5B7IJqcFieLQvd0fTwe79Znq7U2C+CW2e7l3GEYvOutBEhXShBZXdeqbVvrPQSdTidtOQHWY23uiZUATHRZRWRSjBRYFMXidm4YD5NTAETQRBuBSwwnJ7fTMxCaWWDuA+ceCImwjXFyLoqHSMK7CW0i0jTV//M8L/NocUlOY9frVbu+LMvHsgBxs1lLQkiEjZy/vzkLQuQhyzHe9722nOCy3imAZwFiJ4X4yA+Hw+J2vibgTUNM5C/LlOTkTdPoMYSDyM/ns/W9qCyQE2RhCllO5DZv/UoptpFLy7eQewVwy5GKIct5OABekKI9YCvFqO0xbkeKxoiwbkI0EwJ6Qww5J5VwiTAEuMhlMfHFXEKWYNmQFgHc7WijJITIKfb4opGp5iLlwmQH5DA8ICdyb0hyzJXVErtejsvYD5fJFODLf3iEk/MPDEnOm1gIwSwAOWq7K51kvseKcGYBEWKhUEt1FRuIiBbgIg+1VF+ls4XKKoC7HW2UhCALXF80PnIuIijA5i7ujUcWjwEJSOis9n06Wh+rCK74P0redhOdiugygQe0CDqzAcXeJB8uP7n7LEBOP3wTJvcD4wox+bwRy/H8E4dtLuwWXdZoAAAAAElFTkSuQmCC",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACoklEQVR4nL2XgdGiMBCFw8zfAJTglQAlxBK0BC3BK+EoQUrQEkwJUMJRgpTgsYEXNksC6H93O6MSiPnebrIb8qV8e6n/YwkuuIDXo/79T2ip6uxvURSKGPvixwsiIMDCdb57a+CmaVSe54ttgMnquu6f79SvW61+Hgsr4us78LU2wIfDQd3vd/fscuhFjiLkGtgMp8HJo7U2XZ/P59H7fDbW2wK4Z6G27GuMWRxvJkCGUhrBnv1vFmlD0PV6tZ6TwXuMzSMxE4COMa8Ilur+y0xwKfCiUxd27hifpqgAiKCOIYCFnwYBMXhpuiEqI9DPAn8dRNcARGSjCAtWI7y319ju2BRzuCfqclFlWQY5i4vQE2FGEcjWUUjafxIzh9OaeD6fNvT7/f6zLMC8uQic2EMS0vpwRMWa+TALQnAyCjV560RUcTjdfzwe1nOymPdRATwLkF7egpPwm3//dkpd2PmYsMU0REf+Zy8lJRzd2gl+rLr5/9TGLJAdZGEKek73jxNcpmem1N8pxUF468Pt/Wp4ROtmCb4ogHuOVAwuOA7HdLAUpfRFQdocgVApRm138Mqfcz4dSFESsiYiuAixmZBhbyA4n1sPrgdBPEXpujtO/XlpjmZBDM6LCebVg3OrWM1QUxrD5IbkBPCwYxslIQTXWrs3Gg6HILJUT3BbhlkBlDsgNy8CsiOPhoSjbyaqJVZ9JnZSOfembXwBS/mPiHA4f8GQcL6JrdlqFgCO2h5LJ5nv/J3iLQGAExADrW2psWIDEZsFxOBrW+pSpZNTFRXAw45tlIQgC2JvNEtwLmJVQChcPBqfDL7FSEBCZ7XhdDQ/VpHF5v9TeHlv6FRElwkiYEXQmQ2mdz7ctFPuftcApy++CJPxwDizYkM+v2nueP4H8ZYNFKWKp0gAAAAASUVORK5CYII=",
+      "weapons": [],
+      "id": 13001003,
+      "soundPath": "Skill.img/13001003",
+      "description": {
+        "id": 13001003,
+        "desc": "두개의 화살을 소비하여 두 번 적을 공격한다.",
+        "name": "더블 샷",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 데미지 #damage%"
+      },
+      "levelProperties": [
+        {
+          "bulletCount": "2",
+          "damage": "92",
+          "hs": "h1",
+          "mpCon": "10"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "110",
+          "hs": "h10",
+          "mpCon": "12"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "112",
+          "hs": "h11",
+          "mpCon": "13"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "114",
+          "hs": "h12",
+          "mpCon": "13"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "116",
+          "hs": "h13",
+          "mpCon": "13"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "118",
+          "hs": "h14",
+          "mpCon": "14"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "120",
+          "hs": "h15",
+          "mpCon": "14"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "122",
+          "hs": "h16",
+          "mpCon": "14"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "124",
+          "hs": "h17",
+          "mpCon": "15"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "126",
+          "hs": "h18",
+          "mpCon": "15"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "128",
+          "hs": "h19",
+          "mpCon": "15"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "94",
+          "hs": "h2",
+          "mpCon": "10"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "130",
+          "hs": "h20",
+          "mpCon": "16"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "96",
+          "hs": "h3",
+          "mpCon": "10"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "98",
+          "hs": "h4",
+          "mpCon": "10"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "100",
+          "hs": "h5",
+          "mpCon": "11"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "102",
+          "hs": "h6",
+          "mpCon": "11"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "104",
+          "hs": "h7",
+          "mpCon": "11"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "106",
+          "hs": "h8",
+          "mpCon": "12"
+        },
+        {
+          "bulletCount": "2",
+          "damage": "108",
+          "hs": "h9",
+          "mpCon": "12"
+        }
+      ]
+    },
+    {
+      "masterLevel": 20,
+      "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADH0lEQVR4nL1X7ZWCQAyM79kALXAlYAlcCVAClCAlYAlSApSgJUgJRwtbgpdZCIbIiv5x7nkKGzKTjw2wpyXu9B3s5IcWcL/d/r7Cfjj83EWECPDkSRJvXjw4ojgiKk8NHYuC+mGg6/Xq16I4poQ/OD4fi9nW4ty2VOa5F7F/lxzOAE3eMJFjAZ+QA0WWEU0i9rQBTQyAXI6LNJ3tdCY+QVCAEAsZiBHlschmIakSAHIcaxGvsvBSgJA7/kuiiH7Lii7nmrp+oFPTeSKUABY9GyfMkvBxWVVU8LfYw8+WiGAGhPyQV3Rra6q6R70RZT/VPOPeAQnI43jso09ELATotFvUWeozgFoLsVxzahpPPmZl7AcdSMR/IRGzAE2uo285ipzr3XJng1QTgwgf9IZtSGTh57ekv8uZehcWsbkLcEHNziAiVkRCrssANFMT4nxdH1dFfCRAVCMDC2EmG5b8XSwEIPXeQTTmqeAtl5djGdbqJ8SSDQ0cV9WJjpNw+EQWAGTiSYDUfYykHwWkCTW87TSZJdHfnshE730of97ePZzNAkBuDWULovvhWLIgDWjJ7XHGGZQesIH1VgAWhVhHq8lois6SD0bEaPrIhPgT/yJkFoCUYFEMr/3DYCtSIXdqHdvSTdtT+0uTZBbSXE0GQG4NG+rmrTbacKeo+j2Tc3txnbJpqw6Trfiz/mcB0ih6QRCrqQegH+C4n5zp2zGItW3TL7OmhYCzpDfmgIUQ5OxEk9s58S68AKRfbxdR6scwzwEe8lSYLDjVqfiNczb6E8+BS3uez0kJNNdeFkBqu1SEoNaNUt352aAHg/Pzwk3PCv6M6hVNLAEvMoAZICK0od+a4pQdiiM0mnuaTG5+GIEfjAxMQam3JvZ+3PAQYNNihawiCa/Z6+z29lydESCzQCLXQkKOQ7DJsSVYHcW4QcjC2sRaExSCHmRrxKs3I71ghQisoBDsdWvETwL0jcYKCTkOwV6niTefiNaEhByHsBbpq4fSHd7V7NuRvWBN0Cu8ehRvug5vRfi5kwx4EXhn+waEHP90CXbTC+M3ML+e/wOtXDFGLSuU8gAAAABJRU5ErkJggg==",
+      "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACg0lEQVR4nL1XbZHCMBQMMzWABZCABZAAEkACSAAJIAEkgAUkgAUkcLeZ2852eWnL/ejO3EfS5O2+j7w2VWrinYbBiP+ogPfj8RiEfTqdvimCAjL5ZDLp3Px6vdJ4PE6n0yktl8s8vt1u+RnmZ7NZHq/X63qt43q9psVikUVUfclhjCQkB5HO9yEH5vN5LaJKHVACAOQcw5CuYyS+QVEAiUkGYvyF5xSiAkCOsYpoi0KrACffbDbpeDym5/OZLpdLJqIQkmC82+3Sdrut1+NZl4jWFCg5iCkMXjLnqB3Mgxxj4BsRDQHquQMeIgL3+70m5h6Iw5xGxVESUemCyPv9fp8Oh0P2CqRKjB8I8oLEHNavVqt0Pp9r25GIzlOADThWEAFyEpFc0wBoT4D4SMRXAqgaHrkwjYaSsxb6IBTAMLGy4UmUP/UK0fBn2Ivo0WZUGw0BJKEnCDcKTMkiAUru3mtv0PR9CAC5L9Tzj+cUyAJ0ch8jgqwBd+xDADuZK9RiK3kOgQ59t3A97Wu3rGgADyOvdE5FOLmK4KlgxLiW+zUtjT7gC5F/zNEbkGh0nJxp8kjSntuvBVBRdHxA7p6rWJKzR0RRIlQIRXb2AYcaUXLvE32RBcAjzQtJcP55lqMoEFGhYozuiVOkc8BHDXCzVykNepXrm5EC2C90LiL2Z1kAQqgeqBB9w9FQ1NX0i4h2EDnNd3TK6hqIUqANw9HW732fExePYSkFJcMleHQ6U+Abo44VCSrBj19EHAooCSH6fvWWUhCh8TLyxb7xvylQdH4RRUL6GO5C20fpCHc1vx35hm/J2z7FkcrfWxH+HTECWQSuS0OA5PilKRj9XRiHQH09/wFukU7NOvV9cgAAAABJRU5ErkJggg==",
+      "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADVUlEQVR4nL1X7XGjMBCVZ9IAV4JSAi6BlIBLICXYJZgSTAmmhFCCVUIo4SjBt09o5dUiGO6Pd8YJSKt9bz+BD5PK07xHDnwhCTwfj9+3oB+Pn08mwQQ8eFna7IFJXUPrqxvMtamMG43ph8HvFdaain64v9MedItwrhA2bvcf83368iQ+tsCnzLUEb4fRTOO4AP+hvXEFHNLUlTGBhK6BTWATwCEl/c6VjTsyEjl7hcnLh1RaI8Few8sr2If7uqqiDsBxL0lI4DUSmxEY6aKiU5/fnfm9NaYjLy/9DIQUQNHRrySdku5PpHc+N1F/zJDYRUCC/yFjf8nYSeQbXg4h5w2Fx9EawG2ooy0SmwQmsy53ync3WjMQCQaGAPxC6QC4j4qZ60E6YosdKZDg0vsf8uLYDuZxrjxoY20EBhAIoTbmgpwFa4jC4dSa5/1shg0SqylgQbXfCBwk4CUDMbhMAwSt6c/R2u16zpL4LwIukEAEEmIqGhK8svmBlpOEwBjoVSFOTVObr5CGcoWc/x+ikezR7fel9algm0Owb0UeIgHOO+TiZs0r9VenwDQIRIJr72FD2vP6Ig+RAMC1Ircg+h8h5yhwAWpwfV9TBLkG1hyLBLDJwNJbF43aOI81+OhSEhArni1sj+0Di3c9gZ6aA5us2LtXjFKwtNUk+CQ8R1tOoT0Te4GAT0uIZ4yAE4pNUOwCUFmEyFChTKKRFuCkVhSWRvVsnIs62lNEIgEulKZcziqAn8V662bDzrkEHN4CONVNu14SAWZrdswBLQxwdCm4nhN7xROAL7JdmOkDY5g6gd4gFp5N0yvnuMaa1rm09EAKHQDpRBcw1lyE4Zkqq1QScdPkQx8N9f3ircWvmToujWK/U+0tu8wTqMlC72dukSj6umhqxjDDMB9FockIsEIf9iuqBdQtpmCXaW84bEf3IqDDoomwXJKBnBvOL1tSdHv7QTSKCEAwHnUKjDJ0zXRJTvTY7veMYiseFgsiLDsJ9OqcBgYWJzBpQ35KaSIsC0Iros/lnoIskYB8cdRE1gyviT4ngVffiAqzfIPVjId9Ach6Wqxcg8AB32ry6yj37pYjtCXFxlpHr/b0VYTLA0fAk8A32zuEwfFHFuEhfDC+Q+Ln+T/U8OpaCRrCJAAAAABJRU5ErkJggg==",
+      "weapons": [],
+      "id": 13001004,
+      "soundPath": "Skill.img/13001004",
+      "description": {
+        "id": 13001004,
+        "desc": "자신을 수호하는 정령을 소환한다. 주위에 근접한 적을 공격한다.",
+        "name": "스톰",
+        "bookName": "",
+        "detail": "MP #mpCon 소비하여 #time초간 물리 공격력 +#pad, 물리 방어력 +#pdd, 마법 방어력 +#mdd의 정령을 소환"
+      },
+      "levelProperties": [
+        {
+          "hs": "h1",
+          "mdd": "10",
+          "mpCon": "11",
+          "pad": "21",
+          "pdd": "10",
+          "time": "105",
+          "x": "1"
+        },
+        {
+          "hs": "h10",
+          "mdd": "15",
+          "mpCon": "15",
+          "pad": "30",
+          "pdd": "15",
+          "time": "150",
+          "x": "1"
+        },
+        {
+          "hs": "h11",
+          "mdd": "20",
+          "mpCon": "16",
+          "pad": "31",
+          "pdd": "20",
+          "time": "155",
+          "x": "1"
+        },
+        {
+          "hs": "h12",
+          "mdd": "20",
+          "mpCon": "16",
+          "pad": "32",
+          "pdd": "20",
+          "time": "160",
+          "x": "1"
+        },
+        {
+          "hs": "h13",
+          "mdd": "20",
+          "mpCon": "17",
+          "pad": "33",
+          "pdd": "20",
+          "time": "165",
+          "x": "1"
+        },
+        {
+          "hs": "h14",
+          "mdd": "20",
+          "mpCon": "17",
+          "pad": "34",
+          "pdd": "20",
+          "time": "170",
+          "x": "1"
+        },
+        {
+          "hs": "h15",
+          "mdd": "20",
+          "mpCon": "18",
+          "pad": "35",
+          "pdd": "20",
+          "time": "175",
+          "x": "1"
+        },
+        {
+          "hs": "h16",
+          "mdd": "25",
+          "mpCon": "18",
+          "pad": "36",
+          "pdd": "25",
+          "time": "180",
+          "x": "1"
+        },
+        {
+          "hs": "h17",
+          "mdd": "25",
+          "mpCon": "19",
+          "pad": "37",
+          "pdd": "25",
+          "time": "185",
+          "x": "1"
+        },
+        {
+          "hs": "h18",
+          "mdd": "25",
+          "mpCon": "19",
+          "pad": "38",
+          "pdd": "25",
+          "time": "190",
+          "x": "1"
+        },
+        {
+          "hs": "h19",
+          "mdd": "25",
+          "mpCon": "20",
+          "pad": "39",
+          "pdd": "25",
+          "time": "195",
+          "x": "1"
+        },
+        {
+          "hs": "h2",
+          "mdd": "10",
+          "mpCon": "11",
+          "pad": "22",
+          "pdd": "10",
+          "time": "110",
+          "x": "1"
+        },
+        {
+          "hs": "h20",
+          "mdd": "25",
+          "mpCon": "20",
+          "pad": "40",
+          "pdd": "25",
+          "time": "200",
+          "x": "1"
+        },
+        {
+          "hs": "h3",
+          "mdd": "10",
+          "mpCon": "12",
+          "pad": "23",
+          "pdd": "10",
+          "time": "115",
+          "x": "1"
+        },
+        {
+          "hs": "h4",
+          "mdd": "10",
+          "mpCon": "12",
+          "pad": "24",
+          "pdd": "10",
+          "time": "120",
+          "x": "1"
+        },
+        {
+          "hs": "h5",
+          "mdd": "10",
+          "mpCon": "13",
+          "pad": "25",
+          "pdd": "10",
+          "time": "125",
+          "x": "1"
+        },
+        {
+          "hs": "h6",
+          "mdd": "15",
+          "mpCon": "13",
+          "pad": "26",
+          "pdd": "15",
+          "time": "130",
+          "x": "1"
+        },
+        {
+          "hs": "h7",
+          "mdd": "15",
+          "mpCon": "14",
+          "pad": "27",
+          "pdd": "15",
+          "time": "135",
+          "x": "1"
+        },
+        {
+          "hs": "h8",
+          "mdd": "15",
+          "mpCon": "14",
+          "pad": "28",
+          "pdd": "15",
+          "time": "140",
+          "x": "1"
+        },
+        {
+          "hs": "h9",
+          "mdd": "15",
+          "mpCon": "15",
+          "pad": "29",
+          "pdd": "15",
+          "time": "145",
+          "x": "1"
+        }
+      ]
+    }
+  ],
+  "id": 1300,
+  "description": {
+    "id": 1300,
+    "desc": "",
+    "name": "",
+    "shortDesc": "",
+    "bookName": "윈드브레이커의 기본"
+  }
+}
