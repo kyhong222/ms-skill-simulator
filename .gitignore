@@ -14,6 +14,10 @@ deploy
 .claude/
 *.local
 
+# Claude 작업 산출물 (커밋 제외)
+/memory/
+/cygnus-translation-draft.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
