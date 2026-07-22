@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mapleland.st/sitemap.xml
+Sitemap: https://skill.mapleland.st/sitemap.xml

@@ -25,8 +25,8 @@
 | 라우팅 | react-router-dom | 7.13 |
 | 캡처 | html2canvas | 1.4 |
 | 린팅 | ESLint (flat config) | 9.25 |
-| 배포 | gh-pages → GitHub Pages | 6.3 |
-| 커스텀 도메인 | mapleland.st | - |
+| 배포 | Vercel (Git 연동 자동 배포) | - |
+| 커스텀 도메인 | skill.mapleland.st | - |
 
 ## 디렉토리 구조
 
@@ -36,14 +36,12 @@ ms-skill-simulator/
 │   └── workflows/
 │       └── trigger-deploy.yml       # main 푸시 시 루트 레포 배포 트리거
 ├── public/
-│   ├── 404.html                     # SPA용 GitHub Pages 404 리다이렉트
-│   ├── CNAME                        # 커스텀 도메인 (mapleland.st)
 │   ├── googlee63cd6836513ab92.html  # Google Search Console 소유권 인증
 │   ├── robots.txt                   # 크롤러 허용 설정
 │   ├── sitemap.xml                  # SEO 사이트맵
 │   └── vite.svg                     # Vite 기본 아이콘 (미사용)
 ├── scripts/
-│   └── prepare-deploy.js            # 빌드 결과물을 deploy/ 디렉토리로 정리
+│   └── prepare-deploy.js            # (사용 안 함) 구 GitHub Pages 서브패스 배포용 잔재
 ├── src/
 │   ├── components/
 │   │   ├── JobSelector/
@@ -75,9 +73,10 @@ ms-skill-simulator/
 │   ├── index.css                    # Tailwind 지시자 + 기본 스타일 (Vite 기본 템플릿 기반)
 │   ├── main.tsx                     # 엔트리포인트 (BrowserRouter, StrictMode)
 │   └── vite-env.d.ts               # Vite 타입 선언
-├── index.html                       # HTML 템플릿 (SEO 메타태그, SPA 리다이렉트 스크립트)
+├── index.html                       # HTML 템플릿 (SEO 메타태그)
 ├── package.json
-├── vite.config.ts                   # Vite 설정 (base: /skill/)
+├── vercel.json                      # Vercel 설정 (SPA rewrite, /skill/* → /* 리다이렉트)
+├── vite.config.ts                   # Vite 설정 (base: /)
 ├── tsconfig.json                    # TS 프로젝트 레퍼런스 + 경로 별칭 (@/*)
 ├── tsconfig.app.json                # 앱 TS 설정 (strict, ES2020)
 ├── tsconfig.node.json               # Node TS 설정 (vite.config용)
@@ -218,9 +217,9 @@ main.tsx
 | `/` | `SkillSimulatorPage` | 직업 선택 화면 |
 | `/:jobId` | `SkillTreePage` | 스킬 트리 화면 (예: `/112` = 히어로) |
 
-- `BrowserRouter`의 `basename`은 `/skill` (배포 경로)
+- `BrowserRouter`는 `basename` 없이 루트(`/`)에서 서비스 (`skill.mapleland.st` 서브도메인)
 - 존재하지 않는 `jobId`로 접근 시 `/`로 리다이렉트
-- GitHub Pages SPA 지원을 위한 `404.html` 리다이렉트 스크립트 포함
+- 딥링크(예: `/112` 직접 접근)는 `vercel.json`의 rewrite로 `index.html` 반환하여 처리
 
 ## 스타일링 전략
 
@@ -234,20 +233,19 @@ main.tsx
 ## 빌드 & 배포
 
 ### 빌드 설정
-- `vite.config.ts`: `base: '/skill/'` (서브패스 배포)
+- `vite.config.ts`: `base: '/'` (서브도메인 루트 배포)
 - TypeScript: strict 모드, ES2020 타겟, bundler 모듈 해석
 
 ### 배포 파이프라인
-1. `npm run build` → `tsc -b && vite build` → `dist/` 생성
-2. `scripts/prepare-deploy.js` → `dist/`를 `deploy/` 디렉토리로 재구성
-   - 루트 파일 (CNAME, 404.html, robots.txt, sitemap.xml, Google 인증) → `deploy/`
-   - 나머지 파일 → `deploy/skill/`
-3. `npm run deploy` → `gh-pages -d dist`로 GitHub Pages 배포
-4. GitHub Actions (`trigger-deploy.yml`): main 푸시 시 루트 레포(`mapleland-st-root-page`)에 deploy 이벤트 전송
+1. main 브랜치 푸시 → Vercel이 자동으로 `npm run build` 실행 → `dist/` 배포
+2. `vercel.json` 설정
+   - `rewrites`: 정적 파일이 없는 모든 경로를 `/index.html`로 (SPA 딥링크 지원)
+   - `redirects`: `/skill`, `/skill/*` → 루트로 308 (구 경로 유입 대비)
+3. GitHub Actions (`trigger-deploy.yml`): main 푸시 시 루트 레포(`mapleland-st-root-page`)에 deploy 이벤트 전송
 
 ### 커스텀 도메인 구조
-- `mapleland.st/skill/` 경로로 서비스
-- 루트 레포와 서브 레포 분리 구조 (이 레포는 `/skill/` 서브패스 담당)
+- `skill.mapleland.st` 서브도메인 루트로 서비스
+- 구 주소 `mapleland.st/skill` → 루트 레포 쪽에서 308 리다이렉트 처리
 
 ## 외부 의존성
 
@@ -258,7 +256,6 @@ main.tsx
 | `html2canvas` (1.4) | DOM → Canvas 캡처 (이미지 다운로드, 클립보드 복사) |
 | `tailwindcss` (3.4) | 유틸리티 CSS |
 | `@vitejs/plugin-react` (4.4) | Vite React 플러그인 (Fast Refresh) |
-| `gh-pages` (6.3) | GitHub Pages 배포 CLI |
 | `typescript-eslint` (8.30) | TypeScript ESLint 지원 |
 
 ### 데이터 소스

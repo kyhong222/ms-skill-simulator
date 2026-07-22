@@ -19,21 +19,22 @@
 
 ```bash
 npm install          # 의존성 설치
-npm run dev          # 개발 서버 (localhost:5173, base: /skill/)
+npm run dev          # 개발 서버 (localhost:5173, base: /)
 npm run build        # 프로덕션 빌드 (tsc -b && vite build → dist/)
 npm run lint         # ESLint 검사
 npm run preview      # 빌드 결과 미리보기
-npm run deploy       # GitHub Pages 배포 (gh-pages -d dist)
 ```
+
+배포는 Vercel Git 연동으로 자동 진행 (main 푸시 → 빌드 → 배포). 수동 배포 스크립트 없음.
 
 ## 기술 스택
 
 - **React 19** + **TypeScript 5.8** + **Vite 6.3**
 - **Tailwind CSS 3.4** (다크모드 비활성화)
-- **react-router-dom 7.13** (BrowserRouter, basename: `/skill`)
+- **react-router-dom 7.13** (BrowserRouter, basename 없음 — 루트 배포)
 - **html2canvas 1.4** (스킬 트리 캡처)
-- **gh-pages** (GitHub Pages 배포)
-- 배포 URL: `https://mapleland.st/skill/`
+- **Vercel** (Git 연동 자동 배포, `vercel.json`에 SPA rewrite)
+- 배포 URL: `https://skill.mapleland.st/` (구 주소 `mapleland.st/skill` → 308 리다이렉트)
 
 ## 프로젝트 구조
 
@@ -61,7 +62,7 @@ src/
 ├── App.tsx                         # Routes 정의
 ├── App.css                         # fadeIn 애니메이션
 ├── index.css                       # Tailwind 지시자 + 기본 스타일
-└── main.tsx                        # 엔트리 (BrowserRouter basename="/skill")
+└── main.tsx                        # 엔트리 (BrowserRouter, basename 없음)
 ```
 
 ## 코드 컨벤션
@@ -138,11 +139,11 @@ src/
 
 - 스킬 아이콘은 **Base64로 JSON에 내장** — 파일 크기가 큼
 - `ILevelProperties`는 `hs` 외 동적 키 — 인덱스 시그니처 `[key: string]: string`으로 정의
-- Vite `base: '/skill/'` + BrowserRouter `basename="/skill"` — 로컬 개발 시에도 `/skill/` 경로
+- Vite `base: '/'` + BrowserRouter basename 없음 — 도메인 변경(`skill.mapleland.st`) 시 둘 다 루트로 맞춰야 함 (불일치 시 자산 404 → 흰 화면)
 - `isShiftPressed` 상태와 `e.shiftKey` 두 가지 방식 혼재 (useState는 버튼 색상용, 이벤트는 실제 로직용)
 - `isBranchActivated()`: `usedSkillPoints - totalInvestedPoints` 계산 — 현재 브랜치 투자분 제외
 - 툴팁: `ReactDOM.createPortal`로 `document.body`에 렌더링 (fixed 포지셔닝)
-- `prepare-deploy.js`와 `npm run deploy`는 별개 프로세스 — deploy 스크립트는 dist 직접 배포
+- `scripts/prepare-deploy.js`는 구 GitHub Pages 서브패스 배포용 잔재 — 현재 배포 경로에서 사용하지 않음
 
 ## 남은 개선 가능 영역
 
