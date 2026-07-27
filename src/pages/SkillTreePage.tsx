@@ -85,45 +85,41 @@ export default function SkillTreePage() {
   return (
     <>
       <div>
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-semibold">전직명: {job.koname}</h2>
-          <div>
+        <div className="flex flex-col gap-2 mb-4 md:flex-row md:items-center md:justify-between">
+          <h2 className="text-lg font-semibold text-left md:text-xl">전직명: {job.koname}</h2>
+          <div className="flex flex-wrap gap-2">
             {/* 시그너스는 4차 전직이 없어 "4차 이후만" 모드 미제공 */}
             {!isCygnus && (
               <button
                 onClick={() => setFourthOnly(!fourthOnly)}
-                className={`exclude-from-capture text-gray-900 ml-2 px-4 py-2 rounded ${
+                className={`exclude-from-capture flex-1 text-gray-900 px-2 py-2 text-sm rounded md:flex-none md:w-[120px] md:px-4 md:text-base ${
                   fourthOnly ? "bg-green-300 hover:bg-green-400" : "bg-gray-200 hover:bg-gray-300"
                 }`}
-                style={{ width: "120px" }}
               >
                 {fourthOnly ? "전체 보기" : "4차 이후만"}
               </button>
             )}
             <button
               onClick={copyToClipboard}
-              className="text-gray-900 ml-2 px-4 py-2 bg-blue-200 hover:bg-blue-300 rounded"
-              style={{ width: "140px" }}
+              className="flex-1 text-gray-900 px-2 py-2 text-sm bg-blue-200 hover:bg-blue-300 rounded md:flex-none md:w-[140px] md:px-4 md:text-base"
             >
               클립보드 복사
             </button>
             <button
               onClick={captureSkillTree}
-              className="text-gray-900 ml-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
-              style={{ width: "120px" }}
+              className="flex-1 text-gray-900 px-2 py-2 text-sm bg-gray-200 hover:bg-gray-300 rounded md:flex-none md:w-[120px] md:px-4 md:text-base"
             >
               캡쳐하기
             </button>
             <button
               onClick={() => navigate("/")}
-              className="text-gray-900 ml-2 px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded"
-              style={{ width: "120px" }}
+              className="flex-1 text-gray-900 px-2 py-2 text-sm bg-gray-200 hover:bg-gray-300 rounded md:flex-none md:w-[120px] md:px-4 md:text-base"
             >
               직업 변경
             </button>
           </div>
         </div>
-        <div ref={skillTreeRef} className="p-4 bg-gray-100 rounded-lg shadow">
+        <div ref={skillTreeRef} className="p-2 bg-gray-100 rounded-lg shadow md:p-4">
           <div ref={skillTreeOnlyRef}>
             <SkillTree selectedJobId={job.id} jobName={job.koname} fourthOnly={fourthOnly} />
           </div>

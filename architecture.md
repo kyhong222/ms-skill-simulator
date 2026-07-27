@@ -48,7 +48,8 @@ ms-skill-simulator/
 │   │   │   └── JobSelector.tsx      # 직업 선택 화면 (5개 그룹 × 12개 직업)
 │   │   └── SkillTree/
 │   │       ├── SkillTree.tsx        # 스킬 트리 메인 (상태관리, 포인트 계산, 데이터 로딩)
-│   │       ├── SkillBranch.tsx      # 단일 차수 스킬 브랜치 (UI 렌더링 전용)
+│   │       ├── SkillBranch.tsx      # 단일 차수 스킬 브랜치 (UI 렌더링 전용, 모바일 접기 토글)
+│   │       ├── SkillRow.tsx         # 스킬 1개 행 (반응형: 모바일 한 줄 / 데스크톱 2줄)
 │   │       ├── useSkillBranch.ts    # 스킬 브랜치 비즈니스 로직 훅 (활성화 검증, 레벨 증감)
 │   │       ├── SkillToolTip.tsx     # 스킬 툴팁 (레벨별 속성 치환 렌더링)
 │   │       └── SkillToolTipPostfix.tsx  # 특정 스킬의 속성값 후처리 (15개 스킬)
@@ -101,9 +102,23 @@ SkillTreePage (캡처, 모드 토글, 네비게이션)
 SkillTree (스킬 레벨 상태, 포인트 계산, 데이터 로딩)
     ↓ props (skillLevels, onLevelChange, remainingSkillPoints ...)
 SkillBranch (UI 렌더링) + useSkillBranch (활성화 검증, 레벨 증감 로직)
-    ↓ hover
+    ↓ props (skill, level, is*, on*)
+SkillRow (스킬 1개 행 렌더링 — 반응형 레이아웃)
+    ↓ hover (md 이상에서만 표시)
 SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 ```
+
+### 반응형 레이아웃 (Tailwind `md` = 768px 기준)
+- **브랜치 배치**: 모바일 세로 (`flex-col`) / 데스크톱 가로 (`md:flex-row`) — `SkillTree.tsx`
+- **브랜치 접기**: `SkillBranch`의 `isCollapsed` state. 헤더 전체가 토글 버튼이며,
+  데스크톱은 `md:pointer-events-none` + 목록 `hidden md:grid`로 항상 펼쳐진 상태 유지
+- **스킬 행**: 모바일은 `[아이콘][스킬명][레벨/마스터(M)][▲][▼][M]` 한 줄,
+  데스크톱은 기존과 동일한 2줄 구조 (`md:block`) — `SkillRow.tsx`
+  - `0` 버튼은 `hidden md:flex`로 모바일에서만 숨김. 이 때문에 버튼의 display는
+    `BUTTON_BASE`에 넣지 않고 버튼마다 개별 지정함
+- **툴팁**: hover 기반이라 모바일에서는 포탈에 `hidden md:block`으로 비표시
+- **전역 폭**: `App.tsx`의 최소 너비는 `md:min-w-[1500px]`로 데스크톱에만 적용,
+  `#root` 패딩은 모바일 `0.75rem` / 데스크톱 `2rem` (`App.css` 미디어쿼리)
 
 ### 데이터 로딩 전략
 - 스킬북 JSON 파일은 `import()`를 통한 **동적 임포트** (코드 스플리팅)
@@ -113,7 +128,7 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 ### 컴포넌트 구조
 - **페이지 컴포넌트**: `SkillSimulatorPage`, `SkillTreePage` — 라우팅 진입점, 네비게이션 처리
 - **기능 컴포넌트**: `JobSelector`, `SkillTree` — 상태관리 및 데이터 로딩
-- **UI 컴포넌트**: `SkillBranch` — 렌더링 전용 (로직은 `useSkillBranch` 훅에 분리)
+- **UI 컴포넌트**: `SkillBranch`, `SkillRow` — 렌더링 전용 (로직은 `useSkillBranch` 훅에 분리)
 - **커스텀 훅**: `useSkillBranch` — 스킬 활성화 검증, 레벨 증감, 포인트 계산 로직
 - **표시 컴포넌트**: `SkillToolTip`, `SkillToolTipPostfix` — 순수 렌더링/데이터 변환
 
@@ -203,6 +218,7 @@ main.tsx
               │     └── SkillBranch.tsx
               │           ├── useSkillBranch.ts (비즈니스 로직 훅)
               │           │     └── constants/skillPoints.ts
+              │           ├── SkillRow.tsx (스킬 1개 행, 반응형)
               │           ├── SkillToolTip.tsx
               │           │     └── SkillToolTipPostfix.tsx
               │           └── react-dom (createPortal)

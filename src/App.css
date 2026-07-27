@@ -1,8 +1,16 @@
 #root {
   max-width: 1500px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0.75rem;
   text-align: center;
+}
+
+/* md 이상에서는 기존 여백 유지 */
+@media (min-width: 768px) {
+  #root {
+    padding: 2rem;
+  }
 }
 
 @keyframes fadeIn {

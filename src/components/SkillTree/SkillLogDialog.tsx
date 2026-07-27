@@ -213,7 +213,7 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
             ))}
           </ol>
         ) : (
-          <div className={`grid gap-5 ${isCygnus ? "grid-cols-3" : "grid-cols-4"}`}>
+          <div className={`grid gap-5 grid-cols-1 ${isCygnus ? "md:grid-cols-3" : "md:grid-cols-4"}`}>
             {branches.map((entries, branchIdx) => (
               <div key={branchIdx} className="min-w-0">
                 <h4 className="font-semibold text-center border-b pb-1.5 mb-2 text-gray-700">

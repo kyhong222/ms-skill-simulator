@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import type { IJobSkillBook } from "../../types/jobSkillBook";
 import SkillTooltip from "./SkillToolTip";
+import SkillRow from "./SkillRow";
 import ReactDOM from "react-dom";
 import { useSkillBranch } from "./useSkillBranch";
 
@@ -20,6 +21,8 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   const [hoveredSkillId, setHoveredSkillId] = useState<number | null>(null);
   const [tooltipPosition, setTooltipPosition] = useState<{ x: number; y: number; isBottomHalf?: boolean }>({ x: 0, y: 0 });
   const [isShiftPressed, setIsShiftPressed] = useState(false);
+  // 모바일 전용 접기 상태 (데스크톱에서는 CSS로 항상 펼침)
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   const { skillbook, skillLevels, fourthOnly = false } = props;
 
@@ -78,134 +81,69 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
     // 4차 이후만 모드일 때는 비활성화 처리 안 함
     // 차수에 맞는 포인트를 사용하지 않았으면 branch 전체를 비활성화
     <div
-      className={`p-2 border rounded-xl w-full shadow bg-white relative ${
+      className={`p-2 border rounded-xl w-full min-w-0 shadow bg-white relative ${
         !fourthOnly && !isBranchActivated() ? "filter cursor-not-allowed grayscale" : ""
       }`}
     >
-      {/* 직업 아이콘 + 스킬북 이름 */}
-      <div className="flex items-start gap-3 mb-4">
+      {/* 직업 아이콘 + 스킬북 이름 (모바일에서는 접기 토글) */}
+      <button
+        type="button"
+        onClick={() => setIsCollapsed((prev) => !prev)}
+        aria-expanded={!isCollapsed}
+        className="flex w-full items-center gap-3 mb-3 border-0 rounded-none bg-transparent p-0 text-left font-normal select-none focus:outline-none md:mb-4 md:items-start md:pointer-events-none"
+      >
         {skillbook.icon && (
           <img
             src={`data:image/png;base64,${skillbook.icon}`}
             alt={`${skillbook.description.name} icon`}
-            style={{ width: "55px", height: "64px", objectFit: "contain" }}
-            className="w-16 h-16"
+            className="w-10 h-12 object-contain flex-shrink-0 md:w-[55px] md:h-16"
           />
         )}
 
-        <div className="flex flex-col text-left">
-          <h2 className="text-black text-2xl font-bold">{skillbook.description.bookName}</h2>
-          <span className="text-sm text-gray-600">총 투자 포인트: {totalInvestedPoints}</span>
+        <div className="flex flex-col text-left min-w-0">
+          <h2 className="text-black text-lg font-bold break-keep md:text-2xl">{skillbook.description.bookName}</h2>
+          <span className="text-xs text-gray-600 md:text-sm">총 투자 포인트: {totalInvestedPoints}</span>
           {!fourthOnly && (
-            <span className="exclude-from-capture text-sm text-gray-600">
+            <span className="exclude-from-capture text-xs text-gray-600 md:text-sm">
               필요 투자 포인트: {remainingPointsForBranch}
             </span>
           )}
         </div>
-      </div>
 
-      {/* 스킬 목록 */}
-      <div className="grid gap-2 w-full">
+        {/* 접기/펼치기 표시 (모바일 전용) */}
+        <span
+          className="exclude-from-capture ml-auto flex-shrink-0 text-gray-500 text-base leading-none md:hidden"
+          aria-hidden="true"
+        >
+          {isCollapsed ? "▼" : "▲"}
+        </span>
+      </button>
+
+      {/* 스킬 목록 (모바일에서 접힘, 데스크톱은 항상 표시) */}
+      <div className={`gap-2 w-full ${isCollapsed ? "hidden md:grid" : "grid"}`}>
         {skillbook.skills.map((skill) => (
-          // 스킬이 필요 스킬을 만족하지 않으면 비활성화(툴팁은 표시)
-          <div
+          <SkillRow
             key={skill.id}
-            className={`flex items-start gap-4 p-3 border rounded-lg relative
-              ${isSkillActivated(skill.id) ? "" : "grayscale cursor-not-allowed"}
-              ${getLevel(skill.id) === skill.masterLevel ? "bg-amber-300" : (getLevel(skill.id) >= 1 ? "bg-amber-100" :  "bg-white") }
-              `}
+            skill={skill}
+            level={getLevel(skill.id)}
+            isActivated={isSkillActivated(skill.id)}
+            isIncreasable={isSkillIncreasable(skill.id)}
+            isDecreasable={isSkillDecreasable(skill.id)}
+            isMaxLevel={isMaxLevel(skill.id)}
+            isShiftPressed={isShiftPressed}
+            onIncrease={(e) => increaseLevel(skill.id, e)}
+            onDecrease={(e) => decreaseLevel(skill.id, e)}
+            onIncreaseMax={() => increaseMaxLevel(skill.id)}
+            onDecreaseZero={() => decreaseZeroLevel(skill.id)}
             onMouseEnter={() => setHoveredSkillId(skill.id)}
             onMouseLeave={() => setHoveredSkillId(null)}
             onMouseMove={handleMouseMove}
           >
-            {skill.icon && (
-              <img
-                src={`data:image/png;base64,${skill.icon}`}
-                alt={skill.description?.name || "skill icon"}
-                className="w-16 h-16 flex-shrink-0"
-              />
-            )}
-
-            {/* 스킬명과 레벨/버튼을 감싸는 전체 flex 컨테이너 */}
-            <div className="flex-1">
-              {/* 스킬명 */}
-              <div>
-                <div className="text-black text-left font-semibold">{skill.description?.name || "알 수 없는 스킬"}</div>
-
-                {/* 현재 레벨 및 버튼들 */}
-                <div className="flex items-center gap-1 ml-0 min-w-[120px] justify-end">
-                  <span className="text-black text-left">{`${getLevel(skill.id)}/${skill.masterLevel} ${
-                    getLevel(skill.id) === skill.masterLevel ? "(M)" : ""
-                  }`}</span>
-                  <div className="ml-auto flex items-center gap-0">
-                    <button
-                      onClick={(e) => increaseLevel(skill.id, e)}
-                      className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
-                        isSkillIncreasable(skill.id)
-                          ? isShiftPressed
-                            ? "bg-yellow-500 hover:bg-yellow-600 cursor-pointer"
-                            : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
-                          : "bg-gray-400 cursor-not-allowed"
-                      }`}
-                      style={{ transform: "scale(0.75)" }}
-                      aria-label="Increase level"
-                      disabled={isMaxLevel(skill.id)}
-                      title="클릭: +1, Shift+클릭: +5"
-                    >
-                      ▲
-                    </button>
-                    <button
-                      onClick={(e) => decreaseLevel(skill.id, e)}
-                      className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
-                        isSkillDecreasable(skill.id)
-                          ? isShiftPressed
-                            ? "bg-yellow-500 hover:bg-yellow-600 cursor-pointer"
-                            : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
-                          : "bg-gray-400 cursor-not-allowed"
-                      }`}
-                      style={{ transform: "scale(0.75)" }}
-                      aria-label="Decrease level"
-                      disabled={getLevel(skill.id) === 0}
-                      title="클릭: -1, Shift+클릭: -5"
-                    >
-                      ▼
-                    </button>
-                    <button
-                      onClick={() => decreaseZeroLevel(skill.id)}
-                      className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
-                        isSkillDecreasable(skill.id)
-                          ? "bg-orange-500 hover:bg-orange-600 cursor-pointer"
-                          : "bg-gray-400 cursor-not-allowed"
-                      }`}
-                      style={{ transform: "scale(0.75)" }}
-                      aria-label="Decrease to zero"
-                      disabled={getLevel(skill.id) === 0}
-                    >
-                      0
-                    </button>
-                    <button
-                      onClick={() => increaseMaxLevel(skill.id)}
-                      className={`exclude-from-capture px-2 py-0.5 text-white font-bold rounded flex items-center justify-center ${
-                        isSkillIncreasable(skill.id)
-                          ? "bg-orange-500 hover:bg-orange-600 cursor-pointer"
-                          : "bg-gray-400 cursor-not-allowed"
-                      }`}
-                      style={{ transform: "scale(0.75)" }}
-                      aria-label="Master skill"
-                      disabled={isMaxLevel(skill.id)}
-                    >
-                      M
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Portal로 툴팁 렌더링 */}
+            {/* Portal로 툴팁 렌더링 (모바일은 hover가 없어 숨김) */}
             {hoveredSkillId === skill.id &&
               ReactDOM.createPortal(
                 <div
-                  className="absolute z-50"
+                  className="absolute z-50 hidden md:block"
                   style={{
                     position: "fixed",
                     top: tooltipPosition.isBottomHalf
@@ -228,7 +166,7 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
                 </div>,
                 document.body
               )}
-          </div>
+          </SkillRow>
         ))}
       </div>
     </div>

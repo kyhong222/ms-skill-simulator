@@ -332,8 +332,8 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
   return (
     <div>
       {/* 상단 바: 현재 레벨 + 스킬 포인트 정보 */}
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center justify-between gap-4">
+      <div className="flex flex-col gap-3 mb-4 md:flex-row md:items-center md:justify-between md:gap-0">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm md:text-base">
           <label className="font-semibold text-black">
             현재 레벨:
             <input
@@ -361,29 +361,27 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
         <div className="flex gap-2">
           <button
             onClick={() => setIsLogOpen(true)}
-            className="exclude-from-capture px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-            style={{ width: "120px" }}
+            className="exclude-from-capture flex-1 px-2 py-2 text-sm bg-blue-500 text-white rounded hover:bg-blue-600 md:flex-none md:w-[120px] md:px-4 md:text-base"
           >
             스킬 로그
           </button>
           <button
             onClick={() => setIsCodeInputOpen(true)}
-            className="exclude-from-capture px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
-            style={{ width: "140px" }}
+            className="exclude-from-capture flex-1 px-2 py-2 text-sm bg-green-500 text-white rounded hover:bg-green-600 md:flex-none md:w-[140px] md:px-4 md:text-base"
           >
             스킬코드 적용
           </button>
           <button
             onClick={resetLevels}
-            className="exclude-from-capture px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-            style={{ width: "120px" }}
+            className="exclude-from-capture flex-1 px-2 py-2 text-sm bg-red-500 text-white rounded hover:bg-red-600 md:flex-none md:w-[120px] md:px-4 md:text-base"
           >
             스킬 초기화
           </button>
         </div>
       </div>
 
-      <div className={`skill-branches-container flex overflow-x-visible gap-6 pb-4 ${fourthOnly ? 'w-1/4 mx-auto' : 'w-full justify-between'}`}>
+      {/* 모바일: 세로 배치 / 데스크톱(md~): 기존 가로 배치 */}
+      <div className={`skill-branches-container flex flex-col md:flex-row overflow-x-visible gap-3 md:gap-6 pb-4 ${fourthOnly ? 'w-full md:w-1/4 mx-auto' : 'w-full md:justify-between'}`}>
         {Object.entries(skillbooks).map(([jobId, skillbook], index) => {
           // 4차 모드일 때는 마지막 스킬북(index 3)만 표시
           if (fourthOnly && index !== 3) return null;
@@ -423,7 +421,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
 
       <dialog
         ref={codeDialogRef}
-        className="rounded-lg shadow-xl p-0 w-[480px] backdrop:bg-black/50"
+        className="rounded-lg shadow-xl p-0 w-[92vw] max-w-[480px] backdrop:bg-black/50"
       >
         <div className="flex items-center justify-between px-5 py-3 border-b bg-gray-50 rounded-t-lg">
           <h3 className="font-semibold text-lg text-gray-800">스킬코드 적용</h3>

@@ -25,8 +25,8 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
   const groupNames = Object.keys(groupedJobs);
 
   return (
-    <div className="p-6 max-w-full mx-auto">
-      <h1 className="text-2xl font-bold mb-4">직업을 선택하세요.</h1>
+    <div className="p-3 max-w-full mx-auto md:p-6">
+      <h1 className="text-xl font-bold mb-4 md:text-2xl">직업을 선택하세요.</h1>
 
       <div className="overflow-x-auto">
         <div className="min-w-max">
@@ -59,13 +59,13 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
       </div>
 
       <div className="mt-8 text-left">
-        <h1 className="text-2xl font-bold mb-4">25.06.20  패치 반영</h1>
-        <h1 className="text-2xl font-bold mb-4">25.09.19  스나이핑 쿨타임 수정</h1>
-        <h1 className="text-2xl font-bold mb-4">25.10.17  돌진 사거리 오류, 마그넷 설명 수정</h1>
-        <h1 className="text-2xl font-bold mb-4">25.10.21  숙련도 오류 수정</h1>
-        <h1 className="text-2xl font-bold mb-4">25.12.19  패치 반영, 클립보드 복사기능, 스킬트리 자체 저장기능 추가</h1>
-        <h1 className="text-2xl font-bold mb-4">25.12.23  4차만 찍어보기 기능, 5레벨씩 찍기(Shift+클릭) 추가</h1>
-        <h1 className="text-2xl font-bold mb-4">26.06.14  시그너스 직업군 스킬 추가</h1>
+        <h1 className="text-base font-bold mb-4 break-keep md:text-2xl">25.06.20  패치 반영</h1>
+        <h1 className="text-base font-bold mb-4 break-keep md:text-2xl">25.09.19  스나이핑 쿨타임 수정</h1>
+        <h1 className="text-base font-bold mb-4 break-keep md:text-2xl">25.10.17  돌진 사거리 오류, 마그넷 설명 수정</h1>
+        <h1 className="text-base font-bold mb-4 break-keep md:text-2xl">25.10.21  숙련도 오류 수정</h1>
+        <h1 className="text-base font-bold mb-4 break-keep md:text-2xl">25.12.19  패치 반영, 클립보드 복사기능, 스킬트리 자체 저장기능 추가</h1>
+        <h1 className="text-base font-bold mb-4 break-keep md:text-2xl">25.12.23  4차만 찍어보기 기능, 5레벨씩 찍기(Shift+클릭) 추가</h1>
+        <h1 className="text-base font-bold mb-4 break-keep md:text-2xl">26.06.14  시그너스 직업군 스킬 추가</h1>
         <br/>
       </div>
     </div>

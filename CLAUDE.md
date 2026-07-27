@@ -44,7 +44,8 @@ src/
 │   ├── JobSelector/JobSelector.tsx  # 직업 선택 UI
 │   └── SkillTree/
 │       ├── SkillTree.tsx            # 핵심: 상태관리, 포인트 계산, 데이터 로딩
-│       ├── SkillBranch.tsx          # 단일 차수 스킬 UI (렌더링 전용)
+│       ├── SkillBranch.tsx          # 단일 차수 스킬 UI (렌더링 전용, 모바일 접기)
+│       ├── SkillRow.tsx             # 스킬 1개 행 (반응형 레이아웃)
 │       ├── useSkillBranch.ts        # 스킬 브랜치 비즈니스 로직 훅
 │       ├── SkillToolTip.tsx         # 스킬 툴팁 (레벨별 속성 치환)
 │       └── SkillToolTipPostfix.tsx  # 15개 특수 스킬 속성값 후처리
@@ -92,8 +93,9 @@ src/
 
 ### 스타일링
 - Tailwind CSS 유틸리티 클래스 직접 사용
-- 일부 `style` 속성으로 고정값 지정 (width, transform: scale)
 - 캡처 제외 요소: `exclude-from-capture` 클래스
+- **반응형은 Tailwind `md`(768px) 브레이크포인트 기준** — 모바일 우선(기본 클래스 = 모바일, `md:` = 데스크톱)
+  - JS 브레이크포인트 감지 없음. 접기 상태만 React state이고 나머지는 전부 CSS로 분기
 
 ## 핵심 개념
 
@@ -121,6 +123,15 @@ src/
 - `lt`/`rb`: Point 문자열에서 X 파싱, `mastery`: `value*5+10` (비홀더스 버프 제외)
 - `SkillToolTipPostfix`에서 15개 특수 스킬 추가 후처리
 
+### 모바일 UI (< 768px)
+- 스킬 브랜치를 세로로 스택 (`SkillTree.tsx`: `flex-col md:flex-row`)
+- 브랜치 헤더 전체가 접기/펼치기 토글 (`SkillBranch.tsx`의 `isCollapsed`, 기본값 펼침)
+  - 데스크톱은 헤더에 `md:pointer-events-none`, 목록에 `hidden md:grid`로 항상 펼침 상태 유지
+- 스킬 1행 = `[아이콘][스킬명][레벨/마스터(M)][▲][▼][M]` (`SkillRow.tsx`)
+  - `0` 버튼은 모바일에서만 숨김 (`hidden md:flex`) — 데스크톱은 기존대로 4개 유지
+- 툴팁은 hover 기반이라 모바일 미표시 (포탈에 `hidden md:block`)
+- 캡처는 보이는 그대로 — 접힌 브랜치는 이미지에 포함되지 않음 (모바일은 기기 캡처 사용 가정)
+
 ### 데이터 저장 (localStorage)
 - 키: `skillTree_{jobId}` (일반) / `skillTree_{jobId}_4th` (4차만)
 - 값: `{ currentLevel, skillLevels: [{ id, name, level }] }`
@@ -131,7 +142,8 @@ src/
 - **SkillToolTipPostfix.tsx**: 새 특수 스킬 추가 또는 후처리 로직 수정
 - **JobSelector.tsx**: 패치 노트/변경 이력 (하드코딩)
 - **useSkillBranch.ts**: 스킬 레벨 증감 로직, 활성화 검증
-- **SkillBranch.tsx**: 스킬 UI 렌더링, 버튼 동작
+- **SkillBranch.tsx**: 브랜치 헤더/접기, 스킬 목록 렌더링
+- **SkillRow.tsx**: 스킬 1행 UI, 버튼 동작
 - **SkillTree.tsx**: 포인트 계산 공식 변경 시
 - **constants/skillPoints.ts**: 게임 상수값 변경 시
 
@@ -141,6 +153,8 @@ src/
 - `ILevelProperties`는 `hs` 외 동적 키 — 인덱스 시그니처 `[key: string]: string`으로 정의
 - Vite `base: '/'` + BrowserRouter basename 없음 — 도메인 변경(`skill.mapleland.st`) 시 둘 다 루트로 맞춰야 함 (불일치 시 자산 404 → 흰 화면)
 - `isShiftPressed` 상태와 `e.shiftKey` 두 가지 방식 혼재 (useState는 버튼 색상용, 이벤트는 실제 로직용)
+- `App.tsx`의 `md:min-w-[1500px]`에서 `md:`를 빼면 모바일에 1500px가 강제돼 가로 스크롤 발생
+- `index.css`의 `button {}` 기본 스타일(배경/패딩/라운드)이 전역 적용됨 — 버튼 형태를 커스텀할 땐 `bg-transparent border-0 p-0 rounded-none` 등으로 명시적 초기화 필요 (`SkillBranch` 헤더 참고)
 - `isBranchActivated()`: `usedSkillPoints - totalInvestedPoints` 계산 — 현재 브랜치 투자분 제외
 - 툴팁: `ReactDOM.createPortal`로 `document.body`에 렌더링 (fixed 포지셔닝)
 - `scripts/prepare-deploy.js`는 구 GitHub Pages 서브패스 배포용 잔재 — 현재 배포 경로에서 사용하지 않음
