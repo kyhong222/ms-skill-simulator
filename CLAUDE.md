@@ -124,6 +124,9 @@ src/
 - `SkillToolTipPostfix`에서 15개 특수 스킬 추가 후처리
 
 ### 모바일 UI (< 768px)
+- **직업 선택** (`JobSelector.tsx`): 그룹 블록 2열 그리드 (`grid grid-cols-2 md:flex`),
+  시그너스는 "시그너스 기사단" 제목(`md:hidden`) + 2열 그리드. 가로 스크롤은 `md:overflow-x-auto`로 데스크톱 전용
+- **패치 노트**: 모바일 기본 접힘 (`isPatchOpen`, 목록에 `hidden md:block`). 내용은 `PATCH_NOTES` 상수 배열
 - 스킬 브랜치를 세로로 스택 (`SkillTree.tsx`: `flex-col md:flex-row`)
 - 브랜치 헤더 전체가 접기/펼치기 토글 (`SkillBranch.tsx`의 `isCollapsed`, 기본값 펼침)
   - 데스크톱은 헤더에 `md:pointer-events-none`, 목록에 `hidden md:grid`로 항상 펼침 상태 유지
@@ -140,7 +143,7 @@ src/
 
 - **스킬 데이터 JSON** (`src/data/skillbooks/*.json`): 패치 반영 시 수치 변경
 - **SkillToolTipPostfix.tsx**: 새 특수 스킬 추가 또는 후처리 로직 수정
-- **JobSelector.tsx**: 패치 노트/변경 이력 (하드코딩)
+- **JobSelector.tsx**: 패치 노트/변경 이력 (파일 상단 `PATCH_NOTES` 배열에 문자열 추가)
 - **useSkillBranch.ts**: 스킬 레벨 증감 로직, 활성화 검증
 - **SkillBranch.tsx**: 브랜치 헤더/접기, 스킬 목록 렌더링
 - **SkillRow.tsx**: 스킬 1행 UI, 버튼 동작
@@ -168,7 +171,7 @@ src/
 
 ### 구조 개선
 4. **Prop drilling** (8개+ props): Context 또는 커스텀 훅으로 개선 가능
-5. **패치 이력 하드코딩**: `JobSelector.tsx`에 날짜/내용 직접 입력
+5. **패치 이력 하드코딩**: `JobSelector.tsx`의 `PATCH_NOTES` 배열에 문자열 직접 입력 (별도 데이터 파일 분리 여지)
 
 ## 테스트
 

@@ -45,7 +45,7 @@ ms-skill-simulator/
 ├── src/
 │   ├── components/
 │   │   ├── JobSelector/
-│   │   │   └── JobSelector.tsx      # 직업 선택 화면 (5개 그룹 × 12개 직업)
+│   │   │   └── JobSelector.tsx      # 직업 선택 화면 (5개 그룹 × 12개 직업 + 시그너스 5개, 패치 노트)
 │   │   └── SkillTree/
 │   │       ├── SkillTree.tsx        # 스킬 트리 메인 (상태관리, 포인트 계산, 데이터 로딩)
 │   │       ├── SkillBranch.tsx      # 단일 차수 스킬 브랜치 (UI 렌더링 전용, 모바일 접기 토글)
@@ -109,6 +109,9 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 ```
 
 ### 반응형 레이아웃 (Tailwind `md` = 768px 기준)
+- **직업 선택**: 모바일은 그룹 블록 2열 그리드 (`grid grid-cols-2 md:flex`), 시그너스는
+  `md:hidden` 제목을 붙인 별도 섹션. 데스크톱의 가로 스크롤 래퍼는 `md:overflow-x-auto` / `md:min-w-max`
+- **패치 노트**: 모바일 기본 접힘 (`isPatchOpen` + `hidden md:block`), 데스크톱은 항상 표시
 - **브랜치 배치**: 모바일 세로 (`flex-col`) / 데스크톱 가로 (`md:flex-row`) — `SkillTree.tsx`
 - **브랜치 접기**: `SkillBranch`의 `isCollapsed` state. 헤더 전체가 토글 버튼이며,
   데스크톱은 `md:pointer-events-none` + 목록 `hidden md:grid`로 항상 펼쳐진 상태 유지
