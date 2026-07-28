@@ -115,10 +115,10 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 - **브랜치 배치**: 모바일 세로 (`flex-col`) / 데스크톱 가로 (`md:flex-row`) — `SkillTree.tsx`
 - **브랜치 접기**: `SkillBranch`의 `isCollapsed` state. 헤더 전체가 토글 버튼이며,
   데스크톱은 `md:pointer-events-none` + 목록 `hidden md:grid`로 항상 펼쳐진 상태 유지
-- **스킬 행**: 모바일은 `[아이콘][스킬명][레벨/마스터(M)][▲][▼][M]` 한 줄,
+- **스킬 행**: 모바일은 `[아이콘][스킬명][레벨/마스터(M)][▲][▼][M 또는 0]` 한 줄,
   데스크톱은 기존과 동일한 2줄 구조 (`md:block`) — `SkillRow.tsx`
-  - `0` 버튼은 `hidden md:flex`로 모바일에서만 숨김. 이 때문에 버튼의 display는
-    `BUTTON_BASE`에 넣지 않고 버튼마다 개별 지정함
+  - 모바일 세 번째 버튼은 `isMaxLevel`로 분기 (마스터면 `0`, 아니면 `M`). 데스크톱은 `md:flex`로 둘 다 노출.
+    이 때문에 버튼의 display는 `BUTTON_BASE`에 넣지 않고 버튼마다 개별 지정함
 - **툴팁**: hover 기반이라 모바일에서는 포탈에 `hidden md:block`으로 비표시
 - **전역 폭**: `App.tsx`의 최소 너비는 `md:min-w-[1500px]`로 데스크톱에만 적용,
   `#root` 패딩은 모바일 `0.75rem` / 데스크톱 `2rem` (`App.css` 미디어쿼리)

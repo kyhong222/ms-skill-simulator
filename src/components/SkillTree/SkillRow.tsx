@@ -103,10 +103,10 @@ const SkillRow: React.FC<SkillRowProps> = ({
             >
               ▼
             </button>
-            {/* '0' 버튼은 모바일에서 숨김 (공간 확보) */}
+            {/* 모바일은 공간 확보를 위해 둘 중 하나만 노출 (마스터면 0, 아니면 M) */}
             <button
               onClick={onDecreaseZero}
-              className={`${BUTTON_BASE} hidden md:flex ${buttonColor(isDecreasable)}`}
+              className={`${BUTTON_BASE} ${isMaxLevel ? "flex" : "hidden"} md:flex ${buttonColor(isDecreasable)}`}
               aria-label="Decrease to zero"
               disabled={level === 0}
             >
@@ -114,7 +114,7 @@ const SkillRow: React.FC<SkillRowProps> = ({
             </button>
             <button
               onClick={onIncreaseMax}
-              className={`${BUTTON_BASE} flex ${buttonColor(isIncreasable)}`}
+              className={`${BUTTON_BASE} ${isMaxLevel ? "hidden" : "flex"} md:flex ${buttonColor(isIncreasable)}`}
               aria-label="Master skill"
               disabled={isMaxLevel}
             >

@@ -130,8 +130,9 @@ src/
 - 스킬 브랜치를 세로로 스택 (`SkillTree.tsx`: `flex-col md:flex-row`)
 - 브랜치 헤더 전체가 접기/펼치기 토글 (`SkillBranch.tsx`의 `isCollapsed`, 기본값 펼침)
   - 데스크톱은 헤더에 `md:pointer-events-none`, 목록에 `hidden md:grid`로 항상 펼침 상태 유지
-- 스킬 1행 = `[아이콘][스킬명][레벨/마스터(M)][▲][▼][M]` (`SkillRow.tsx`)
-  - `0` 버튼은 모바일에서만 숨김 (`hidden md:flex`) — 데스크톱은 기존대로 4개 유지
+- 스킬 1행 = `[아이콘][스킬명][레벨/마스터(M)][▲][▼][M 또는 0]` (`SkillRow.tsx`)
+  - 세 번째 버튼은 `isMaxLevel`에 따라 하나만 노출 (마스터면 `0`, 아니면 `M`)
+  - 데스크톱은 `md:flex`로 `0`/`M` 4개 모두 유지
 - 툴팁은 hover 기반이라 모바일 미표시 (포탈에 `hidden md:block`)
 - 캡처는 보이는 그대로 — 접힌 브랜치는 이미지에 포함되지 않음 (모바일은 기기 캡처 사용 가정)
 
