@@ -1747,7 +1747,7 @@
       },
       "levelProperties": [
         {
-          "cooltime": "360",
+          "cooltime": "310",
           "damage": "420",
           "hs": "h1",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1756,7 +1756,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "270",
+          "cooltime": "220",
           "damage": "600",
           "hs": "h10",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1765,7 +1765,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "260",
+          "cooltime": "210",
           "damage": "620",
           "hs": "h11",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1774,7 +1774,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "250",
+          "cooltime": "200",
           "damage": "640",
           "hs": "h12",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1783,7 +1783,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "240",
+          "cooltime": "190",
           "damage": "660",
           "hs": "h13",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1792,7 +1792,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "230",
+          "cooltime": "180",
           "damage": "680",
           "hs": "h14",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1801,7 +1801,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "220",
+          "cooltime": "170",
           "damage": "700",
           "hs": "h15",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1810,7 +1810,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "210",
+          "cooltime": "160",
           "damage": "720",
           "hs": "h16",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1819,7 +1819,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "200",
+          "cooltime": "150",
           "damage": "740",
           "hs": "h17",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1828,7 +1828,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "190",
+          "cooltime": "140",
           "damage": "760",
           "hs": "h18",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1837,7 +1837,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "180",
+          "cooltime": "130",
           "damage": "780",
           "hs": "h19",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1846,7 +1846,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "350",
+          "cooltime": "300",
           "damage": "440",
           "hs": "h2",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1855,7 +1855,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "170",
+          "cooltime": "120",
           "damage": "800",
           "hs": "h20",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1864,7 +1864,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "160",
+          "cooltime": "110",
           "damage": "810",
           "hs": "h21",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1873,7 +1873,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "150",
+          "cooltime": "100",
           "damage": "820",
           "hs": "h22",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1882,7 +1882,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "140",
+          "cooltime": "90",
           "damage": "830",
           "hs": "h23",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1891,7 +1891,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "130",
+          "cooltime": "80",
           "damage": "840",
           "hs": "h24",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1900,7 +1900,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "120",
+          "cooltime": "70",
           "damage": "850",
           "hs": "h25",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1909,7 +1909,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "110",
+          "cooltime": "60",
           "damage": "860",
           "hs": "h26",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1918,7 +1918,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "100",
+          "cooltime": "50",
           "damage": "870",
           "hs": "h27",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1927,7 +1927,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "90",
+          "cooltime": "40",
           "damage": "880",
           "hs": "h28",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1936,7 +1936,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "80",
+          "cooltime": "30",
           "damage": "890",
           "hs": "h29",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1945,7 +1945,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "340",
+          "cooltime": "290",
           "damage": "460",
           "hs": "h3",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1954,7 +1954,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "70",
+          "cooltime": "20",
           "damage": "900",
           "hs": "h30",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1963,7 +1963,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "330",
+          "cooltime": "280",
           "damage": "480",
           "hs": "h4",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1972,7 +1972,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "320",
+          "cooltime": "270",
           "damage": "500",
           "hs": "h5",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1981,7 +1981,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "310",
+          "cooltime": "260",
           "damage": "520",
           "hs": "h6",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1990,7 +1990,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "300",
+          "cooltime": "250",
           "damage": "540",
           "hs": "h7",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -1999,7 +1999,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "290",
+          "cooltime": "240",
           "damage": "560",
           "hs": "h8",
           "lt": "Point [ X=-400, Y=-350 ]",
@@ -2008,7 +2008,7 @@
           "rb": "Point [ X=400, Y=250 ]"
         },
         {
-          "cooltime": "280",
+          "cooltime": "230",
           "damage": "580",
           "hs": "h9",
           "lt": "Point [ X=-400, Y=-350 ]",
