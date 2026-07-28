@@ -11,7 +11,7 @@ const PATCH_NOTES = [
   "25.12.19  패치 반영, 클립보드 복사기능, 스킬트리 자체 저장기능 추가",
   "25.12.23  4차만 찍어보기 기능, 5레벨씩 찍기(Shift+클릭) 추가",
   "26.06.14  시그너스 직업군 스킬 추가",
-  "26.07.29  생츄어리, 위협 변경점 적용",
+  "26.07.29  생츄어리, 위협, 블로킹 변경점 적용",
 ];
 
 export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => void }) {
