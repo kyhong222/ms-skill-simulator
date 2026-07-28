@@ -104,7 +104,7 @@ SkillTree (스킬 레벨 상태, 포인트 계산, 데이터 로딩)
 SkillBranch (UI 렌더링) + useSkillBranch (활성화 검증, 레벨 증감 로직)
     ↓ props (skill, level, is*, on*)
 SkillRow (스킬 1개 행 렌더링 — 반응형 레이아웃)
-    ↓ hover (md 이상에서만 표시)
+    ↓ 데스크톱 hover (포탈) / 모바일 터치 (인라인 펼침)
 SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 ```
 
@@ -114,12 +114,17 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 - **패치 노트**: 모바일 기본 접힘 (`isPatchOpen` + `hidden md:block`), 데스크톱은 항상 표시
 - **브랜치 배치**: 모바일 세로 (`flex-col`) / 데스크톱 가로 (`md:flex-row`) — `SkillTree.tsx`
 - **브랜치 접기**: `SkillBranch`의 `isCollapsed` state. 헤더 전체가 토글 버튼이며,
-  데스크톱은 `md:pointer-events-none` + 목록 `hidden md:grid`로 항상 펼쳐진 상태 유지
+  데스크톱은 `md:pointer-events-none` + 목록 래퍼 `md:grid-rows-[1fr]`로 항상 펼쳐진 상태 유지
+- **접기 애니메이션**: 높이를 모르는 콘텐츠라 `grid-template-rows: 0fr↔1fr` 트랜지션을 사용.
+  브랜치 접기와 스킬 설명 펼침 모두 동일한 패턴이며, 내부 래퍼에 `min-h-0 overflow-hidden`이 필수
 - **스킬 행**: 모바일은 `[아이콘][스킬명][레벨/마스터(M)][▲][▼][M 또는 0]` 한 줄,
   데스크톱은 기존과 동일한 2줄 구조 (`md:block`) — `SkillRow.tsx`
   - 모바일 세 번째 버튼은 `isMaxLevel`로 분기 (마스터면 `0`, 아니면 `M`). 데스크톱은 `md:flex`로 둘 다 노출.
     이 때문에 버튼의 display는 `BUTTON_BASE`에 넣지 않고 버튼마다 개별 지정함
-- **툴팁**: hover 기반이라 모바일에서는 포탈에 `hidden md:block`으로 비표시
+- **스킬 설명**: 데스크톱은 hover 포탈 툴팁(모바일에서는 `hidden md:block`으로 차단),
+  모바일은 아이콘/스킬명 터치로 행 아래에 인라인 펼침. 두 경로 모두 `SkillTooltip` 컴포넌트를 재사용하며,
+  모바일은 `detailOnly` prop으로 `[현재 레벨] + 상세 수치` 블록만 렌더링(스킬명·아이콘·마스터레벨·설명·필요스킬 제외).
+  펼침 상태(`expandedSkillId`)는 `SkillBranch`가 보유해 브랜치당 하나만 열림
 - **전역 폭**: `App.tsx`의 최소 너비는 `md:min-w-[1500px]`로 데스크톱에만 적용,
   `#root` 패딩은 모바일 `0.75rem` / 데스크톱 `2rem` (`App.css` 미디어쿼리)
 

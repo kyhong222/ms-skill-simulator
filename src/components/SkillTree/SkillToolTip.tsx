@@ -5,6 +5,8 @@ interface SkillTooltipProps {
   skill: IJobSkill;
   allSkills: { id: number; name: string }[];
   curLevel: number;
+  // 모바일 인라인 펼침용: 스킬명/아이콘/마스터레벨/설명을 빼고 현재 레벨 + 상세 수치만 표시
+  detailOnly?: boolean;
 }
 
 // 스킬 상세 설명을 만드는 함수
@@ -74,13 +76,31 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
 };
 
 const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => {
-  const { skill, allSkills, curLevel } = props;
+  const { skill, allSkills, curLevel, detailOnly = false } = props;
 
   // 필요한 스킬 이름 찾기 함수
   const getSkillNameById = (id: number) => {
     const found = allSkills.find((s) => s.id === id);
     return found ? found.name : `스킬 ID ${id}`;
   };
+
+  // 현재 레벨 + 레벨별 상세 수치 (툴팁 하단 블록)
+  const levelDetail = (
+    <div>
+      <div className="text-center">
+        {curLevel >= 1 ? `[현재 레벨: ${curLevel}]` : `[마스터 레벨: ${skill.masterLevel}]`}
+      </div>
+      <div className="text-center">
+        {curLevel >= 1 ? `${makeSkillDetail(skill, curLevel)}` : `${makeSkillDetail(skill, skill.masterLevel)}`}
+      </div>
+    </div>
+  );
+
+  if (detailOnly) {
+    return (
+      <div className="p-3 bg-white border border-gray-300 rounded shadow-lg text-sm text-gray-800">{levelDetail}</div>
+    );
+  }
 
   return (
     <div className="p-3 w-128 bg-white border border-gray-300 rounded shadow-lg text-sm text-gray-800">
@@ -119,14 +139,7 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => 
       <hr className="my-2" />
 
       {/* 현재 레벨, 현재 레벨 설명 */}
-      <div>
-        <div className="text-center">
-          {curLevel >= 1 ? `[현재 레벨: ${curLevel}]` : `[마스터 레벨: ${skill.masterLevel}]`}
-        </div>
-        <div className="text-center">
-          {curLevel >= 1 ? `${makeSkillDetail(skill, curLevel)}` : `${makeSkillDetail(skill, skill.masterLevel)}`}
-        </div>
-      </div>
+      {levelDetail}
     </div>
   );
 };

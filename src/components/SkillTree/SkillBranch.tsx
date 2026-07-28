@@ -23,6 +23,8 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   const [isShiftPressed, setIsShiftPressed] = useState(false);
   // 모바일 전용 접기 상태 (데스크톱에서는 CSS로 항상 펼침)
   const [isCollapsed, setIsCollapsed] = useState(false);
+  // 모바일 전용 스킬 설명 펼침 (브랜치 내에서 한 번에 하나만)
+  const [expandedSkillId, setExpandedSkillId] = useState<number | null>(null);
 
   const { skillbook, skillLevels, fourthOnly = false } = props;
 
@@ -119,55 +121,67 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
         </span>
       </button>
 
-      {/* 스킬 목록 (모바일에서 접힘, 데스크톱은 항상 표시) */}
-      <div className={`gap-2 w-full ${isCollapsed ? "hidden md:grid" : "grid"}`}>
-        {skillbook.skills.map((skill) => (
-          <SkillRow
-            key={skill.id}
-            skill={skill}
-            level={getLevel(skill.id)}
-            isActivated={isSkillActivated(skill.id)}
-            isIncreasable={isSkillIncreasable(skill.id)}
-            isDecreasable={isSkillDecreasable(skill.id)}
-            isMaxLevel={isMaxLevel(skill.id)}
-            isShiftPressed={isShiftPressed}
-            onIncrease={(e) => increaseLevel(skill.id, e)}
-            onDecrease={(e) => decreaseLevel(skill.id, e)}
-            onIncreaseMax={() => increaseMaxLevel(skill.id)}
-            onDecreaseZero={() => decreaseZeroLevel(skill.id)}
-            onMouseEnter={() => setHoveredSkillId(skill.id)}
-            onMouseLeave={() => setHoveredSkillId(null)}
-            onMouseMove={handleMouseMove}
-          >
-            {/* Portal로 툴팁 렌더링 (모바일은 hover가 없어 숨김) */}
-            {hoveredSkillId === skill.id &&
-              ReactDOM.createPortal(
-                <div
-                  className="absolute z-50 hidden md:block"
-                  style={{
-                    position: "fixed",
-                    top: tooltipPosition.isBottomHalf
-                      ? "auto"  // 하단에 있을 때는 bottom 기준으로 배치
-                      : tooltipPosition.y + 10,  // 마우스 아래 10px
-                    bottom: tooltipPosition.isBottomHalf
-                      ? window.innerHeight - tooltipPosition.y + 10  // 마우스 위 10px
-                      : "auto",
-                    left: tooltipPosition.x + 10,  // 마우스 오른쪽 10px
-                    pointerEvents: "none", // 마우스 이벤트 무시
-                    backgroundColor: "white",
-                    boxShadow: "0 0 8px rgba(0,0,0,0.15)",
-                    borderRadius: "6px",
-                    padding: "8px",
-                    maxWidth: "300px",
-                    zIndex: 9999,
-                  }}
-                >
-                  <SkillTooltip skill={skill} allSkills={skillLevels} curLevel={getLevel(skill.id)} />
-                </div>,
-                document.body
-              )}
-          </SkillRow>
-        ))}
+      {/* 스킬 목록 (모바일에서 접힘, 데스크톱은 항상 표시)
+          SkillRow의 설명 펼침과 동일하게 grid-template-rows 0fr↔1fr로 애니메이션 */}
+      <div
+        className={`grid overflow-hidden transition-[grid-template-rows] duration-200 ease-out md:grid-rows-[1fr] ${
+          isCollapsed ? "grid-rows-[0fr]" : "grid-rows-[1fr]"
+        }`}
+      >
+        <div className="min-h-0 overflow-hidden">
+          <div className="grid gap-2 w-full">
+            {skillbook.skills.map((skill) => (
+              <SkillRow
+                key={skill.id}
+                skill={skill}
+                level={getLevel(skill.id)}
+                isActivated={isSkillActivated(skill.id)}
+                isIncreasable={isSkillIncreasable(skill.id)}
+                isDecreasable={isSkillDecreasable(skill.id)}
+                isMaxLevel={isMaxLevel(skill.id)}
+                isShiftPressed={isShiftPressed}
+                onIncrease={(e) => increaseLevel(skill.id, e)}
+                onDecrease={(e) => decreaseLevel(skill.id, e)}
+                onIncreaseMax={() => increaseMaxLevel(skill.id)}
+                onDecreaseZero={() => decreaseZeroLevel(skill.id)}
+                onMouseEnter={() => setHoveredSkillId(skill.id)}
+                onMouseLeave={() => setHoveredSkillId(null)}
+                onMouseMove={handleMouseMove}
+                isExpanded={expandedSkillId === skill.id}
+                onToggleExpand={() => setExpandedSkillId((prev) => (prev === skill.id ? null : skill.id))}
+                detail={<SkillTooltip skill={skill} allSkills={skillLevels} curLevel={getLevel(skill.id)} detailOnly />}
+              >
+                {/* Portal로 툴팁 렌더링 (모바일은 hover가 없어 숨김) */}
+                {hoveredSkillId === skill.id &&
+                  ReactDOM.createPortal(
+                    <div
+                      className="absolute z-50 hidden md:block"
+                      style={{
+                        position: "fixed",
+                        top: tooltipPosition.isBottomHalf
+                          ? "auto"  // 하단에 있을 때는 bottom 기준으로 배치
+                          : tooltipPosition.y + 10,  // 마우스 아래 10px
+                        bottom: tooltipPosition.isBottomHalf
+                          ? window.innerHeight - tooltipPosition.y + 10  // 마우스 위 10px
+                          : "auto",
+                        left: tooltipPosition.x + 10,  // 마우스 오른쪽 10px
+                        pointerEvents: "none", // 마우스 이벤트 무시
+                        backgroundColor: "white",
+                        boxShadow: "0 0 8px rgba(0,0,0,0.15)",
+                        borderRadius: "6px",
+                        padding: "8px",
+                        maxWidth: "300px",
+                        zIndex: 9999,
+                      }}
+                    >
+                      <SkillTooltip skill={skill} allSkills={skillLevels} curLevel={getLevel(skill.id)} />
+                    </div>,
+                    document.body
+                  )}
+              </SkillRow>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

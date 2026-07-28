@@ -129,11 +129,18 @@ src/
 - **패치 노트**: 모바일 기본 접힘 (`isPatchOpen`, 목록에 `hidden md:block`). 내용은 `PATCH_NOTES` 상수 배열
 - 스킬 브랜치를 세로로 스택 (`SkillTree.tsx`: `flex-col md:flex-row`)
 - 브랜치 헤더 전체가 접기/펼치기 토글 (`SkillBranch.tsx`의 `isCollapsed`, 기본값 펼침)
-  - 데스크톱은 헤더에 `md:pointer-events-none`, 목록에 `hidden md:grid`로 항상 펼침 상태 유지
+  - 데스크톱은 헤더에 `md:pointer-events-none`, 목록 래퍼에 `md:grid-rows-[1fr]`로 항상 펼침 상태 유지
+  - 접기 애니메이션은 스킬 설명 펼침과 동일한 `grid-rows-[0fr]`↔`grid-rows-[1fr]` 트랜지션
 - 스킬 1행 = `[아이콘][스킬명][레벨/마스터(M)][▲][▼][M 또는 0]` (`SkillRow.tsx`)
   - 세 번째 버튼은 `isMaxLevel`에 따라 하나만 노출 (마스터면 `0`, 아니면 `M`)
   - 데스크톱은 `md:flex`로 `0`/`M` 4개 모두 유지
-- 툴팁은 hover 기반이라 모바일 미표시 (포탈에 `hidden md:block`)
+- 스킬 설명: 데스크톱은 hover 툴팁(포탈에 `hidden md:block`), 모바일은 아이콘/스킬명 터치 시
+  행 아래로 펼침 (`SkillRow`의 `detail` prop에 `SkillTooltip`을 `detailOnly`로 전달)
+  - `detailOnly`: 스킬명/아이콘/마스터레벨/설명/필요스킬을 빼고 `[현재 레벨] + 상세 수치`만 렌더링
+  - 펼침 상태는 `SkillBranch`의 `expandedSkillId` — 브랜치 내에서 한 번에 하나만 열림
+  - 펼침 애니메이션은 `grid-rows-[0fr]`↔`grid-rows-[1fr]` 트랜지션 (높이를 모르는 콘텐츠용).
+    내부 래퍼의 `min-h-0 overflow-hidden`이 없으면 0fr로 안 줄어듦. 닫힘 애니메이션 때문에 패널은 항상 마운트됨
+  - 아이콘/스킬명에 `md:pointer-events-none`을 걸어 데스크톱은 hover 툴팁 동작을 그대로 유지
 - 캡처는 보이는 그대로 — 접힌 브랜치는 이미지에 포함되지 않음 (모바일은 기기 캡처 사용 가정)
 
 ### 데이터 저장 (localStorage)
