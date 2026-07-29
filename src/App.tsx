@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import SkillSimulatorPage from "./pages/SkillSimulatorPage";
 import SkillTreePage from "./pages/SkillTreePage";
 import "./App.css";
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<SkillSimulatorPage />} />
         <Route path="/:jobId" element={<SkillTreePage />} />
       </Routes>
+      <Analytics />
     </div>
   );
 }
