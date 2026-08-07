@@ -39,8 +39,11 @@ npm run preview      # 빌드 결과 미리보기
 ## 프로젝트 구조
 
 ```
+api/
+└── feedback.ts                      # Vercel 서버리스 함수 (문의 → GitHub Issue 생성)
 src/
 ├── components/
+│   ├── Feedback/FeedbackDialog.tsx  # 문의하기 모달 폼
 │   ├── JobSelector/JobSelector.tsx  # 직업 선택 UI
 │   └── SkillTree/
 │       ├── SkillTree.tsx            # 핵심: 상태관리, 포인트 계산, 데이터 로딩
@@ -50,6 +53,7 @@ src/
 │       ├── SkillToolTip.tsx         # 스킬 툴팁 (레벨별 속성 치환)
 │       └── SkillToolTipPostfix.tsx  # 15개 특수 스킬 속성값 후처리
 ├── constants/
+│   ├── feedback.ts                 # 문의 유형/길이 제한/쿨다운 (api/feedback.ts와 동기화)
 │   └── skillPoints.ts              # 게임 상수 (전직 레벨, SP 계산 관련)
 ├── data/
 │   ├── jobs.ts                     # 직업 목록/그룹/하위직업 매핑
@@ -143,6 +147,15 @@ src/
   - 아이콘/스킬명에 `md:pointer-events-none`을 걸어 데스크톱은 hover 툴팁 동작을 그대로 유지
 - 캡처는 보이는 그대로 — 접힌 브랜치는 이미지에 포함되지 않음 (모바일은 기기 캡처 사용 가정)
 
+### 문의하기 → GitHub Issues
+- 스킬 트리 화면 우측 상단 `문의하기` → `FeedbackDialog` 모달 → `POST /api/feedback`
+- `api/feedback.ts`가 `GITHUB_TOKEN`(Vercel 환경변수)으로 GitHub REST API를 호출해 이슈 생성
+  - 토큰은 서버 전용 — 브라우저에 절대 노출하지 말 것
+  - `FEEDBACK_REPO` 미설정 시 `kyhong222/ms-skill-simulator`
+- 방어: 허니팟(`website`) / 길이 제한 / IP 60초 3건 / 클라이언트 60초 쿨다운 / `@멘션` 무력화
+- 유형 키·길이 제한을 바꿀 땐 `src/constants/feedback.ts`와 `api/feedback.ts`를 **둘 다** 수정
+- `npm run dev`는 `/api/*`를 서빙하지 않음 → 함수 확인은 `vercel dev` 필요
+
 ### 데이터 저장 (localStorage)
 - 키: `skillTree_{jobId}` (일반) / `skillTree_{jobId}_4th` (4차만)
 - 값: `{ currentLevel, skillLevels: [{ id, name, level }] }`
@@ -162,6 +175,7 @@ src/
 
 - 스킬 아이콘은 **Base64로 JSON에 내장** — 파일 크기가 큼
 - `ILevelProperties`는 `hs` 외 동적 키 — 인덱스 시그니처 `[key: string]: string`으로 정의
+- `vercel.json`의 rewrite는 `/((?!api/).*)` — `/(.*)`로 되돌리면 `/api/*`까지 index.html로 삼켜 문의하기가 죽음
 - Vite `base: '/'` + BrowserRouter basename 없음 — 도메인 변경(`skill.mapleland.st`) 시 둘 다 루트로 맞춰야 함 (불일치 시 자산 404 → 흰 화면)
 - `isShiftPressed` 상태와 `e.shiftKey` 두 가지 방식 혼재 (useState는 버튼 색상용, 이벤트는 실제 로직용)
 - `App.tsx`의 `md:min-w-[1500px]`에서 `md:`를 빼면 모바일에 1500px가 강제돼 가로 스크롤 발생

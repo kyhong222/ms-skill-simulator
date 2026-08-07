@@ -13,6 +13,7 @@ const PATCH_NOTES = [
   "26.06.14  시그너스 직업군 스킬 추가",
   "26.07.29  생츄어리, 위협, 블로킹, 블래스트 변경점 적용",
   "26.08.06  브랜디쉬 변경점 적용",
+  "26.08.07  문의하기 기능 추가",
 ];
 
 export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => void }) {

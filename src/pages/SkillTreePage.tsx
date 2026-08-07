@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import SkillTree from "../components/SkillTree/SkillTree";
+import FeedbackDialog from "../components/Feedback/FeedbackDialog";
 import { selectableJobs } from "../data/jobs";
 import { isCygnusJobId } from "../constants/skillPoints";
 import html2canvas from "html2canvas";
@@ -12,6 +13,7 @@ export default function SkillTreePage() {
   const skillTreeOnlyRef = useRef<HTMLDivElement>(null);
   const [showSnackbar, setShowSnackbar] = useState(false);
   const [fourthOnly, setFourthOnly] = useState(false);
+  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
 
   const job = selectableJobs.find((j) => j.id === Number(jobId));
   const isCygnus = job ? isCygnusJobId(job.id) : false;
@@ -88,6 +90,12 @@ export default function SkillTreePage() {
         <div className="flex flex-col gap-2 mb-4 md:flex-row md:items-center md:justify-between">
           <h2 className="text-lg font-semibold text-left md:text-xl">전직명: {job.koname}</h2>
           <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => setIsFeedbackOpen(true)}
+              className="exclude-from-capture flex-1 text-gray-900 px-2 py-2 text-sm bg-gray-200 hover:bg-gray-300 rounded md:flex-none md:w-[120px] md:px-4 md:text-base"
+            >
+              문의하기
+            </button>
             {/* 시그너스는 4차 전직이 없어 "4차 이후만" 모드 미제공 */}
             {!isCygnus && (
               <button
@@ -125,6 +133,8 @@ export default function SkillTreePage() {
           </div>
         </div>
       </div>
+
+      <FeedbackDialog isOpen={isFeedbackOpen} onClose={() => setIsFeedbackOpen(false)} />
 
       {showSnackbar && (
         <div

@@ -13,6 +13,7 @@
 - "4차 이후만" 모드로 4차 스킬만 별도 계획
 - html2canvas를 이용한 스킬 트리 캡처(이미지 다운로드, 클립보드 복사)
 - 스킬 호버 시 레벨별 상세 수치 툴팁 표시
+- 문의하기 폼 → GitHub Issue 자동 등록 (Vercel 서버리스 함수 경유)
 
 ## 기술 스택
 
@@ -35,6 +36,8 @@ ms-skill-simulator/
 ├── .github/
 │   └── workflows/
 │       └── trigger-deploy.yml       # main 푸시 시 루트 레포 배포 트리거
+├── api/
+│   └── feedback.ts                  # Vercel 서버리스 함수 (문의 → GitHub Issue 생성)
 ├── public/
 │   ├── googlee63cd6836513ab92.html  # Google Search Console 소유권 인증
 │   ├── robots.txt                   # 크롤러 허용 설정
@@ -44,6 +47,8 @@ ms-skill-simulator/
 │   └── prepare-deploy.js            # (사용 안 함) 구 GitHub Pages 서브패스 배포용 잔재
 ├── src/
 │   ├── components/
+│   │   ├── Feedback/
+│   │   │   └── FeedbackDialog.tsx   # 문의하기 모달 (폼 → /api/feedback POST)
 │   │   ├── JobSelector/
 │   │   │   └── JobSelector.tsx      # 직업 선택 화면 (5개 그룹 × 12개 직업 + 시그너스 5개, 패치 노트)
 │   │   └── SkillTree/
@@ -54,6 +59,7 @@ ms-skill-simulator/
 │   │       ├── SkillToolTip.tsx     # 스킬 툴팁 (레벨별 속성 치환 렌더링)
 │   │       └── SkillToolTipPostfix.tsx  # 특정 스킬의 속성값 후처리 (15개 스킬)
 │   ├── constants/
+│   │   ├── feedback.ts              # 문의 유형/길이 제한/쿨다운 상수 (api/feedback.ts와 동기화 필요)
 │   │   └── skillPoints.ts           # 게임 상수 (전직 레벨, SP 배수, 최대 레벨 등)
 │   ├── data/
 │   │   ├── jobs.ts                  # 직업 목록, 선택 가능 직업, 그룹화, 하위 직업 매핑
@@ -76,11 +82,11 @@ ms-skill-simulator/
 │   └── vite-env.d.ts               # Vite 타입 선언
 ├── index.html                       # HTML 템플릿 (SEO 메타태그)
 ├── package.json
-├── vercel.json                      # Vercel 설정 (SPA rewrite, /skill/* → /* 리다이렉트)
+├── vercel.json                      # Vercel 설정 (SPA rewrite(/api 제외), /skill/* → /* 리다이렉트)
 ├── vite.config.ts                   # Vite 설정 (base: /)
 ├── tsconfig.json                    # TS 프로젝트 레퍼런스 + 경로 별칭 (@/*)
 ├── tsconfig.app.json                # 앱 TS 설정 (strict, ES2020)
-├── tsconfig.node.json               # Node TS 설정 (vite.config용)
+├── tsconfig.node.json               # Node TS 설정 (vite.config + api/ 타입체크)
 ├── tailwind.config.js               # Tailwind 설정 (다크모드 비활성화)
 ├── postcss.config.js                # PostCSS 설정 (tailwindcss + autoprefixer)
 └── eslint.config.js                 # ESLint flat config (react-hooks, react-refresh)
@@ -263,13 +269,52 @@ main.tsx
 ### 배포 파이프라인
 1. main 브랜치 푸시 → Vercel이 자동으로 `npm run build` 실행 → `dist/` 배포
 2. `vercel.json` 설정
-   - `rewrites`: 정적 파일이 없는 모든 경로를 `/index.html`로 (SPA 딥링크 지원)
+   - `rewrites`: `/api/` 로 시작하지 않는 모든 경로를 `/index.html`로 (SPA 딥링크 지원)
+     - **주의**: 패턴이 `/(.*)`이면 서버리스 함수 경로(`/api/*`)까지 index.html로 삼켜 문의하기가 동작하지 않는다
    - `redirects`: `/skill`, `/skill/*` → 루트로 308 (구 경로 유입 대비)
 3. GitHub Actions (`trigger-deploy.yml`): main 푸시 시 루트 레포(`mapleland-st-root-page`)에 deploy 이벤트 전송
 
 ### 커스텀 도메인 구조
 - `skill.mapleland.st` 서브도메인 루트로 서비스
 - 구 주소 `mapleland.st/skill` → 루트 레포 쪽에서 308 리다이렉트 처리
+
+## 문의하기 (GitHub Issues 연동)
+
+스킬 트리 화면 우측 상단 `문의하기` 버튼 → 모달 폼 → GitHub 이슈 자동 등록.
+
+### 데이터 흐름
+```
+SkillTreePage (isFeedbackOpen)
+  └── FeedbackDialog  (유형/제목/내용/연락처 + 허니팟)
+        └── POST /api/feedback   { type, title, body, contact, website }
+              └── api/feedback.ts  (Vercel 서버리스 함수, Node 런타임)
+                    └── POST https://api.github.com/repos/{FEEDBACK_REPO}/issues
+                          └── 응답의 html_url을 그대로 사용자에게 노출
+```
+
+### 환경변수 (Vercel 프로젝트 설정에서 등록)
+| 변수 | 필수 | 설명 |
+|------|------|------|
+| `GITHUB_TOKEN` | O | fine-grained PAT. 대상 레포에 **Issues: Read and write** 권한만 부여 |
+| `FEEDBACK_REPO` | X | `owner/repo` 형식. 미설정 시 `kyhong222/ms-skill-simulator` |
+
+토큰이 없으면 함수가 500과 함께 "문의 접수가 아직 준비되지 않았습니다."를 반환한다 (이슈는 생성되지 않음).
+
+### 스팸/남용 방어
+- **허니팟**: 화면에 보이지 않는 `website` 필드가 채워지면 API 호출 없이 200 반환 (봇에게 실패를 알리지 않음)
+- **길이 제한**: 제목 100자 / 내용 2000자 / 연락처 100자, 서버에서 다시 자름
+- **레이트 리밋**: 같은 IP 기준 60초에 3건 (서버리스 인스턴스 메모리 기반이라 best-effort)
+- **클라이언트 쿨다운**: `localStorage`의 `feedback_lastSubmittedAt` 기준 60초
+- **멘션 무력화**: 본문의 `@닉네임`에 제로폭 공백을 삽입해 GitHub 사용자에게 알림이 가지 않도록 함
+
+### 이슈 형식
+- 제목: `[유형] 사용자가 입력한 제목`
+- 라벨: `feedback` — 레포에 라벨이 없어 422가 나면 **라벨 없이 자동 재시도**한다 (문의 유실 방지)
+- 본문 하단에 유형/연락처/접수 경로를 메타 정보로 덧붙임
+
+### 로컬 개발 주의
+`npm run dev`(Vite)는 `/api/*`를 서빙하지 않으므로 문의하기 전송은 404가 난다.
+함수까지 로컬에서 확인하려면 `vercel dev`를 사용해야 한다.
 
 ## 외부 의존성
 
@@ -281,6 +326,7 @@ main.tsx
 | `tailwindcss` (3.4) | 유틸리티 CSS |
 | `@vitejs/plugin-react` (4.4) | Vite React 플러그인 (Fast Refresh) |
 | `typescript-eslint` (8.30) | TypeScript ESLint 지원 |
+| `@vercel/node` (dev) | 서버리스 함수 타입 (`VercelRequest`, `VercelResponse`) |
 
 ### 데이터 소스
 - 모든 스킬 데이터는 `src/data/skillbooks/*.json`에 로컬 내장 (외부 API 미사용)
