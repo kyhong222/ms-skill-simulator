@@ -984,63 +984,63 @@
         {
           "hs": "h21",
           "mpCon": "54",
-          "prop": "81",
+          "prop": "82",
           "time": "210",
           "x": "1"
         },
         {
           "hs": "h22",
           "mpCon": "54",
-          "prop": "82",
+          "prop": "84",
           "time": "220",
           "x": "1"
         },
         {
           "hs": "h23",
           "mpCon": "54",
-          "prop": "83",
+          "prop": "86",
           "time": "230",
           "x": "1"
         },
         {
           "hs": "h24",
           "mpCon": "54",
-          "prop": "84",
+          "prop": "88",
           "time": "240",
           "x": "1"
         },
         {
           "hs": "h25",
           "mpCon": "54",
-          "prop": "85",
+          "prop": "90",
           "time": "250",
           "x": "1"
         },
         {
           "hs": "h26",
           "mpCon": "53",
-          "prop": "86",
+          "prop": "91",
           "time": "260",
           "x": "1"
         },
         {
           "hs": "h27",
           "mpCon": "52",
-          "prop": "87",
+          "prop": "92",
           "time": "270",
           "x": "1"
         },
         {
           "hs": "h28",
           "mpCon": "51",
-          "prop": "88",
+          "prop": "93",
           "time": "280",
           "x": "1"
         },
         {
           "hs": "h29",
           "mpCon": "50",
-          "prop": "89",
+          "prop": "94",
           "time": "290",
           "x": "1"
         },
@@ -1054,7 +1054,7 @@
         {
           "hs": "h30",
           "mpCon": "50",
-          "prop": "90",
+          "prop": "95",
           "time": "300",
           "x": "1"
         },
@@ -1646,36 +1646,36 @@
         "detail": "MP #mpCon 소비, 데미지 #damage%, 범위 #distance%"
       },
       "levelProperties": [
-        { "hs": "h1", "damage": "72", "distance": "80", "mpCon": "22" },
-        { "hs": "h2", "damage": "74", "distance": "80", "mpCon": "24" },
-        { "hs": "h3", "damage": "76", "distance": "80", "mpCon": "26" },
-        { "hs": "h4", "damage": "78", "distance": "85", "mpCon": "28" },
-        { "hs": "h5", "damage": "80", "distance": "85", "mpCon": "30" },
-        { "hs": "h6", "damage": "82", "distance": "85", "mpCon": "32" },
-        { "hs": "h7", "damage": "84", "distance": "85", "mpCon": "34" },
-        { "hs": "h8", "damage": "86", "distance": "90", "mpCon": "36" },
-        { "hs": "h9", "damage": "88", "distance": "90", "mpCon": "38" },
-        { "hs": "h10", "damage": "90", "distance": "90", "mpCon": "40" },
-        { "hs": "h11", "damage": "92", "distance": "95", "mpCon": "42" },
-        { "hs": "h12", "damage": "94", "distance": "95", "mpCon": "44" },
-        { "hs": "h13", "damage": "96", "distance": "95", "mpCon": "46" },
-        { "hs": "h14", "damage": "98", "distance": "100", "mpCon": "48" },
-        { "hs": "h15", "damage": "100", "distance": "100", "mpCon": "50" },
-        { "hs": "h16", "damage": "102", "distance": "100", "mpCon": "52" },
-        { "hs": "h17", "damage": "104", "distance": "105", "mpCon": "54" },
-        { "hs": "h18", "damage": "106", "distance": "105", "mpCon": "56" },
-        { "hs": "h19", "damage": "108", "distance": "105", "mpCon": "58" },
-        { "hs": "h20", "damage": "110", "distance": "110", "mpCon": "60" },
-        { "hs": "h21", "damage": "112", "distance": "110", "mpCon": "59" },
-        { "hs": "h22", "damage": "114", "distance": "115", "mpCon": "58" },
-        { "hs": "h23", "damage": "116", "distance": "115", "mpCon": "57" },
-        { "hs": "h24", "damage": "118", "distance": "115", "mpCon": "56" },
-        { "hs": "h25", "damage": "120", "distance": "120", "mpCon": "55" },
-        { "hs": "h26", "damage": "122", "distance": "120", "mpCon": "54" },
-        { "hs": "h27", "damage": "124", "distance": "120", "mpCon": "53" },
-        { "hs": "h28", "damage": "126", "distance": "125", "mpCon": "52" },
-        { "hs": "h29", "damage": "128", "distance": "125", "mpCon": "51" },
-        { "hs": "h30", "damage": "130", "distance": "125", "mpCon": "50" }
+        { "hs": "h1",  "damage": "82",  "distance": "90",  "mpCon": "22" },
+        { "hs": "h2",  "damage": "84",  "distance": "90",  "mpCon": "24" },
+        { "hs": "h3",  "damage": "86",  "distance": "90",  "mpCon": "26" },
+        { "hs": "h4",  "damage": "88",  "distance": "95",  "mpCon": "28" },
+        { "hs": "h5",  "damage": "90",  "distance": "95",  "mpCon": "30" },
+        { "hs": "h6",  "damage": "92",  "distance": "95",  "mpCon": "32" },
+        { "hs": "h7",  "damage": "94",  "distance": "95",  "mpCon": "34" },
+        { "hs": "h8",  "damage": "96",  "distance": "100", "mpCon": "36" },
+        { "hs": "h9",  "damage": "98",  "distance": "100", "mpCon": "38" },
+        { "hs": "h10", "damage": "100", "distance": "100", "mpCon": "40" },
+        { "hs": "h11", "damage": "102", "distance": "105", "mpCon": "42" },
+        { "hs": "h12", "damage": "104", "distance": "105", "mpCon": "44" },
+        { "hs": "h13", "damage": "106", "distance": "105", "mpCon": "46" },
+        { "hs": "h14", "damage": "108", "distance": "110", "mpCon": "48" },
+        { "hs": "h15", "damage": "110", "distance": "110", "mpCon": "50" },
+        { "hs": "h16", "damage": "112", "distance": "110", "mpCon": "52" },
+        { "hs": "h17", "damage": "114", "distance": "115", "mpCon": "54" },
+        { "hs": "h18", "damage": "116", "distance": "115", "mpCon": "56" },
+        { "hs": "h19", "damage": "118", "distance": "115", "mpCon": "58" },
+        { "hs": "h20", "damage": "120", "distance": "120", "mpCon": "60" },
+        { "hs": "h21", "damage": "122", "distance": "120", "mpCon": "59" },
+        { "hs": "h22", "damage": "124", "distance": "120", "mpCon": "58" },
+        { "hs": "h23", "damage": "126", "distance": "125", "mpCon": "57" },
+        { "hs": "h24", "damage": "128", "distance": "125", "mpCon": "56" },
+        { "hs": "h25", "damage": "130", "distance": "130", "mpCon": "55" },
+        { "hs": "h26", "damage": "132", "distance": "130", "mpCon": "54" },
+        { "hs": "h27", "damage": "134", "distance": "130", "mpCon": "53" },
+        { "hs": "h28", "damage": "136", "distance": "135", "mpCon": "52" },
+        { "hs": "h29", "damage": "138", "distance": "135", "mpCon": "51" },
+        { "hs": "h30", "damage": "140", "distance": "135", "mpCon": "50" }
       ]
     },
     {
