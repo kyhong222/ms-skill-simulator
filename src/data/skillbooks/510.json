@@ -209,7 +209,7 @@
       },
       "levelProperties": [
         {
-          "damage": "88",
+          "damage": "108",
           "hs": "h1",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -218,7 +218,7 @@
           "time": "1"
         },
         {
-          "damage": "160",
+          "damage": "180",
           "hs": "h10",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -227,7 +227,7 @@
           "time": "1"
         },
         {
-          "damage": "168",
+          "damage": "188",
           "hs": "h11",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -236,7 +236,7 @@
           "time": "1"
         },
         {
-          "damage": "176",
+          "damage": "196",
           "hs": "h12",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -245,7 +245,7 @@
           "time": "1"
         },
         {
-          "damage": "184",
+          "damage": "204",
           "hs": "h13",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -254,7 +254,7 @@
           "time": "1"
         },
         {
-          "damage": "192",
+          "damage": "212",
           "hs": "h14",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -263,7 +263,7 @@
           "time": "1"
         },
         {
-          "damage": "200",
+          "damage": "220",
           "hs": "h15",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -272,7 +272,7 @@
           "time": "1"
         },
         {
-          "damage": "208",
+          "damage": "228",
           "hs": "h16",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -281,7 +281,7 @@
           "time": "1"
         },
         {
-          "damage": "216",
+          "damage": "236",
           "hs": "h17",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -290,7 +290,7 @@
           "time": "1"
         },
         {
-          "damage": "224",
+          "damage": "244",
           "hs": "h18",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -299,7 +299,7 @@
           "time": "1"
         },
         {
-          "damage": "232",
+          "damage": "252",
           "hs": "h19",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -308,7 +308,7 @@
           "time": "1"
         },
         {
-          "damage": "96",
+          "damage": "116",
           "hs": "h2",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -317,7 +317,7 @@
           "time": "1"
         },
         {
-          "damage": "240",
+          "damage": "260",
           "hs": "h20",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -326,7 +326,7 @@
           "time": "1"
         },
         {
-          "damage": "104",
+          "damage": "124",
           "hs": "h3",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -335,7 +335,7 @@
           "time": "1"
         },
         {
-          "damage": "112",
+          "damage": "132",
           "hs": "h4",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -344,7 +344,7 @@
           "time": "1"
         },
         {
-          "damage": "120",
+          "damage": "140",
           "hs": "h5",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -353,7 +353,7 @@
           "time": "1"
         },
         {
-          "damage": "128",
+          "damage": "148",
           "hs": "h6",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -362,7 +362,7 @@
           "time": "1"
         },
         {
-          "damage": "136",
+          "damage": "156",
           "hs": "h7",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -371,7 +371,7 @@
           "time": "1"
         },
         {
-          "damage": "144",
+          "damage": "164",
           "hs": "h8",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -380,7 +380,7 @@
           "time": "1"
         },
         {
-          "damage": "152",
+          "damage": "172",
           "hs": "h9",
           "lt": "Point [ X=0, Y=-50 ]",
           "mobCount": "3",
@@ -409,140 +409,140 @@
       "levelProperties": [
         {
           "attackCount": "2",
-          "damage": "100",
+          "damage": "120",
           "hs": "h1",
           "mpCon": "15",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "190",
+          "damage": "210",
           "hs": "h10",
           "mpCon": "20",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "200",
+          "damage": "220",
           "hs": "h11",
           "mpCon": "25",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "210",
+          "damage": "230",
           "hs": "h12",
           "mpCon": "25",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "220",
+          "damage": "240",
           "hs": "h13",
           "mpCon": "25",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "230",
+          "damage": "250",
           "hs": "h14",
           "mpCon": "25",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "240",
+          "damage": "260",
           "hs": "h15",
           "mpCon": "25",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "250",
+          "damage": "270",
           "hs": "h16",
           "mpCon": "30",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "260",
+          "damage": "280",
           "hs": "h17",
           "mpCon": "30",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "270",
+          "damage": "290",
           "hs": "h18",
           "mpCon": "30",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "280",
+          "damage": "300",
           "hs": "h19",
           "mpCon": "30",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "110",
+          "damage": "130",
           "hs": "h2",
           "mpCon": "15",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "290",
+          "damage": "310",
           "hs": "h20",
           "mpCon": "30",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "120",
+          "damage": "140",
           "hs": "h3",
           "mpCon": "15",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "130",
+          "damage": "150",
           "hs": "h4",
           "mpCon": "15",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "140",
+          "damage": "160",
           "hs": "h5",
           "mpCon": "15",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "150",
+          "damage": "170",
           "hs": "h6",
           "mpCon": "20",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "160",
+          "damage": "180",
           "hs": "h7",
           "mpCon": "20",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "170",
+          "damage": "190",
           "hs": "h8",
           "mpCon": "20",
           "time": "1"
         },
         {
           "attackCount": "2",
-          "damage": "180",
+          "damage": "200",
           "hs": "h9",
           "mpCon": "20",
           "time": "1"
