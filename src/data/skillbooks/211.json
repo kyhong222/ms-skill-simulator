@@ -1144,240 +1144,240 @@
       "levelProperties": [
         {
           "hs": "h1",
-          "mad": "80",
-          "mastery": "1",
+          "mad": "100",
+          "mastery": "15",
           "mpCon": "14",
           "prop": "41",
           "time": "4"
         },
         {
           "hs": "h10",
-          "mad": "110",
-          "mastery": "4",
+          "mad": "130",
+          "mastery": "30",
           "mpCon": "14",
           "prop": "50",
           "time": "16"
         },
         {
           "hs": "h11",
-          "mad": "113",
-          "mastery": "4",
+          "mad": "133",
+          "mastery": "30",
           "mpCon": "18",
           "prop": "51",
           "time": "16"
         },
         {
           "hs": "h12",
-          "mad": "116",
-          "mastery": "4",
+          "mad": "136",
+          "mastery": "30",
           "mpCon": "18",
           "prop": "52",
           "time": "16"
         },
         {
           "hs": "h13",
-          "mad": "119",
-          "mastery": "5",
+          "mad": "139",
+          "mastery": "35",
           "mpCon": "18",
           "prop": "53",
           "time": "20"
         },
         {
           "hs": "h14",
-          "mad": "122",
-          "mastery": "5",
+          "mad": "142",
+          "mastery": "35",
           "mpCon": "18",
           "prop": "54",
           "time": "20"
         },
         {
           "hs": "h15",
-          "mad": "124",
-          "mastery": "5",
+          "mad": "144",
+          "mastery": "35",
           "mpCon": "18",
           "prop": "55",
           "time": "20"
         },
         {
           "hs": "h16",
-          "mad": "126",
-          "mastery": "6",
+          "mad": "146",
+          "mastery": "40",
           "mpCon": "18",
           "prop": "56",
           "time": "24"
         },
         {
           "hs": "h17",
-          "mad": "128",
-          "mastery": "6",
+          "mad": "148",
+          "mastery": "40",
           "mpCon": "18",
           "prop": "57",
           "time": "24"
         },
         {
           "hs": "h18",
-          "mad": "130",
-          "mastery": "6",
+          "mad": "150",
+          "mastery": "40",
           "mpCon": "18",
           "prop": "58",
           "time": "24"
         },
         {
           "hs": "h19",
-          "mad": "132",
-          "mastery": "7",
+          "mad": "152",
+          "mastery": "45",
           "mpCon": "18",
           "prop": "59",
           "time": "28"
         },
         {
           "hs": "h2",
-          "mad": "84",
-          "mastery": "1",
+          "mad": "104",
+          "mastery": "15",
           "mpCon": "14",
           "prop": "42",
           "time": "4"
         },
         {
           "hs": "h20",
-          "mad": "134",
-          "mastery": "7",
+          "mad": "154",
+          "mastery": "45",
           "mpCon": "18",
           "prop": "60",
           "time": "28"
         },
         {
           "hs": "h21",
-          "mad": "136",
-          "mastery": "7",
+          "mad": "156",
+          "mastery": "45",
           "mpCon": "22",
           "prop": "61",
           "time": "28"
         },
         {
           "hs": "h22",
-          "mad": "138",
-          "mastery": "8",
+          "mad": "158",
+          "mastery": "50",
           "mpCon": "22",
           "prop": "62",
           "time": "32"
         },
         {
           "hs": "h23",
-          "mad": "140",
-          "mastery": "8",
+          "mad": "160",
+          "mastery": "50",
           "mpCon": "22",
           "prop": "63",
           "time": "32"
         },
         {
           "hs": "h24",
-          "mad": "142",
-          "mastery": "8",
+          "mad": "162",
+          "mastery": "50",
           "mpCon": "22",
           "prop": "64",
           "time": "32"
         },
         {
           "hs": "h25",
-          "mad": "144",
-          "mastery": "9",
+          "mad": "164",
+          "mastery": "55",
           "mpCon": "22",
           "prop": "65",
           "time": "36"
         },
         {
           "hs": "h26",
-          "mad": "146",
-          "mastery": "9",
+          "mad": "166",
+          "mastery": "55",
           "mpCon": "22",
           "prop": "66",
           "time": "36"
         },
         {
           "hs": "h27",
-          "mad": "147",
-          "mastery": "9",
+          "mad": "167",
+          "mastery": "55",
           "mpCon": "22",
           "prop": "67",
           "time": "36"
         },
         {
           "hs": "h28",
-          "mad": "148",
-          "mastery": "10",
+          "mad": "168",
+          "mastery": "60",
           "mpCon": "22",
           "prop": "68",
           "time": "40"
         },
         {
           "hs": "h29",
-          "mad": "149",
-          "mastery": "10",
+          "mad": "169",
+          "mastery": "60",
           "mpCon": "22",
           "prop": "69",
           "time": "40"
         },
         {
           "hs": "h3",
-          "mad": "88",
-          "mastery": "1",
+          "mad": "108",
+          "mastery": "15",
           "mpCon": "14",
           "prop": "43",
           "time": "4"
         },
         {
           "hs": "h30",
-          "mad": "150",
-          "mastery": "10",
+          "mad": "170",
+          "mastery": "60",
           "mpCon": "22",
           "prop": "70",
           "time": "40"
         },
         {
           "hs": "h4",
-          "mad": "92",
-          "mastery": "2",
+          "mad": "112",
+          "mastery": "20",
           "mpCon": "14",
           "prop": "44",
           "time": "8"
         },
         {
           "hs": "h5",
-          "mad": "95",
-          "mastery": "2",
+          "mad": "115",
+          "mastery": "20",
           "mpCon": "14",
           "prop": "45",
           "time": "8"
         },
         {
           "hs": "h6",
-          "mad": "98",
-          "mastery": "2",
+          "mad": "118",
+          "mastery": "20",
           "mpCon": "14",
           "prop": "46",
           "time": "8"
         },
         {
           "hs": "h7",
-          "mad": "101",
-          "mastery": "3",
+          "mad": "121",
+          "mastery": "25",
           "mpCon": "14",
           "prop": "47",
           "time": "12"
         },
         {
           "hs": "h8",
-          "mad": "104",
-          "mastery": "3",
+          "mad": "124",
+          "mastery": "25",
           "mpCon": "14",
           "prop": "48",
           "time": "12"
         },
         {
           "hs": "h9",
-          "mad": "107",
-          "mastery": "3",
+          "mad": "127",
+          "mastery": "25",
           "mpCon": "14",
           "prop": "49",
           "time": "12"
