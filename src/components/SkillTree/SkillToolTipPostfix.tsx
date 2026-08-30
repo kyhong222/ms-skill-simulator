@@ -32,6 +32,8 @@ export const SkillToolTipPostfix = (skill: IJobSkill, curLevel: number, key: str
       return energyChargePostfix(curLevel, key, value);
     case "타임 리프":
       return timeLeapPostfix(key, value);
+    case "파이어 샷":
+      return fireShotPostfix(key, value);
     default:
       return value;
   }
@@ -233,6 +235,21 @@ const timeLeapPostfix = (key: string, value: string) => {
   if (key === "cooltime") {
     // time /= 60
     value = String(Number(value) / 60);
+  }
+
+  return value;
+};
+
+// 파이어 샷 후처리
+const fireShotPostfix = (key: string, value: string) => {
+  if (key === "time") {
+    // 10레벨까지는 지속시간(도트 데미지)이 없어 인게임에서 표기되지 않음(time=0),
+    // 11레벨부터 지속시간이 붙는다. #time 자리에 조건부로 지속시간 문구를 넣는다.
+    if (Number(value) > 0) {
+      value = `, 지속 시간 ${value}초`;
+    } else {
+      value = "";
+    }
   }
 
   return value;
