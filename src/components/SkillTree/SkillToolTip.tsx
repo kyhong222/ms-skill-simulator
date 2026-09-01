@@ -53,7 +53,13 @@ const makeSkillDetail = (skill: IJobSkill, curLevel: number) => {
       }
 
       // mastery(숙련도) 파싱
-      if (key === "mastery" && skill.description?.name !== "비홀더스 버프") {
+      // 비홀더스 버프: pdd만 사용, 비홀더: 추가숙련도라 일반 무기숙련도 공식(*5+10)을 쓰지 않고
+      // beholderPostfix에서 *5만 적용 (추가숙련도 5/10/15/20%)
+      if (
+        key === "mastery" &&
+        skill.description?.name !== "비홀더스 버프" &&
+        skill.description?.name !== "비홀더"
+      ) {
         value = String(Number(value) * 5 + 10);
       }
 
