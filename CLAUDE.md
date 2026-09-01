@@ -124,7 +124,7 @@ src/
 
 ### 스킬 툴팁 속성 치환 (`SkillToolTip.tsx:makeSkillDetail`)
 - `description.detail`의 `#key` 플레이스홀더를 `levelProperties`의 값으로 치환
-- `lt`/`rb`: Point 문자열에서 X 파싱, `mastery`: `value*5+10` (비홀더스 버프 제외)
+- `lt`/`rb`: Point 문자열에서 X 파싱, `mastery`: `value*5+10` (비홀더스 버프·비홀더 제외 — 비홀더는 추가숙련도라 `beholderPostfix`에서 `value*5`만 적용)
 - `SkillToolTipPostfix`에서 15개 특수 스킬 추가 후처리
 
 ### 모바일 UI (< 768px)
