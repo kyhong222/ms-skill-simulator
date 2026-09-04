@@ -56,7 +56,7 @@ ms-skill-simulator/
 │   │   ├── Feedback/
 │   │   │   └── FeedbackDialog.tsx   # 문의하기 모달 (폼 → /api/feedback POST)
 │   │   ├── JobSelector/
-│   │   │   └── JobSelector.tsx      # 직업 선택 화면 (5개 그룹 × 12개 직업 + 시그너스 5개 + 레지스탕스 1개, 패치 노트/출처)
+│   │   │   └── JobSelector.tsx      # 직업 선택 화면 (5개 그룹 × 12개 직업 + 시그너스 5개 + 레지스탕스 1개, 패치 노트)
 │   │   └── SkillTree/
 │   │       ├── SkillTree.tsx        # 스킬 트리 메인 (상태관리, 포인트 계산, 데이터 로딩)
 │   │       ├── SkillBranch.tsx      # 단일 차수 스킬 브랜치 (UI 렌더링 전용, 모바일 접기 토글)
@@ -159,7 +159,7 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 
 **배틀메이지 파이프라인** — maplestory.io에 해당 버전이 없어 다른 경로를 쓴다.
 - 수치·스킬명·설명·마스터레벨·선행스킬의 단일 출처는 `scripts/data/battlemage-t12137.txt`
-  (블로그 원문을 텍스트로 보존. 재배포 조건이 출처 표기여서 `JobSelector` 하단에 출처 문구가 있음)
+  (블로그 원문을 텍스트로 보존. 출처는 이 파일 상단 주석에만 기록하고 UI에는 표기하지 않음)
 - 스킬 ID·아이콘만 인벤 DB에서 가져온다 (원본 텍스트에 없는 정보). 아이콘은 GIF라
   `scripts/lib/gif2png.mjs`로 PNG 변환 후 Base64 인라인 (앱이 `data:image/png`로 렌더링하기 때문)
 - 생성 시 **자체 검증**: `description.detail` 템플릿과 `levelProperties`로 각 레벨 문장을

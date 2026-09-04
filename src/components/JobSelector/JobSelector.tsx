@@ -114,20 +114,6 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
             </li>
           ))}
         </ul>
-
-        {/* 배틀메이지 데이터 출처 표기 (원문 재배포 조건) */}
-        <p className="mt-6 text-xs text-gray-500 break-keep md:text-sm">
-          배틀메이지 스킬 데이터 출처:{" "}
-          <a
-            href="https://maplestory.pe.kr/1873"
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-gray-700"
-          >
-            maplestory.pe.kr
-          </a>{" "}
-          · 스킬 아이콘 출처: 메이플 인벤
-        </p>
       </div>
     </div>
   );
