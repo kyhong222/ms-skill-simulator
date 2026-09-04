@@ -28,3 +28,6 @@ deploy
 *.njsproj
 *.sln
 *.sw?
+
+# API 원본 응답 임시 보관 (커밋 제외)
+/tmp/

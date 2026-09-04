@@ -43,14 +43,20 @@ ms-skill-simulator/
 │   ├── robots.txt                   # 크롤러 허용 설정
 │   ├── sitemap.xml                  # SEO 사이트맵
 │   └── vite.svg                     # Vite 기본 아이콘 (미사용)
-├── scripts/
+├── scripts/                         # 스킬북 JSON 생성 도구 (빌드/런타임과 무관, 수동 실행)
+│   ├── data/
+│   │   └── battlemage-t12137.txt    # 배틀메이지 원본 텍스트 (KMST T1.2.137, 출처 maplestory.pe.kr)
+│   ├── lib/
+│   │   └── gif2png.mjs              # GIF→PNG 변환 (무의존, 인벤 아이콘용)
+│   ├── gen-cygnus.mjs               # 시그너스 스킬북 생성 (maplestory.io GMS v72 API)
+│   ├── gen-battlemage.mjs           # 배틀메이지 스킬북 생성 (원본 텍스트 + 인벤 아이콘)
 │   └── prepare-deploy.js            # (사용 안 함) 구 GitHub Pages 서브패스 배포용 잔재
 ├── src/
 │   ├── components/
 │   │   ├── Feedback/
 │   │   │   └── FeedbackDialog.tsx   # 문의하기 모달 (폼 → /api/feedback POST)
 │   │   ├── JobSelector/
-│   │   │   └── JobSelector.tsx      # 직업 선택 화면 (5개 그룹 × 12개 직업 + 시그너스 5개, 패치 노트)
+│   │   │   └── JobSelector.tsx      # 직업 선택 화면 (5개 그룹 × 12개 직업 + 시그너스 5개 + 레지스탕스 1개, 패치 노트)
 │   │   └── SkillTree/
 │   │       ├── SkillTree.tsx        # 스킬 트리 메인 (상태관리, 포인트 계산, 데이터 로딩)
 │   │       ├── SkillBranch.tsx      # 단일 차수 스킬 브랜치 (UI 렌더링 전용, 모바일 접기 토글)
@@ -63,12 +69,14 @@ ms-skill-simulator/
 │   │   └── skillPoints.ts           # 게임 상수 (전직 레벨, SP 배수, 최대 레벨 등)
 │   ├── data/
 │   │   ├── jobs.ts                  # 직업 목록, 선택 가능 직업, 그룹화, 하위 직업 매핑
-│   │   └── skillbooks/             # 45개 JSON 파일 (직업별 스킬 데이터, Base64 아이콘 포함)
+│   │   └── skillbooks/             # 60개 JSON 파일 (직업별 스킬 데이터, Base64 아이콘 포함)
 │   │       ├── 100.json ~ 132.json  # 전사 계열
 │   │       ├── 200.json ~ 232.json  # 마법사 계열
 │   │       ├── 300.json ~ 322.json  # 궁수 계열
 │   │       ├── 400.json ~ 422.json  # 도적 계열
-│   │       └── 500.json ~ 522.json  # 해적 계열
+│   │       ├── 500.json ~ 522.json  # 해적 계열
+│   │       ├── 1100.json ~ 1511.json # 시그너스 (1~3차)
+│   │       └── 3200.json ~ 3212.json # 레지스탕스 배틀메이지 (1~4차)
 │   ├── pages/
 │   │   ├── SkillSimulatorPage.tsx   # 직업 선택 페이지 (라우트: /)
 │   │   └── SkillTreePage.tsx        # 스킬 트리 페이지 (라우트: /:jobId)
@@ -138,6 +146,27 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 - 스킬북 JSON 파일은 `import()`를 통한 **동적 임포트** (코드 스플리팅)
 - 직업 선택 시 해당 직업의 1~4차 스킬북 4개를 `Promise.all`로 병렬 로딩
 - `subJobs` 매핑으로 4차 직업 ID → [1차, 2차, 3차, 4차] 직업 ID 배열 변환
+  (시그너스는 3차까지 3개만 매핑)
+
+### 스킬북 데이터 출처
+스킬북 JSON은 직업군마다 출처가 다르다. 수치를 고칠 때 어느 파이프라인인지 먼저 확인할 것.
+
+| 직업군 | 파일 | 출처 | 생성 |
+|---|---|---|---|
+| 모험가 | `1xx~5xx.json` | maplestory.io GMS API | 초기 수기 반영, 이후 패치는 직접 수정 |
+| 시그너스 | `11xx~15xx.json` | maplestory.io GMS v72 API | `scripts/gen-cygnus.mjs` |
+| 배틀메이지 | `32xx.json` | KMST T1.2.137 원본 텍스트 + 인벤 아이콘 | `scripts/gen-battlemage.mjs` |
+
+**배틀메이지 파이프라인** — maplestory.io에 해당 버전이 없어 다른 경로를 쓴다.
+- 수치·스킬명·설명·마스터레벨·선행스킬의 단일 출처는 `scripts/data/battlemage-t12137.txt`
+  (블로그 원문을 텍스트로 보존. 출처는 이 파일 상단 주석에만 기록하고 UI에는 표기하지 않음)
+- 스킬 ID·아이콘만 인벤 DB에서 가져온다 (원본 텍스트에 없는 정보). 아이콘은 GIF라
+  `scripts/lib/gif2png.mjs`로 PNG 변환 후 Base64 인라인 (앱이 `data:image/png`로 렌더링하기 때문)
+- 생성 시 **자체 검증**: `description.detail` 템플릿과 `levelProperties`로 각 레벨 문장을
+  다시 조립해 원문과 글자 단위로 대조하고, 하나라도 어긋나면 파일을 쓰지 않고 종료한다
+- 레벨 속성 키를 정할 때 두 가지 제약이 있다.
+  `SkillToolTip`의 `#key` 치환에 단어 경계가 없어 **키가 서로의 접두사가 되면 안 되고**,
+  `mastery` 키는 툴팁이 자동으로 `값*5+10`을 적용하므로 최종 퍼센트를 그대로 넣으면 안 된다
 
 ### 컴포넌트 구조
 - **페이지 컴포넌트**: `SkillSimulatorPage`, `SkillTreePage` — 라우팅 진입점, 네비게이션 처리
@@ -193,7 +222,7 @@ interface ILevelProperties {
 
 ### 데이터 관계
 ```
-직업 선택 (selectableJobs: 12개)
+직업 선택 (selectableJobs: 18개 — 모험가 12 + 시그너스 5 + 배틀메이지 1)
     ↓ subJobs[jobId]
 4개의 스킬북 JSON 동적 로딩
     ↓

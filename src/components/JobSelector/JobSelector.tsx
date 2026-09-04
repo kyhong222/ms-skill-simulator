@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { IJob } from "../../types/job";
-import { groupedJobs, cygnusByGroup } from "../../data/jobs";
+import { groupedJobs, cygnusByGroup, resistanceByGroup } from "../../data/jobs";
 
 // 패치 이력 (신규 항목은 아래에 추가)
 const PATCH_NOTES = [
@@ -15,6 +15,7 @@ const PATCH_NOTES = [
   "26.08.06  브랜디쉬 변경점 적용",
   "26.08.07  문의하기 기능 추가",
   "26.08.14  스나이핑 재사용 대기시간 변경점 적용",
+  "26.09.05  레지스탕스 배틀메이지(임시) 스킬 추가",
 ];
 
 export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => void }) {
@@ -70,6 +71,21 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
               <div key={groupName} className="w-full md:w-[160px]">
                 <ul className="flex flex-col gap-2 md:gap-4">
                   {cygnusByGroup[groupName] && renderJob(cygnusByGroup[groupName])}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* 구분선 */}
+          <hr className="my-5 border-t border-gray-300 md:my-6" />
+
+          {/* 레지스탕스 직업군 (하단, 데스크톱은 각 모험가 열에 대응) */}
+          <h2 className="text-base font-semibold mb-2 text-center md:hidden">레지스탕스</h2>
+          <div className="grid grid-cols-2 items-start gap-x-3 gap-y-2 md:flex md:gap-8">
+            {groupNames.map((groupName) => (
+              <div key={groupName} className="w-full md:w-[160px]">
+                <ul className="flex flex-col gap-2 md:gap-4">
+                  {resistanceByGroup[groupName] && renderJob(resistanceByGroup[groupName])}
                 </ul>
               </div>
             ))}
