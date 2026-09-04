@@ -61,10 +61,11 @@ export const jobs: IJob[] = [
   { id: 1511, name: "Thunder Breaker (3rd)", koname: "스트라이커" },
 
   // 레지스탕스 (현재 배틀메이지만 지원. 전 차수 동일 직업명)
-  { id: 3200, name: "Battle Mage (1st)", koname: "배틀메이지" },
-  { id: 3210, name: "Battle Mage (2nd)", koname: "배틀메이지" },
-  { id: 3211, name: "Battle Mage (3rd)", koname: "배틀메이지" },
-  { id: 3212, name: "Battle Mage (4th)", koname: "배틀메이지" },
+  // 메이플랜드 미출시 직업이라 koname에 "(임시)" 표기 — 정식 출시 후 데이터 확정되면 제거
+  { id: 3200, name: "Battle Mage (1st)", koname: "배틀메이지(임시)" },
+  { id: 3210, name: "Battle Mage (2nd)", koname: "배틀메이지(임시)" },
+  { id: 3211, name: "Battle Mage (3rd)", koname: "배틀메이지(임시)" },
+  { id: 3212, name: "Battle Mage (4th)", koname: "배틀메이지(임시)" },
 ];
 
 const findJob = (id: number): IJob => jobs.find((j) => j.id === id)!;
