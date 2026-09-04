@@ -140,123 +140,123 @@
       },
       "levelProperties": [
         {
-          "hp": "3",
+          "hp": "24",
           "hs": "h1",
-          "mp": "1",
+          "mp": "2",
           "time": "29"
         },
         {
-          "hp": "30",
+          "hp": "60",
           "hs": "h10",
-          "mp": "10",
+          "mp": "20",
           "time": "20"
         },
         {
-          "hp": "33",
+          "hp": "64",
           "hs": "h11",
-          "mp": "11",
+          "mp": "22",
           "time": "19"
         },
         {
-          "hp": "36",
+          "hp": "68",
           "hs": "h12",
-          "mp": "12",
+          "mp": "24",
           "time": "18"
         },
         {
-          "hp": "39",
+          "hp": "72",
           "hs": "h13",
-          "mp": "13",
+          "mp": "26",
           "time": "17"
         },
         {
-          "hp": "42",
+          "hp": "76",
           "hs": "h14",
-          "mp": "14",
+          "mp": "28",
           "time": "16"
         },
         {
-          "hp": "45",
+          "hp": "80",
           "hs": "h15",
-          "mp": "15",
+          "mp": "30",
           "time": "15"
         },
         {
-          "hp": "48",
+          "hp": "84",
           "hs": "h16",
-          "mp": "16",
+          "mp": "32",
           "time": "14"
         },
         {
-          "hp": "51",
+          "hp": "88",
           "hs": "h17",
-          "mp": "17",
+          "mp": "34",
           "time": "13"
         },
         {
-          "hp": "54",
+          "hp": "92",
           "hs": "h18",
-          "mp": "18",
+          "mp": "36",
           "time": "12"
         },
         {
-          "hp": "57",
+          "hp": "96",
           "hs": "h19",
-          "mp": "19",
+          "mp": "38",
           "time": "11"
         },
         {
-          "hp": "6",
+          "hp": "28",
           "hs": "h2",
-          "mp": "2",
+          "mp": "4",
           "time": "28"
         },
         {
-          "hp": "60",
+          "hp": "100",
           "hs": "h20",
-          "mp": "20",
+          "mp": "40",
           "time": "10"
         },
         {
-          "hp": "9",
+          "hp": "32",
           "hs": "h3",
-          "mp": "3",
+          "mp": "6",
           "time": "27"
         },
         {
-          "hp": "12",
+          "hp": "36",
           "hs": "h4",
-          "mp": "4",
+          "mp": "8",
           "time": "26"
         },
         {
-          "hp": "15",
+          "hp": "40",
           "hs": "h5",
-          "mp": "5",
+          "mp": "10",
           "time": "25"
         },
         {
-          "hp": "18",
+          "hp": "44",
           "hs": "h6",
-          "mp": "6",
+          "mp": "12",
           "time": "24"
         },
         {
-          "hp": "21",
+          "hp": "48",
           "hs": "h7",
-          "mp": "7",
+          "mp": "14",
           "time": "23"
         },
         {
-          "hp": "24",
+          "hp": "52",
           "hs": "h8",
-          "mp": "8",
+          "mp": "16",
           "time": "22"
         },
         {
-          "hp": "27",
+          "hp": "56",
           "hs": "h9",
-          "mp": "9",
+          "mp": "18",
           "time": "21"
         }
       ]
@@ -633,194 +633,224 @@
       "soundPath": "Skill.img/4201004",
       "description": {
         "id": 4201004,
-        "desc": "일정 확률로 적이 소지하고 있는 아이템 중 하나를 훔쳐낸다. 하나의 적에게 한 번만 훔칠 수 있으며 성공할 때까지 계속 시도할 수 있다.",
+        "desc": "다수의 적을 빠르게 공격하고 일정 확률로 적이 소지하고 있는 아이템 중 하나를 훔쳐낸다. 하나의 적에게 한 번만 훔칠 수 있으며 성공할 때까지 계속 시도할 수 있다.",
         "name": "스틸",
         "bookName": "",
-        "detail": "MP #mpCon 소비하여 #prop% 확률로 스틸, 데미지 #damage%"
+        "detail": "MP #mpCon 소비하여 #prop% 확률로 스틸, 데미지 #damage%, 최대 #target마리 공격"
       },
       "requiredSkillLevels": {
         "4201003": 5
       },
       "levelProperties": [
         {
-          "damage": "42",
+          "damage": "43",
           "hs": "h1",
           "mpCon": "12",
-          "prop": "11"
-        },
-        {
-          "damage": "60",
-          "hs": "h10",
-          "mpCon": "12",
-          "prop": "20"
-        },
-        {
-          "damage": "62",
-          "hs": "h11",
-          "mpCon": "12",
-          "prop": "21"
-        },
-        {
-          "damage": "64",
-          "hs": "h12",
-          "mpCon": "12",
-          "prop": "22"
-        },
-        {
-          "damage": "66",
-          "hs": "h13",
-          "mpCon": "12",
-          "prop": "23"
-        },
-        {
-          "damage": "68",
-          "hs": "h14",
-          "mpCon": "12",
-          "prop": "24"
+          "prop": "11",
+          "target": "2"
         },
         {
           "damage": "70",
-          "hs": "h15",
+          "hs": "h10",
           "mpCon": "12",
-          "prop": "25"
+          "prop": "20",
+          "target": "2"
         },
         {
-          "damage": "72",
-          "hs": "h16",
-          "mpCon": "24",
-          "prop": "26"
-        },
-        {
-          "damage": "74",
-          "hs": "h17",
-          "mpCon": "24",
-          "prop": "27"
+          "damage": "73",
+          "hs": "h11",
+          "mpCon": "12",
+          "prop": "21",
+          "target": "3"
         },
         {
           "damage": "76",
-          "hs": "h18",
-          "mpCon": "24",
-          "prop": "28"
-        },
-        {
-          "damage": "78",
-          "hs": "h19",
-          "mpCon": "24",
-          "prop": "29"
-        },
-        {
-          "damage": "44",
-          "hs": "h2",
+          "hs": "h12",
           "mpCon": "12",
-          "prop": "12"
+          "prop": "22",
+          "target": "3"
         },
         {
-          "damage": "80",
-          "hs": "h20",
-          "mpCon": "24",
-          "prop": "30"
+          "damage": "79",
+          "hs": "h13",
+          "mpCon": "12",
+          "prop": "23",
+          "target": "3"
         },
         {
           "damage": "82",
-          "hs": "h21",
-          "mpCon": "24",
-          "prop": "31"
+          "hs": "h14",
+          "mpCon": "12",
+          "prop": "24",
+          "target": "3"
         },
         {
-          "damage": "84",
-          "hs": "h22",
-          "mpCon": "24",
-          "prop": "32"
-        },
-        {
-          "damage": "86",
-          "hs": "h23",
-          "mpCon": "24",
-          "prop": "33"
+          "damage": "85",
+          "hs": "h15",
+          "mpCon": "12",
+          "prop": "25",
+          "target": "3"
         },
         {
           "damage": "88",
-          "hs": "h24",
+          "hs": "h16",
           "mpCon": "24",
-          "prop": "34"
+          "prop": "26",
+          "target": "3"
         },
         {
-          "damage": "90",
-          "hs": "h25",
+          "damage": "91",
+          "hs": "h17",
           "mpCon": "24",
-          "prop": "35"
-        },
-        {
-          "damage": "92",
-          "hs": "h26",
-          "mpCon": "24",
-          "prop": "36"
+          "prop": "27",
+          "target": "3"
         },
         {
           "damage": "94",
-          "hs": "h27",
+          "hs": "h18",
           "mpCon": "24",
-          "prop": "37"
+          "prop": "28",
+          "target": "3"
         },
         {
-          "damage": "96",
-          "hs": "h28",
+          "damage": "97",
+          "hs": "h19",
           "mpCon": "24",
-          "prop": "38"
-        },
-        {
-          "damage": "98",
-          "hs": "h29",
-          "mpCon": "24",
-          "prop": "39"
+          "prop": "29",
+          "target": "3"
         },
         {
           "damage": "46",
-          "hs": "h3",
+          "hs": "h2",
           "mpCon": "12",
-          "prop": "13"
+          "prop": "12",
+          "target": "2"
         },
         {
           "damage": "100",
+          "hs": "h20",
+          "mpCon": "24",
+          "prop": "30",
+          "target": "3"
+        },
+        {
+          "damage": "103",
+          "hs": "h21",
+          "mpCon": "24",
+          "prop": "31",
+          "target": "4"
+        },
+        {
+          "damage": "106",
+          "hs": "h22",
+          "mpCon": "24",
+          "prop": "32",
+          "target": "4"
+        },
+        {
+          "damage": "109",
+          "hs": "h23",
+          "mpCon": "24",
+          "prop": "33",
+          "target": "4"
+        },
+        {
+          "damage": "112",
+          "hs": "h24",
+          "mpCon": "24",
+          "prop": "34",
+          "target": "4"
+        },
+        {
+          "damage": "115",
+          "hs": "h25",
+          "mpCon": "24",
+          "prop": "35",
+          "target": "4"
+        },
+        {
+          "damage": "118",
+          "hs": "h26",
+          "mpCon": "24",
+          "prop": "36",
+          "target": "4"
+        },
+        {
+          "damage": "121",
+          "hs": "h27",
+          "mpCon": "24",
+          "prop": "37",
+          "target": "4"
+        },
+        {
+          "damage": "124",
+          "hs": "h28",
+          "mpCon": "24",
+          "prop": "38",
+          "target": "4"
+        },
+        {
+          "damage": "127",
+          "hs": "h29",
+          "mpCon": "24",
+          "prop": "39",
+          "target": "4"
+        },
+        {
+          "damage": "49",
+          "hs": "h3",
+          "mpCon": "12",
+          "prop": "13",
+          "target": "2"
+        },
+        {
+          "damage": "130",
           "hs": "h30",
           "mpCon": "24",
-          "prop": "40"
-        },
-        {
-          "damage": "48",
-          "hs": "h4",
-          "mpCon": "12",
-          "prop": "14"
-        },
-        {
-          "damage": "50",
-          "hs": "h5",
-          "mpCon": "12",
-          "prop": "15"
+          "prop": "40",
+          "target": "4"
         },
         {
           "damage": "52",
-          "hs": "h6",
+          "hs": "h4",
           "mpCon": "12",
-          "prop": "16"
+          "prop": "14",
+          "target": "2"
         },
         {
-          "damage": "54",
-          "hs": "h7",
+          "damage": "55",
+          "hs": "h5",
           "mpCon": "12",
-          "prop": "17"
-        },
-        {
-          "damage": "56",
-          "hs": "h8",
-          "mpCon": "12",
-          "prop": "18"
+          "prop": "15",
+          "target": "2"
         },
         {
           "damage": "58",
+          "hs": "h6",
+          "mpCon": "12",
+          "prop": "16",
+          "target": "2"
+        },
+        {
+          "damage": "61",
+          "hs": "h7",
+          "mpCon": "12",
+          "prop": "17",
+          "target": "2"
+        },
+        {
+          "damage": "64",
+          "hs": "h8",
+          "mpCon": "12",
+          "prop": "18",
+          "target": "2"
+        },
+        {
+          "damage": "67",
           "hs": "h9",
           "mpCon": "12",
-          "prop": "19"
+          "prop": "19",
+          "target": "2"
         }
       ]
     },
