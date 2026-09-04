@@ -59,12 +59,22 @@ export const jobs: IJob[] = [
   { id: 1500, name: "Thunder Breaker (1st)", koname: "스트라이커" },
   { id: 1510, name: "Thunder Breaker (2nd)", koname: "스트라이커" },
   { id: 1511, name: "Thunder Breaker (3rd)", koname: "스트라이커" },
+
+  // 레지스탕스 (현재 배틀메이지만 지원. 전 차수 동일 직업명)
+  { id: 3200, name: "Battle Mage (1st)", koname: "배틀메이지" },
+  { id: 3210, name: "Battle Mage (2nd)", koname: "배틀메이지" },
+  { id: 3211, name: "Battle Mage (3rd)", koname: "배틀메이지" },
+  { id: 3212, name: "Battle Mage (4th)", koname: "배틀메이지" },
 ];
 
 const findJob = (id: number): IJob => jobs.find((j) => j.id === id)!;
 
-// 선택 가능한 최종 직업 ID 목록 (모험가는 4차, 시그너스는 3차가 최종)
-const selectableJobIds = [112, 122, 132, 212, 222, 232, 312, 322, 412, 422, 512, 522, 1111, 1211, 1311, 1411, 1511];
+// 선택 가능한 최종 직업 ID 목록 (모험가는 4차, 시그너스는 3차, 레지스탕스는 4차가 최종)
+const selectableJobIds = [
+  112, 122, 132, 212, 222, 232, 312, 322, 412, 422, 512, 522,
+  1111, 1211, 1311, 1411, 1511,
+  3212,
+];
 
 export const selectableJobs: IJob[] = selectableJobIds.map(findJob);
 
@@ -92,6 +102,16 @@ const cygnusGroupDef: Record<string, number> = {
 
 export const cygnusByGroup: Record<string, IJob> = Object.fromEntries(
   Object.entries(cygnusGroupDef).map(([group, id]) => [group, findJob(id)])
+);
+
+// 모험가 직업군별 대응 레지스탕스 직업 — 시그너스와 같은 방식으로 각 열 하단에 배치
+// (메카닉·와일드헌터 추가 시 해적·궁수 항목을 넣으면 된다)
+const resistanceGroupDef: Record<string, number> = {
+  마법사: 3212,
+};
+
+export const resistanceByGroup: Record<string, IJob> = Object.fromEntries(
+  Object.entries(resistanceGroupDef).map(([group, id]) => [group, findJob(id)])
 );
 
 // 하위 직업 목록
@@ -167,5 +187,9 @@ export const subJobs: Record<number, number[]> = {
   // 나이트워커
   1411: [1400, 1410, 1411],
   // 스트라이커
-  1511: [1500, 1510, 1511]
+  1511: [1500, 1510, 1511],
+
+  // ── 레지스탕스 (1~4차) ──
+  // 배틀메이지
+  3212: [3200, 3210, 3211, 3212]
 }

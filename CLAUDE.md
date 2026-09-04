@@ -1,6 +1,6 @@
 # MS Skill Simulator
 
-메이플랜드 스킬 트리 시뮬레이터 — 12개 4차 직업의 1~4차 스킬 포인트 배분을 계획하는 웹앱 (React 19 + TypeScript + Vite + Tailwind CSS)
+메이플랜드 스킬 트리 시뮬레이터 — 모험가 12개 4차 직업 + 시그너스 5개 + 배틀메이지의 스킬 포인트 배분을 계획하는 웹앱 (React 19 + TypeScript + Vite + Tailwind CSS)
 
 ## 참고 문서
 - 프로젝트 구조와 아키텍처 상세: [architecture.md](./architecture.md)
@@ -41,6 +41,11 @@ npm run preview      # 빌드 결과 미리보기
 ```
 api/
 └── feedback.ts                      # Vercel 서버리스 함수 (문의 → GitHub Issue 생성)
+scripts/                             # 스킬북 JSON 생성 도구 (수동 실행, 빌드와 무관)
+├── data/battlemage-t12137.txt       # 배틀메이지 원본 텍스트 (출처 maplestory.pe.kr)
+├── lib/gif2png.mjs                  # GIF→PNG 변환 (무의존)
+├── gen-cygnus.mjs                   # 시그너스 생성 (maplestory.io GMS v72)
+└── gen-battlemage.mjs               # 배틀메이지 생성 (원본 텍스트 + 인벤 아이콘)
 src/
 ├── components/
 │   ├── Feedback/FeedbackDialog.tsx  # 문의하기 모달 폼
@@ -57,7 +62,7 @@ src/
 │   └── skillPoints.ts              # 게임 상수 (전직 레벨, SP 계산 관련)
 ├── data/
 │   ├── jobs.ts                     # 직업 목록/그룹/하위직업 매핑
-│   └── skillbooks/*.json           # 45개 스킬북 데이터 (Base64 아이콘 내장)
+│   └── skillbooks/*.json           # 60개 스킬북 데이터 (Base64 아이콘 내장)
 ├── pages/
 │   ├── SkillSimulatorPage.tsx      # / 라우트: 직업 선택
 │   └── SkillTreePage.tsx           # /:jobId 라우트: 스킬 트리 + 캡처
@@ -108,8 +113,10 @@ src/
 - 2차: 110/120/130, 210/220/230, 310/320, 410/420, 510/520
 - 3차: 111/121/131, 211/221/231, 311/321, 411/421, 511/521
 - 4차: 112/122/132, 212/222/232, 312/322, 412/422, 512/522
-- 선택 가능한 직업: 4차 12개 (`selectableJobs`)
-- `subJobs[4차ID]` → `[1차, 2차, 3차, 4차]` ID 배열
+- 시그너스: 1100~1511 (4차 없음, 3차가 최종)
+- 레지스탕스: 배틀메이지 3200/3210/3211/3212 (4차까지)
+- 선택 가능한 직업: 18개 — 모험가 4차 12개 + 시그너스 3차 5개 + 배틀메이지 1개 (`selectableJobs`)
+- `subJobs[최종ID]` → `[1차, 2차, 3차, 4차]` ID 배열 (시그너스는 3개)
 
 ### 스킬 포인트 계산 (`SkillTree.tsx:calculateSkillPoints`)
 - 게임 상수는 `constants/skillPoints.ts`에 정의
@@ -129,7 +136,7 @@ src/
 
 ### 모바일 UI (< 768px)
 - **직업 선택** (`JobSelector.tsx`): 그룹 블록 2열 그리드 (`grid grid-cols-2 md:flex`),
-  시그너스는 "시그너스 기사단" 제목(`md:hidden`) + 2열 그리드. 가로 스크롤은 `md:overflow-x-auto`로 데스크톱 전용
+  시그너스·레지스탕스는 각각 `md:hidden` 제목이 붙은 별도 섹션 + 2열 그리드. 가로 스크롤은 `md:overflow-x-auto`로 데스크톱 전용
 - **패치 노트**: 모바일 기본 접힘 (`isPatchOpen`, 목록에 `hidden md:block`). 내용은 `PATCH_NOTES` 상수 배열
 - 스킬 브랜치를 세로로 스택 (`SkillTree.tsx`: `flex-col md:flex-row`)
 - 브랜치 헤더 전체가 접기/펼치기 토글 (`SkillBranch.tsx`의 `isCollapsed`, 기본값 펼침)
@@ -163,6 +170,7 @@ src/
 ## 자주 수정하는 영역
 
 - **스킬 데이터 JSON** (`src/data/skillbooks/*.json`): 패치 반영 시 수치 변경
+  (배틀메이지 32xx.json은 예외 — `scripts/data/battlemage-t12137.txt`를 고치고 생성 스크립트를 다시 돌릴 것)
 - **SkillToolTipPostfix.tsx**: 새 특수 스킬 추가 또는 후처리 로직 수정
 - **JobSelector.tsx**: 패치 노트/변경 이력 (파일 상단 `PATCH_NOTES` 배열에 문자열 추가)
 - **useSkillBranch.ts**: 스킬 레벨 증감 로직, 활성화 검증
@@ -171,9 +179,19 @@ src/
 - **SkillTree.tsx**: 포인트 계산 공식 변경 시
 - **constants/skillPoints.ts**: 게임 상수값 변경 시
 
+### 배틀메이지 데이터 (레지스탕스)
+- maplestory.io에 해당 버전(빅뱅 이전, 마력 기반)이 없어 다른 경로로 만들었다
+- 수치·스킬명·설명·마스터레벨·선행스킬의 **단일 출처는 `scripts/data/battlemage-t12137.txt`**
+  (KMST T1.2.137 원문). 수치를 고칠 일이 있으면 JSON이 아니라 이 텍스트를 고치고 스크립트를 다시 돌릴 것
+- 스킬 ID·아이콘만 인벤에서 가져옴 → `node scripts/gen-battlemage.mjs` (아이콘은 `tmp/icons`에 캐시)
+- 생성 시 detail 템플릿으로 원문 문장을 재조립해 글자 단위 대조. 어긋나면 파일을 쓰지 않고 종료
+- **출처 표기는 재배포 조건** — `JobSelector` 하단 문구를 지우지 말 것
+
 ## 주의사항 / 함정
 
 - 스킬 아이콘은 **Base64로 JSON에 내장** — 파일 크기가 큼
+- 레벨 속성 키 작명 제약 2가지: `SkillToolTip`의 `#key` 치환에 단어 경계가 없어 **키가 서로의 접두사면 안 됨**
+  (`#dark`가 `#darkTime`을 갉아먹음). `mastery` 키는 툴팁이 자동으로 `값*5+10`을 적용함
 - `ILevelProperties`는 `hs` 외 동적 키 — 인덱스 시그니처 `[key: string]: string`으로 정의
 - `vercel.json`의 rewrite는 `/((?!api/).*)` — `/(.*)`로 되돌리면 `/api/*`까지 index.html로 삼켜 문의하기가 죽음
 - Vite `base: '/'` + BrowserRouter basename 없음 — 도메인 변경(`skill.mapleland.st`) 시 둘 다 루트로 맞춰야 함 (불일치 시 자산 404 → 흰 화면)
