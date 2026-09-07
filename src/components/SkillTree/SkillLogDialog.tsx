@@ -5,9 +5,9 @@ import {
   BRANCH_3RD_LEVEL,
   BRANCH_4TH_LEVEL,
   SP_PER_LEVEL,
-  BRANCH_1ST_BONUS_SP,
   BRANCH_2ND_BONUS_SP,
   BRANCH_3RD_BONUS_SP,
+  getBranch1stBonusSp,
 } from "../../constants/skillPoints";
 
 interface SkillLogEntry {
@@ -37,8 +37,8 @@ const BRANCH_LABELS = [
 ];
 
 // 시그너스(isCygnus=true)는 4차 구간을 3차로 합쳐 3개 차수만 반환
-function categorizeLogs(log: SkillLogEntry[], jobLevel: number, isCygnus = false) {
-  const threshold1 = (BRANCH_2ND_LEVEL - jobLevel) * SP_PER_LEVEL + BRANCH_1ST_BONUS_SP;
+function categorizeLogs(log: SkillLogEntry[], jobLevel: number, jobId: number, isCygnus = false) {
+  const threshold1 = (BRANCH_2ND_LEVEL - jobLevel) * SP_PER_LEVEL + getBranch1stBonusSp(jobId);
   const threshold2 = threshold1 + (BRANCH_3RD_LEVEL - BRANCH_2ND_LEVEL) * SP_PER_LEVEL + BRANCH_2ND_BONUS_SP;
   const threshold3 = threshold2 + (BRANCH_4TH_LEVEL - BRANCH_3RD_LEVEL) * SP_PER_LEVEL + BRANCH_3RD_BONUS_SP;
 
@@ -108,7 +108,7 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
     return () => dialog.removeEventListener("close", handleClose);
   }, [onClose]);
 
-  const branches = useMemo(() => categorizeLogs(log, jobLevel, isCygnus), [log, jobLevel, isCygnus]);
+  const branches = useMemo(() => categorizeLogs(log, jobLevel, jobId, isCygnus), [log, jobLevel, jobId, isCygnus]);
 
   const captureToCanvas = async () => {
     if (!contentRef.current) return null;

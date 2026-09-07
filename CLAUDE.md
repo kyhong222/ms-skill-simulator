@@ -122,12 +122,14 @@ src/
 - 게임 상수는 `constants/skillPoints.ts`에 정의
 - 일반 모드: `(currentLevel - jobLevel) * SP_PER_LEVEL + 보너스SP`
   - jobLevel: 마법사 계열 `MAGE_JOB_LEVEL`(8), 나머지 `DEFAULT_JOB_LEVEL`(10)
-  - 보너스: Lv≥jobLevel +1, Lv≥30 +1, Lv≥70 +1, Lv≥120 +3
+  - 보너스: Lv≥jobLevel +1(레지스탕스는 +5), Lv≥30 +1, Lv≥70 +1, Lv≥120 +3
+  - 1차 전직 보너스는 `getBranch1stBonusSp(jobId)`가 결정 — 레지스탕스(32xx)만 `RESISTANCE_BRANCH_1ST_BONUS_SP`(5)
 - 4차만 모드: `(currentLevel - FOURTH_ONLY_BASE_LEVEL) * SP_PER_LEVEL`
 
 ### 차수별 활성화 조건 (`useSkillBranch.ts:calcPointsForBranch`)
-- 공식: `(branchLevel - jobLevel) * SP_PER_LEVEL + (branchIndex - 1)`
-- 1차: 0, 2차: `(30-jobLevel)*3+1`, 3차: `(70-jobLevel)*3+2`, 4차: `(120-jobLevel)*3+3`
+- 공식: `(branchLevel - jobLevel) * SP_PER_LEVEL + 이전 차수 전직 보너스 SP 누적`
+- 1차: 0, 2차: `(30-jobLevel)*3+1차보너스`, 3차: `(70-jobLevel)*3+1차보너스+1`, 4차: `(120-jobLevel)*3+1차보너스+2`
+- 1차 보너스가 1인 일반 직업은 기존과 동일(2차 +1, 3차 +2, 4차 +3), 레지스탕스만 +5/+6/+7
 
 ### 스킬 툴팁 속성 치환 (`SkillToolTip.tsx:makeSkillDetail`)
 - `description.detail`의 `#key` 플레이스홀더를 `levelProperties`의 값으로 치환

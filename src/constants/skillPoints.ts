@@ -9,6 +9,9 @@ export const MAGE_JOB_IDS = [200, 210, 211, 212, 220, 221, 222, 230, 231, 232];
 // 플레임위자드(1200대)도 마법사가 아닌 일반 취급이라 jobLevel은 10으로 적용됨(MAGE_JOB_IDS 미포함)
 export const isCygnusJobId = (id: number): boolean => id >= 1100 && id <= 1599;
 
+// 레지스탕스 직업 ID 판별 (배틀메이지 3200~3212) — 1차 전직 시 SP 5로 시작
+export const isResistanceJobId = (id: number): boolean => id >= 3000 && id <= 3999;
+
 // 차수별 전직 레벨 (Branch advancement levels)
 export const BRANCH_2ND_LEVEL = 30;
 export const BRANCH_3RD_LEVEL = 70;
@@ -22,9 +25,15 @@ export const SP_PER_LEVEL = 3;
 
 // 차수별 전직 보너스 SP
 export const BRANCH_1ST_BONUS_SP = 1;
+// 레지스탕스는 1차 전직 시 5포인트를 받음
+export const RESISTANCE_BRANCH_1ST_BONUS_SP = 5;
 export const BRANCH_2ND_BONUS_SP = 1;
 export const BRANCH_3RD_BONUS_SP = 1;
 export const BRANCH_4TH_BONUS_SP = 3;
 
 // 캐릭터 최대 레벨
 export const MAX_CHARACTER_LEVEL = 300;
+
+// 직업군에 따른 1차 전직 보너스 SP (레지스탕스만 5, 나머지는 1)
+export const getBranch1stBonusSp = (jobId: number): number =>
+  isResistanceJobId(jobId) ? RESISTANCE_BRANCH_1ST_BONUS_SP : BRANCH_1ST_BONUS_SP;
