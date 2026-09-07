@@ -157,6 +157,10 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 | 시그너스 | `11xx~15xx.json` | maplestory.io GMS v72 API | `scripts/gen-cygnus.mjs` |
 | 배틀메이지 | `32xx.json` | KMST T1.2.137 원본 텍스트 + 인벤 아이콘 | `scripts/gen-battlemage.mjs` |
 
+**배틀메이지 스킬 포인트** — 레지스탕스는 10레벨 1차 전직 시 SP를 **5** 받는다(다른 직업군은 1).
+`constants/skillPoints.ts`의 `getBranch1stBonusSp(jobId)`가 이 차이를 담당하고,
+총 SP 계산(`SkillTree`)·차수 활성화 기준(`useSkillBranch`)·스킬 로그 차수 분류(`SkillLogDialog`)가 모두 이 값을 쓴다.
+
 **배틀메이지 파이프라인** — maplestory.io에 해당 버전이 없어 다른 경로를 쓴다.
 - 수치·스킬명·설명·마스터레벨·선행스킬의 단일 출처는 `scripts/data/battlemage-t12137.txt`
   (블로그 원문을 텍스트로 보존. 출처는 이 파일 상단 주석에만 기록하고 UI에는 표기하지 않음)

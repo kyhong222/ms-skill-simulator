@@ -13,6 +13,7 @@ import {
   BRANCH_3RD_LEVEL,
   BRANCH_4TH_LEVEL,
   BRANCH_1ST_BONUS_SP,
+  getBranch1stBonusSp,
   BRANCH_2ND_BONUS_SP,
   BRANCH_3RD_BONUS_SP,
   BRANCH_4TH_BONUS_SP,
@@ -42,7 +43,8 @@ interface SkillTreeProps {
 }
 
 // hasFourthJob=false(시그너스)면 120레벨 4차 보너스 SP를 제공하지 않음
-function calculateSkillPoints(currentLevel: number, jobLevel: number, fourthOnly: boolean, hasFourthJob: boolean = true): number {
+// branch1stBonusSp: 1차 전직 시 받는 SP (레지스탕스 5, 나머지 1)
+function calculateSkillPoints(currentLevel: number, jobLevel: number, fourthOnly: boolean, hasFourthJob: boolean = true, branch1stBonusSp: number = BRANCH_1ST_BONUS_SP): number {
   // 4차 이후만 모드일 때는 (현재레벨-119)*3
   if (fourthOnly) {
     return Math.max((currentLevel - FOURTH_ONLY_BASE_LEVEL) * SP_PER_LEVEL, 0);
@@ -51,7 +53,7 @@ function calculateSkillPoints(currentLevel: number, jobLevel: number, fourthOnly
   // 일반 모드
   let sp = (currentLevel - jobLevel) * SP_PER_LEVEL;
 
-  if (currentLevel >= jobLevel) sp += BRANCH_1ST_BONUS_SP;
+  if (currentLevel >= jobLevel) sp += branch1stBonusSp;
   if (currentLevel >= BRANCH_2ND_LEVEL) sp += BRANCH_2ND_BONUS_SP;
   if (currentLevel >= BRANCH_3RD_LEVEL) sp += BRANCH_3RD_BONUS_SP;
   if (hasFourthJob && currentLevel >= BRANCH_4TH_LEVEL) sp += BRANCH_4TH_BONUS_SP;
@@ -237,7 +239,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
       // 스킬 레벨 초기화 후 적용
       const newLevels = skillLevels.map((s) => ({ ...s, level: 0 }));
       const newLog: SkillLogEntry[] = [];
-      const totalSP = calculateSkillPoints(currentLevel, jobLevel, fourthOnly, !isCygnus);
+      const totalSP = calculateSkillPoints(currentLevel, jobLevel, fourthOnly, !isCygnus, branch1stBonusSp);
       let usedSP = 0;
 
       for (const [skillId, level] of entries) {
@@ -317,7 +319,8 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
 
   const jobLevel = calcJobLevel(selectedJobId);
   const isCygnus = isCygnusJobId(selectedJobId);
-  const totalSkillPoints = calculateSkillPoints(currentLevel, jobLevel, fourthOnly, !isCygnus);
+  const branch1stBonusSp = getBranch1stBonusSp(selectedJobId);
+  const totalSkillPoints = calculateSkillPoints(currentLevel, jobLevel, fourthOnly, !isCygnus, branch1stBonusSp);
   const usedSkillPoints = skillLevels.reduce((sum, skill) => sum + skill.level, 0);
   const remainingSkillPoints = totalSkillPoints - usedSkillPoints;
 

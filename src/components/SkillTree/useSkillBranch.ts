@@ -4,9 +4,13 @@ import {
   BRANCH_3RD_LEVEL,
   BRANCH_4TH_LEVEL,
   SP_PER_LEVEL,
+  BRANCH_2ND_BONUS_SP,
+  BRANCH_3RD_BONUS_SP,
+  getBranch1stBonusSp,
 } from "../../constants/skillPoints";
 
 interface UseSkillBranchParams {
+  jobId: number;
   skillbook: IJobSkillBook;
   skillLevels: { id: number; name: string; level: number }[];
   onLevelChange: (skillId: number, newLevel: number) => void;
@@ -18,7 +22,8 @@ interface UseSkillBranchParams {
 }
 
 // 차수에 따른 포인트 계산
-function calcPointsForBranch(branchIndex: number, jobLevel: number): number {
+// branch1stBonusSp: 1차 전직 시 받는 SP (레지스탕스 5, 나머지 1)
+function calcPointsForBranch(branchIndex: number, jobLevel: number, branch1stBonusSp: number): number {
   let branchLevel;
   if (branchIndex === 1) return 0;
   else if (branchIndex === 2) branchLevel = BRANCH_2ND_LEVEL;
@@ -26,11 +31,18 @@ function calcPointsForBranch(branchIndex: number, jobLevel: number): number {
   else if (branchIndex === 4) branchLevel = BRANCH_4TH_LEVEL;
   else return 0;
 
-  return (branchLevel - jobLevel) * SP_PER_LEVEL + (branchIndex - 1);
+  // 이전 차수 전직 보너스 SP 누적
+  const bonusSp =
+    branch1stBonusSp +
+    (branchIndex >= 3 ? BRANCH_2ND_BONUS_SP : 0) +
+    (branchIndex >= 4 ? BRANCH_3RD_BONUS_SP : 0);
+
+  return (branchLevel - jobLevel) * SP_PER_LEVEL + bonusSp;
 }
 
 export function useSkillBranch(params: UseSkillBranchParams) {
-  const { skillbook, skillLevels, onLevelChange, branchIndex, jobLevel, usedSkillPoints, remainingSkillPoints, fourthOnly } = params;
+  const { jobId, skillbook, skillLevels, onLevelChange, branchIndex, jobLevel, usedSkillPoints, remainingSkillPoints, fourthOnly } = params;
+  const branch1stBonusSp = getBranch1stBonusSp(jobId);
 
   // 특정 스킬의 현재 레벨 가져오기
   const getLevel = (skillId: number) => {
@@ -43,11 +55,11 @@ export function useSkillBranch(params: UseSkillBranchParams) {
   }, 0);
 
   // 차수에 따른 남은 필요 포인트
-  const remainingPointsForBranch = Math.max(calcPointsForBranch(branchIndex, jobLevel) - usedSkillPoints, 0);
+  const remainingPointsForBranch = Math.max(calcPointsForBranch(branchIndex, jobLevel, branch1stBonusSp) - usedSkillPoints, 0);
 
   // 해당 차수에 필요한 포인트를 사용했는지 확인
   const isBranchActivated = () => {
-    const pointsRequiredForBranch = calcPointsForBranch(branchIndex, jobLevel);
+    const pointsRequiredForBranch = calcPointsForBranch(branchIndex, jobLevel, branch1stBonusSp);
     return usedSkillPoints - totalInvestedPoints >= pointsRequiredForBranch;
   };
 

@@ -16,6 +16,7 @@ const PATCH_NOTES = [
   "26.08.07  문의하기 기능 추가",
   "26.08.14  스나이핑 재사용 대기시간 변경점 적용",
   "26.09.05  레지스탕스 배틀메이지(임시) 스킬 추가",
+  "26.09.08  배틀메이지 1차 전직 스킬포인트 5로 수정",
 ];
 
 export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => void }) {
