@@ -500,140 +500,140 @@
       "levelProperties": [
         {
           "bulletCount": "2",
-          "damage": "61",
+          "damage": "81",
           "hs": "h1",
           "mpCon": "4",
           "range": "215"
         },
         {
           "bulletCount": "2",
-          "damage": "70",
+          "damage": "90",
           "hs": "h10",
           "mpCon": "5",
           "range": "275"
         },
         {
           "bulletCount": "2",
-          "damage": "71",
+          "damage": "92",
           "hs": "h11",
           "mpCon": "6",
           "range": "290"
         },
         {
           "bulletCount": "2",
-          "damage": "72",
+          "damage": "94",
           "hs": "h12",
           "mpCon": "6",
           "range": "290"
         },
         {
           "bulletCount": "2",
-          "damage": "73",
+          "damage": "96",
           "hs": "h13",
           "mpCon": "6",
           "range": "305"
         },
         {
           "bulletCount": "2",
-          "damage": "74",
+          "damage": "98",
           "hs": "h14",
           "mpCon": "6",
           "range": "305"
         },
         {
           "bulletCount": "2",
-          "damage": "75",
+          "damage": "100",
           "hs": "h15",
           "mpCon": "6",
           "range": "320"
         },
         {
           "bulletCount": "2",
-          "damage": "76",
+          "damage": "102",
           "hs": "h16",
           "mpCon": "7",
           "range": "320"
         },
         {
           "bulletCount": "2",
-          "damage": "77",
+          "damage": "104",
           "hs": "h17",
           "mpCon": "7",
           "range": "335"
         },
         {
           "bulletCount": "2",
-          "damage": "78",
+          "damage": "106",
           "hs": "h18",
           "mpCon": "7",
           "range": "335"
         },
         {
           "bulletCount": "2",
-          "damage": "79",
+          "damage": "108",
           "hs": "h19",
           "mpCon": "7",
           "range": "350"
         },
         {
           "bulletCount": "2",
-          "damage": "62",
+          "damage": "82",
           "hs": "h2",
           "mpCon": "4",
           "range": "215"
         },
         {
           "bulletCount": "2",
-          "damage": "80",
+          "damage": "110",
           "hs": "h20",
           "mpCon": "7",
           "range": "350"
         },
         {
           "bulletCount": "2",
-          "damage": "63",
+          "damage": "83",
           "hs": "h3",
           "mpCon": "4",
           "range": "230"
         },
         {
           "bulletCount": "2",
-          "damage": "64",
+          "damage": "84",
           "hs": "h4",
           "mpCon": "4",
           "range": "230"
         },
         {
           "bulletCount": "2",
-          "damage": "65",
+          "damage": "85",
           "hs": "h5",
           "mpCon": "4",
           "range": "245"
         },
         {
           "bulletCount": "2",
-          "damage": "66",
+          "damage": "86",
           "hs": "h6",
           "mpCon": "5",
           "range": "245"
         },
         {
           "bulletCount": "2",
-          "damage": "67",
+          "damage": "87",
           "hs": "h7",
           "mpCon": "5",
           "range": "260"
         },
         {
           "bulletCount": "2",
-          "damage": "68",
+          "damage": "88",
           "hs": "h8",
           "mpCon": "5",
           "range": "260"
         },
         {
           "bulletCount": "2",
-          "damage": "69",
+          "damage": "89",
           "hs": "h9",
           "mpCon": "5",
           "range": "275"

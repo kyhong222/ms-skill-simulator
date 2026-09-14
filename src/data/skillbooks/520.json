@@ -161,7 +161,7 @@
       "levelProperties": [
         {
           "bulletConsume": "1",
-          "damage": "75",
+          "damage": "85",
           "hs": "h1",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -170,7 +170,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "120",
+          "damage": "130",
           "hs": "h10",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -179,7 +179,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "125",
+          "damage": "135",
           "hs": "h11",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -188,7 +188,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "130",
+          "damage": "140",
           "hs": "h12",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -197,7 +197,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "135",
+          "damage": "145",
           "hs": "h13",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -206,7 +206,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "140",
+          "damage": "150",
           "hs": "h14",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -215,7 +215,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "145",
+          "damage": "155",
           "hs": "h15",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -224,7 +224,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "150",
+          "damage": "160",
           "hs": "h16",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -233,7 +233,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "155",
+          "damage": "165",
           "hs": "h17",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -242,7 +242,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "160",
+          "damage": "170",
           "hs": "h18",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -251,7 +251,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "165",
+          "damage": "175",
           "hs": "h19",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -260,7 +260,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "80",
+          "damage": "90",
           "hs": "h2",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -269,7 +269,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "170",
+          "damage": "180",
           "hs": "h20",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -278,7 +278,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "85",
+          "damage": "95",
           "hs": "h3",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -287,7 +287,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "90",
+          "damage": "100",
           "hs": "h4",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -296,7 +296,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "95",
+          "damage": "105",
           "hs": "h5",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -305,7 +305,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "100",
+          "damage": "110",
           "hs": "h6",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -314,7 +314,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "105",
+          "damage": "115",
           "hs": "h7",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -323,7 +323,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "110",
+          "damage": "120",
           "hs": "h8",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
@@ -332,7 +332,7 @@
         },
         {
           "bulletConsume": "1",
-          "damage": "115",
+          "damage": "125",
           "hs": "h9",
           "lt": "Point [ X=-250, Y=-80 ]",
           "mobCount": "3",
