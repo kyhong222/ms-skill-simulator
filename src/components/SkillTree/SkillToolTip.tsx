@@ -96,7 +96,8 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => 
       <div className="text-center">
         {curLevel >= 1 ? `[현재 레벨: ${curLevel}]` : `[마스터 레벨: ${skill.masterLevel}]`}
       </div>
-      <div className="text-center">
+      {/* whitespace-pre-line: detail의 \n을 줄바꿈으로 표시 (배틀메이지 슈퍼바디) */}
+      <div className="text-center whitespace-pre-line">
         {curLevel >= 1 ? `${makeSkillDetail(skill, curLevel)}` : `${makeSkillDetail(skill, skill.masterLevel)}`}
       </div>
     </div>

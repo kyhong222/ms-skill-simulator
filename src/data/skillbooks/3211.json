@@ -18,128 +18,128 @@
         "desc": "블루 오라의 능력을 강화시킨다. 추가로 주위 파티원들의 방어력을 향상시킨다.",
         "name": "어드밴스드 블루 오라",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 분배된 데미지의 #x% 흡수, 방어력 #y% 증가"
+        "detail": "MP #mpCon 소비, 분배된 데미지의 #x% 흡수, 방어력 #y 증가"
       },
       "levelProperties": [
         {
           "hs": "h1",
           "mpCon": "46",
-          "x": "31",
-          "y": "3"
+          "x": "29",
+          "y": "5"
         },
         {
           "hs": "h2",
           "mpCon": "46",
-          "x": "32",
-          "y": "6"
+          "x": "29",
+          "y": "10"
         },
         {
           "hs": "h3",
           "mpCon": "46",
-          "x": "33",
-          "y": "9"
+          "x": "28",
+          "y": "15"
         },
         {
           "hs": "h4",
           "mpCon": "46",
-          "x": "34",
-          "y": "12"
+          "x": "28",
+          "y": "20"
         },
         {
           "hs": "h5",
           "mpCon": "46",
-          "x": "35",
-          "y": "15"
+          "x": "27",
+          "y": "25"
         },
         {
           "hs": "h6",
           "mpCon": "50",
-          "x": "36",
-          "y": "18"
+          "x": "27",
+          "y": "30"
         },
         {
           "hs": "h7",
           "mpCon": "50",
-          "x": "37",
-          "y": "21"
+          "x": "26",
+          "y": "35"
         },
         {
           "hs": "h8",
           "mpCon": "50",
-          "x": "38",
-          "y": "24"
+          "x": "26",
+          "y": "40"
         },
         {
           "hs": "h9",
           "mpCon": "50",
-          "x": "39",
-          "y": "27"
+          "x": "25",
+          "y": "45"
         },
         {
           "hs": "h10",
           "mpCon": "50",
-          "x": "40",
-          "y": "30"
+          "x": "25",
+          "y": "50"
         },
         {
           "hs": "h11",
           "mpCon": "54",
-          "x": "41",
-          "y": "33"
+          "x": "24",
+          "y": "55"
         },
         {
           "hs": "h12",
           "mpCon": "54",
-          "x": "42",
-          "y": "36"
+          "x": "24",
+          "y": "60"
         },
         {
           "hs": "h13",
           "mpCon": "54",
-          "x": "43",
-          "y": "39"
+          "x": "23",
+          "y": "65"
         },
         {
           "hs": "h14",
           "mpCon": "54",
-          "x": "44",
-          "y": "42"
+          "x": "23",
+          "y": "70"
         },
         {
           "hs": "h15",
           "mpCon": "54",
-          "x": "45",
-          "y": "45"
+          "x": "22",
+          "y": "75"
         },
         {
           "hs": "h16",
           "mpCon": "58",
-          "x": "46",
-          "y": "48"
+          "x": "22",
+          "y": "80"
         },
         {
           "hs": "h17",
           "mpCon": "58",
-          "x": "47",
-          "y": "51"
+          "x": "21",
+          "y": "85"
         },
         {
           "hs": "h18",
           "mpCon": "58",
-          "x": "48",
-          "y": "54"
+          "x": "21",
+          "y": "90"
         },
         {
           "hs": "h19",
           "mpCon": "58",
-          "x": "49",
-          "y": "57"
+          "x": "20",
+          "y": "95"
         },
         {
           "hs": "h20",
           "mpCon": "58",
-          "x": "50",
-          "y": "60"
+          "x": "20",
+          "y": "100"
         }
       ],
       "requiredSkillLevels": {
@@ -277,158 +277,158 @@
         "desc": "트리플 블로우 스킬 키를 다섯번 연타해서 다수의 근접한 적에게 5단 공격을 한다.",
         "name": "데스 블로우",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 데미지 #damage"
+        "detail": "MP #mpCon 소비, 기본 공격력 #mad"
       },
       "levelProperties": [
         {
           "hs": "h1",
           "mpCon": "30",
-          "damage": "335"
+          "mad": "23"
         },
         {
           "hs": "h2",
           "mpCon": "30",
-          "damage": "340"
+          "mad": "24"
         },
         {
           "hs": "h3",
           "mpCon": "30",
-          "damage": "345"
+          "mad": "24"
         },
         {
           "hs": "h4",
           "mpCon": "30",
-          "damage": "350"
+          "mad": "25"
         },
         {
           "hs": "h5",
           "mpCon": "30",
-          "damage": "355"
+          "mad": "25"
         },
         {
           "hs": "h6",
           "mpCon": "34",
-          "damage": "360"
+          "mad": "26"
         },
         {
           "hs": "h7",
           "mpCon": "34",
-          "damage": "365"
+          "mad": "26"
         },
         {
           "hs": "h8",
           "mpCon": "34",
-          "damage": "370"
+          "mad": "27"
         },
         {
           "hs": "h9",
           "mpCon": "34",
-          "damage": "375"
+          "mad": "27"
         },
         {
           "hs": "h10",
           "mpCon": "34",
-          "damage": "380"
+          "mad": "28"
         },
         {
           "hs": "h11",
           "mpCon": "38",
-          "damage": "385"
+          "mad": "30"
         },
         {
           "hs": "h12",
           "mpCon": "38",
-          "damage": "390"
+          "mad": "31"
         },
         {
           "hs": "h13",
           "mpCon": "38",
-          "damage": "395"
+          "mad": "31"
         },
         {
           "hs": "h14",
           "mpCon": "38",
-          "damage": "400"
+          "mad": "32"
         },
         {
           "hs": "h15",
           "mpCon": "38",
-          "damage": "405"
+          "mad": "32"
         },
         {
           "hs": "h16",
           "mpCon": "42",
-          "damage": "410"
+          "mad": "33"
         },
         {
           "hs": "h17",
           "mpCon": "42",
-          "damage": "415"
+          "mad": "33"
         },
         {
           "hs": "h18",
           "mpCon": "42",
-          "damage": "420"
+          "mad": "34"
         },
         {
           "hs": "h19",
           "mpCon": "42",
-          "damage": "425"
+          "mad": "34"
         },
         {
           "hs": "h20",
           "mpCon": "42",
-          "damage": "430"
+          "mad": "35"
         },
         {
           "hs": "h21",
           "mpCon": "46",
-          "damage": "435"
+          "mad": "37"
         },
         {
           "hs": "h22",
           "mpCon": "46",
-          "damage": "440"
+          "mad": "38"
         },
         {
           "hs": "h23",
           "mpCon": "46",
-          "damage": "445"
+          "mad": "38"
         },
         {
           "hs": "h24",
           "mpCon": "46",
-          "damage": "450"
+          "mad": "39"
         },
         {
           "hs": "h25",
           "mpCon": "46",
-          "damage": "455"
+          "mad": "39"
         },
         {
           "hs": "h26",
           "mpCon": "50",
-          "damage": "460"
+          "mad": "40"
         },
         {
           "hs": "h27",
           "mpCon": "50",
-          "damage": "465"
+          "mad": "40"
         },
         {
           "hs": "h28",
           "mpCon": "50",
-          "damage": "470"
+          "mad": "41"
         },
         {
           "hs": "h29",
           "mpCon": "50",
-          "damage": "475"
+          "mad": "41"
         },
         {
           "hs": "h30",
           "mpCon": "50",
-          "damage": "480"
+          "mad": "42"
         }
       ],
       "requiredSkillLevels": {
@@ -454,152 +454,152 @@
         {
           "hs": "h1",
           "mpCon": "22",
-          "mad": "105"
+          "mad": "155"
         },
         {
           "hs": "h2",
           "mpCon": "22",
-          "mad": "110"
+          "mad": "160"
         },
         {
           "hs": "h3",
           "mpCon": "22",
-          "mad": "115"
+          "mad": "165"
         },
         {
           "hs": "h4",
           "mpCon": "22",
-          "mad": "120"
+          "mad": "170"
         },
         {
           "hs": "h5",
           "mpCon": "22",
-          "mad": "125"
+          "mad": "175"
         },
         {
           "hs": "h6",
           "mpCon": "24",
-          "mad": "130"
+          "mad": "180"
         },
         {
           "hs": "h7",
           "mpCon": "24",
-          "mad": "135"
+          "mad": "185"
         },
         {
           "hs": "h8",
           "mpCon": "24",
-          "mad": "140"
+          "mad": "190"
         },
         {
           "hs": "h9",
           "mpCon": "24",
-          "mad": "145"
+          "mad": "195"
         },
         {
           "hs": "h10",
           "mpCon": "24",
-          "mad": "150"
+          "mad": "200"
         },
         {
           "hs": "h11",
           "mpCon": "26",
-          "mad": "155"
+          "mad": "205"
         },
         {
           "hs": "h12",
           "mpCon": "26",
-          "mad": "160"
+          "mad": "210"
         },
         {
           "hs": "h13",
           "mpCon": "26",
-          "mad": "165"
+          "mad": "215"
         },
         {
           "hs": "h14",
           "mpCon": "26",
-          "mad": "170"
+          "mad": "220"
         },
         {
           "hs": "h15",
           "mpCon": "26",
-          "mad": "175"
+          "mad": "225"
         },
         {
           "hs": "h16",
           "mpCon": "28",
-          "mad": "180"
+          "mad": "230"
         },
         {
           "hs": "h17",
           "mpCon": "28",
-          "mad": "185"
+          "mad": "235"
         },
         {
           "hs": "h18",
           "mpCon": "28",
-          "mad": "190"
+          "mad": "240"
         },
         {
           "hs": "h19",
           "mpCon": "28",
-          "mad": "195"
+          "mad": "245"
         },
         {
           "hs": "h20",
           "mpCon": "28",
-          "mad": "200"
+          "mad": "250"
         },
         {
           "hs": "h21",
           "mpCon": "30",
-          "mad": "205"
+          "mad": "255"
         },
         {
           "hs": "h22",
           "mpCon": "30",
-          "mad": "210"
+          "mad": "260"
         },
         {
           "hs": "h23",
           "mpCon": "30",
-          "mad": "215"
+          "mad": "265"
         },
         {
           "hs": "h24",
           "mpCon": "30",
-          "mad": "220"
+          "mad": "270"
         },
         {
           "hs": "h25",
           "mpCon": "30",
-          "mad": "225"
+          "mad": "275"
         },
         {
           "hs": "h26",
           "mpCon": "32",
-          "mad": "230"
+          "mad": "280"
         },
         {
           "hs": "h27",
           "mpCon": "32",
-          "mad": "235"
+          "mad": "285"
         },
         {
           "hs": "h28",
           "mpCon": "32",
-          "mad": "240"
+          "mad": "290"
         },
         {
           "hs": "h29",
           "mpCon": "32",
-          "mad": "245"
+          "mad": "295"
         },
         {
           "hs": "h30",
           "mpCon": "32",
-          "mad": "250"
+          "mad": "300"
         }
       ]
     },
@@ -613,131 +613,131 @@
       "soundPath": "Skill.img/32111004",
       "description": {
         "id": 32111004,
-        "desc": "MP를 소비하여 60초 동안 자신의 MaxHP의 양을 증가시킨다.",
+        "desc": "MP를 소비하여 일정 시간동안 자신의 MaxHP의 양을 증가시킨다.",
         "name": "컨버전",
         "bookName": "",
-        "detail": "MP #mpCon 소비, MaxHP #x% 증가, 지속시간 #time초"
+        "detail": "MP #mpCon 소비, #time초간 MaxHP #x% 증가"
       },
       "levelProperties": [
         {
           "hs": "h1",
           "mpCon": "1050",
-          "x": "62",
-          "time": "60"
+          "time": "67",
+          "x": "62"
         },
         {
           "hs": "h2",
           "mpCon": "1100",
-          "x": "64",
-          "time": "60"
+          "time": "74",
+          "x": "64"
         },
         {
           "hs": "h3",
           "mpCon": "1150",
-          "x": "66",
-          "time": "60"
+          "time": "81",
+          "x": "66"
         },
         {
           "hs": "h4",
           "mpCon": "1200",
-          "x": "68",
-          "time": "60"
+          "time": "88",
+          "x": "68"
         },
         {
           "hs": "h5",
           "mpCon": "1250",
-          "x": "70",
-          "time": "60"
+          "time": "95",
+          "x": "70"
         },
         {
           "hs": "h6",
           "mpCon": "1300",
-          "x": "72",
-          "time": "60"
+          "time": "102",
+          "x": "72"
         },
         {
           "hs": "h7",
           "mpCon": "1350",
-          "x": "74",
-          "time": "60"
+          "time": "109",
+          "x": "74"
         },
         {
           "hs": "h8",
           "mpCon": "1400",
-          "x": "76",
-          "time": "60"
+          "time": "116",
+          "x": "76"
         },
         {
           "hs": "h9",
           "mpCon": "1450",
-          "x": "78",
-          "time": "60"
+          "time": "123",
+          "x": "78"
         },
         {
           "hs": "h10",
           "mpCon": "1500",
-          "x": "80",
-          "time": "60"
+          "time": "130",
+          "x": "80"
         },
         {
           "hs": "h11",
           "mpCon": "1550",
-          "x": "82",
-          "time": "60"
+          "time": "137",
+          "x": "82"
         },
         {
           "hs": "h12",
           "mpCon": "1600",
-          "x": "84",
-          "time": "60"
+          "time": "144",
+          "x": "84"
         },
         {
           "hs": "h13",
           "mpCon": "1650",
-          "x": "86",
-          "time": "60"
+          "time": "151",
+          "x": "86"
         },
         {
           "hs": "h14",
           "mpCon": "1700",
-          "x": "88",
-          "time": "60"
+          "time": "158",
+          "x": "88"
         },
         {
           "hs": "h15",
           "mpCon": "1750",
-          "x": "90",
-          "time": "60"
+          "time": "165",
+          "x": "90"
         },
         {
           "hs": "h16",
           "mpCon": "1800",
-          "x": "92",
-          "time": "60"
+          "time": "172",
+          "x": "92"
         },
         {
           "hs": "h17",
           "mpCon": "1850",
-          "x": "94",
-          "time": "60"
+          "time": "179",
+          "x": "94"
         },
         {
           "hs": "h18",
           "mpCon": "1900",
-          "x": "96",
-          "time": "60"
+          "time": "186",
+          "x": "96"
         },
         {
           "hs": "h19",
           "mpCon": "1950",
-          "x": "98",
-          "time": "60"
+          "time": "193",
+          "x": "98"
         },
         {
           "hs": "h20",
           "mpCon": "2000",
-          "x": "100",
-          "time": "60"
+          "time": "200",
+          "x": "100"
         }
       ]
     },
@@ -751,250 +751,250 @@
       "soundPath": "Skill.img/32111005",
       "description": {
         "id": 32111005,
-        "desc": "MP를 소비하여 일정 시간 동안 현재 활성화 중인 오라의 상태를 강화한다.",
+        "desc": "MP를 소비하여 일정 시간 동안 현재 활성화 중인 오라의 상태를 강화한다. 슈퍼바디 상태가 해제될 때까지 다른 오라로 전환할 수 없다.",
         "name": "슈퍼바디",
         "bookName": "",
-        "detail": "MP #mpCon 소비, 블루-#blueTime초간 무적, 다크-#darkTime초간 공격력 #darkX% 증가, 옐로우-#yellowTime초간 이속#speed/공속#attackSpeed/회피#avoid% 증가, 재사용 대기시간 #cooltime초"
+        "detail": "MP #mpCon 소비\n다크 오라 : #darkTime초간 데미지 #darkX% 증가\n옐로우 오라 : #yellowTime초간 이동속도 #speed, 공격속도 #attackSpeed, 회피율 #avoid% 증가\n블루 오라 : #blueTime초간 무적 상태\n재사용 대기시간 #cooltime초"
       },
       "levelProperties": [
         {
           "hs": "h1",
           "mpCon": "52",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "2",
+          "darkX": "1",
           "yellowTime": "30",
           "speed": "2",
           "attackSpeed": "2",
           "avoid": "2",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h2",
           "mpCon": "54",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "4",
+          "darkX": "2",
           "yellowTime": "30",
           "speed": "4",
           "attackSpeed": "2",
           "avoid": "4",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h3",
           "mpCon": "56",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "6",
+          "darkX": "3",
           "yellowTime": "30",
           "speed": "6",
           "attackSpeed": "2",
           "avoid": "6",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h4",
           "mpCon": "58",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "8",
+          "darkX": "4",
           "yellowTime": "30",
           "speed": "8",
           "attackSpeed": "2",
           "avoid": "8",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h5",
           "mpCon": "60",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "10",
+          "darkX": "5",
           "yellowTime": "30",
           "speed": "10",
           "attackSpeed": "2",
           "avoid": "10",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h6",
           "mpCon": "62",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "12",
+          "darkX": "6",
           "yellowTime": "30",
           "speed": "12",
           "attackSpeed": "2",
           "avoid": "12",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h7",
           "mpCon": "64",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "14",
+          "darkX": "7",
           "yellowTime": "30",
           "speed": "14",
           "attackSpeed": "2",
           "avoid": "14",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h8",
           "mpCon": "66",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "16",
+          "darkX": "8",
           "yellowTime": "30",
           "speed": "16",
           "attackSpeed": "2",
           "avoid": "16",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h9",
           "mpCon": "68",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "18",
+          "darkX": "9",
           "yellowTime": "30",
           "speed": "18",
           "attackSpeed": "2",
           "avoid": "18",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h10",
           "mpCon": "70",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "20",
+          "darkX": "10",
           "yellowTime": "30",
           "speed": "20",
           "attackSpeed": "2",
           "avoid": "20",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h11",
           "mpCon": "72",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "22",
+          "darkX": "11",
           "yellowTime": "30",
           "speed": "22",
           "attackSpeed": "2",
           "avoid": "22",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h12",
           "mpCon": "74",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "24",
+          "darkX": "12",
           "yellowTime": "30",
           "speed": "24",
           "attackSpeed": "2",
           "avoid": "24",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h13",
           "mpCon": "76",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "26",
+          "darkX": "13",
           "yellowTime": "30",
           "speed": "26",
           "attackSpeed": "2",
           "avoid": "26",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h14",
           "mpCon": "78",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "28",
+          "darkX": "14",
           "yellowTime": "30",
           "speed": "28",
           "attackSpeed": "2",
           "avoid": "28",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h15",
           "mpCon": "80",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "30",
+          "darkX": "15",
           "yellowTime": "30",
           "speed": "30",
           "attackSpeed": "2",
           "avoid": "30",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h16",
           "mpCon": "82",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "32",
+          "darkX": "16",
           "yellowTime": "30",
           "speed": "32",
           "attackSpeed": "2",
           "avoid": "32",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h17",
           "mpCon": "84",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "34",
+          "darkX": "17",
           "yellowTime": "30",
           "speed": "34",
           "attackSpeed": "2",
           "avoid": "34",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h18",
           "mpCon": "86",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "36",
+          "darkX": "18",
           "yellowTime": "30",
           "speed": "36",
           "attackSpeed": "2",
           "avoid": "36",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h19",
           "mpCon": "88",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "38",
+          "darkX": "19",
           "yellowTime": "30",
           "speed": "38",
           "attackSpeed": "2",
           "avoid": "38",
+          "blueTime": "10",
           "cooltime": "120"
         },
         {
           "hs": "h20",
           "mpCon": "90",
-          "blueTime": "10",
           "darkTime": "30",
-          "darkX": "40",
+          "darkX": "20",
           "yellowTime": "30",
           "speed": "40",
           "attackSpeed": "2",
           "avoid": "40",
+          "blueTime": "10",
           "cooltime": "120"
         }
       ]
@@ -1019,121 +1019,121 @@
           "hs": "h1",
           "mpCon": "45",
           "prop": "1",
-          "time": "33"
+          "time": "67"
         },
         {
           "hs": "h2",
           "mpCon": "45",
           "prop": "2",
-          "time": "36"
+          "time": "74"
         },
         {
           "hs": "h3",
           "mpCon": "45",
           "prop": "3",
-          "time": "39"
+          "time": "81"
         },
         {
           "hs": "h4",
           "mpCon": "45",
           "prop": "4",
-          "time": "42"
+          "time": "88"
         },
         {
           "hs": "h5",
           "mpCon": "45",
           "prop": "5",
-          "time": "45"
+          "time": "95"
         },
         {
           "hs": "h6",
           "mpCon": "60",
           "prop": "6",
-          "time": "48"
+          "time": "102"
         },
         {
           "hs": "h7",
           "mpCon": "60",
           "prop": "7",
-          "time": "51"
+          "time": "109"
         },
         {
           "hs": "h8",
           "mpCon": "60",
           "prop": "8",
-          "time": "54"
+          "time": "116"
         },
         {
           "hs": "h9",
           "mpCon": "60",
           "prop": "9",
-          "time": "57"
+          "time": "123"
         },
         {
           "hs": "h10",
           "mpCon": "60",
           "prop": "10",
-          "time": "60"
+          "time": "130"
         },
         {
           "hs": "h11",
           "mpCon": "75",
           "prop": "11",
-          "time": "63"
+          "time": "137"
         },
         {
           "hs": "h12",
           "mpCon": "75",
           "prop": "12",
-          "time": "66"
+          "time": "144"
         },
         {
           "hs": "h13",
           "mpCon": "75",
           "prop": "13",
-          "time": "69"
+          "time": "151"
         },
         {
           "hs": "h14",
           "mpCon": "75",
           "prop": "14",
-          "time": "72"
+          "time": "158"
         },
         {
           "hs": "h15",
           "mpCon": "75",
           "prop": "15",
-          "time": "75"
+          "time": "165"
         },
         {
           "hs": "h16",
           "mpCon": "90",
           "prop": "16",
-          "time": "78"
+          "time": "172"
         },
         {
           "hs": "h17",
           "mpCon": "90",
           "prop": "17",
-          "time": "81"
+          "time": "179"
         },
         {
           "hs": "h18",
           "mpCon": "90",
           "prop": "18",
-          "time": "84"
+          "time": "186"
         },
         {
           "hs": "h19",
           "mpCon": "90",
           "prop": "19",
-          "time": "87"
+          "time": "193"
         },
         {
           "hs": "h20",
           "mpCon": "90",
           "prop": "20",
-          "time": "90"
+          "time": "200"
         }
       ]
     }

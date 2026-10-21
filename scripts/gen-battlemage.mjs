@@ -1,5 +1,5 @@
 // 배틀메이지(레지스탕스) 스킬북 생성 스크립트
-//   scripts/data/battlemage-t12137.txt (KMST T1.2.137 원본 텍스트, 출처 maplestory.pe.kr/1873)
+//   scripts/data/battlemage-mapleland.txt (메이플랜드 인게임 수치, 미확보 스킬은 KMST T1.2.137 원문)
 //   + 인벤 스킬 아이콘 (static.inven.co.kr)
 //   → src/data/skillbooks/{3200,3210,3211,3212}.json
 //
@@ -16,7 +16,7 @@ import { dirname, join } from "node:path";
 import { gifToPngBase64 } from "./lib/gif2png.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const SRC_TXT = join(ROOT, "scripts/data/battlemage-t12137.txt");
+const SRC_TXT = join(ROOT, "scripts/data/battlemage-mapleland.txt");
 const OUT_DIR = join(ROOT, "src/data/skillbooks");
 const ICON_CACHE = join(ROOT, "tmp/icons");
 const ICON_URL = (id) => `https://static.inven.co.kr/image_2011/site_image/maple/dataninfo/skillicon/${id}.gif`;
@@ -57,14 +57,14 @@ const SPECS = {
   // ── 3차 (3211) ──
   어드밴스드블루오라: { job: 3211, id: 32110000, name: "어드밴스드 블루 오라", keys: ["mpCon", "x", "y"] },
   스태프마스터리: { job: 3211, id: 32110001, name: "스태프 마스터리", keys: ["x", "y"] },
-  데스블로우: { job: 3211, id: 32111002, name: "데스 블로우", keys: ["mpCon", "damage"] },
+  데스블로우: { job: 3211, id: 32111002, name: "데스 블로우", keys: ["mpCon", "mad"] },
   다크라이트닝: { job: 3211, id: 32111003, name: "다크 라이트닝", keys: ["mpCon", "mad"] },
-  컨버전: { job: 3211, id: 32111004, name: "컨버전", keys: ["mpCon", "x", "time"] },
+  컨버전: { job: 3211, id: 32111004, name: "컨버전", keys: ["mpCon", "time", "x"] },
   슈퍼바디: {
     job: 3211,
     id: 32111005,
     name: "슈퍼바디",
-    keys: ["mpCon", "blueTime", "darkTime", "darkX", "yellowTime", "speed", "attackSpeed", "avoid"],
+    keys: ["mpCon", "darkTime", "darkX", "yellowTime", "speed", "attackSpeed", "avoid", "blueTime"],
   },
   리바이브: { job: 3211, id: 32111006, name: "리바이브", keys: ["mpCon", "prop", "time"] },
 
@@ -126,13 +126,21 @@ function parseSource() {
   return blocks;
 }
 
-// 줄바꿈된 레벨 문장 병합 (쉼표로 끝나면 다음 줄과 이어진다)
+// 줄바꿈된 레벨 문장 병합
+//   쉼표로 끝나면 다음 줄과 공백으로 이어진다 (원문 줄바꿈 — 툴팁에서도 한 줄)
+//   '\'로 끝나면 다음 줄과 줄바꿈(\n)으로 이어진다 (툴팁에서 실제로 줄을 바꿈)
 function mergeWrapped(raw) {
   const out = [];
   let buf = "";
+  let sep = " ";
   for (const l of raw) {
-    buf = buf ? `${buf} ${l}` : l;
-    if (!buf.endsWith(",")) {
+    buf = buf ? `${buf}${sep}${l}` : l;
+    if (buf.endsWith("\\")) {
+      buf = buf.slice(0, -1);
+      sep = "\n";
+    } else if (buf.endsWith(",")) {
+      sep = " ";
+    } else {
       out.push(buf);
       buf = "";
     }
@@ -232,7 +240,7 @@ function buildSkill(block, noIcons, iconCache) {
   });
 
   let detail = normalizeDetail(rawTemplate);
-  if (cooltime) detail += ", 재사용 대기시간 #cooltime초";
+  if (cooltime) detail += `${detail.includes("\n") ? "\n" : ", "}재사용 대기시간 #cooltime초`;
 
   const icon = noIcons ? "" : iconCache[spec.id];
   const skill = {

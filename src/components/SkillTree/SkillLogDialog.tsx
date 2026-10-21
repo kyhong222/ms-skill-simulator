@@ -27,6 +27,7 @@ interface SkillLogDialogProps {
   jobName: string;
   jobId: number;
   isCygnus?: boolean; // 시그너스는 4차가 없어 3차까지만 분류
+  skillBranchIndex?: Record<number, number>; // 차수 분리형(레지스탕스): 스킬 ID → 차수(1~4)
 }
 
 const BRANCH_LABELS = [
@@ -37,7 +38,14 @@ const BRANCH_LABELS = [
 ];
 
 // 시그너스(isCygnus=true)는 4차 구간을 3차로 합쳐 3개 차수만 반환
-function categorizeLogs(log: SkillLogEntry[], jobLevel: number, jobId: number, isCygnus = false) {
+// 차수 분리형(skillBranchIndex 전달)은 누적 SP로 추정하지 않고 스킬이 속한 차수로 분류
+function categorizeLogs(log: SkillLogEntry[], jobLevel: number, jobId: number, isCygnus = false, skillBranchIndex?: Record<number, number>) {
+  if (skillBranchIndex) {
+    const branches: SkillLogEntry[][] = [[], [], [], []];
+    for (const entry of log) branches[(skillBranchIndex[entry.skillId] || 1) - 1].push(entry);
+    return branches;
+  }
+
   const threshold1 = (BRANCH_2ND_LEVEL - jobLevel) * SP_PER_LEVEL + getBranch1stBonusSp(jobId);
   const threshold2 = threshold1 + (BRANCH_3RD_LEVEL - BRANCH_2ND_LEVEL) * SP_PER_LEVEL + BRANCH_2ND_BONUS_SP;
   const threshold3 = threshold2 + (BRANCH_4TH_LEVEL - BRANCH_3RD_LEVEL) * SP_PER_LEVEL + BRANCH_3RD_BONUS_SP;
@@ -82,7 +90,7 @@ function LogEntry({ entry }: { entry: SkillLogEntry }) {
   );
 }
 
-export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthOnly, jobName, jobId, isCygnus = false }: SkillLogDialogProps) {
+export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthOnly, jobName, jobId, isCygnus = false, skillBranchIndex }: SkillLogDialogProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const [showCopied, setShowCopied] = useState(false);
@@ -108,7 +116,10 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
     return () => dialog.removeEventListener("close", handleClose);
   }, [onClose]);
 
-  const branches = useMemo(() => categorizeLogs(log, jobLevel, jobId, isCygnus), [log, jobLevel, jobId, isCygnus]);
+  const branches = useMemo(
+    () => categorizeLogs(log, jobLevel, jobId, isCygnus, skillBranchIndex),
+    [log, jobLevel, jobId, isCygnus, skillBranchIndex]
+  );
 
   const captureToCanvas = async () => {
     if (!contentRef.current) return null;

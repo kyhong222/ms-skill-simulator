@@ -1,4 +1,5 @@
 import type { IJobSkillBook } from "../../types/jobSkillBook";
+import type { IBranchSkillPoints } from "../../types/skillPoints";
 import {
   BRANCH_2ND_LEVEL,
   BRANCH_3RD_LEVEL,
@@ -19,6 +20,7 @@ interface UseSkillBranchParams {
   usedSkillPoints: number;
   remainingSkillPoints: number;
   fourthOnly: boolean;
+  branchSp?: IBranchSkillPoints; // 차수별 SP 분리 직업(레지스탕스)일 때만 전달
 }
 
 // 차수에 따른 포인트 계산
@@ -41,8 +43,10 @@ function calcPointsForBranch(branchIndex: number, jobLevel: number, branch1stBon
 }
 
 export function useSkillBranch(params: UseSkillBranchParams) {
-  const { jobId, skillbook, skillLevels, onLevelChange, branchIndex, jobLevel, usedSkillPoints, remainingSkillPoints, fourthOnly } = params;
+  const { jobId, skillbook, skillLevels, onLevelChange, branchIndex, jobLevel, usedSkillPoints, fourthOnly, branchSp } = params;
   const branch1stBonusSp = getBranch1stBonusSp(jobId);
+  // 차수 분리형이면 이 차수의 잔여 포인트, 아니면 전체 공유 잔여 포인트
+  const remainingSkillPoints = branchSp ? branchSp.remaining : params.remainingSkillPoints;
 
   // 특정 스킬의 현재 레벨 가져오기
   const getLevel = (skillId: number) => {
@@ -58,7 +62,9 @@ export function useSkillBranch(params: UseSkillBranchParams) {
   const remainingPointsForBranch = Math.max(calcPointsForBranch(branchIndex, jobLevel, branch1stBonusSp) - usedSkillPoints, 0);
 
   // 해당 차수에 필요한 포인트를 사용했는지 확인
+  // 차수 분리형은 이전 차수 투자와 무관 — 이 차수에 귀속된 포인트가 생겼으면(전직 레벨 도달) 활성화
   const isBranchActivated = () => {
+    if (branchSp) return branchSp.total > 0;
     const pointsRequiredForBranch = calcPointsForBranch(branchIndex, jobLevel, branch1stBonusSp);
     return usedSkillPoints - totalInvestedPoints >= pointsRequiredForBranch;
   };
@@ -68,6 +74,9 @@ export function useSkillBranch(params: UseSkillBranchParams) {
     if (remainingSkillPoints === undefined) return false;
     return remainingSkillPoints > 0;
   };
+
+  // 감소를 막을지 여부 — 공유형은 비활성 차수 감소 불가(기존 동작), 차수 분리형은 레벨을 낮춰도 언제든 회수 가능
+  const isDecreaseLocked = () => !fourthOnly && !branchSp && !isBranchActivated();
 
   // 해당 스킬의 필요 스킬을 모두 만족하는지 확인
   const isSatisfiedRequiredSkills = (skillId: number) => {
@@ -140,7 +149,7 @@ export function useSkillBranch(params: UseSkillBranchParams) {
     const skill = skillbook.skills.find((s) => s.id === skillId);
     if (!skill) return;
     if (!isSatisfiedRequiredSkills(skillId)) return;
-    if (!fourthOnly && !isBranchActivated()) return;
+    if (isDecreaseLocked()) return;
 
     const isShift = e?.shiftKey || false;
     const decrement = isShift ? 5 : 1;
@@ -165,7 +174,7 @@ export function useSkillBranch(params: UseSkillBranchParams) {
     const skill = skillbook.skills.find((s) => s.id === skillId);
     if (!skill) return;
     if (!isSatisfiedRequiredSkills(skillId)) return;
-    if (!fourthOnly && !isBranchActivated()) return;
+    if (isDecreaseLocked()) return;
     onLevelChange(skillId, 0);
   };
 

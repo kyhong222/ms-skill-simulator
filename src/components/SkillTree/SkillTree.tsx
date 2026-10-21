@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { subJobs } from "../../data/jobs";
 import type { IJobSkillBook, IJobSkill } from "../../types/jobSkillBook";
+import type { IBranchSkillPoints } from "../../types/skillPoints";
 import SkillBranch from "./SkillBranch";
 import SkillLogDialog from "./SkillLogDialog";
 import {
@@ -19,6 +20,8 @@ import {
   BRANCH_4TH_BONUS_SP,
   MAX_CHARACTER_LEVEL,
   isCygnusJobId,
+  hasSeparateBranchSp,
+  getSeparateBranchSp,
 } from "../../constants/skillPoints";
 
 interface SkillLevel {
@@ -241,6 +244,8 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
       const newLog: SkillLogEntry[] = [];
       const totalSP = calculateSkillPoints(currentLevel, jobLevel, fourthOnly, !isCygnus, branch1stBonusSp);
       let usedSP = 0;
+      // 차수 분리형: 차수별 예산 안에서만 적용 (branchIndex → 사용량)
+      const usedByBranch: Record<number, number> = {};
 
       for (const [skillId, level] of entries) {
         const idx = newLevels.findIndex((s) => s.id === skillId);
@@ -250,13 +255,21 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
         const delta = level - prevLevel;
         if (delta <= 0) continue;
 
-        const remainingSP = totalSP - usedSP;
+        const branch = skillBranchIndex[skillId];
+        const remainingSP = separateSp
+          ? getBranchTotalSp(branch) - (usedByBranch[branch] || 0)
+          : totalSP - usedSP;
         const affordable = Math.min(delta, remainingSP);
-        if (affordable <= 0) break;
+        if (affordable <= 0) {
+          // 차수 분리형은 이 차수만 부족한 것이므로 다른 차수 스킬은 계속 적용
+          if (separateSp) continue;
+          break;
+        }
 
         const appliedLevel = prevLevel + affordable;
         newLevels[idx].level = appliedLevel;
         usedSP += affordable;
+        usedByBranch[branch] = (usedByBranch[branch] || 0) + affordable;
 
         const skillInfo = findSkillInfo(skillId);
         newLog.push({
@@ -320,7 +333,30 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
   const jobLevel = calcJobLevel(selectedJobId);
   const isCygnus = isCygnusJobId(selectedJobId);
   const branch1stBonusSp = getBranch1stBonusSp(selectedJobId);
-  const totalSkillPoints = calculateSkillPoints(currentLevel, jobLevel, fourthOnly, !isCygnus, branch1stBonusSp);
+
+  // 차수별 SP 분리 (레지스탕스)
+  const separateSp = hasSeparateBranchSp(selectedJobId);
+  const branchJobIds = subJobs[selectedJobId] || [];
+  // 스킬 ID → 차수(1~4). 스킬 로그 분류·스킬코드 적용에서 사용
+  const skillBranchIndex: Record<number, number> = {};
+  branchJobIds.forEach((jobId, i) => {
+    skillbooks[jobId]?.skills.forEach((s) => {
+      skillBranchIndex[s.id] = i + 1;
+    });
+  });
+  // 4차만 모드에서는 4차 포인트만 존재
+  const getBranchTotalSp = (branchIndex: number) =>
+    fourthOnly && branchIndex !== 4 ? 0 : getSeparateBranchSp(selectedJobId, currentLevel, jobLevel, branchIndex);
+  const getBranchSp = (branchIndex: number): IBranchSkillPoints => {
+    const total = getBranchTotalSp(branchIndex);
+    const used = skillLevels.reduce((sum, s) => sum + (skillBranchIndex[s.id] === branchIndex ? s.level : 0), 0);
+    return { total, remaining: total - used };
+  };
+
+  // 상단 바는 차수 분리형도 전 차수 합계로 표기
+  const totalSkillPoints = separateSp
+    ? branchJobIds.reduce((sum, _, i) => sum + getBranchTotalSp(i + 1), 0)
+    : calculateSkillPoints(currentLevel, jobLevel, fourthOnly, !isCygnus, branch1stBonusSp);
   const usedSkillPoints = skillLevels.reduce((sum, skill) => sum + skill.level, 0);
   const remainingSkillPoints = totalSkillPoints - usedSkillPoints;
 
@@ -402,6 +438,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
               usedSkillPoints={usedSkillPoints}
               remainingSkillPoints={remainingSkillPoints}
               fourthOnly={fourthOnly}
+              branchSp={separateSp ? getBranchSp(actualIndex) : undefined}
             />
           ) : (
             <div key={jobId} className="text-red-500">
@@ -420,6 +457,7 @@ const SkillTree: React.FC<SkillTreeProps> = ({ selectedJobId, jobName = "", onRe
         jobName={jobName}
         jobId={selectedJobId}
         isCygnus={isCygnus}
+        skillBranchIndex={separateSp ? skillBranchIndex : undefined}
       />
 
       <dialog
