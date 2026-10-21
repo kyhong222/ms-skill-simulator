@@ -3,7 +3,8 @@
 # 출처: https://maplestory.pe.kr/1873 (가메톡메이플, mazefind)
 #   원문 고지 — "이 글은 출처를 maplestory.pe.kr 로 적어주시는 조건하에 펌질이 자유롭게 허용됩니다."
 #
-# scripts/gen-battlemage.mjs 가 이 파일을 파싱해 src/data/skillbooks/32*.json 을 생성한다.
+# 참고용 원문 보존본 — 생성 스크립트는 이 파일을 읽지 않는다.
+# 실제 생성 입력은 battlemage-mapleland.txt (메이플랜드 인게임 수치 반영본).
 # 형식: '배틀메이지(N차)>스킬명' 헤더 / 설명 여러 줄 / '요구스킬 ...' / (선택)메타 줄 / 레벨별 한 줄씩
 # 손으로 고치지 말 것 — 수정이 필요하면 출처를 다시 확인할 것.
 

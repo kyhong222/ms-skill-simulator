@@ -24,102 +24,102 @@
         {
           "hs": "h1",
           "mpCon": "10",
-          "mad": "22"
+          "mad": "10"
         },
         {
           "hs": "h2",
-          "mpCon": "10",
-          "mad": "24"
+          "mpCon": "11",
+          "mad": "11"
         },
         {
           "hs": "h3",
-          "mpCon": "10",
-          "mad": "26"
+          "mpCon": "11",
+          "mad": "11"
         },
         {
           "hs": "h4",
-          "mpCon": "10",
-          "mad": "28"
+          "mpCon": "12",
+          "mad": "12"
         },
         {
           "hs": "h5",
-          "mpCon": "10",
-          "mad": "30"
+          "mpCon": "12",
+          "mad": "12"
         },
         {
           "hs": "h6",
-          "mpCon": "10",
-          "mad": "32"
+          "mpCon": "13",
+          "mad": "13"
         },
         {
           "hs": "h7",
-          "mpCon": "10",
-          "mad": "34"
+          "mpCon": "13",
+          "mad": "13"
         },
         {
           "hs": "h8",
-          "mpCon": "10",
-          "mad": "36"
+          "mpCon": "14",
+          "mad": "14"
         },
         {
           "hs": "h9",
-          "mpCon": "10",
-          "mad": "38"
+          "mpCon": "14",
+          "mad": "14"
         },
         {
           "hs": "h10",
-          "mpCon": "10",
-          "mad": "40"
+          "mpCon": "15",
+          "mad": "15"
         },
         {
           "hs": "h11",
-          "mpCon": "20",
-          "mad": "42"
+          "mpCon": "15",
+          "mad": "15"
         },
         {
           "hs": "h12",
-          "mpCon": "20",
-          "mad": "44"
+          "mpCon": "16",
+          "mad": "16"
         },
         {
           "hs": "h13",
-          "mpCon": "20",
-          "mad": "46"
+          "mpCon": "16",
+          "mad": "16"
         },
         {
           "hs": "h14",
-          "mpCon": "20",
-          "mad": "48"
+          "mpCon": "17",
+          "mad": "17"
         },
         {
           "hs": "h15",
-          "mpCon": "20",
-          "mad": "50"
+          "mpCon": "17",
+          "mad": "17"
         },
         {
           "hs": "h16",
-          "mpCon": "20",
-          "mad": "52"
+          "mpCon": "18",
+          "mad": "18"
         },
         {
           "hs": "h17",
-          "mpCon": "20",
-          "mad": "54"
+          "mpCon": "18",
+          "mad": "18"
         },
         {
           "hs": "h18",
-          "mpCon": "20",
-          "mad": "56"
+          "mpCon": "19",
+          "mad": "19"
         },
         {
           "hs": "h19",
-          "mpCon": "20",
-          "mad": "58"
+          "mpCon": "19",
+          "mad": "19"
         },
         {
           "hs": "h20",
           "mpCon": "20",
-          "mad": "60"
+          "mad": "20"
         }
       ]
     },
@@ -142,52 +142,52 @@
         {
           "hs": "h1",
           "mpCon": "11",
-          "mad": "21"
+          "mad": "30"
         },
         {
           "hs": "h2",
           "mpCon": "12",
-          "mad": "22"
+          "mad": "35"
         },
         {
           "hs": "h3",
           "mpCon": "13",
-          "mad": "23"
+          "mad": "40"
         },
         {
           "hs": "h4",
           "mpCon": "14",
-          "mad": "24"
+          "mad": "45"
         },
         {
           "hs": "h5",
           "mpCon": "15",
-          "mad": "25"
+          "mad": "50"
         },
         {
           "hs": "h6",
           "mpCon": "16",
-          "mad": "26"
+          "mad": "54"
         },
         {
           "hs": "h7",
           "mpCon": "17",
-          "mad": "27"
+          "mad": "58"
         },
         {
           "hs": "h8",
           "mpCon": "18",
-          "mad": "28"
+          "mad": "62"
         },
         {
           "hs": "h9",
           "mpCon": "19",
-          "mad": "29"
+          "mad": "66"
         },
         {
           "hs": "h10",
           "mpCon": "20",
-          "mad": "30"
+          "mad": "70"
         }
       ]
     },
@@ -210,77 +210,77 @@
         {
           "hs": "h1",
           "mpCon": "50",
-          "range": "136"
+          "range": "131"
         },
         {
           "hs": "h2",
           "mpCon": "49",
-          "range": "137"
+          "range": "132"
         },
         {
           "hs": "h3",
           "mpCon": "46",
-          "range": "138"
+          "range": "133"
         },
         {
           "hs": "h4",
-          "mpCon": "43",
-          "range": "139"
+          "mpCon": "32",
+          "range": "134"
         },
         {
           "hs": "h5",
           "mpCon": "40",
-          "range": "140"
+          "range": "135"
         },
         {
           "hs": "h6",
           "mpCon": "37",
-          "range": "141"
+          "range": "136"
         },
         {
           "hs": "h7",
           "mpCon": "34",
-          "range": "142"
+          "range": "137"
         },
         {
           "hs": "h8",
           "mpCon": "31",
-          "range": "143"
+          "range": "138"
         },
         {
           "hs": "h9",
           "mpCon": "28",
-          "range": "144"
+          "range": "139"
         },
         {
           "hs": "h10",
           "mpCon": "25",
-          "range": "145"
+          "range": "140"
         },
         {
           "hs": "h11",
           "mpCon": "22",
-          "range": "146"
+          "range": "141"
         },
         {
           "hs": "h12",
           "mpCon": "19",
-          "range": "147"
+          "range": "142"
         },
         {
           "hs": "h13",
           "mpCon": "16",
-          "range": "148"
+          "range": "143"
         },
         {
           "hs": "h14",
           "mpCon": "13",
-          "range": "149"
+          "range": "144"
         },
         {
           "hs": "h15",
           "mpCon": "10",
-          "range": "150"
+          "range": "145"
         }
       ]
     },
