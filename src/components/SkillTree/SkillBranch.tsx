@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import type { IJobSkillBook } from "../../types/jobSkillBook";
+import type { IBranchSkillPoints } from "../../types/skillPoints";
 import SkillTooltip from "./SkillToolTip";
 import SkillRow from "./SkillRow";
 import ReactDOM from "react-dom";
@@ -15,6 +16,7 @@ interface SkillBranchProps {
   usedSkillPoints: number; // 현재 사용한 총 스킬 포인트
   remainingSkillPoints: number; // 남은 스킬 포인트
   fourthOnly?: boolean; // 4차 이후만 모드
+  branchSp?: IBranchSkillPoints; // 차수별 SP 분리 직업(레지스탕스)일 때만 전달
 }
 
 const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
@@ -26,7 +28,7 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
   // 모바일 전용 스킬 설명 펼침 (브랜치 내에서 한 번에 하나만)
   const [expandedSkillId, setExpandedSkillId] = useState<number | null>(null);
 
-  const { skillbook, skillLevels, fourthOnly = false } = props;
+  const { skillbook, skillLevels, fourthOnly = false, branchSp } = props;
 
   const {
     getLevel,
@@ -104,11 +106,24 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
 
         <div className="flex flex-col text-left min-w-0">
           <h2 className="text-black text-lg font-bold break-keep md:text-2xl">{skillbook.description.bookName}</h2>
-          <span className="text-xs text-gray-600 md:text-sm">총 투자 포인트: {totalInvestedPoints}</span>
-          {!fourthOnly && (
-            <span className="exclude-from-capture text-xs text-gray-600 md:text-sm">
-              필요 투자 포인트: {remainingPointsForBranch}
-            </span>
+          {branchSp ? (
+            // 차수 분리형: 이 차수의 잔여/총 포인트 (잔여가 음수면 빨간색)
+            <>
+              <span className="text-xs text-gray-600 md:text-sm">
+                잔여 포인트:{" "}
+                <span className={branchSp.remaining < 0 ? "text-red-500" : ""}>{branchSp.remaining}</span>
+              </span>
+              <span className="text-xs text-gray-600 md:text-sm">총 포인트: {branchSp.total}</span>
+            </>
+          ) : (
+            <>
+              <span className="text-xs text-gray-600 md:text-sm">총 투자 포인트: {totalInvestedPoints}</span>
+              {!fourthOnly && (
+                <span className="exclude-from-capture text-xs text-gray-600 md:text-sm">
+                  필요 투자 포인트: {remainingPointsForBranch}
+                </span>
+              )}
+            </>
           )}
         </div>
 

@@ -45,7 +45,8 @@ ms-skill-simulator/
 │   └── vite.svg                     # Vite 기본 아이콘 (미사용)
 ├── scripts/                         # 스킬북 JSON 생성 도구 (빌드/런타임과 무관, 수동 실행)
 │   ├── data/
-│   │   └── battlemage-t12137.txt    # 배틀메이지 원본 텍스트 (KMST T1.2.137, 출처 maplestory.pe.kr)
+│   │   ├── battlemage-mapleland.txt # 배틀메이지 생성 입력 (메이플랜드 인게임 수치, 미확보 스킬은 KMST 원문)
+│   │   └── battlemage-t12137.txt    # KMST T1.2.137 원문 보존본 (출처 maplestory.pe.kr, 생성에 미사용)
 │   ├── lib/
 │   │   └── gif2png.mjs              # GIF→PNG 변환 (무의존, 인벤 아이콘용)
 │   ├── gen-cygnus.mjs               # 시그너스 스킬북 생성 (maplestory.io GMS v72 API)
@@ -82,7 +83,8 @@ ms-skill-simulator/
 │   │   └── SkillTreePage.tsx        # 스킬 트리 페이지 (라우트: /:jobId)
 │   ├── types/
 │   │   ├── job.ts                   # IJob 인터페이스
-│   │   └── jobSkillBook.ts         # IJobSkillBook, IJobSkill, ILevelProperties 등
+│   │   ├── jobSkillBook.ts         # IJobSkillBook, IJobSkill, ILevelProperties 등
+│   │   └── skillPoints.ts          # IBranchSkillPoints (차수별 SP 분리 직업의 차수 총/잔여 포인트)
 │   ├── App.tsx                      # 루트 컴포넌트 (Routes 정의)
 │   ├── App.css                      # 앱 전역 CSS (fadeIn 애니메이션 등)
 │   ├── index.css                    # Tailwind 지시자 + 기본 스타일 (Vite 기본 템플릿 기반)
@@ -155,15 +157,32 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 |---|---|---|---|
 | 모험가 | `1xx~5xx.json` | maplestory.io GMS API | 초기 수기 반영, 이후 패치는 직접 수정 |
 | 시그너스 | `11xx~15xx.json` | maplestory.io GMS v72 API | `scripts/gen-cygnus.mjs` |
-| 배틀메이지 | `32xx.json` | KMST T1.2.137 원본 텍스트 + 인벤 아이콘 | `scripts/gen-battlemage.mjs` |
+| 배틀메이지 | `32xx.json` | 메이플랜드 인게임 수치(미확보분은 KMST T1.2.137 원문) + 인벤 아이콘 | `scripts/gen-battlemage.mjs` |
 
 **배틀메이지 스킬 포인트** — 레지스탕스는 10레벨 1차 전직 시 SP를 **5** 받는다(다른 직업군은 1).
 `constants/skillPoints.ts`의 `getBranch1stBonusSp(jobId)`가 이 차이를 담당하고,
 총 SP 계산(`SkillTree`)·차수 활성화 기준(`useSkillBranch`)·스킬 로그 차수 분류(`SkillLogDialog`)가 모두 이 값을 쓴다.
 
+**차수별 SP 분리 (레지스탕스 전용)** — 배틀메이지는 다른 직업과 달리 SP를 전 차수가 공유하지 않는다.
+레벨 구간에서 얻은 SP는 그 차수에만 쓸 수 있고(1차 Lv10~30, 2차 31~70, 3차 71~120, 4차 121~200),
+이전 차수에 필수 포인트를 채우지 않아도 다음 차수 스킬을 찍을 수 있다.
+- `hasSeparateBranchSp(jobId)`로 판별, `getSeparateBranchSp(jobId, level, jobLevel, branchIndex)`가 차수별 총 SP를 준다.
+  전직 보너스(+5 / +1 / +1 / +3)는 새로 전직한 차수에 귀속되고, Lv200 이후로는 SP를 얻지 않는다
+- `SkillTree`가 차수별 `IBranchSkillPoints { total, remaining }`를 계산해 `SkillBranch` → `useSkillBranch`로 `branchSp` prop을 내려준다.
+  `branchSp`가 없으면(다른 모든 직업) 기존 공유형 로직이 그대로 돈다
+  - `branchSp` 있음: 증가 상한 = 차수 잔여 포인트, 활성화 = `total > 0`, 감소 항상 허용, 헤더는 `잔여 포인트 / 총 포인트`
+- 상단 바는 전 차수 합계. 스킬코드 적용은 차수별 예산으로 채우고(한 차수가 부족하면 그 스킬만 건너뜀),
+  스킬 로그는 `skillBranchIndex`(스킬 ID → 차수)로 스킬이 속한 차수에 분류한다
+
 **배틀메이지 파이프라인** — maplestory.io에 해당 버전이 없어 다른 경로를 쓴다.
-- 수치·스킬명·설명·마스터레벨·선행스킬의 단일 출처는 `scripts/data/battlemage-t12137.txt`
-  (블로그 원문을 텍스트로 보존. 출처는 이 파일 상단 주석에만 기록하고 UI에는 표기하지 않음)
+- 수치·스킬명·설명·마스터레벨·선행스킬의 단일 출처는 `scripts/data/battlemage-mapleland.txt`
+  (출처는 파일 상단·스킬별 `# 출처:` 주석에만 기록하고 UI에는 표기하지 않음)
+- 이 파일은 KMST 원문(`battlemage-t12137.txt`, 블로그 원문 보존본)을 복사해 메이플랜드 인게임 데이터를
+  확보한 스킬의 레벨 줄 숫자만 바꾼 것이다. 메이플랜드가 원작 스펙을 조정해 추가했기 때문에 둘이 다르다.
+  인게임 데이터가 없는 스킬은 KMST 값을 유지하며 `# 출처: KMST T1.2.137 (…미확보)`로 표시한다
+- 한 레벨 문장이 여러 줄이면: `,`로 끝나는 줄은 공백으로, `\`로 끝나는 줄은 `\n`으로 이어 붙인다.
+  `\n`이 들어간 detail은 재사용 대기시간도 새 줄에 붙고, `SkillToolTip`의 상세 수치 div가
+  `whitespace-pre-line`이라 툴팁에서 실제 줄바꿈으로 보인다 (현재 슈퍼바디만 사용)
 - 스킬 ID·아이콘만 인벤 DB에서 가져온다 (원본 텍스트에 없는 정보). 아이콘은 GIF라
   `scripts/lib/gif2png.mjs`로 PNG 변환 후 Base64 인라인 (앱이 `data:image/png`로 렌더링하기 때문)
 - 생성 시 **자체 검증**: `description.detail` 템플릿과 `levelProperties`로 각 레벨 문장을

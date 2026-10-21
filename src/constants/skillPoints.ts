@@ -37,3 +37,28 @@ export const MAX_CHARACTER_LEVEL = 300;
 // 직업군에 따른 1차 전직 보너스 SP (레지스탕스만 5, 나머지는 1)
 export const getBranch1stBonusSp = (jobId: number): number =>
   isResistanceJobId(jobId) ? RESISTANCE_BRANCH_1ST_BONUS_SP : BRANCH_1ST_BONUS_SP;
+
+// 레지스탕스는 차수별로 스킬 포인트가 분리됨
+//   - 각 레벨 구간에서 얻은 SP는 그 차수에만 쓸 수 있음 (다른 차수로 못 넘김)
+//   - 이전 차수에 필수 포인트를 다 쓰지 않아도 다음 차수 스킬을 찍을 수 있음
+export const hasSeparateBranchSp = isResistanceJobId;
+
+// 레지스탕스는 200레벨 이후로 SP를 얻지 않음
+export const SEPARATE_BRANCH_SP_MAX_LEVEL = 200;
+
+// 차수 분리형 직업의 차수별 총 SP (branchIndex: 1~4)
+//   1차: 전직 보너스 + (jobLevel, 30] 구간 레벨업 SP
+//   2차: Lv30 전직 보너스 + (30, 70] 구간,  3차: Lv70 보너스 + (70, 120] 구간
+//   4차: Lv120 보너스 + (120, 200] 구간
+export function getSeparateBranchSp(jobId: number, currentLevel: number, jobLevel: number, branchIndex: number): number {
+  const level = Math.min(currentLevel, SEPARATE_BRANCH_SP_MAX_LEVEL);
+  const ranges: Record<number, { from: number; to: number; bonus: number }> = {
+    1: { from: jobLevel, to: BRANCH_2ND_LEVEL, bonus: getBranch1stBonusSp(jobId) },
+    2: { from: BRANCH_2ND_LEVEL, to: BRANCH_3RD_LEVEL, bonus: BRANCH_2ND_BONUS_SP },
+    3: { from: BRANCH_3RD_LEVEL, to: BRANCH_4TH_LEVEL, bonus: BRANCH_3RD_BONUS_SP },
+    4: { from: BRANCH_4TH_LEVEL, to: SEPARATE_BRANCH_SP_MAX_LEVEL, bonus: BRANCH_4TH_BONUS_SP },
+  };
+  const range = ranges[branchIndex];
+  if (!range || level < range.from) return 0;
+  return range.bonus + (Math.min(level, range.to) - range.from) * SP_PER_LEVEL;
+}

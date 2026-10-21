@@ -42,7 +42,8 @@ npm run preview      # 빌드 결과 미리보기
 api/
 └── feedback.ts                      # Vercel 서버리스 함수 (문의 → GitHub Issue 생성)
 scripts/                             # 스킬북 JSON 생성 도구 (수동 실행, 빌드와 무관)
-├── data/battlemage-t12137.txt       # 배틀메이지 원본 텍스트 (출처 maplestory.pe.kr)
+├── data/battlemage-mapleland.txt    # 배틀메이지 생성 입력 (메이플랜드 인게임 수치, SSOT)
+├── data/battlemage-t12137.txt       # KMST 원문 보존본 (참고용, 생성에 미사용)
 ├── lib/gif2png.mjs                  # GIF→PNG 변환 (무의존)
 ├── gen-cygnus.mjs                   # 시그너스 생성 (maplestory.io GMS v72)
 └── gen-battlemage.mjs               # 배틀메이지 생성 (원본 텍스트 + 인벤 아이콘)
@@ -68,7 +69,8 @@ src/
 │   └── SkillTreePage.tsx           # /:jobId 라우트: 스킬 트리 + 캡처
 ├── types/
 │   ├── job.ts                      # IJob
-│   └── jobSkillBook.ts             # IJobSkillBook, IJobSkill, ILevelProperties
+│   ├── jobSkillBook.ts             # IJobSkillBook, IJobSkill, ILevelProperties
+│   └── skillPoints.ts              # IBranchSkillPoints (차수별 SP 분리 직업용)
 ├── App.tsx                         # Routes 정의
 ├── App.css                         # fadeIn 애니메이션
 ├── index.css                       # Tailwind 지시자 + 기본 스타일
@@ -129,7 +131,20 @@ src/
 ### 차수별 활성화 조건 (`useSkillBranch.ts:calcPointsForBranch`)
 - 공식: `(branchLevel - jobLevel) * SP_PER_LEVEL + 이전 차수 전직 보너스 SP 누적`
 - 1차: 0, 2차: `(30-jobLevel)*3+1차보너스`, 3차: `(70-jobLevel)*3+1차보너스+1`, 4차: `(120-jobLevel)*3+1차보너스+2`
-- 1차 보너스가 1인 일반 직업은 기존과 동일(2차 +1, 3차 +2, 4차 +3), 레지스탕스만 +5/+6/+7
+- 레지스탕스는 이 규칙을 쓰지 않음 (아래 차수별 SP 분리 참고)
+
+### 차수별 SP 분리 — 레지스탕스(배틀메이지) 전용 (`hasSeparateBranchSp`)
+- 레벨 구간마다 얻은 SP가 그 차수에만 귀속됨. 다른 차수로 넘겨 쓸 수 없고, 이전 차수를 다 찍지 않아도 다음 차수를 찍을 수 있음
+- `constants/skillPoints.ts:getSeparateBranchSp(jobId, level, jobLevel, branchIndex)`
+  - 1차: 5 + (Lv10~30 구간)×3 / 2차: 1 + (30~70)×3 / 3차: 1 + (70~120)×3 / 4차: 3 + (120~200)×3
+  - 전직 보너스(+1/+1/+3)는 **새 차수**에 귀속. **Lv200 이후로는 SP를 얻지 않음** (`SEPARATE_BRANCH_SP_MAX_LEVEL`)
+  - 4차만 모드는 4차 포인트만 존재 (나머지 차수 0)
+- `SkillTree`가 차수별 `{ total, remaining }`(`IBranchSkillPoints`)을 계산해 `SkillBranch`에 `branchSp` prop으로 전달
+  - `branchSp`가 있으면 `useSkillBranch`는 차수 잔여 포인트로 증가 상한을 정하고, 활성화는 `total > 0`(전직 레벨 도달)만 봄. 감소는 항상 허용
+  - 브랜치 헤더는 `총 투자/필요 투자` 대신 `잔여 포인트/총 포인트` 표기 (잔여 음수면 빨간색)
+- 상단 바(총/사용/남은)는 전 차수 합계 그대로
+- 스킬코드 적용: 차수별 예산 안에서 적용, 한 차수가 부족해도 다른 차수 스킬은 계속 적용
+- 스킬 로그: 누적 SP 추정 대신 스킬이 속한 차수로 분류 (`SkillLogDialog`의 `skillBranchIndex`)
 
 ### 스킬 툴팁 속성 치환 (`SkillToolTip.tsx:makeSkillDetail`)
 - `description.detail`의 `#key` 플레이스홀더를 `levelProperties`의 값으로 치환
@@ -172,7 +187,7 @@ src/
 ## 자주 수정하는 영역
 
 - **스킬 데이터 JSON** (`src/data/skillbooks/*.json`): 패치 반영 시 수치 변경
-  (배틀메이지 32xx.json은 예외 — `scripts/data/battlemage-t12137.txt`를 고치고 생성 스크립트를 다시 돌릴 것)
+  (배틀메이지 32xx.json은 예외 — `scripts/data/battlemage-mapleland.txt`를 고치고 생성 스크립트를 다시 돌릴 것)
 - **SkillToolTipPostfix.tsx**: 새 특수 스킬 추가 또는 후처리 로직 수정
 - **JobSelector.tsx**: 패치 노트/변경 이력 (파일 상단 `PATCH_NOTES` 배열에 문자열 추가)
 - **useSkillBranch.ts**: 스킬 레벨 증감 로직, 활성화 검증
@@ -183,8 +198,16 @@ src/
 
 ### 배틀메이지 데이터 (레지스탕스)
 - maplestory.io에 해당 버전(빅뱅 이전, 마력 기반)이 없어 다른 경로로 만들었다
-- 수치·스킬명·설명·마스터레벨·선행스킬의 **단일 출처는 `scripts/data/battlemage-t12137.txt`**
-  (KMST T1.2.137 원문). 수치를 고칠 일이 있으면 JSON이 아니라 이 텍스트를 고치고 스크립트를 다시 돌릴 것
+- 수치·스킬명·설명·마스터레벨·선행스킬의 **단일 출처는 `scripts/data/battlemage-mapleland.txt`**.
+  수치를 고칠 일이 있으면 JSON이 아니라 이 텍스트를 고치고 스크립트를 다시 돌릴 것
+- 메이플랜드는 원작 KMST 스펙을 조정해 배틀메이지를 추가했다. `battlemage-mapleland.txt`는
+  KMST 원문(`battlemage-t12137.txt`, 참고용 보존본)에 인게임 수치를 덮어쓴 것이고,
+  스킬마다 `# 출처: 메이플랜드 인게임` / `# 출처: KMST T1.2.137 (…미확보)` 주석으로 어느 값인지 표시한다
+  - 인게임 반영 스킬은 대부분 수치만 교체(설명·문구·선행스킬·재사용대기시간은 KMST 원문).
+    블루 오라·슈퍼바디·컨버전은 설명·레벨 문구까지 인게임 문구로 교체
+  - 인게임 미확보(KMST 값 유지): 스탠스·어드밴스드 다크/옐로우 오라·싸이클론·다크 제네시스·쉘터
+- 레벨 줄이 `,`로 끝나면 공백으로, `\`로 끝나면 `\n`으로 다음 줄과 이어진다.
+  툴팁 상세 수치 div는 `whitespace-pre-line`이라 `\n`이 실제 줄바꿈으로 보임 (현재 슈퍼바디만 사용)
 - 스킬 ID·아이콘만 인벤에서 가져옴 → `node scripts/gen-battlemage.mjs` (아이콘은 `tmp/icons`에 캐시)
 - 생성 시 detail 템플릿으로 원문 문장을 재조립해 글자 단위 대조. 어긋나면 파일을 쓰지 않고 종료
 - 출처는 원본 텍스트 파일 상단 주석에만 기록. UI 표기는 넣지 않기로 함(게임 수치 데이터라 불필요하다는 판단)
