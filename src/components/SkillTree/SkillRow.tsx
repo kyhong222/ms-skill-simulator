@@ -54,17 +54,17 @@ const SkillRow: React.FC<SkillRowProps> = ({
       ? isShiftPressed
         ? "bg-yellow-500 hover:bg-yellow-600 cursor-pointer"
         : "bg-orange-500 hover:bg-orange-600 cursor-pointer"
-      : "bg-gray-400 cursor-not-allowed";
+      : "bg-gray-400 cursor-not-allowed dark:bg-gray-600";
 
   const buttonColor = (enabled: boolean) =>
-    enabled ? "bg-orange-500 hover:bg-orange-600 cursor-pointer" : "bg-gray-400 cursor-not-allowed";
+    enabled ? "bg-orange-500 hover:bg-orange-600 cursor-pointer" : "bg-gray-400 cursor-not-allowed dark:bg-gray-600";
 
   return (
     // 스킬이 필요 스킬을 만족하지 않으면 비활성화(툴팁은 표시)
     <div
       className={`relative border rounded-lg
         ${isActivated ? "" : "grayscale cursor-not-allowed"}
-        ${level === skill.masterLevel ? "bg-amber-300" : level >= 1 ? "bg-amber-100" : "bg-white"}
+        ${level === skill.masterLevel ? "bg-amber-300 dark:bg-amber-700/70" : level >= 1 ? "bg-amber-100 dark:bg-amber-900/50" : "bg-white dark:bg-dark-paper"}
         `}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -87,14 +87,14 @@ const SkillRow: React.FC<SkillRowProps> = ({
             type="button"
             onClick={onToggleExpand}
             aria-expanded={isExpanded}
-            className="block flex-1 min-w-0 w-full border-0 rounded-none bg-transparent p-0 text-black text-left text-sm font-semibold leading-tight break-keep focus:outline-none md:text-base md:leading-normal md:cursor-default md:pointer-events-none"
+            className="block flex-1 min-w-0 w-full border-0 rounded-none bg-transparent p-0 text-black dark:text-gray-100 text-left text-sm font-semibold leading-tight break-keep focus:outline-none md:text-base md:leading-normal md:cursor-default md:pointer-events-none"
           >
             {skill.description?.name || "알 수 없는 스킬"}
           </button>
 
           {/* 현재 레벨 및 버튼들 */}
           <div className="flex flex-shrink-0 items-center gap-1 md:min-w-[120px] md:justify-end">
-            <span className="text-black text-left text-xs whitespace-nowrap md:text-base">
+            <span className="text-black dark:text-gray-100 text-left text-xs whitespace-nowrap md:text-base">
               {`${level}/${skill.masterLevel}${level === skill.masterLevel ? " (M)" : ""}`}
             </span>
             <div className="ml-auto flex items-center gap-0.5 md:gap-0">

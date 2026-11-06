@@ -105,12 +105,12 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => 
 
   if (detailOnly) {
     return (
-      <div className="p-3 bg-white border border-gray-300 rounded shadow-lg text-sm text-gray-800">{levelDetail}</div>
+      <div className="p-3 bg-white border border-gray-300 rounded shadow-lg text-sm text-gray-800 dark:bg-dark-raised dark:border-gray-600 dark:text-gray-100">{levelDetail}</div>
     );
   }
 
   return (
-    <div className="p-3 w-128 bg-white border border-gray-300 rounded shadow-lg text-sm text-gray-800">
+    <div className="p-3 w-128 bg-white border border-gray-300 rounded shadow-lg text-sm text-gray-800 dark:bg-dark-raised dark:border-gray-600 dark:text-gray-100">
       {/* 스킬명 */}
       <h3 className="font-bold mb-2">{skill.description?.name || "알 수 없는 스킬"}</h3>
 
@@ -124,7 +124,7 @@ const SkillTooltip: React.FC<SkillTooltipProps> = (props: SkillTooltipProps) => 
           />
         )}
         <div className="flex flex-col text-left">
-          <p className="text-gray-600 mb-1">{`[마스터 레벨 : ${skill.masterLevel || 0}]`}</p>
+          <p className="text-gray-600 mb-1 dark:text-gray-400">{`[마스터 레벨 : ${skill.masterLevel || 0}]`}</p>
           <p className="whitespace-pre-line">{(skill.description?.desc || "설명 없음").replace(/\\n/g, "\n")}</p>
 
           {/* 필요 스킬 */}

@@ -23,6 +23,7 @@ npm run dev          # 개발 서버 (localhost:5173, base: /)
 npm run build        # 프로덕션 빌드 (tsc -b && vite build → dist/)
 npm run lint         # ESLint 검사
 npm run preview      # 빌드 결과 미리보기
+bash scripts/setup-env.sh  # (WSL) Supabase CLI로 .env.local 생성 — 로그인·문의 기능 로컬 확인용
 ```
 
 배포는 Vercel Git 연동으로 자동 진행 (main 푸시 → 빌드 → 배포). 수동 배포 스크립트 없음.
@@ -30,7 +31,8 @@ npm run preview      # 빌드 결과 미리보기
 ## 기술 스택
 
 - **React 19** + **TypeScript 5.8** + **Vite 6.3**
-- **Tailwind CSS 3.4** (다크모드 비활성화)
+- **Tailwind CSS 3.4** (`darkMode: "class"`)
+- **Supabase** (디스코드 로그인·계정 동기화·문의, 아이템 시뮬레이터와 공용 프로젝트)
 - **react-router-dom 7.13** (BrowserRouter, basename 없음 — 루트 배포)
 - **html2canvas 1.4** (스킬 트리 캡처)
 - **Vercel** (Git 연동 자동 배포, `vercel.json`에 SPA rewrite)
@@ -39,8 +41,6 @@ npm run preview      # 빌드 결과 미리보기
 ## 프로젝트 구조
 
 ```
-api/
-└── feedback.ts                      # Vercel 서버리스 함수 (문의 → GitHub Issue 생성)
 scripts/                             # 스킬북 JSON 생성 도구 (수동 실행, 빌드와 무관)
 ├── data/battlemage-mapleland.txt    # 배틀메이지 생성 입력 (메이플랜드 인게임 수치, SSOT)
 ├── data/battlemage-t12137.txt       # KMST 원문 보존본 (참고용, 생성에 미사용)
@@ -49,19 +49,26 @@ scripts/                             # 스킬북 JSON 생성 도구 (수동 실�
 └── gen-battlemage.mjs               # 배틀메이지 생성 (원본 텍스트 + 인벤 아이콘)
 src/
 ├── components/
-│   ├── Feedback/FeedbackDialog.tsx  # 문의하기 모달 폼
+│   ├── Cloud/                       # CloudProvider, useCloud, 이관/충돌 확인창, AuthButton, 내 문의
+│   ├── Feedback/FeedbackDialog.tsx  # 문의하기 모달 폼 (Supabase 저장)
+│   ├── Header/                      # Header(상단 고정), ColorModeButton, useDismiss
 │   ├── JobSelector/JobSelector.tsx  # 직업 선택 UI
 │   └── SkillTree/
-│       ├── SkillTree.tsx            # 핵심: 상태관리, 포인트 계산, 데이터 로딩
+│       ├── useSkillTree.ts          # 핵심: 스킬 상태, 포인트 계산, 데이터 로딩 (SSOT)
+│       ├── SkillTree.tsx            # 스킬 트리 본문 렌더링
+│       ├── SkillCodeDialog.tsx      # 스킬코드 입력 모달
 │       ├── SkillBranch.tsx          # 단일 차수 스킬 UI (렌더링 전용, 모바일 접기)
 │       ├── SkillRow.tsx             # 스킬 1개 행 (반응형 레이아웃)
 │       ├── useSkillBranch.ts        # 스킬 브랜치 비즈니스 로직 훅
 │       ├── SkillToolTip.tsx         # 스킬 툴팁 (레벨별 속성 치환)
 │       └── SkillToolTipPostfix.tsx  # 15개 특수 스킬 속성값 후처리
 ├── constants/
-│   ├── feedback.ts                 # 문의 유형/길이 제한/쿨다운 (api/feedback.ts와 동기화)
+│   ├── colorMode.ts                # 화면 모드 저장 키/순환 순서
+│   ├── feedback.ts                 # 문의 유형(dbType 매핑)/길이/첨부 제한
 │   └── skillPoints.ts              # 게임 상수 (전직 레벨, SP 계산 관련)
 ├── data/
+│   ├── cloud/                      # Supabase 클라이언트, 쿠키 세션, 동기화 엔진, 문의 접근
+│   ├── skillTreeStorage.ts         # 스킬 트리 localStorage 접근 (게스트/계정 분리)
 │   ├── jobs.ts                     # 직업 목록/그룹/하위직업 매핑
 │   └── skillbooks/*.json           # 60개 스킬북 데이터 (Base64 아이콘 내장)
 ├── pages/
@@ -70,7 +77,11 @@ src/
 ├── types/
 │   ├── job.ts                      # IJob
 │   ├── jobSkillBook.ts             # IJobSkillBook, IJobSkill, ILevelProperties
-│   └── skillPoints.ts              # IBranchSkillPoints (차수별 SP 분리 직업용)
+│   ├── skillPoints.ts              # IBranchSkillPoints (차수별 SP 분리 직업용)
+│   ├── skillTree.ts                # ISkillLevel, ISkillLogEntry
+│   ├── header.ts                   # IHeaderAction
+│   └── cloud.ts                    # 인증/동기화 타입
+├── utils/captureElement.ts         # html2canvas 공통 호출 (항상 라이트로 캡처)
 ├── App.tsx                         # Routes 정의
 ├── App.css                         # fadeIn 애니메이션
 ├── index.css                       # Tailwind 지시자 + 기본 스타일
@@ -99,7 +110,8 @@ src/
 ### 상태 관리
 - React `useState` + `localStorage` 영속화
 - 전역 상태 관리 라이브러리 없음
-- `SkillTree`가 스킬 레벨 상태의 단일 소스 (SSOT)
+- `useSkillTree`가 스킬 레벨 상태의 단일 소스 (SSOT) — `SkillTreePage`에서 호출해 헤더와 본문이 공유
+- 로그인·동기화 상태만 Context (`useCloud`)
 - 하위 컴포넌트로 props 전달 (prop drilling 패턴)
 
 ### 스타일링
@@ -120,7 +132,7 @@ src/
 - 선택 가능한 직업: 18개 — 모험가 4차 12개 + 시그너스 3차 5개 + 배틀메이지 1개 (`selectableJobs`)
 - `subJobs[최종ID]` → `[1차, 2차, 3차, 4차]` ID 배열 (시그너스는 3개)
 
-### 스킬 포인트 계산 (`SkillTree.tsx:calculateSkillPoints`)
+### 스킬 포인트 계산 (`useSkillTree.ts:calculateSkillPoints`)
 - 게임 상수는 `constants/skillPoints.ts`에 정의
 - 일반 모드: `(currentLevel - jobLevel) * SP_PER_LEVEL + 보너스SP`
   - jobLevel: 마법사 계열 `MAGE_JOB_LEVEL`(8), 나머지 `DEFAULT_JOB_LEVEL`(10)
@@ -139,7 +151,7 @@ src/
   - 1차: 5 + (Lv10~30 구간)×3 / 2차: 1 + (30~70)×3 / 3차: 1 + (70~120)×3 / 4차: 3 + (120~200)×3
   - 전직 보너스(+1/+1/+3)는 **새 차수**에 귀속. **Lv200 이후로는 SP를 얻지 않음** (`SEPARATE_BRANCH_SP_MAX_LEVEL`)
   - 4차만 모드는 4차 포인트만 존재 (나머지 차수 0)
-- `SkillTree`가 차수별 `{ total, remaining }`(`IBranchSkillPoints`)을 계산해 `SkillBranch`에 `branchSp` prop으로 전달
+- `useSkillTree`가 차수별 `{ total, remaining }`(`IBranchSkillPoints`)을 계산해 `SkillBranch`에 `branchSp` prop으로 전달
   - `branchSp`가 있으면 `useSkillBranch`는 차수 잔여 포인트로 증가 상한을 정하고, 활성화는 `total > 0`(전직 레벨 도달)만 봄. 감소는 항상 허용
   - 브랜치 헤더는 `총 투자/필요 투자` 대신 `잔여 포인트/총 포인트` 표기 (잔여 음수면 빨간색)
 - 상단 바(총/사용/남은)는 전 차수 합계 그대로
@@ -153,9 +165,9 @@ src/
 
 ### 모바일 UI (< 768px)
 - **직업 선택** (`JobSelector.tsx`): 그룹 블록 2열 그리드 (`grid grid-cols-2 md:flex`),
-  시그너스·레지스탕스는 각각 `md:hidden` 제목이 붙은 별도 섹션 + 2열 그리드. 가로 스크롤은 `md:overflow-x-auto`로 데스크톱 전용
+  시그너스·레지스탕스는 각각 `md:hidden` 제목이 붙은 별도 섹션 + 2열 그리드. 데스크톱은 가로 스크롤 없이 화면 폭에 맞춘 5열
 - **패치 노트**: 모바일 기본 접힘 (`isPatchOpen`, 목록에 `hidden md:block`). 내용은 `PATCH_NOTES` 상수 배열
-- 스킬 브랜치를 세로로 스택 (`SkillTree.tsx`: `flex-col md:flex-row`)
+- 스킬 브랜치를 세로로 스택 (`SkillTree.tsx`: 모바일 `flex-col`, `md` 2열, `xl` 4열)
 - 브랜치 헤더 전체가 접기/펼치기 토글 (`SkillBranch.tsx`의 `isCollapsed`, 기본값 펼침)
   - 데스크톱은 헤더에 `md:pointer-events-none`, 목록 래퍼에 `md:grid-rows-[1fr]`로 항상 펼침 상태 유지
   - 접기 애니메이션은 스킬 설명 펼침과 동일한 `grid-rows-[0fr]`↔`grid-rows-[1fr]` 트랜지션
@@ -171,18 +183,33 @@ src/
   - 아이콘/스킬명에 `md:pointer-events-none`을 걸어 데스크톱은 hover 툴팁 동작을 그대로 유지
 - 캡처는 보이는 그대로 — 접힌 브랜치는 이미지에 포함되지 않음 (모바일은 기기 캡처 사용 가정)
 
-### 문의하기 → GitHub Issues
-- 스킬 트리 화면 우측 상단 `문의하기` → `FeedbackDialog` 모달 → `POST /api/feedback`
-- `api/feedback.ts`가 `GITHUB_TOKEN`(Vercel 환경변수)으로 GitHub REST API를 호출해 이슈 생성
-  - 토큰은 서버 전용 — 브라우저에 절대 노출하지 말 것
-  - `FEEDBACK_REPO` 미설정 시 `kyhong222/ms-skill-simulator`
-- 방어: 허니팟(`website`) / 길이 제한 / IP 60초 3건 / 클라이언트 60초 쿨다운 / `@멘션` 무력화
-- 유형 키·길이 제한을 바꿀 땐 `src/constants/feedback.ts`와 `api/feedback.ts`를 **둘 다** 수정
-- `npm run dev`는 `/api/*`를 서빙하지 않음 → 함수 확인은 `vercel dev` 필요
+### 헤더 (`Header.tsx`)
+- `fixed` 56px + 스페이서. 페이지가 `IHeaderAction[]`을 넘기고 문의하기·화면 모드·로그인은 헤더가 직접 렌더링
+- 버튼이 약 1230px이라 **`xl`(1280px) 미만은 메뉴로 접는다** (md 규칙의 유일한 예외)
+- 스킬 로그·스킬코드·초기화는 로딩 중 비활성화 — 빈 목록을 저장하면 저장된 트리가 지워진다
+- 초기화는 `window.confirm` 확인 후 실행
+
+### 다크 모드
+- `<html class="dark">` + `dark:` 유틸리티. 시스템→라이트→다크 순환, 키 `skillSimulator_colorMode`
+- `index.html` 초기화 스크립트와 `constants/colorMode.ts`의 키가 같아야 한다
+- 새 UI를 추가할 땐 `dark:` 클래스를 함께 작성. 커스텀 색 `dark-page/paper/raised`, `primary`
+- 캡처는 `captureElement`가 항상 라이트로 만든다
+
+### 디스코드 로그인 · 계정 동기화
+- 아이템 시뮬레이터와 같은 Supabase 프로젝트, `*.mapleland.st` 쿠키로 SSO. `APP_ID = "skill-sim"`은 코드 상수 (환경변수로 빼지 말 것)
+- 환경변수 `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`. 없으면 로그인 UI가 숨겨지고 localStorage 전용
+- **`user_state` 행이 없을 때만** 이관을 묻는다. 거절해도 빈 행을 만들어 다시 묻지 않는다. 이후는 서버가 원본
+- 스킬 트리 저장은 반드시 `data/skillTreeStorage.ts`를 거칠 것 — 게스트 키는 로그인해도 건드리지 않고, 계정 캐시는 로그아웃 시 삭제
+- `cookieStorage.ts`의 쿠키 형식과 Supabase `storageKey`는 아이템 시뮬레이터와 같아야 한다
+
+### 문의하기 → Supabase
+- 헤더 `문의하기` → `FeedbackDialog` → `feedbacks` insert (로그인 필수, 이미지 3장)
+- 답변·상태 관리는 **아이템 시뮬레이터의 `문의 관리`** (전 서비스 문의가 함께 보임). 이 앱은 `내 문의`만 제공
+- `feedbacks.type`은 `bug/idea/etc`만 허용 — 유형 추가 시 `constants/feedback.ts`의 `dbType`을 지정할 것
 
 ### 데이터 저장 (localStorage)
-- 키: `skillTree_{jobId}` (일반) / `skillTree_{jobId}_4th` (4차만)
-- 값: `{ currentLevel, skillLevels: [{ id, name, level }] }`
+- 키: `skillTree_{jobId}` (일반) / `skillTree_{jobId}_4th` (4차만) / 로그인 시 `skillTreeAccount_{userId}_{트리키}`
+- 값: `{ currentLevel, skillLevels: [{ id, name, level }], skillLog }`
 
 ## 자주 수정하는 영역
 
@@ -193,7 +220,7 @@ src/
 - **useSkillBranch.ts**: 스킬 레벨 증감 로직, 활성화 검증
 - **SkillBranch.tsx**: 브랜치 헤더/접기, 스킬 목록 렌더링
 - **SkillRow.tsx**: 스킬 1행 UI, 버튼 동작
-- **SkillTree.tsx**: 포인트 계산 공식 변경 시
+- **useSkillTree.ts**: 포인트 계산 공식 변경 시
 - **constants/skillPoints.ts**: 게임 상수값 변경 시
 
 ### 배틀메이지 데이터 (레지스탕스)
@@ -218,10 +245,9 @@ src/
 - 레벨 속성 키 작명 제약 2가지: `SkillToolTip`의 `#key` 치환에 단어 경계가 없어 **키가 서로의 접두사면 안 됨**
   (`#dark`가 `#darkTime`을 갉아먹음). `mastery` 키는 툴팁이 자동으로 `값*5+10`을 적용함
 - `ILevelProperties`는 `hs` 외 동적 키 — 인덱스 시그니처 `[key: string]: string`으로 정의
-- `vercel.json`의 rewrite는 `/((?!api/).*)` — `/(.*)`로 되돌리면 `/api/*`까지 index.html로 삼켜 문의하기가 죽음
 - Vite `base: '/'` + BrowserRouter basename 없음 — 도메인 변경(`skill.mapleland.st`) 시 둘 다 루트로 맞춰야 함 (불일치 시 자산 404 → 흰 화면)
 - `isShiftPressed` 상태와 `e.shiftKey` 두 가지 방식 혼재 (useState는 버튼 색상용, 이벤트는 실제 로직용)
-- `App.tsx`의 `md:min-w-[1500px]`에서 `md:`를 빼면 모바일에 1500px가 강제돼 가로 스크롤 발생
+- `App.tsx`에 고정 최소 너비를 넣지 말 것 — 768~1500px(개발자 도구 도킹, 태블릿, 폰 가로 모드)에서 오른쪽이 잘린다. 스킬 브랜치는 모바일 세로 / `md` 2열 / `xl` 4열이고 `#root` 최대 폭 1564px(콘텐츠 1500 + 패딩)로 캡처 폭을 유지한다
 - `index.css`의 `button {}` 기본 스타일(배경/패딩/라운드)이 전역 적용됨 — 버튼 형태를 커스텀할 땐 `bg-transparent border-0 p-0 rounded-none` 등으로 명시적 초기화 필요 (`SkillBranch` 헤더 참고)
 - `isBranchActivated()`: `usedSkillPoints - totalInvestedPoints` 계산 — 현재 브랜치 투자분 제외
 - 툴팁: `ReactDOM.createPortal`로 `document.body`에 렌더링 (fixed 포지셔닝)
@@ -230,13 +256,12 @@ src/
 ## 남은 개선 가능 영역
 
 ### 정리 필요
-1. `index.css`에 다크/라이트 테마 CSS가 있으나 Tailwind에서 다크모드 비활성화 — 불일치
-2. `public/vite.svg` 미사용 에셋
-3. `@/*` tsconfig 경로 별칭 미활용 (모든 import가 상대 경로)
+1. `public/vite.svg` 미사용 에셋
+2. `@/*` tsconfig 경로 별칭 미활용 (모든 import가 상대 경로)
 
 ### 구조 개선
-4. **Prop drilling** (8개+ props): Context 또는 커스텀 훅으로 개선 가능
-5. **패치 이력 하드코딩**: `JobSelector.tsx`의 `PATCH_NOTES` 배열에 문자열 직접 입력 (별도 데이터 파일 분리 여지)
+3. **Prop drilling** (8개+ props): Context 또는 커스텀 훅으로 개선 가능
+4. **패치 이력 하드코딩**: `JobSelector.tsx`의 `PATCH_NOTES` 배열에 문자열 직접 입력 (별도 데이터 파일 분리 여지)
 
 ## 테스트
 

@@ -18,6 +18,7 @@ const PATCH_NOTES = [
   "26.09.05  레지스탕스 배틀메이지(임시) 스킬 추가",
   "26.09.08  배틀메이지 1차 전직 스킬포인트 5로 수정",
   "26.10.21  배틀메이지 스킬 최신화(1~3차 스킬 및 피니쉬 블로우 반영 완료)",
+  "26.11.06  상단 헤더 추가, 다크 모드 지원",
 ];
 
 export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => void }) {
@@ -33,8 +34,8 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
   const renderJob = (job: IJob) => (
     <li
       key={job.id}
-      className={`cursor-pointer p-2 border rounded text-center text-sm break-keep md:p-4 md:text-base ${
-        selectedJob === job.id ? "bg-blue-500 text-white" : "bg-white text-black"
+      className={`cursor-pointer p-2 border rounded text-center text-sm break-keep md:p-2 md:text-base xl:p-4 ${
+        selectedJob === job.id ? "bg-blue-500 text-white" : "bg-white text-black dark:bg-dark-paper dark:text-gray-100"
       }`}
       onClick={() => handleSelect(job)}
     >
@@ -48,13 +49,13 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
     <div className="p-3 max-w-full mx-auto md:p-6">
       <h1 className="text-xl font-bold mb-4 md:text-2xl">직업을 선택하세요.</h1>
 
-      {/* 모바일: 그룹 블록 2열 그리드 / 데스크톱(md~): 기존 가로 5열 + 가로 스크롤 */}
-      <div className="md:overflow-x-auto">
-        <div className="md:min-w-max">
+      {/* 모바일: 그룹 블록 2열 그리드 / 데스크톱(md~): 화면 폭에 맞춘 가로 5열 */}
+      <div>
+        <div>
           {/* 모험가 직업군 (상단) */}
-          <div className="grid grid-cols-2 items-start gap-x-3 gap-y-5 md:flex md:gap-8">
+          <div className="grid grid-cols-2 items-start gap-x-3 gap-y-5 md:flex md:justify-center md:gap-3 xl:gap-8">
             {groupNames.map((groupName) => (
-              <div key={groupName} className="w-full md:w-[160px]">
+              <div key={groupName} className="w-full min-w-0 md:flex-1 md:max-w-[160px]">
                 <h2 className="text-base font-semibold mb-2 text-center md:text-xl md:mb-3">{groupName}</h2>
                 <ul className="flex flex-col gap-2 md:gap-4">
                   {groupedJobs[groupName].map(renderJob)}
@@ -64,13 +65,13 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
           </div>
 
           {/* 구분선 */}
-          <hr className="my-5 border-t border-gray-300 md:my-6" />
+          <hr className="my-5 border-t border-gray-300 dark:border-gray-700 md:my-6" />
 
           {/* 시그너스 직업군 (하단, 데스크톱은 각 모험가 열에 대응) */}
           <h2 className="text-base font-semibold mb-2 text-center md:hidden">시그너스 기사단</h2>
-          <div className="grid grid-cols-2 items-start gap-x-3 gap-y-2 md:flex md:gap-8">
+          <div className="grid grid-cols-2 items-start gap-x-3 gap-y-2 md:flex md:justify-center md:gap-3 xl:gap-8">
             {groupNames.map((groupName) => (
-              <div key={groupName} className="w-full md:w-[160px]">
+              <div key={groupName} className="w-full min-w-0 md:flex-1 md:max-w-[160px]">
                 <ul className="flex flex-col gap-2 md:gap-4">
                   {cygnusByGroup[groupName] && renderJob(cygnusByGroup[groupName])}
                 </ul>
@@ -79,13 +80,13 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
           </div>
 
           {/* 구분선 */}
-          <hr className="my-5 border-t border-gray-300 md:my-6" />
+          <hr className="my-5 border-t border-gray-300 dark:border-gray-700 md:my-6" />
 
           {/* 레지스탕스 직업군 (하단, 데스크톱은 각 모험가 열에 대응) */}
           <h2 className="text-base font-semibold mb-2 text-center md:hidden">레지스탕스</h2>
-          <div className="grid grid-cols-2 items-start gap-x-3 gap-y-2 md:flex md:gap-8">
+          <div className="grid grid-cols-2 items-start gap-x-3 gap-y-2 md:flex md:justify-center md:gap-3 xl:gap-8">
             {groupNames.map((groupName) => (
-              <div key={groupName} className="w-full md:w-[160px]">
+              <div key={groupName} className="w-full min-w-0 md:flex-1 md:max-w-[160px]">
                 <ul className="flex flex-col gap-2 md:gap-4">
                   {resistanceByGroup[groupName] && renderJob(resistanceByGroup[groupName])}
                 </ul>

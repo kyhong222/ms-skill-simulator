@@ -1,5 +1,4 @@
 import { useRef, useEffect, useMemo, useState } from "react";
-import html2canvas from "html2canvas";
 import {
   BRANCH_2ND_LEVEL,
   BRANCH_3RD_LEVEL,
@@ -9,17 +8,11 @@ import {
   BRANCH_3RD_BONUS_SP,
   getBranch1stBonusSp,
 } from "../../constants/skillPoints";
-
-interface SkillLogEntry {
-  skillId: number;
-  skillName: string;
-  icon: string;
-  level: number;
-  masterLevel: number;
-}
+import { captureElement } from "../../utils/captureElement";
+import type { ISkillLogEntry } from "../../types/skillTree";
 
 interface SkillLogDialogProps {
-  log: SkillLogEntry[];
+  log: ISkillLogEntry[];
   isOpen: boolean;
   onClose: () => void;
   jobLevel: number;
@@ -39,9 +32,9 @@ const BRANCH_LABELS = [
 
 // 시그너스(isCygnus=true)는 4차 구간을 3차로 합쳐 3개 차수만 반환
 // 차수 분리형(skillBranchIndex 전달)은 누적 SP로 추정하지 않고 스킬이 속한 차수로 분류
-function categorizeLogs(log: SkillLogEntry[], jobLevel: number, jobId: number, isCygnus = false, skillBranchIndex?: Record<number, number>) {
+function categorizeLogs(log: ISkillLogEntry[], jobLevel: number, jobId: number, isCygnus = false, skillBranchIndex?: Record<number, number>) {
   if (skillBranchIndex) {
-    const branches: SkillLogEntry[][] = [[], [], [], []];
+    const branches: ISkillLogEntry[][] = [[], [], [], []];
     for (const entry of log) branches[(skillBranchIndex[entry.skillId] || 1) - 1].push(entry);
     return branches;
   }
@@ -50,7 +43,7 @@ function categorizeLogs(log: SkillLogEntry[], jobLevel: number, jobId: number, i
   const threshold2 = threshold1 + (BRANCH_3RD_LEVEL - BRANCH_2ND_LEVEL) * SP_PER_LEVEL + BRANCH_2ND_BONUS_SP;
   const threshold3 = threshold2 + (BRANCH_4TH_LEVEL - BRANCH_3RD_LEVEL) * SP_PER_LEVEL + BRANCH_3RD_BONUS_SP;
 
-  const branches: SkillLogEntry[][] = isCygnus ? [[], [], []] : [[], [], [], []];
+  const branches: ISkillLogEntry[][] = isCygnus ? [[], [], []] : [[], [], [], []];
   const skillLastLevel: Record<number, number> = {};
   let cumulativeSP = 0;
 
@@ -72,7 +65,7 @@ function categorizeLogs(log: SkillLogEntry[], jobLevel: number, jobId: number, i
   return branches;
 }
 
-function LogEntry({ entry }: { entry: SkillLogEntry }) {
+function LogEntry({ entry }: { entry: ISkillLogEntry }) {
   return (
     <li className="flex items-center gap-2 py-1.5">
       {entry.icon && (
@@ -82,8 +75,8 @@ function LogEntry({ entry }: { entry: SkillLogEntry }) {
           className="w-8 h-8 shrink-0"
         />
       )}
-      <span className="text-gray-800 break-keep">{entry.skillName}</span>
-      <span className="text-gray-600 font-semibold ml-auto shrink-0">
+      <span className="text-gray-800 break-keep dark:text-gray-100">{entry.skillName}</span>
+      <span className="text-gray-600 font-semibold ml-auto shrink-0 dark:text-gray-300">
         {entry.level >= entry.masterLevel ? "M" : entry.level}
       </span>
     </li>
@@ -122,16 +115,7 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
   );
 
   const captureToCanvas = async () => {
-    if (!contentRef.current) return null;
-
-    await document.fonts.ready;
-    await new Promise((resolve) => requestAnimationFrame(resolve));
-
-    return html2canvas(contentRef.current, {
-      backgroundColor: "white",
-      scale: 2,
-      useCORS: true,
-    });
+    return contentRef.current ? captureElement(contentRef.current) : null;
   };
 
   const copyToClipboard = async () => {
@@ -178,11 +162,11 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
   return (
     <dialog
       ref={dialogRef}
-      className={`rounded-lg shadow-xl p-0 max-h-[85vh] backdrop:bg-black/50 ${fourthOnly ? "w-96" : "w-[1100px] max-w-[92vw]"}`}
+      className={`rounded-lg shadow-xl p-0 max-h-[85vh] bg-white dark:bg-dark-paper backdrop:bg-black/50 ${fourthOnly ? "w-96" : "w-[1100px] max-w-[92vw]"}`}
     >
-      <div className="flex items-center justify-between px-5 py-3 border-b bg-gray-50 rounded-t-lg">
-        <h3 className="font-semibold text-lg text-gray-800">스킬 로그</h3>
-        <div className="flex items-center gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-2 px-5 py-3 border-b bg-gray-50 rounded-t-lg dark:bg-dark-raised">
+        <h3 className="font-semibold text-lg text-gray-800 dark:text-gray-100">스킬 로그</h3>
+        <div className="flex flex-wrap items-center justify-end gap-2">
           {log.length > 0 && (
             <>
               <button
@@ -193,7 +177,7 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
               </button>
               <button
                 onClick={saveAsFile}
-                className="px-3 py-1.5 text-sm bg-gray-200 text-gray-800 rounded hover:bg-gray-300"
+                className="px-3 py-1.5 text-sm bg-gray-200 text-gray-800 rounded hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600"
               >
                 파일 저장
               </button>
@@ -207,7 +191,7 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
           )}
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-800 text-xl leading-none px-1 ml-1"
+            className="bg-transparent border-0 p-0 text-gray-500 hover:text-gray-800 text-xl leading-none px-1 ml-1 dark:text-gray-400 dark:hover:text-gray-100"
           >
             ✕
           </button>
@@ -216,7 +200,7 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
 
       <div ref={contentRef} className="px-5 py-4 overflow-y-auto max-h-[70vh]">
         {log.length === 0 ? (
-          <p className="text-gray-500 text-center py-4">기록된 스킬 로그가 없습니다</p>
+          <p className="text-gray-500 text-center py-4 dark:text-gray-400">기록된 스킬 로그가 없습니다</p>
         ) : fourthOnly ? (
           <ol className="space-y-1">
             {log.map((entry, index) => (
@@ -227,7 +211,7 @@ export default function SkillLogDialog({ log, isOpen, onClose, jobLevel, fourthO
           <div className={`grid gap-5 grid-cols-1 ${isCygnus ? "md:grid-cols-3" : "md:grid-cols-4"}`}>
             {branches.map((entries, branchIdx) => (
               <div key={branchIdx} className="min-w-0">
-                <h4 className="font-semibold text-center border-b pb-1.5 mb-2 text-gray-700">
+                <h4 className="font-semibold text-center border-b pb-1.5 mb-2 text-gray-700 dark:text-gray-200">
                   {BRANCH_LABELS[branchIdx](jobLevel)}
                 </h4>
                 {entries.length === 0 ? (
