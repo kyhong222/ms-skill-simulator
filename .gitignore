@@ -34,3 +34,6 @@ deploy
 
 # Supabase CLI 로컬 상태
 supabase/.temp/
+
+# 머신별 실행 환경 메모
+LOCAL.md
