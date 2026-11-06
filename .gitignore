@@ -37,3 +37,4 @@ supabase/.temp/
 
 # 머신별 실행 환경 메모
 LOCAL.md
+.vercel
