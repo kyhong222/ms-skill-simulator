@@ -13,7 +13,9 @@
 - "4차 이후만" 모드로 4차 스킬만 별도 계획
 - html2canvas를 이용한 스킬 트리 캡처(이미지 다운로드, 클립보드 복사)
 - 스킬 호버 시 레벨별 상세 수치 툴팁 표시
-- 문의하기 폼 → GitHub Issue 자동 등록 (Vercel 서버리스 함수 경유)
+- 상단 고정 헤더, 다크 모드(시스템/라이트/다크)
+- 디스코드 로그인 + 계정 동기화 (*.mapleland.st SSO, 첫 로그인 시 브라우저 데이터 이관)
+- 문의하기 → Supabase 저장, 내 문의에서 답변 확인 (아이템 시뮬레이터와 공용)
 
 ## 기술 스택
 
@@ -26,6 +28,7 @@
 | 라우팅 | react-router-dom | 7.13 |
 | 캡처 | html2canvas | 1.4 |
 | 린팅 | ESLint (flat config) | 9.25 |
+| 인증/DB | Supabase (아이템 시뮬레이터와 공용 프로젝트) | supabase-js 2 |
 | 배포 | Vercel (Git 연동 자동 배포) | - |
 | 커스텀 도메인 | skill.mapleland.st | - |
 
@@ -36,8 +39,6 @@ ms-skill-simulator/
 ├── .github/
 │   └── workflows/
 │       └── trigger-deploy.yml       # main 푸시 시 루트 레포 배포 트리거
-├── api/
-│   └── feedback.ts                  # Vercel 서버리스 함수 (문의 → GitHub Issue 생성)
 ├── public/
 │   ├── googlee63cd6836513ab92.html  # Google Search Console 소유권 인증
 │   ├── robots.txt                   # 크롤러 허용 설정
@@ -54,21 +55,36 @@ ms-skill-simulator/
 │   └── prepare-deploy.js            # (사용 안 함) 구 GitHub Pages 서브패스 배포용 잔재
 ├── src/
 │   ├── components/
+│   │   ├── Cloud/
+│   │   │   ├── CloudProvider.tsx    # 세션 구독 + 동기화 기동 (App에서 라우트를 감쌈)
+│   │   │   ├── cloudContext.ts      # useCloud 훅
+│   │   │   ├── CloudPromptDialog.tsx # 이관/충돌/불러오기 실패 확인창
+│   │   │   ├── AuthButton.tsx       # 로그인 버튼 + 계정 메뉴
+│   │   │   └── MyFeedbackDialog.tsx # 내 문의 + 운영자 답변
 │   │   ├── Feedback/
-│   │   │   └── FeedbackDialog.tsx   # 문의하기 모달 (폼 → /api/feedback POST)
+│   │   │   └── FeedbackDialog.tsx   # 문의하기 모달 (Supabase feedbacks 저장)
+│   │   ├── Header/
+│   │   │   ├── Header.tsx           # 상단 고정 헤더 (페이지가 actions 전달, xl 미만은 메뉴로 접힘)
+│   │   │   ├── ColorModeButton.tsx  # 시스템/라이트/다크 전환
+│   │   │   └── useDismiss.ts        # 드롭다운 바깥 클릭/ESC 닫기
 │   │   ├── JobSelector/
 │   │   │   └── JobSelector.tsx      # 직업 선택 화면 (5개 그룹 × 12개 직업 + 시그너스 5개 + 레지스탕스 1개, 패치 노트)
 │   │   └── SkillTree/
-│   │       ├── SkillTree.tsx        # 스킬 트리 메인 (상태관리, 포인트 계산, 데이터 로딩)
+│   │       ├── SkillTree.tsx        # 스킬 트리 본문 (렌더링 전용, tree prop 수신)
+│   │       ├── useSkillTree.ts      # 스킬 트리 상태·포인트 계산·데이터 로딩 (SSOT, SkillTreePage에서 호출)
+│   │       ├── SkillCodeDialog.tsx  # 스킬코드 입력 모달
 │   │       ├── SkillBranch.tsx      # 단일 차수 스킬 브랜치 (UI 렌더링 전용, 모바일 접기 토글)
 │   │       ├── SkillRow.tsx         # 스킬 1개 행 (반응형: 모바일 한 줄 / 데스크톱 2줄)
 │   │       ├── useSkillBranch.ts    # 스킬 브랜치 비즈니스 로직 훅 (활성화 검증, 레벨 증감)
 │   │       ├── SkillToolTip.tsx     # 스킬 툴팁 (레벨별 속성 치환 렌더링)
 │   │       └── SkillToolTipPostfix.tsx  # 특정 스킬의 속성값 후처리 (15개 스킬)
 │   ├── constants/
-│   │   ├── feedback.ts              # 문의 유형/길이 제한/쿨다운 상수 (api/feedback.ts와 동기화 필요)
+│   │   ├── colorMode.ts             # 화면 모드 저장 키/순환 순서
+│   │   ├── feedback.ts              # 문의 유형(dbType 매핑)/길이/첨부 제한
 │   │   └── skillPoints.ts           # 게임 상수 (전직 레벨, SP 배수, 최대 레벨 등)
 │   ├── data/
+│   │   ├── cloud/                   # Supabase 클라이언트, 쿠키 세션, 동기화 엔진, 문의 데이터 접근
+│   │   ├── skillTreeStorage.ts      # 스킬 트리 localStorage 접근 (게스트/계정 분리)
 │   │   ├── jobs.ts                  # 직업 목록, 선택 가능 직업, 그룹화, 하위 직업 매핑
 │   │   └── skillbooks/             # 60개 JSON 파일 (직업별 스킬 데이터, Base64 아이콘 포함)
 │   │       ├── 100.json ~ 132.json  # 전사 계열
@@ -84,7 +100,12 @@ ms-skill-simulator/
 │   ├── types/
 │   │   ├── job.ts                   # IJob 인터페이스
 │   │   ├── jobSkillBook.ts         # IJobSkillBook, IJobSkill, ILevelProperties 등
-│   │   └── skillPoints.ts          # IBranchSkillPoints (차수별 SP 분리 직업의 차수 총/잔여 포인트)
+│   │   ├── skillPoints.ts          # IBranchSkillPoints (차수별 SP 분리 직업의 차수 총/잔여 포인트)
+│   │   ├── skillTree.ts            # ISkillLevel, ISkillLogEntry
+│   │   ├── header.ts               # IHeaderAction
+│   │   └── cloud.ts                # 인증/동기화 타입, ICloudPayload
+│   ├── utils/
+│   │   └── captureElement.ts       # html2canvas 공통 호출 (항상 라이트로 캡처)
 │   ├── App.tsx                      # 루트 컴포넌트 (Routes 정의)
 │   ├── App.css                      # 앱 전역 CSS (fadeIn 애니메이션 등)
 │   ├── index.css                    # Tailwind 지시자 + 기본 스타일 (Vite 기본 템플릿 기반)
@@ -96,8 +117,8 @@ ms-skill-simulator/
 ├── vite.config.ts                   # Vite 설정 (base: /)
 ├── tsconfig.json                    # TS 프로젝트 레퍼런스 + 경로 별칭 (@/*)
 ├── tsconfig.app.json                # 앱 TS 설정 (strict, ES2020)
-├── tsconfig.node.json               # Node TS 설정 (vite.config + api/ 타입체크)
-├── tailwind.config.js               # Tailwind 설정 (다크모드 비활성화)
+├── tsconfig.node.json               # Node TS 설정 (vite.config 타입체크)
+├── tailwind.config.js               # Tailwind 설정 (darkMode: class, 공용 색상)
 ├── postcss.config.js                # PostCSS 설정 (tailwindcss + autoprefixer)
 └── eslint.config.js                 # ESLint flat config (react-hooks, react-refresh)
 ```
@@ -106,16 +127,17 @@ ms-skill-simulator/
 
 ### 상태 관리
 - **전역 상태 관리 도구 없음** — React `useState`만 사용
-- 스킬 레벨 상태는 `SkillTree` 컴포넌트에서 중앙 관리, 하위 컴포넌트로 props 전달
-- `localStorage`를 통한 영속성: 직업 ID + 모드(일반/4차만)별 별도 키로 저장
+- 스킬 레벨 상태는 `useSkillTree` 훅이 중앙 관리. 헤더 버튼과 본문이 함께 쓰도록 `SkillTreePage`에서 호출하고 하위 컴포넌트로 props 전달
+- 로그인 세션·동기화 상태만 Context(`CloudProvider`/`useCloud`) 사용
+- `localStorage`를 통한 영속성: 직업 ID + 모드(일반/4차만)별 별도 키로 저장 (`data/skillTreeStorage.ts` 경유, 로그인 시 계정 키)
 
 ### 데이터 흐름
 ```
 사용자 입력
     ↓
-SkillTreePage (캡처, 모드 토글, 네비게이션)
-    ↓
-SkillTree (스킬 레벨 상태, 포인트 계산, 데이터 로딩)
+SkillTreePage (Header actions, 캡처, 모드 토글, 다이얼로그 열림 상태)
+    ↓ useSkillTree (스킬 레벨 상태, 포인트 계산, 데이터 로딩)
+SkillTree (렌더링) ← tree prop
     ↓ props (skillLevels, onLevelChange, remainingSkillPoints ...)
 SkillBranch (UI 렌더링) + useSkillBranch (활성화 검증, 레벨 증감 로직)
     ↓ props (skill, level, is*, on*)
@@ -126,9 +148,9 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
 
 ### 반응형 레이아웃 (Tailwind `md` = 768px 기준)
 - **직업 선택**: 모바일은 그룹 블록 2열 그리드 (`grid grid-cols-2 md:flex`), 시그너스는
-  `md:hidden` 제목을 붙인 별도 섹션. 데스크톱의 가로 스크롤 래퍼는 `md:overflow-x-auto` / `md:min-w-max`
+  `md:hidden` 제목을 붙인 별도 섹션. 데스크톱은 가로 스크롤 없이 화면 폭에 맞춘 5열 (`md:flex-1 md:max-w-[160px]`)
 - **패치 노트**: 모바일 기본 접힘 (`isPatchOpen` + `hidden md:block`), 데스크톱은 항상 표시
-- **브랜치 배치**: 모바일 세로 (`flex-col`) / 데스크톱 가로 (`md:flex-row`) — `SkillTree.tsx`
+- **브랜치 배치**: 모바일 세로 (`flex-col`) / `md` 2열 (`md:grid-cols-2`) / `xl` 가로 4열 — `SkillTree.tsx`
 - **브랜치 접기**: `SkillBranch`의 `isCollapsed` state. 헤더 전체가 토글 버튼이며,
   데스크톱은 `md:pointer-events-none` + 목록 래퍼 `md:grid-rows-[1fr]`로 항상 펼쳐진 상태 유지
 - **접기 애니메이션**: 높이를 모르는 콘텐츠라 `grid-template-rows: 0fr↔1fr` 트랜지션을 사용.
@@ -141,7 +163,9 @@ SkillToolTip (레벨별 속성 치환 → SkillToolTipPostfix로 후처리)
   모바일은 아이콘/스킬명 터치로 행 아래에 인라인 펼침. 두 경로 모두 `SkillTooltip` 컴포넌트를 재사용하며,
   모바일은 `detailOnly` prop으로 `[현재 레벨] + 상세 수치` 블록만 렌더링(스킬명·아이콘·마스터레벨·설명·필요스킬 제외).
   펼침 상태(`expandedSkillId`)는 `SkillBranch`가 보유해 브랜치당 하나만 열림
-- **전역 폭**: `App.tsx`의 최소 너비는 `md:min-w-[1500px]`로 데스크톱에만 적용,
+- **헤더**: `fixed` 56px 고정 + 스페이서. 8개 버튼이 약 1230px이라 `xl`(1280px) 미만은 `메뉴` 드롭다운으로 접는다.
+  md가 아닌 xl을 쓰는 유일한 곳. 버튼은 `IHeaderAction[]` 하나로 두 레이아웃을 렌더링한다
+- **전역 폭**: 고정 최소 너비 없음. `#root` 최대 폭 1564px(콘텐츠 1500 + 패딩). 브랜치는 `md` 2열, `xl` 4열,
   `#root` 패딩은 모바일 `0.75rem` / 데스크톱 `2rem` (`App.css` 미디어쿼리)
 
 ### 데이터 로딩 전략
@@ -260,9 +284,11 @@ interface ILevelProperties {
 ```
 키: skillTree_{4차jobId}        (일반 모드)
 키: skillTree_{4차jobId}_4th    (4차만 모드)
+키: skillTreeAccount_{userId}_{4차jobId}[_4th]  (로그인 시 계정 캐시)
 값: {
   currentLevel: number,
-  skillLevels: { id: number, name: string, level: number }[]
+  skillLevels: { id: number, name: string, level: number }[],
+  skillLog: ISkillLogEntry[]
 }
 ```
 
@@ -271,16 +297,21 @@ interface ILevelProperties {
 ```
 main.tsx
   └── App.tsx
+        ├── CloudProvider.tsx (라우트 전체를 감쌈)
         ├── SkillSimulatorPage.tsx
+        │     ├── Header.tsx
         │     ├── JobSelector.tsx
         │     │     └── data/jobs.ts (groupedJobs)
         │     └── types/job.ts
         └── SkillTreePage.tsx
-              ├── SkillTree.tsx
+              ├── Header.tsx (ColorModeButton, AuthButton, FeedbackDialog)
+              ├── useSkillTree.ts
               │     ├── constants/skillPoints.ts
               │     ├── data/jobs.ts (subJobs)
-              │     ├── data/skillbooks/*.json (동적 import)
-              │     ├── types/jobSkillBook.ts
+              │     ├── data/skillTreeStorage.ts
+              │     └── data/skillbooks/*.json (동적 import)
+              ├── SkillLogDialog.tsx / SkillCodeDialog.tsx
+              ├── SkillTree.tsx
               │     └── SkillBranch.tsx
               │           ├── useSkillBranch.ts (비즈니스 로직 훅)
               │           │     └── constants/skillPoints.ts
@@ -289,7 +320,7 @@ main.tsx
               │           │     └── SkillToolTipPostfix.tsx
               │           └── react-dom (createPortal)
               ├── data/jobs.ts (selectableJobs)
-              └── html2canvas
+              └── utils/captureElement.ts (html2canvas)
 ```
 
 ## 라우팅 구조
@@ -309,7 +340,7 @@ main.tsx
 - 일부 고정 너비/스케일은 `style` 속성으로 직접 지정 (예: 버튼 width, transform: scale)
 - `App.css`: fadeIn 애니메이션 정의 (`.animate-fade-in`)
 - `index.css`: Tailwind 지시자 + Vite 기본 템플릿 스타일 (다크/라이트 테마 지원)
-- 다크모드: `tailwind.config.js`에서 `darkMode: false`로 비활성화, 하지만 `index.css`에 `prefers-color-scheme: light` 미디어 쿼리가 남아있음
+- 다크모드: `darkMode: "class"` + `dark:` 유틸리티 (아래 '다크 모드' 절 참고)
 - 스킬 트리 캡처 시 제외할 요소는 `.exclude-from-capture` 클래스로 마킹
 
 ## 빌드 & 배포
@@ -322,7 +353,6 @@ main.tsx
 1. main 브랜치 푸시 → Vercel이 자동으로 `npm run build` 실행 → `dist/` 배포
 2. `vercel.json` 설정
    - `rewrites`: `/api/` 로 시작하지 않는 모든 경로를 `/index.html`로 (SPA 딥링크 지원)
-     - **주의**: 패턴이 `/(.*)`이면 서버리스 함수 경로(`/api/*`)까지 index.html로 삼켜 문의하기가 동작하지 않는다
    - `redirects`: `/skill`, `/skill/*` → 루트로 308 (구 경로 유입 대비)
 3. GitHub Actions (`trigger-deploy.yml`): main 푸시 시 루트 레포(`mapleland-st-root-page`)에 deploy 이벤트 전송
 
@@ -330,43 +360,67 @@ main.tsx
 - `skill.mapleland.st` 서브도메인 루트로 서비스
 - 구 주소 `mapleland.st/skill` → 루트 레포 쪽에서 308 리다이렉트 처리
 
-## 문의하기 (GitHub Issues 연동)
+## 디스코드 로그인 · 계정 동기화
 
-스킬 트리 화면 우측 상단 `문의하기` 버튼 → 모달 폼 → GitHub 이슈 자동 등록.
+아이템 시뮬레이터(`mapleland-setting-v2`, `docs/cloud-sync.md`)와 **같은 Supabase 프로젝트**를 쓴다.
+테이블·RLS·디스코드 앱은 이미 그쪽에서 세팅되어 있어 이 레포에 DDL이 없다. 행은 `app_id = "skill-sim"`으로 구분한다.
 
-### 데이터 흐름
+### 구성
 ```
-SkillTreePage (isFeedbackOpen)
-  └── FeedbackDialog  (유형/제목/내용/연락처 + 허니팟)
-        └── POST /api/feedback   { type, title, body, contact, website }
-              └── api/feedback.ts  (Vercel 서버리스 함수, Node 런타임)
-                    └── POST https://api.github.com/repos/{FEEDBACK_REPO}/issues
-                          └── 응답의 html_url을 그대로 사용자에게 노출
+CloudProvider (App에서 라우트를 감쌈 — 세션 구독, 동기화 기동, CloudPromptDialog)
+  ├── cloudContext.useCloud()      → status, user, isStorageReady, dataVersion, signIn/signOut
+  ├── data/cloud/sync.ts           → 동기화 엔진 (앱 도메인 비의존, 읽기/쓰기·캡처/적용 주입)
+  ├── data/cloud/userData.ts       → user_state fetch/push (rev 낙관적 잠금)
+  ├── data/cloud/supabase.ts       → 클라이언트 싱글턴, APP_ID, isCloudEnabled
+  ├── data/cloud/cookieStorage.ts  → 세션 쿠키(.mapleland.st) — 아이템 시뮬과 SSO
+  └── data/skillTreeStorage.ts     → 스킬 트리 localStorage 접근 (게스트/계정 분리)
 ```
 
-### 환경변수 (Vercel 프로젝트 설정에서 등록)
-| 변수 | 필수 | 설명 |
-|------|------|------|
-| `GITHUB_TOKEN` | O | fine-grained PAT. 대상 레포에 **Issues: Read and write** 권한만 부여 |
-| `FEEDBACK_REPO` | X | `owner/repo` 형식. 미설정 시 `kyhong222/ms-skill-simulator` |
+### 저장소 분리
+- 비로그인: `skillTree_{트리키}` — 기존 키 그대로. **로그인해도 건드리지 않는다**
+- 로그인: `skillTreeAccount_{userId}_{트리키}` — 계정 데이터 캐시. 로그아웃하면 지운다 (로그아웃 시 게스트 데이터가 그대로 돌아옴)
+- 스킬 트리 읽기/쓰기는 전부 `skillTreeStorage`를 거친다. `localStorage`를 직접 쓰면 계정 분리가 깨진다
+- `user_state.payload`는 `{ trees: { "112": {...}, "112_4th": {...} } }` 한 행. 로그 아이콘(Base64)은 올리지 않고 로드 시 스킬북에서 채운다
 
-토큰이 없으면 함수가 500과 함께 "문의 접수가 아직 준비되지 않았습니다."를 반환한다 (이슈는 생성되지 않음).
+### 첫 로그인 판정
+`user_state` 행이 없으면 첫 로그인이다.
+- 찍은 포인트가 있는 게스트 트리가 있으면 "브라우저에 저장된 스킬 세팅을 계정으로 이관할까요?"를 묻는다
+- 이관하지 않거나 게스트 데이터가 없어도 **빈 행을 만든다** — 행이 있으면 다시 묻지 않기 때문
+- 이후로는 서버가 원본이다. 게스트 데이터가 있어도 묻지 않고 계정 데이터로 연다
 
-### 스팸/남용 방어
-- **허니팟**: 화면에 보이지 않는 `website` 필드가 채워지면 API 호출 없이 200 반환 (봇에게 실패를 알리지 않음)
-- **길이 제한**: 제목 100자 / 내용 2000자 / 연락처 100자, 서버에서 다시 자름
-- **레이트 리밋**: 같은 IP 기준 60초에 3건 (서버리스 인스턴스 메모리 기반이라 best-effort)
-- **클라이언트 쿨다운**: `localStorage`의 `feedback_lastSubmittedAt` 기준 60초
-- **멘션 무력화**: 본문의 `@닉네임`에 제로폭 공백을 삽입해 GitHub 사용자에게 알림이 가지 않도록 함
+### 동기화 정책
+- push: 저장 → 2초 디바운스 → 내용이 바뀌었을 때만 전체 payload update. 탭 숨김·`pagehide`·`online`에서 flush. 로그아웃 전에도 flush
+- pull: 로그인 직후 + 탭 포커스 복귀 시 `rev` 비교
+- 충돌: 안 올린 변경이 없으면 조용히 서버를 따른다. 있으면 `계정 것 받기` / `이 기기 것으로 덮기`를 묻는다
+- `isStorageReady`가 false인 동안 `useSkillTree`는 로딩 상태로 대기한다. 로딩 중에는 저장을 유발하는 헤더 버튼을 비활성화한다 (빈 목록을 저장하면 데이터가 지워짐)
+- 서버 값이 적용되면 `dataVersion`이 올라가 `useSkillTree`가 다시 읽는다
+- 서버 스키마가 `SCHEMA_VERSION`보다 새로우면 적용·전송하지 않는다
 
-### 이슈 형식
-- 제목: `[유형] 사용자가 입력한 제목`
-- 라벨: `feedback` — 레포에 라벨이 없어 422가 나면 **라벨 없이 자동 재시도**한다 (문의 유실 방지)
-- 본문 하단에 유형/연락처/접수 경로를 메타 정보로 덧붙임
+## 다크 모드
 
-### 로컬 개발 주의
-`npm run dev`(Vite)는 `/api/*`를 서빙하지 않으므로 문의하기 전송은 404가 난다.
-함수까지 로컬에서 확인하려면 `vercel dev`를 사용해야 한다.
+- `tailwind.config.js`의 `darkMode: "class"` — `<html class="dark">`로 전환, 색은 `dark:` 유틸리티 + 커스텀 색 `dark-page/paper/raised`, `primary`
+- 시스템 → 라이트 → 다크 순환 (`ColorModeButton`), 저장 키 `skillSimulator_colorMode`
+- 깜빡임 방지 스크립트가 `index.html`에 있다. 저장 키는 `constants/colorMode.ts`와 같아야 한다
+- `index.css`의 다크 전역 규칙은 `:where()`로 명시도를 0으로 유지해야 Tailwind 유틸리티를 덮지 않는다
+- 캡처는 `utils/captureElement.ts`가 복제 문서에서 `dark`를 제거해 **항상 라이트**로 나온다
+
+## 문의하기 (Supabase)
+
+헤더 `문의하기` → `FeedbackDialog` → Supabase `feedbacks`에 브라우저에서 직접 insert (서버 코드 없음).
+
+- **로그인 필수.** 디스코드 계정이 연락처를 대신한다. 첨부 이미지는 3장·장당 5MB (`feedback` 비공개 버킷)
+- `내 문의`(계정 메뉴): 전 서비스 문의와 운영자 답변 열람. 새 답변이면 빨간 점 (`profiles.feedback_seen_at` 기준)
+- **답변·상태 변경은 아이템 시뮬레이터의 `문의 관리`에서 한다.** 그 화면은 `app_id`로 거르지 않아 스킬 문의도 함께 보이므로 이 앱에는 어드민 화면이 없다
+- `feedbacks.type`은 공용 check 제약으로 `bug/idea/etc`만 허용. `constants/feedback.ts`의 `dbType`으로 변환하고, 스킬 수치 오류는 `bug` + 제목 말머리 `[스킬 수치]`로 저장한다
+
+### 환경변수 (Vercel + 로컬 `.env.local`)
+| 변수 | 설명 |
+|------|------|
+| `VITE_SUPABASE_URL` | 아이템 시뮬레이터와 같은 값 |
+| `VITE_SUPABASE_ANON_KEY` | 아이템 시뮬레이터와 같은 값 (공개값, 격리는 RLS) |
+
+둘 다 없으면 로그인 UI가 숨겨지고 localStorage 전용으로 동작하며 문의하기는 이용할 수 없다.
+`APP_ID`는 환경변수가 아니라 코드 상수다 — `item-sim`이 잘못 들어가면 그쪽 계정 데이터를 덮어쓴다.
 
 ## 외부 의존성
 
@@ -378,7 +432,8 @@ SkillTreePage (isFeedbackOpen)
 | `tailwindcss` (3.4) | 유틸리티 CSS |
 | `@vitejs/plugin-react` (4.4) | Vite React 플러그인 (Fast Refresh) |
 | `typescript-eslint` (8.30) | TypeScript ESLint 지원 |
-| `@vercel/node` (dev) | 서버리스 함수 타입 (`VercelRequest`, `VercelResponse`) |
+| `@supabase/supabase-js` | 디스코드 로그인, 계정 동기화, 문의 저장 |
 
 ### 데이터 소스
-- 모든 스킬 데이터는 `src/data/skillbooks/*.json`에 로컬 내장 (외부 API 미사용)
+- 모든 스킬 데이터는 `src/data/skillbooks/*.json`에 로컬 내장
+- 계정 데이터·문의는 Supabase (로그인 사용자만)

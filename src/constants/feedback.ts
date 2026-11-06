@@ -1,20 +1,28 @@
 // 문의하기 폼 공용 상수
-// 주의: api/feedback.ts는 별도 번들(Vercel Function)이라 이 파일을 import하지 않는다.
-//       유형 키(value)와 길이 제한을 바꿀 때는 api/feedback.ts도 함께 수정할 것.
 
+// feedbacks.type 컬럼이 허용하는 값 (아이템 시뮬레이터와 공용 테이블의 check 제약)
+export type FeedbackDbType = "bug" | "idea" | "etc";
+
+// 공용 테이블에 없는 유형은 dbType으로 저장하고 제목 말머리로 구분한다
 export const FEEDBACK_TYPES = [
-  { value: "bug", label: "버그/오류" },
-  { value: "data", label: "스킬 수치 오류" },
-  { value: "feature", label: "기능 건의" },
-  { value: "etc", label: "기타" },
+  { value: "bug", label: "버그/오류", dbType: "bug", titlePrefix: "" },
+  { value: "data", label: "스킬 수치 오류", dbType: "bug", titlePrefix: "[스킬 수치] " },
+  { value: "feature", label: "기능 건의", dbType: "idea", titlePrefix: "" },
+  { value: "etc", label: "기타", dbType: "etc", titlePrefix: "" },
 ] as const;
 
 export type FeedbackType = (typeof FEEDBACK_TYPES)[number]["value"];
 
+export const FEEDBACK_TYPE_LABEL: Record<FeedbackDbType, string> = {
+  bug: "버그 제보",
+  idea: "기능 건의",
+  etc: "기타",
+};
+
 export const FEEDBACK_MAX_TITLE = 100;
 export const FEEDBACK_MAX_BODY = 2000;
-export const FEEDBACK_MAX_CONTACT = 100;
 
-// 연속 제출 방지용 클라이언트 쿨다운 (서버에도 IP 기준 제한이 있음)
-export const FEEDBACK_COOLDOWN_MS = 60_000;
-export const FEEDBACK_COOLDOWN_KEY = "feedback_lastSubmittedAt";
+// 첨부 이미지 제한 (feedback 버킷 설정과 동일)
+export const FEEDBACK_MAX_IMAGES = 3;
+export const FEEDBACK_MAX_IMAGE_BYTES = 5 * 1024 * 1024;
+export const FEEDBACK_IMAGE_TYPES = ["image/png", "image/jpeg", "image/gif", "image/webp"];

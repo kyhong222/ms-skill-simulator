@@ -85,7 +85,7 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
     // 4차 이후만 모드일 때는 비활성화 처리 안 함
     // 차수에 맞는 포인트를 사용하지 않았으면 branch 전체를 비활성화
     <div
-      className={`p-2 border rounded-xl w-full min-w-0 shadow bg-white relative ${
+      className={`p-2 border rounded-xl w-full min-w-0 shadow bg-white relative dark:bg-dark-raised ${
         !fourthOnly && !isBranchActivated() ? "filter cursor-not-allowed grayscale" : ""
       }`}
     >
@@ -105,21 +105,21 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
         )}
 
         <div className="flex flex-col text-left min-w-0">
-          <h2 className="text-black text-lg font-bold break-keep md:text-2xl">{skillbook.description.bookName}</h2>
+          <h2 className="text-black text-lg font-bold break-keep md:text-2xl dark:text-gray-100">{skillbook.description.bookName}</h2>
           {branchSp ? (
             // 차수 분리형: 이 차수의 잔여/총 포인트 (잔여가 음수면 빨간색)
             <>
-              <span className="text-xs text-gray-600 md:text-sm">
+              <span className="text-xs text-gray-600 md:text-sm dark:text-gray-400">
                 잔여 포인트:{" "}
                 <span className={branchSp.remaining < 0 ? "text-red-500" : ""}>{branchSp.remaining}</span>
               </span>
-              <span className="text-xs text-gray-600 md:text-sm">총 포인트: {branchSp.total}</span>
+              <span className="text-xs text-gray-600 md:text-sm dark:text-gray-400">총 포인트: {branchSp.total}</span>
             </>
           ) : (
             <>
-              <span className="text-xs text-gray-600 md:text-sm">총 투자 포인트: {totalInvestedPoints}</span>
+              <span className="text-xs text-gray-600 md:text-sm dark:text-gray-400">총 투자 포인트: {totalInvestedPoints}</span>
               {!fourthOnly && (
-                <span className="exclude-from-capture text-xs text-gray-600 md:text-sm">
+                <span className="exclude-from-capture text-xs text-gray-600 md:text-sm dark:text-gray-400">
                   필요 투자 포인트: {remainingPointsForBranch}
                 </span>
               )}
@@ -129,7 +129,7 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
 
         {/* 접기/펼치기 표시 (모바일 전용) */}
         <span
-          className="exclude-from-capture ml-auto flex-shrink-0 text-gray-500 text-base leading-none md:hidden"
+          className="exclude-from-capture ml-auto flex-shrink-0 text-gray-500 dark:text-gray-400 text-base leading-none md:hidden"
           aria-hidden="true"
         >
           {isCollapsed ? "▼" : "▲"}
@@ -170,7 +170,7 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
                 {hoveredSkillId === skill.id &&
                   ReactDOM.createPortal(
                     <div
-                      className="absolute z-50 hidden md:block"
+                      className="absolute z-50 hidden rounded-md bg-white md:block dark:bg-dark-raised"
                       style={{
                         position: "fixed",
                         top: tooltipPosition.isBottomHalf
@@ -181,9 +181,7 @@ const SkillBranch: React.FC<SkillBranchProps> = (props: SkillBranchProps) => {
                           : "auto",
                         left: tooltipPosition.x + 10,  // 마우스 오른쪽 10px
                         pointerEvents: "none", // 마우스 이벤트 무시
-                        backgroundColor: "white",
                         boxShadow: "0 0 8px rgba(0,0,0,0.15)",
-                        borderRadius: "6px",
                         padding: "8px",
                         maxWidth: "300px",
                         zIndex: 9999,

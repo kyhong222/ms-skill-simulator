@@ -1,22 +1,21 @@
 import { useRef, useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import Header from "../components/Header/Header";
 import SkillTree from "../components/SkillTree/SkillTree";
-import FeedbackDialog from "../components/Feedback/FeedbackDialog";
+import SkillLogDialog from "../components/SkillTree/SkillLogDialog";
+import SkillCodeDialog from "../components/SkillTree/SkillCodeDialog";
+import { useSkillTree } from "../components/SkillTree/useSkillTree";
 import { selectableJobs } from "../data/jobs";
 import { isCygnusJobId } from "../constants/skillPoints";
-import html2canvas from "html2canvas";
+import { captureElement } from "../utils/captureElement";
+import type { IJob } from "../types/job";
+import type { IHeaderAction } from "../types/header";
 
 export default function SkillTreePage() {
   const { jobId } = useParams<{ jobId: string }>();
   const navigate = useNavigate();
-  const skillTreeRef = useRef<HTMLDivElement>(null);
-  const skillTreeOnlyRef = useRef<HTMLDivElement>(null);
-  const [showSnackbar, setShowSnackbar] = useState(false);
-  const [fourthOnly, setFourthOnly] = useState(false);
-  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
 
   const job = selectableJobs.find((j) => j.id === Number(jobId));
-  const isCygnus = job ? isCygnusJobId(job.id) : false;
 
   useEffect(() => {
     if (!job) {
@@ -27,6 +26,22 @@ export default function SkillTreePage() {
   if (!job) {
     return null;
   }
+
+  return <SkillTreeWorkspace job={job} />;
+}
+
+// job이 확정된 뒤에만 렌더링되므로 useSkillTree에 항상 유효한 직업 ID가 들어간다
+function SkillTreeWorkspace({ job }: { job: IJob }) {
+  const navigate = useNavigate();
+  const skillTreeRef = useRef<HTMLDivElement>(null);
+  const skillTreeOnlyRef = useRef<HTMLDivElement>(null);
+  const [showSnackbar, setShowSnackbar] = useState(false);
+  const [fourthOnly, setFourthOnly] = useState(false);
+  const [isLogOpen, setIsLogOpen] = useState(false);
+  const [isCodeInputOpen, setIsCodeInputOpen] = useState(false);
+
+  const tree = useSkillTree(job.id, fourthOnly);
+  const isCygnus = isCygnusJobId(job.id);
 
   // 캡처 대상 요소를 반환하는 공통 함수
   const getCaptureTarget = (): HTMLElement | null => {
@@ -39,17 +54,7 @@ export default function SkillTreePage() {
   // html2canvas로 캡처하는 공통 함수
   const captureToCanvas = async (): Promise<HTMLCanvasElement | null> => {
     const targetElement = getCaptureTarget();
-    if (!targetElement) return null;
-
-    await document.fonts.ready;
-    await new Promise((resolve) => requestAnimationFrame(resolve));
-
-    return html2canvas(targetElement, {
-      backgroundColor: "white",
-      scale: 2,
-      useCORS: true,
-      ignoreElements: (element) => element.classList.contains("exclude-from-capture"),
-    });
+    return targetElement ? captureElement(targetElement) : null;
   };
 
   const captureSkillTree = async () => {
@@ -59,7 +64,7 @@ export default function SkillTreePage() {
     const dataUrl = canvas.toDataURL("image/png");
     const link = document.createElement("a");
     link.href = dataUrl;
-    link.download = `${job?.koname} 스킬트리.png`;
+    link.download = `${job.koname} 스킬트리.png`;
     link.click();
   };
 
@@ -84,57 +89,55 @@ export default function SkillTreePage() {
     });
   };
 
+  const handleReset = () => {
+    if (window.confirm("스킬 레벨과 스킬 로그를 모두 초기화합니다. 계속할까요?")) {
+      tree.resetLevels();
+    }
+  };
+
+  // 로딩 중에는 스킬 목록이 비어 있어, 이때 저장하면 저장된 스킬 트리가 지워진다
+  const headerActions: IHeaderAction[] = [
+    // 시그너스는 4차 전직이 없어 "4차 이후만" 모드 미제공
+    ...(isCygnus
+      ? []
+      : [{ label: fourthOnly ? "전체 보기" : "4차 이후만", onClick: () => setFourthOnly(!fourthOnly), active: fourthOnly }]),
+    { label: "클립보드 복사", onClick: copyToClipboard },
+    { label: "캡쳐하기", onClick: captureSkillTree },
+    { label: "스킬 로그", onClick: () => setIsLogOpen(true), disabled: tree.loading },
+    { label: "스킬코드 적용", onClick: () => setIsCodeInputOpen(true), disabled: tree.loading },
+    { label: "직업 변경", onClick: () => navigate("/"), variant: "highlight" },
+    { label: "스킬 초기화", onClick: handleReset, variant: "danger", disabled: tree.loading },
+  ];
+
   return (
     <>
+      <Header jobName={job.koname} actions={headerActions} />
+
       <div>
-        <div className="flex flex-col gap-2 mb-4 md:flex-row md:items-center md:justify-between">
-          <h2 className="text-lg font-semibold text-left md:text-xl">전직명: {job.koname}</h2>
-          <div className="flex flex-wrap gap-2">
-            <button
-              onClick={() => setIsFeedbackOpen(true)}
-              className="exclude-from-capture flex-1 text-gray-900 px-2 py-2 text-sm bg-gray-200 hover:bg-gray-300 rounded md:flex-none md:w-[120px] md:px-4 md:text-base"
-            >
-              문의하기
-            </button>
-            {/* 시그너스는 4차 전직이 없어 "4차 이후만" 모드 미제공 */}
-            {!isCygnus && (
-              <button
-                onClick={() => setFourthOnly(!fourthOnly)}
-                className={`exclude-from-capture flex-1 text-gray-900 px-2 py-2 text-sm rounded md:flex-none md:w-[120px] md:px-4 md:text-base ${
-                  fourthOnly ? "bg-green-300 hover:bg-green-400" : "bg-gray-200 hover:bg-gray-300"
-                }`}
-              >
-                {fourthOnly ? "전체 보기" : "4차 이후만"}
-              </button>
-            )}
-            <button
-              onClick={copyToClipboard}
-              className="flex-1 text-gray-900 px-2 py-2 text-sm bg-blue-200 hover:bg-blue-300 rounded md:flex-none md:w-[140px] md:px-4 md:text-base"
-            >
-              클립보드 복사
-            </button>
-            <button
-              onClick={captureSkillTree}
-              className="flex-1 text-gray-900 px-2 py-2 text-sm bg-gray-200 hover:bg-gray-300 rounded md:flex-none md:w-[120px] md:px-4 md:text-base"
-            >
-              캡쳐하기
-            </button>
-            <button
-              onClick={() => navigate("/")}
-              className="flex-1 text-gray-900 px-2 py-2 text-sm bg-gray-200 hover:bg-gray-300 rounded md:flex-none md:w-[120px] md:px-4 md:text-base"
-            >
-              직업 변경
-            </button>
-          </div>
-        </div>
-        <div ref={skillTreeRef} className="p-2 bg-gray-100 rounded-lg shadow md:p-4">
+        <div ref={skillTreeRef} className="p-2 bg-gray-100 rounded-lg shadow md:p-4 dark:bg-dark-paper">
           <div ref={skillTreeOnlyRef}>
-            <SkillTree selectedJobId={job.id} jobName={job.koname} fourthOnly={fourthOnly} />
+            <SkillTree tree={tree} fourthOnly={fourthOnly} />
           </div>
         </div>
       </div>
 
-      <FeedbackDialog isOpen={isFeedbackOpen} onClose={() => setIsFeedbackOpen(false)} />
+      <SkillLogDialog
+        log={tree.skillLog}
+        isOpen={isLogOpen}
+        onClose={() => setIsLogOpen(false)}
+        jobLevel={tree.jobLevel}
+        fourthOnly={fourthOnly}
+        jobName={job.koname ?? ""}
+        jobId={job.id}
+        isCygnus={tree.isCygnus}
+        skillBranchIndex={tree.separateSp ? tree.skillBranchIndex : undefined}
+      />
+
+      <SkillCodeDialog
+        isOpen={isCodeInputOpen}
+        onClose={() => setIsCodeInputOpen(false)}
+        onApply={tree.applySkillCode}
+      />
 
       {showSnackbar && (
         <div

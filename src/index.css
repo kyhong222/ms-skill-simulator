@@ -7,9 +7,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: light;
+  color: #213547;
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -46,7 +46,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #f9f9f9;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -58,15 +58,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* 다크 모드: <html class="dark">로 전환.
+   :where()로 명시도를 0으로 유지해야 Tailwind 유틸리티(.bg-* 등)를 덮어쓰지 않는다 */
+:root.dark {
+  color-scheme: dark;
+  color: #f3f4f6;
+  background-color: #121417;
+}
+
+:where(.dark) *,
+:where(.dark) ::before,
+:where(.dark) ::after {
+  border-color: #3a3f47;
+}
+
+:where(.dark) button {
+  background-color: #262a31;
+  border-color: transparent;
 }
