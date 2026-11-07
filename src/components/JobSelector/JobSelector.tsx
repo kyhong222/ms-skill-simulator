@@ -34,9 +34,9 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
   const renderJob = (job: IJob) => (
     <li
       key={job.id}
-      // 가장 긴 이름 "아크메이지(썬,콜)"(16px 기준 약 126px)이 한 줄에 들어가도록 좌우 패딩을 줄였다
-      // md: 칸 폭 약 134px → 14px 글씨 / lg~: 칸 폭 160px → 16px 글씨
-      className={`cursor-pointer p-2 border rounded text-center text-sm break-keep md:px-1 lg:px-2 lg:text-base xl:py-4 ${
+      // 가장 긴 이름 "아크메이지(썬,콜)"(16px 기준 약 125px)이 한 줄에 들어가도록 좌우 패딩을 줄였다
+      // md: 칸 폭 119px~ → 14px 글씨(약 110px) / lg~: 칸 폭 160px 고정 → 16px 글씨
+      className={`cursor-pointer p-2 border rounded text-center text-sm break-keep md:px-0.5 lg:px-2 lg:text-base xl:py-4 ${
         selectedJob === job.id ? "bg-blue-500 text-white" : "bg-white text-black dark:bg-dark-paper dark:text-gray-100"
       }`}
       onClick={() => handleSelect(job)}
@@ -57,7 +57,7 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
           {/* 모험가 직업군 (상단) */}
           <div className="grid grid-cols-2 items-start gap-x-3 gap-y-5 md:flex md:justify-center md:gap-3 xl:gap-8">
             {groupNames.map((groupName) => (
-              <div key={groupName} className="w-full min-w-0 md:flex-1 md:max-w-[160px]">
+              <div key={groupName} className="w-full min-w-0 md:flex-1 md:max-w-[160px] lg:w-[160px] lg:flex-none">
                 <h2 className="text-base font-semibold mb-2 text-center md:text-xl md:mb-3">{groupName}</h2>
                 <ul className="flex flex-col gap-2 md:gap-4">
                   {groupedJobs[groupName].map(renderJob)}
@@ -73,7 +73,7 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
           <h2 className="text-base font-semibold mb-2 text-center md:hidden">시그너스 기사단</h2>
           <div className="grid grid-cols-2 items-start gap-x-3 gap-y-2 md:flex md:justify-center md:gap-3 xl:gap-8">
             {groupNames.map((groupName) => (
-              <div key={groupName} className="w-full min-w-0 md:flex-1 md:max-w-[160px]">
+              <div key={groupName} className="w-full min-w-0 md:flex-1 md:max-w-[160px] lg:w-[160px] lg:flex-none">
                 <ul className="flex flex-col gap-2 md:gap-4">
                   {cygnusByGroup[groupName] && renderJob(cygnusByGroup[groupName])}
                 </ul>
@@ -88,7 +88,7 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
           <h2 className="text-base font-semibold mb-2 text-center md:hidden">레지스탕스</h2>
           <div className="grid grid-cols-2 items-start gap-x-3 gap-y-2 md:flex md:justify-center md:gap-3 xl:gap-8">
             {groupNames.map((groupName) => (
-              <div key={groupName} className="w-full min-w-0 md:flex-1 md:max-w-[160px]">
+              <div key={groupName} className="w-full min-w-0 md:flex-1 md:max-w-[160px] lg:w-[160px] lg:flex-none">
                 <ul className="flex flex-col gap-2 md:gap-4">
                   {resistanceByGroup[groupName] && renderJob(resistanceByGroup[groupName])}
                 </ul>
