@@ -34,7 +34,9 @@ export default function JobSelector({ onSelect }: { onSelect?: (job: IJob) => vo
   const renderJob = (job: IJob) => (
     <li
       key={job.id}
-      className={`cursor-pointer p-2 border rounded text-center text-sm break-keep md:p-2 md:text-base xl:p-4 ${
+      // 가장 긴 이름 "아크메이지(썬,콜)"(16px 기준 약 126px)이 한 줄에 들어가도록 좌우 패딩을 줄였다
+      // md: 칸 폭 약 134px → 14px 글씨 / lg~: 칸 폭 160px → 16px 글씨
+      className={`cursor-pointer p-2 border rounded text-center text-sm break-keep md:px-1 lg:px-2 lg:text-base xl:py-4 ${
         selectedJob === job.id ? "bg-blue-500 text-white" : "bg-white text-black dark:bg-dark-paper dark:text-gray-100"
       }`}
       onClick={() => handleSelect(job)}
