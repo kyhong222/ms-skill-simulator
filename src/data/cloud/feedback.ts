@@ -1,10 +1,10 @@
 // 문의/답변 데이터 접근. 권한은 전부 RLS가 건다.
 // 테이블·버킷은 아이템 시뮬레이터와 공용 (mapleland-setting-v2 docs/feedback.md).
-// 어드민 답변은 아이템 시뮬레이터의 '문의 관리'에서 하므로 여기에는 어드민 기능이 없다
+// 어드민 함수(checkIsAdmin 이하)의 검사는 화면을 감추기 위한 것일 뿐이고, 실제 차단은 RLS(is_admin())가 한다
 import { APP_ID, supabase } from "./supabase";
-import type { FeedbackDbType } from "../../constants/feedback";
+import type { FeedbackDbType, FeedbackStatus } from "../../constants/feedback";
 
-export type FeedbackStatus = "open" | "answered" | "resolved" | "wontfix";
+export type { FeedbackStatus };
 
 export interface IFeedback {
   id: string;
@@ -13,6 +13,8 @@ export interface IFeedback {
   title: string;
   body: string;
   status: FeedbackStatus;
+  isPublic: boolean; // 아이템 시뮬 대문 노출 여부. 어드민만 켤 수 있다
+  authorName: string | null;
   images: string[]; // 스토리지 경로. 보여주려면 서명 URL로 바꿔야 한다
   createdAt: string;
 }
@@ -41,13 +43,23 @@ interface IFeedbackRow {
   title: string;
   body: string;
   status: FeedbackStatus;
+  is_public: boolean;
+  author_name: string | null;
   images: string[] | null;
+  created_at: string;
+}
+
+interface IReplyRow {
+  id: string;
+  feedback_id: string;
+  body: string;
   created_at: string;
 }
 
 const FEEDBACK_BUCKET = "feedback";
 const SIGN_TTL_SECONDS = 3600;
-const FEEDBACK_COLUMNS = "id, app_id, type, title, body, status, images, created_at";
+const FEEDBACK_COLUMNS = "id, app_id, type, title, body, status, is_public, author_name, images, created_at";
+const REPLY_COLUMNS = "id, feedback_id, body, created_at";
 
 const toFeedback = (row: IFeedbackRow): IFeedback => ({
   id: row.id,
@@ -56,7 +68,16 @@ const toFeedback = (row: IFeedbackRow): IFeedback => ({
   title: row.title,
   body: row.body,
   status: row.status,
+  isPublic: row.is_public,
+  authorName: row.author_name,
   images: row.images ?? [],
+  createdAt: row.created_at,
+});
+
+const toReply = (row: IReplyRow): IFeedbackReply => ({
+  id: row.id,
+  feedbackId: row.feedback_id,
+  body: row.body,
   createdAt: row.created_at,
 });
 
@@ -117,16 +138,54 @@ export async function listReplies(feedbackIds: string[]) {
   if (feedbackIds.length === 0) return replies;
   const { data, error } = await supabase()
     .from("feedback_replies")
-    .select("id, feedback_id, body, created_at")
+    .select(REPLY_COLUMNS)
     .in("feedback_id", feedbackIds)
     .order("created_at");
   if (error) throw new Error(error.message);
-  for (const row of data ?? []) {
+  for (const row of (data ?? []) as IReplyRow[]) {
     const list = replies.get(row.feedback_id) ?? [];
-    list.push({ id: row.id, feedbackId: row.feedback_id, body: row.body, createdAt: row.created_at });
+    list.push(toReply(row));
     replies.set(row.feedback_id, list);
   }
   return replies;
+}
+
+// ── 어드민 ──────────────────────────────────────────────
+
+// 어드민인지 — admins에서 자기 행을 읽을 수 있는지로 판단한다 (화면 표시용 힌트)
+export async function checkIsAdmin(userId: string): Promise<boolean> {
+  const { data, error } = await supabase().from("admins").select("user_id").eq("user_id", userId).maybeSingle();
+  if (error) return false;
+  return data !== null;
+}
+
+// 전 서비스 문의를 가져온다. 어드민이 아니면 RLS가 '공개된 것 + 본인 것'까지만 내준다
+export async function listAllFeedbacks(status?: FeedbackStatus) {
+  let query = supabase().from("feedbacks").select(FEEDBACK_COLUMNS).order("created_at", { ascending: false });
+  if (status) query = query.eq("status", status);
+  const { data, error } = await query;
+  if (error) throw new Error(error.message);
+  return (data ?? []).map((row) => toFeedback(row as IFeedbackRow));
+}
+
+// 답변 작성. 트리거가 문의 상태를 answered로 올린다
+export async function createReply(feedbackId: string, authorId: string, body: string) {
+  const { data, error } = await supabase()
+    .from("feedback_replies")
+    .insert({ feedback_id: feedbackId, author_id: authorId, body })
+    .select(REPLY_COLUMNS)
+    .single();
+  if (error) throw new Error(error.message);
+  return toReply(data as IReplyRow);
+}
+
+// 상태·대문 공개 여부 변경
+export async function updateFeedback(id: string, patch: { status?: FeedbackStatus; isPublic?: boolean }) {
+  const body: Record<string, unknown> = { updated_at: new Date().toISOString() };
+  if (patch.status !== undefined) body.status = patch.status;
+  if (patch.isPublic !== undefined) body.is_public = patch.isPublic;
+  const { error } = await supabase().from("feedbacks").update(body).eq("id", id);
+  if (error) throw new Error(error.message);
 }
 
 // 내 문의에 달린 가장 최근 답변 시각 — 새 답변 점 판정용

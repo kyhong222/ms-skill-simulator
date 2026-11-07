@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useCloud } from "./cloudContext";
 import MyFeedbackDialog from "./MyFeedbackDialog";
+import AdminFeedbackDialog from "./AdminFeedbackDialog";
 import { useDismiss } from "../Header/useDismiss";
 import { fetchFeedbackSeenAt, latestReplyAt } from "../../data/cloud/feedback";
 import type { SyncStatus } from "../../types/cloud";
@@ -21,9 +22,11 @@ function isAfter(a: string, b: string | null) {
 }
 
 export default function AuthButton() {
-  const { status, user, syncStatus, signIn, signOut } = useCloud();
+  const { status, user, syncStatus, isAdmin, signIn, signOut } = useCloud();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMyFeedbackOpen, setIsMyFeedbackOpen] = useState(false);
+  const [isAdminOpen, setIsAdminOpen] = useState(false);
+  const closeAdmin = useCallback(() => setIsAdminOpen(false), []);
   const [lastReplyAt, setLastReplyAt] = useState<string | null>(null);
   const [seenAt, setSeenAt] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -54,14 +57,14 @@ export default function AuthButton() {
 
   if (status !== "signedIn" || !user) {
     return (
+      // 아이템 시뮬레이터의 MUI outlined small 버튼과 같은 모양 (primary 50% 테두리, 13px, 라운드 10px)
       <button
         type="button"
         disabled={status === "loading"}
         onClick={() => void signIn()}
-        className="flex-shrink-0 whitespace-nowrap px-2 py-1.5 text-sm font-medium rounded border-gray-300 bg-transparent text-primary disabled:opacity-40 dark:border-gray-600 dark:text-primary-dark"
+        className="flex-shrink-0 whitespace-nowrap px-[9px] py-[3px] text-[13px] leading-[1.75] font-medium rounded-[10px] border border-primary/50 bg-transparent text-primary hover:border-primary hover:bg-primary/5 disabled:opacity-40 dark:border-primary-dark/50 dark:bg-transparent dark:text-primary-dark dark:hover:border-primary-dark dark:hover:bg-primary-dark/10"
       >
-        <span className="sm:hidden">로그인</span>
-        <span className="hidden sm:inline">{status === "loading" ? "확인 중…" : "디스코드 로그인"}</span>
+        {status === "loading" ? "확인 중…" : "디스코드 로그인"}
       </button>
     );
   }
@@ -78,7 +81,7 @@ export default function AuthButton() {
           aria-expanded={isMenuOpen}
           aria-haspopup="true"
           aria-label="계정 메뉴"
-          className="relative flex items-center gap-1.5 px-1 py-1 text-sm font-medium rounded bg-transparent text-gray-800 hover:bg-gray-200 dark:text-gray-100 dark:hover:bg-gray-700"
+          className="relative flex items-center gap-1.5 px-2 py-1 text-[13px] font-medium rounded-[10px] border-0 bg-transparent text-primary hover:bg-primary/5 dark:bg-transparent dark:text-primary-dark dark:hover:bg-primary-dark/10"
         >
           {user.avatarUrl ? (
             <img src={user.avatarUrl} alt="" className="w-6 h-6 rounded-full" />
@@ -87,8 +90,8 @@ export default function AuthButton() {
               {user.name.slice(0, 1)}
             </span>
           )}
-          <span className="hidden max-w-[100px] truncate sm:inline">{user.name}</span>
-          {hasNewReply && <span className="absolute top-0.5 left-6 w-2 h-2 rounded-full bg-red-500" aria-label="새 답변" />}
+          <span className="hidden max-w-[120px] truncate sm:inline">{user.name}</span>
+          {hasNewReply && <span className="absolute top-0.5 left-7 w-2 h-2 rounded-full bg-red-500" aria-label="새 답변" />}
         </button>
 
         {isMenuOpen && (
@@ -118,6 +121,20 @@ export default function AuthButton() {
               내 문의
               {hasNewReply && <span className="w-2 h-2 rounded-full bg-red-500" />}
             </button>
+            {/* 운영자에게만 보인다. 감추는 것일 뿐이고 실제 권한은 RLS가 건다 */}
+            {isAdmin && (
+              <button
+                type="button"
+                className={MENU_ITEM}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  setIsAdminOpen(true);
+                }}
+              >
+                문의 관리
+              </button>
+            )}
+            <hr className="my-1" />
             <button
               type="button"
               className={MENU_ITEM}
@@ -137,6 +154,7 @@ export default function AuthButton() {
         onClose={() => setIsMyFeedbackOpen(false)}
         onSeen={setSeenAt}
       />
+      {isAdmin && <AdminFeedbackDialog isOpen={isAdminOpen} onClose={closeAdmin} />}
     </>
   );
 }

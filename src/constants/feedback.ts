@@ -19,6 +19,18 @@ export const FEEDBACK_TYPE_LABEL: Record<FeedbackDbType, string> = {
   etc: "기타",
 };
 
+// feedbacks.status 컬럼 값 (공용 테이블)
+export type FeedbackStatus = "open" | "answered" | "resolved" | "wontfix";
+
+export const FEEDBACK_STATUSES: FeedbackStatus[] = ["open", "answered", "resolved", "wontfix"];
+
+export const FEEDBACK_STATUS_LABEL: Record<FeedbackStatus, string> = {
+  open: "접수됨",
+  answered: "답변 완료",
+  resolved: "처리 완료",
+  wontfix: "반영 안 함",
+};
+
 export const FEEDBACK_MAX_TITLE = 100;
 export const FEEDBACK_MAX_BODY = 2000;
 
