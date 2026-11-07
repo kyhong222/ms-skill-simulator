@@ -111,7 +111,7 @@ scripts/                             # 스킬북 JSON 생성 도구 (수동 실�
 └── gen-battlemage.mjs               # 배틀메이지 생성 (원본 텍스트 + 인벤 아이콘)
 src/
 ├── components/
-│   ├── Cloud/                       # CloudProvider, useCloud, 이관/충돌 확인창, AuthButton, 내 문의
+│   ├── Cloud/                       # CloudProvider, useCloud, 이관/충돌 확인창, AuthButton, 내 문의, 문의 관리(운영자)
 │   ├── Feedback/FeedbackDialog.tsx  # 문의하기 모달 폼 (Supabase 저장)
 │   ├── Header/                      # Header(상단 고정), ColorModeButton, useDismiss
 │   ├── JobSelector/JobSelector.tsx  # 직업 선택 UI
@@ -266,7 +266,9 @@ src/
 
 ### 문의하기 → Supabase
 - 헤더 `문의하기` → `FeedbackDialog` → `feedbacks` insert (로그인 필수, 이미지 3장)
-- 답변·상태 관리는 **아이템 시뮬레이터의 `문의 관리`** (전 서비스 문의가 함께 보임). 이 앱은 `내 문의`만 제공
+- `내 문의`는 모두에게, `문의 관리`(답변·상태·대문 공개)는 **운영자에게만** 계정 메뉴에 뜬다 — 아이템 시뮬레이터의 문의 관리와 같은 기능 (`AdminFeedbackDialog`)
+  - 운영자 판별은 `admins` 테이블(`checkIsAdmin` → `useCloud().isAdmin`). 메뉴를 감추는 힌트일 뿐이고 실제 권한은 RLS(`is_admin()`)가 건다
+- 로그인 버튼은 아이템 시뮬레이터(MUI outlined small)와 같은 모양으로 맞춘다 — primary 50% 테두리, 13px, 라운드 10px
 - `feedbacks.type`은 `bug/idea/etc`만 허용 — 유형 추가 시 `constants/feedback.ts`의 `dbType`을 지정할 것
 
 ### 데이터 저장 (localStorage)

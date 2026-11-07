@@ -59,8 +59,10 @@ ms-skill-simulator/
 │   │   │   ├── CloudProvider.tsx    # 세션 구독 + 동기화 기동 (App에서 라우트를 감쌈)
 │   │   │   ├── cloudContext.ts      # useCloud 훅
 │   │   │   ├── CloudPromptDialog.tsx # 이관/충돌/불러오기 실패 확인창
-│   │   │   ├── AuthButton.tsx       # 로그인 버튼 + 계정 메뉴
-│   │   │   └── MyFeedbackDialog.tsx # 내 문의 + 운영자 답변
+│   │   │   ├── AuthButton.tsx       # 로그인 버튼 + 계정 메뉴 (아이템 시뮬과 같은 모양)
+│   │   │   ├── FeedbackCard.tsx     # 문의 1건 + 답변 (내 문의·문의 관리 공용)
+│   │   │   ├── MyFeedbackDialog.tsx # 내 문의 + 운영자 답변
+│   │   │   └── AdminFeedbackDialog.tsx # 문의 관리 (운영자 전용)
 │   │   ├── Feedback/
 │   │   │   └── FeedbackDialog.tsx   # 문의하기 모달 (Supabase feedbacks 저장)
 │   │   ├── Header/
@@ -410,7 +412,10 @@ CloudProvider (App에서 라우트를 감쌈 — 세션 구독, 동기화 기동
 
 - **로그인 필수.** 디스코드 계정이 연락처를 대신한다. 첨부 이미지는 3장·장당 5MB (`feedback` 비공개 버킷)
 - `내 문의`(계정 메뉴): 전 서비스 문의와 운영자 답변 열람. 새 답변이면 빨간 점 (`profiles.feedback_seen_at` 기준)
-- **답변·상태 변경은 아이템 시뮬레이터의 `문의 관리`에서 한다.** 그 화면은 `app_id`로 거르지 않아 스킬 문의도 함께 보이므로 이 앱에는 어드민 화면이 없다
+- `문의 관리`(계정 메뉴, **운영자 전용**): 아이템 시뮬레이터의 문의 관리와 같은 기능. 전 서비스 문의를 상태별로 보고 답변 작성·상태 변경·대문 공개(아이템 시뮬 대문 노출)를 한다
+  - 운영자 판별은 `admins` 테이블에서 내 행을 읽을 수 있는지(`checkIsAdmin`) → `useCloud().isAdmin`. **메뉴를 감추는 힌트일 뿐이고 실제 권한은 RLS(`is_admin()`)가 건다**
+  - 운영자 추가는 Supabase에서 `admins`에 행을 넣는다 (mapleland-setting-v2 `docs/feedback.md`)
+  - 문의 카드 생김새는 `FeedbackCard`로 `내 문의`와 공유. 상태 라벨은 `constants/feedback.ts`의 `FEEDBACK_STATUS_LABEL`
 - `feedbacks.type`은 공용 check 제약으로 `bug/idea/etc`만 허용. `constants/feedback.ts`의 `dbType`으로 변환하고, 스킬 수치 오류는 `bug` + 제목 말머리 `[스킬 수치]`로 저장한다
 
 ### 환경변수 (Vercel + 로컬 `.env.local`)

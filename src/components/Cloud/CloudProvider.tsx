@@ -3,6 +3,7 @@ import type { Session } from "@supabase/supabase-js";
 import { CloudContext } from "./cloudContext";
 import CloudPromptDialog from "./CloudPromptDialog";
 import { APP_ID, isCloudEnabled, supabase } from "../../data/cloud/supabase";
+import { checkIsAdmin } from "../../data/cloud/feedback";
 import { createCloudSync, type ICloudSync } from "../../data/cloud/sync";
 import { fetchState, pushState } from "../../data/cloud/userData";
 import {
@@ -41,9 +42,23 @@ export default function CloudProvider({ children }: { children: ReactNode }) {
   const [dataVersion, setDataVersion] = useState(0);
   const [prompt, setPrompt] = useState<CloudPrompt | null>(null);
   const [isBusy, setIsBusy] = useState(false);
+  const [adminUserId, setAdminUserId] = useState<string | null>(null);
   const syncRef = useRef<ICloudSync | null>(null);
 
   const userId = user?.id;
+  // 확인한 계정과 지금 계정이 같을 때만 어드민 — 계정이 바뀌면 다시 확인할 때까지 false
+  const isAdmin = userId !== undefined && adminUserId === userId;
+
+  useEffect(() => {
+    if (!userId) return;
+    let isAlive = true;
+    void checkIsAdmin(userId).then((result) => {
+      if (isAlive) setAdminUserId(result ? userId : null);
+    });
+    return () => {
+      isAlive = false;
+    };
+  }, [userId]);
   const bumpDataVersion = useCallback(() => setDataVersion((version) => version + 1), []);
 
   useEffect(() => {
@@ -180,12 +195,13 @@ export default function CloudProvider({ children }: { children: ReactNode }) {
       status,
       user,
       syncStatus,
+      isAdmin,
       isStorageReady: status === "disabled" || status === "signedOut" || (status === "signedIn" && isAccountReady),
       dataVersion,
       signIn,
       signOut,
     }),
-    [status, user, syncStatus, isAccountReady, dataVersion, signIn, signOut],
+    [status, user, syncStatus, isAdmin, isAccountReady, dataVersion, signIn, signOut],
   );
 
   return (
