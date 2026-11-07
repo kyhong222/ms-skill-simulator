@@ -622,7 +622,7 @@
     },
     {
       "invisible": true,
-      "masterLevel": 30,
+      "masterLevel": 20,
       "icon": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADSElEQVR4nL1Xi5XqIBDFc2yAVwKW4JYQS9ASkhJMCVpCUoIpISnBlCAlPErwcSFDgIDG3T3vrtn8CPcywwzDloV4sv+DDV34Ap73x99fZxrriu0vTfDsa/fnSSJIgCHfC77oYLfbmfPj8fieAH3E/Tb9nVWHLyNiS+RqvLJhnBtVdTd/cDmyoauDTjinTvn04+G1/nXVlYmCs/Z0Cr4tG22RSYTnAjURD5b0WNj7bnDvTK/UWil7x+1rZUQpNkzfOwhmROAsW8WOzUW3Ve61ExATE3nK9FLK4P5wOLhrtMeIiXS/L/U/a43ydvO+GkMBjliAwZI3jTb9ULOqmt3R931A6D+733ttGWlM3FaVFaHJx7FlOcwuEOEZgoiYxInybIjIKmQJPIMIkFtwbeqzGTUTrRkQzQXj/5cCIhF0L4qQ3DwWwoggC+CMZwE0uRxmn8MyviuCRAR/cb7XIxm1h1rnjhT5WhEgD30fwgkIyMlncjo+hJKjCxgz6yliXgnIkWMy9tr3HwnQfzoi2fFyZhTCKtN2y36IOCQtRJQ5eMICKi0ArnBWEGHYUVqOgTaEVIgKkXNAJABuIBGIX6V4dvLFoIkYTED9LBsdKQEA5gEAKwhxdh2tBaz0ivCtACI3xMM1mflSIDf44fixABq9ZbfHq878dzRiPyeQILNyqnQcLCxgRu+FYM7/MRGAtnFiAuale4UAEwXMugCpmGY+FiaCWflF6SYozRGcIYCsEWbHtIhFFMANsQiAFqZbUy46oVHHLsHxcp1IWcAPRRLhCzlV7STEjhAWItPnXBKIiNzhBGDkRO5Ssh9908IUCmkDEQSyQkpcLCIZBf5EzIGEUKc0V3CN8MUqmLOQH1VOAEhdGvaiYA2Gunad4lqU3BQgUl6diFwozxaQzPp8RQimQHUgyP06sLiJRV4wk1FGNaEzubAHhSBK8hTisrw46/rx2i3qQJRpaOuiI0pKc1XcLatiUxfq/cFaS5S3o90DeHVgV9WmIsolIyeASFJLrrVEwVi0qtt9wWwJdxnXgVoUKqOcgA32arQ1++4WbMbwtg5s9RZM74pwuSELGBHYs/0KdAnX+vu8CESOf34e2Ewbxp+j6961cNvzfznyKqxwqv/IAAAAAElFTkSuQmCC",
       "iconDisabled": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACfklEQVR4nL1XgZGCMBCEGRvAErAEvgQpQVvRErQVLQFKeEqQEqQEn838Zi7HJSDjuDNIDJDdu9xdkk0W4pV9BzkbUsDr8Xx+nKlr26za74O+3Xb7oggKcORlUUwGqOva3ZumWSdgvPS4ze8jq392TsSG5EPfu5eJ8/ns25fLJeu6LtMo1MD6fztaj777/R70Hw4HL0LHgCc+nU7ufr1eo9YNwxCQ4r8Wyue496ORIJfwAjQxyS3Xg0jieDz6Nt6HxSDEVZal64c3NHkgQBKTnK6X03G73QJC2UexIJJuh+UxTKYAqmEhBGmvVFUVENET6IMI6Zn9GPmwGuScKoiKToGcSymC0OTyPXoAdx2IeC6FaRGBBzBfHJRuQ9siXyoCz6y5nwiIka+B/C5FHgiIkSMYYdUaIA50qkYFrMWcl1LkpgBMhUwbmXYsyxrSQ1aKLvYAX2Tx4IBL1gEGog7AWHaYAvgRAC9QyDvBCC/NWZ0UQHIAVdCqfBY4DTId3xYgLdVVzoJ8RotlTaCgt7KApROILUYWEYB3dWGaQzQLWIoZ+ViY9HsMUApmztPiVIk2BVC9FgFwYYIQayMiI559uOZEmKuh9gRgCcGg8BBdH5uSlAgvQJZMlmQr/bQQKYKgFyxxWoSZBTFySwgHZaygjfRlIMZETASw8OgsWAJsPDgo2ixgGIsiYqkcTMHSFLTAfSDI5T4Qewm7LgyhAIogmII6/STkXIJI7ojlgkb3628CAXS33IZxX7jUE7AcnrD2gbN1gCTWkpvyhDXw3D5QC8hxVuPRbO0RjGAGpLZibdfjVIRmTg84ETgufQJFWTmSGEiOHxmE+f+B8Rvwx/M/QMk2jxjK+PoAAAAASUVORK5CYII=",
       "iconMouseOver": "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADUklEQVR4nL1Xi7WjIBDFc9KAlqAlQAmmhFjCtpAtYV8JeSXEEmIJUkIsQUpgGWBgQMznZc/OOcYf4V7ufBgPLDXN/o9VeEEJ6Nt8/+dIteiYyuY9ik4jCSRgwXvebqlWjqzWPxNHmiOf9891Zr8HYUkcAjjr3GgEFvFazzBTk01du6Ou43V2L5uB8av5a1Ul/zxro4gnEV2gPPDRg3J/L/GdIsD0XiXgshlTnj2zJOAMa+B2NSq8DgRyYAQvSS+lTO6FiHLBeFgxgrLaXJxABaNGMpdMCQTgszm+PPhqVqUaVjWR8TzPCSB9pvXNTgyrlMaHlsQJFjwQtVKLLjj7c+8JAQkPjOTkBYHcSqbFvRddY0mwZQwxwNeri4HVgE/Mx0JjyKUZEQn05CkhgeRkm4LbYW1tSdzuayDBW+JDy9L8d4i3suq8KzIXWKtRM7OSfnBEpjL4QxI8kgBw/iCFIwEKjj4z4BAP7MLeM/XNMFtc1GPQ1puhRIEyOATj/CY+U8piQRwwtTjgujz0wD40DERqUvUh4HkSEpSF2iEArkAVTPDNbUy7KqtoaOB/tFKK8kKJ3yFwiiSgeMh2N/hyw0CEoKTPSoFJreACX0qtCnOY6FUDlXIij6wcA94FfBGuynUNe2boBjgfzXjqljcIkI3EZ4GQjkTJwD0IhCtGVxw9aSc/XEEqPkxDb2pIUnDP/7Ah5erAWFqYjuFdyf+lSggGAdg7F9j9ABuSO2UP19cQoBgjcAYCqEZaHUuZUMyCcUMCrOr8xrS2jgCJS1w19T0SeUaiEIQkFfu4iwQizeLu58FOCgqh9KnsLHkeSaRxQAiMERxL8kRG+j4hdEoCiIiEBBoGbU6uRKKcBSQQ9ywSiSQQHNIXdsGSQqF32BAAUCzDJAteMkFSFUrx6vvANpLbqwuRAID2r6VgyUIfCDhJH8iTdMWyPC15Gn754+wOTEEd1MqLSNqG8/svJrvvQh8obSFChZz/l60CKLcmfgc/w/fBq0pwfXFKJH2gsB3Rdi/Ku2IPUtpyrRI3unJyXeMzVIMV+kBDyk5QLsUVfKvhp9lPP8EI3ad94Nco4avIDkYFLAn4ZvvUbB9r5pnG/RRCcPihdaDyH4yf2yCejQh+/gsDXfTM+3uxwAAAAABJRU5ErkJggg==",
@@ -639,181 +639,121 @@
       "levelProperties": [
         {
           "attackCount": "6",
-          "damage": "114",
+          "damage": "94",
           "hs": "h1",
           "mpCon": "21"
         },
         {
           "attackCount": "6",
-          "damage": "150",
+          "damage": "130",
           "hs": "h10",
           "mpCon": "25"
         },
         {
           "attackCount": "6",
-          "damage": "164",
+          "damage": "134",
           "hs": "h11",
           "mpCon": "26"
         },
         {
           "attackCount": "6",
-          "damage": "168",
+          "damage": "138",
           "hs": "h12",
           "mpCon": "26"
         },
         {
           "attackCount": "6",
-          "damage": "172",
+          "damage": "142",
           "hs": "h13",
           "mpCon": "27"
         },
         {
           "attackCount": "6",
-          "damage": "176",
+          "damage": "146",
           "hs": "h14",
           "mpCon": "27"
         },
         {
           "attackCount": "6",
-          "damage": "180",
+          "damage": "150",
           "hs": "h15",
           "mpCon": "28"
         },
         {
           "attackCount": "6",
-          "damage": "184",
+          "damage": "154",
           "hs": "h16",
           "mpCon": "28"
         },
         {
           "attackCount": "6",
-          "damage": "188",
+          "damage": "158",
           "hs": "h17",
           "mpCon": "29"
         },
         {
           "attackCount": "6",
-          "damage": "192",
+          "damage": "162",
           "hs": "h18",
           "mpCon": "29"
         },
         {
           "attackCount": "6",
-          "damage": "196",
+          "damage": "166",
           "hs": "h19",
           "mpCon": "30"
         },
         {
           "attackCount": "6",
-          "damage": "118",
+          "damage": "98",
           "hs": "h2",
           "mpCon": "21"
         },
         {
           "attackCount": "6",
-          "damage": "200",
+          "damage": "170",
           "hs": "h20",
           "mpCon": "30"
         },
         {
           "attackCount": "6",
-          "damage": "214",
-          "hs": "h21",
-          "mpCon": "31"
-        },
-        {
-          "attackCount": "6",
-          "damage": "218",
-          "hs": "h22",
-          "mpCon": "31"
-        },
-        {
-          "attackCount": "6",
-          "damage": "222",
-          "hs": "h23",
-          "mpCon": "32"
-        },
-        {
-          "attackCount": "6",
-          "damage": "226",
-          "hs": "h24",
-          "mpCon": "32"
-        },
-        {
-          "attackCount": "6",
-          "damage": "230",
-          "hs": "h25",
-          "mpCon": "33"
-        },
-        {
-          "attackCount": "6",
-          "damage": "234",
-          "hs": "h26",
-          "mpCon": "33"
-        },
-        {
-          "attackCount": "6",
-          "damage": "238",
-          "hs": "h27",
-          "mpCon": "34"
-        },
-        {
-          "attackCount": "6",
-          "damage": "242",
-          "hs": "h28",
-          "mpCon": "34"
-        },
-        {
-          "attackCount": "6",
-          "damage": "246",
-          "hs": "h29",
-          "mpCon": "35"
-        },
-        {
-          "attackCount": "6",
-          "damage": "122",
+          "damage": "102",
           "hs": "h3",
           "mpCon": "22"
         },
         {
           "attackCount": "6",
-          "damage": "250",
-          "hs": "h30",
-          "mpCon": "35"
-        },
-        {
-          "attackCount": "6",
-          "damage": "126",
+          "damage": "106",
           "hs": "h4",
           "mpCon": "22"
         },
         {
           "attackCount": "6",
-          "damage": "130",
+          "damage": "110",
           "hs": "h5",
           "mpCon": "23"
         },
         {
           "attackCount": "6",
-          "damage": "134",
+          "damage": "114",
           "hs": "h6",
           "mpCon": "23"
         },
         {
           "attackCount": "6",
-          "damage": "138",
+          "damage": "118",
           "hs": "h7",
           "mpCon": "24"
         },
         {
           "attackCount": "6",
-          "damage": "142",
+          "damage": "122",
           "hs": "h8",
           "mpCon": "24"
         },
         {
           "attackCount": "6",
-          "damage": "146",
+          "damage": "126",
           "hs": "h9",
           "mpCon": "25"
         }
